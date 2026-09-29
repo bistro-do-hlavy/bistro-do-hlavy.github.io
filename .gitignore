@@ -1,0 +1,9 @@
+# Lokální pomocné soubory a vizuální testy
+tests/
+spustit-bistro.ps1
+
+# Editor a operační systém
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

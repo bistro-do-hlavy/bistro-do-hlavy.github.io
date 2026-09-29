@@ -1,0 +1,212 @@
+[
+  {
+    "id": "kureci-panini-q1",
+    "productId": "kureci-panini",
+    "type": "mcq",
+    "prompt": "Který sýr patří do kuřecího panini?",
+    "options": ["Mozzarella", "Niva", "Cheddar", "Kozí sýr"],
+    "answer": "Mozzarella",
+    "explanation": "Mozzarella se dobře taví a nepřebíjí chuť kuřete ani pesta."
+  },
+  {
+    "id": "kureci-panini-q2",
+    "productId": "kureci-panini",
+    "type": "text",
+    "prompt": "Napiš čísla všech alergenů kuřecího panini.",
+    "answer": ["1", "7", "8"],
+    "answerDisplay": "1 – obiloviny s lepkem, 7 – mléko, 8 – skořápkové plody",
+    "explanation": "Lepek je v ciabattě, mléko v mozzarelle a ořechy mohou být v pestu."
+  },
+  {
+    "id": "kureci-panini-q3",
+    "productId": "kureci-panini",
+    "type": "flashcard",
+    "prompt": "Jak dlouho se kuřecí panini zapéká?",
+    "answer": "4 minuty v kontaktním grilu",
+    "explanation": "Tento čas prohřeje náplň a opeče ciabattu bez vysušení."
+  },
+  {
+    "id": "kureci-panini-q4",
+    "productId": "kureci-panini",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kureci-panini.webp",
+    "options": ["Kuřecí panini", "Borůvkový cheesecake", "Krémová rajčatová polévka", "Caprese salát"],
+    "answer": "Kuřecí panini",
+    "explanation": "Poznávacím znakem je zapečená ciabatta s viditelnou náplní."
+  },
+  {
+    "id": "kureci-panini-q5",
+    "productId": "kureci-panini",
+    "type": "mcq",
+    "prompt": "Kdy se do panini přidává rukola?",
+    "options": ["Po zapečení", "Před grilováním", "Spolu s pestem do mixéru", "Až na talíř vedle panini"],
+    "answer": "Po zapečení",
+    "explanation": "Rukola tak zůstane svěží a nezvadne v grilu."
+  },
+  {
+    "id": "kureci-panini-q6",
+    "productId": "kureci-panini",
+    "type": "flashcard",
+    "prompt": "Co doporučíš hostovi ke kuřecímu panini?",
+    "answer": "Rajčatovou polévku jako syté polední menu.",
+    "explanation": "Kombinace polévky a panini přirozeně zvyšuje hodnotu objednávky."
+  },
+  {
+    "id": "kureci-panini-q7",
+    "productId": "kureci-panini",
+    "type": "text",
+    "prompt": "Jaká omáčka nebo pomazánka patří do panini?",
+    "answer": "bazalkové pesto",
+    "explanation": "Bazalkové pesto ochutí pečivo a propojí rajče s mozzarellou."
+  },
+  {
+    "id": "kureci-panini-q8",
+    "productId": "kureci-panini",
+    "type": "mcq",
+    "prompt": "Která surovina do kuřecího panini nepatří?",
+    "options": ["Smetanový sýr", "Rajče", "Rukola", "Grilované kuřecí prso"],
+    "answer": "Smetanový sýr",
+    "explanation": "V panini je mozzarella; smetanový sýr používáme do cheesecaku."
+  },
+  {
+    "id": "rajcatova-polevka-q1",
+    "productId": "rajcatova-polevka",
+    "type": "mcq",
+    "prompt": "Na jakou teplotu se polévka ohřívá?",
+    "options": ["75 °C", "55 °C", "65 °C", "90 °C"],
+    "answer": "75 °C",
+    "explanation": "75 °C je cílová teplota pro bezpečné a příjemně horké podávání."
+  },
+  {
+    "id": "rajcatova-polevka-q2",
+    "productId": "rajcatova-polevka",
+    "type": "text",
+    "prompt": "Napiš čísla obou alergenů rajčatové polévky.",
+    "answer": ["7", "9"],
+    "answerDisplay": "7 – mléko, 9 – celer",
+    "explanation": "Mléko je ve smetaně a celer bývá součástí zeleninového vývaru."
+  },
+  {
+    "id": "rajcatova-polevka-q3",
+    "productId": "rajcatova-polevka",
+    "type": "flashcard",
+    "prompt": "Čím se polévka ozdobí před podáváním?",
+    "answer": "Smetanou a bazalkou.",
+    "explanation": "Obě ozdoby zároveň hostovi napoví chuťový profil polévky."
+  },
+  {
+    "id": "rajcatova-polevka-q4",
+    "productId": "rajcatova-polevka",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/rajcatova-polevka.webp",
+    "options": ["Krémová rajčatová polévka", "Kuřecí panini", "Borůvkový cheesecake", "Dýňová polévka"],
+    "answer": "Krémová rajčatová polévka",
+    "explanation": "Typická je hladká červená konzistence a smetanové zdobení."
+  },
+  {
+    "id": "rajcatova-polevka-q5",
+    "productId": "rajcatova-polevka",
+    "type": "mcq",
+    "prompt": "Do jaké nádoby se polévka nalévá?",
+    "options": ["Do předehřáté misky", "Do studené sklenice", "Do papírového sáčku", "Na dezertní talíř"],
+    "answer": "Do předehřáté misky",
+    "explanation": "Předehřátá miska pomůže udržet správnou teplotu při podávání."
+  },
+  {
+    "id": "rajcatova-polevka-q6",
+    "productId": "rajcatova-polevka",
+    "type": "flashcard",
+    "prompt": "Komu rajčatovou polévku doporučíš?",
+    "answer": "Hostovi, který chce lehčí oběd; lze ji doplnit panini.",
+    "explanation": "Samostatně je lehká, v kombinaci s panini vytvoří celé menu."
+  },
+  {
+    "id": "rajcatova-polevka-q7",
+    "productId": "rajcatova-polevka",
+    "type": "text",
+    "prompt": "Která bylinka patří do polévky i na ozdobu?",
+    "answer": "bazalka",
+    "explanation": "Bazalka zvýrazňuje sladkost rajčat."
+  },
+  {
+    "id": "rajcatova-polevka-q8",
+    "productId": "rajcatova-polevka",
+    "type": "mcq",
+    "prompt": "Co je základem tekutiny v polévce?",
+    "options": ["Zeleninový vývar", "Espresso", "Kokosová voda", "Jablečný mošt"],
+    "answer": "Zeleninový vývar",
+    "explanation": "Zeleninový vývar doplňuje rajčata, cibuli a česnek."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q1",
+    "productId": "boruvkovy-cheesecake",
+    "type": "mcq",
+    "prompt": "Jak se cheesecake podává?",
+    "options": ["Chlazený, bez ohřevu", "Horký z grilu", "Rozmixovaný s ledem", "Ohřátý na 75 °C"],
+    "answer": "Chlazený, bez ohřevu",
+    "explanation": "Porce se vyndává z chlazení až těsně před podáváním."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q2",
+    "productId": "boruvkovy-cheesecake",
+    "type": "text",
+    "prompt": "Napiš čísla všech alergenů borůvkového cheesecaku.",
+    "answer": ["1", "3", "7"],
+    "answerDisplay": "1 – obiloviny s lepkem, 3 – vejce, 7 – mléko",
+    "explanation": "Lepek je v korpusu, vejce a mléčné složky v náplni."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q3",
+    "productId": "boruvkovy-cheesecake",
+    "type": "flashcard",
+    "prompt": "Z čeho je spodní vrstva cheesecaku?",
+    "answer": "Ze sušenkového korpusu.",
+    "explanation": "Korpus tvoří pevný základ pro krémovou náplň."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q4",
+    "productId": "boruvkovy-cheesecake",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/boruvkovy-cheesecake.webp",
+    "options": ["Borůvkový cheesecake", "Krémová rajčatová polévka", "Kuřecí panini", "Čokoládový muffin"],
+    "answer": "Borůvkový cheesecake",
+    "explanation": "Poznáš jej podle světlé sýrové vrstvy, korpusu a borůvek."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q5",
+    "productId": "boruvkovy-cheesecake",
+    "type": "mcq",
+    "prompt": "Co dostane host k cheesecaku?",
+    "options": ["Lžičku", "Polévkovou naběračku", "Brčko", "Steakový nůž"],
+    "answer": "Lžičku",
+    "explanation": "Lžička patří na čistý dezertní talíř k porci."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q6",
+    "productId": "boruvkovy-cheesecake",
+    "type": "flashcard",
+    "prompt": "Jak cheesecake doporučíš k prodeji?",
+    "answer": "Nabídnu jej ke kávě, vhodný je i po vydatném jídle.",
+    "explanation": "Káva a ovocný dezert tvoří přirozenou doplňkovou nabídku."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q7",
+    "productId": "boruvkovy-cheesecake",
+    "type": "text",
+    "prompt": "Které ovoce určuje chuť tohoto cheesecaku?",
+    "answer": "borůvky",
+    "explanation": "Borůvky dávají dezertu ovocnou chuť a barvu."
+  },
+  {
+    "id": "boruvkovy-cheesecake-q8",
+    "productId": "boruvkovy-cheesecake",
+    "type": "mcq",
+    "prompt": "Která surovina patří do náplně cheesecaku?",
+    "options": ["Smetanový sýr", "Grilované kuře", "Zeleninový vývar", "Rukola"],
+    "answer": "Smetanový sýr",
+    "explanation": "Smetanový sýr vytváří typickou krémovou strukturu cheesecaku."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kureci-panini",
+    "name": "Kuřecí panini",
+    "category": "Teplé sendviče",
+    "ingredients": ["ciabatta", "grilované kuřecí prso", "mozzarella", "rajče", "rukola", "bazalkové pesto"],
+    "allergens": [1, 7, 8],
+    "preparation": ["Ciabattu rozřízni a potřete pestem.", "Přidej kuře, mozzarellu a rajče.", "Zapeč v kontaktním grilu 4 minuty.", "Po zapečení doplň rukolu a podávej."],
+    "salesTip": "Nabídni k němu rajčatovou polévku jako syté polední menu.",
+    "image": "img/products/kureci-panini.webp"
+  },
+  {
+    "id": "rajcatova-polevka",
+    "name": "Krémová rajčatová polévka",
+    "category": "Polévky",
+    "ingredients": ["rajčata", "zeleninový vývar", "cibule", "česnek", "smetana", "bazalka"],
+    "allergens": [7, 9],
+    "preparation": ["Porci promíchej a ohřej na 75 °C.", "Nalij do předehřáté misky.", "Ozdob smetanou a bazalkou."],
+    "salesTip": "Doporuč hostům, kteří chtějí lehčí oběd; skvěle se doplňuje s panini.",
+    "image": "img/products/rajcatova-polevka.webp"
+  },
+  {
+    "id": "boruvkovy-cheesecake",
+    "name": "Borůvkový cheesecake",
+    "category": "Dezerty",
+    "ingredients": ["sušenkový korpus", "smetanový sýr", "zakysaná smetana", "vejce", "cukr", "borůvky"],
+    "allergens": [1, 3, 7],
+    "preparation": ["Vyndej porci z chlazení těsně před podáváním.", "Polož na čistý dezertní talíř.", "Přidej lžičku a podávej bez ohřevu."],
+    "salesTip": "Nabídni ke kávě; ovocná chuť je příjemná i po vydatném jídle.",
+    "image": "img/products/boruvkovy-cheesecake.webp"
+  }
+]

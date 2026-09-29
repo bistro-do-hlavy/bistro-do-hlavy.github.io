@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="Mobilní trénink produktů bistra s chytrým opakováním.">
+  <title>Bistro do hlavy</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css?v=1.0.6">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" type="button" data-view-link="home" aria-label="Přejít na dnešek">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        <span><strong>Bistro</strong><small>do hlavy</small></span>
+      </button>
+      <button id="profile-button" class="profile-chip" type="button" aria-label="Otevřít profil">
+        <span id="profile-initial">?</span><span id="profile-name">Profil</span>
+      </button>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="loading-state" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        <p>Připravuji dnešní trénink…</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Hlavní navigace">
+      <button class="nav-item is-active" type="button" data-view-link="home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V21h-6v-6H9v6H3z"/></svg>
+        <span>Dnes</span>
+      </button>
+      <button class="nav-item" type="button" data-view-link="products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>
+        <span>Produkty</span>
+      </button>
+      <button class="nav-item" type="button" data-view-link="settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8 4 2-1-2-4-2 .5-2-1L15 4h-6L8 6.5l-2 1L4 7l-2 4 2 1v2l-2 1 2 4 2-.5 2 1L9 22h6l1-2.5 2-1 2 .5 2-4-2-1z"/></svg>
+        <span>Nastavení</span>
+      </button>
+    </nav>
+  </div>
+
+  <dialog id="profile-dialog" class="dialog">
+    <form id="profile-form" method="dialog">
+      <button class="dialog-close" type="button" aria-label="Zavřít">×</button>
+      <p class="eyebrow">Váš profil</p>
+      <h2>Jak vám máme říkat?</h2>
+      <p>Přezdívka se zobrazuje jen na tomto telefonu. Vaši identitu chrání náhodné ID.</p>
+      <label for="nickname">Přezdívka</label>
+      <input id="nickname" name="nickname" maxlength="32" autocomplete="nickname" required placeholder="Třeba Roman">
+      <button class="button button-primary button-full" value="save">Uložit profil</button>
+    </form>
+  </dialog>
+
+  <dialog id="product-dialog" class="dialog product-dialog">
+    <div id="product-detail"></div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+
+  <script type="module" src="js/app.js?v=1.0.6"></script>
+</body>
+</html>
