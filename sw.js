@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.6';
+const CACHE_VERSION = 'bistro-v1.0.7';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.6', './js/app.js?v=1.0.6',
-  './config.js?v=1.0.6', './content.js?v=1.0.6', './storage.js?v=1.0.6',
-  './fsrs-service.js?v=1.0.6', './study.js?v=1.0.6', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.7', './js/app.js?v=1.0.7',
+  './config.js?v=1.0.7', './content.js?v=1.0.7', './storage.js?v=1.0.7',
+  './fsrs-service.js?v=1.0.7', './study.js?v=1.0.7', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json', './img/products/kureci-panini.webp',
   './img/products/rajcatova-polevka.webp', './img/products/boruvkovy-cheesecake.webp',
