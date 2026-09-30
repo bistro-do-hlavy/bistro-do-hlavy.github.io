@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.8';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.8';
+import { CONFIG } from './config.js?v=1.0.10';
+import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.10';
 
 export function normalizeText(value) {
   return String(value ?? '')
@@ -60,16 +60,21 @@ export function buildStudyQueue({
   reviews,
   newCardsPerDay,
   enabledQuestionTypes = ['mcq', 'flashcard', 'text', 'photo'],
+  enabledProductIds = null,
   now = new Date(),
 }) {
   const enabledTypes = new Set(enabledQuestionTypes);
-  const selectedQuestions = questions.filter((question) => enabledTypes.has(question.type));
+  const allowedProductIds = new Set(Array.isArray(enabledProductIds) ? enabledProductIds : products.map((product) => product.id));
+  const selectedProducts = products.filter((product) => allowedProductIds.has(product.id));
+  const selectedQuestions = questions.filter((question) => enabledTypes.has(question.type) && allowedProductIds.has(question.productId));
+  const selectedQuestionIds = new Set(selectedQuestions.map((question) => question.id));
   const reviewedIds = new Set(reviews.map((review) => review.questionId));
-  const unlockedCount = Math.min(products.length, Math.max(1, Math.floor(reviewedIds.size / 6) + 1));
-  const unlocked = new Set(products.slice(0, unlockedCount).map((product) => product.id));
+  const reviewedSelectedIds = new Set(reviews.filter((review) => selectedQuestionIds.has(review.questionId)).map((review) => review.questionId));
+  const unlockedCount = Math.min(selectedProducts.length, Math.max(1, Math.floor(reviewedSelectedIds.size / 6) + 1));
+  const unlocked = new Set(selectedProducts.slice(0, unlockedCount).map((product) => product.id));
   const due = selectedQuestions.filter((question) => progress[question.id] && new Date(progress[question.id].due) <= now);
   const today = localDay(now.toISOString());
-  const newSeenToday = new Set(reviews.filter((review) => localDay(review.reviewedAt) === today && review.wasNew).map((review) => review.questionId)).size;
+  const newSeenToday = new Set(reviews.filter((review) => selectedQuestionIds.has(review.questionId) && localDay(review.reviewedAt) === today && review.wasNew).map((review) => review.questionId)).size;
   const newLimit = Math.max(0, newCardsPerDay - newSeenToday);
   const fresh = selectedQuestions.filter((question) => !reviewedIds.has(question.id) && unlocked.has(question.productId)).slice(0, newLimit);
   const combined = [...due, ...fresh];

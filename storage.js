@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js?v=1.0.8';
+import { CONFIG } from './config.js?v=1.0.10';
 
 const KEY = 'bistro-do-hlavy:v1';
 
@@ -11,6 +11,7 @@ const emptyState = () => ({
     newCardsPerDay: CONFIG.DEFAULT_NEW_CARDS_PER_DAY,
     theme: 'system',
     enabledQuestionTypes: ['mcq', 'flashcard', 'text', 'photo'],
+    enabledProductIds: null,
   },
 });
 

@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.8';
-import { contentProvider } from '../content.js?v=1.0.8';
-import { storage } from '../storage.js?v=1.0.8';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.8';
+import { CONFIG } from '../config.js?v=1.0.10';
+import { contentProvider } from '../content.js?v=1.0.10';
+import { storage } from '../storage.js?v=1.0.10';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.10';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -9,7 +9,7 @@ import {
   evaluateText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.8';
+} from '../study.js?v=1.0.10';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -55,17 +55,29 @@ function updateProfileChip() {
   document.querySelector('#profile-initial').textContent = name.slice(0, 1).toLocaleUpperCase('cs');
 }
 
-function dueCount(now = new Date()) {
+function selectedProductIds() {
+  const available = new Set(state.products.map((product) => product.id));
+  const saved = state.settings?.enabledProductIds;
+  if (!Array.isArray(saved)) return [...available];
+  const valid = saved.filter((id) => available.has(id));
+  return valid.length ? valid : [...available];
+}
+
+function questionIsEnabled(question) {
   const enabledTypes = new Set(state.settings?.enabledQuestionTypes || Object.keys(TYPE_LABELS));
-  return state.questions.filter((question) => enabledTypes.has(question.type) && state.progress[question.id] && new Date(state.progress[question.id].due) <= now).length;
+  const enabledProducts = new Set(selectedProductIds());
+  return enabledTypes.has(question.type) && enabledProducts.has(question.productId);
+}
+
+function dueCount(now = new Date()) {
+  return state.questions.filter((question) => questionIsEnabled(question) && state.progress[question.id] && new Date(state.progress[question.id].due) <= now).length;
 }
 
 function tomorrowCount() {
   const end = new Date();
   end.setDate(end.getDate() + 1);
   end.setHours(23, 59, 59, 999);
-  const enabledTypes = new Set(state.settings?.enabledQuestionTypes || Object.keys(TYPE_LABELS));
-  return state.questions.filter((question) => enabledTypes.has(question.type) && state.progress[question.id] && new Date(state.progress[question.id].due) <= end).length;
+  return state.questions.filter((question) => questionIsEnabled(question) && state.progress[question.id] && new Date(state.progress[question.id].due) <= end).length;
 }
 
 function masteredProducts() {
@@ -117,6 +129,7 @@ function renderHome() {
     ...state,
     newCardsPerDay: state.settings.newCardsPerDay,
     enabledQuestionTypes: state.settings.enabledQuestionTypes,
+    enabledProductIds: selectedProductIds(),
   });
   const due = dueCount();
   const streak = calculateStreak(state.reviews);
@@ -169,9 +182,15 @@ function renderProducts() {
 
 function renderSettings() {
   const enabledQuestionTypes = state.settings.enabledQuestionTypes || Object.keys(TYPE_LABELS);
+  const enabledProductIds = selectedProductIds();
+  const enabledProductSet = new Set(enabledProductIds);
+  const categories = [...new Set(state.products.map((product) => product.category))];
   const describeQuestionTypes = (types) => types.length === QUESTION_TYPE_SETTINGS.length
     ? 'Mix všech'
     : `${types.length} ${types.length === 1 ? 'typ' : 'typy'} · ${types.map((type) => TYPE_LABELS[type]).join(', ')}`;
+  const describeProductScope = (count) => count === state.products.length
+    ? 'Všechny produkty'
+    : `${count} ${count === 1 ? 'produkt' : count >= 2 && count <= 4 ? 'produkty' : 'produktů'} z ${state.products.length}`;
   app.innerHTML = `
     <section class="page">
       <header class="page-header"><p class="eyebrow">Přizpůsobení a záloha</p><h1>Nastavení</h1></header>
@@ -202,6 +221,44 @@ function renderSettings() {
                   <span class="switch" aria-hidden="true"></span>
                 </label>`).join('')}
             </fieldset>
+          </div>
+        </details>
+        <details class="settings-card collapsible-settings" id="product-scope-details">
+          <summary>
+            <span><strong>Z čeho budete zkoušeni</strong><small id="product-scope-summary">${describeProductScope(enabledProductIds.length)}</small></span>
+            <span class="disclosure-icon" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="collapsible-content">
+            <p>Vyberte celé kategorie nebo jen jednotlivé produkty.</p>
+            <button id="select-all-products" class="mix-all-button ${enabledProductIds.length === state.products.length ? 'is-active' : ''}" type="button">
+              <span class="mix-icon" aria-hidden="true">◎</span>
+              <span><strong>Všechny produkty</strong><small>Otázky ze všech aktuálních i nově přidaných produktů.</small></span>
+              <span class="mix-check" aria-hidden="true">✓</span>
+            </button>
+            <section class="scope-section" aria-labelledby="category-heading">
+              <h3 id="category-heading">Kategorie</h3>
+              <div class="type-options">
+                ${categories.map((category) => {
+                  const products = state.products.filter((product) => product.category === category);
+                  const checked = products.every((product) => enabledProductSet.has(product.id));
+                  return `<label class="type-option scope-option">
+                    <span><strong>${escapeHtml(category)}</strong><small>${products.length} ${products.length === 1 ? 'produkt' : 'produkty'}</small></span>
+                    <input type="checkbox" name="product-category" value="${escapeHtml(category)}" ${checked ? 'checked' : ''}>
+                    <span class="switch" aria-hidden="true"></span>
+                  </label>`;
+                }).join('')}
+              </div>
+            </section>
+            <section class="scope-section" aria-labelledby="product-heading">
+              <h3 id="product-heading">Jednotlivé produkty</h3>
+              <div class="type-options">
+                ${state.products.map((product) => `<label class="type-option scope-option">
+                  <span><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(product.category)}</small></span>
+                  <input type="checkbox" name="study-product" value="${product.id}" ${enabledProductSet.has(product.id) ? 'checked' : ''}>
+                  <span class="switch" aria-hidden="true"></span>
+                </label>`).join('')}
+              </div>
+            </section>
           </div>
         </details>
         <article class="settings-card">
@@ -241,6 +298,53 @@ function renderSettings() {
     document.querySelector('#question-types-summary').textContent = describeQuestionTypes(enabledQuestionTypes);
     showToast('Zapnutý mix všech typů.');
   });
+  const syncProductScopeControls = () => {
+    const selected = new Set([...document.querySelectorAll('input[name="study-product"]:checked')].map((input) => input.value));
+    document.querySelector('#select-all-products').classList.toggle('is-active', selected.size === state.products.length);
+    document.querySelector('#product-scope-summary').textContent = describeProductScope(selected.size);
+    document.querySelectorAll('input[name="product-category"]').forEach((checkbox) => {
+      const categoryProducts = state.products.filter((product) => product.category === checkbox.value);
+      const selectedCount = categoryProducts.filter((product) => selected.has(product.id)).length;
+      checkbox.checked = selectedCount === categoryProducts.length;
+      checkbox.indeterminate = selectedCount > 0 && selectedCount < categoryProducts.length;
+    });
+  };
+  const saveProductScope = async (message) => {
+    const ids = [...document.querySelectorAll('input[name="study-product"]:checked')].map((input) => input.value);
+    if (!ids.length) return false;
+    state.settings = await storage.saveSettings({ enabledProductIds: ids.length === state.products.length ? null : ids });
+    syncProductScopeControls();
+    await updateBadge();
+    showToast(message);
+    return true;
+  };
+  document.querySelector('#select-all-products').addEventListener('click', async () => {
+    document.querySelectorAll('input[name="study-product"]').forEach((checkbox) => { checkbox.checked = true; });
+    await saveProductScope('Zapnuté zkoušení ze všech produktů.');
+  });
+  document.querySelectorAll('input[name="study-product"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', async (event) => {
+      if (!await saveProductScope('Výběr produktů je uložený.')) {
+        event.target.checked = true;
+        syncProductScopeControls();
+        showToast('Alespoň jeden produkt musí zůstat zapnutý.');
+      }
+    });
+  });
+  document.querySelectorAll('input[name="product-category"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', async (event) => {
+      const categoryIds = state.products.filter((product) => product.category === event.target.value).map((product) => product.id);
+      document.querySelectorAll('input[name="study-product"]').forEach((productCheckbox) => {
+        if (categoryIds.includes(productCheckbox.value)) productCheckbox.checked = event.target.checked;
+      });
+      if (!await saveProductScope('Výběr kategorií je uložený.')) {
+        categoryIds.forEach((id) => { document.querySelector(`input[name="study-product"][value="${id}"]`).checked = true; });
+        syncProductScopeControls();
+        showToast('Alespoň jedna kategorie nebo jeden produkt musí zůstat zapnutý.');
+      }
+    });
+  });
+  syncProductScopeControls();
   document.querySelector('#theme').addEventListener('change', async (event) => {
     state.settings = await storage.saveSettings({ theme: event.target.value });
     applyTheme(state.settings.theme);
@@ -259,7 +363,7 @@ function openProduct(id) {
   const product = state.products.find((item) => item.id === id);
   if (!product) return;
   const allergens = product.allergens.length
-    ? product.allergens.map((allergenId) => `<span class="allergen-chip">${allergenId} · ${ALLERGENS[allergenId]}</span>`).join('')
+    ? product.allergens.map((allergenId) => `<span class="allergen-chip">${ALLERGENS[allergenId]}</span>`).join('')
     : '<span class="allergen-none">Žádné z 14 povinně značených alergenů EU</span>';
   const productFacts = [
     product.brand && ['Značka', product.brand],
@@ -292,6 +396,7 @@ function startStudy() {
     ...state,
     newCardsPerDay: state.settings.newCardsPerDay,
     enabledQuestionTypes: state.settings.enabledQuestionTypes,
+    enabledProductIds: selectedProductIds(),
   });
   if (!queue.length) return;
   state.session = { queue, index: 0, answers: [], revealed: false };

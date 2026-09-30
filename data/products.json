@@ -1,35 +1,5 @@
 [
   {
-    "id": "kureci-panini",
-    "name": "Kuřecí panini",
-    "category": "Teplé sendviče",
-    "ingredients": ["ciabatta", "grilované kuřecí prso", "mozzarella", "rajče", "rukola", "bazalkové pesto"],
-    "allergens": [1, 7, 8],
-    "preparation": ["Ciabattu rozřízni a potřete pestem.", "Přidej kuře, mozzarellu a rajče.", "Zapeč v kontaktním grilu 4 minuty.", "Po zapečení doplň rukolu a podávej."],
-    "salesTip": "Nabídni k němu rajčatovou polévku jako syté polední menu.",
-    "image": "img/products/kureci-panini.webp"
-  },
-  {
-    "id": "rajcatova-polevka",
-    "name": "Krémová rajčatová polévka",
-    "category": "Polévky",
-    "ingredients": ["rajčata", "zeleninový vývar", "cibule", "česnek", "smetana", "bazalka"],
-    "allergens": [7, 9],
-    "preparation": ["Porci promíchej a ohřej na 75 °C.", "Nalij do předehřáté misky.", "Ozdob smetanou a bazalkou."],
-    "salesTip": "Doporuč hostům, kteří chtějí lehčí oběd; skvěle se doplňuje s panini.",
-    "image": "img/products/rajcatova-polevka.webp"
-  },
-  {
-    "id": "boruvkovy-cheesecake",
-    "name": "Borůvkový cheesecake",
-    "category": "Dezerty",
-    "ingredients": ["sušenkový korpus", "smetanový sýr", "zakysaná smetana", "vejce", "cukr", "borůvky"],
-    "allergens": [1, 3, 7],
-    "preparation": ["Vyndej porci z chlazení těsně před podáváním.", "Polož na čistý dezertní talíř.", "Přidej lžičku a podávej bez ohřevu."],
-    "salesTip": "Nabídni ke kávě; ovocná chuť je příjemná i po vydatném jídle.",
-    "image": "img/products/boruvkovy-cheesecake.webp"
-  },
-  {
     "id": "konopny-olej-v-presu-250-ml",
     "name": "Konopný olej V PRESU 250 ml",
     "category": "Za studena lisované oleje",
@@ -60,7 +30,7 @@
     "ingredients": ["vařený hroznový mošt 75 %", "Aceto Balsamico di Modena IGP 20 % (vinný ocet, koncentrovaný hroznový mošt, barvivo E150d)", "modifikovaný kukuřičný škrob", "koncentrovaná třešňová šťáva 1 %", "přírodní aroma"],
     "allergens": [],
     "specifics": ["chráněné zeměpisné označení IGP", "hustá krémová konzistence", "vyvážená sladkokyselá chuť", "kód produktu 001060490", "EAN 8006165386029"],
-    "preparation": ["Použij přímo z lahve jako dochucení nebo dekoraci.", "Kombinuj s čerstvými sýry, uzeninami a ovocem.", "Hodí se také na zmrzlinu, panna cottu a další dezerty."],
+    "preparation": ["Použij malé množství přímo z lahve jako finální dochucení.", "Kombinuj s čerstvými sýry, uzeninami a ovocem.", "Hodí se také na zmrzlinu, panna cottu a další dezerty."],
     "brandInfo": "Casa Rinaldi od roku 1979 vyrábí, vybírá a distribuuje italské gastronomické speciality do celého světa.",
     "salesTip": "Nabídni jako univerzální italský krém k sýrovému prkénku i dezertům; třešeň zjemňuje kyselost balsamika.",
     "image": "img/products/casa-rinaldi-balsamico-tresen.webp",
