@@ -7,16 +7,34 @@
     "manufacturer": "Rodinná lisovna s.r.o.",
     "origin": "Dobříš, Česká republika",
     "description": "Jednodruhový RAW olej lisovaný za studena z českých semen konopí setého.",
-    "ingredients": ["100% konopný olej z českých semen Cannabis sativa"],
+    "ingredients": [
+      "100% konopný olej z českých semen Cannabis sativa"
+    ],
     "allergens": [],
-    "specifics": ["tmavě zelená barva", "výrazná oříšková chuť", "přirozené čištění sedimentací", "zdroj omega-3 a omega-6 mastných kyselin", "bohatý na vitamín E"],
-    "preparation": ["Používej především za studena do salátů, pomazánek, smoothies a kaší.", "Případné lehké zakalení je přirozené a nesnižuje kvalitu.", "Po otevření uchovávej do 20 °C mimo přímé sluneční světlo; lednice není nutná."],
+    "specifics": [
+      "tmavě zelená barva",
+      "výrazná oříšková chuť",
+      "přirozené čištění sedimentací",
+      "zdroj omega-3 a omega-6 mastných kyselin",
+      "bohatý na vitamín E"
+    ],
+    "preparation": [
+      "Používej především za studena do salátů, pomazánek, smoothies a kaší.",
+      "Případné lehké zakalení je přirozené a nesnižuje kvalitu.",
+      "Po otevření uchovávej do 20 °C mimo přímé sluneční světlo; lednice není nutná."
+    ],
     "brandInfo": "V PRESU je rodinná lisovna z Dobříše. Oleje lisuje za studena a u tradičních druhů používá semena od českých pěstitelů.",
     "salesTip": "Doporuč zákazníkovi, který hledá český olej do studené kuchyně s výraznou oříškovou chutí.",
     "image": "img/products/konopny-olej-v-presu.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.vpresu.cz/eshop/oleje/konopi-250ml" },
-      { "label": "Výrobce – o lisovně", "url": "https://www.vpresu.cz/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.vpresu.cz/eshop/oleje/konopi-250ml"
+      },
+      {
+        "label": "Výrobce – o lisovně",
+        "url": "https://www.vpresu.cz/"
+      }
     ]
   },
   {
@@ -27,16 +45,38 @@
     "manufacturer": "Alis S.r.l.",
     "origin": "Itálie",
     "description": "Hustý sladkokyselý krém s Aceto Balsamico di Modena IGP a koncentrovanou třešňovou šťávou.",
-    "ingredients": ["vařený hroznový mošt 75 %", "Aceto Balsamico di Modena IGP 20 % (vinný ocet, koncentrovaný hroznový mošt, barvivo E150d)", "modifikovaný kukuřičný škrob", "koncentrovaná třešňová šťáva 1 %", "přírodní aroma"],
+    "ingredients": [
+      "vařený hroznový mošt 75 %",
+      "Aceto Balsamico di Modena IGP 20 % (vinný ocet, koncentrovaný hroznový mošt, barvivo E150d)",
+      "modifikovaný kukuřičný škrob",
+      "koncentrovaná třešňová šťáva 1 %",
+      "přírodní aroma"
+    ],
     "allergens": [],
-    "specifics": ["chráněné zeměpisné označení IGP", "hustá krémová konzistence", "vyvážená sladkokyselá chuť", "kód produktu 001060490", "EAN 8006165386029"],
-    "preparation": ["Použij malé množství přímo z lahve jako finální dochucení.", "Kombinuj s čerstvými sýry, uzeninami a ovocem.", "Hodí se také na zmrzlinu, panna cottu a další dezerty."],
+    "specifics": [
+      "chráněné zeměpisné označení IGP",
+      "hustá krémová konzistence",
+      "vyvážená sladkokyselá chuť",
+      "kód produktu 001060490",
+      "EAN 8006165386029"
+    ],
+    "preparation": [
+      "Použij malé množství přímo z lahve jako finální dochucení.",
+      "Kombinuj s čerstvými sýry, uzeninami a ovocem.",
+      "Hodí se také na zmrzlinu, panna cottu a další dezerty."
+    ],
     "brandInfo": "Casa Rinaldi od roku 1979 vyrábí, vybírá a distribuuje italské gastronomické speciality do celého světa.",
     "salesTip": "Nabídni jako univerzální italský krém k sýrovému prkénku i dezertům; třešeň zjemňuje kyselost balsamika.",
     "image": "img/products/casa-rinaldi-balsamico-tresen.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://casarinaldi.com/de/product/cremiger-balsamico-essig-aus-modena-igp-mit-kirsche-aromatisiert/" },
-      { "label": "Výrobce – řada ochucených krémů", "url": "https://casarinaldi.com/groupage/creme-con-aceto-balsamico-di-modena-igp-aromatizzate/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://casarinaldi.com/de/product/cremiger-balsamico-essig-aus-modena-igp-mit-kirsche-aromatisiert/"
+      },
+      {
+        "label": "Výrobce – řada ochucených krémů",
+        "url": "https://casarinaldi.com/groupage/creme-con-aceto-balsamico-di-modena-igp-aromatizzate/"
+      }
     ]
   },
   {
@@ -47,16 +87,35 @@
     "manufacturer": "Rodinná lisovna s.r.o.",
     "origin": "Dobříš, Česká republika",
     "description": "Jednodruhový RAW olej lisovaný za studena z českých semen modrého máku.",
-    "ingredients": ["100% makový olej z českých semen modrého máku Papaver somniferum"],
+    "ingredients": [
+      "100% makový olej z českých semen modrého máku Papaver somniferum"
+    ],
     "allergens": [],
-    "specifics": ["výrazné makové aroma a chuť", "přirozené čištění sedimentací", "zdroj omega-6 mastných kyselin", "bohatý na vitamín E", "držitel značky Středočeská Regionální potravina", "neobsahuje opium"],
-    "preparation": ["Používej do sladkých dezertů, snídaňových kaší nebo na palačinky.", "Případné lehké zakalení je přirozené a nesnižuje kvalitu.", "Po otevření uchovávej do 20 °C mimo přímé sluneční světlo; lednice není nutná."],
+    "specifics": [
+      "výrazné makové aroma a chuť",
+      "přirozené čištění sedimentací",
+      "zdroj omega-6 mastných kyselin",
+      "bohatý na vitamín E",
+      "držitel značky Středočeská Regionální potravina",
+      "neobsahuje opium"
+    ],
+    "preparation": [
+      "Používej do sladkých dezertů, snídaňových kaší nebo na palačinky.",
+      "Případné lehké zakalení je přirozené a nesnižuje kvalitu.",
+      "Po otevření uchovávej do 20 °C mimo přímé sluneční světlo; lednice není nutná."
+    ],
     "brandInfo": "V PRESU je rodinná lisovna z Dobříše. Oleje lisuje za studena a u tradičních druhů používá semena od českých pěstitelů.",
     "salesTip": "Doporuč milovníkům máku jako neobvyklé dochucení sladkých jídel a snídaňových kaší.",
     "image": "img/products/makovy-olej-v-presu.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.vpresu.cz/eshop/oleje/modry-mak-250ml" },
-      { "label": "Výrobce – o lisovně", "url": "https://www.vpresu.cz/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.vpresu.cz/eshop/oleje/modry-mak-250ml"
+      },
+      {
+        "label": "Výrobce – o lisovně",
+        "url": "https://www.vpresu.cz/"
+      }
     ]
   },
   {
@@ -67,16 +126,49 @@
     "manufacturer": "MELEMEMASO s.r.o.",
     "origin": "Česká republika",
     "description": "Jemná kachní paštika s jablky a francouzskou jablečnou pálenkou Calvados.",
-    "ingredients": ["kachní játra 36 %", "pečené kachní maso 20 %", "jablka 17 %", "máslo 15 %", "kachní tuk 8 %", "Calvados", "cibule", "sůl", "pepř", "zázvor", "nové koření", "cukr", "pektin", "želatina"],
-    "allergens": [7],
-    "specifics": ["bez konzervantů a chemických přísad", "jablka z Litoměřicka", "kachní maso flambované Calvadosem", "ocenění Great Taste – jedna hvězda", "bez lepku"],
-    "preparation": ["Podávej vychlazenou s tmavým pečivem a čerstvě nakrájenou cibulí nebo tvrdým sýrem.", "Vhodným nápojem je suché bílé víno.", "Skladuj do 5 °C; po otevření uchovej v chladu a spotřebuj do 48 hodin."],
+    "ingredients": [
+      "kachní játra 36 %",
+      "pečené kachní maso 20 %",
+      "jablka 17 %",
+      "máslo 15 %",
+      "kachní tuk 8 %",
+      "Calvados",
+      "cibule",
+      "sůl",
+      "pepř",
+      "zázvor",
+      "nové koření",
+      "cukr",
+      "pektin",
+      "želatina"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "bez konzervantů a chemických přísad",
+      "jablka z Litoměřicka",
+      "kachní maso flambované Calvadosem",
+      "ocenění Great Taste – jedna hvězda",
+      "bez lepku"
+    ],
+    "preparation": [
+      "Podávej vychlazenou s tmavým pečivem a čerstvě nakrájenou cibulí nebo tvrdým sýrem.",
+      "Vhodným nápojem je suché bílé víno.",
+      "Skladuj do 5 °C; po otevření uchovej v chladu a spotřebuj do 48 hodin."
+    ],
     "brandInfo": "Melememaso je české řeznictví a výrobce masných specialit, který staví na poctivých surovinách a výrobě bez zbytečných chemických přísad.",
     "salesTip": "Zdůrazni vysoký podíl kachních jater, česká jablka a ocenění Great Taste; nabídni k tmavému pečivu nebo sýrovému prkénku.",
     "image": "img/products/kachni-pastika-calvados-melememaso.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.melememaso.cz/pastiky/kachni-pastika-s-calvadosem/6" },
-      { "label": "Výrobce – ocenění Great Taste", "url": "https://www.melememaso.cz/r/novinky/ziskali-jsme-great-taste-3" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.melememaso.cz/pastiky/kachni-pastika-s-calvadosem/6"
+      },
+      {
+        "label": "Výrobce – ocenění Great Taste",
+        "url": "https://www.melememaso.cz/r/novinky/ziskali-jsme-great-taste-3"
+      }
     ]
   },
   {
@@ -87,17 +179,43 @@
     "manufacturer": "Pairoj (Tang Sang Hah) Co., Ltd.",
     "origin": "Thajsko",
     "description": "Tradiční thajská rybí omáčka z fermentovaných ančoviček, která dodává jídlům slanou chuť umami.",
-    "ingredients": ["voda", "extrakt z ančoviček 65 %", "sůl", "cukr"],
-    "allergens": [4],
-    "specifics": ["fermentace ančoviček přibližně 12 až 18 měsíců", "bez přidaného glutamátu", "bez konzervantů", "bez přidaných barviv", "výrazná slaná chuť umami"],
-    "preparation": ["Dávkuj střídmě do woků, kari, marinád, polévek, dresinků nebo thajských omáček.", "Používej jako dochucovadlo; výrobek je připravený k okamžitému použití.", "Neskladuj v lednici, protože v chladu mohou vznikat krystalky soli."],
+    "ingredients": [
+      "voda",
+      "extrakt z ančoviček 65 %",
+      "sůl",
+      "cukr"
+    ],
+    "allergens": [
+      4
+    ],
+    "specifics": [
+      "fermentace ančoviček přibližně 12 až 18 měsíců",
+      "bez přidaného glutamátu",
+      "bez konzervantů",
+      "bez přidaných barviv",
+      "výrazná slaná chuť umami"
+    ],
+    "preparation": [
+      "Dávkuj střídmě do woků, kari, marinád, polévek, dresinků nebo thajských omáček.",
+      "Používej jako dochucovadlo; výrobek je připravený k okamžitému použití.",
+      "Neskladuj v lednici, protože v chladu mohou vznikat krystalky soli."
+    ],
     "brandInfo": "Tiparos je dlouholetá thajská značka společnosti Tang Sang Hah. Výrobce popisuje tradiční zrání rybí omáčky z ančoviček jako součást thajské kuchyně.",
     "salesTip": "Doporuč jako základní dochucovadlo pro autentickou thajskou kuchyni; stačí malé množství díky vysoké slanosti a intenzivnímu umami.",
     "image": "img/products/tiparos-rybi-omacka.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml" },
-      { "label": "Výrobce – tradiční fermentace", "url": "https://www.tiparos.com/news/view/0-30-%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A3%E0%B8%AA-%E0%B8%AB%E0%B8%A1%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B2%E0%B8%99-1-1-12-%E0%B8%9B%E0%B8%B5-%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1%E0%B9%83%E0%B8%AA%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%EF%BF%BD" },
-      { "label": "Distributor – deklarace složení", "url": "https://www.fairprice.com.sg/product/tiparos-fish-sauce-700ml-11943282" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml"
+      },
+      {
+        "label": "Výrobce – tradiční fermentace",
+        "url": "https://www.tiparos.com/news/view/0-30-%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A3%E0%B8%AA-%E0%B8%AB%E0%B8%A1%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B2%E0%B8%99-1-1-12-%E0%B8%9B%E0%B8%B5-%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1%E0%B9%83%E0%B8%AA%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%EF%BF%BD"
+      },
+      {
+        "label": "Distributor – deklarace složení",
+        "url": "https://www.fairprice.com.sg/product/tiparos-fish-sauce-700ml-11943282"
+      }
     ]
   },
   {
@@ -108,16 +226,34 @@
     "manufacturer": "Nutis S.r.l.",
     "origin": "Santa Maria la Carità, Kampánie, Itálie",
     "description": "Zrnková směs kávy Arabica a Robusta v neapolském stylu, určená především pro krémové a vyvážené espresso.",
-    "ingredients": ["pražená zrnková káva – směs Arabiky a Robusty"],
+    "ingredients": [
+      "pražená zrnková káva – směs Arabiky a Robusty"
+    ],
     "allergens": [],
-    "specifics": ["směs Arabiky a Robusty", "krémový a vyvážený chuťový profil", "neapolská tradice pražení", "balení s jednocestným ventilem pro ochranu aroma", "zrnková káva v balení 1 kg"],
-    "preparation": ["Umel bezprostředně před přípravou podle použitého kávovaru.", "Výrobce směs doporučuje především pro espresso o objemu přibližně 30 ml.", "Po otevření obal dobře uzavři a kávu chraň před teplem, vlhkostí a světlem."],
+    "specifics": [
+      "směs Arabiky a Robusty",
+      "krémový a vyvážený chuťový profil",
+      "neapolská tradice pražení",
+      "balení s jednocestným ventilem pro ochranu aroma",
+      "zrnková káva v balení 1 kg"
+    ],
+    "preparation": [
+      "Umel bezprostředně před přípravou podle použitého kávovaru.",
+      "Výrobce směs doporučuje především pro espresso o objemu přibližně 30 ml.",
+      "Po otevření obal dobře uzavři a kávu chraň před teplem, vlhkostí a světlem."
+    ],
     "brandInfo": "Caffè Barbaro je značka neapolské kávové tradice založená roku 1956. Od roku 2015 ji rozvíjí společnost Nutis z oblasti Kampánie.",
     "salesTip": "Doporuč zákazníkovi, který chce klasické italské espresso s výraznou cremou, plnějším tělem a vyváženou chutí.",
     "image": "img/products/caffe-barbaro-miscela-blu.webp",
     "sources": [
-      { "label": "Výrobce – katalog zrnkové kávy", "url": "https://www.venditalia.com/restricted-assets/digital-profiles/01_ATTACHMENTS/VEN26/GRANI-2026-69b96f0e80400.pdf.pdf" },
-      { "label": "Výrobce – historie značky", "url": "https://caffebarbaro.com/" }
+      {
+        "label": "Výrobce – katalog zrnkové kávy",
+        "url": "https://www.venditalia.com/restricted-assets/digital-profiles/01_ATTACHMENTS/VEN26/GRANI-2026-69b96f0e80400.pdf.pdf"
+      },
+      {
+        "label": "Výrobce – historie značky",
+        "url": "https://caffebarbaro.com/"
+      }
     ]
   },
   {
@@ -128,16 +264,39 @@
     "manufacturer": "Kitl s.r.o.",
     "origin": "Liberec–Vratislavice nad Nisou, Česká republika",
     "description": "Hustý grapefruitový sirup s ovocnou dužninou pro domácí limonády, horké nápoje, koktejly a dezerty.",
-    "ingredients": ["cukr", "grapefruitový koncentrát 13 %", "grapefruitová dužnina 5 %", "kyselina citronová", "sorban draselný", "přírodní aroma"],
+    "ingredients": [
+      "cukr",
+      "grapefruitový koncentrát 13 %",
+      "grapefruitová dužnina 5 %",
+      "kyselina citronová",
+      "sorban draselný",
+      "přírodní aroma"
+    ],
     "allergens": [],
-    "specifics": ["18 % deklarované grapefruitové složky", "obsahuje grapefruitovou dužninu", "před použitím se protřepává", "přirozený sediment, zákal nebo pěna nejsou na závadu", "EAN 8595251000869"],
-    "preparation": ["Pro studenou domácí limonádu řeď s vodou v poměru 1:10.", "Pro horký nápoj používej poměr 1:8; hodí se také do koktejlů a na dezerty.", "Chraň před mrazem a přímým sluncem; po otevření spotřebuj do 30 dní."],
+    "specifics": [
+      "18 % deklarované grapefruitové složky",
+      "obsahuje grapefruitovou dužninu",
+      "před použitím se protřepává",
+      "přirozený sediment, zákal nebo pěna nejsou na závadu",
+      "EAN 8595251000869"
+    ],
+    "preparation": [
+      "Pro studenou domácí limonádu řeď s vodou v poměru 1:10.",
+      "Pro horký nápoj používej poměr 1:8; hodí se také do koktejlů a na dezerty.",
+      "Chraň před mrazem a přímým sluncem; po otevření spotřebuj do 30 dní."
+    ],
     "brandInfo": "Kitl je český výrobce z libereckých Vratislavic nad Nisou. Řada Syrob zahrnuje husté ovocné a bylinné sirupy pro studené i horké nápoje.",
     "salesTip": "Nabídni jako výrazně ovocný základ domácí grepové limonády; zákazníkovi rovnou připomeň poměr 1 díl sirupu na 10 dílů vody.",
     "image": "img/products/kitl-syrob-grapefruit.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/" },
-      { "label": "Výrobce – řada Kitl Syrob", "url": "https://www.kitl.cz/vyrobky/kitl-syrob/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/"
+      },
+      {
+        "label": "Výrobce – řada Kitl Syrob",
+        "url": "https://www.kitl.cz/vyrobky/kitl-syrob/"
+      }
     ]
   },
   {
@@ -148,16 +307,51 @@
     "manufacturer": "ŠUFAN s.r.o.",
     "origin": "Olomouc, Česká republika",
     "description": "Bezlepková pečená granola s mrazem sušenými malinami, ořechy, semínky a kokosovými chipsy.",
-    "ingredients": ["bezlepkové ovesné vločky", "rýžový sirup", "kokos", "mandle", "kešu ořechy", "kokosové chipsy", "dýňová semínka", "lyofilizované maliny 4 %", "slunečnicová semínka", "olivový olej", "kokosový cukr", "amarantové vločky", "chia semínka", "pufované jáhly", "cejlonská skořice", "himálajská sůl"],
-    "allergens": [8],
-    "specifics": ["bezlepkové ovesné vločky", "4 % mrazem sušených malin", "bez umělých aromat a barviv", "pečená na olivovém oleji", "může obsahovat stopy mléka, arašídů, sezamu a dalších skořápkových plodů"],
-    "preparation": ["Podávej s mlékem nebo jogurtem, použij do kaše či jako rychlou svačinu.", "Po otevření obal vždy dobře uzavři a spotřebuj do 30 dní.", "Skladuj v suchu a chraň před přímým slunečním zářením."],
+    "ingredients": [
+      "bezlepkové ovesné vločky",
+      "rýžový sirup",
+      "kokos",
+      "mandle",
+      "kešu ořechy",
+      "kokosové chipsy",
+      "dýňová semínka",
+      "lyofilizované maliny 4 %",
+      "slunečnicová semínka",
+      "olivový olej",
+      "kokosový cukr",
+      "amarantové vločky",
+      "chia semínka",
+      "pufované jáhly",
+      "cejlonská skořice",
+      "himálajská sůl"
+    ],
+    "allergens": [
+      8
+    ],
+    "specifics": [
+      "bezlepkové ovesné vločky",
+      "4 % mrazem sušených malin",
+      "bez umělých aromat a barviv",
+      "pečená na olivovém oleji",
+      "může obsahovat stopy mléka, arašídů, sezamu a dalších skořápkových plodů"
+    ],
+    "preparation": [
+      "Podávej s mlékem nebo jogurtem, použij do kaše či jako rychlou svačinu.",
+      "Po otevření obal vždy dobře uzavři a spotřebuj do 30 dní.",
+      "Skladuj v suchu a chraň před přímým slunečním zářením."
+    ],
     "brandInfo": "ŠUFAN je český výrobce z Olomouce. Značka vznikla v roce 2014 a své ořechové výrobky, granoly a další potraviny vyrábí ve vlastní výrobně na Hané.",
     "salesTip": "Doporuč zákazníkovi, který hledá bezlepkovou křupavou snídani s výraznou přirozeně kyselkavou chutí malin.",
     "image": "img/products/sufan-granola-malinova.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177" },
-      { "label": "Výrobce – příběh značky", "url": "https://www.sufan.cz/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177"
+      },
+      {
+        "label": "Výrobce – příběh značky",
+        "url": "https://www.sufan.cz/"
+      }
     ]
   },
   {
@@ -168,16 +362,43 @@
     "manufacturer": "Bezva zdraví s.r.o.",
     "origin": "Staré Ždánice, Česká republika",
     "description": "Pečená směs bez obilných vloček z kokosu, rozinek, ořechů a semínek, slazená medem a jablečným koncentrátem.",
-    "ingredients": ["kokosové plátky 24 %", "rozinky 18 % se slunečnicovým olejem", "mandle a kešu ořechy 10 %", "slunečnicová, chia, sezamová, dýňová a neloupaná konopná semínka 34 %", "med", "jablečný koncentrát", "za studena lisovaný rostlinný olej"],
-    "allergens": [8, 11],
-    "specifics": ["neobsahuje obilné vločky", "základ tvoří kokos, ořechy a semínka", "slazené medem a jablečným koncentrátem", "uzavíratelný sáček se zipem", "může obsahovat stopy sóji, arašídů a dalších skořápkových plodů"],
-    "preparation": ["Přidej do jogurtu nebo k oblíbeným vločkám, případně jez samostatně jako křupavou svačinu.", "Skladuj v suchu a po každém použití sáček pečlivě uzavři.", "Po otevření spotřebuj do jednoho měsíce."],
+    "ingredients": [
+      "kokosové plátky 24 %",
+      "rozinky 18 % se slunečnicovým olejem",
+      "mandle a kešu ořechy 10 %",
+      "slunečnicová, chia, sezamová, dýňová a neloupaná konopná semínka 34 %",
+      "med",
+      "jablečný koncentrát",
+      "za studena lisovaný rostlinný olej"
+    ],
+    "allergens": [
+      8,
+      11
+    ],
+    "specifics": [
+      "neobsahuje obilné vločky",
+      "základ tvoří kokos, ořechy a semínka",
+      "slazené medem a jablečným koncentrátem",
+      "uzavíratelný sáček se zipem",
+      "může obsahovat stopy sóji, arašídů a dalších skořápkových plodů"
+    ],
+    "preparation": [
+      "Přidej do jogurtu nebo k oblíbeným vločkám, případně jez samostatně jako křupavou svačinu.",
+      "Skladuj v suchu a po každém použití sáček pečlivě uzavři.",
+      "Po otevření spotřebuj do jednoho měsíce."
+    ],
     "brandInfo": "Bezva Zdraví je česká rodinná výroba müsli, granol a kaší ze Starých Ždánic. Značka zdůrazňuje poctivé zpracování a výrobu v České republice.",
     "salesTip": "Nabídni lidem, kteří chtějí müsli bez vloček s vysokým podílem ořechů a semínek; upozorni, že obsahuje med a není veganské.",
     "image": "img/products/bezva-musli-spekane-paleo.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.bezva-zdravi.cz/spekane-musli/bezva-musli-spekane-paleo/" },
-      { "label": "Výrobce – o značce", "url": "https://www.bezva-zdravi.cz/o-nas/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/spekane-musli/bezva-musli-spekane-paleo/"
+      },
+      {
+        "label": "Výrobce – o značce",
+        "url": "https://www.bezva-zdravi.cz/o-nas/"
+      }
     ]
   },
   {
@@ -188,16 +409,470 @@
     "manufacturer": "Produkty Vladimír s.r.o.",
     "origin": "Dolní Nerestce, jižní Čechy, Česká republika",
     "description": "Ručně vyráběný kořeněný sirup určený především k ochucení kávy a mléčných kávových nápojů.",
-    "ingredients": ["cukr", "voda", "perníkové koření"],
+    "ingredients": [
+      "cukr",
+      "voda",
+      "perníkové koření"
+    ],
     "allergens": [],
-    "specifics": ["kořeněný sirup do kávy", "ruční výroba v jižních Čechách", "doporučené ředění 1:10", "balení ve skleněné lahvi", "EAN 8594223410903"],
-    "preparation": ["Přidej malé množství do latté, cappuccina nebo jiné kávy podle chuti.", "Při přípravě nápoje se orientuj podle doporučeného ředění 1:10.", "Skladuj v chladu a temnu."],
+    "specifics": [
+      "kořeněný sirup do kávy",
+      "ruční výroba v jižních Čechách",
+      "doporučené ředění 1:10",
+      "balení ve skleněné lahvi",
+      "EAN 8594223410903"
+    ],
+    "preparation": [
+      "Přidej malé množství do latté, cappuccina nebo jiné kávy podle chuti.",
+      "Při přípravě nápoje se orientuj podle doporučeného ředění 1:10.",
+      "Skladuj v chladu a temnu."
+    ],
     "brandInfo": "Produkty Vladimír vyrábějí v Dolních Nerestcích ovocné, bylinné a kávové sirupy. Značka staví na ruční výrobě a jednoduchém složení bez zbytečné chemie.",
     "salesTip": "Doporuč k latté nebo cappuccinu zákazníkovi, který má rád hřejivou chuť perníkového koření; hodí se zejména do podzimní a zimní nabídky.",
     "image": "img/products/vladimir-pernik-do-kafe.webp",
     "sources": [
-      { "label": "Výrobce – detail produktu", "url": "https://www.produkty-vladimir.cz/sirupy-do-kavy/sirup-dokafe-pernik/" },
-      { "label": "Výrobce – kontakty", "url": "https://www.produkty-vladimir.cz/kontakty/" }
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.produkty-vladimir.cz/sirupy-do-kavy/sirup-dokafe-pernik/"
+      },
+      {
+        "label": "Výrobce – kontakty",
+        "url": "https://www.produkty-vladimir.cz/kontakty/"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg",
+    "name": "Miscela d’Oro Espresso Gran Crema 1 kg",
+    "category": "Zrnková káva",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscela d’Oro S.p.A.",
+    "origin": "Messina, Sicílie, Itálie",
+    "description": "Italská zrnková směs pro intenzivní, vyvážené espresso s kompaktní sametovou cremou.",
+    "ingredients": [
+      "pražená zrnková káva – směs Arabiky a Robusty"
+    ],
+    "allergens": [],
+    "specifics": [
+      "původ kávových zrn Jižní Amerika a Asie",
+      "střední pražení",
+      "intenzivní a vyvážená chuť",
+      "tóny pražených ořechů, sušenek a whisky",
+      "určeno pro automatické i pákové espresso kávovary"
+    ],
+    "preparation": [
+      "Umel těsně před přípravou podle použitého kávovaru.",
+      "Použij především pro espresso v automatickém nebo pákovém kávovaru.",
+      "Po otevření obal dobře uzavři a skladuj v suchu, chladu a bez přístupu světla."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná sicilská pražírna založená roku 1946 rodinou Urbano v Messině.",
+    "salesTip": "Doporuč zákazníkovi, který chce intenzivní italské espresso s hustou cremou a oříškově sušenkovým profilem.",
+    "image": "img/products/miscela-doro-espresso-gran-crema.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.misceladoro.com/en/product/espresso-gran-crema-coffee-beans/"
+      },
+      {
+        "label": "Výrobce – historie značky",
+        "url": "https://www.misceladoro.com/en/company/"
+      }
+    ]
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg",
+    "name": "Kaffee Braun Espresso No1 1 kg",
+    "category": "Zrnková káva",
+    "brand": "Kaffee Braun",
+    "manufacturer": "Kaffee Braun GmbH",
+    "origin": "Mainaschaff, Bavorsko, Německo",
+    "description": "Zrnková espresso směs německé rodinné pražírny Kaffee Braun v balení označeném Espresso No1.",
+    "ingredients": [
+      "pražená zrnková káva"
+    ],
+    "allergens": [],
+    "specifics": [
+      "výrobek rodinné pražírny",
+      "tradiční dlouhé pražení v bubnové pražičce",
+      "káva pražená v Mainaschaffu",
+      "směs určená pro espresso",
+      "přesný poměr odrůd není na dostupném zdroji uveden"
+    ],
+    "preparation": [
+      "Umel těsně před přípravou.",
+      "Připravuj jako espresso v pákovém nebo automatickém kávovaru.",
+      "Skladuj těsně uzavřené v suchu, chladu a temnu."
+    ],
+    "brandInfo": "Kaffee Braun je rodinná pražírna z Mainaschaffu. Od roku 1986 používá šetrné dlouhé pražení a zdůrazňuje přímé vztahy s pěstiteli.",
+    "salesTip": "Představ jako německou řemeslně praženou espresso směs; netvrď konkrétní poměr Arabiky a Robusty, protože jej výrobce u tohoto staršího obalu neuvádí.",
+    "image": "img/products/kaffee-braun-espresso-no1.webp",
+    "sources": [
+      {
+        "label": "Výrobce – pražírna a její přístup",
+        "url": "https://kaffeebraun.com/roesterei/"
+      },
+      {
+        "label": "Výrobce – firemní údaje",
+        "url": "https://kaffeebraun.com/impressum/"
+      }
+    ]
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg",
+    "name": "La Brasiliana Europa 1 kg",
+    "category": "Zrnková káva",
+    "brand": "La Brasiliana",
+    "manufacturer": "Torrefazione La Brasiliana S.r.l.",
+    "origin": "Ferrara, Emilia-Romagna, Itálie",
+    "description": "Zrnková káva Europa od tradiční italské pražírny La Brasiliana z Ferrary.",
+    "ingredients": [
+      "pražená zrnková káva"
+    ],
+    "allergens": [],
+    "specifics": [
+      "italské pražení ve Ferraře",
+      "výrobce působí od roku 1948",
+      "rodinné receptury a kontrola směsí",
+      "balení 1 kg",
+      "přesný poměr kávových odrůd není na současném webu výrobce zveřejněn"
+    ],
+    "preparation": [
+      "Umel až těsně před přípravou.",
+      "Použij pro espresso nebo automatický kávovar podle nastavení mletí.",
+      "Obal po otevření dobře uzavírej a chraň před světlem, vlhkostí a teplem."
+    ],
+    "brandInfo": "Torrefazione La Brasiliana vznikla ve Ferraře roku 1948. Rodinná pražírna pracuje s vlastními směsmi a věnuje se především gastronomii.",
+    "salesTip": "Nabídni jako tradiční italskou gastronomickou kávu z rodinné pražírny ve Ferraře.",
+    "image": "img/products/la-brasiliana-europa.webp",
+    "sources": [
+      {
+        "label": "Výrobce – o pražírně",
+        "url": "https://www.labrasiliana.it/en/visit-our-company/"
+      },
+      {
+        "label": "Výrobce – příprava kávy",
+        "url": "https://www.labrasiliana.it/buono-come-al-bar-i-consigli-de-la-brasiliana-per-preparare-un-caffe-delizioso/"
+      }
+    ]
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "name": "Teahouse Exclusives Assam GFBOP 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "Assam, Indie",
+    "description": "Černý listový čaj z indického Assamu v prémiových jednodávkových sáčcích.",
+    "ingredients": [
+      "černý čaj Assam"
+    ],
+    "allergens": [],
+    "specifics": [
+      "černý čaj z oblasti Assam",
+      "označení GFBOP popisuje třídu listu",
+      "15 prémiových čajových sáčků",
+      "plná sladově výrazná chuť",
+      "řada Luxury Tea Bag"
+    ],
+    "preparation": [
+      "Jeden sáček zalij čerstvou vroucí vodou.",
+      "Nech louhovat přibližně 3 až 5 minut podle požadované síly.",
+      "Podávej samotný nebo s trochou mléka."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který chce plný klasický černý čaj; Assam se hodí i s mlékem.",
+    "image": "img/products/teahouse-exclusives-assam-gfbop.webp",
+    "sources": [
+      {
+        "label": "Výrobce – sortiment Teahouse Exclusives",
+        "url": "https://www.juicesolutions.eu/teahouse-exclusives_1"
+      },
+      {
+        "label": "Výrobce – produktový list řady",
+        "url": "https://www.juicesolutions.eu/content/1/files/12_2ebb0ef_Productsheet_Teahouse_Exclusives.pdf"
+      }
+    ]
+  },
+  {
+    "id": "chicory-cup-instant-100-g",
+    "name": "Chicory Cup instantní čekankový nápoj 100 g",
+    "category": "Alternativy kávy",
+    "brand": "Chicory Cup",
+    "manufacturer": "GRANA sp. z o.o.",
+    "origin": "Polsko",
+    "description": "Instantní nápoj ze 100% praženého kořene čekanky s kávovým charakterem, přirozeně bez kofeinu.",
+    "ingredients": [
+      "100% pražený kořen čekanky"
+    ],
+    "allergens": [],
+    "specifics": [
+      "přirozeně bez kofeinu",
+      "bez lepku",
+      "bez GMO",
+      "zdroj vlákniny",
+      "instantní rozpustný prášek"
+    ],
+    "preparation": [
+      "Do šálku dej 2 čajové lžičky, přibližně 3 g.",
+      "Zalij horkou, ale ne vroucí vodou a promíchej.",
+      "Podle chuti přidej mléko nebo cukr."
+    ],
+    "brandInfo": "Chicory Cup vyrábí polská společnost GRANA, která se specializuje na rozpustné obilné a čekankové nápoje.",
+    "salesTip": "Nabídni lidem, kteří hledají teplý nápoj podobný kávě, ale bez kofeinu a s vysokým obsahem vlákniny.",
+    "image": "img/products/chicory-cup-instant-100-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – produkt a příprava",
+        "url": "https://chicorycup.com/"
+      },
+      {
+        "label": "Výrobce GRANA",
+        "url": "https://grana.pl/en/"
+      }
+    ]
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g",
+    "name": "Dr. Oetker Bio Kakao 90 g",
+    "category": "Kakao a pečení",
+    "brand": "Dr. Oetker",
+    "manufacturer": "Dr. Oetker s.r.o.",
+    "origin": "Česká republika",
+    "description": "Holandské bio kakao se sníženým obsahem tuku, výraznou chutí a hnědočervenou barvou.",
+    "ingredients": [
+      "kakaový prášek se sníženým obsahem tuku",
+      "regulátor kyselosti: uhličitan draselný"
+    ],
+    "allergens": [],
+    "specifics": [
+      "100% holandské bio kakao",
+      "kakao se sníženým obsahem tuku",
+      "surovina z certifikovaných bio farem",
+      "může obsahovat stopy mléka",
+      "vhodné k pečení i přípravě nápojů"
+    ],
+    "preparation": [
+      "Použij podle konkrétního receptu do těst, krémů a dezertů.",
+      "Lze přidat do smoothie, kaší, horkého kakaa nebo čokolády.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Dr. Oetker je mezinárodní potravinářská značka založená roku 1891. Českou nabídku zajišťuje Dr. Oetker s.r.o. z Kladna.",
+    "salesTip": "Doporuč zákazníkovi, který hledá bio kakao holandského typu pro pečení, kaše i horké nápoje.",
+    "image": "img/products/dr-oetker-bio-kakao-90-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://droetker.staging.back2flash.com/cs/produkty/bio-kakao-90g"
+      },
+      {
+        "label": "Výrobce – přehled kakaa",
+        "url": "https://www.oetker.cz/produktu/s/peceni/prisady-na-peceni/kakao"
+      }
+    ]
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "name": "Bio nebio Javorový sirup Grade C 250 ml",
+    "category": "Sirupy a sladidla",
+    "brand": "Bio nebio",
+    "manufacturer": "bio nebio s.r.o.",
+    "origin": "Kanada",
+    "description": "Tmavší bio javorový sirup Grade C s výraznou javorovou chutí, vyrobený zahuštěním mízy cukrového javoru.",
+    "ingredients": [
+      "100% zahuštěná míza z bio javoru cukrového"
+    ],
+    "allergens": [],
+    "specifics": [
+      "100% javorový sirup",
+      "bio kvalita",
+      "tmavší třída Grade C",
+      "výraznější chuť než světlé třídy",
+      "země původu Kanada"
+    ],
+    "preparation": [
+      "Použij na palačinky, lívance, kaše, müsli, jogurt nebo zmrzlinu.",
+      "Lze použít jako alternativu rafinovaného cukru.",
+      "Po otevření skladuj v lednici."
+    ],
+    "brandInfo": "Bio nebio je česká společnost zaměřená na biopotraviny, fair-trade suroviny a produkty s jednoduchým složením.",
+    "salesTip": "Zdůrazni 100% bio javorovou mízu a plnější chuť tmavší třídy Grade C.",
+    "image": "img/products/bio-nebio-javorovy-sirup-grade-c-250-ml.webp",
+    "sources": [
+      {
+        "label": "Deklarace produktu Bio nebio",
+        "url": "https://www.potravinybezlepku.cz/seznam-potravin/javorovy-sirup-grade-c/"
+      },
+      {
+        "label": "Prodejce – detail a použití",
+        "url": "https://eshop.sklizeno.cz/bio-javorovy-sirup-grade-c-250-ml-p108364"
+      }
+    ]
+  },
+  {
+    "id": "kavova-mandlovka-200-ml",
+    "name": "Kávová Mandlovka 200 ml",
+    "category": "Likéry",
+    "brand": "Mandlovka",
+    "manufacturer": "Hustopečská mandlárna s.r.o.",
+    "origin": "Hustopeče, Česká republika",
+    "description": "Likér spojující chuť kávy a hořkých mandlí v cestovní lahvi o objemu 200 ml.",
+    "ingredients": [
+      "velejemný neutrální líh",
+      "přírodní kávové aroma",
+      "kulér",
+      "cukr",
+      "přírodní hořkomandlové aroma"
+    ],
+    "allergens": [
+      8
+    ],
+    "specifics": [
+      "25 % alkoholu",
+      "spojení kávy a mandlí",
+      "objem 200 ml",
+      "výrobek Hustopečské mandlárny",
+      "bronz v Czech National Spirits Competition 2025"
+    ],
+    "preparation": [
+      "Podávej samostatně mírně vychlazenou nebo s ledem.",
+      "Lze použít do míchaných nápojů nebo jako doplněk kávového dezertu.",
+      "Skladuj uzavřené mimo přímé sluneční světlo."
+    ],
+    "brandInfo": "Hustopečská mandlárna navazuje na tradici mandloní v Hustopečích a vyrábí Mandlovku i další mandlové speciality.",
+    "salesTip": "Nabídni jako moravský kávovo-mandlový likér nebo regionální dárek z Hustopečí.",
+    "image": "img/products/kavova-mandlovka-200-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mandlarna.cz/kavova-mandlovka-0-2l"
+      },
+      {
+        "label": "Výrobce – příběh Mandlovky",
+        "url": "https://www.mandlarna.cz/"
+      }
+    ]
+  },
+  {
+    "id": "habla-del-silencio-750-ml",
+    "name": "Habla del Silencio 750 ml",
+    "category": "Červená vína",
+    "brand": "HABLA",
+    "manufacturer": "Bodegas HABLA",
+    "origin": "Trujillo, Extremadura, Španělsko",
+    "description": "Suché červené víno z odrůd Syrah, Cabernet Sauvignon a Tempranillo, zrající osm měsíců ve francouzském dubu.",
+    "ingredients": [
+      "víno z hroznů odrůd Syrah, Cabernet Sauvignon a Tempranillo",
+      "siřičitany"
+    ],
+    "allergens": [
+      12
+    ],
+    "specifics": [
+      "kupáž tří modrých odrůd",
+      "8 měsíců ve francouzském dubu",
+      "ekologické vinohradnictví",
+      "13,5 % alkoholu",
+      "tóny rybízu, třešní, pepře, moka a rozmarýnu"
+    ],
+    "preparation": [
+      "Podávej přibližně při 16 až 18 °C.",
+      "Před podáváním nech víno krátce nadechnout ve sklenici nebo karafě.",
+      "Kombinuj s červeným masem, vyzrálými sýry nebo výraznějšími tapas."
+    ],
+    "brandInfo": "Bodegas HABLA je moderní vinařství z Trujilla v Extremaduře, známé minimalistickými lahvemi a ekologickým přístupem k vinicím.",
+    "salesTip": "Doporuč jako výrazné, ale přístupné španělské červené s ovocnými, kořenitými a lehce moka tóny.",
+    "image": "img/products/habla-del-silencio-750-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bodegashabla.com/en/product/habla-del-silencio/"
+      },
+      {
+        "label": "Výrobce – vinařství",
+        "url": "https://www.bodegashabla.com/en/"
+      }
+    ]
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml",
+    "name": "Honoro Vera Ecológico Monastrell 750 ml",
+    "category": "Červená vína",
+    "brand": "Honoro Vera",
+    "manufacturer": "Bodegas Juan Gil",
+    "origin": "Jumilla, Murcia, Španělsko",
+    "description": "Mladé ekologické červené víno z odrůdy Monastrell z vinic na chudých vápencových půdách oblasti Jumilla.",
+    "ingredients": [
+      "víno z hroznů odrůdy Monastrell",
+      "siřičitany"
+    ],
+    "allergens": [
+      12
+    ],
+    "specifics": [
+      "100% Monastrell",
+      "certifikované ekologické vinice",
+      "D.O.P. Jumilla",
+      "zrání v nerezových tancích bez uvedeného sudu",
+      "ovocný, květinový a balsamikový profil"
+    ],
+    "preparation": [
+      "Podávej při 15 až 18 °C.",
+      "Hodí se k rýži, těstovinám, houbám, luštěninám, sýrům a grilovanému masu.",
+      "Skladuj bez cizích pachů při teplotě nejvýše kolem 18 °C."
+    ],
+    "brandInfo": "Honoro Vera patří do rodinné skupiny Gil Family Estates. Tuto variantu vyrábí Bodegas Juan Gil v oblasti Jumilla.",
+    "salesTip": "Nabídni jako svěží ekologický Monastrell s ovocným charakterem a širokým využitím k jídlu.",
+    "image": "img/products/honoro-vera-monastrell-750-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://store.gilfamily.es/products/item/honoro_vera_ecologico/en"
+      },
+      {
+        "label": "Výrobce – vinařství Juan Gil",
+        "url": "https://gilfamily.es/en/wineries/bodegas-juan-gil/"
+      }
+    ]
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml",
+    "name": "Condado de Oriza Roble 750 ml",
+    "category": "Červená vína",
+    "brand": "Condado de Oriza",
+    "manufacturer": "Félix Solís Avantis / Pagos del Rey",
+    "origin": "Ribera del Duero, Španělsko",
+    "description": "Červené víno z Tempranilla z oblasti Ribera del Duero, zrající šest měsíců v americkém dubu.",
+    "ingredients": [
+      "víno z hroznů odrůdy Tempranillo",
+      "siřičitany"
+    ],
+    "allergens": [
+      12
+    ],
+    "specifics": [
+      "100% Tempranillo neboli Tinta del País",
+      "D.O. Ribera del Duero",
+      "6 měsíců v americkém dubu",
+      "13,5 % alkoholu",
+      "tóny třešní, švestek, sladkého koření, lékořice a pražené kávy"
+    ],
+    "preparation": [
+      "Podávej při 16 až 17 °C.",
+      "Kombinuj s jehněčím, empanadas, vyzrálými a polotvrdými sýry nebo datlemi ve slanině.",
+      "Skladuj vleže v chladu, temnu a bez teplotních výkyvů."
+    ],
+    "brandInfo": "Condado de Oriza je značka skupiny Félix Solís Avantis. Vína vznikají v oblasti Ribera del Duero z odrůdy Tempranillo.",
+    "salesTip": "Doporuč zákazníkovi, který chce španělské Tempranillo s ovocem, kořením a zřetelným vlivem dubového sudu.",
+    "image": "img/products/condado-de-oriza-roble-750-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/"
+      },
+      {
+        "label": "Výrobce – značka Condado de Oriza",
+        "url": "https://felixsolisavantis.com/en/wine-brand/condado-de-oriza/"
+      }
     ]
   }
 ]

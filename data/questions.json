@@ -4,7 +4,12 @@
     "productId": "konopny-olej-v-presu-250-ml",
     "type": "mcq",
     "prompt": "Z čeho je konopný olej V PRESU vyroben?",
-    "options": ["Z českých semen konopí setého", "Z konopných listů", "Z oliv a konopného aroma", "Ze semen modrého máku"],
+    "options": [
+      "Z českých semen konopí setého",
+      "Z konopných listů",
+      "Z oliv a konopného aroma",
+      "Ze semen modrého máku"
+    ],
     "answer": "Z českých semen konopí setého",
     "explanation": "Jde o 100% olej lisovaný za studena z českých semen Cannabis sativa."
   },
@@ -31,7 +36,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/konopny-olej-v-presu.webp",
-    "options": ["Konopný olej V PRESU", "Makový olej V PRESU", "Rybí omáčka Tiparos", "Balzamikový krém Casa Rinaldi"],
+    "options": [
+      "Konopný olej V PRESU",
+      "Makový olej V PRESU",
+      "Rybí omáčka Tiparos",
+      "Balzamikový krém Casa Rinaldi"
+    ],
     "answer": "Konopný olej V PRESU",
     "explanation": "Poznáš jej podle zeleného nápisu KONOPÍ a označení RAW."
   },
@@ -40,7 +50,12 @@
     "productId": "konopny-olej-v-presu-250-ml",
     "type": "mcq",
     "prompt": "Jak se má konopný olej po otevření skladovat?",
-    "options": ["Do 20 °C mimo přímé slunce", "V mrazáku", "Vždy v lednici pod 5 °C", "Na slunném místě"],
+    "options": [
+      "Do 20 °C mimo přímé slunce",
+      "V mrazáku",
+      "Vždy v lednici pod 5 °C",
+      "Na slunném místě"
+    ],
     "answer": "Do 20 °C mimo přímé slunce",
     "explanation": "Výrobce uvádí, že lednice není nutná; důležitá je teplota do 20 °C a ochrana před sluncem."
   },
@@ -57,7 +72,12 @@
     "productId": "casa-rinaldi-balsamico-tresen-150-ml",
     "type": "mcq",
     "prompt": "Která surovina tvoří 75 % třešňového balzamikového krému?",
-    "options": ["Vařený hroznový mošt", "Třešňová šťáva", "Vinný ocet", "Kukuřičný škrob"],
+    "options": [
+      "Vařený hroznový mošt",
+      "Třešňová šťáva",
+      "Vinný ocet",
+      "Kukuřičný škrob"
+    ],
     "answer": "Vařený hroznový mošt",
     "explanation": "Základem krému je 75 % vařeného hroznového moštu."
   },
@@ -84,7 +104,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/casa-rinaldi-balsamico-tresen.webp",
-    "options": ["Třešňový balzamikový krém Casa Rinaldi", "Rybí omáčka Tiparos", "Konopný olej V PRESU", "Kachní paštika s Calvadosem"],
+    "options": [
+      "Třešňový balzamikový krém Casa Rinaldi",
+      "Rybí omáčka Tiparos",
+      "Konopný olej V PRESU",
+      "Kachní paštika s Calvadosem"
+    ],
     "answer": "Třešňový balzamikový krém Casa Rinaldi",
     "explanation": "Na etiketě jsou třešně a nápis gusto ciliegia."
   },
@@ -93,7 +118,12 @@
     "productId": "casa-rinaldi-balsamico-tresen-150-ml",
     "type": "mcq",
     "prompt": "Kolik koncentrované třešňové šťávy krém obsahuje?",
-    "options": ["1 %", "5 %", "20 %", "75 %"],
+    "options": [
+      "1 %",
+      "5 %",
+      "20 %",
+      "75 %"
+    ],
     "answer": "1 %",
     "explanation": "Třešňové aroma doplňuje 1 % koncentrované třešňové šťávy."
   },
@@ -110,7 +140,12 @@
     "productId": "makovy-olej-v-presu-250-ml",
     "type": "mcq",
     "prompt": "Z čeho je makový olej V PRESU vyroben?",
-    "options": ["Z českých semen modrého máku", "Z makových květů", "Z vlašských ořechů", "Z konopných semen"],
+    "options": [
+      "Z českých semen modrého máku",
+      "Z makových květů",
+      "Z vlašských ořechů",
+      "Z konopných semen"
+    ],
     "answer": "Z českých semen modrého máku",
     "explanation": "Jde o 100% olej lisovaný za studena z českého modrého máku Papaver somniferum."
   },
@@ -137,7 +172,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/makovy-olej-v-presu.webp",
-    "options": ["Makový olej V PRESU", "Konopný olej V PRESU", "Třešňový balzamikový krém Casa Rinaldi", "Rybí omáčka Tiparos"],
+    "options": [
+      "Makový olej V PRESU",
+      "Konopný olej V PRESU",
+      "Třešňový balzamikový krém Casa Rinaldi",
+      "Rybí omáčka Tiparos"
+    ],
     "answer": "Makový olej V PRESU",
     "explanation": "Poznáš jej podle fialového nápisu MODRÝ MÁK a označení RAW."
   },
@@ -146,7 +186,12 @@
     "productId": "makovy-olej-v-presu-250-ml",
     "type": "mcq",
     "prompt": "Jaké ocenění nebo značku makový olej získal?",
-    "options": ["Středočeská Regionální potravina", "Great Taste tři hvězdy", "Česká biopotravina roku", "Protected Designation of Origin"],
+    "options": [
+      "Středočeská Regionální potravina",
+      "Great Taste tři hvězdy",
+      "Česká biopotravina roku",
+      "Protected Designation of Origin"
+    ],
     "answer": "Středočeská Regionální potravina",
     "explanation": "Výrobce uvádí, že makový olej je držitelem značky Středočeská Regionální potravina."
   },
@@ -163,7 +208,12 @@
     "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
     "type": "mcq",
     "prompt": "Která surovina má v kachní paštice nejvyšší podíl?",
-    "options": ["Kachní játra 36 %", "Pečené kachní maso 20 %", "Jablka 17 %", "Máslo 15 %"],
+    "options": [
+      "Kachní játra 36 %",
+      "Pečené kachní maso 20 %",
+      "Jablka 17 %",
+      "Máslo 15 %"
+    ],
     "answer": "Kachní játra 36 %",
     "explanation": "Největší podíl tvoří kachní játra – 36 %."
   },
@@ -190,7 +240,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/kachni-pastika-calvados-melememaso.webp",
-    "options": ["Kachní paštika s Calvadosem", "Kuřecí paštika s koňakem", "Kachní sádlo", "Jablečné čatní"],
+    "options": [
+      "Kachní paštika s Calvadosem",
+      "Kuřecí paštika s koňakem",
+      "Kachní sádlo",
+      "Jablečné čatní"
+    ],
     "answer": "Kachní paštika s Calvadosem",
     "explanation": "Název KACHNÍ CALVADOS je výrazně uvedený na přední etiketě."
   },
@@ -199,7 +254,12 @@
     "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
     "type": "mcq",
     "prompt": "Jaké ocenění tato paštika získala?",
-    "options": ["Jednu hvězdu Great Taste", "Středočeskou Regionální potravinu", "Michelinskou hvězdu", "Zlatou medaili IGP"],
+    "options": [
+      "Jednu hvězdu Great Taste",
+      "Středočeskou Regionální potravinu",
+      "Michelinskou hvězdu",
+      "Zlatou medaili IGP"
+    ],
     "answer": "Jednu hvězdu Great Taste",
     "explanation": "Kachní paštika s Calvadosem získala v soutěži Great Taste jednu hvězdu."
   },
@@ -216,7 +276,12 @@
     "productId": "tiparos-rybi-omacka-700-ml",
     "type": "mcq",
     "prompt": "Z jaké ryby se vyrábí omáčka Tiparos?",
-    "options": ["Z ančoviček", "Z lososa", "Z tuňáka", "Z makrely"],
+    "options": [
+      "Z ančoviček",
+      "Z lososa",
+      "Z tuňáka",
+      "Z makrely"
+    ],
     "answer": "Z ančoviček",
     "explanation": "Základem je extrakt z fermentovaných ančoviček."
   },
@@ -243,7 +308,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/tiparos-rybi-omacka.webp",
-    "options": ["Rybí omáčka Tiparos", "Sójová omáčka", "Třešňový balzamikový krém", "Konopný olej"],
+    "options": [
+      "Rybí omáčka Tiparos",
+      "Sójová omáčka",
+      "Třešňový balzamikový krém",
+      "Konopný olej"
+    ],
     "answer": "Rybí omáčka Tiparos",
     "explanation": "Poznáš ji podle žlutočervené etikety TIPAROS FISH SAUCE."
   },
@@ -252,7 +322,12 @@
     "productId": "tiparos-rybi-omacka-700-ml",
     "type": "mcq",
     "prompt": "Proč se omáčka Tiparos nemá ukládat do lednice?",
-    "options": ["V chladu mohou vznikat krystalky soli", "Ztratila by rybí alergen", "Změnila by se na ocet", "Láhev by se vždy rozbila"],
+    "options": [
+      "V chladu mohou vznikat krystalky soli",
+      "Ztratila by rybí alergen",
+      "Změnila by se na ocet",
+      "Láhev by se vždy rozbila"
+    ],
     "answer": "V chladu mohou vznikat krystalky soli",
     "explanation": "Výrobek se skladuje mimo lednici; krystalky soli v chladu nejsou známkou zkažení."
   },
@@ -269,7 +344,12 @@
     "productId": "caffe-barbaro-miscela-blu-1-kg",
     "type": "mcq",
     "prompt": "Z jakých dvou druhů kávy je Caffè Barbaro Miscela Blu namíchaná?",
-    "options": ["Z Arabiky a Robusty", "Jen z Arabiky", "Jen z Robusty", "Z Liberiky a Robusty"],
+    "options": [
+      "Z Arabiky a Robusty",
+      "Jen z Arabiky",
+      "Jen z Robusty",
+      "Z Liberiky a Robusty"
+    ],
     "answer": "Z Arabiky a Robusty",
     "explanation": "Výrobce uvádí kombinaci kvalit Arabica a Robusta."
   },
@@ -296,7 +376,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/caffe-barbaro-miscela-blu.webp",
-    "options": ["Caffè Barbaro Miscela Blu", "Caffè Barbaro Miscela Oro", "Europa Decaffeinato", "Káva Mandlovka"],
+    "options": [
+      "Caffè Barbaro Miscela Blu",
+      "Caffè Barbaro Miscela Oro",
+      "Europa Decaffeinato",
+      "Káva Mandlovka"
+    ],
     "answer": "Caffè Barbaro Miscela Blu",
     "explanation": "Poznáš ji podle bílého obalu s výrazným modrým kosočtvercovým vzorem."
   },
@@ -305,7 +390,12 @@
     "productId": "caffe-barbaro-miscela-blu-1-kg",
     "type": "mcq",
     "prompt": "V jaké podobě a velikosti je tato Miscela Blu?",
-    "options": ["Zrnková káva 1 kg", "Mletá káva 250 g", "ESE pody 150 kusů", "Instantní káva 500 g"],
+    "options": [
+      "Zrnková káva 1 kg",
+      "Mletá káva 250 g",
+      "ESE pody 150 kusů",
+      "Instantní káva 500 g"
+    ],
     "answer": "Zrnková káva 1 kg",
     "explanation": "Jde o kilogramové balení celých pražených kávových zrn."
   },
@@ -322,7 +412,12 @@
     "productId": "kitl-syrob-grapefruit-500-ml",
     "type": "mcq",
     "prompt": "Kolik grapefruitového koncentrátu obsahuje Kitl Syrob Grapefruit?",
-    "options": ["13 %", "5 %", "18 %", "50 %"],
+    "options": [
+      "13 %",
+      "5 %",
+      "18 %",
+      "50 %"
+    ],
     "answer": "13 %",
     "explanation": "Ve složení je 13 % grapefruitového koncentrátu a dalších 5 % grapefruitové dužniny."
   },
@@ -349,7 +444,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/kitl-syrob-grapefruit.webp",
-    "options": ["Kitl Syrob Grapefruit", "Kitl Syrob Pomeranč", "Vladimír Pešnfrujt", "Javorový sirup"],
+    "options": [
+      "Kitl Syrob Grapefruit",
+      "Kitl Syrob Pomeranč",
+      "Vladimír Pešnfrujt",
+      "Javorový sirup"
+    ],
     "answer": "Kitl Syrob Grapefruit",
     "explanation": "Na přední etiketě je grapefruit a nápis SYROB GRAPEFRUIT."
   },
@@ -358,7 +458,12 @@
     "productId": "kitl-syrob-grapefruit-500-ml",
     "type": "mcq",
     "prompt": "Co udělat před použitím Kitl Syrobu Grapefruit?",
-    "options": ["Protřepat láhev", "Převařit celý obsah", "Uložit na hodinu do mrazáku", "Přecedit dužninu"],
+    "options": [
+      "Protřepat láhev",
+      "Převařit celý obsah",
+      "Uložit na hodinu do mrazáku",
+      "Přecedit dužninu"
+    ],
     "answer": "Protřepat láhev",
     "explanation": "Ovocné složky mohou přirozeně sedimentovat, proto výrobce doporučuje protřepání."
   },
@@ -375,7 +480,12 @@
     "productId": "sufan-granola-malinova-350-g",
     "type": "mcq",
     "prompt": "Kolik mrazem sušených malin obsahuje ŠUFAN Granola malinová?",
-    "options": ["4 %", "1 %", "10 %", "24 %"],
+    "options": [
+      "4 %",
+      "1 %",
+      "10 %",
+      "24 %"
+    ],
     "answer": "4 %",
     "explanation": "Výrobce uvádí 4 % lyofilizovaných malin, polovinu celých a polovinu ve formě prášku."
   },
@@ -402,7 +512,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/sufan-granola-malinova.webp",
-    "options": ["ŠUFAN Granola malinová", "Bezva müsli Spékané paleo", "ŠUFAN Granola čokoládová", "Ovesná kaše malinová"],
+    "options": [
+      "ŠUFAN Granola malinová",
+      "Bezva müsli Spékané paleo",
+      "ŠUFAN Granola čokoládová",
+      "Ovesná kaše malinová"
+    ],
     "answer": "ŠUFAN Granola malinová",
     "explanation": "Poznáš ji podle značky ŠUFAN a červeného pole s názvem Granola malinová."
   },
@@ -411,7 +526,12 @@
     "productId": "sufan-granola-malinova-350-g",
     "type": "mcq",
     "prompt": "Který olej se používá při pečení této granoly?",
-    "options": ["Olivový olej", "Palmový olej", "Řepkový olej", "Kokosový olej"],
+    "options": [
+      "Olivový olej",
+      "Palmový olej",
+      "Řepkový olej",
+      "Kokosový olej"
+    ],
     "answer": "Olivový olej",
     "explanation": "Výrobce uvádí, že granolu peče na olivovém oleji."
   },
@@ -428,7 +548,12 @@
     "productId": "bezva-musli-spekane-paleo-450-g",
     "type": "mcq",
     "prompt": "Čím se Bezva müsli Spékané paleo liší od běžného müsli?",
-    "options": ["Neobsahuje obilné vločky", "Je tekuté", "Obsahuje jen ovesné vločky", "Připravuje se vařením"],
+    "options": [
+      "Neobsahuje obilné vločky",
+      "Je tekuté",
+      "Obsahuje jen ovesné vločky",
+      "Připravuje se vařením"
+    ],
     "answer": "Neobsahuje obilné vločky",
     "explanation": "Základ tvoří kokos, ořechy, semínka a rozinky, nikoli obilné vločky."
   },
@@ -455,7 +580,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/bezva-musli-spekane-paleo.webp",
-    "options": ["Bezva müsli Spékané paleo", "ŠUFAN Granola malinová", "Bezva müsli s ořechy", "Kokosové chipsy"],
+    "options": [
+      "Bezva müsli Spékané paleo",
+      "ŠUFAN Granola malinová",
+      "Bezva müsli s ořechy",
+      "Kokosové chipsy"
+    ],
     "answer": "Bezva müsli Spékané paleo",
     "explanation": "Poznáš je podle velkého nápisu BEZVA MÜSLI a červeného označení SPÉKANÉ PALEO."
   },
@@ -464,7 +594,12 @@
     "productId": "bezva-musli-spekane-paleo-450-g",
     "type": "mcq",
     "prompt": "Proč Bezva müsli Spékané paleo není vhodné pro vegany?",
-    "options": ["Obsahuje med", "Obsahuje mléko", "Obsahuje vejce", "Obsahuje ryby"],
+    "options": [
+      "Obsahuje med",
+      "Obsahuje mléko",
+      "Obsahuje vejce",
+      "Obsahuje ryby"
+    ],
     "answer": "Obsahuje med",
     "explanation": "Med je živočišného původu, proto výrobek není veganský."
   },
@@ -481,7 +616,12 @@
     "productId": "vladimir-pernik-do-kafe-500-ml",
     "type": "mcq",
     "prompt": "K čemu je sirup Vladimír Perník do kafe primárně určen?",
-    "options": ["K ochucení kávy", "K nakládání masa", "K přípravě salátové zálivky", "K dochucení polévek"],
+    "options": [
+      "K ochucení kávy",
+      "K nakládání masa",
+      "K přípravě salátové zálivky",
+      "K dochucení polévek"
+    ],
     "answer": "K ochucení kávy",
     "explanation": "Výrobce ho navrhl zejména pro latté a další kávové nápoje."
   },
@@ -508,7 +648,12 @@
     "type": "photo",
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/vladimir-pernik-do-kafe.webp",
-    "options": ["Vladimír Perník do kafe", "Vladimír Slaný karamel", "Kitl Syrob Grapefruit", "Javorový sirup"],
+    "options": [
+      "Vladimír Perník do kafe",
+      "Vladimír Slaný karamel",
+      "Kitl Syrob Grapefruit",
+      "Javorový sirup"
+    ],
     "answer": "Vladimír Perník do kafe",
     "explanation": "Na tmavé lahvi je značka Vladimír a motiv perníčku v šálku."
   },
@@ -517,7 +662,12 @@
     "productId": "vladimir-pernik-do-kafe-500-ml",
     "type": "mcq",
     "prompt": "Jaké ředění výrobce u sirupu doporučuje?",
-    "options": ["1:10", "1:1", "1:3", "1:20"],
+    "options": [
+      "1:10",
+      "1:1",
+      "1:3",
+      "1:20"
+    ],
     "answer": "1:10",
     "explanation": "Na jeden díl sirupu připadá přibližně deset dílů nápoje."
   },
@@ -528,5 +678,753 @@
     "prompt": "Jak sirup Perník do kafe stručně nabídneš zákazníkovi?",
     "answer": "Ručně vyráběný jihočeský sirup s hřejivým perníkovým kořením, vhodný hlavně do latté a cappuccina.",
     "explanation": "Tato věta shrnuje původ, výrobu, chuť i hlavní použití."
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q1",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Miscela d’Oro Espresso Gran Crema?",
+    "options": [
+      "Zrnková káva",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Zrnková káva",
+    "explanation": "Miscela d’Oro Espresso Gran Crema patří do kategorie zrnková káva."
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q2",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Miscela d’Oro Espresso Gran Crema?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q3",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak se Miscela d’Oro Espresso Gran Crema správně připravuje nebo podává?",
+    "answer": "Pro espresso v automatickém nebo pákovém kávovaru; mlít těsně před přípravou.",
+    "explanation": "Pro espresso v automatickém nebo pákovém kávovaru; mlít těsně před přípravou."
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q4",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-espresso-gran-crema.webp",
+    "options": [
+      "Miscela d’Oro Espresso Gran Crema",
+      "Caffè Barbaro Miscela Blu",
+      "Kaffee Braun Espresso No1",
+      "La Brasiliana Europa"
+    ],
+    "answer": "Miscela d’Oro Espresso Gran Crema",
+    "explanation": "Na fotografii je Miscela d’Oro Espresso Gran Crema."
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q5",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "mcq",
+    "prompt": "Jaký je stupeň pražení Espresso Gran Crema?",
+    "options": [
+      "Střední",
+      "Velmi světlý",
+      "Nepražený",
+      "Velmi tmavý francouzský"
+    ],
+    "answer": "Střední",
+    "explanation": "Střední."
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q6",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak Miscela d’Oro Espresso Gran Crema stručně představíš zákazníkovi?",
+    "answer": "Intenzivní sicilská směs s hustou cremou a tóny pražených ořechů a sušenek.",
+    "explanation": "Intenzivní sicilská směs s hustou cremou a tóny pražených ořechů a sušenek."
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q1",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Kaffee Braun Espresso No1?",
+    "options": [
+      "Zrnková káva",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Zrnková káva",
+    "explanation": "Kaffee Braun Espresso No1 patří do kategorie zrnková káva."
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q2",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Kaffee Braun Espresso No1?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q3",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak se Kaffee Braun Espresso No1 správně připravuje nebo podává?",
+    "answer": "Mlít čerstvě a připravovat především jako espresso.",
+    "explanation": "Mlít čerstvě a připravovat především jako espresso."
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q4",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kaffee-braun-espresso-no1.webp",
+    "options": [
+      "Kaffee Braun Espresso No1",
+      "Miscela d’Oro Espresso Gran Crema",
+      "Caffè Barbaro Miscela Blu",
+      "La Brasiliana Europa"
+    ],
+    "answer": "Kaffee Braun Espresso No1",
+    "explanation": "Na fotografii je Kaffee Braun Espresso No1."
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q5",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "mcq",
+    "prompt": "Ve kterém německém městě sídlí pražírna Kaffee Braun?",
+    "options": [
+      "Mainaschaff",
+      "Hamburk",
+      "Mnichov",
+      "Drážďany"
+    ],
+    "answer": "Mainaschaff",
+    "explanation": "Mainaschaff."
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q6",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak Kaffee Braun Espresso No1 stručně představíš zákazníkovi?",
+    "answer": "Řemeslně pražená německá espresso směs z rodinné pražírny.",
+    "explanation": "Řemeslně pražená německá espresso směs z rodinné pražírny."
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q1",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří La Brasiliana Europa?",
+    "options": [
+      "Zrnková káva",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Zrnková káva",
+    "explanation": "La Brasiliana Europa patří do kategorie zrnková káva."
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q2",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje La Brasiliana Europa?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q3",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak se La Brasiliana Europa správně připravuje nebo podává?",
+    "answer": "Mlít těsně před přípravou a použít pro espresso nebo automatický kávovar.",
+    "explanation": "Mlít těsně před přípravou a použít pro espresso nebo automatický kávovar."
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q4",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/la-brasiliana-europa.webp",
+    "options": [
+      "La Brasiliana Europa",
+      "Kaffee Braun Espresso No1",
+      "Miscela d’Oro Espresso Gran Crema",
+      "Caffè Barbaro Miscela Blu"
+    ],
+    "answer": "La Brasiliana Europa",
+    "explanation": "Na fotografii je La Brasiliana Europa."
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q5",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "mcq",
+    "prompt": "Ve kterém italském městě sídlí La Brasiliana?",
+    "options": [
+      "Ferrara",
+      "Neapol",
+      "Turín",
+      "Palermo"
+    ],
+    "answer": "Ferrara",
+    "explanation": "Ferrara."
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q6",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak La Brasiliana Europa stručně představíš zákazníkovi?",
+    "answer": "Tradiční italská gastronomická káva z rodinné pražírny založené roku 1948.",
+    "explanation": "Tradiční italská gastronomická káva z rodinné pražírny založené roku 1948."
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q1",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Teahouse Exclusives Assam GFBOP?",
+    "options": [
+      "Čaje",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Čaje",
+    "explanation": "Teahouse Exclusives Assam GFBOP patří do kategorie čaje."
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q2",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Teahouse Exclusives Assam GFBOP?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q3",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "flashcard",
+    "prompt": "Jak se Teahouse Exclusives Assam GFBOP správně připravuje nebo podává?",
+    "answer": "Zalít vroucí vodou a louhovat přibližně 3 až 5 minut.",
+    "explanation": "Zalít vroucí vodou a louhovat přibližně 3 až 5 minut."
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q4",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-assam-gfbop.webp",
+    "options": [
+      "Teahouse Exclusives Assam GFBOP",
+      "Chicory Cup instantní čekankový nápoj",
+      "Dr. Oetker Bio Kakao",
+      "Kitl Syrob Grapefruit"
+    ],
+    "answer": "Teahouse Exclusives Assam GFBOP",
+    "explanation": "Na fotografii je Teahouse Exclusives Assam GFBOP."
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q5",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "mcq",
+    "prompt": "Jaký druh čaje je Assam GFBOP?",
+    "options": [
+      "Černý čaj",
+      "Zelený čaj",
+      "Rooibos",
+      "Heřmánkový nálev"
+    ],
+    "answer": "Černý čaj",
+    "explanation": "Černý čaj."
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q6",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "flashcard",
+    "prompt": "Jak Teahouse Exclusives Assam GFBOP stručně představíš zákazníkovi?",
+    "answer": "Plný sladově výrazný černý čaj, který lze podávat samotný i s mlékem.",
+    "explanation": "Plný sladově výrazný černý čaj, který lze podávat samotný i s mlékem."
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q1",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Chicory Cup instantní čekankový nápoj?",
+    "options": [
+      "Alternativy kávy",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Alternativy kávy",
+    "explanation": "Chicory Cup instantní čekankový nápoj patří do kategorie alternativy kávy."
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q2",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Chicory Cup instantní čekankový nápoj?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q3",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "flashcard",
+    "prompt": "Jak se Chicory Cup instantní čekankový nápoj správně připravuje nebo podává?",
+    "answer": "Dvě lžičky zalít horkou, nikoli vroucí vodou, a promíchat.",
+    "explanation": "Dvě lžičky zalít horkou, nikoli vroucí vodou, a promíchat."
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q4",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/chicory-cup-instant-100-g.webp",
+    "options": [
+      "Chicory Cup instantní čekankový nápoj",
+      "Teahouse Exclusives Assam GFBOP",
+      "Dr. Oetker Bio Kakao",
+      "Kaffee Braun Espresso No1"
+    ],
+    "answer": "Chicory Cup instantní čekankový nápoj",
+    "explanation": "Na fotografii je Chicory Cup instantní čekankový nápoj."
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q5",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "mcq",
+    "prompt": "Obsahuje Chicory Cup přirozeně kofein?",
+    "options": [
+      "Ne, je bez kofeinu",
+      "Ano, stejně jako espresso",
+      "Ano, ale jen po uvaření",
+      "Pouze ve variantě 100 g"
+    ],
+    "answer": "Ne, je bez kofeinu",
+    "explanation": "Ne, je bez kofeinu."
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q6",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "flashcard",
+    "prompt": "Jak Chicory Cup instantní čekankový nápoj stručně představíš zákazníkovi?",
+    "answer": "Instantní čekanková alternativa kávy bez kofeinu a s vlákninou.",
+    "explanation": "Instantní čekanková alternativa kávy bez kofeinu a s vlákninou."
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q1",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Dr. Oetker Bio Kakao?",
+    "options": [
+      "Kakao a pečení",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Kakao a pečení",
+    "explanation": "Dr. Oetker Bio Kakao patří do kategorie kakao a pečení."
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q2",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Dr. Oetker Bio Kakao?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný jako složku; výrobek může obsahovat stopy mléka.",
+    "explanation": "Žádný jako složku; výrobek může obsahovat stopy mléka."
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q3",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "flashcard",
+    "prompt": "Jak se Dr. Oetker Bio Kakao správně připravuje nebo podává?",
+    "answer": "Používat podle receptu do pečení, dezertů, kaší nebo nápojů.",
+    "explanation": "Používat podle receptu do pečení, dezertů, kaší nebo nápojů."
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q4",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/dr-oetker-bio-kakao-90-g.webp",
+    "options": [
+      "Dr. Oetker Bio Kakao",
+      "Chicory Cup instantní čekankový nápoj",
+      "Bio nebio Javorový sirup Grade C",
+      "Teahouse Exclusives Assam GFBOP"
+    ],
+    "answer": "Dr. Oetker Bio Kakao",
+    "explanation": "Na fotografii je Dr. Oetker Bio Kakao."
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q5",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "mcq",
+    "prompt": "Čím je Bio Kakao Dr. Oetker specifické?",
+    "options": [
+      "Je holandského typu se sníženým obsahem tuku",
+      "Je již oslazené třtinovým cukrem",
+      "Obsahuje sušené mléko",
+      "Jde o kakaový nápoj s kávou"
+    ],
+    "answer": "Je holandského typu se sníženým obsahem tuku",
+    "explanation": "Je holandského typu se sníženým obsahem tuku."
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q6",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "flashcard",
+    "prompt": "Jak Dr. Oetker Bio Kakao stručně představíš zákazníkovi?",
+    "answer": "Bio kakao holandského typu s výraznou chutí pro pečení i nápoje.",
+    "explanation": "Bio kakao holandského typu s výraznou chutí pro pečení i nápoje."
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q1",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Bio nebio Javorový sirup Grade C?",
+    "options": [
+      "Sirupy a sladidla",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Sirupy a sladidla",
+    "explanation": "Bio nebio Javorový sirup Grade C patří do kategorie sirupy a sladidla."
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q2",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Bio nebio Javorový sirup Grade C?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q3",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "flashcard",
+    "prompt": "Jak se Bio nebio Javorový sirup Grade C správně připravuje nebo podává?",
+    "answer": "Použít ke slazení; po otevření uchovávat v lednici.",
+    "explanation": "Použít ke slazení; po otevření uchovávat v lednici."
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q4",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bio-nebio-javorovy-sirup-grade-c-250-ml.webp",
+    "options": [
+      "Bio nebio Javorový sirup Grade C",
+      "Kitl Syrob Grapefruit",
+      "Vladimír Perník do kafe",
+      "Dr. Oetker Bio Kakao"
+    ],
+    "answer": "Bio nebio Javorový sirup Grade C",
+    "explanation": "Na fotografii je Bio nebio Javorový sirup Grade C."
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q5",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "mcq",
+    "prompt": "Co označuje Grade C u tohoto javorového sirupu?",
+    "options": [
+      "Tmavší barvu a výraznější javorovou chuť",
+      "Přidaný karamel",
+      "Třetinový obsah javorové mízy",
+      "Sirup určený jen k vaření"
+    ],
+    "answer": "Tmavší barvu a výraznější javorovou chuť",
+    "explanation": "Tmavší barvu a výraznější javorovou chuť."
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q6",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "flashcard",
+    "prompt": "Jak Bio nebio Javorový sirup Grade C stručně představíš zákazníkovi?",
+    "answer": "Čistý bio javorový sirup s plnou výraznou chutí pro kaše, palačinky i dezerty.",
+    "explanation": "Čistý bio javorový sirup s plnou výraznou chutí pro kaše, palačinky i dezerty."
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q1",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Kávová Mandlovka?",
+    "options": [
+      "Likéry",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Likéry",
+    "explanation": "Kávová Mandlovka patří do kategorie likéry."
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q2",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Kávová Mandlovka?",
+    "answer": "skořápkové plody – mandle",
+    "answerDisplay": "Skořápkové plody – mandle.",
+    "explanation": "Skořápkové plody – mandle."
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q3",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak se Kávová Mandlovka správně připravuje nebo podává?",
+    "answer": "Podávat mírně vychlazenou nebo s ledem; lze použít i do koktejlů.",
+    "explanation": "Podávat mírně vychlazenou nebo s ledem; lze použít i do koktejlů."
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q4",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kavova-mandlovka-200-ml.webp",
+    "options": [
+      "Kávová Mandlovka",
+      "Habla del Silencio",
+      "Honoro Vera Ecológico",
+      "Condado de Oriza Roble"
+    ],
+    "answer": "Kávová Mandlovka",
+    "explanation": "Na fotografii je Kávová Mandlovka."
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q5",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "mcq",
+    "prompt": "Kolik alkoholu obsahuje Kávová Mandlovka?",
+    "options": [
+      "25 % obj.",
+      "5 % obj.",
+      "12 % obj.",
+      "38 % obj."
+    ],
+    "answer": "25 % obj.",
+    "explanation": "25 % obj.."
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q6",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak Kávová Mandlovka stručně představíš zákazníkovi?",
+    "answer": "Regionální kávovo-mandlový likér z Hustopečí, vhodný i jako dárek.",
+    "explanation": "Regionální kávovo-mandlový likér z Hustopečí, vhodný i jako dárek."
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q1",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Habla del Silencio?",
+    "options": [
+      "Červená vína",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Červená vína",
+    "explanation": "Habla del Silencio patří do kategorie červená vína."
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q2",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Habla del Silencio?",
+    "answer": "siřičitany",
+    "answerDisplay": "Oxid siřičitý a siřičitany.",
+    "explanation": "Oxid siřičitý a siřičitany."
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q3",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "flashcard",
+    "prompt": "Jak se Habla del Silencio správně připravuje nebo podává?",
+    "answer": "Podávat přibližně při 16 až 18 °C a nechat krátce nadechnout.",
+    "explanation": "Podávat přibližně při 16 až 18 °C a nechat krátce nadechnout."
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q4",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/habla-del-silencio-750-ml.webp",
+    "options": [
+      "Habla del Silencio",
+      "Honoro Vera Ecológico",
+      "Condado de Oriza Roble",
+      "Kávová Mandlovka"
+    ],
+    "answer": "Habla del Silencio",
+    "explanation": "Na fotografii je Habla del Silencio."
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q5",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "mcq",
+    "prompt": "Jak dlouho Habla del Silencio zraje ve francouzském dubu?",
+    "options": [
+      "8 měsíců",
+      "2 měsíce",
+      "18 měsíců",
+      "Nezraje v sudu"
+    ],
+    "answer": "8 měsíců",
+    "explanation": "8 měsíců."
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q6",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "flashcard",
+    "prompt": "Jak Habla del Silencio stručně představíš zákazníkovi?",
+    "answer": "Španělské červené s ovocnými, kořenitými a moka tóny, vhodné k masu a sýrům.",
+    "explanation": "Španělské červené s ovocnými, kořenitými a moka tóny, vhodné k masu a sýrům."
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q1",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Honoro Vera Ecológico Monastrell?",
+    "options": [
+      "Červená vína",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Červená vína",
+    "explanation": "Honoro Vera Ecológico Monastrell patří do kategorie červená vína."
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q2",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Honoro Vera Ecológico Monastrell?",
+    "answer": "siřičitany",
+    "answerDisplay": "Oxid siřičitý a siřičitany.",
+    "explanation": "Oxid siřičitý a siřičitany."
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q3",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "flashcard",
+    "prompt": "Jak se Honoro Vera Ecológico Monastrell správně připravuje nebo podává?",
+    "answer": "Podávat při 15 až 18 °C; hodí se k houbám, sýrům i grilovanému masu.",
+    "explanation": "Podávat při 15 až 18 °C; hodí se k houbám, sýrům i grilovanému masu."
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q4",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/honoro-vera-monastrell-750-ml.webp",
+    "options": [
+      "Honoro Vera Ecológico Monastrell",
+      "Habla del Silencio",
+      "Condado de Oriza Roble",
+      "Kávová Mandlovka"
+    ],
+    "answer": "Honoro Vera Ecológico Monastrell",
+    "explanation": "Na fotografii je Honoro Vera Ecológico Monastrell."
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q5",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "mcq",
+    "prompt": "Která odrůda tvoří Honoro Vera Ecológico?",
+    "options": [
+      "Monastrell",
+      "Riesling",
+      "Pinot Grigio",
+      "Sauvignon Blanc"
+    ],
+    "answer": "Monastrell",
+    "explanation": "Monastrell."
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q6",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "flashcard",
+    "prompt": "Jak Honoro Vera Ecológico Monastrell stručně představíš zákazníkovi?",
+    "answer": "Svěží ekologické červené z Jumilly s ovocným a balsamikovým profilem.",
+    "explanation": "Svěží ekologické červené z Jumilly s ovocným a balsamikovým profilem."
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q1",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "mcq",
+    "prompt": "Do které kategorie patří Condado de Oriza Roble?",
+    "options": [
+      "Červená vína",
+      "Omáčky a dipy",
+      "Pečivo",
+      "Mléčné výrobky"
+    ],
+    "answer": "Červená vína",
+    "explanation": "Condado de Oriza Roble patří do kategorie červená vína."
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q2",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Condado de Oriza Roble?",
+    "answer": "siřičitany",
+    "answerDisplay": "Oxid siřičitý a siřičitany.",
+    "explanation": "Oxid siřičitý a siřičitany."
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q3",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "flashcard",
+    "prompt": "Jak se Condado de Oriza Roble správně připravuje nebo podává?",
+    "answer": "Podávat při 16 až 17 °C; vhodné k jehněčímu a vyzrálým sýrům.",
+    "explanation": "Podávat při 16 až 17 °C; vhodné k jehněčímu a vyzrálým sýrům."
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q4",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/condado-de-oriza-roble-750-ml.webp",
+    "options": [
+      "Condado de Oriza Roble",
+      "Habla del Silencio",
+      "Honoro Vera Ecológico",
+      "Kávová Mandlovka"
+    ],
+    "answer": "Condado de Oriza Roble",
+    "explanation": "Na fotografii je Condado de Oriza Roble."
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q5",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "mcq",
+    "prompt": "Ve kterém sudu zraje Condado de Oriza Roble šest měsíců?",
+    "options": [
+      "V americkém dubu",
+      "Ve francouzském akátu",
+      "V kaštanovém dřevě",
+      "Nezraje v sudu"
+    ],
+    "answer": "V americkém dubu",
+    "explanation": "V americkém dubu."
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q6",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "flashcard",
+    "prompt": "Jak Condado de Oriza Roble stručně představíš zákazníkovi?",
+    "answer": "Tempranillo z Ribera del Duero s ovocným a kořenitým profilem a vlivem amerického dubu.",
+    "explanation": "Tempranillo z Ribera del Duero s ovocným a kořenitým profilem a vlivem amerického dubu."
   }
 ]
