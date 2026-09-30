@@ -28,5 +28,106 @@
     "preparation": ["Vyndej porci z chlazení těsně před podáváním.", "Polož na čistý dezertní talíř.", "Přidej lžičku a podávej bez ohřevu."],
     "salesTip": "Nabídni ke kávě; ovocná chuť je příjemná i po vydatném jídle.",
     "image": "img/products/boruvkovy-cheesecake.webp"
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml",
+    "name": "Konopný olej V PRESU 250 ml",
+    "category": "Za studena lisované oleje",
+    "brand": "V PRESU",
+    "manufacturer": "Rodinná lisovna s.r.o.",
+    "origin": "Dobříš, Česká republika",
+    "description": "Jednodruhový RAW olej lisovaný za studena z českých semen konopí setého.",
+    "ingredients": ["100% konopný olej z českých semen Cannabis sativa"],
+    "allergens": [],
+    "specifics": ["tmavě zelená barva", "výrazná oříšková chuť", "přirozené čištění sedimentací", "zdroj omega-3 a omega-6 mastných kyselin", "bohatý na vitamín E"],
+    "preparation": ["Používej především za studena do salátů, pomazánek, smoothies a kaší.", "Případné lehké zakalení je přirozené a nesnižuje kvalitu.", "Po otevření uchovávej do 20 °C mimo přímé sluneční světlo; lednice není nutná."],
+    "brandInfo": "V PRESU je rodinná lisovna z Dobříše. Oleje lisuje za studena a u tradičních druhů používá semena od českých pěstitelů.",
+    "salesTip": "Doporuč zákazníkovi, který hledá český olej do studené kuchyně s výraznou oříškovou chutí.",
+    "image": "img/products/konopny-olej-v-presu.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.vpresu.cz/eshop/oleje/konopi-250ml" },
+      { "label": "Výrobce – o lisovně", "url": "https://www.vpresu.cz/" }
+    ]
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml",
+    "name": "Balzamikový krém s třešní Casa Rinaldi 150 ml",
+    "category": "Ochucovadla a krémy",
+    "brand": "Casa Rinaldi",
+    "manufacturer": "Alis S.r.l.",
+    "origin": "Itálie",
+    "description": "Hustý sladkokyselý krém s Aceto Balsamico di Modena IGP a koncentrovanou třešňovou šťávou.",
+    "ingredients": ["vařený hroznový mošt 75 %", "Aceto Balsamico di Modena IGP 20 % (vinný ocet, koncentrovaný hroznový mošt, barvivo E150d)", "modifikovaný kukuřičný škrob", "koncentrovaná třešňová šťáva 1 %", "přírodní aroma"],
+    "allergens": [],
+    "specifics": ["chráněné zeměpisné označení IGP", "hustá krémová konzistence", "vyvážená sladkokyselá chuť", "kód produktu 001060490", "EAN 8006165386029"],
+    "preparation": ["Použij přímo z lahve jako dochucení nebo dekoraci.", "Kombinuj s čerstvými sýry, uzeninami a ovocem.", "Hodí se také na zmrzlinu, panna cottu a další dezerty."],
+    "brandInfo": "Casa Rinaldi od roku 1979 vyrábí, vybírá a distribuuje italské gastronomické speciality do celého světa.",
+    "salesTip": "Nabídni jako univerzální italský krém k sýrovému prkénku i dezertům; třešeň zjemňuje kyselost balsamika.",
+    "image": "img/products/casa-rinaldi-balsamico-tresen.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://casarinaldi.com/de/product/cremiger-balsamico-essig-aus-modena-igp-mit-kirsche-aromatisiert/" },
+      { "label": "Výrobce – řada ochucených krémů", "url": "https://casarinaldi.com/groupage/creme-con-aceto-balsamico-di-modena-igp-aromatizzate/" }
+    ]
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml",
+    "name": "Makový olej V PRESU 250 ml",
+    "category": "Za studena lisované oleje",
+    "brand": "V PRESU",
+    "manufacturer": "Rodinná lisovna s.r.o.",
+    "origin": "Dobříš, Česká republika",
+    "description": "Jednodruhový RAW olej lisovaný za studena z českých semen modrého máku.",
+    "ingredients": ["100% makový olej z českých semen modrého máku Papaver somniferum"],
+    "allergens": [],
+    "specifics": ["výrazné makové aroma a chuť", "přirozené čištění sedimentací", "zdroj omega-6 mastných kyselin", "bohatý na vitamín E", "držitel značky Středočeská Regionální potravina", "neobsahuje opium"],
+    "preparation": ["Používej do sladkých dezertů, snídaňových kaší nebo na palačinky.", "Případné lehké zakalení je přirozené a nesnižuje kvalitu.", "Po otevření uchovávej do 20 °C mimo přímé sluneční světlo; lednice není nutná."],
+    "brandInfo": "V PRESU je rodinná lisovna z Dobříše. Oleje lisuje za studena a u tradičních druhů používá semena od českých pěstitelů.",
+    "salesTip": "Doporuč milovníkům máku jako neobvyklé dochucení sladkých jídel a snídaňových kaší.",
+    "image": "img/products/makovy-olej-v-presu.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.vpresu.cz/eshop/oleje/modry-mak-250ml" },
+      { "label": "Výrobce – o lisovně", "url": "https://www.vpresu.cz/" }
+    ]
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "name": "Kachní paštika s Calvadosem Melememaso 150 g",
+    "category": "Paštiky",
+    "brand": "Melememaso",
+    "manufacturer": "MELEMEMASO s.r.o.",
+    "origin": "Česká republika",
+    "description": "Jemná kachní paštika s jablky a francouzskou jablečnou pálenkou Calvados.",
+    "ingredients": ["kachní játra 36 %", "pečené kachní maso 20 %", "jablka 17 %", "máslo 15 %", "kachní tuk 8 %", "Calvados", "cibule", "sůl", "pepř", "zázvor", "nové koření", "cukr", "pektin", "želatina"],
+    "allergens": [7],
+    "specifics": ["bez konzervantů a chemických přísad", "jablka z Litoměřicka", "kachní maso flambované Calvadosem", "ocenění Great Taste – jedna hvězda", "bez lepku"],
+    "preparation": ["Podávej vychlazenou s tmavým pečivem a čerstvě nakrájenou cibulí nebo tvrdým sýrem.", "Vhodným nápojem je suché bílé víno.", "Skladuj do 5 °C; po otevření uchovej v chladu a spotřebuj do 48 hodin."],
+    "brandInfo": "Melememaso je české řeznictví a výrobce masných specialit, který staví na poctivých surovinách a výrobě bez zbytečných chemických přísad.",
+    "salesTip": "Zdůrazni vysoký podíl kachních jater, česká jablka a ocenění Great Taste; nabídni k tmavému pečivu nebo sýrovému prkénku.",
+    "image": "img/products/kachni-pastika-calvados-melememaso.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.melememaso.cz/pastiky/kachni-pastika-s-calvadosem/6" },
+      { "label": "Výrobce – ocenění Great Taste", "url": "https://www.melememaso.cz/r/novinky/ziskali-jsme-great-taste-3" }
+    ]
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml",
+    "name": "Rybí omáčka Tiparos 700 ml",
+    "category": "Asijská ochucovadla",
+    "brand": "Tiparos",
+    "manufacturer": "Pairoj (Tang Sang Hah) Co., Ltd.",
+    "origin": "Thajsko",
+    "description": "Tradiční thajská rybí omáčka z fermentovaných ančoviček, která dodává jídlům slanou chuť umami.",
+    "ingredients": ["voda", "extrakt z ančoviček 65 %", "sůl", "cukr"],
+    "allergens": [4],
+    "specifics": ["fermentace ančoviček přibližně 12 až 18 měsíců", "bez přidaného glutamátu", "bez konzervantů", "bez přidaných barviv", "výrazná slaná chuť umami"],
+    "preparation": ["Dávkuj střídmě do woků, kari, marinád, polévek, dresinků nebo thajských omáček.", "Používej jako dochucovadlo; výrobek je připravený k okamžitému použití.", "Neskladuj v lednici, protože v chladu mohou vznikat krystalky soli."],
+    "brandInfo": "Tiparos je dlouholetá thajská značka společnosti Tang Sang Hah. Výrobce popisuje tradiční zrání rybí omáčky z ančoviček jako součást thajské kuchyně.",
+    "salesTip": "Doporuč jako základní dochucovadlo pro autentickou thajskou kuchyni; stačí malé množství díky vysoké slanosti a intenzivnímu umami.",
+    "image": "img/products/tiparos-rybi-omacka.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml" },
+      { "label": "Výrobce – tradiční fermentace", "url": "https://www.tiparos.com/news/view/0-30-%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A3%E0%B8%AA-%E0%B8%AB%E0%B8%A1%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B2%E0%B8%99-1-1-12-%E0%B8%9B%E0%B8%B5-%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1%E0%B9%83%E0%B8%AA%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%EF%BF%BD" },
+      { "label": "Distributor – deklarace složení", "url": "https://www.fairprice.com.sg/product/tiparos-fish-sauce-700ml-11943282" }
+    ]
   }
 ]

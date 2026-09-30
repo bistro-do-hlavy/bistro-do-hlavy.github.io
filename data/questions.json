@@ -208,5 +208,270 @@
     "options": ["Smetanový sýr", "Grilované kuře", "Zeleninový vývar", "Rukola"],
     "answer": "Smetanový sýr",
     "explanation": "Smetanový sýr vytváří typickou krémovou strukturu cheesecaku."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q1",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "mcq",
+    "prompt": "Z čeho je konopný olej V PRESU vyroben?",
+    "options": ["Z českých semen konopí setého", "Z konopných listů", "Z oliv a konopného aroma", "Ze semen modrého máku"],
+    "answer": "Z českých semen konopí setého",
+    "explanation": "Jde o 100% olej lisovaný za studena z českých semen Cannabis sativa."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q2",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU tento olej obsahuje?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Konopné semeno nepatří mezi 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q3",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "flashcard",
+    "prompt": "Do jakých jídel se konopný olej V PRESU hodí nejlépe?",
+    "answer": "Do studené kuchyně: salátů, pomazánek, smoothies a kaší.",
+    "explanation": "Za studena vynikne jeho výrazná oříšková chuť."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q4",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/konopny-olej-v-presu.webp",
+    "options": ["Konopný olej V PRESU", "Makový olej V PRESU", "Rybí omáčka Tiparos", "Balzamikový krém Casa Rinaldi"],
+    "answer": "Konopný olej V PRESU",
+    "explanation": "Poznáš jej podle zeleného nápisu KONOPÍ a označení RAW."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q5",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "mcq",
+    "prompt": "Jak se má konopný olej po otevření skladovat?",
+    "options": ["Do 20 °C mimo přímé slunce", "V mrazáku", "Vždy v lednici pod 5 °C", "Na slunném místě"],
+    "answer": "Do 20 °C mimo přímé slunce",
+    "explanation": "Výrobce uvádí, že lednice není nutná; důležitá je teplota do 20 °C a ochrana před sluncem."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q6",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "flashcard",
+    "prompt": "Jak konopný olej stručně představíš zákazníkovi?",
+    "answer": "Český za studena lisovaný RAW olej do studené kuchyně s výraznou oříškovou chutí.",
+    "explanation": "Tato věta spojuje původ, způsob výroby, použití i hlavní chuťovou vlastnost."
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q1",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "mcq",
+    "prompt": "Která surovina tvoří 75 % třešňového balzamikového krému?",
+    "options": ["Vařený hroznový mošt", "Třešňová šťáva", "Vinný ocet", "Kukuřičný škrob"],
+    "answer": "Vařený hroznový mošt",
+    "explanation": "Základem krému je 75 % vařeného hroznového moštu."
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q2",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU výrobce u tohoto krému uvádí?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "V oficiální deklaraci složení a alergenů není žádný z alergenů EU uveden."
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q3",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "flashcard",
+    "prompt": "S čím doporučuje výrobce třešňový balzamikový krém kombinovat?",
+    "answer": "S čerstvými sýry, uzeninami, ovocem, zmrzlinou, panna cottou a dalšími dezerty.",
+    "explanation": "Sladkokyselý profil funguje ve slaných i sladkých kombinacích."
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q4",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/casa-rinaldi-balsamico-tresen.webp",
+    "options": ["Třešňový balzamikový krém Casa Rinaldi", "Rybí omáčka Tiparos", "Konopný olej V PRESU", "Kachní paštika s Calvadosem"],
+    "answer": "Třešňový balzamikový krém Casa Rinaldi",
+    "explanation": "Na etiketě jsou třešně a nápis gusto ciliegia."
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q5",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "mcq",
+    "prompt": "Kolik koncentrované třešňové šťávy krém obsahuje?",
+    "options": ["1 %", "5 %", "20 %", "75 %"],
+    "answer": "1 %",
+    "explanation": "Třešňové aroma doplňuje 1 % koncentrované třešňové šťávy."
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q6",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "flashcard",
+    "prompt": "Čím je třešňový balzamikový krém zajímavý při prodeji?",
+    "answer": "Je to hustý italský sladkokyselý krém s Aceto Balsamico di Modena IGP, vhodný k sýrům i dezertům.",
+    "explanation": "IGP, třešňová chuť a široké použití jsou hlavní prodejní argumenty."
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q1",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "mcq",
+    "prompt": "Z čeho je makový olej V PRESU vyroben?",
+    "options": ["Z českých semen modrého máku", "Z makových květů", "Z vlašských ořechů", "Z konopných semen"],
+    "answer": "Z českých semen modrého máku",
+    "explanation": "Jde o 100% olej lisovaný za studena z českého modrého máku Papaver somniferum."
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q2",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU tento olej obsahuje?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Mák nepatří mezi 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q3",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "flashcard",
+    "prompt": "Do jakých jídel výrobce doporučuje makový olej?",
+    "answer": "Do sladkých dezertů, snídaňových kaší a na palačinky.",
+    "explanation": "Olej má výrazné makové aroma a chuť, proto se hodí hlavně ke sladkým jídlům."
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q4",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/makovy-olej-v-presu.webp",
+    "options": ["Makový olej V PRESU", "Konopný olej V PRESU", "Třešňový balzamikový krém Casa Rinaldi", "Rybí omáčka Tiparos"],
+    "answer": "Makový olej V PRESU",
+    "explanation": "Poznáš jej podle fialového nápisu MODRÝ MÁK a označení RAW."
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q5",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "mcq",
+    "prompt": "Jaké ocenění nebo značku makový olej získal?",
+    "options": ["Středočeská Regionální potravina", "Great Taste tři hvězdy", "Česká biopotravina roku", "Protected Designation of Origin"],
+    "answer": "Středočeská Regionální potravina",
+    "explanation": "Výrobce uvádí, že makový olej je držitelem značky Středočeská Regionální potravina."
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q6",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "flashcard",
+    "prompt": "Jak makový olej stručně představíš zákazníkovi?",
+    "answer": "Český za studena lisovaný RAW olej s výraznou makovou chutí, ideální do sladkých jídel.",
+    "explanation": "Tato věta shrnuje původ, způsob výroby, chuť i doporučené použití."
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q1",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "mcq",
+    "prompt": "Která surovina má v kachní paštice nejvyšší podíl?",
+    "options": ["Kachní játra 36 %", "Pečené kachní maso 20 %", "Jablka 17 %", "Máslo 15 %"],
+    "answer": "Kachní játra 36 %",
+    "explanation": "Největší podíl tvoří kachní játra – 36 %."
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q2",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "text",
+    "prompt": "Napiš číslo povinně značeného alergenu v kachní paštice.",
+    "answer": "7",
+    "answerDisplay": "7 – mléko",
+    "explanation": "Alergen 7 pochází z másla, kterého paštika obsahuje 15 %."
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q3",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "flashcard",
+    "prompt": "Jak se paštika skladuje po otevření?",
+    "answer": "V chladu a spotřebovat do 48 hodin.",
+    "explanation": "Neotevřený výrobek se skladuje do 5 °C; po otevření je lhůta 48 hodin."
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q4",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kachni-pastika-calvados-melememaso.webp",
+    "options": ["Kachní paštika s Calvadosem", "Kuřecí paštika s koňakem", "Kachní sádlo", "Jablečné čatní"],
+    "answer": "Kachní paštika s Calvadosem",
+    "explanation": "Název KACHNÍ CALVADOS je výrazně uvedený na přední etiketě."
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q5",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "mcq",
+    "prompt": "Jaké ocenění tato paštika získala?",
+    "options": ["Jednu hvězdu Great Taste", "Středočeskou Regionální potravinu", "Michelinskou hvězdu", "Zlatou medaili IGP"],
+    "answer": "Jednu hvězdu Great Taste",
+    "explanation": "Kachní paštika s Calvadosem získala v soutěži Great Taste jednu hvězdu."
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q6",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "flashcard",
+    "prompt": "Jak paštiku doporučíš k servírování?",
+    "answer": "Vychlazenou s tmavým pečivem a cibulí nebo tvrdým sýrem; vhodné je suché bílé víno.",
+    "explanation": "Tato kombinace odpovídá doporučení výrobce a podpoří doplňkový prodej."
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q1",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "mcq",
+    "prompt": "Z jaké ryby se vyrábí omáčka Tiparos?",
+    "options": ["Z ančoviček", "Z lososa", "Z tuňáka", "Z makrely"],
+    "answer": "Z ančoviček",
+    "explanation": "Základem je extrakt z fermentovaných ančoviček."
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q2",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "text",
+    "prompt": "Napiš číslo povinně značeného alergenu v omáčce Tiparos.",
+    "answer": "4",
+    "answerDisplay": "4 – ryby",
+    "explanation": "Alergenem jsou ryby, konkrétně ančovičky."
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q3",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "flashcard",
+    "prompt": "K čemu se rybí omáčka Tiparos používá?",
+    "answer": "K dochucení woků, kari, marinád, polévek, dresinků a thajských omáček.",
+    "explanation": "Malé množství dodá pokrmu výraznou slanou chuť umami."
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q4",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/tiparos-rybi-omacka.webp",
+    "options": ["Rybí omáčka Tiparos", "Sójová omáčka", "Třešňový balzamikový krém", "Konopný olej"],
+    "answer": "Rybí omáčka Tiparos",
+    "explanation": "Poznáš ji podle žlutočervené etikety TIPAROS FISH SAUCE."
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q5",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "mcq",
+    "prompt": "Proč se omáčka Tiparos nemá ukládat do lednice?",
+    "options": ["V chladu mohou vznikat krystalky soli", "Ztratila by rybí alergen", "Změnila by se na ocet", "Láhev by se vždy rozbila"],
+    "answer": "V chladu mohou vznikat krystalky soli",
+    "explanation": "Výrobek se skladuje mimo lednici; krystalky soli v chladu nejsou známkou zkažení."
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q6",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "flashcard",
+    "prompt": "Čím je výroba rybí omáčky Tiparos specifická?",
+    "answer": "Ančovičky se nechávají fermentovat přibližně 12 až 18 měsíců.",
+    "explanation": "Dlouhá fermentace vytváří tmavou čirou barvu, aroma a chuť umami."
   }
 ]

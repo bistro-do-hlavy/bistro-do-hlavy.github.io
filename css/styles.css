@@ -210,9 +210,18 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .product-detail-body h2 { margin: .25rem 3rem .2rem 0; font-size: 1.8rem; }
 .product-detail-body h3 { margin: 1.25rem 0 .45rem; font-size: .95rem; }
 .product-detail-body ul, .product-detail-body ol { margin: 0; padding-left: 1.3rem; }
+.product-detail-body li + li { margin-top: .35rem; }
+.product-description { margin-top: .55rem !important; font-size: 1rem; line-height: 1.5; }
+.product-facts { display: grid; gap: .55rem; margin: 1rem 0 0; }
+.product-facts div { display: grid; grid-template-columns: 5.5rem 1fr; gap: .65rem; padding-bottom: .55rem; border-bottom: 1px solid var(--line); }
+.product-facts dt { color: var(--muted); font-size: .78rem; font-weight: 750; }
+.product-facts dd { margin: 0; font-size: .86rem; font-weight: 750; }
 .allergen-list { display: flex; flex-wrap: wrap; gap: .4rem; }
 .allergen-chip { border-radius: 999px; background: var(--surface-soft); padding: .35rem .65rem; font-size: .78rem; font-weight: 700; }
+.allergen-none { color: var(--muted); font-size: .86rem; }
 .sales-tip { border-radius: 1rem; padding: 1rem; background: color-mix(in srgb, var(--lime) 22%, var(--surface)); }
+.source-links { display: grid; gap: .5rem; }
+.source-links a { min-height: 2.75rem; display: flex; align-items: center; border: 1px solid var(--line); border-radius: .8rem; padding: .65rem .8rem; color: var(--brand); background: var(--surface-soft); font-size: .82rem; font-weight: 750; text-decoration: none; }
 
 .loading-state, .empty-state { min-height: 55vh; display: grid; place-items: center; align-content: center; text-align: center; color: var(--muted); }
 .spinner { width: 2rem; height: 2rem; border: .22rem solid var(--line); border-top-color: var(--brand); border-radius: 50%; animation: spin .8s linear infinite; }

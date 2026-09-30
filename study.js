@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.7';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.7';
+import { CONFIG } from './config.js?v=1.0.8';
+import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.8';
 
 export function normalizeText(value) {
   return String(value ?? '')

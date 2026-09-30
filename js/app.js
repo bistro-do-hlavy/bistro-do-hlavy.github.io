@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.7';
-import { contentProvider } from '../content.js?v=1.0.7';
-import { storage } from '../storage.js?v=1.0.7';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.7';
+import { CONFIG } from '../config.js?v=1.0.8';
+import { contentProvider } from '../content.js?v=1.0.8';
+import { storage } from '../storage.js?v=1.0.8';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.8';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -9,7 +9,7 @@ import {
   evaluateText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.7';
+} from '../study.js?v=1.0.8';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -258,15 +258,30 @@ function bindCommonActions() {
 function openProduct(id) {
   const product = state.products.find((item) => item.id === id);
   if (!product) return;
+  const allergens = product.allergens.length
+    ? product.allergens.map((allergenId) => `<span class="allergen-chip">${allergenId} · ${ALLERGENS[allergenId]}</span>`).join('')
+    : '<span class="allergen-none">Žádné z 14 povinně značených alergenů EU</span>';
+  const productFacts = [
+    product.brand && ['Značka', product.brand],
+    product.manufacturer && ['Výrobce', product.manufacturer],
+    product.origin && ['Původ', product.origin],
+  ].filter(Boolean);
+  const sources = (product.sources || []).map((source) => `
+    <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('');
   document.querySelector('#product-detail').innerHTML = `
     <img class="product-detail-image" src="${product.image}" alt="${escapeHtml(product.name)}">
     <div class="product-detail-body">
       <button class="dialog-close" type="button" aria-label="Zavřít">×</button>
       <p class="eyebrow">${escapeHtml(product.category)}</p><h2>${escapeHtml(product.name)}</h2>
+      ${product.description ? `<p class="product-description">${escapeHtml(product.description)}</p>` : ''}
+      ${productFacts.length ? `<dl class="product-facts">${productFacts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>` : ''}
       <h3>Složení</h3><p>${product.ingredients.map(escapeHtml).join(', ')}</p>
-      <h3>Alergeny</h3><div class="allergen-list">${product.allergens.map((id) => `<span class="allergen-chip">${id} · ${ALLERGENS[id]}</span>`).join('')}</div>
-      <h3>Příprava</h3><ol>${product.preparation.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}</ol>
+      <h3>Alergeny</h3><div class="allergen-list">${allergens}</div>
+      ${product.specifics?.length ? `<h3>Čím je produkt specifický</h3><ul>${product.specifics.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}
+      <h3>Použití a uchování</h3><ol>${product.preparation.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}</ol>
+      ${product.brandInfo ? `<h3>O značce</h3><p>${escapeHtml(product.brandInfo)}</p>` : ''}
       <h3>Doporučení k prodeji</h3><p class="sales-tip">${escapeHtml(product.salesTip)}</p>
+      ${sources ? `<h3>Zdroje informací</h3><div class="source-links">${sources}</div>` : ''}
     </div>`;
   productDialog.querySelector('.dialog-close').addEventListener('click', () => productDialog.close());
   productDialog.showModal();
