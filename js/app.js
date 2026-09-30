@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.10';
-import { contentProvider } from '../content.js?v=1.0.10';
-import { storage } from '../storage.js?v=1.0.10';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.10';
+import { CONFIG } from '../config.js?v=1.0.11';
+import { contentProvider } from '../content.js?v=1.0.11';
+import { storage } from '../storage.js?v=1.0.11';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.11';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -9,7 +9,7 @@ import {
   evaluateText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.10';
+} from '../study.js?v=1.0.11';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -567,6 +567,33 @@ async function loadState() {
   updateProfileChip();
 }
 
+async function registerServiceWorker() {
+  if (!('serviceWorker' in navigator)) return;
+
+  const hadController = Boolean(navigator.serviceWorker.controller);
+  let reloadingForUpdate = false;
+
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || reloadingForUpdate) return;
+    reloadingForUpdate = true;
+    window.location.reload();
+  });
+
+  try {
+    const registration = await navigator.serviceWorker.register('./sw.js');
+    const checkForUpdate = () => registration.update().catch((error) => console.warn('Kontrola aktualizace se nezdařila.', error));
+
+    checkForUpdate();
+    window.addEventListener('focus', checkForUpdate);
+    window.addEventListener('online', checkForUpdate);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') checkForUpdate();
+    });
+  } catch (error) {
+    console.warn('Offline režim se nepodařilo zapnout.', error);
+  }
+}
+
 document.querySelectorAll('.bottom-nav [data-view-link], .topbar [data-view-link]').forEach((button) => button.addEventListener('click', () => navigate(button.dataset.viewLink)));
 document.querySelector('#profile-button').addEventListener('click', () => openProfileDialog(false));
 profileDialog.querySelector('.dialog-close').addEventListener('click', () => profileDialog.close());
@@ -589,7 +616,7 @@ try {
   renderHome();
   if (!state.profile) openProfileDialog(true);
   updateBadge();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+  registerServiceWorker();
 } catch (error) {
   console.error(error);
   app.innerHTML = `<section class="empty-state"><div><h1>Aplikaci se nepodařilo načíst</h1><p>Zkontrolujte připojení při prvním spuštění a zkuste stránku obnovit.</p><button class="button button-primary" onclick="location.reload()">Načíst znovu</button></div></section>`;
