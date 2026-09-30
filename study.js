@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.11';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.11';
+import { CONFIG } from './config.js?v=1.0.12';
+import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.12';
 
 export function normalizeText(value) {
   return String(value ?? '')
@@ -53,6 +53,86 @@ export function productMastery(productId, questions, progress) {
   return Math.round((stable.length / related.length) * 100);
 }
 
+function reviewsByQuestion(reviews) {
+  return reviews.reduce((groups, review) => {
+    (groups[review.questionId] ||= []).push(review);
+    return groups;
+  }, {});
+}
+
+export function questionWeakness(questionId, reviews, progress) {
+  const history = reviews
+    .filter((review) => review.questionId === questionId)
+    .sort((a, b) => a.reviewedAt.localeCompare(b.reviewedAt))
+    .slice(-8);
+  if (!history.length) return -1;
+
+  const uncertain = history.filter((review) => review.rating < RATINGS.GOOD).length / history.length;
+  const lastRating = history.at(-1).rating;
+  const lastPenalty = lastRating === RATINGS.AGAIN ? 30 : lastRating === RATINGS.HARD ? 16 : 0;
+  const stability = progress?.stability || 0;
+  const stabilityPenalty = Math.max(0, 1 - stability / CONFIG.FSRS_STABILITY_MASTERY_DAYS) * 20;
+  return Math.round(Math.min(100, uncertain * 60 + lastPenalty + stabilityPenalty));
+}
+
+export function buildWeakStudyQueue({
+  products,
+  questions,
+  progress,
+  reviews,
+  enabledQuestionTypes = ['mcq', 'flashcard', 'text', 'photo'],
+  enabledProductIds = null,
+  limit = 10,
+}) {
+  const enabledTypes = new Set(enabledQuestionTypes);
+  const allowedProductIds = new Set(Array.isArray(enabledProductIds) ? enabledProductIds : products.map((product) => product.id));
+  return questions
+    .filter((question) => enabledTypes.has(question.type) && allowedProductIds.has(question.productId))
+    .map((question) => ({ question, weakness: questionWeakness(question.id, reviews, progress[question.id]) }))
+    .filter((item) => item.weakness >= 25)
+    .sort((a, b) => b.weakness - a.weakness)
+    .slice(0, limit)
+    .map((item) => item.question);
+}
+
+export function learningInsights({ products, questions, progress, reviews, now = new Date() }) {
+  const histories = reviewsByQuestion(reviews);
+  const sevenDaysAgo = new Date(now);
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  const recent = reviews.filter((review) => new Date(review.reviewedAt) >= sevenDaysAgo);
+  const secure = (items) => items.filter((review) => review.rating >= RATINGS.GOOD).length;
+  const percentage = (items) => items.length ? Math.round(secure(items) / items.length * 100) : 0;
+  const learnedQuestionIds = new Set(reviews.map((review) => review.questionId));
+
+  const weakProducts = products.map((product) => {
+    const productQuestions = questions.filter((question) => question.productId === product.id);
+    const productReviews = productQuestions.flatMap((question) => histories[question.id] || []);
+    const weakQuestions = productQuestions
+      .map((question) => questionWeakness(question.id, reviews, progress[question.id]))
+      .filter((score) => score >= 25);
+    return {
+      productId: product.id,
+      name: product.name,
+      category: product.category,
+      attempts: productReviews.length,
+      securePercent: percentage(productReviews),
+      weakQuestionCount: weakQuestions.length,
+      score: weakQuestions.length ? Math.round(weakQuestions.reduce((sum, value) => sum + value, 0) / weakQuestions.length) : 0,
+    };
+  }).filter((product) => product.attempts > 0 && product.weakQuestionCount > 0)
+    .sort((a, b) => b.score - a.score || a.securePercent - b.securePercent);
+
+  return {
+    totalReviews: reviews.length,
+    recentReviews: recent.length,
+    overallSecurePercent: percentage(reviews),
+    recentSecurePercent: percentage(recent),
+    learnedQuestions: learnedQuestionIds.size,
+    totalQuestions: questions.length,
+    weakProducts,
+  };
+}
+
 export function buildStudyQueue({
   products,
   questions,
@@ -83,6 +163,10 @@ export function buildStudyQueue({
     const aDue = progress[a.id] ? 0 : 1;
     const bDue = progress[b.id] ? 0 : 1;
     if (aDue !== bDue) return aDue - bDue;
+    if (!aDue && !bDue) {
+      const weaknessDiff = questionWeakness(b.id, reviews, progress[b.id]) - questionWeakness(a.id, reviews, progress[a.id]);
+      if (weaknessDiff) return weaknessDiff;
+    }
     const productDiff = products.findIndex((p) => p.id === a.productId) - products.findIndex((p) => p.id === b.productId);
     return productDiff || typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
   });

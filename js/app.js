@@ -1,15 +1,18 @@
-import { CONFIG } from '../config.js?v=1.0.11';
-import { contentProvider } from '../content.js?v=1.0.11';
-import { storage } from '../storage.js?v=1.0.11';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.11';
+import { CONFIG } from '../config.js?v=1.0.12';
+import { contentProvider } from '../content.js?v=1.0.12';
+import { storage } from '../storage.js?v=1.0.12';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.12';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
+  buildWeakStudyQueue,
   calculateStreak,
   evaluateText,
+  learningInsights,
+  normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.11';
+} from '../study.js?v=1.0.12';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -108,6 +111,7 @@ function navigate(view) {
   setActiveNav(view);
   if (view === 'home') renderHome();
   if (view === 'products') renderProducts();
+  if (view === 'stats') renderStats();
   if (view === 'settings') renderSettings();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -133,6 +137,8 @@ function renderHome() {
   });
   const due = dueCount();
   const streak = calculateStreak(state.reviews);
+  const insights = learningInsights(state);
+  const weakest = insights.weakProducts[0];
   app.innerHTML = `
     <section class="page">
       <article class="hero-card">
@@ -154,6 +160,11 @@ function renderHome() {
         <div class="stat-card"><strong>${totalMastery()} %</strong><span>zvládnutí</span></div>
         <div class="stat-card"><strong>${masteredProducts()}/${state.products.length}</strong><span>produktů jistě</span></div>
       </div>
+      <article class="recommendation-card">
+        <div><p class="eyebrow">Doporučení</p><h2>${weakest ? `Zaměřte se na ${escapeHtml(weakest.name)}` : 'Pokračujte v pravidelném opakování'}</h2>
+        <p>${weakest ? `${weakest.weakQuestionCount} ${weakest.weakQuestionCount === 1 ? 'otázka potřebuje' : 'otázek potřebuje'} upevnit. Slabší otázky už mají v denní dávce přednost.` : state.reviews.length ? 'Aktuálně nemáte výrazné slabé místo. Další otázky se objeví v optimálním termínu.' : 'Po prvních odpovědích zde uvidíte konkrétní doporučení.'}</p></div>
+        <button class="button button-secondary" type="button" data-view-link="stats">Otevřít statistiky</button>
+      </article>
       <div class="section-heading"><h2>Produkty v kurzu</h2><span>Klepnutím otevřít</span></div>
       <div class="mini-products">${productRows(3)}</div>
     </section>`;
@@ -161,23 +172,91 @@ function renderHome() {
   document.querySelector('#start-study')?.addEventListener('click', startStudy);
 }
 
+function productCard(product) {
+  const mastery = productMastery(product.id, state.questions, state.progress);
+  return `<button class="product-card" type="button" data-product-id="${product.id}">
+    <img src="${product.image}" alt="${escapeHtml(product.name)}" width="240" height="240" loading="lazy">
+    <span class="product-card-body"><h2>${escapeHtml(product.name)}</h2><p>${escapeHtml(product.category)}</p>
+    <span class="progress-track"><span style="width:${mastery}%"></span></span>
+    <span class="progress-label"><span>Zvládnutí</span><strong>${mastery} %</strong></span></span>
+  </button>`;
+}
+
+function productCollection(products, view) {
+  if (!products.length) return '<div class="empty-catalog"><strong>Žádný produkt nenalezen</strong><span>Zkuste jiný název nebo kategorii.</span></div>';
+  if (view === 'category') {
+    const categories = [...new Set(products.map((product) => product.category))];
+    return categories.map((category) => {
+      const categoryProducts = products.filter((product) => product.category === category);
+      return `<section class="catalog-category"><div class="category-heading"><h2>${escapeHtml(category)}</h2><span>${categoryProducts.length}</span></div>
+        <div class="product-grid">${categoryProducts.map(productCard).join('')}</div></section>`;
+    }).join('');
+  }
+  return `<div class="product-grid ${view === 'list' ? 'is-list' : ''}">${products.map(productCard).join('')}</div>`;
+}
+
 function renderProducts() {
+  const view = ['grid', 'list', 'category'].includes(state.settings.productCatalogView) ? state.settings.productCatalogView : 'grid';
   app.innerHTML = `
     <section class="page">
-      <header class="page-header"><p class="eyebrow">Katalog</p><h1>Produkty</h1><p>Všechny informace na jednom místě. Zvládnutí roste, když jsou otázky stabilní déle než 21 dní.</p></header>
-      <div class="product-grid">
-        ${state.products.map((product) => {
-          const mastery = productMastery(product.id, state.questions, state.progress);
-          return `<button class="product-card" type="button" data-product-id="${product.id}">
-            <img src="${product.image}" alt="${escapeHtml(product.name)}" width="800" height="800">
-            <span class="product-card-body"><h2>${escapeHtml(product.name)}</h2><p>${escapeHtml(product.category)}</p>
-            <span class="progress-track"><span style="width:${mastery}%"></span></span>
-            <span class="progress-label"><span>Zvládnutí</span><strong>${mastery} %</strong></span></span>
-          </button>`;
-        }).join('')}
+      <header class="page-header catalog-header"><div><p class="eyebrow">Katalog · ${state.products.length} produktů</p><h1>Produkty</h1><p>Vyhledejte produkt nebo si katalog seřaďte tak, jak se vám učí nejlépe.</p></div></header>
+      <div class="catalog-tools">
+        <label class="catalog-search"><span class="visually-hidden">Hledat produkt</span><input id="product-search" type="search" placeholder="Hledat produkt nebo kategorii…" autocomplete="off"></label>
+        <div class="view-switch" aria-label="Zobrazení produktů">
+          <button type="button" data-catalog-view="grid" aria-label="Mřížka" aria-pressed="${view === 'grid'}" title="Mřížka"><span aria-hidden="true">▦</span><span>Mřížka</span></button>
+          <button type="button" data-catalog-view="list" aria-label="Seznam" aria-pressed="${view === 'list'}" title="Seznam"><span aria-hidden="true">☷</span><span>Seznam</span></button>
+          <button type="button" data-catalog-view="category" aria-label="Kategorie" aria-pressed="${view === 'category'}" title="Podle kategorií"><span aria-hidden="true">≡</span><span>Kategorie</span></button>
+        </div>
       </div>
+      <div id="product-collection">${productCollection(state.products, view)}</div>
     </section>`;
   bindCommonActions();
+  document.querySelector('#product-search').addEventListener('input', (event) => {
+    const query = normalizeText(event.target.value);
+    const filtered = query ? state.products.filter((product) => normalizeText(`${product.name} ${product.category} ${product.brand || ''}`).includes(query)) : state.products;
+    document.querySelector('#product-collection').innerHTML = productCollection(filtered, view);
+    bindCommonActions();
+  });
+  document.querySelectorAll('[data-catalog-view]').forEach((button) => button.addEventListener('click', async () => {
+    state.settings = await storage.saveSettings({ productCatalogView: button.dataset.catalogView });
+    renderProducts();
+  }));
+}
+
+function renderStats() {
+  const insights = learningInsights(state);
+  const weakQueue = buildWeakStudyQueue({
+    ...state,
+    enabledQuestionTypes: state.settings.enabledQuestionTypes,
+    enabledProductIds: selectedProductIds(),
+  });
+  const recentAccuracy = insights.recentReviews ? `${insights.recentSecurePercent} %` : '—';
+  app.innerHTML = `
+    <section class="page">
+      <header class="page-header"><p class="eyebrow">Výsledky a další krok</p><h1>Statistiky</h1><p>Přehled vychází z vašich odpovědí uložených na tomto zařízení.</p></header>
+      <div class="stats-grid stats-grid-detailed" aria-label="Statistiky učení">
+        <div class="stat-card"><strong>${insights.totalReviews}</strong><span>${insights.totalReviews === 1 ? 'odpověď celkem' : 'odpovědí celkem'}</span></div>
+        <div class="stat-card"><strong>${recentAccuracy}</strong><span>jistých za 7 dní</span></div>
+        <div class="stat-card"><strong>${insights.learnedQuestions}/${insights.totalQuestions}</strong><span>vyzkoušených otázek</span></div>
+        <div class="stat-card"><strong>${calculateStreak(state.reviews)}</strong><span>${calculateStreak(state.reviews) === 1 ? 'den v sérii' : 'dní v sérii'}</span></div>
+      </div>
+      <article class="focus-card">
+        <div><p class="eyebrow">Chytré doporučení</p><h2>${weakQueue.length ? `${weakQueue.length} ${weakQueue.length === 1 ? 'otázka' : weakQueue.length <= 4 ? 'otázky' : 'otázek'} k upevnění` : 'Žádné výrazné slabé místo'}</h2>
+        <p>${weakQueue.length ? 'Výběr kombinuje chyby, nejisté odpovědi a nízkou stabilitu v paměti. Nejtěžší otázky dostanou přednost a po chybě se vrátí s odstupem.' : state.reviews.length ? 'Pokračujte denní dávkou. Aplikace vás vyzkouší znovu, až začne vzpomínka slábnout.' : 'Nejdřív dokončete několik otázek, aby aplikace poznala, co potřebujete procvičit.'}</p></div>
+        <button id="start-weak-study" class="button button-primary" type="button" ${weakQueue.length ? '' : 'disabled'}>Procvičit slabá místa</button>
+      </article>
+      <div class="section-heading"><h2>Co vám zatím nejde</h2><span>${insights.weakProducts.length ? 'Největší mezery nahoře' : 'Bez problémů'}</span></div>
+      <div class="weak-list">
+        ${insights.weakProducts.length ? insights.weakProducts.slice(0, 8).map((product) => `
+          <button class="weak-product" type="button" data-product-id="${product.productId}">
+            <span><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(product.category)} · ${product.weakQuestionCount} ${product.weakQuestionCount === 1 ? 'slabá otázka' : product.weakQuestionCount <= 4 ? 'slabé otázky' : 'slabých otázek'}</small></span>
+            <span class="weak-score"><strong>${product.securePercent} %</strong><small>jisté</small></span>
+          </button>`).join('') : '<div class="empty-catalog"><strong>Zatím tu nic není</strong><span>Slabá místa se zobrazí po prvních trénincích.</span></div>'}
+      </div>
+      <details class="research-note"><summary>Jak funguje častější opakování?</summary><p>Plánovač FSRS zkrátí interval po chybě nebo nejisté odpovědi. Otázky se neopakují bezhlavě za sebou: aktivní vybavování je rozložené v čase a přizpůsobené vašim výsledkům.</p></details>
+    </section>`;
+  bindCommonActions();
+  document.querySelector('#start-weak-study')?.addEventListener('click', () => startWeakStudy(weakQueue));
 }
 
 function renderSettings() {
@@ -399,7 +478,24 @@ function startStudy() {
     enabledProductIds: selectedProductIds(),
   });
   if (!queue.length) return;
-  state.session = { queue, index: 0, answers: [], revealed: false };
+  startStudySession(queue, 'daily');
+}
+
+function startWeakStudy(queue = null) {
+  const weakQueue = queue || buildWeakStudyQueue({
+    ...state,
+    enabledQuestionTypes: state.settings.enabledQuestionTypes,
+    enabledProductIds: selectedProductIds(),
+  });
+  if (!weakQueue.length) {
+    showToast('Teď nemáte žádná výrazná slabá místa.');
+    return;
+  }
+  startStudySession(weakQueue, 'weak');
+}
+
+function startStudySession(queue, mode) {
+  state.session = { queue: [...queue], index: 0, answers: [], revealed: false, retryIds: new Set(), mode };
   state.currentView = 'study';
   setActiveNav('');
   renderQuestion();
@@ -502,6 +598,12 @@ async function recordReview(question, rating, correct) {
   state.progress[question.id] = rebuildProgress(history);
   await storage.saveQuestionProgress(question.id, state.progress[question.id]);
   state.session.answers.push({ questionId: question.id, productId: question.productId, correct, rating });
+  const remainingQuestions = state.session.queue.length - state.session.index - 1;
+  if (rating <= RATINGS.HARD && remainingQuestions >= 3 && !state.session.retryIds.has(question.id)) {
+    const insertAt = Math.min(state.session.queue.length, state.session.index + 4);
+    state.session.queue.splice(insertAt, 0, question);
+    state.session.retryIds.add(question.id);
+  }
 }
 
 function nextQuestion() {
@@ -518,8 +620,10 @@ function renderSummary() {
   app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">Dávka dokončena</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
     <div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>
+    ${misses.length ? '<button id="open-stats" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zobrazit slabá místa</button>' : ''}
     <button id="finish" class="button button-primary button-full" style="margin-top:1rem" type="button">Zpět na dnešek</button></article></section>`;
   document.querySelector('#finish').addEventListener('click', () => navigate('home'));
+  document.querySelector('#open-stats')?.addEventListener('click', () => navigate('stats'));
   window.scrollTo({ top: 0, behavior: 'instant' });
   updateBadge();
 }

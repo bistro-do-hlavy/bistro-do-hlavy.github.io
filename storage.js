@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js?v=1.0.11';
+import { CONFIG } from './config.js?v=1.0.12';
 
 const KEY = 'bistro-do-hlavy:v1';
 
@@ -12,6 +12,7 @@ const emptyState = () => ({
     theme: 'system',
     enabledQuestionTypes: ['mcq', 'flashcard', 'text', 'photo'],
     enabledProductIds: null,
+    productCatalogView: 'grid',
   },
 });
 

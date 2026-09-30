@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
   <link rel="apple-touch-icon" href="img/icon-192.png">
-  <link rel="stylesheet" href="css/styles.css?v=1.0.11">
+  <link rel="stylesheet" href="css/styles.css?v=1.0.12">
 </head>
 <body>
   <div class="app-shell">
@@ -39,6 +39,10 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>
         <span>Produkty</span>
       </button>
+      <button class="nav-item" type="button" data-view-link="stats">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/></svg>
+        <span>Statistiky</span>
+      </button>
       <button class="nav-item" type="button" data-view-link="settings">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8 4 2-1-2-4-2 .5-2-1L15 4h-6L8 6.5l-2 1L4 7l-2 4 2 1v2l-2 1 2 4 2-.5 2 1L9 22h6l1-2.5 2-1 2 .5 2-4-2-1z"/></svg>
         <span>Nastavení</span>
@@ -65,6 +69,6 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <input id="import-file" type="file" accept="application/json,.json" hidden>
 
-  <script type="module" src="js/app.js?v=1.0.11"></script>
+  <script type="module" src="js/app.js?v=1.0.12"></script>
 </body>
 </html>
