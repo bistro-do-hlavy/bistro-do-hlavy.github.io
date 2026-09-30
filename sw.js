@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.16';
+const CACHE_VERSION = 'bistro-v1.0.17';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.16', './js/app.js?v=1.0.16',
-  './config.js?v=1.0.16', './content.js?v=1.0.16', './storage.js?v=1.0.16',
-  './fsrs-service.js?v=1.0.16', './study.js?v=1.0.16', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.17', './js/app.js?v=1.0.17',
+  './config.js?v=1.0.17', './content.js?v=1.0.17', './storage.js?v=1.0.17',
+  './fsrs-service.js?v=1.0.17', './study.js?v=1.0.17', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
