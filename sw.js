@@ -1,14 +1,16 @@
-const CACHE_VERSION = 'bistro-v1.0.13';
+const CACHE_VERSION = 'bistro-v1.0.14';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.13', './js/app.js?v=1.0.13',
-  './config.js?v=1.0.13', './content.js?v=1.0.13', './storage.js?v=1.0.13',
-  './fsrs-service.js?v=1.0.13', './study.js?v=1.0.13', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.14', './js/app.js?v=1.0.14',
+  './config.js?v=1.0.14', './content.js?v=1.0.14', './storage.js?v=1.0.14',
+  './fsrs-service.js?v=1.0.14', './study.js?v=1.0.14', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
   './img/products/makovy-olej-v-presu.webp', './img/products/kachni-pastika-calvados-melememaso.webp',
   './img/products/tiparos-rybi-omacka.webp',
   './img/products/caffe-barbaro-miscela-blu.webp', './img/products/kitl-syrob-grapefruit.webp',
+  './img/products/sufan-granola-malinova.webp', './img/products/bezva-musli-spekane-paleo.webp',
+  './img/products/vladimir-pernik-do-kafe.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

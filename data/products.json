@@ -139,5 +139,65 @@
       { "label": "Výrobce – detail produktu", "url": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/" },
       { "label": "Výrobce – řada Kitl Syrob", "url": "https://www.kitl.cz/vyrobky/kitl-syrob/" }
     ]
+  },
+  {
+    "id": "sufan-granola-malinova-350-g",
+    "name": "ŠUFAN Granola malinová 350 g",
+    "category": "Granoly a müsli",
+    "brand": "ŠUFAN",
+    "manufacturer": "ŠUFAN s.r.o.",
+    "origin": "Olomouc, Česká republika",
+    "description": "Bezlepková pečená granola s mrazem sušenými malinami, ořechy, semínky a kokosovými chipsy.",
+    "ingredients": ["bezlepkové ovesné vločky", "rýžový sirup", "kokos", "mandle", "kešu ořechy", "kokosové chipsy", "dýňová semínka", "lyofilizované maliny 4 %", "slunečnicová semínka", "olivový olej", "kokosový cukr", "amarantové vločky", "chia semínka", "pufované jáhly", "cejlonská skořice", "himálajská sůl"],
+    "allergens": [8],
+    "specifics": ["bezlepkové ovesné vločky", "4 % mrazem sušených malin", "bez umělých aromat a barviv", "pečená na olivovém oleji", "může obsahovat stopy mléka, arašídů, sezamu a dalších skořápkových plodů"],
+    "preparation": ["Podávej s mlékem nebo jogurtem, použij do kaše či jako rychlou svačinu.", "Po otevření obal vždy dobře uzavři a spotřebuj do 30 dní.", "Skladuj v suchu a chraň před přímým slunečním zářením."],
+    "brandInfo": "ŠUFAN je český výrobce z Olomouce. Značka vznikla v roce 2014 a své ořechové výrobky, granoly a další potraviny vyrábí ve vlastní výrobně na Hané.",
+    "salesTip": "Doporuč zákazníkovi, který hledá bezlepkovou křupavou snídani s výraznou přirozeně kyselkavou chutí malin.",
+    "image": "img/products/sufan-granola-malinova.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177" },
+      { "label": "Výrobce – příběh značky", "url": "https://www.sufan.cz/" }
+    ]
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g",
+    "name": "Bezva müsli Spékané paleo 450 g",
+    "category": "Granoly a müsli",
+    "brand": "Bezva müsli",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Staré Ždánice, Česká republika",
+    "description": "Pečená směs bez obilných vloček z kokosu, rozinek, ořechů a semínek, slazená medem a jablečným koncentrátem.",
+    "ingredients": ["kokosové plátky 24 %", "rozinky 18 % se slunečnicovým olejem", "mandle a kešu ořechy 10 %", "slunečnicová, chia, sezamová, dýňová a neloupaná konopná semínka 34 %", "med", "jablečný koncentrát", "za studena lisovaný rostlinný olej"],
+    "allergens": [8, 11],
+    "specifics": ["neobsahuje obilné vločky", "základ tvoří kokos, ořechy a semínka", "slazené medem a jablečným koncentrátem", "uzavíratelný sáček se zipem", "může obsahovat stopy sóji, arašídů a dalších skořápkových plodů"],
+    "preparation": ["Přidej do jogurtu nebo k oblíbeným vločkám, případně jez samostatně jako křupavou svačinu.", "Skladuj v suchu a po každém použití sáček pečlivě uzavři.", "Po otevření spotřebuj do jednoho měsíce."],
+    "brandInfo": "Bezva Zdraví je česká rodinná výroba müsli, granol a kaší ze Starých Ždánic. Značka zdůrazňuje poctivé zpracování a výrobu v České republice.",
+    "salesTip": "Nabídni lidem, kteří chtějí müsli bez vloček s vysokým podílem ořechů a semínek; upozorni, že obsahuje med a není veganské.",
+    "image": "img/products/bezva-musli-spekane-paleo.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.bezva-zdravi.cz/spekane-musli/bezva-musli-spekane-paleo/" },
+      { "label": "Výrobce – o značce", "url": "https://www.bezva-zdravi.cz/o-nas/" }
+    ]
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml",
+    "name": "Vladimír Perník do kafe 500 ml",
+    "category": "Sirupy",
+    "brand": "Produkty Vladimír",
+    "manufacturer": "Produkty Vladimír s.r.o.",
+    "origin": "Dolní Nerestce, jižní Čechy, Česká republika",
+    "description": "Ručně vyráběný kořeněný sirup určený především k ochucení kávy a mléčných kávových nápojů.",
+    "ingredients": ["cukr", "voda", "perníkové koření"],
+    "allergens": [],
+    "specifics": ["kořeněný sirup do kávy", "ruční výroba v jižních Čechách", "doporučené ředění 1:10", "balení ve skleněné lahvi", "EAN 8594223410903"],
+    "preparation": ["Přidej malé množství do latté, cappuccina nebo jiné kávy podle chuti.", "Při přípravě nápoje se orientuj podle doporučeného ředění 1:10.", "Skladuj v chladu a temnu."],
+    "brandInfo": "Produkty Vladimír vyrábějí v Dolních Nerestcích ovocné, bylinné a kávové sirupy. Značka staví na ruční výrobě a jednoduchém složení bez zbytečné chemie.",
+    "salesTip": "Doporuč k latté nebo cappuccinu zákazníkovi, který má rád hřejivou chuť perníkového koření; hodí se zejména do podzimní a zimní nabídky.",
+    "image": "img/products/vladimir-pernik-do-kafe.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.produkty-vladimir.cz/sirupy-do-kavy/sirup-dokafe-pernik/" },
+      { "label": "Výrobce – kontakty", "url": "https://www.produkty-vladimir.cz/kontakty/" }
+    ]
   }
 ]

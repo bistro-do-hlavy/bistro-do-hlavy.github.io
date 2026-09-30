@@ -369,5 +369,164 @@
     "prompt": "Jak Kitl Syrob Grapefruit stručně představíš zákazníkovi?",
     "answer": "Hustý český grepový sirup s dužninou na domácí limonády, horké nápoje, koktejly i dezerty.",
     "explanation": "Tato věta shrnuje původ, ovocný charakter a hlavní způsoby použití."
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q1",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "mcq",
+    "prompt": "Kolik mrazem sušených malin obsahuje ŠUFAN Granola malinová?",
+    "options": ["4 %", "1 %", "10 %", "24 %"],
+    "answer": "4 %",
+    "explanation": "Výrobce uvádí 4 % lyofilizovaných malin, polovinu celých a polovinu ve formě prášku."
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q2",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "text",
+    "prompt": "Napiš hlavní povinně značený alergen obsažený v malinové granole ŠUFAN.",
+    "answer": "skořápkové plody",
+    "answerDisplay": "Skořápkové plody – mandle a kešu ořechy.",
+    "explanation": "Ve složení jsou přímo uvedeny mandle a kešu ořechy."
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q3",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "flashcard",
+    "prompt": "Jak se malinová granola ŠUFAN nejčastěji podává?",
+    "answer": "S mlékem, jogurtem, v kaši nebo samostatně jako svačina.",
+    "explanation": "Granola je hotová k přímé konzumaci a hodí se ke snídani i svačině."
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q4",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/sufan-granola-malinova.webp",
+    "options": ["ŠUFAN Granola malinová", "Bezva müsli Spékané paleo", "ŠUFAN Granola čokoládová", "Ovesná kaše malinová"],
+    "answer": "ŠUFAN Granola malinová",
+    "explanation": "Poznáš ji podle značky ŠUFAN a červeného pole s názvem Granola malinová."
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q5",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "mcq",
+    "prompt": "Který olej se používá při pečení této granoly?",
+    "options": ["Olivový olej", "Palmový olej", "Řepkový olej", "Kokosový olej"],
+    "answer": "Olivový olej",
+    "explanation": "Výrobce uvádí, že granolu peče na olivovém oleji."
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q6",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "flashcard",
+    "prompt": "Komu bys ŠUFAN Granolu malinovou doporučil?",
+    "answer": "Zákazníkovi, který chce bezlepkovou křupavou snídani s přirozeně kyselkavou chutí malin.",
+    "explanation": "Tím vystihneš hlavní vlastnost, použití i chuť produktu."
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q1",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "mcq",
+    "prompt": "Čím se Bezva müsli Spékané paleo liší od běžného müsli?",
+    "options": ["Neobsahuje obilné vločky", "Je tekuté", "Obsahuje jen ovesné vločky", "Připravuje se vařením"],
+    "answer": "Neobsahuje obilné vločky",
+    "explanation": "Základ tvoří kokos, ořechy, semínka a rozinky, nikoli obilné vločky."
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q2",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "text",
+    "prompt": "Napiš alergen ze semínek, který je přímo součástí směsi Bezva müsli Spékané paleo.",
+    "answer": "sezam",
+    "answerDisplay": "Sezamová semena.",
+    "explanation": "Ve směsi semínek je přímo uveden sezam."
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q3",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "flashcard",
+    "prompt": "Čím je Bezva müsli Spékané paleo slazené?",
+    "answer": "Medem a jablečným koncentrátem.",
+    "explanation": "Ve složení není klasický přidaný cukr, ale med a jablečný koncentrát."
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q4",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-musli-spekane-paleo.webp",
+    "options": ["Bezva müsli Spékané paleo", "ŠUFAN Granola malinová", "Bezva müsli s ořechy", "Kokosové chipsy"],
+    "answer": "Bezva müsli Spékané paleo",
+    "explanation": "Poznáš je podle velkého nápisu BEZVA MÜSLI a červeného označení SPÉKANÉ PALEO."
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q5",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "mcq",
+    "prompt": "Proč Bezva müsli Spékané paleo není vhodné pro vegany?",
+    "options": ["Obsahuje med", "Obsahuje mléko", "Obsahuje vejce", "Obsahuje ryby"],
+    "answer": "Obsahuje med",
+    "explanation": "Med je živočišného původu, proto výrobek není veganský."
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q6",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "flashcard",
+    "prompt": "Jak se má výrobek skladovat po otevření?",
+    "answer": "V suchu, v dobře uzavřeném sáčku, a spotřebovat do jednoho měsíce.",
+    "explanation": "Uzavírání zipu pomáhá zachovat křupavost směsi."
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q1",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "mcq",
+    "prompt": "K čemu je sirup Vladimír Perník do kafe primárně určen?",
+    "options": ["K ochucení kávy", "K nakládání masa", "K přípravě salátové zálivky", "K dochucení polévek"],
+    "answer": "K ochucení kávy",
+    "explanation": "Výrobce ho navrhl zejména pro latté a další kávové nápoje."
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q2",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU výrobce u sirupu Perník do kafe uvádí?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Oficiální složení uvádí pouze cukr, vodu a perníkové koření."
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q3",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "flashcard",
+    "prompt": "Jaké je složení sirupu Vladimír Perník do kafe?",
+    "answer": "Cukr, voda a perníkové koření.",
+    "explanation": "Výrobce uvádí jednoduché třísložkové složení."
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q4",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/vladimir-pernik-do-kafe.webp",
+    "options": ["Vladimír Perník do kafe", "Vladimír Slaný karamel", "Kitl Syrob Grapefruit", "Javorový sirup"],
+    "answer": "Vladimír Perník do kafe",
+    "explanation": "Na tmavé lahvi je značka Vladimír a motiv perníčku v šálku."
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q5",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "mcq",
+    "prompt": "Jaké ředění výrobce u sirupu doporučuje?",
+    "options": ["1:10", "1:1", "1:3", "1:20"],
+    "answer": "1:10",
+    "explanation": "Na jeden díl sirupu připadá přibližně deset dílů nápoje."
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q6",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak sirup Perník do kafe stručně nabídneš zákazníkovi?",
+    "answer": "Ručně vyráběný jihočeský sirup s hřejivým perníkovým kořením, vhodný hlavně do latté a cappuccina.",
+    "explanation": "Tato věta shrnuje původ, výrobu, chuť i hlavní použití."
   }
 ]
