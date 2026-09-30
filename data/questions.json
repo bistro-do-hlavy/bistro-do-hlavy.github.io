@@ -263,5 +263,111 @@
     "prompt": "Čím je výroba rybí omáčky Tiparos specifická?",
     "answer": "Ančovičky se nechávají fermentovat přibližně 12 až 18 měsíců.",
     "explanation": "Dlouhá fermentace vytváří tmavou čirou barvu, aroma a chuť umami."
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q1",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "mcq",
+    "prompt": "Z jakých dvou druhů kávy je Caffè Barbaro Miscela Blu namíchaná?",
+    "options": ["Z Arabiky a Robusty", "Jen z Arabiky", "Jen z Robusty", "Z Liberiky a Robusty"],
+    "answer": "Z Arabiky a Robusty",
+    "explanation": "Výrobce uvádí kombinaci kvalit Arabica a Robusta."
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q2",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje čistá zrnková káva Miscela Blu?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "Výrobek tvoří pouze pražená kávová zrna Arabica a Robusta."
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q3",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "flashcard",
+    "prompt": "Jaký chuťový profil má Caffè Barbaro Miscela Blu?",
+    "answer": "Krémový, vyvážený a plnější profil v neapolském stylu.",
+    "explanation": "Výrobce ji doporučuje milovníkům krémové a vyvážené kávy."
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q4",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/caffe-barbaro-miscela-blu.webp",
+    "options": ["Caffè Barbaro Miscela Blu", "Caffè Barbaro Miscela Oro", "Europa Decaffeinato", "Káva Mandlovka"],
+    "answer": "Caffè Barbaro Miscela Blu",
+    "explanation": "Poznáš ji podle bílého obalu s výrazným modrým kosočtvercovým vzorem."
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q5",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "mcq",
+    "prompt": "V jaké podobě a velikosti je tato Miscela Blu?",
+    "options": ["Zrnková káva 1 kg", "Mletá káva 250 g", "ESE pody 150 kusů", "Instantní káva 500 g"],
+    "answer": "Zrnková káva 1 kg",
+    "explanation": "Jde o kilogramové balení celých pražených kávových zrn."
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q6",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "flashcard",
+    "prompt": "Komu bys Caffè Barbaro Miscela Blu doporučil?",
+    "answer": "Zákazníkovi, který chce klasické italské espresso s výraznou cremou, plnějším tělem a vyváženou chutí.",
+    "explanation": "Tím vystihneš původ stylu, způsob použití i hlavní senzorické vlastnosti."
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q1",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "mcq",
+    "prompt": "Kolik grapefruitového koncentrátu obsahuje Kitl Syrob Grapefruit?",
+    "options": ["13 %", "5 %", "18 %", "50 %"],
+    "answer": "13 %",
+    "explanation": "Ve složení je 13 % grapefruitového koncentrátu a dalších 5 % grapefruitové dužniny."
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q2",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU výrobce u Kitl Syrobu Grapefruit uvádí?",
+    "answer": "žádný",
+    "answerDisplay": "Žádný z povinně značených alergenů EU.",
+    "explanation": "V oficiálním složení není uveden žádný z povinně značených alergenů EU."
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q3",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "flashcard",
+    "prompt": "V jakém poměru se Kitl Syrob Grapefruit ředí pro studenou limonádu?",
+    "answer": "1 díl sirupu na 10 dílů vody.",
+    "explanation": "Výrobce pro domácí limonádu doporučuje poměr 1:10."
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q4",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kitl-syrob-grapefruit.webp",
+    "options": ["Kitl Syrob Grapefruit", "Kitl Syrob Pomeranč", "Vladimír Pešnfrujt", "Javorový sirup"],
+    "answer": "Kitl Syrob Grapefruit",
+    "explanation": "Na přední etiketě je grapefruit a nápis SYROB GRAPEFRUIT."
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q5",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "mcq",
+    "prompt": "Co udělat před použitím Kitl Syrobu Grapefruit?",
+    "options": ["Protřepat láhev", "Převařit celý obsah", "Uložit na hodinu do mrazáku", "Přecedit dužninu"],
+    "answer": "Protřepat láhev",
+    "explanation": "Ovocné složky mohou přirozeně sedimentovat, proto výrobce doporučuje protřepání."
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q6",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak Kitl Syrob Grapefruit stručně představíš zákazníkovi?",
+    "answer": "Hustý český grepový sirup s dužninou na domácí limonády, horké nápoje, koktejly i dezerty.",
+    "explanation": "Tato věta shrnuje původ, ovocný charakter a hlavní způsoby použití."
   }
 ]

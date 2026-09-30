@@ -99,5 +99,45 @@
       { "label": "Výrobce – tradiční fermentace", "url": "https://www.tiparos.com/news/view/0-30-%E0%B8%97%E0%B8%B4%E0%B8%9E%E0%B8%A3%E0%B8%AA-%E0%B8%AB%E0%B8%A1%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%97%E0%B9%89%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B2%E0%B8%99-1-1-12-%E0%B8%9B%E0%B8%B5-%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1%E0%B9%83%E0%B8%AA%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%EF%BF%BD" },
       { "label": "Distributor – deklarace složení", "url": "https://www.fairprice.com.sg/product/tiparos-fish-sauce-700ml-11943282" }
     ]
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg",
+    "name": "Caffè Barbaro Miscela Blu 1 kg",
+    "category": "Zrnková káva",
+    "brand": "Caffè Barbaro",
+    "manufacturer": "Nutis S.r.l.",
+    "origin": "Santa Maria la Carità, Kampánie, Itálie",
+    "description": "Zrnková směs kávy Arabica a Robusta v neapolském stylu, určená především pro krémové a vyvážené espresso.",
+    "ingredients": ["pražená zrnková káva – směs Arabiky a Robusty"],
+    "allergens": [],
+    "specifics": ["směs Arabiky a Robusty", "krémový a vyvážený chuťový profil", "neapolská tradice pražení", "balení s jednocestným ventilem pro ochranu aroma", "zrnková káva v balení 1 kg"],
+    "preparation": ["Umel bezprostředně před přípravou podle použitého kávovaru.", "Výrobce směs doporučuje především pro espresso o objemu přibližně 30 ml.", "Po otevření obal dobře uzavři a kávu chraň před teplem, vlhkostí a světlem."],
+    "brandInfo": "Caffè Barbaro je značka neapolské kávové tradice založená roku 1956. Od roku 2015 ji rozvíjí společnost Nutis z oblasti Kampánie.",
+    "salesTip": "Doporuč zákazníkovi, který chce klasické italské espresso s výraznou cremou, plnějším tělem a vyváženou chutí.",
+    "image": "img/products/caffe-barbaro-miscela-blu.webp",
+    "sources": [
+      { "label": "Výrobce – katalog zrnkové kávy", "url": "https://www.venditalia.com/restricted-assets/digital-profiles/01_ATTACHMENTS/VEN26/GRANI-2026-69b96f0e80400.pdf.pdf" },
+      { "label": "Výrobce – historie značky", "url": "https://caffebarbaro.com/" }
+    ]
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml",
+    "name": "Kitl Syrob Grapefruit 500 ml",
+    "category": "Sirupy",
+    "brand": "Kitl",
+    "manufacturer": "Kitl s.r.o.",
+    "origin": "Liberec–Vratislavice nad Nisou, Česká republika",
+    "description": "Hustý grapefruitový sirup s ovocnou dužninou pro domácí limonády, horké nápoje, koktejly a dezerty.",
+    "ingredients": ["cukr", "grapefruitový koncentrát 13 %", "grapefruitová dužnina 5 %", "kyselina citronová", "sorban draselný", "přírodní aroma"],
+    "allergens": [],
+    "specifics": ["18 % deklarované grapefruitové složky", "obsahuje grapefruitovou dužninu", "před použitím se protřepává", "přirozený sediment, zákal nebo pěna nejsou na závadu", "EAN 8595251000869"],
+    "preparation": ["Pro studenou domácí limonádu řeď s vodou v poměru 1:10.", "Pro horký nápoj používej poměr 1:8; hodí se také do koktejlů a na dezerty.", "Chraň před mrazem a přímým sluncem; po otevření spotřebuj do 30 dní."],
+    "brandInfo": "Kitl je český výrobce z libereckých Vratislavic nad Nisou. Řada Syrob zahrnuje husté ovocné a bylinné sirupy pro studené i horké nápoje.",
+    "salesTip": "Nabídni jako výrazně ovocný základ domácí grepové limonády; zákazníkovi rovnou připomeň poměr 1 díl sirupu na 10 dílů vody.",
+    "image": "img/products/kitl-syrob-grapefruit.webp",
+    "sources": [
+      { "label": "Výrobce – detail produktu", "url": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/" },
+      { "label": "Výrobce – řada Kitl Syrob", "url": "https://www.kitl.cz/vyrobky/kitl-syrob/" }
+    ]
   }
 ]
