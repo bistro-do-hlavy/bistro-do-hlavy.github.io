@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.17';
+const CACHE_VERSION = 'bistro-v1.0.18';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.17', './js/app.js?v=1.0.17',
-  './config.js?v=1.0.17', './content.js?v=1.0.17', './storage.js?v=1.0.17',
-  './fsrs-service.js?v=1.0.17', './study.js?v=1.0.17', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.18', './js/app.js?v=1.0.18',
+  './config.js?v=1.0.18', './content.js?v=1.0.18', './storage.js?v=1.0.18',
+  './fsrs-service.js?v=1.0.18', './study.js?v=1.0.18', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
@@ -17,6 +17,7 @@ const APP_SHELL = [
   './img/products/dr-oetker-bio-kakao-90-g.webp', './img/products/bio-nebio-javorovy-sirup-grade-c-250-ml.webp',
   './img/products/kavova-mandlovka-200-ml.webp', './img/products/habla-del-silencio-750-ml.webp',
   './img/products/honoro-vera-monastrell-750-ml.webp', './img/products/condado-de-oriza-roble-750-ml.webp',
+  './img/products/henri-willig-gouda-chili-hot-spicy.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

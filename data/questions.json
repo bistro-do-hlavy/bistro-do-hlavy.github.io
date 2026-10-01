@@ -719,7 +719,7 @@
     "options": [
       "Miscela d’Oro Espresso Gran Crema",
       "Caffè Barbaro Miscela Blu",
-      "Kaffee Braun Espresso No1",
+      "Kaffeebrewda Espresso No1 Italian Style",
       "La Brasiliana Europa"
     ],
     "answer": "Miscela d’Oro Espresso Gran Crema",
@@ -751,21 +751,21 @@
     "id": "kaffee-braun-espresso-no1-1-kg-q1",
     "productId": "kaffee-braun-espresso-no1-1-kg",
     "type": "mcq",
-    "prompt": "Do které kategorie patří Kaffee Braun Espresso No1?",
+    "prompt": "Jaký je poměr Arabiky a Robusty v Kaffeebrewda Espresso No1?",
     "options": [
-      "Zrnková káva",
-      "Omáčky a dipy",
-      "Pečivo",
-      "Mléčné výrobky"
+      "70 % Arabika a 30 % Robusta",
+      "100 % Arabika",
+      "50 % Arabika a 50 % Robusta",
+      "30 % Arabika a 70 % Robusta"
     ],
-    "answer": "Zrnková káva",
-    "explanation": "Kaffee Braun Espresso No1 patří do kategorie zrnková káva."
+    "answer": "70 % Arabika a 30 % Robusta",
+    "explanation": "Směs tvoří 70 % Arabiky z Brazílie a Kolumbie a 30 % Robusty z Indie."
   },
   {
     "id": "kaffee-braun-espresso-no1-1-kg-q2",
     "productId": "kaffee-braun-espresso-no1-1-kg",
     "type": "text",
-    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Kaffee Braun Espresso No1?",
+    "prompt": "Který z 14 povinně značených alergenů EU obsahuje Kaffeebrewda Espresso No1?",
     "answer": "žádný",
     "answerDisplay": "Žádný z povinně značených alergenů EU.",
     "explanation": "Žádný z povinně značených alergenů EU."
@@ -774,9 +774,9 @@
     "id": "kaffee-braun-espresso-no1-1-kg-q3",
     "productId": "kaffee-braun-espresso-no1-1-kg",
     "type": "flashcard",
-    "prompt": "Jak se Kaffee Braun Espresso No1 správně připravuje nebo podává?",
-    "answer": "Mlít čerstvě a připravovat především jako espresso.",
-    "explanation": "Mlít čerstvě a připravovat především jako espresso."
+    "prompt": "Jak se Kaffeebrewda Espresso No1 správně připravuje?",
+    "answer": "Mlít těsně před přípravou a použít především na espresso.",
+    "explanation": "Čerstvé mletí pomáhá zachovat aroma; směs je vytvořená především pro espresso."
   },
   {
     "id": "kaffee-braun-espresso-no1-1-kg-q4",
@@ -785,35 +785,35 @@
     "prompt": "Který produkt je na fotografii?",
     "image": "img/products/kaffee-braun-espresso-no1.webp",
     "options": [
-      "Kaffee Braun Espresso No1",
+      "Kaffeebrewda Espresso No1 Italian Style",
       "Miscela d’Oro Espresso Gran Crema",
       "Caffè Barbaro Miscela Blu",
       "La Brasiliana Europa"
     ],
-    "answer": "Kaffee Braun Espresso No1",
-    "explanation": "Na fotografii je Kaffee Braun Espresso No1."
+    "answer": "Kaffeebrewda Espresso No1 Italian Style",
+    "explanation": "Na fotografii je Kaffeebrewda Espresso No1 Italian Style."
   },
   {
     "id": "kaffee-braun-espresso-no1-1-kg-q5",
     "productId": "kaffee-braun-espresso-no1-1-kg",
     "type": "mcq",
-    "prompt": "Ve kterém německém městě sídlí pražírna Kaffee Braun?",
+    "prompt": "Ve kterém městě se Kaffeebrewda Espresso No1 praží?",
     "options": [
-      "Mainaschaff",
       "Hamburk",
+      "Mainaschaff",
       "Mnichov",
       "Drážďany"
     ],
-    "answer": "Mainaschaff",
-    "explanation": "Mainaschaff."
+    "answer": "Hamburk",
+    "explanation": "Směs je inspirovaná Neapolí, ale praží se v Hamburku."
   },
   {
     "id": "kaffee-braun-espresso-no1-1-kg-q6",
     "productId": "kaffee-braun-espresso-no1-1-kg",
     "type": "flashcard",
-    "prompt": "Jak Kaffee Braun Espresso No1 stručně představíš zákazníkovi?",
-    "answer": "Řemeslně pražená německá espresso směs z rodinné pražírny.",
-    "explanation": "Řemeslně pražená německá espresso směs z rodinné pražírny."
+    "prompt": "Jak Kaffeebrewda Espresso No1 stručně představíš zákazníkovi?",
+    "answer": "Výrazná směs v italském stylu s tóny karamelu a čokolády a lehkou aciditou.",
+    "explanation": "Výrazná směs v italském stylu s tóny karamelu a čokolády a lehkou aciditou."
   },
   {
     "id": "la-brasiliana-europa-1-kg-q1",
@@ -854,7 +854,7 @@
     "image": "img/products/la-brasiliana-europa.webp",
     "options": [
       "La Brasiliana Europa",
-      "Kaffee Braun Espresso No1",
+      "Kaffeebrewda Espresso No1 Italian Style",
       "Miscela d’Oro Espresso Gran Crema",
       "Caffè Barbaro Miscela Blu"
     ],
@@ -992,7 +992,7 @@
       "Chicory Cup instantní čekankový nápoj",
       "Teahouse Exclusives Assam GFBOP",
       "Dr. Oetker Bio Kakao",
-      "Kaffee Braun Espresso No1"
+      "Kaffeebrewda Espresso No1 Italian Style"
     ],
     "answer": "Chicory Cup instantní čekankový nápoj",
     "explanation": "Na fotografii je Chicory Cup instantní čekankový nápoj."
@@ -1426,5 +1426,97 @@
     "prompt": "Jak Condado de Oriza Roble stručně představíš zákazníkovi?",
     "answer": "Tempranillo z Ribera del Duero s ovocným a kořenitým profilem a vlivem amerického dubu.",
     "explanation": "Tempranillo z Ribera del Duero s ovocným a kořenitým profilem a vlivem amerického dubu."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q1",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "mcq",
+    "prompt": "Kolik chilli papriček obsahuje Henri Willig Gouda Chili Hot & Spicy?",
+    "options": [
+      "6 %",
+      "1 %",
+      "12 %",
+      "Neobsahuje chilli"
+    ],
+    "answer": "6 %",
+    "explanation": "Ve složení je uvedeno 6 % chilli papriček."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q2",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU obsahuje Henri Willig Gouda Chili Hot & Spicy?",
+    "answer": "mléko",
+    "answerDisplay": "Mléko včetně laktózy.",
+    "explanation": "Výrobek obsahuje pasterované kravské mléko; jde o alergen číslo 7."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q3",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "flashcard",
+    "prompt": "Proč je Henri Willig Gouda Chili Hot & Spicy vhodný pro vegetariány?",
+    "answer": "Protože se vyrábí s mikrobiálním syřidlem.",
+    "explanation": "Výrobce uvádí mikrobiální syřidlo a produkt označuje jako vegetariánský."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q4",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/henri-willig-gouda-chili-hot-spicy.webp",
+    "options": [
+      "Henri Willig Gouda Chili Hot & Spicy",
+      "Henri Willig Gouda Pesto Verde",
+      "Kozí Gouda Natural",
+      "Uzený kravský sýr"
+    ],
+    "answer": "Henri Willig Gouda Chili Hot & Spicy",
+    "explanation": "Na fotografii je oranžový kravský sýr Henri Willig s chilli papričkami."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q5",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "mcq",
+    "prompt": "Při jaké teplotě se má tento sýr po otevření uchovávat?",
+    "options": [
+      "4 až 7 °C",
+      "10 až 15 °C",
+      "Při pokojové teplotě",
+      "Pod bodem mrazu"
+    ],
+    "answer": "4 až 7 °C",
+    "explanation": "Výrobce doporučuje po otevření uchovávat sýr při 4 až 7 °C."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q6",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "text",
+    "prompt": "Na jakou teplotu má sýr před podáváním dojít?",
+    "answer": "pokojovou teplotu",
+    "answerDisplay": "Na pokojovou teplotu.",
+    "explanation": "Při pokojové teplotě se lépe projeví chuť a aroma sýra."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q7",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "flashcard",
+    "prompt": "S čím výrobce doporučuje tento pálivý sýr podávat?",
+    "answer": "S křupavým chlebem nebo krekry a jemným medovým či fíkovým dipem.",
+    "explanation": "Sladší jemný dip vyvažuje výraznou pálivost chilli."
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q8",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "photo",
+    "prompt": "Jakou chuť má produkt na fotografii především nabídnout?",
+    "image": "img/products/henri-willig-gouda-chili-hot-spicy.webp",
+    "options": [
+      "Výrazně pálivou chilli chuť",
+      "Jemnou vanilkovou sladkost",
+      "Uzenou rybí chuť",
+      "Kyselou citrusovou chuť"
+    ],
+    "answer": "Výrazně pálivou chilli chuť",
+    "explanation": "Jde o výrazně pálivou Goudu se 6 % chilli papriček."
   }
 ]

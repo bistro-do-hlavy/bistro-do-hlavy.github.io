@@ -485,39 +485,40 @@
   },
   {
     "id": "kaffee-braun-espresso-no1-1-kg",
-    "name": "Kaffee Braun Espresso No1 1 kg",
+    "name": "Kaffeebrewda Espresso No1 Italian Style 1 kg",
     "category": "Zrnková káva",
-    "brand": "Kaffee Braun",
-    "manufacturer": "Kaffee Braun GmbH",
-    "origin": "Mainaschaff, Bavorsko, Německo",
-    "description": "Zrnková espresso směs německé rodinné pražírny Kaffee Braun v balení označeném Espresso No1.",
+    "brand": "Kaffeebrewda",
+    "manufacturer": "Kaffeebrewda / Erik Brockholz",
+    "origin": "Hamburk, Německo",
+    "description": "Výrazná espresso směs v italském stylu, pražená v Hamburku ze 70 % Arabiky a 30 % Robusty.",
     "ingredients": [
-      "pražená zrnková káva"
+      "70 % pražená zrnková Arabika z Brazílie a Kolumbie",
+      "30 % pražená zrnková Robusta z Indie"
     ],
     "allergens": [],
     "specifics": [
-      "výrobek rodinné pražírny",
-      "tradiční dlouhé pražení v bubnové pražičce",
-      "káva pražená v Mainaschaffu",
-      "směs určená pro espresso",
-      "přesný poměr odrůd není na dostupném zdroji uveden"
+      "70 % Arabika a 30 % Robusta",
+      "zrna z Brazílie, Kolumbie a Indie",
+      "výrazná aromatická chuť s lehkou aciditou",
+      "tóny karamelu a čokolády",
+      "tradiční bubnové pražení v Hamburku"
     ],
     "preparation": [
       "Umel těsně před přípravou.",
-      "Připravuj jako espresso v pákovém nebo automatickém kávovaru.",
+      "Připravuj jako espresso; hodí se také do cappuccina a dalších mléčných nápojů.",
       "Skladuj těsně uzavřené v suchu, chladu a temnu."
     ],
-    "brandInfo": "Kaffee Braun je rodinná pražírna z Mainaschaffu. Od roku 1986 používá šetrné dlouhé pražení a zdůrazňuje přímé vztahy s pěstiteli.",
-    "salesTip": "Představ jako německou řemeslně praženou espresso směs; netvrď konkrétní poměr Arabiky a Robusty, protože jej výrobce u tohoto staršího obalu neuvádí.",
+    "brandInfo": "Kaffeebrewda založil roku 2015 v Hamburku pražič Erik Brockholz, dvojnásobný německý vicemistr v pražení. Značka se zaměřuje na klasické kávy s nižší aciditou a u espressa navazuje na italský styl.",
+    "salesTip": "Doporuč zákazníkovi, který chce výrazné espresso s dobrou plností, lehkou aciditou a známými tóny karamelu a čokolády.",
     "image": "img/products/kaffee-braun-espresso-no1.webp",
     "sources": [
       {
-        "label": "Výrobce – pražírna a její přístup",
-        "url": "https://kaffeebraun.com/roesterei/"
+        "label": "De’Longhi Coffee Lounge – produkt a pražírna",
+        "url": "https://coffeelounge.delonghi.com/de/produkt/espresso-no1-italian-style/"
       },
       {
-        "label": "Výrobce – firemní údaje",
-        "url": "https://kaffeebraun.com/impressum/"
+        "label": "Kaffeeheimat – obchod pražírny",
+        "url": "https://kaffeeheimat.de/products/espresso-no-1-italian-style"
       }
     ]
   },
@@ -900,6 +901,56 @@
       {
         "label": "Výrobce – značka Condado de Oriza",
         "url": "https://felixsolisavantis.com/en/wine-brand/condado-de-oriza/"
+      }
+    ]
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "name": "Henri Willig Gouda Chili Hot & Spicy 50+ cca 500 g",
+    "category": "Sýry",
+    "brand": "Henri Willig",
+    "manufacturer": "Henri Willig Kaas",
+    "origin": "Katwoude, Nizozemsko",
+    "description": "Mladý nizozemský kravský sýr typu Gouda s 6 % chilli papriček, výrazně pálivou chutí a označením 50+.",
+    "ingredients": [
+      "pasterované kravské mléko",
+      "6 % chilli papriček",
+      "sůl",
+      "barvivo annatto norbixin",
+      "mikrobiální syřidlo",
+      "konzervant dusičnan sodný",
+      "sýrařské kultury"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "mladý kravský sýr typu Gouda",
+      "6 % chilli papriček a výrazně pálivá chuť",
+      "vhodný pro vegetariány díky mikrobiálnímu syřidlu",
+      "ručně krájená osmina bochníku o přibližné hmotnosti 500 g",
+      "vakuově balený bezprostředně po naporcování"
+    ],
+    "preparation": [
+      "Před podáváním nech sýr dojít na pokojovou teplotu.",
+      "Podávej s křupavým chlebem nebo krekry a jemným medovým či fíkovým dipem.",
+      "Po otevření uchovávej při 4 až 7 °C."
+    ],
+    "brandInfo": "Henri Willig je nizozemská rodinná sýrařská značka, jejíž příběh začal roku 1974 na farmě v Katwoude. Sýry vyrábí z mléka od nizozemských dodavatelů a většinu produkce zakládá na pasterovaném mléce a mikrobiálním syřidle.",
+    "salesTip": "Doporuč milovníkům opravdu pálivých chutí na sýrové prkénko; sladší medový nebo fíkový dip pomůže vyvážit chilli.",
+    "image": "img/products/henri-willig-gouda-chili-hot-spicy.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://henriwillig.com/en/piece-henri-willig-cow-cheese-chili-hot-and-spicy-50/"
+      },
+      {
+        "label": "Výrobce – historie značky",
+        "url": "https://henriwillig.com/en/about-henri-willig/"
+      },
+      {
+        "label": "Výrobce – způsob výroby",
+        "url": "https://henriwillig.com/en/the-production-process-this-is-how-we-work/"
       }
     ]
   }

@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js?v=1.0.17';
+import { CONFIG } from './config.js?v=1.0.18';
 
 const KEY = 'bistro-do-hlavy:v1';
 
