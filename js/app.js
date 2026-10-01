@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.20';
-import { contentProvider } from '../content.js?v=1.0.20';
-import { storage } from '../storage.js?v=1.0.20';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.20';
+import { CONFIG } from '../config.js?v=1.0.21';
+import { contentProvider } from '../content.js?v=1.0.21';
+import { storage } from '../storage.js?v=1.0.21';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.21';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.20';
+} from '../study.js?v=1.0.21';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',

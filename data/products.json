@@ -953,5 +953,630 @@
         "url": "https://henriwillig.com/en/the-production-process-this-is-how-we-work/"
       }
     ]
+  },
+  {
+    "id": "bezva-datle-cele-500-g",
+    "name": "Datle celé bez pecky Bezva zdraví 500 g",
+    "category": "Sušené ovoce",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Írán",
+    "description": "Přirozeně sladké celé sušené datle bez pecek, vhodné jako svačina i do sladkých jídel.",
+    "ingredients": [
+      "100% sušené vypeckované datle"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8
+    ],
+    "specifics": [
+      "EAN 8594184851968",
+      "bez přidaného cukru",
+      "mohou obsahovat stopy lepku, sóji, arašídů a skořápkových plodů"
+    ],
+    "preparation": [
+      "Jez přímo jako svačinu.",
+      "Nakrájej do kaše, müsli nebo dezertů.",
+      "Skladuj v suchu a chraň před světlem."
+    ],
+    "brandInfo": "Bezva zdraví je český rodinný projekt zaměřený na müsli, kaše, sušené ovoce a další trvanlivé potraviny.",
+    "salesTip": "Nabídni jako přirozeně sladkou svačinu bez přidaného cukru nebo jako surovinu do kaší a domácího pečení.",
+    "image": "img/products/bezva-datle-cele-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/datle-cele-bez-pecky/"
+      },
+      {
+        "label": "Výrobce – o značce",
+        "url": "https://www.bezva-zdravi.cz/o-nas/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g",
+    "name": "Brusinky sušené – klikva Bezva zdraví 500 g",
+    "category": "Sušené ovoce",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Kanada",
+    "description": "Sušená klikva slazená cukrem a zvláčněná malým množstvím slunečnicového oleje.",
+    "ingredients": [
+      "brusinky – klikva",
+      "cukr",
+      "slunečnicový olej"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8
+    ],
+    "specifics": [
+      "EAN 8594184851111",
+      "země původu Kanada",
+      "mohou obsahovat stopy lepku, sóji, arašídů a skořápkových plodů"
+    ],
+    "preparation": [
+      "Jez přímo jako sladkokyselou svačinu.",
+      "Přidej do müsli, kaše nebo pečení.",
+      "Skladuj v suchu a chladu mimo přímé slunce."
+    ],
+    "brandInfo": "Bezva zdraví je český rodinný projekt zaměřený na müsli, kaše, sušené ovoce a další trvanlivé potraviny.",
+    "salesTip": "Upozorni, že jde o slazené brusinky; doporuč je zákazníkovi, který chce výraznou sladkokyselou chuť do snídaní a pečení.",
+    "image": "img/products/bezva-brusinky-klikva-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – sortiment sušeného ovoce",
+        "url": "https://www.bezva-zdravi.cz/susene-ovoce/"
+      },
+      {
+        "label": "Výrobce – o značce",
+        "url": "https://www.bezva-zdravi.cz/o-nas/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-goji-250-g",
+    "name": "Kustovnice čínská Goji Bezva zdraví 250 g",
+    "category": "Sušené ovoce",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Čína",
+    "description": "Sušené plody kustovnice čínské s typickou červenou barvou a sladce nakyslou chutí.",
+    "ingredients": [
+      "100% sušené plody kustovnice čínské"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8,
+      12
+    ],
+    "specifics": [
+      "EAN 8594184851159",
+      "země původu Čína",
+      "mohou obsahovat stopy přirozeně se vyskytujících siřičitanů, lepku, sóji, arašídů a skořápkových plodů"
+    ],
+    "preparation": [
+      "Jez přímo v menším množství.",
+      "Přidej do kaše, müsli nebo jogurtu.",
+      "Skladuj v suchu a chladu mimo přímé slunce."
+    ],
+    "brandInfo": "Bezva zdraví je český rodinný projekt zaměřený na müsli, kaše, sušené ovoce a další trvanlivé potraviny.",
+    "salesTip": "Doporuč jako barevné sušené ovoce do snídaňových směsí; u citlivých zákazníků upozorni na deklarované možné stopy alergenů.",
+    "image": "img/products/bezva-goji-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – sortiment sušeného ovoce",
+        "url": "https://www.bezva-zdravi.cz/susene-ovoce/"
+      },
+      {
+        "label": "Výrobce – o značce",
+        "url": "https://www.bezva-zdravi.cz/o-nas/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g",
+    "name": "Pohanková kaše natural Bezva zdraví 300 g",
+    "category": "Instantní kaše",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Česká republika",
+    "description": "Jednosložková instantní bezlepková kaše z loupané pohanky upravené extruzí a mletím.",
+    "ingredients": [
+      "100% loupaná pohanka upravená extruzí a mletím"
+    ],
+    "allergens": [],
+    "specifics": [
+      "bez lepku",
+      "EAN 8594184852309",
+      "lze připravit nasladko i naslano"
+    ],
+    "preparation": [
+      "Zalij horkou vodou nebo mlékem.",
+      "Promíchej a nech 2 až 3 minuty odstát.",
+      "Použij také k zahuštění polévek nebo do těsta."
+    ],
+    "brandInfo": "Bezva zdraví je český rodinný projekt; jeho řada natural kaší staví na jednoduchém jednosložkovém složení.",
+    "salesTip": "Nabídni jako rychlou bezlepkovou kaši s neutrálním použitím nasladko i naslano.",
+    "image": "img/products/bezva-pohankova-kase-300-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/kase-natural/pohankova-kase-natural/"
+      },
+      {
+        "label": "Výrobce – o značce",
+        "url": "https://www.bezva-zdravi.cz/o-nas/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g",
+    "name": "Rýžová kaše natural Bezva zdraví 300 g",
+    "category": "Instantní kaše",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Česká republika",
+    "description": "Jednosložková instantní bezlepková kaše z loupané rýže upravené extruzí a mletím.",
+    "ingredients": [
+      "100% loupaná rýže upravená extruzí a mletím"
+    ],
+    "allergens": [],
+    "specifics": [
+      "bez lepku",
+      "EAN 8594184852293",
+      "vhodná i k zahušťování a obalování"
+    ],
+    "preparation": [
+      "Zalij horkou vodou nebo mlékem.",
+      "Promíchej a nech 2 až 3 minuty odstát.",
+      "Použij nasladko, naslano nebo k zahuštění."
+    ],
+    "brandInfo": "Bezva zdraví je český rodinný projekt; jeho řada natural kaší staví na jednoduchém jednosložkovém složení.",
+    "salesTip": "Doporuč jako jemnou rychlou bezlepkovou kaši nebo praktickou surovinu k zahuštění polévek a omáček.",
+    "image": "img/products/bezva-ryzova-kase-300-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/kase-natural/ryzova-kase-natural/"
+      },
+      {
+        "label": "Výrobce – o značce",
+        "url": "https://www.bezva-zdravi.cz/o-nas/"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g",
+    "name": "Miscela d’Oro Gusto Classico mletá káva 250 g",
+    "category": "Mletá káva",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscelad’Oro S.p.A.",
+    "origin": "Messina, Itálie; zrna z Jižní Ameriky a Afriky",
+    "description": "Tradiční italská směs mleté kávy se silným aroma a dlouhou dochutí pro moka konvičku nebo překapávač.",
+    "ingredients": [
+      "100% pražená mletá káva"
+    ],
+    "allergens": [],
+    "specifics": [
+      "intenzita 8 z 10",
+      "střední pražení",
+      "plné tělo a nulová deklarovaná acidita",
+      "tóny tabáku a lékořice"
+    ],
+    "preparation": [
+      "Použij do moka konvičky nebo filtrované kávy.",
+      "Dávku přizpůsob požadované síle.",
+      "Po otevření uchovávej těsně uzavřené v suchu a chladu."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná pražírna z Messiny, založená roku 1946 rodinou Urbano.",
+    "salesTip": "Doporuč zákazníkovi, který chce výraznou klasickou italskou mletou kávu s dlouhou dochutí.",
+    "image": "img/products/miscela-doro-gusto-classico-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.misceladoro.com/en/product/gusto-classico-ground-coffee/"
+      },
+      {
+        "label": "Výrobce – italská verze",
+        "url": "https://www.misceladoro.com/prodotto/caffe-macinato-gusto-classico/"
+      }
+    ]
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "name": "Kaffeebrewda Colombia El Pastelito – La Mejorana 250 g",
+    "category": "Výběrová káva",
+    "brand": "Kaffeebrewda",
+    "manufacturer": "Kaffeeheimat GmbH",
+    "origin": "Quimbaya, Quindío, Kolumbie",
+    "description": "Jednodruhová 100% Arabica z kolumbijské farmy La Mejorana s plným tělem, hořkou čokoládou a limetkou.",
+    "ingredients": [
+      "100% pražená káva Arabica"
+    ],
+    "allergens": [],
+    "specifics": [
+      "převážně odrůda Castillo",
+      "nadmořská výška 1470 m",
+      "ruční selektivní sběr",
+      "přímý obchod",
+      "tóny hořké čokolády a limetky"
+    ],
+    "preparation": [
+      "Připrav ve V60, Chemexu, Aeropressu, French pressu nebo překapávači.",
+      "Výrobce zvlášť doporučuje Chemex.",
+      "Skladuj vzduchotěsně v suchu a chladu."
+    ],
+    "brandInfo": "Kaffeebrewda je značka hamburské pražírny Kaffeeheimat zaměřená na charakterové kávy s dohledatelným původem.",
+    "salesTip": "Nabídni milovníkům výraznější filtrované kávy, kteří hledají kombinaci čokoládové plnosti a svěží limetky.",
+    "image": "img/products/kaffeebrewda-colombia-el-pastelito-250-g.webp",
+    "sources": [
+      {
+        "label": "Pražírna – detail produktu",
+        "url": "https://kaffeeheimat.de/en/products/colombia-el-pastelito-la-mejorana-coffee"
+      }
+    ]
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "name": "Kaffeebrewda Ethiopia Chelchele 250 g",
+    "category": "Výběrová káva",
+    "brand": "Kaffeebrewda",
+    "manufacturer": "Kaffeeheimat GmbH",
+    "origin": "Chelchele, Yirgacheffe, Etiopie",
+    "description": "Ovocná 100% Arabica odrůd heirloom, naturálně zpracovaná v Chelchele ve vysoké nadmořské výšce.",
+    "ingredients": [
+      "100% pražená káva Arabica"
+    ],
+    "allergens": [],
+    "specifics": [
+      "odrůdy heirloom",
+      "nadmořská výška 2174 m",
+      "ruční sběr",
+      "naturální zpracování",
+      "tóny černé třešně, kakaa, sušeného ovoce, lískového ořechu a nugátu"
+    ],
+    "preparation": [
+      "Připrav ve V60, Chemexu, Aeropressu, French pressu nebo překapávači.",
+      "Pražírna doporučuje ruční filtr V60.",
+      "Skladuj vzduchotěsně v suchu a chladu."
+    ],
+    "brandInfo": "Kaffeebrewda je značka hamburské pražírny Kaffeeheimat zaměřená na charakterové kávy s dohledatelným původem.",
+    "salesTip": "Doporuč milovníkům ovocných etiopských káv, kteří ocení třešeň, kakao a nugát ve filtrované přípravě.",
+    "image": "img/products/kaffeebrewda-ethiopia-chelchele-250-g.webp",
+    "sources": [
+      {
+        "label": "Pražírna – detail produktu",
+        "url": "https://kaffeeheimat.de/products/aethiopien-chelchele"
+      }
+    ]
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "name": "Kaffeebrewda Brasil Pantano Red Ruby 250 g",
+    "category": "Výběrová káva",
+    "brand": "Kaffeebrewda",
+    "manufacturer": "Kaffeeheimat GmbH",
+    "origin": "Cerrado, Brazílie",
+    "description": "Mírná 100% Arabica z Fazenda Pântano s tóny červených bobulí, rozinek, kakaa a rumu.",
+    "ingredients": [
+      "100% pražená káva Arabica"
+    ],
+    "allergens": [],
+    "specifics": [
+      "odrůdy Mundo Novo, Catuai a Catucai",
+      "nadmořská výška 1100 m",
+      "ruční sběr",
+      "sušení na slunci",
+      "přímý obchod"
+    ],
+    "preparation": [
+      "Připrav ve V60, Chemexu, Aeropressu, French pressu nebo překapávači.",
+      "Pražírna doporučuje ruční filtr V60.",
+      "Skladuj vzduchotěsně v suchu a chladu."
+    ],
+    "brandInfo": "Kaffeebrewda je značka hamburské pražírny Kaffeeheimat zaměřená na charakterové kávy s dohledatelným původem.",
+    "salesTip": "Nabídni zákazníkovi, který chce mírnou brazilskou kávu s ovocnými tóny, kakaem a lehkou rumovou asociací.",
+    "image": "img/products/kaffeebrewda-brasil-pantano-red-ruby-250-g.webp",
+    "sources": [
+      {
+        "label": "Pražírna – detail produktu",
+        "url": "https://kaffeeheimat.de/en/products/brasil-pantano-red-ruby-kaffee"
+      }
+    ]
+  },
+  {
+    "id": "patifu-gourmet-100-g",
+    "name": "PÂTIFU Gourmet tofu paštika 100 g",
+    "category": "Rostlinné pomazánky",
+    "brand": "PÂTIFU",
+    "manufacturer": "VETO ECO s.r.o.",
+    "origin": "Česká republika",
+    "description": "Jemná trvanlivá rostlinná paštika z tofu, brambor, droždí, řepkového oleje a smažené cibulky.",
+    "ingredients": [
+      "voda",
+      "tofu 22 % (sója, nigari)",
+      "řepkový olej",
+      "brambory",
+      "droždí",
+      "smažená cibulka (cibule, pšeničná mouka, palmový olej)",
+      "drožďový extrakt",
+      "slad (ječmen, žito, čekanka)",
+      "koření",
+      "karagenan",
+      "guma guar"
+    ],
+    "allergens": [
+      1,
+      6
+    ],
+    "specifics": [
+      "100% rostlinná",
+      "bez konzervantů, chemických barviv a umělých aromat",
+      "není vhodná pro celiaky",
+      "trvanlivá bez chlazení před otevřením"
+    ],
+    "preparation": [
+      "Namaž na pečivo a doplň zeleninou nebo kyselou okurkou.",
+      "Před otevřením skladuj v suchu při 2 až 27 °C.",
+      "Po otevření ihned spotřebuj."
+    ],
+    "brandInfo": "PÂTIFU je česká značka firmy VETO ECO. Vyrábí jemné rostlinné paštiky z tofu bez konzervantů a živočišných složek.",
+    "salesTip": "Doporuč veganům i zákazníkům hledajícím trvanlivou alternativu masové paštiky; upozorni, že varianta Gourmet obsahuje lepek.",
+    "image": "img/products/patifu-gourmet-100-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – produkt a složení",
+        "url": "https://patifu.cz/"
+      }
+    ]
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l",
+    "name": "Minor Figures Barista Oat 1 l",
+    "category": "Rostlinné nápoje",
+    "brand": "Minor Figures",
+    "manufacturer": "Minor Figures Ltd.",
+    "origin": "Spojené království",
+    "description": "Rostlinný ovesný nápoj vyvinutý pro kávu, s jemnou ovesnou sladkostí a stabilní mikropěnou.",
+    "ingredients": [
+      "voda",
+      "oves 11 %",
+      "řepkový olej",
+      "fosforečnan vápenatý",
+      "regulátor kyselosti hydrogenfosforečnan draselný",
+      "sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "100% rostlinný",
+      "bez mléka",
+      "současná receptura výrobce je bezlepková",
+      "vhodný pro napěnění",
+      "bez přidaného cukru"
+    ],
+    "preparation": [
+      "Před použitím protřepej.",
+      "Použij studený do kávy nebo napěň párou.",
+      "Po otevření uchovávej v lednici a spotřebuj podle etikety."
+    ],
+    "brandInfo": "Minor Figures je londýnská značka zaměřená na kávu a rostlinné baristické nápoje.",
+    "salesTip": "Nabídni k espresso nápojům zákazníkům, kteří chtějí rostlinnou alternativu s jemnou chutí a dobrou pěnivostí.",
+    "image": "img/products/minor-figures-barista-oat-1-l.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://minorfigures.com/products/barista-oat"
+      },
+      {
+        "label": "Výrobce – řada Barista Oat",
+        "url": "https://minorfigures.com/pages/barista-oat-range"
+      }
+    ]
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg",
+    "name": "Pastificio Temporin čerstvé Tagliatelle 1 kg",
+    "category": "Čerstvé těstoviny",
+    "brand": "Pastificio Temporin",
+    "manufacturer": "Pastificio Temporin S.r.l.",
+    "origin": "Sommacampagna, Verona, Itálie",
+    "description": "Čerstvé porcovné tagliatelle ze semoliny z tvrdé pšenice a vajec, tažené přes bronzovou matrici.",
+    "ingredients": [
+      "semolina z tvrdé pšenice",
+      "vejce 20 %"
+    ],
+    "allergens": [
+      1,
+      3
+    ],
+    "specifics": [
+      "šířka 6 mm",
+      "doba vaření 6 minut",
+      "bronzová matrice vytváří drsnější povrch",
+      "mohou obsahovat stopy ryb, sóji, mléka, hořčice a měkkýšů"
+    ],
+    "preparation": [
+      "Vař 6 minut ve vroucí osolené vodě.",
+      "Kombinuj s omáčkou, která se zachytí na drsnějším povrchu.",
+      "Uchovávej při 4 až 6 °C."
+    ],
+    "brandInfo": "Pastificio Temporin je rodinný výrobce čerstvých těstovin z provincie Verona; spojuje semolinu, vejce a tradiční tažení přes bronz.",
+    "salesTip": "Doporuč pro rychlou profesionální přípravu; ručně tvarovaná hnízda se dobře porcují a bronzový povrch drží omáčku.",
+    "image": "img/products/temporin-tagliatelle-1-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.pastificiotemporin.it/en/products/linea-gourmet/fresh-portioned-tagliatelle"
+      }
+    ]
+  },
+  {
+    "id": "rodopi-ayran-500-ml",
+    "name": "RODOPI Ayran 500 ml",
+    "category": "Zakysané mléčné nápoje",
+    "brand": "RODOPI",
+    "manufacturer": "Mini Mlékárna RODOPI",
+    "origin": "Zájezd, Česká republika",
+    "description": "Osvěžující mléčnokysaný nápoj z českého plnotučného mléka, vody a živých bulharských jogurtových kultur.",
+    "ingredients": [
+      "čerstvé plnotučné pasterované mléko",
+      "voda",
+      "Lactobacillus bulgaricus",
+      "Streptococcus thermophilus"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "původní bulharská receptura",
+      "živé jogurtové kultury",
+      "bez přidaného cukru",
+      "může se přirozeně rozvrstvit"
+    ],
+    "preparation": [
+      "Před podáváním protřepej.",
+      "Podávej dobře vychlazený.",
+      "Uchovávej v lednici."
+    ],
+    "brandInfo": "Mini Mlékárna RODOPI vyrábí v obci Zájezd jogurty a nápoje z českého farmářského mléka podle bulharské receptury.",
+    "salesTip": "Nabídni jako nesladký osvěžující nápoj k výrazně kořeněným jídlům nebo zákazníkům, kteří mají rádi zakysané mléčné výrobky.",
+    "image": "img/products/rodopi-ayran-500-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.rodopi.cz/produkty/ayran/"
+      },
+      {
+        "label": "Výrobce – o mlékárně",
+        "url": "https://www.rodopi.cz/onas/"
+      }
+    ]
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g",
+    "name": "RODOPI bílý jogurt z farmářského mléka 200 g",
+    "category": "Jogurty",
+    "brand": "RODOPI",
+    "manufacturer": "Mini Mlékárna RODOPI",
+    "origin": "Zájezd, Česká republika",
+    "description": "Živý bílý jogurt z čerstvého pasterovaného farmářského mléka podle původní bulharské receptury.",
+    "ingredients": [
+      "čerstvé pasterované mléko",
+      "Lactobacillus bulgaricus",
+      "Streptococcus thermophilus"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "živé symbiotické kultury",
+      "příjemně mléčně kysaná chuť",
+      "bez konzervantů",
+      "minimální deklarovaná trvanlivost 20 dní v lednici"
+    ],
+    "preparation": [
+      "Podávej vychlazený samotný nebo s ovocem a müsli.",
+      "Použij do studené kuchyně a dipů.",
+      "Uchovávej v lednici."
+    ],
+    "brandInfo": "Mini Mlékárna RODOPI vyrábí v obci Zájezd jogurty z českého farmářského mléka podle bulharské receptury.",
+    "salesTip": "Zdůrazni živé kultury, jednoduché složení a výraznější mléčně kysanou chuť bulharského typu.",
+    "image": "img/products/rodopi-bily-jogurt-200-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.rodopi.cz/bile/rodopi-bily/"
+      },
+      {
+        "label": "Výrobce – o mlékárně",
+        "url": "https://www.rodopi.cz/onas/"
+      }
+    ]
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks",
+    "name": "Čerstvá křepelčí vejce Farma Václav Zelenka 18 ks",
+    "category": "Vejce",
+    "brand": "Farma Václav Zelenka",
+    "manufacturer": "Václav Zelenka",
+    "origin": "Lubná u Rakovníka, Česká republika",
+    "description": "Čerstvá křepelčí vejce z malé rodinné farmy, balená po 18 kusech.",
+    "ingredients": [
+      "křepelčí vejce"
+    ],
+    "allergens": [
+      3
+    ],
+    "specifics": [
+      "18 kusů v balení",
+      "rodinná farma",
+      "český původ",
+      "vhodná k vaření i dekorativnímu servírování pokrmů"
+    ],
+    "preparation": [
+      "Tepelně uprav podle zamýšleného pokrmu.",
+      "Po uvaření zchlaď pro snazší loupání.",
+      "Skladuj v chladu podle údajů na obalu."
+    ],
+    "brandInfo": "Farma Václav Zelenka v Lubné u Rakovníka je malý rodinný chov zaměřený na čerstvá slepičí a křepelčí vejce.",
+    "salesTip": "Doporuč na snídaňové talíře, saláty a jednohubky; malé skvrnité vejce je chuťově známé, ale vizuálně výrazné.",
+    "image": "img/products/farma-zelenka-krepelci-vejce-18-ks.webp",
+    "sources": [
+      {
+        "label": "Prodejce – produkt farmy",
+        "url": "https://www.scuk.cz/farma-vaclav-zelenka/krepelci-vejce"
+      },
+      {
+        "label": "Profil farmáře",
+        "url": "https://trziste.farmanadlani.cz/farmar/detail/vaclav-zelenka-lubna?autoposition=1&radius=150"
+      }
+    ]
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks",
+    "name": "Čerstvá slepičí vejce z volného chovu Farma Václav Zelenka 10 ks",
+    "category": "Vejce",
+    "brand": "Farma Václav Zelenka",
+    "manufacturer": "Václav Zelenka",
+    "origin": "Lubná u Rakovníka, Česká republika",
+    "description": "Čerstvá slepičí vejce velikosti L až XL z volného chovu, ručně sbíraná, tříděná a balená po 10 kusech.",
+    "ingredients": [
+      "slepičí vejce"
+    ],
+    "allergens": [
+      3
+    ],
+    "specifics": [
+      "volný chov",
+      "velikost L až XL",
+      "10 kusů",
+      "ruční sběr a třídění",
+      "krmivo z obilovin od místních farmářů"
+    ],
+    "preparation": [
+      "Použij k vaření, pečení nebo přípravě vaječných jídel.",
+      "Důkladnou tepelnou úpravu volte zejména pro rizikové skupiny.",
+      "Skladuj při 5 až 18 °C."
+    ],
+    "brandInfo": "Farma Václav Zelenka v Lubné u Rakovníka chová nosnice ve volném výběhu a vejce ručně sbírá, třídí a balí.",
+    "salesTip": "Zdůrazni volný chov, regionální původ a velikost L až XL.",
+    "image": "img/products/farma-zelenka-slepici-vejce-10-ks.webp",
+    "sources": [
+      {
+        "label": "Prodejce – detail produktu",
+        "url": "https://www.scuk.cz/slepici-vejce/p/RzDjlo2z"
+      },
+      {
+        "label": "Profil farmáře",
+        "url": "https://trziste.farmanadlani.cz/farmar/detail/vaclav-zelenka-lubna?autoposition=1&radius=150"
+      }
+    ]
   }
 ]

@@ -1518,5 +1518,1115 @@
     ],
     "answer": "Výrazně pálivou chilli chuť",
     "explanation": "Jde o výrazně pálivou Goudu se 6 % chilli papriček."
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q1",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "mcq",
+    "prompt": "Co tvoří složení těchto datlí?",
+    "options": [
+      "100% sušené vypeckované datle",
+      "Datle s cukrem a olejem",
+      "Datle s medem",
+      "Fíky a datle"
+    ],
+    "answer": "100% sušené vypeckované datle",
+    "explanation": "100% sušené vypeckované datle."
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q2",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": [
+      "lepek",
+      "sója",
+      "arašídy",
+      "skořápkové plody"
+    ],
+    "answerDisplay": "Mohou obsahovat stopy lepku, sóji, arašídů a skořápkových plodů.",
+    "explanation": "Mohou obsahovat stopy lepku, sóji, arašídů a skořápkových plodů."
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q3",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Přímo jako svačinu nebo nakrájené do kaší, müsli a dezertů.",
+    "explanation": "Přímo jako svačinu nebo nakrájené do kaší, müsli a dezertů."
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q4",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-datle-cele-500-g.webp",
+    "options": [
+      "Datle celé Bezva zdraví",
+      "Brusinky Bezva zdraví",
+      "Goji Bezva zdraví",
+      "Rozinky natural"
+    ],
+    "answer": "Datle celé Bezva zdraví",
+    "explanation": "Na fotografii je Datle celé bez pecky Bezva zdraví 500 g."
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q5",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "mcq",
+    "prompt": "Z které země datle pocházejí?",
+    "options": [
+      "Z Íránu",
+      "Z Kanady",
+      "Z Číny",
+      "Z České republiky"
+    ],
+    "answer": "Z Íránu",
+    "explanation": "Z Íránu."
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q6",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni jako přirozeně sladkou svačinu bez přidaného cukru nebo jako surovinu do kaší a domácího pečení.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q1",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "mcq",
+    "prompt": "Které tři složky výrobek obsahuje?",
+    "options": [
+      "Brusinky, cukr a slunečnicový olej",
+      "Brusinky a jablečnou šťávu",
+      "Brusinky, med a kokosový olej",
+      "Pouze brusinky"
+    ],
+    "answer": "Brusinky, cukr a slunečnicový olej",
+    "explanation": "Brusinky, cukr a slunečnicový olej."
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q2",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": [
+      "lepek",
+      "sója",
+      "arašídy",
+      "skořápkové plody"
+    ],
+    "answerDisplay": "Etiketa uvádí možné stopy lepku, sóji, arašídů a skořápkových plodů.",
+    "explanation": "Etiketa uvádí možné stopy lepku, sóji, arašídů a skořápkových plodů."
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q3",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Přímo, do müsli, kaší nebo pečení.",
+    "explanation": "Přímo, do müsli, kaší nebo pečení."
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q4",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-brusinky-klikva-500-g.webp",
+    "options": [
+      "Brusinky Bezva zdraví",
+      "Datle celé Bezva zdraví",
+      "Goji Bezva zdraví",
+      "Sušené třešně"
+    ],
+    "answer": "Brusinky Bezva zdraví",
+    "explanation": "Na fotografii je Brusinky sušené – klikva Bezva zdraví 500 g."
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q5",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "mcq",
+    "prompt": "Z které země brusinky pocházejí?",
+    "options": [
+      "Z Kanady",
+      "Z Íránu",
+      "Z Číny",
+      "Z České republiky"
+    ],
+    "answer": "Z Kanady",
+    "explanation": "Z Kanady."
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q6",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Upozorni, že jde o slazené brusinky; doporuč je zákazníkovi, který chce výraznou sladkokyselou chuť do snídaní a pečení.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bezva-goji-250-g-q1",
+    "productId": "bezva-goji-250-g",
+    "type": "mcq",
+    "prompt": "Co je jedinou základní surovinou výrobku?",
+    "options": [
+      "Sušené plody kustovnice čínské",
+      "Sušené brusinky",
+      "Šípky s cukrem",
+      "Mochyně"
+    ],
+    "answer": "Sušené plody kustovnice čínské",
+    "explanation": "Sušené plody kustovnice čínské."
+  },
+  {
+    "id": "bezva-goji-250-g-q2",
+    "productId": "bezva-goji-250-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": [
+      "siřičitany",
+      "lepek",
+      "sója",
+      "arašídy",
+      "skořápkové plody"
+    ],
+    "answerDisplay": "Etiketa uvádí možné stopy přirozených siřičitanů, lepku, sóji, arašídů a skořápkových plodů.",
+    "explanation": "Etiketa uvádí možné stopy přirozených siřičitanů, lepku, sóji, arašídů a skořápkových plodů."
+  },
+  {
+    "id": "bezva-goji-250-g-q3",
+    "productId": "bezva-goji-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Přímo nebo do kaše, müsli a jogurtu.",
+    "explanation": "Přímo nebo do kaše, müsli a jogurtu."
+  },
+  {
+    "id": "bezva-goji-250-g-q4",
+    "productId": "bezva-goji-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-goji-250-g.webp",
+    "options": [
+      "Goji Bezva zdraví",
+      "Brusinky Bezva zdraví",
+      "Datle Bezva zdraví",
+      "Sušené meruňky"
+    ],
+    "answer": "Goji Bezva zdraví",
+    "explanation": "Na fotografii je Kustovnice čínská Goji Bezva zdraví 250 g."
+  },
+  {
+    "id": "bezva-goji-250-g-q5",
+    "productId": "bezva-goji-250-g",
+    "type": "mcq",
+    "prompt": "Z které země goji pochází?",
+    "options": [
+      "Z Číny",
+      "Z Kanady",
+      "Z Íránu",
+      "Z Peru"
+    ],
+    "answer": "Z Číny",
+    "explanation": "Z Číny."
+  },
+  {
+    "id": "bezva-goji-250-g-q6",
+    "productId": "bezva-goji-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč jako barevné sušené ovoce do snídaňových směsí; u citlivých zákazníků upozorni na deklarované možné stopy alergenů.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q1",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Z čeho je pohanková kaše vyrobena?",
+    "options": [
+      "Ze 100% loupané pohanky",
+      "Z pohanky a rýže",
+      "Z jáhel a ovsa",
+      "Z pšeničné krupice"
+    ],
+    "answer": "Ze 100% loupané pohanky",
+    "explanation": "Ze 100% loupané pohanky."
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q2",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Výrobek je jednosložkový a bezlepkový.",
+    "explanation": "Výrobek je jednosložkový a bezlepkový."
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q3",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Zalít horkou vodou nebo mlékem, promíchat a nechat 2 až 3 minuty odstát.",
+    "explanation": "Zalít horkou vodou nebo mlékem, promíchat a nechat 2 až 3 minuty odstát."
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q4",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-pohankova-kase-300-g.webp",
+    "options": [
+      "Pohanková kaše Bezva zdraví",
+      "Rýžová kaše Bezva zdraví",
+      "Jáhlová kaše Bezva zdraví",
+      "Ovesné vločky"
+    ],
+    "answer": "Pohanková kaše Bezva zdraví",
+    "explanation": "Na fotografii je Pohanková kaše natural Bezva zdraví 300 g."
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q5",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Jak je pohanka technologicky upravena?",
+    "options": [
+      "Extruzí a mletím",
+      "Pražením na oleji",
+      "Kvašením",
+      "Lyofilizací"
+    ],
+    "answer": "Extruzí a mletím",
+    "explanation": "Extruzí a mletím."
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q6",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni jako rychlou bezlepkovou kaši s neutrálním použitím nasladko i naslano.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q1",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Z čeho je rýžová kaše vyrobena?",
+    "options": [
+      "Ze 100% loupané rýže",
+      "Z rýže a pohanky",
+      "Z kukuřice",
+      "Z pšeničné krupice"
+    ],
+    "answer": "Ze 100% loupané rýže",
+    "explanation": "Ze 100% loupané rýže."
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q2",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Výrobek je jednosložkový a bezlepkový.",
+    "explanation": "Výrobek je jednosložkový a bezlepkový."
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q3",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Zalít horkou vodou nebo mlékem, promíchat a nechat 2 až 3 minuty odstát.",
+    "explanation": "Zalít horkou vodou nebo mlékem, promíchat a nechat 2 až 3 minuty odstát."
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q4",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-ryzova-kase-300-g.webp",
+    "options": [
+      "Rýžová kaše Bezva zdraví",
+      "Pohanková kaše Bezva zdraví",
+      "Čiroková kaše Bezva zdraví",
+      "Rýžová mouka"
+    ],
+    "answer": "Rýžová kaše Bezva zdraví",
+    "explanation": "Na fotografii je Rýžová kaše natural Bezva zdraví 300 g."
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q5",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "K čemu lze kaši použít kromě snídaně?",
+    "options": [
+      "K zahuštění polévek a omáček nebo k obalování",
+      "Pouze ke smažení",
+      "K výrobě droždí",
+      "Jen jako studený nápoj"
+    ],
+    "answer": "K zahuštění polévek a omáček nebo k obalování",
+    "explanation": "K zahuštění polévek a omáček nebo k obalování."
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q6",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč jako jemnou rychlou bezlepkovou kaši nebo praktickou surovinu k zahuštění polévek a omáček.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q1",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "mcq",
+    "prompt": "Pro které způsoby přípravy je mletí určeno?",
+    "options": [
+      "Pro moka konvičku a filtrovanou kávu",
+      "Pouze pro tureckou kávu",
+      "Pouze pro kapslový systém",
+      "Jen pro cold brew"
+    ],
+    "answer": "Pro moka konvičku a filtrovanou kávu",
+    "explanation": "Pro moka konvičku a filtrovanou kávu."
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q2",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q3",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "V moka konvičce nebo překapávači.",
+    "explanation": "V moka konvičce nebo překapávači."
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q4",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-gusto-classico-250-g.webp",
+    "options": [
+      "Miscela d’Oro Gusto Classico",
+      "Miscela d’Oro Gran Crema",
+      "Kaffeebrewda Colombia",
+      "Caffè Barbaro Miscela Blu"
+    ],
+    "answer": "Miscela d’Oro Gusto Classico",
+    "explanation": "Na fotografii je Miscela d’Oro Gusto Classico mletá káva 250 g."
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q5",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "mcq",
+    "prompt": "Jakou intenzitu výrobce uvádí?",
+    "options": [
+      "8 z 10",
+      "3 z 10",
+      "5 z 10",
+      "10 z 10"
+    ],
+    "answer": "8 z 10",
+    "explanation": "8 z 10."
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q6",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce výraznou klasickou italskou mletou kávu s dlouhou dochutí.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q1",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "mcq",
+    "prompt": "Které chuťové tóny jsou pro kávu typické?",
+    "options": [
+      "Hořká čokoláda a limetka",
+      "Černá třešeň a nugát",
+      "Červené bobule a rum",
+      "Vanilka a kokos"
+    ],
+    "answer": "Hořká čokoláda a limetka",
+    "explanation": "Hořká čokoláda a limetka."
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q2",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q3",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Nejlépe jako filtrovanou kávu; pražírna zvlášť doporučuje Chemex.",
+    "explanation": "Nejlépe jako filtrovanou kávu; pražírna zvlášť doporučuje Chemex."
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q4",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kaffeebrewda-colombia-el-pastelito-250-g.webp",
+    "options": [
+      "Kaffeebrewda Colombia El Pastelito",
+      "Kaffeebrewda Ethiopia Chelchele",
+      "Kaffeebrewda Brasil Red Ruby",
+      "Kaffeebrewda Espresso No 1"
+    ],
+    "answer": "Kaffeebrewda Colombia El Pastelito",
+    "explanation": "Na fotografii je Kaffeebrewda Colombia El Pastelito – La Mejorana 250 g."
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q5",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "mcq",
+    "prompt": "V jaké nadmořské výšce se káva pěstuje?",
+    "options": [
+      "1470 m",
+      "1100 m",
+      "2174 m",
+      "500 m"
+    ],
+    "answer": "1470 m",
+    "explanation": "1470 m."
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q6",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni milovníkům výraznější filtrované kávy, kteří hledají kombinaci čokoládové plnosti a svěží limetky.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q1",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "mcq",
+    "prompt": "Které tóny výrobce u kávy uvádí?",
+    "options": [
+      "Černou třešeň, kakao, sušené ovoce, lískový ořech a nugát",
+      "Jen tabák a lékořici",
+      "Limetku a hořkou čokoládu",
+      "Červené bobule a rum"
+    ],
+    "answer": "Černou třešeň, kakao, sušené ovoce, lískový ořech a nugát",
+    "explanation": "Černou třešeň, kakao, sušené ovoce, lískový ořech a nugát."
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q2",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q3",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Jako filtrovanou kávu, ideálně v ručním filtru V60.",
+    "explanation": "Jako filtrovanou kávu, ideálně v ručním filtru V60."
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q4",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kaffeebrewda-ethiopia-chelchele-250-g.webp",
+    "options": [
+      "Kaffeebrewda Ethiopia Chelchele",
+      "Kaffeebrewda Colombia El Pastelito",
+      "Kaffeebrewda Brasil Red Ruby",
+      "Miscela d’Oro Gusto Classico"
+    ],
+    "answer": "Kaffeebrewda Ethiopia Chelchele",
+    "explanation": "Na fotografii je Kaffeebrewda Ethiopia Chelchele 250 g."
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q5",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "mcq",
+    "prompt": "Jak je káva zpracována?",
+    "options": [
+      "Naturální metodou",
+      "Mokrým loupáním",
+      "Dekofeinizací",
+      "Výhradně fermentací v rumu"
+    ],
+    "answer": "Naturální metodou",
+    "explanation": "Naturální metodou."
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q6",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč milovníkům ovocných etiopských káv, kteří ocení třešeň, kakao a nugát ve filtrované přípravě.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q1",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "mcq",
+    "prompt": "Které chuťové tóny jsou pro Red Ruby typické?",
+    "options": [
+      "Červené bobule, rozinky, kakao a rum",
+      "Hořká čokoláda a limetka",
+      "Černá třešeň a nugát",
+      "Tabák a lékořice"
+    ],
+    "answer": "Červené bobule, rozinky, kakao a rum",
+    "explanation": "Červené bobule, rozinky, kakao a rum."
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q2",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistá pražená káva neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q3",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Jako filtrovanou kávu, ideálně v ručním filtru V60.",
+    "explanation": "Jako filtrovanou kávu, ideálně v ručním filtru V60."
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q4",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/kaffeebrewda-brasil-pantano-red-ruby-250-g.webp",
+    "options": [
+      "Kaffeebrewda Brasil Red Ruby",
+      "Kaffeebrewda Ethiopia Chelchele",
+      "Kaffeebrewda Colombia El Pastelito",
+      "Kaffeebrewda Espresso No 1"
+    ],
+    "answer": "Kaffeebrewda Brasil Red Ruby",
+    "explanation": "Na fotografii je Kaffeebrewda Brasil Pantano Red Ruby 250 g."
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q5",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "mcq",
+    "prompt": "Na které farmě káva vzniká?",
+    "options": [
+      "Fazenda Pântano",
+      "La Mejorana",
+      "Chelchele Washing Station",
+      "Finca El Silencio"
+    ],
+    "answer": "Fazenda Pântano",
+    "explanation": "Fazenda Pântano."
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q6",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni zákazníkovi, který chce mírnou brazilskou kávu s ovocnými tóny, kakaem a lehkou rumovou asociací.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "patifu-gourmet-100-g-q1",
+    "productId": "patifu-gourmet-100-g",
+    "type": "mcq",
+    "prompt": "Kolik tofu výrobek obsahuje?",
+    "options": [
+      "22 %",
+      "5 %",
+      "50 %",
+      "Neobsahuje tofu"
+    ],
+    "answer": "22 %",
+    "explanation": "22 %."
+  },
+  {
+    "id": "patifu-gourmet-100-g-q2",
+    "productId": "patifu-gourmet-100-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": [
+      "lepek",
+      "sója"
+    ],
+    "answerDisplay": "Tofu obsahuje sóju; smažená cibulka a slad obsahují pšenici, ječmen a žito.",
+    "explanation": "Tofu obsahuje sóju; smažená cibulka a slad obsahují pšenici, ječmen a žito."
+  },
+  {
+    "id": "patifu-gourmet-100-g-q3",
+    "productId": "patifu-gourmet-100-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Namazat na pečivo a doplnit zeleninou nebo kyselou okurkou.",
+    "explanation": "Namazat na pečivo a doplnit zeleninou nebo kyselou okurkou."
+  },
+  {
+    "id": "patifu-gourmet-100-g-q4",
+    "productId": "patifu-gourmet-100-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/patifu-gourmet-100-g.webp",
+    "options": [
+      "PÂTIFU Gourmet",
+      "PÂTIFU Delikates",
+      "Kachní paštika s Calvadosem",
+      "Hummus natural"
+    ],
+    "answer": "PÂTIFU Gourmet",
+    "explanation": "Na fotografii je PÂTIFU Gourmet tofu paštika 100 g."
+  },
+  {
+    "id": "patifu-gourmet-100-g-q5",
+    "productId": "patifu-gourmet-100-g",
+    "type": "mcq",
+    "prompt": "Proč varianta Gourmet není vhodná pro celiaky?",
+    "options": [
+      "Obsahuje pšeničnou mouku a obilný slad",
+      "Obsahuje mléko",
+      "Obsahuje vejce",
+      "Obsahuje arašídy"
+    ],
+    "answer": "Obsahuje pšeničnou mouku a obilný slad",
+    "explanation": "Obsahuje pšeničnou mouku a obilný slad."
+  },
+  {
+    "id": "patifu-gourmet-100-g-q6",
+    "productId": "patifu-gourmet-100-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč veganům i zákazníkům hledajícím trvanlivou alternativu masové paštiky; upozorni, že varianta Gourmet obsahuje lepek.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q1",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "mcq",
+    "prompt": "Kolik ovsa uvádí současná receptura výrobce?",
+    "options": [
+      "11 %",
+      "2 %",
+      "25 %",
+      "50 %"
+    ],
+    "answer": "11 %",
+    "explanation": "11 %."
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q2",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "žádný",
+    "answerDisplay": "Výrobce současnou recepturu označuje jako bezlepkovou a bez mléka.",
+    "explanation": "Výrobce současnou recepturu označuje jako bezlepkovou a bez mléka."
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q3",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Protřepat, nalít do kávy nebo napěnit párou.",
+    "explanation": "Protřepat, nalít do kávy nebo napěnit párou."
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q4",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/minor-figures-barista-oat-1-l.webp",
+    "options": [
+      "Minor Figures Barista Oat",
+      "Vilgain Protein Milkshake",
+      "Kravské mléko",
+      "Rodopi Ayran"
+    ],
+    "answer": "Minor Figures Barista Oat",
+    "explanation": "Na fotografii je Minor Figures Barista Oat 1 l."
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q5",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "mcq",
+    "prompt": "Pro jaké použití je nápoj vyvinutý?",
+    "options": [
+      "Pro kávu a tvorbu jemné mikropěny",
+      "Jen pro vaření polévek",
+      "Jako energetický nápoj",
+      "Pouze pro studené cereálie"
+    ],
+    "answer": "Pro kávu a tvorbu jemné mikropěny",
+    "explanation": "Pro kávu a tvorbu jemné mikropěny."
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q6",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni k espresso nápojům zákazníkům, kteří chtějí rostlinnou alternativu s jemnou chutí a dobrou pěnivostí.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q1",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "mcq",
+    "prompt": "Jaké dvě hlavní suroviny tagliatelle obsahují?",
+    "options": [
+      "Semolinu z tvrdé pšenice a vejce",
+      "Rýžovou mouku a vodu",
+      "Pohanku a sóju",
+      "Kukuřici a mléko"
+    ],
+    "answer": "Semolinu z tvrdé pšenice a vejce",
+    "explanation": "Semolinu z tvrdé pšenice a vejce."
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q2",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": [
+      "lepek",
+      "vejce"
+    ],
+    "answerDisplay": "Semolina z tvrdé pšenice obsahuje lepek a receptura obsahuje 20 % vajec.",
+    "explanation": "Semolina z tvrdé pšenice obsahuje lepek a receptura obsahuje 20 % vajec."
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q3",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Vařit 6 minut ve vroucí osolené vodě.",
+    "explanation": "Vařit 6 minut ve vroucí osolené vodě."
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q4",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/temporin-tagliatelle-1-kg.webp",
+    "options": [
+      "Temporin Tagliatelle",
+      "Temporin Spaghetti",
+      "Bramborové gnocchi",
+      "Tortellini Prosciutto Crudo"
+    ],
+    "answer": "Temporin Tagliatelle",
+    "explanation": "Na fotografii je Pastificio Temporin čerstvé Tagliatelle 1 kg."
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q5",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "mcq",
+    "prompt": "Čím je vytvořen drsnější povrch těstovin?",
+    "options": [
+      "Tažením přes bronzovou matrici",
+      "Zmrazením",
+      "Smažením",
+      "Sušením na kouři"
+    ],
+    "answer": "Tažením přes bronzovou matrici",
+    "explanation": "Tažením přes bronzovou matrici."
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q6",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč pro rychlou profesionální přípravu; ručně tvarovaná hnízda se dobře porcují a bronzový povrch drží omáčku.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q1",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "mcq",
+    "prompt": "Které kultury Ayran RODOPI obsahuje?",
+    "options": [
+      "Lactobacillus bulgaricus a Streptococcus thermophilus",
+      "Pouze kvasnice",
+      "Penicillium roqueforti",
+      "Acetobacter aceti"
+    ],
+    "answer": "Lactobacillus bulgaricus a Streptococcus thermophilus",
+    "explanation": "Lactobacillus bulgaricus a Streptococcus thermophilus."
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q2",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "mléko",
+    "answerDisplay": "Základem nápoje je čerstvé plnotučné kravské mléko.",
+    "explanation": "Základem nápoje je čerstvé plnotučné kravské mléko."
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q3",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Protřepat a podávat dobře vychlazený.",
+    "explanation": "Protřepat a podávat dobře vychlazený."
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q4",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/rodopi-ayran-500-ml.webp",
+    "options": [
+      "RODOPI Ayran",
+      "RODOPI bílý jogurt",
+      "Kefírové mléko",
+      "Minor Figures Barista Oat"
+    ],
+    "answer": "RODOPI Ayran",
+    "explanation": "Na fotografii je RODOPI Ayran 500 ml."
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q5",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "mcq",
+    "prompt": "Proč se může Ayran v klidu rozvrstvit?",
+    "options": [
+      "Jde o přirozenou vlastnost směsi jogurtu a vody",
+      "Protože je zkažený",
+      "Kvůli přidanému oleji",
+      "Kvůli sycení oxidem uhličitým"
+    ],
+    "answer": "Jde o přirozenou vlastnost směsi jogurtu a vody",
+    "explanation": "Jde o přirozenou vlastnost směsi jogurtu a vody."
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q6",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni jako nesladký osvěžující nápoj k výrazně kořeněným jídlům nebo zákazníkům, kteří mají rádi zakysané mléčné výrobky.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q1",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "mcq",
+    "prompt": "Z čeho se bílý jogurt RODOPI vyrábí?",
+    "options": [
+      "Z čerstvého pasterovaného mléka a dvou živých kultur",
+      "Z mléka, škrobu a želatiny",
+      "Z ovesného nápoje",
+      "Ze smetany a vajec"
+    ],
+    "answer": "Z čerstvého pasterovaného mléka a dvou živých kultur",
+    "explanation": "Z čerstvého pasterovaného mléka a dvou živých kultur."
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q2",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "mléko",
+    "answerDisplay": "Výrobek je z kravského mléka.",
+    "explanation": "Výrobek je z kravského mléka."
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q3",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Podávat vychlazený samotný, s ovocem a müsli nebo použít do dipů.",
+    "explanation": "Podávat vychlazený samotný, s ovocem a müsli nebo použít do dipů."
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q4",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/rodopi-bily-jogurt-200-g.webp",
+    "options": [
+      "RODOPI bílý jogurt",
+      "RODOPI vanilkový jogurt",
+      "RODOPI Ayran",
+      "Bílý jogurt Farma Diviš"
+    ],
+    "answer": "RODOPI bílý jogurt",
+    "explanation": "Na fotografii je RODOPI bílý jogurt z farmářského mléka 200 g."
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q5",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "mcq",
+    "prompt": "Čím je jogurt specifický?",
+    "options": [
+      "Bulharskou recepturou a živými kulturami",
+      "Uzenou chutí",
+      "Přídavkem želatiny",
+      "Zráním s plísní"
+    ],
+    "answer": "Bulharskou recepturou a živými kulturami",
+    "explanation": "Bulharskou recepturou a živými kulturami."
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q6",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Zdůrazni živé kultury, jednoduché složení a výraznější mléčně kysanou chuť bulharského typu.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks-q1",
+    "productId": "farma-zelenka-krepelci-vejce-18-ks",
+    "type": "mcq",
+    "prompt": "Kolik křepelčích vajec je v balení?",
+    "options": [
+      "18 kusů",
+      "6 kusů",
+      "10 kusů",
+      "30 kusů"
+    ],
+    "answer": "18 kusů",
+    "explanation": "18 kusů."
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks-q2",
+    "productId": "farma-zelenka-krepelci-vejce-18-ks",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "vejce",
+    "answerDisplay": "Vejce jsou povinně značený alergen EU číslo 3.",
+    "explanation": "Vejce jsou povinně značený alergen EU číslo 3."
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks-q3",
+    "productId": "farma-zelenka-krepelci-vejce-18-ks",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "Tepelně upravit a použít do salátů, snídaňových jídel nebo jednohubek.",
+    "explanation": "Tepelně upravit a použít do salátů, snídaňových jídel nebo jednohubek."
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks-q4",
+    "productId": "farma-zelenka-krepelci-vejce-18-ks",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/farma-zelenka-krepelci-vejce-18-ks.webp",
+    "options": [
+      "Křepelčí vejce Farma Václav Zelenka",
+      "Slepičí vejce Farma Václav Zelenka",
+      "Mozzarella mini",
+      "Čerstvé těstoviny"
+    ],
+    "answer": "Křepelčí vejce Farma Václav Zelenka",
+    "explanation": "Na fotografii je Čerstvá křepelčí vejce Farma Václav Zelenka 18 ks."
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks-q5",
+    "productId": "farma-zelenka-krepelci-vejce-18-ks",
+    "type": "mcq",
+    "prompt": "Odkud vejce pocházejí?",
+    "options": [
+      "Z malé rodinné farmy v Lubné u Rakovníka",
+      "Z italské velkofarmy",
+      "Z Bulharska",
+      "Z Nizozemska"
+    ],
+    "answer": "Z malé rodinné farmy v Lubné u Rakovníka",
+    "explanation": "Z malé rodinné farmy v Lubné u Rakovníka."
+  },
+  {
+    "id": "farma-zelenka-krepelci-vejce-18-ks-q6",
+    "productId": "farma-zelenka-krepelci-vejce-18-ks",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč na snídaňové talíře, saláty a jednohubky; malé skvrnité vejce je chuťově známé, ale vizuálně výrazné.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks-q1",
+    "productId": "farma-zelenka-slepici-vejce-10-ks",
+    "type": "mcq",
+    "prompt": "Z jakého chovu slepičí vejce pocházejí?",
+    "options": [
+      "Z volného chovu",
+      "Z klecového chovu",
+      "Z dovozu mimo EU",
+      "Z křepelčího chovu"
+    ],
+    "answer": "Z volného chovu",
+    "explanation": "Z volného chovu."
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks-q2",
+    "productId": "farma-zelenka-slepici-vejce-10-ks",
+    "type": "text",
+    "prompt": "Který povinně značený alergen EU výrobek obsahuje nebo může obsahovat ve stopách?",
+    "answer": "vejce",
+    "answerDisplay": "Vejce jsou povinně značený alergen EU číslo 3.",
+    "explanation": "Vejce jsou povinně značený alergen EU číslo 3."
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks-q3",
+    "productId": "farma-zelenka-slepici-vejce-10-ks",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo připravit?",
+    "answer": "K vaření, pečení a přípravě vaječných jídel.",
+    "explanation": "K vaření, pečení a přípravě vaječných jídel."
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks-q4",
+    "productId": "farma-zelenka-slepici-vejce-10-ks",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/farma-zelenka-slepici-vejce-10-ks.webp",
+    "options": [
+      "Slepičí vejce Farma Václav Zelenka",
+      "Křepelčí vejce Farma Václav Zelenka",
+      "Čerstvá pasta",
+      "Burratine"
+    ],
+    "answer": "Slepičí vejce Farma Václav Zelenka",
+    "explanation": "Na fotografii je Čerstvá slepičí vejce z volného chovu Farma Václav Zelenka 10 ks."
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks-q5",
+    "productId": "farma-zelenka-slepici-vejce-10-ks",
+    "type": "mcq",
+    "prompt": "Jaká je uváděná velikost vajec?",
+    "options": [
+      "L až XL",
+      "S",
+      "Pouze M",
+      "Mini"
+    ],
+    "answer": "L až XL",
+    "explanation": "L až XL."
+  },
+  {
+    "id": "farma-zelenka-slepici-vejce-10-ks-q6",
+    "productId": "farma-zelenka-slepici-vejce-10-ks",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Zdůrazni volný chov, regionální původ a velikost L až XL.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
   }
 ]

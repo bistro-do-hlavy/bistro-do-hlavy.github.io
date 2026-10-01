@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.20';
+const CACHE_VERSION = 'bistro-v1.0.21';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.20', './js/app.js?v=1.0.20',
-  './config.js?v=1.0.20', './content.js?v=1.0.20', './storage.js?v=1.0.20',
-  './fsrs-service.js?v=1.0.20', './study.js?v=1.0.20', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.21', './js/app.js?v=1.0.21',
+  './config.js?v=1.0.21', './content.js?v=1.0.21', './storage.js?v=1.0.21',
+  './fsrs-service.js?v=1.0.21', './study.js?v=1.0.21', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
@@ -18,6 +18,22 @@ const APP_SHELL = [
   './img/products/kavova-mandlovka-200-ml.webp', './img/products/habla-del-silencio-750-ml.webp',
   './img/products/honoro-vera-monastrell-750-ml.webp', './img/products/condado-de-oriza-roble-750-ml.webp',
   './img/products/henri-willig-gouda-chili-hot-spicy.webp',
+  './img/products/bezva-datle-cele-500-g.webp',
+  './img/products/bezva-brusinky-klikva-500-g.webp',
+  './img/products/bezva-goji-250-g.webp',
+  './img/products/bezva-pohankova-kase-300-g.webp',
+  './img/products/bezva-ryzova-kase-300-g.webp',
+  './img/products/miscela-doro-gusto-classico-250-g.webp',
+  './img/products/kaffeebrewda-colombia-el-pastelito-250-g.webp',
+  './img/products/kaffeebrewda-ethiopia-chelchele-250-g.webp',
+  './img/products/kaffeebrewda-brasil-pantano-red-ruby-250-g.webp',
+  './img/products/patifu-gourmet-100-g.webp',
+  './img/products/minor-figures-barista-oat-1-l.webp',
+  './img/products/temporin-tagliatelle-1-kg.webp',
+  './img/products/rodopi-ayran-500-ml.webp',
+  './img/products/rodopi-bily-jogurt-200-g.webp',
+  './img/products/farma-zelenka-krepelci-vejce-18-ks.webp',
+  './img/products/farma-zelenka-slepici-vejce-10-ks.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 
