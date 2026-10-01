@@ -1,10 +1,11 @@
-import { CONFIG } from '../config.js?v=1.0.19';
-import { contentProvider } from '../content.js?v=1.0.19';
-import { storage } from '../storage.js?v=1.0.19';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.19';
+import { CONFIG } from '../config.js?v=1.0.20';
+import { contentProvider } from '../content.js?v=1.0.20';
+import { storage } from '../storage.js?v=1.0.20';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.20';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
+  buildTopicStudyQueue,
   buildWeakStudyQueue,
   calculateStreak,
   evaluateText,
@@ -12,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.19';
+} from '../study.js?v=1.0.20';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -35,6 +36,7 @@ const state = {
 const app = document.querySelector('#app');
 const profileDialog = document.querySelector('#profile-dialog');
 const productDialog = document.querySelector('#product-dialog');
+const topicDialog = document.querySelector('#topic-dialog');
 const toast = document.querySelector('#toast');
 
 function escapeHtml(value) {
@@ -150,6 +152,11 @@ function renderHome() {
   const streak = calculateStreak(state.reviews);
   const insights = learningInsights(state);
   const weakest = insights.weakProducts[0];
+  const weakQueue = buildWeakStudyQueue({
+    ...state,
+    enabledQuestionTypes: state.settings.enabledQuestionTypes,
+    enabledProductIds: selectedProductIds(),
+  });
   app.innerHTML = `
     <section class="page">
       <article class="hero-card">
@@ -162,8 +169,9 @@ function renderHome() {
           <div class="due-bubble"><strong>${queue.length}</strong><span>karet dnes</span></div>
         </div>
         <div class="hero-actions">
-          <button id="start-study" class="button button-primary" type="button" ${queue.length ? '' : 'disabled'}>${queue.length ? 'Spustit trénink' : 'Dávka splněna'}</button>
-          <button class="button button-ghost" type="button" data-view-link="products">Projít produkty</button>
+          <button id="start-study" class="button button-primary" type="button" ${queue.length ? '' : 'disabled'}>${queue.length ? 'Denní mix' : 'Denní mix splněn'}</button>
+          <button id="open-topic-study" class="button button-ghost" type="button">Podle tématu</button>
+          <button id="start-weak-home" class="button button-ghost" type="button">Co mi nejde${weakQueue.length ? ` · ${weakQueue.length}` : ''}</button>
         </div>
       </article>
       <div class="stats-grid" aria-label="Přehled pokroku">
@@ -181,6 +189,8 @@ function renderHome() {
     </section>`;
   bindCommonActions();
   document.querySelector('#start-study')?.addEventListener('click', startStudy);
+  document.querySelector('#open-topic-study')?.addEventListener('click', openTopicDialog);
+  document.querySelector('#start-weak-home')?.addEventListener('click', () => startWeakStudy(weakQueue));
 }
 
 function productCard(product) {
@@ -550,6 +560,48 @@ function startWeakStudy(queue = null) {
   startStudySession(weakQueue, 'weak');
 }
 
+function openTopicDialog() {
+  const enabledProductIds = new Set(selectedProductIds());
+  const enabledQuestionTypes = new Set(state.settings.enabledQuestionTypes || Object.keys(TYPE_LABELS));
+  const categories = [...new Set(state.products.filter((product) => enabledProductIds.has(product.id)).map((product) => product.category))];
+  const options = categories.map((category) => {
+    const products = state.products.filter((product) => product.category === category && enabledProductIds.has(product.id));
+    const productIds = new Set(products.map((product) => product.id));
+    const questionCount = state.questions.filter((question) => productIds.has(question.productId) && enabledQuestionTypes.has(question.type)).length;
+    return { category, products, questionCount };
+  }).filter((item) => item.questionCount > 0);
+
+  document.querySelector('#topic-options').innerHTML = options.length ? options.map((item) => `
+    <button class="topic-option" type="button" data-topic="${escapeHtml(item.category)}">
+      <span><strong>${escapeHtml(item.category)}</strong><small>${item.products.length} ${item.products.length === 1 ? 'produkt' : item.products.length <= 4 ? 'produkty' : 'produktů'} · ${item.questionCount} otázek</small></span>
+      <span aria-hidden="true">→</span>
+    </button>`).join('') : '<div class="empty-catalog"><strong>Žádné dostupné téma</strong><span>V Nastavení nejdřív zapněte alespoň jeden produkt.</span></div>';
+
+  topicDialog.querySelectorAll('[data-topic]').forEach((button) => {
+    button.addEventListener('click', () => startTopicStudy(button.dataset.topic));
+  });
+  topicDialog.showModal();
+}
+
+function startTopicStudy(category) {
+  const enabledProducts = new Set(selectedProductIds());
+  const categoryProductIds = state.products
+    .filter((product) => product.category === category && enabledProducts.has(product.id))
+    .map((product) => product.id);
+  const queue = buildTopicStudyQueue({
+    ...state,
+    enabledQuestionTypes: state.settings.enabledQuestionTypes,
+    enabledProductIds: categoryProductIds,
+    limit: 10,
+  });
+  if (!queue.length) {
+    showToast('Pro toto téma nejsou dostupné otázky.');
+    return;
+  }
+  topicDialog.close();
+  startStudySession(queue, 'topic');
+}
+
 function startStudySession(queue, mode) {
   state.session = { queue: [...queue], index: 0, answers: [], revealed: false, retryIds: new Set(), mode };
   state.currentView = 'study';
@@ -770,6 +822,8 @@ document.querySelector('#profile-form').addEventListener('submit', async (event)
 });
 profileDialog.addEventListener('cancel', (event) => { if (profileDialog.dataset.force === 'true') event.preventDefault(); });
 productDialog.addEventListener('click', (event) => { if (event.target === productDialog) productDialog.close(); });
+topicDialog.querySelector('.dialog-close').addEventListener('click', () => topicDialog.close());
+topicDialog.addEventListener('click', (event) => { if (event.target === topicDialog) topicDialog.close(); });
 document.querySelector('#import-file').addEventListener('change', (event) => { if (event.target.files[0]) importBackup(event.target.files[0]); event.target.value = ''; });
 
 try {

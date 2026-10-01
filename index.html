@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
   <link rel="apple-touch-icon" href="img/icon-192.png">
-  <link rel="stylesheet" href="css/styles.css?v=1.0.19">
+  <link rel="stylesheet" href="css/styles.css?v=1.0.20">
 </head>
 <body>
   <div class="app-shell">
@@ -66,9 +66,17 @@
     <div id="product-detail"></div>
   </dialog>
 
+  <dialog id="topic-dialog" class="dialog topic-dialog">
+    <button class="dialog-close" type="button" aria-label="Zavřít">×</button>
+    <p class="eyebrow">Trénink podle tématu</p>
+    <h2>Co chcete procvičit?</h2>
+    <p>Vyberte kategorii. V dávce dostanou přednost otázky k opakování, slabá místa a nové otázky.</p>
+    <div id="topic-options" class="topic-options"></div>
+  </dialog>
+
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <input id="import-file" type="file" accept="application/json,.json" hidden>
 
-  <script type="module" src="js/app.js?v=1.0.19"></script>
+  <script type="module" src="js/app.js?v=1.0.20"></script>
 </body>
 </html>

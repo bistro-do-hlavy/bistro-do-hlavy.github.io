@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.19';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.19';
+import { CONFIG } from './config.js?v=1.0.20';
+import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.20';
 
 export function normalizeText(value) {
   return String(value ?? '')
@@ -91,6 +91,39 @@ export function buildWeakStudyQueue({
     .map((question) => ({ question, weakness: questionWeakness(question.id, reviews, progress[question.id]) }))
     .filter((item) => item.weakness >= 25)
     .sort((a, b) => b.weakness - a.weakness)
+    .slice(0, limit)
+    .map((item) => item.question);
+}
+
+export function buildTopicStudyQueue({
+  products,
+  questions,
+  progress,
+  reviews,
+  enabledQuestionTypes = ['mcq', 'flashcard', 'text', 'photo'],
+  enabledProductIds = null,
+  limit = 10,
+  now = new Date(),
+}) {
+  const enabledTypes = new Set(enabledQuestionTypes);
+  const allowedProductIds = new Set(Array.isArray(enabledProductIds) ? enabledProductIds : products.map((product) => product.id));
+  const productOrder = new Map(products.map((product, index) => [product.id, index]));
+  const reviewedQuestionIds = new Set(reviews.map((review) => review.questionId));
+  const typeOrder = ['photo', 'text', 'mcq', 'flashcard'];
+
+  return questions
+    .filter((question) => enabledTypes.has(question.type) && allowedProductIds.has(question.productId))
+    .map((question) => {
+      const dueAt = progress[question.id]?.due ? new Date(progress[question.id].due) : null;
+      const weakness = questionWeakness(question.id, reviews, progress[question.id]);
+      const priority = dueAt && dueAt <= now ? 0 : weakness >= 25 ? 1 : !reviewedQuestionIds.has(question.id) ? 2 : 3;
+      return { question, priority, weakness, dueAt };
+    })
+    .sort((a, b) => a.priority - b.priority
+      || b.weakness - a.weakness
+      || (a.dueAt?.getTime() || Infinity) - (b.dueAt?.getTime() || Infinity)
+      || typeOrder.indexOf(a.question.type) - typeOrder.indexOf(b.question.type)
+      || productOrder.get(a.question.productId) - productOrder.get(b.question.productId))
     .slice(0, limit)
     .map((item) => item.question);
 }
