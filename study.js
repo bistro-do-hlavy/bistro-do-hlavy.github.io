@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.18';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.18';
+import { CONFIG } from './config.js?v=1.0.19';
+import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.19';
 
 export function normalizeText(value) {
   return String(value ?? '')
@@ -96,19 +96,21 @@ export function buildWeakStudyQueue({
 }
 
 export function learningInsights({ products, questions, progress, reviews, now = new Date() }) {
-  const histories = reviewsByQuestion(reviews);
+  const activeQuestionIds = new Set(questions.map((question) => question.id));
+  const activeReviews = reviews.filter((review) => activeQuestionIds.has(review.questionId));
+  const histories = reviewsByQuestion(activeReviews);
   const sevenDaysAgo = new Date(now);
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-  const recent = reviews.filter((review) => new Date(review.reviewedAt) >= sevenDaysAgo);
+  const recent = activeReviews.filter((review) => new Date(review.reviewedAt) >= sevenDaysAgo);
   const secure = (items) => items.filter((review) => review.rating >= RATINGS.GOOD).length;
   const percentage = (items) => items.length ? Math.round(secure(items) / items.length * 100) : 0;
-  const learnedQuestionIds = new Set(reviews.map((review) => review.questionId));
+  const learnedQuestionIds = new Set(activeReviews.map((review) => review.questionId));
 
   const weakProducts = products.map((product) => {
     const productQuestions = questions.filter((question) => question.productId === product.id);
     const productReviews = productQuestions.flatMap((question) => histories[question.id] || []);
     const weakQuestions = productQuestions
-      .map((question) => questionWeakness(question.id, reviews, progress[question.id]))
+      .map((question) => questionWeakness(question.id, activeReviews, progress[question.id]))
       .filter((score) => score >= 25);
     return {
       productId: product.id,
@@ -123,9 +125,9 @@ export function learningInsights({ products, questions, progress, reviews, now =
     .sort((a, b) => b.score - a.score || a.securePercent - b.securePercent);
 
   return {
-    totalReviews: reviews.length,
+    totalReviews: activeReviews.length,
     recentReviews: recent.length,
-    overallSecurePercent: percentage(reviews),
+    overallSecurePercent: percentage(activeReviews),
     recentSecurePercent: percentage(recent),
     learnedQuestions: learnedQuestionIds.size,
     totalQuestions: questions.length,

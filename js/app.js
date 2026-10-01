@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.18';
-import { contentProvider } from '../content.js?v=1.0.18';
-import { storage } from '../storage.js?v=1.0.18';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.18';
+import { CONFIG } from '../config.js?v=1.0.19';
+import { contentProvider } from '../content.js?v=1.0.19';
+import { storage } from '../storage.js?v=1.0.19';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.19';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -12,7 +12,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.18';
+} from '../study.js?v=1.0.19';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -28,7 +28,7 @@ const QUESTION_TYPE_SETTINGS = [
   { id: 'photo', label: 'Poznat z fotky', description: 'Produkt určíte podle fotografie.' },
 ];
 const state = {
-  products: [], questions: [], reviews: [], progress: {}, profile: null, settings: null,
+  catalogProducts: [], catalogQuestions: [], products: [], questions: [], reviews: [], progress: {}, profile: null, settings: null,
   currentView: 'home', session: null,
 };
 
@@ -58,12 +58,23 @@ function updateProfileChip() {
   document.querySelector('#profile-initial').textContent = name.slice(0, 1).toLocaleUpperCase('cs');
 }
 
+function archivedProducts() {
+  const archived = new Set(state.settings?.archivedProductIds || []);
+  return state.catalogProducts.filter((product) => archived.has(product.id));
+}
+
+function refreshActiveContent() {
+  const archived = new Set(state.settings?.archivedProductIds || []);
+  state.products = state.catalogProducts.filter((product) => !archived.has(product.id));
+  const activeProductIds = new Set(state.products.map((product) => product.id));
+  state.questions = state.catalogQuestions.filter((question) => activeProductIds.has(question.productId));
+}
+
 function selectedProductIds() {
   const available = new Set(state.products.map((product) => product.id));
   const saved = state.settings?.enabledProductIds;
   if (!Array.isArray(saved)) return [...available];
-  const valid = saved.filter((id) => available.has(id));
-  return valid.length ? valid : [...available];
+  return saved.filter((id) => available.has(id));
 }
 
 function questionIsEnabled(question) {
@@ -264,10 +275,13 @@ function renderSettings() {
   const enabledProductIds = selectedProductIds();
   const enabledProductSet = new Set(enabledProductIds);
   const categories = [...new Set(state.products.map((product) => product.category))];
+  const archived = archivedProducts();
   const describeQuestionTypes = (types) => types.length === QUESTION_TYPE_SETTINGS.length
     ? 'Mix všech'
     : `${types.length} ${types.length === 1 ? 'typ' : 'typy'} · ${types.map((type) => TYPE_LABELS[type]).join(', ')}`;
-  const describeProductScope = (count) => count === state.products.length
+  const describeProductScope = (count) => !state.products.length
+    ? 'Žádné aktivní produkty'
+    : count === state.products.length
     ? 'Všechny produkty'
     : `${count} ${count === 1 ? 'produkt' : count >= 2 && count <= 4 ? 'produkty' : 'produktů'} z ${state.products.length}`;
   app.innerHTML = `
@@ -309,7 +323,7 @@ function renderSettings() {
           </summary>
           <div class="collapsible-content">
             <p>Vyberte celé kategorie nebo jen jednotlivé produkty.</p>
-            <button id="select-all-products" class="mix-all-button ${enabledProductIds.length === state.products.length ? 'is-active' : ''}" type="button">
+            <button id="select-all-products" class="mix-all-button ${state.products.length && enabledProductIds.length === state.products.length ? 'is-active' : ''}" type="button" ${state.products.length ? '' : 'disabled'}>
               <span class="mix-icon" aria-hidden="true">◎</span>
               <span><strong>Všechny produkty</strong><small>Otázky ze všech aktuálních i nově přidaných produktů.</small></span>
               <span class="mix-check" aria-hidden="true">✓</span>
@@ -340,6 +354,23 @@ function renderSettings() {
             </section>
           </div>
         </details>
+        <details class="settings-card collapsible-settings" id="archived-products-details">
+          <summary>
+            <span><strong>Vyřazené produkty</strong><small>${archived.length ? `${archived.length} ${archived.length === 1 ? 'produkt lze obnovit' : archived.length <= 4 ? 'produkty lze obnovit' : 'produktů lze obnovit'}` : 'Koš je prázdný'}</small></span>
+            <span class="disclosure-icon" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="collapsible-content">
+            <p>Vyřazené produkty se nezobrazují v katalogu ani v testech. Pokrok a historie odpovědí zůstávají zachované.</p>
+            <div class="archived-products-list">
+              ${archived.length ? archived.map((product) => `
+                <article class="archived-product">
+                  <img src="${product.image}" alt="" width="64" height="64" loading="lazy">
+                  <span><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(product.category)}</small></span>
+                  <button class="button button-secondary restore-product" type="button" data-restore-product-id="${product.id}">Obnovit</button>
+                </article>`).join('') : '<div class="empty-catalog"><strong>Žádné vyřazené produkty</strong><span>Vyřadit je můžete v detailu konkrétního produktu.</span></div>'}
+            </div>
+          </div>
+        </details>
         <article class="settings-card">
           <div class="field-row"><div><h2>Vzhled</h2><p>Světlý, tmavý nebo podle telefonu.</p></div>
           <select id="theme" aria-label="Barevný režim"><option value="system">Podle telefonu</option><option value="light">Světlý</option><option value="dark">Tmavý</option></select></div>
@@ -351,6 +382,17 @@ function renderSettings() {
       </div>
     </section>`;
   document.querySelector('#theme').value = state.settings.theme;
+  document.querySelectorAll('[data-restore-product-id]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const product = state.catalogProducts.find((item) => item.id === button.dataset.restoreProductId);
+      const archivedProductIds = (state.settings.archivedProductIds || []).filter((id) => id !== button.dataset.restoreProductId);
+      state.settings = await storage.saveSettings({ archivedProductIds });
+      refreshActiveContent();
+      await updateBadge();
+      renderSettings();
+      showToast(`${product?.name || 'Produkt'} je znovu aktivní.`);
+    });
+  });
   document.querySelector('#new-limit').addEventListener('change', async (event) => {
     state.settings = await storage.saveSettings({ newCardsPerDay: Number(event.target.value) });
     showToast('Denní limit je uložený.');
@@ -379,7 +421,7 @@ function renderSettings() {
   });
   const syncProductScopeControls = () => {
     const selected = new Set([...document.querySelectorAll('input[name="study-product"]:checked')].map((input) => input.value));
-    document.querySelector('#select-all-products').classList.toggle('is-active', selected.size === state.products.length);
+    document.querySelector('#select-all-products').classList.toggle('is-active', state.products.length > 0 && selected.size === state.products.length);
     document.querySelector('#product-scope-summary').textContent = describeProductScope(selected.size);
     document.querySelectorAll('input[name="product-category"]').forEach((checkbox) => {
       const categoryProducts = state.products.filter((product) => product.category === checkbox.value);
@@ -465,8 +507,22 @@ function openProduct(id) {
       ${product.brandInfo ? `<h3>O značce</h3><p>${escapeHtml(product.brandInfo)}</p>` : ''}
       <h3>Doporučení k prodeji</h3><p class="sales-tip">${escapeHtml(product.salesTip)}</p>
       ${sources ? `<h3>Zdroje informací</h3><div class="source-links">${sources}</div>` : ''}
+      <div class="product-lifecycle-actions">
+        <button id="archive-product" class="button button-danger button-full" type="button">Vyřadit produkt</button>
+        <p>Produkt zmizí z katalogu a testů. Dosavadní pokrok se nesmaže a produkt půjde obnovit v Nastavení.</p>
+      </div>
     </div>`;
   productDialog.querySelector('.dialog-close').addEventListener('click', () => productDialog.close());
+  productDialog.querySelector('#archive-product').addEventListener('click', async () => {
+    if (!window.confirm(`Opravdu vyřadit produkt „${product.name}“? Pokrok zůstane zachovaný.`)) return;
+    const archivedProductIds = [...new Set([...(state.settings.archivedProductIds || []), product.id])];
+    state.settings = await storage.saveSettings({ archivedProductIds });
+    refreshActiveContent();
+    productDialog.close();
+    await updateBadge();
+    navigate(state.currentView === 'study' ? 'products' : state.currentView);
+    showToast('Produkt je vyřazený. Obnovit ho můžete v Nastavení.');
+  });
   productDialog.showModal();
 }
 
@@ -665,7 +721,8 @@ async function loadState() {
   const [{ products, questions }, profile, reviews, settings] = await Promise.all([
     contentProvider.getAll(), storage.getProfile(), storage.getReviews(), storage.getSettings(),
   ]);
-  Object.assign(state, { products, questions, profile, reviews, settings });
+  Object.assign(state, { catalogProducts: products, catalogQuestions: questions, profile, reviews, settings });
+  refreshActiveContent();
   state.progress = buildProgressFromReviews(questions, reviews);
   applyTheme(settings.theme);
   updateProfileChip();
