@@ -2628,5 +2628,617 @@
     "prompt": "Jak produkt stručně představíš zákazníkovi?",
     "answer": "Zdůrazni volný chov, regionální původ a velikost L až XL.",
     "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "carmen-reserva-mezcla-q1",
+    "productId": "carmen-reserva-mezcla",
+    "type": "mcq",
+    "prompt": "Z jakého mléka se Carmen Reserva Mezcla vyrábí?",
+    "options": [
+      "Ze syrového ovčího a kravského mléka",
+      "Pouze z kozího mléka",
+      "Pouze z pasterovaného kravského mléka",
+      "Z buvolího mléka"
+    ],
+    "answer": "Ze syrového ovčího a kravského mléka",
+    "explanation": "Ze syrového ovčího a kravského mléka."
+  },
+  {
+    "id": "carmen-reserva-mezcla-q2",
+    "productId": "carmen-reserva-mezcla",
+    "type": "text",
+    "prompt": "Který povinně značený alergen obsahuje Carmen Reserva Mezcla?",
+    "answer": "mléko",
+    "answerDisplay": "Mléko je povinně značený alergen EU.",
+    "explanation": "Mléko je povinně značený alergen EU."
+  },
+  {
+    "id": "carmen-reserva-mezcla-q3",
+    "productId": "carmen-reserva-mezcla",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Nechat krátce temperovat a podávat v tenkých plátcích nebo klíncích.",
+    "explanation": "Nechat krátce temperovat a podávat v tenkých plátcích nebo klíncích."
+  },
+  {
+    "id": "carmen-reserva-mezcla-q4",
+    "productId": "carmen-reserva-mezcla",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/carmen-reserva-mezcla.webp",
+    "options": [
+      "Carmen Reserva Mezcla",
+      "Henri Willig Green Pesto",
+      "Huizer Walnut Cheese",
+      "Rodopi bílý jogurt"
+    ],
+    "answer": "Carmen Reserva Mezcla",
+    "explanation": "Na fotografii je Carmen Reserva Mezcla."
+  },
+  {
+    "id": "carmen-reserva-mezcla-q5",
+    "productId": "carmen-reserva-mezcla",
+    "type": "mcq",
+    "prompt": "Co je pro sýr Carmen Reserva typické?",
+    "options": [
+      "Je vyroben ze syrového mléka",
+      "Je to čerstvý nezrající sýr",
+      "Má jedlou plísňovou kůru",
+      "Je zcela bez mléka"
+    ],
+    "answer": "Je vyroben ze syrového mléka",
+    "explanation": "Je vyroben ze syrového mléka."
+  },
+  {
+    "id": "carmen-reserva-mezcla-q6",
+    "productId": "carmen-reserva-mezcla",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který hledá výraznější španělský sýr; směs ovčího a kravského mléka spojuje plnější chuť s dobrou krémovostí.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q1",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "mcq",
+    "prompt": "Jaké je složení banánových kousků Bezva zdraví?",
+    "options": [
+      "100% sušený banán",
+      "Banán, cukr a olej",
+      "Banán a oxid siřičitý",
+      "Banán s medem"
+    ],
+    "answer": "100% sušený banán",
+    "explanation": "100% sušený banán."
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q2",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "text",
+    "prompt": "Které alergeny může výrobek obsahovat ve stopách?",
+    "answer": "lepek, sóju, arašídy a skořápkové plody",
+    "answerDisplay": "Může obsahovat stopy lepku, sóji, arašídů a skořápkových plodů.",
+    "explanation": "Může obsahovat stopy lepku, sóji, arašídů a skořápkových plodů."
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q3",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Samostatně jako svačinu nebo do kaší, müsli, jogurtu a pečení.",
+    "explanation": "Samostatně jako svačinu nebo do kaší, müsli, jogurtu a pečení."
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q4",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bezva-bananove-kousky-nesirene-500-g.webp",
+    "options": [
+      "Bezva zdraví Banánové kousky nesířené",
+      "Bezva zdraví Datle celé",
+      "Bezva zdraví Goji",
+      "Bezva zdraví Brusinky"
+    ],
+    "answer": "Bezva zdraví Banánové kousky nesířené",
+    "explanation": "Na fotografii je Bezva zdraví Banánové kousky nesířené 500 g."
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q5",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "mcq",
+    "prompt": "Proč jsou kousky banánu přirozeně tmavé?",
+    "options": [
+      "Nejsou ošetřené oxidem siřičitým",
+      "Jsou pražené v kávě",
+      "Obsahují kakao",
+      "Jsou uzené"
+    ],
+    "answer": "Nejsou ošetřené oxidem siřičitým",
+    "explanation": "Nejsou ošetřené oxidem siřičitým."
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q6",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Vysvětli, že tmavší vzhled je u nesířeného banánu přirozený; nejde o vadu ani připálení.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q1",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "mcq",
+    "prompt": "Co tvoří základ noků Pasané?",
+    "options": [
+      "Brambory a pšeničná mouka",
+      "Rýže a kukuřice",
+      "Pouze vejce",
+      "Cizrna a čočka"
+    ],
+    "answer": "Brambory a pšeničná mouka",
+    "explanation": "Brambory a pšeničná mouka."
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q2",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "text",
+    "prompt": "Který alergen noky obsahují a který mohou obsahovat ve stopách?",
+    "answer": "lepek; mohou obsahovat mléko",
+    "answerDisplay": "Obsahují lepek z pšeničné mouky a mohou obsahovat stopy mléka.",
+    "explanation": "Obsahují lepek z pšeničné mouky a mohou obsahovat stopy mléka."
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q3",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Vařit v osolené vodě; po vyplavání krátce dovařit, scedit a spojit s omáčkou.",
+    "explanation": "Vařit v osolené vodě; po vyplavání krátce dovařit, scedit a spojit s omáčkou."
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q4",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/pasane-gnocchi-con-patate-500-g.webp",
+    "options": [
+      "Pasané Gnocchi con patate",
+      "Temporin Tagliatelle",
+      "Rýžová kaše",
+      "Bramborové lupínky"
+    ],
+    "answer": "Pasané Gnocchi con patate",
+    "explanation": "Na fotografii je Pasané Gnocchi con patate 500 g."
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q5",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "mcq",
+    "prompt": "Jak poznáš, že se gnocchi blíží dokončení?",
+    "options": [
+      "Vyplavou k hladině",
+      "Změní se na červenou",
+      "Klesnou na dno",
+      "Začnou pěnit jako mléko"
+    ],
+    "answer": "Vyplavou k hladině",
+    "explanation": "Vyplavou k hladině."
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q6",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč jako rychlou přílohu nebo základ hlavního jídla; porce pro dvě až tři osoby je hotová během několika minut.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q1",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "mcq",
+    "prompt": "Z čeho sůl Country Life pochází?",
+    "options": [
+      "Z mořské vody",
+      "Z uzeného masa",
+      "Z fermentované sóji",
+      "Z mléčné syrovátky"
+    ],
+    "answer": "Z mořské vody",
+    "explanation": "Z mořské vody."
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q2",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU sůl obsahuje?",
+    "answer": "žádný",
+    "answerDisplay": "Čistá mořská sůl neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistá mořská sůl neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q3",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "K běžnému dochucování při vaření i na hotová jídla; skladovat v suchu.",
+    "explanation": "K běžnému dochucování při vaření i na hotová jídla; skladovat v suchu."
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q4",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/country-life-sul-morska-jemna-bio.webp",
+    "options": [
+      "Country Life mořská sůl jemná BIO",
+      "Country Life kakao BIO",
+      "BioNebio třtinový cukr",
+      "Rýžová kaše Bezva zdraví"
+    ],
+    "answer": "Country Life mořská sůl jemná BIO",
+    "explanation": "Na fotografii je Country Life mořská sůl jemná BIO."
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q5",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "mcq",
+    "prompt": "Čím se jemná sůl liší od hrubé při použití?",
+    "options": [
+      "Rychleji se rozpouští",
+      "Obsahuje mléko",
+      "Je vždy sladší",
+      "Musí se předem uvařit"
+    ],
+    "answer": "Rychleji se rozpouští",
+    "explanation": "Rychleji se rozpouští."
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q6",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce univerzální jemnou mořskou sůl; proti hrubé variantě se rychleji rozpouští.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q1",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "mcq",
+    "prompt": "Obsahuje Country Life Kakao BIO přidaný cukr?",
+    "options": [
+      "Ne, jde o čistý kakaový prášek",
+      "Ano, polovinu balení tvoří cukr",
+      "Ano, obsahuje med",
+      "Ano, obsahuje glukózový sirup"
+    ],
+    "answer": "Ne, jde o čistý kakaový prášek",
+    "explanation": "Ne, jde o čistý kakaový prášek."
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q2",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU čisté kakao obsahuje?",
+    "answer": "žádný",
+    "answerDisplay": "Čistý kakaový prášek neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistý kakaový prášek neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q3",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Do teplých nápojů, těst, krémů, kaší a smoothie.",
+    "explanation": "Do teplých nápojů, těst, krémů, kaší a smoothie."
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q4",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/country-life-kakao-bio-150-g.webp",
+    "options": [
+      "Country Life Kakao BIO",
+      "Dr. Oetker Kakao BIO",
+      "Chicory Cup",
+      "Country Life mořská sůl"
+    ],
+    "answer": "Country Life Kakao BIO",
+    "explanation": "Na fotografii je Country Life Kakao BIO 150 g."
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q5",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "mcq",
+    "prompt": "Co u tohoto kakaa znamená označení BIO?",
+    "options": [
+      "Surovina pochází z ekologického zemědělství",
+      "Kakao je předem oslazené",
+      "Kakao je rozpustné ve studené vodě",
+      "Výrobek obsahuje mléko"
+    ],
+    "answer": "Surovina pochází z ekologického zemědělství",
+    "explanation": "Surovina pochází z ekologického zemědělství."
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q6",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Upozorni, že jde o čisté neslazené kakao, takže si zákazník sladkost určí sám.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q1",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "mcq",
+    "prompt": "Odkud cukr Mauritius pochází?",
+    "options": [
+      "Z Mauricia",
+      "Z Kanady",
+      "Z České republiky",
+      "Z Japonska"
+    ],
+    "answer": "Z Mauricia",
+    "explanation": "Z Mauricia."
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q2",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "text",
+    "prompt": "Který z 14 povinně značených alergenů EU čistý třtinový cukr obsahuje?",
+    "answer": "žádný",
+    "answerDisplay": "Čistý třtinový cukr neobsahuje žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Čistý třtinový cukr neobsahuje žádný z 14 povinně značených alergenů EU."
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q3",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Ke slazení kávy a čaje, do pečení, dezertů a marmelád.",
+    "explanation": "Ke slazení kávy a čaje, do pečení, dezertů a marmelád."
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q4",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bio-nebio-mauritius-cukr-500-g.webp",
+    "options": [
+      "BioNebio Mauritius surový třtinový cukr",
+      "Country Life mořská sůl",
+      "Javorový sirup BioNebio",
+      "Country Life kakao"
+    ],
+    "answer": "BioNebio Mauritius surový třtinový cukr",
+    "explanation": "Na fotografii je BioNebio Mauritius surový třtinový cukr 500 g."
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q5",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "mcq",
+    "prompt": "Co dodává cukru typickou barvu a vůni?",
+    "options": [
+      "Zbytková třtinová melasa",
+      "Kakaový prášek",
+      "Karamelové barvivo",
+      "Vanilkový cukr"
+    ],
+    "answer": "Zbytková třtinová melasa",
+    "explanation": "Zbytková třtinová melasa."
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q6",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč do kávy nebo pečení zákazníkovi, který hledá cukr s jemnou třtinovou a lehce medovou vůní.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "henri-willig-green-pesto-q1",
+    "productId": "henri-willig-green-pesto",
+    "type": "mcq",
+    "prompt": "Které chutě jsou pro Henri Willig Green Pesto typické?",
+    "options": [
+      "Bazalka a česnek",
+      "Skořice a med",
+      "Vlašské ořechy a pepř",
+      "Uzená paprika a chilli"
+    ],
+    "answer": "Bazalka a česnek",
+    "explanation": "Bazalka a česnek."
+  },
+  {
+    "id": "henri-willig-green-pesto-q2",
+    "productId": "henri-willig-green-pesto",
+    "type": "text",
+    "prompt": "Který povinně značený alergen obsahuje Green Pesto?",
+    "answer": "mléko",
+    "answerDisplay": "Jde o kravský sýr, proto obsahuje mléko.",
+    "explanation": "Jde o kravský sýr, proto obsahuje mléko."
+  },
+  {
+    "id": "henri-willig-green-pesto-q3",
+    "productId": "henri-willig-green-pesto",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Na sýrové prkénko, do salátů, těstovin nebo na pizzu; podávat temperovaný.",
+    "explanation": "Na sýrové prkénko, do salátů, těstovin nebo na pizzu; podávat temperovaný."
+  },
+  {
+    "id": "henri-willig-green-pesto-q4",
+    "productId": "henri-willig-green-pesto",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/henri-willig-green-pesto.webp",
+    "options": [
+      "Henri Willig Green Pesto",
+      "Henri Willig Chili Hot & Spicy",
+      "Huizer Walnut Cheese",
+      "Carmen Reserva Mezcla"
+    ],
+    "answer": "Henri Willig Green Pesto",
+    "explanation": "Na fotografii je Henri Willig Green Pesto."
+  },
+  {
+    "id": "henri-willig-green-pesto-q5",
+    "productId": "henri-willig-green-pesto",
+    "type": "mcq",
+    "prompt": "Proč má sýr nápadnou zelenou barvu?",
+    "options": [
+      "Díky bylinkám a barvicím rostlinným koncentrátům",
+      "Kvůli modré plísni",
+      "Protože je uzený",
+      "Kvůli zelenému čaji"
+    ],
+    "answer": "Díky bylinkám a barvicím rostlinným koncentrátům",
+    "explanation": "Díky bylinkám a barvicím rostlinným koncentrátům."
+  },
+  {
+    "id": "henri-willig-green-pesto-q6",
+    "productId": "henri-willig-green-pesto",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Nabídni zákazníkovi, který chce jemnější mladou Goudu s výrazným vzhledem a chutí bazalky a česneku.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q1",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "mcq",
+    "prompt": "Který ořech obsahuje Huizer Walnut Cheese?",
+    "options": [
+      "Vlašský ořech",
+      "Pistácii",
+      "Kešu",
+      "Mandle"
+    ],
+    "answer": "Vlašský ořech",
+    "explanation": "Vlašský ořech."
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q2",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "text",
+    "prompt": "Které povinně značené alergeny sýr obsahuje?",
+    "answer": "mléko a vlašské ořechy",
+    "answerDisplay": "Obsahuje mléko a skořápkové plody – vlašské ořechy.",
+    "explanation": "Obsahuje mléko a skořápkové plody – vlašské ořechy."
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q3",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Temperovaný jako chuťovku, na pečivu nebo nakrájený do salátu.",
+    "explanation": "Temperovaný jako chuťovku, na pečivu nebo nakrájený do salátu."
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q4",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/huizer-kaas-gilde-walnut-cheese.webp",
+    "options": [
+      "Huizer Kaas-Gilde Walnut Cheese",
+      "Henri Willig Green Pesto",
+      "Carmen Reserva Mezcla",
+      "Patifu Gourmet"
+    ],
+    "answer": "Huizer Kaas-Gilde Walnut Cheese",
+    "explanation": "Na fotografii je Huizer Kaas-Gilde Walnut Cheese."
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q5",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "mcq",
+    "prompt": "Jak dlouho tento sýr přibližně zraje?",
+    "options": [
+      "4 až 6 týdnů",
+      "Pouze jeden den",
+      "Nejméně 5 let",
+      "Vůbec nezraje"
+    ],
+    "answer": "4 až 6 týdnů",
+    "explanation": "4 až 6 týdnů."
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q6",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který má rád mladší krémovou Goudu, ale chce ji zpestřit nasládlou chutí vlašských ořechů.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q1",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "mcq",
+    "prompt": "Čím je ochucen Saucisson Sec Noix?",
+    "options": [
+      "Vlašskými ořechy",
+      "Zeleným pestem",
+      "Borůvkami",
+      "Kozím sýrem"
+    ],
+    "answer": "Vlašskými ořechy",
+    "explanation": "Vlašskými ořechy."
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q2",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "text",
+    "prompt": "Které povinně značené alergeny výrobek obsahuje?",
+    "answer": "mléko a vlašské ořechy",
+    "answerDisplay": "Laktóza patří k mléčným složkám a vlašské ořechy ke skořápkovým plodům.",
+    "explanation": "Laktóza patří k mléčným složkám a vlašské ořechy ke skořápkovým plodům."
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q3",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně použít nebo podávat?",
+    "answer": "Krátce temperovat, krájet na tenká kolečka a podávat k pečivu nebo na prkénku.",
+    "explanation": "Krátce temperovat, krájet na tenká kolečka a podávat k pečivu nebo na prkénku."
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q4",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/le-petit-savoyard-saucisson-noix-200-g.webp",
+    "options": [
+      "Le Petit Savoyard Saucisson Sec Noix",
+      "Kachní paštika s calvadosem",
+      "Patifu Gourmet",
+      "Henri Willig Green Pesto"
+    ],
+    "answer": "Le Petit Savoyard Saucisson Sec Noix",
+    "explanation": "Na fotografii je Le Petit Savoyard Saucisson Sec Noix 200 g."
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q5",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "mcq",
+    "prompt": "Kde se salám vyrábí a zraje?",
+    "options": [
+      "V La Rochette v Savojsku",
+      "V Murcii ve Španělsku",
+      "V Katwoude v Nizozemsku",
+      "V Dobříši"
+    ],
+    "answer": "V La Rochette v Savojsku",
+    "explanation": "V La Rochette v Savojsku."
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q6",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč na francouzské prkénko zákazníkovi, který hledá klasický sušený salám s jemnou oříškovou obměnou.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
   }
 ]

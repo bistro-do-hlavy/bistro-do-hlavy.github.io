@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.22';
+const CACHE_VERSION = 'bistro-v1.0.23';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.22', './js/app.js?v=1.0.22',
-  './config.js?v=1.0.22', './content.js?v=1.0.22', './storage.js?v=1.0.22',
-  './fsrs-service.js?v=1.0.22', './study.js?v=1.0.22', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.23', './js/app.js?v=1.0.23',
+  './config.js?v=1.0.23', './content.js?v=1.0.23', './storage.js?v=1.0.23',
+  './fsrs-service.js?v=1.0.23', './study.js?v=1.0.23', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
@@ -34,6 +34,15 @@ const APP_SHELL = [
   './img/products/rodopi-bily-jogurt-200-g.webp',
   './img/products/farma-zelenka-krepelci-vejce-18-ks.webp',
   './img/products/farma-zelenka-slepici-vejce-10-ks.webp',
+  './img/products/carmen-reserva-mezcla.webp',
+  './img/products/bezva-bananove-kousky-nesirene-500-g.webp',
+  './img/products/pasane-gnocchi-con-patate-500-g.webp',
+  './img/products/country-life-sul-morska-jemna-bio.webp',
+  './img/products/country-life-kakao-bio-150-g.webp',
+  './img/products/bio-nebio-mauritius-cukr-500-g.webp',
+  './img/products/henri-willig-green-pesto.webp',
+  './img/products/huizer-kaas-gilde-walnut-cheese.webp',
+  './img/products/le-petit-savoyard-saucisson-noix-200-g.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

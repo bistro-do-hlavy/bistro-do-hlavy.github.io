@@ -1578,5 +1578,345 @@
         "url": "https://trziste.farmanadlani.cz/farmar/detail/vaclav-zelenka-lubna?autoposition=1&radius=150"
       }
     ]
+  },
+  {
+    "id": "carmen-reserva-mezcla",
+    "name": "Carmen Reserva Mezcla",
+    "category": "Sýry",
+    "brand": "Carmen / Granja Rinya",
+    "manufacturer": "Palancares Alimentación S.L.U.",
+    "origin": "Murcia, Španělsko",
+    "description": "Vyzrálý španělský sýr ze směsi syrového ovčího a kravského mléka s pevnou strukturou a výraznější chutí.",
+    "ingredients": [
+      "syrové ovčí mléko (nejméně 60 % mléčné směsi)",
+      "syrové kravské mléko (nejméně 25 % mléčné směsi)",
+      "sůl",
+      "syřidlo",
+      "mléčné kultury"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "směs ovčího a kravského mléka",
+      "mléko není před sýřením pasterované",
+      "bronzová medaile World Cheese Awards 2023–2024",
+      "nejedlá kůra"
+    ],
+    "preparation": [
+      "Před podáváním nech krátce temperovat.",
+      "Krájej na tenké plátky nebo menší klínky.",
+      "Uchovávej v chladu mezi 2 a 8 °C."
+    ],
+    "brandInfo": "Granja Rinya je sýrařská značka společnosti Palancares Alimentación ze španělské Murcie.",
+    "salesTip": "Doporuč zákazníkovi, který hledá výraznější španělský sýr; směs ovčího a kravského mléka spojuje plnější chuť s dobrou krémovostí.",
+    "image": "img/products/carmen-reserva-mezcla.webp",
+    "sources": [
+      {
+        "label": "Prodejce – přesná varianta produktu",
+        "url": "https://tienda.consum.es/es/p/queso-artesano-reserva-leche-cruda-mezcla/7360597"
+      }
+    ]
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g",
+    "name": "Bezva zdraví Banánové kousky nesířené 500 g",
+    "category": "Sušené ovoce",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Ekvádor",
+    "description": "Nesířené kousky sušeného banánu bez přidaných složek.",
+    "ingredients": [
+      "100% sušený banán"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8
+    ],
+    "specifics": [
+      "bez oxidu siřičitého",
+      "bez přidaného cukru",
+      "přirozeně tmavá barva",
+      "může obsahovat stopy lepku, sóji, arašídů a skořápkových plodů"
+    ],
+    "preparation": [
+      "Jez samotné jako svačinu.",
+      "Přidávej do kaší, müsli, jogurtu nebo pečení.",
+      "Skladuj v suchu a chladu mimo přímé slunce."
+    ],
+    "brandInfo": "Bezva zdraví je český dodavatel ořechů, sušeného ovoce, směsí a dalších sypkých potravin.",
+    "salesTip": "Vysvětli, že tmavší vzhled je u nesířeného banánu přirozený; nejde o vadu ani připálení.",
+    "image": "img/products/bezva-bananove-kousky-nesirene-500-g.webp",
+    "sources": [
+      {
+        "label": "Dodavatel – sušené ovoce",
+        "url": "https://www.bezva-zdravi.cz/susene-ovoce/"
+      }
+    ]
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g",
+    "name": "Pasané Gnocchi con patate 500 g",
+    "category": "Čerstvé těstoviny",
+    "brand": "Pasané",
+    "manufacturer": "Antica Pasta Mediterranea S.r.l.",
+    "origin": "Salerno, Itálie",
+    "description": "Čerstvé italské bramborové noky určené k rychlému povaření a spojení s omáčkou.",
+    "ingredients": [
+      "bramborová kaše",
+      "pšeničná mouka",
+      "bramborový škrob",
+      "sůl",
+      "regulátor kyselosti: kyselina citronová",
+      "konzervační látky"
+    ],
+    "allergens": [
+      1,
+      7
+    ],
+    "specifics": [
+      "500 g",
+      "rychlá příprava",
+      "mohou obsahovat stopy mléka",
+      "čerstvý chlazený výrobek"
+    ],
+    "preparation": [
+      "Vlož do vroucí osolené vody.",
+      "Jakmile noky vyplavou, krátce je dovař a sceď.",
+      "Promíchej s omáčkou a ihned podávej.",
+      "Uchovávej v chladu."
+    ],
+    "brandInfo": "Pasané je značka čerstvých těstovin výrobce Antica Pasta Mediterranea z Kampánie.",
+    "salesTip": "Doporuč jako rychlou přílohu nebo základ hlavního jídla; porce pro dvě až tři osoby je hotová během několika minut.",
+    "image": "img/products/pasane-gnocchi-con-patate-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – značka Pasané",
+        "url": "https://www.pastapasane.it/"
+      }
+    ]
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio",
+    "name": "Country Life mořská sůl jemná BIO",
+    "category": "Sůl a koření",
+    "brand": "Country Life",
+    "manufacturer": "COUNTRY LIFE s.r.o.",
+    "origin": "Mořský původ; baleno v České republice",
+    "description": "Jemně mletá mořská sůl v bio produktové řadě Country Life pro běžné dochucování a vaření.",
+    "ingredients": [
+      "mořská sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "jemná zrnitost",
+      "rychle se rozpouští",
+      "bez povinně značených alergenů EU"
+    ],
+    "preparation": [
+      "Používej k dochucení při vaření i na hotová jídla.",
+      "Dávkuj střídmě.",
+      "Skladuj v suchu a dobře uzavřené."
+    ],
+    "brandInfo": "Country Life je česká značka biopotravin a produktů zdravé výživy působící od roku 1991.",
+    "salesTip": "Doporuč zákazníkovi, který chce univerzální jemnou mořskou sůl; proti hrubé variantě se rychleji rozpouští.",
+    "image": "img/products/country-life-sul-morska-jemna-bio.webp",
+    "sources": [
+      {
+        "label": "Výrobce – Country Life",
+        "url": "https://www.countrylife.cz/"
+      }
+    ]
+  },
+  {
+    "id": "country-life-kakao-bio-150-g",
+    "name": "Country Life Kakao BIO 150 g",
+    "category": "Kakao a pečení",
+    "brand": "Country Life",
+    "manufacturer": "COUNTRY LIFE s.r.o.",
+    "origin": "Baleno v České republice",
+    "description": "Bio kakaový prášek pro přípravu nápojů, dezertů, pečení a kaší.",
+    "ingredients": [
+      "100% kakaový prášek z ekologického zemědělství"
+    ],
+    "allergens": [],
+    "specifics": [
+      "bio kvalita",
+      "neslazené kakao",
+      "150 g",
+      "bez povinně značených alergenů EU"
+    ],
+    "preparation": [
+      "Rozmíchej v teplém mléce nebo rostlinném nápoji.",
+      "Používej do těst, krémů, kaší a smoothie.",
+      "Skladuj v suchu a dobře uzavřené."
+    ],
+    "brandInfo": "Country Life je česká značka biopotravin a produktů zdravé výživy působící od roku 1991.",
+    "salesTip": "Upozorni, že jde o čisté neslazené kakao, takže si zákazník sladkost určí sám.",
+    "image": "img/products/country-life-kakao-bio-150-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – certifikovaný BIO sortiment",
+        "url": "https://www.countrylife.cz/data/images/_orig/0/14880.pdf"
+      }
+    ]
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g",
+    "name": "BioNebio Mauritius surový třtinový cukr 500 g",
+    "category": "Cukry a sladidla",
+    "brand": "BioNebio",
+    "manufacturer": "bio nebio s.r.o.",
+    "origin": "Mauricius",
+    "description": "Surový přírodní třtinový cukr se světle hnědými krystalky, jemnou medovou vůní a zbytkovou melasou.",
+    "ingredients": [
+      "100% surový třtinový cukr"
+    ],
+    "allergens": [],
+    "specifics": [
+      "světle hnědá barva",
+      "zbytková třtinová melasa",
+      "jemná medová vůně",
+      "není karamelově dobarvovaný"
+    ],
+    "preparation": [
+      "Používej do kávy, čaje, pečení, dezertů a marmelád.",
+      "Dávkuj podobně jako běžný cukr podle požadované sladkosti.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "BioNebio je český dodavatel biopotravin a surovin s důrazem na jednoduché složení a férovější původ.",
+    "salesTip": "Doporuč do kávy nebo pečení zákazníkovi, který hledá cukr s jemnou třtinovou a lehce medovou vůní.",
+    "image": "img/products/bio-nebio-mauritius-cukr-500-g.webp",
+    "sources": [
+      {
+        "label": "Produktové informace – přesná varianta",
+        "url": "https://cukr.heureka.cz/bionebio-surovy-prirodni-trtinovy-cukr-500-g/"
+      }
+    ]
+  },
+  {
+    "id": "henri-willig-green-pesto",
+    "name": "Henri Willig Green Pesto",
+    "category": "Sýry",
+    "brand": "Henri Willig",
+    "manufacturer": "Henri Willig Kaas B.V.",
+    "origin": "Katwoude, Nizozemsko",
+    "description": "Mladý kravský sýr typu Gouda s bazalkou a česnekem, nápadný zelenou barvou a svěží bylinkovou chutí.",
+    "ingredients": [
+      "pasterované kravské mléko",
+      "sůl",
+      "bazalka",
+      "česnek",
+      "barvicí koncentráty ze spiruliny a světlice",
+      "mikrobiální syřidlo",
+      "sýrařské kultury"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "zelená barva",
+      "chuť bazalky a česneku",
+      "mladý kravský sýr",
+      "bochník přibližně 4 až 5 kg"
+    ],
+    "preparation": [
+      "Před podáváním nech temperovat.",
+      "Krájej na kostky na sýrové prkénko nebo strouhej do těstovin.",
+      "Po otevření uchovávej při 4 až 7 °C."
+    ],
+    "brandInfo": "Henri Willig je nizozemská rodinná sýrařská značka založená roku 1974 v Katwoude.",
+    "salesTip": "Nabídni zákazníkovi, který chce jemnější mladou Goudu s výrazným vzhledem a chutí bazalky a česneku.",
+    "image": "img/products/henri-willig-green-pesto.webp",
+    "sources": [
+      {
+        "label": "Výrobce – přesná varianta",
+        "url": "https://henriwillig.com/en/business/our-cheese/regular-cheese/cow-cheese/henri-willig-cow-green-pesto/"
+      }
+    ]
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese",
+    "name": "Huizer Kaas-Gilde Walnut Cheese",
+    "category": "Sýry",
+    "brand": "Huizer Kaas-Gilde",
+    "manufacturer": "Visser Kaashandel B.V.",
+    "origin": "Huizen, Nizozemsko",
+    "description": "Jemný poloměkký gouda sýr s kousky vlašských ořechů a lehce nasládlou, oříškovou chutí.",
+    "ingredients": [
+      "pasterované kravské mléko",
+      "vlašské ořechy",
+      "sůl",
+      "syřidlo",
+      "sýrařská kultura"
+    ],
+    "allergens": [
+      7,
+      8
+    ],
+    "specifics": [
+      "bochník přibližně 4,5 kg",
+      "zrání přibližně 4 až 6 týdnů",
+      "hladká poloměkká textura",
+      "vlašské ořechy uvnitř sýra"
+    ],
+    "preparation": [
+      "Před podáváním nech temperovat.",
+      "Podávej jako chuťovku, na pečivu nebo v salátu.",
+      "Uchovávej při 4 až 7 °C."
+    ],
+    "brandInfo": "Huizer Kaas-Gilde je značka nizozemské společnosti Visser Kaashandel, jejíž sýrařská historie sahá do roku 1916.",
+    "salesTip": "Doporuč zákazníkovi, který má rád mladší krémovou Goudu, ale chce ji zpestřit nasládlou chutí vlašských ořechů.",
+    "image": "img/products/huizer-kaas-gilde-walnut-cheese.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://visser-kaas.nl/product/walnotenkaas-50/"
+      }
+    ]
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g",
+    "name": "Le Petit Savoyard Saucisson Sec Noix 200 g",
+    "category": "Uzeniny",
+    "brand": "Le Petit Savoyard",
+    "manufacturer": "Henri Raffin / Groupe Arpitan",
+    "origin": "La Rochette, Savojsko, Francie",
+    "description": "Tradičně sušený francouzský vepřový salám s vlašskými ořechy, vyráběný a pomalu vyzrávaný v Savojsku.",
+    "ingredients": [
+      "vepřové maso a tuk francouzského původu",
+      "vlašské ořechy",
+      "sůl",
+      "laktóza",
+      "koření",
+      "cukr",
+      "startovací kultury"
+    ],
+    "allergens": [
+      7,
+      8
+    ],
+    "specifics": [
+      "200 g",
+      "francouzské vepřové maso",
+      "pomalé zrání v Savojsku",
+      "kombinace sušeného salámu a vlašských ořechů"
+    ],
+    "preparation": [
+      "Před krájením nech krátce temperovat.",
+      "Krájej na tenká kolečka.",
+      "Podávej na prkénku, k pečivu nebo jako aperitiv."
+    ],
+    "brandInfo": "Le Petit Savoyard vznikl roku 2008 v Savojsku a zaměřuje se na místně vyráběné a pomalu vyzrávané sušené salámy z francouzského masa.",
+    "salesTip": "Doporuč na francouzské prkénko zákazníkovi, který hledá klasický sušený salám s jemnou oříškovou obměnou.",
+    "image": "img/products/le-petit-savoyard-saucisson-noix-200-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – produkt a značka",
+        "url": "https://www.le-petit-savoyard.com/"
+      }
+    ]
   }
 ]
