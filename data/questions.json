@@ -3240,5 +3240,685 @@
     "prompt": "Jak produkt stručně představíš zákazníkovi?",
     "answer": "Doporuč na francouzské prkénko zákazníkovi, který hledá klasický sušený salám s jemnou oříškovou obměnou.",
     "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q1",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "mcq",
+    "prompt": "Jaký druh čaje je Sencha?",
+    "options": [
+      "Zelený čaj",
+      "Černý čaj",
+      "Rooibos",
+      "Heřmánkový nálev"
+    ],
+    "answer": "Zelený čaj",
+    "explanation": "Zelený čaj."
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q2",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "text",
+    "prompt": "Při jaké přibližné teplotě vody připravíš Senchu?",
+    "answer": "80",
+    "answerDisplay": "Přibližně 80 °C.",
+    "explanation": "Přibližně 80 °C."
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q3",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Jeden sáček zalij vodou o teplotě přibližně 80 °C. Nech louhovat 2 až 4 minuty. Příliš horká voda nebo dlouhé louhování zvýrazní hořkost.",
+    "explanation": "Jeden sáček zalij vodou o teplotě přibližně 80 °C. Nech louhovat 2 až 4 minuty. Příliš horká voda nebo dlouhé louhování zvýrazní hořkost."
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q4",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-sencha-15.webp",
+    "options": [
+      "Teahouse Exclusives Sencha",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Teahouse Exclusives Sencha",
+    "explanation": "Na fotografii je Teahouse Exclusives Sencha 15 sáčků."
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q5",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "mcq",
+    "prompt": "Jak dlouho se má Sencha louhovat?",
+    "options": [
+      "2 až 4 minuty",
+      "10 až 15 minut",
+      "Méně než 10 sekund",
+      "Přes noc"
+    ],
+    "answer": "2 až 4 minuty",
+    "explanation": "2 až 4 minuty."
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q6",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč hostovi, který chce čistý lehčí zelený čaj bez dalšího aromatizování.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q1",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "mcq",
+    "prompt": "Co tvoří základ Gunpowder Mint?",
+    "options": [
+      "Zelený čaj a máta",
+      "Černý čaj a vanilka",
+      "Rooibos a kakao",
+      "Heřmánek a meduňka"
+    ],
+    "answer": "Zelený čaj a máta",
+    "explanation": "Zelený čaj a máta."
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q2",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "text",
+    "prompt": "Která bylina dodává směsi osvěžující chuť?",
+    "answer": "máta",
+    "answerDisplay": "Máta.",
+    "explanation": "Máta."
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q3",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Jeden sáček zalij vodou o teplotě přibližně 80 °C. Nech louhovat 2 až 4 minuty. Podávej samotný; lze připravit i jako osvěžující ledový čaj.",
+    "explanation": "Jeden sáček zalij vodou o teplotě přibližně 80 °C. Nech louhovat 2 až 4 minuty. Podávej samotný; lze připravit i jako osvěžující ledový čaj."
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q4",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-gunpowder-mint-15.webp",
+    "options": [
+      "Teahouse Exclusives Gunpowder Mint",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Teahouse Exclusives Gunpowder Mint",
+    "explanation": "Na fotografii je Teahouse Exclusives Gunpowder Mint 15 sáčků."
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q5",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "mcq",
+    "prompt": "Jaký charakter má Gunpowder Mint?",
+    "options": [
+      "Svěží mátový",
+      "Silně kouřový",
+      "Výrazně kakaový",
+      "Slaný"
+    ],
+    "answer": "Svěží mátový",
+    "explanation": "Svěží mátový."
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q6",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč hostovi, který chce zelený čaj, ale dává přednost svěží mátové chuti.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q1",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "mcq",
+    "prompt": "Jaký druh čaje je English Breakfast?",
+    "options": [
+      "Černý cejlonský čaj",
+      "Zelený jasmínový čaj",
+      "Heřmánkový nálev",
+      "Rooibos"
+    ],
+    "answer": "Černý cejlonský čaj",
+    "explanation": "Černý cejlonský čaj."
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q2",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "text",
+    "prompt": "Ze které čajové oblasti pochází použitý čaj?",
+    "answer": "Cejlon",
+    "answerDisplay": "Cejlon, tedy dnešní Srí Lanka.",
+    "explanation": "Cejlon, tedy dnešní Srí Lanka."
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q3",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Jeden sáček zalij čerstvou vroucí vodou. Nech louhovat 3 až 5 minut podle požadované síly. Podávej samotný nebo s trochou mléka.",
+    "explanation": "Jeden sáček zalij čerstvou vroucí vodou. Nech louhovat 3 až 5 minut podle požadované síly. Podávej samotný nebo s trochou mléka."
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q4",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-english-breakfast-15.webp",
+    "options": [
+      "Teahouse Exclusives English Breakfast",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Teahouse Exclusives English Breakfast",
+    "explanation": "Na fotografii je Teahouse Exclusives English Breakfast 15 sáčků."
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q5",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "mcq",
+    "prompt": "S čím lze English Breakfast tradičně nabídnout?",
+    "options": [
+      "S trochou mléka",
+      "S olivovým olejem",
+      "S tonikem",
+      "Se solí"
+    ],
+    "answer": "S trochou mléka",
+    "explanation": "S trochou mléka."
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q6",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč hostovi, který hledá silnější klasický černý čaj, případně čaj k snídani nebo s mlékem.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q1",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "mcq",
+    "prompt": "Čím je čaj Jasmine ovoněn?",
+    "options": [
+      "Jasmínovými květy",
+      "Vanilkou",
+      "Mátou",
+      "Skořicí"
+    ],
+    "answer": "Jasmínovými květy",
+    "explanation": "Jasmínovými květy."
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q2",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "text",
+    "prompt": "Jaký typ čaje tvoří základ varianty Jasmine?",
+    "answer": "zelený čaj",
+    "answerDisplay": "Zelený čaj Chung Hao.",
+    "explanation": "Zelený čaj Chung Hao."
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q3",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Jeden sáček zalij vodou o teplotě přibližně 80 °C. Nech louhovat 2 až 4 minuty. Podávej bez mléka, aby vynikla jasmínová vůně.",
+    "explanation": "Jeden sáček zalij vodou o teplotě přibližně 80 °C. Nech louhovat 2 až 4 minuty. Podávej bez mléka, aby vynikla jasmínová vůně."
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q4",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-jasmine-15.webp",
+    "options": [
+      "Teahouse Exclusives Jasmine",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Teahouse Exclusives Jasmine",
+    "explanation": "Na fotografii je Teahouse Exclusives Jasmine 15 sáčků."
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q5",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "mcq",
+    "prompt": "Jak nejlépe zachovat jemný charakter čaje Jasmine?",
+    "options": [
+      "Použít vodu kolem 80 °C",
+      "Vařit sáček deset minut",
+      "Přidat sůl",
+      "Zalít studeným mlékem"
+    ],
+    "answer": "Použít vodu kolem 80 °C",
+    "explanation": "Použít vodu kolem 80 °C."
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q6",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč hostovi, který chce jemný aromatický zelený čaj s výraznou květinovou vůní.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q1",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "mcq",
+    "prompt": "Z čeho je Pure Camomile?",
+    "options": [
+      "Z celých květů heřmánku",
+      "Ze zeleného čaje a máty",
+      "Z černého čaje",
+      "Z rooibosu a vanilky"
+    ],
+    "answer": "Z celých květů heřmánku",
+    "explanation": "Z celých květů heřmánku."
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q2",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "text",
+    "prompt": "Obsahuje Pure Camomile přirozeně kofein?",
+    "answer": "ne",
+    "answerDisplay": "Ne, jde o bylinný nálev bez čajovníku.",
+    "explanation": "Ne, jde o bylinný nálev bez čajovníku."
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q3",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Jeden sáček zalij čerstvou vroucí vodou. Nech louhovat přibližně 5 až 8 minut. Podávej samotný; případně nabídni med zvlášť.",
+    "explanation": "Jeden sáček zalij čerstvou vroucí vodou. Nech louhovat přibližně 5 až 8 minut. Podávej samotný; případně nabídni med zvlášť."
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q4",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-pure-camomile-15.webp",
+    "options": [
+      "Teahouse Exclusives Pure Camomile",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Teahouse Exclusives Pure Camomile",
+    "explanation": "Na fotografii je Teahouse Exclusives Pure Camomile 15 sáčků."
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q5",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "mcq",
+    "prompt": "Jak dlouho se má bylinný nálev přibližně louhovat?",
+    "options": [
+      "5 až 8 minut",
+      "5 sekund",
+      "Přes noc",
+      "Půl minuty"
+    ],
+    "answer": "5 až 8 minut",
+    "explanation": "5 až 8 minut."
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q6",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč hostovi, který chce jemný květinový bylinný nálev bez kofeinu.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q1",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "mcq",
+    "prompt": "Jaké aroma doplňuje rooibos v této variantě?",
+    "options": [
+      "Vanilkové",
+      "Mátové",
+      "Jasmínové",
+      "Kouřové"
+    ],
+    "answer": "Vanilkové",
+    "explanation": "Vanilkové."
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q2",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "text",
+    "prompt": "Obsahuje rooibos přirozeně kofein?",
+    "answer": "ne",
+    "answerDisplay": "Ne, rooibos je přirozeně bez kofeinu.",
+    "explanation": "Ne, rooibos je přirozeně bez kofeinu."
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q3",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Jeden sáček zalij čerstvou vroucí vodou. Nech louhovat přibližně 5 až 8 minut. Podávej samotný; rooibos snese i delší louhování bez výrazné hořkosti.",
+    "explanation": "Jeden sáček zalij čerstvou vroucí vodou. Nech louhovat přibližně 5 až 8 minut. Podávej samotný; rooibos snese i delší louhování bez výrazné hořkosti."
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q4",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/teahouse-exclusives-rooibos-vanilla-15.webp",
+    "options": [
+      "Teahouse Exclusives Rooibos Vanilla",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Teahouse Exclusives Rooibos Vanilla",
+    "explanation": "Na fotografii je Teahouse Exclusives Rooibos Vanilla 15 sáčků."
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q5",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "mcq",
+    "prompt": "Odkud rooibos pochází?",
+    "options": [
+      "Z Jižní Afriky",
+      "Z Japonska",
+      "Z Itálie",
+      "Z Nizozemska"
+    ],
+    "answer": "Z Jižní Afriky",
+    "explanation": "Z Jižní Afriky."
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q6",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč hostovi, který chce nasládlý aromatický nálev bez kofeinu a má rád vanilku.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q1",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "mcq",
+    "prompt": "V jaké podobě je tato varianta Miscela d’Oro Espresso?",
+    "options": [
+      "Zrnková káva",
+      "Mletá káva",
+      "Instantní káva",
+      "Kávové kapsle"
+    ],
+    "answer": "Zrnková káva",
+    "explanation": "Zrnková káva."
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q2",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "text",
+    "prompt": "Jakou intenzitu uvádí výrobce na stupnici do deseti?",
+    "answer": "6",
+    "answerDisplay": "Intenzita 6 z 10.",
+    "explanation": "Intenzita 6 z 10."
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q3",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Namel těsně před přípravou podle použitého espresso kávovaru. Pro dvojité espresso začni přibližně s 16 až 18 g kávy a dávku dolaď podle chuti. Po otevření uchovávej těsně uzavřené v suchu a chladu.",
+    "explanation": "Namel těsně před přípravou podle použitého espresso kávovaru. Pro dvojité espresso začni přibližně s 16 až 18 g kávy a dávku dolaď podle chuti. Po otevření uchovávej těsně uzavřené v suchu a chladu."
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q4",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-espresso-zrnkova-250-g.webp",
+    "options": [
+      "Miscela d’Oro Espresso zrnková káva",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Miscela d’Oro Espresso zrnková káva",
+    "explanation": "Na fotografii je Miscela d’Oro Espresso zrnková káva 250 g."
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q5",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "mcq",
+    "prompt": "Které chuťové tóny výrobce uvádí?",
+    "options": [
+      "Lískové ořechy a čokoláda",
+      "Jasmín a máta",
+      "Citron a sůl",
+      "Vanilka a heřmánek"
+    ],
+    "answer": "Lískové ořechy a čokoláda",
+    "explanation": "Lískové ořechy a čokoláda."
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q6",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce univerzální italskou zrnkovou směs s plným tělem a oříškovo-čokoládovým profilem.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q1",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "mcq",
+    "prompt": "Pro koho je mletá varianta nejpraktičtější?",
+    "options": [
+      "Pro zákazníka bez mlýnku",
+      "Jen pro přípravu čaje",
+      "Pouze pro automat na zrnka",
+      "Pro výrobu kakaa"
+    ],
+    "answer": "Pro zákazníka bez mlýnku",
+    "explanation": "Pro zákazníka bez mlýnku."
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q2",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "text",
+    "prompt": "Jakou intenzitu uvádí výrobce na stupnici do deseti?",
+    "answer": "6",
+    "answerDisplay": "Intenzita 6 z 10.",
+    "explanation": "Intenzita 6 z 10."
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q3",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Použij do domácího espresso kávovaru nebo moka konvičky. Dávku přizpůsob použité metodě a požadované síle. Po otevření uchovávej těsně uzavřené v suchu a chladu.",
+    "explanation": "Použij do domácího espresso kávovaru nebo moka konvičky. Dávku přizpůsob použité metodě a požadované síle. Po otevření uchovávej těsně uzavřené v suchu a chladu."
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q4",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-espresso-mleta-250-g.webp",
+    "options": [
+      "Miscela d’Oro Espresso mletá káva",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Miscela d’Oro Espresso mletá káva",
+    "explanation": "Na fotografii je Miscela d’Oro Espresso mletá káva 250 g."
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q5",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "mcq",
+    "prompt": "Pro které metody je káva určena?",
+    "options": [
+      "Domácí espresso a moka",
+      "Čajová konvice",
+      "French press bez mletí",
+      "Příprava limonády"
+    ],
+    "answer": "Domácí espresso a moka",
+    "explanation": "Domácí espresso a moka."
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q6",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce klasické italské espresso, ale nemá doma mlýnek.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q1",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "mcq",
+    "prompt": "Čím se Espresso Decaffeinato liší od běžné varianty?",
+    "options": [
+      "Je bezkofeinové",
+      "Je to zelený čaj",
+      "Obsahuje mátu",
+      "Prodává se jako celé kakaové boby"
+    ],
+    "answer": "Je bezkofeinové",
+    "explanation": "Je bezkofeinové."
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q2",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "text",
+    "prompt": "Jaké slovo v názvu označuje bezkofeinovou variantu?",
+    "answer": "Decaffeinato",
+    "answerDisplay": "Decaffeinato.",
+    "explanation": "Italské označení Decaffeinato znamená bezkofeinová káva."
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q3",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Použij do domácího espresso kávovaru nebo moka konvičky. Dávku přizpůsob použité metodě a požadované síle. Po otevření uchovávej těsně uzavřené v suchu a chladu.",
+    "explanation": "Použij do domácího espresso kávovaru nebo moka konvičky. Dávku přizpůsob použité metodě a požadované síle. Po otevření uchovávej těsně uzavřené v suchu a chladu."
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q4",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-espresso-decaffeinato-250-g.webp",
+    "options": [
+      "Miscela d’Oro Espresso Decaffeinato mletá káva",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Vilgain Protein Milkshake kakao"
+    ],
+    "answer": "Miscela d’Oro Espresso Decaffeinato mletá káva",
+    "explanation": "Na fotografii je Miscela d’Oro Espresso Decaffeinato mletá káva 250 g."
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q5",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "mcq",
+    "prompt": "Jak se směs dekofeinizuje?",
+    "options": [
+      "Vodou a párou",
+      "Přidáním mléka",
+      "Zmrazením",
+      "Pražením se solí"
+    ],
+    "answer": "Vodou a párou",
+    "explanation": "Vodou a párou."
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q6",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce chuť italského espressa s minimem kofeinu, například na pozdější část dne.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q1",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "mcq",
+    "prompt": "Kolik bílkovin obsahuje celé balení?",
+    "options": [
+      "33 g",
+      "3 g",
+      "8 g",
+      "66 g"
+    ],
+    "answer": "33 g",
+    "explanation": "33 g."
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q2",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "text",
+    "prompt": "Který povinně značený alergen nápoj obsahuje?",
+    "answer": "mléko",
+    "answerDisplay": "Mléko.",
+    "explanation": "Mléko."
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q3",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "flashcard",
+    "prompt": "Jak produkt správně připravit nebo podávat?",
+    "answer": "Před otevřením protřepej. Podávej vychlazené jako hotový nápoj. Po otevření uchovávej v lednici a spotřebuj do 24 hodin.",
+    "explanation": "Před otevřením protřepej. Podávej vychlazené jako hotový nápoj. Po otevření uchovávej v lednici a spotřebuj do 24 hodin."
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q4",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/vilgain-protein-milkshake-kakao-330-ml.webp",
+    "options": [
+      "Vilgain Protein Milkshake kakao",
+      "Teahouse Exclusives Assam GFBOP",
+      "Miscela d’Oro Gusto Classico",
+      "Teahouse Exclusives Rooibos Vanilla"
+    ],
+    "answer": "Vilgain Protein Milkshake kakao",
+    "explanation": "Na fotografii je Vilgain Protein Milkshake kakao 330 ml."
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q5",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "mcq",
+    "prompt": "Jak dlouho se má nápoj po otevření spotřebovat?",
+    "options": [
+      "Do 24 hodin",
+      "Do jednoho měsíce",
+      "Do jednoho roku",
+      "Nemusí se spotřebovat"
+    ],
+    "answer": "Do 24 hodin",
+    "explanation": "Do 24 hodin."
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q6",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně představíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce rychlý hotový proteinový nápoj s kakaovou chutí a 33 g bílkovin.",
+    "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
   }
 ]

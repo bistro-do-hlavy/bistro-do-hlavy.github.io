@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.23';
+const CACHE_VERSION = 'bistro-v1.0.24';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.23', './js/app.js?v=1.0.23',
-  './config.js?v=1.0.23', './content.js?v=1.0.23', './storage.js?v=1.0.23',
-  './fsrs-service.js?v=1.0.23', './study.js?v=1.0.23', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.24', './js/app.js?v=1.0.24',
+  './config.js?v=1.0.24', './content.js?v=1.0.24', './storage.js?v=1.0.24',
+  './fsrs-service.js?v=1.0.24', './study.js?v=1.0.24', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
@@ -43,6 +43,16 @@ const APP_SHELL = [
   './img/products/henri-willig-green-pesto.webp',
   './img/products/huizer-kaas-gilde-walnut-cheese.webp',
   './img/products/le-petit-savoyard-saucisson-noix-200-g.webp',
+  './img/products/teahouse-exclusives-sencha-15.webp',
+  './img/products/teahouse-exclusives-gunpowder-mint-15.webp',
+  './img/products/teahouse-exclusives-english-breakfast-15.webp',
+  './img/products/teahouse-exclusives-jasmine-15.webp',
+  './img/products/teahouse-exclusives-pure-camomile-15.webp',
+  './img/products/teahouse-exclusives-rooibos-vanilla-15.webp',
+  './img/products/miscela-doro-espresso-zrnkova-250-g.webp',
+  './img/products/miscela-doro-espresso-mleta-250-g.webp',
+  './img/products/miscela-doro-espresso-decaffeinato-250-g.webp',
+  './img/products/vilgain-protein-milkshake-kakao-330-ml.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

@@ -1918,5 +1918,356 @@
         "url": "https://www.le-petit-savoyard.com/"
       }
     ]
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15",
+    "name": "Teahouse Exclusives Sencha 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "zelený čaj japonského typu",
+    "description": "Čistý zelený čaj Sencha s jemně travnatým charakterem, lehkou svíravostí a přirozeně nasládlým závěrem.",
+    "ingredients": [
+      "zelený čaj Sencha"
+    ],
+    "allergens": [],
+    "specifics": [
+      "15 prémiových sáčků",
+      "japonský typ zeleného čaje",
+      "jemně svíravý a lehce nasládlý profil",
+      "řada Luxury Tea Bag"
+    ],
+    "preparation": [
+      "Jeden sáček zalij vodou o teplotě přibližně 80 °C.",
+      "Nech louhovat 2 až 4 minuty.",
+      "Příliš horká voda nebo dlouhé louhování zvýrazní hořkost."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Navazuje na čajovou tradici od roku 1879 a nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který chce čistý lehčí zelený čaj bez dalšího aromatizování.",
+    "image": "img/products/teahouse-exclusives-sencha-15.webp",
+    "sources": [
+      {
+        "label": "Značka – detail produktu",
+        "url": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-sencha/"
+      },
+      {
+        "label": "Fotografie přesného balení",
+        "url": "https://www.kavagastro.cz/luxusni-cajove-sacky/2091-teahouse-exclusives-sencha-zeleny-caj-15-sacku-4251633300784.html"
+      }
+    ]
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15",
+    "name": "Teahouse Exclusives Gunpowder Mint 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "Čína; směs zeleného čaje a máty",
+    "description": "Zelený čaj Gunpowder s mátou, který spojuje plnější čajový základ se svěžím mátovým charakterem.",
+    "ingredients": [
+      "zelený čaj Gunpowder",
+      "máta"
+    ],
+    "allergens": [],
+    "specifics": [
+      "15 prémiových sáčků",
+      "svinuté lístky zeleného čaje Gunpowder",
+      "osvěžující mátová chuť",
+      "řada Luxury Tea Bag"
+    ],
+    "preparation": [
+      "Jeden sáček zalij vodou o teplotě přibližně 80 °C.",
+      "Nech louhovat 2 až 4 minuty.",
+      "Podávej samotný; lze připravit i jako osvěžující ledový čaj."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Navazuje na čajovou tradici od roku 1879 a nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který chce zelený čaj, ale dává přednost svěží mátové chuti.",
+    "image": "img/products/teahouse-exclusives-gunpowder-mint-15.webp",
+    "sources": [
+      {
+        "label": "Značka – detail produktu",
+        "url": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-gunpowder-mint/"
+      },
+      {
+        "label": "Fotografie přesného balení",
+        "url": "https://www.delidrinks.com/thes-et-infusions/325-the-vert-gunpowder-mint-sachet-15-x-35g.html"
+      }
+    ]
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15",
+    "name": "Teahouse Exclusives English Breakfast 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "Srí Lanka (cejlonský čaj)",
+    "description": "Plný a výrazný cejlonský černý čaj s lehce řízným aromatem, určený pro klasický snídaňový šálek.",
+    "ingredients": [
+      "černý cejlonský čaj"
+    ],
+    "allergens": [],
+    "specifics": [
+      "15 prémiových sáčků",
+      "černý čaj z Cejlonu",
+      "plná a silnější chuť",
+      "vhodný i s mlékem"
+    ],
+    "preparation": [
+      "Jeden sáček zalij čerstvou vroucí vodou.",
+      "Nech louhovat 3 až 5 minut podle požadované síly.",
+      "Podávej samotný nebo s trochou mléka."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Navazuje na čajovou tradici od roku 1879 a nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který hledá silnější klasický černý čaj, případně čaj k snídani nebo s mlékem.",
+    "image": "img/products/teahouse-exclusives-english-breakfast-15.webp",
+    "sources": [
+      {
+        "label": "Značka – detail produktu",
+        "url": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-english-breakfast/"
+      }
+    ]
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15",
+    "name": "Teahouse Exclusives Jasmine 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "Čína",
+    "description": "Jemný zelený čaj Chung Hao zušlechtěný jasmínovými květy, s květinovou vůní a lehkým čajovým tělem.",
+    "ingredients": [
+      "zelený čaj Chung Hao",
+      "jasmínové květy"
+    ],
+    "allergens": [],
+    "specifics": [
+      "15 prémiových sáčků",
+      "zelený čaj Chung Hao",
+      "jasmínové květy",
+      "jemná květinová vůně"
+    ],
+    "preparation": [
+      "Jeden sáček zalij vodou o teplotě přibližně 80 °C.",
+      "Nech louhovat 2 až 4 minuty.",
+      "Podávej bez mléka, aby vynikla jasmínová vůně."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Navazuje na čajovou tradici od roku 1879 a nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který chce jemný aromatický zelený čaj s výraznou květinovou vůní.",
+    "image": "img/products/teahouse-exclusives-jasmine-15.webp",
+    "sources": [
+      {
+        "label": "Značka – detail produktu",
+        "url": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-jasmine/"
+      }
+    ]
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15",
+    "name": "Teahouse Exclusives Pure Camomile 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "země původu není na přední straně balení uvedena",
+    "description": "Bylinný nálev z celých heřmánkových květů se zlatavou barvou a lehce nasládlým květinovým charakterem.",
+    "ingredients": [
+      "celé květy heřmánku"
+    ],
+    "allergens": [],
+    "specifics": [
+      "15 prémiových sáčků",
+      "37,5 g",
+      "celé heřmánkové květy",
+      "bez čajovníku a přirozeně bez kofeinu"
+    ],
+    "preparation": [
+      "Jeden sáček zalij čerstvou vroucí vodou.",
+      "Nech louhovat přibližně 5 až 8 minut.",
+      "Podávej samotný; případně nabídni med zvlášť."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Navazuje na čajovou tradici od roku 1879 a nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který chce jemný květinový bylinný nálev bez kofeinu.",
+    "image": "img/products/teahouse-exclusives-pure-camomile-15.webp",
+    "sources": [
+      {
+        "label": "Značka – detail produktu",
+        "url": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-pure-camomile/"
+      }
+    ]
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15",
+    "name": "Teahouse Exclusives Rooibos Vanilla 15 sáčků",
+    "category": "Čaje",
+    "brand": "Teahouse Exclusives",
+    "manufacturer": "Juice Solutions International B.V.",
+    "origin": "Jižní Afrika",
+    "description": "Jihoafrický bylinný nálev rooibos s vanilkovým aroma, nasládlým charakterem a přirozeně bez kofeinu.",
+    "ingredients": [
+      "rooibos",
+      "vanilkové aroma"
+    ],
+    "allergens": [],
+    "specifics": [
+      "15 prémiových sáčků",
+      "jihoafrický rooibos",
+      "vanilkové aroma",
+      "přirozeně bez kofeinu"
+    ],
+    "preparation": [
+      "Jeden sáček zalij čerstvou vroucí vodou.",
+      "Nech louhovat přibližně 5 až 8 minut.",
+      "Podávej samotný; rooibos snese i delší louhování bez výrazné hořkosti."
+    ],
+    "brandInfo": "Teahouse Exclusives je gastronomická čajová značka společnosti Juice Solutions International. Navazuje na čajovou tradici od roku 1879 a nabízí čisté čaje, ochucené směsi i bylinné nálevy.",
+    "salesTip": "Doporuč hostovi, který chce nasládlý aromatický nálev bez kofeinu a má rád vanilku.",
+    "image": "img/products/teahouse-exclusives-rooibos-vanilla-15.webp",
+    "sources": [
+      {
+        "label": "Značka – detail produktu",
+        "url": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-rooibos-vanilla/"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g",
+    "name": "Miscela d’Oro Espresso zrnková káva 250 g",
+    "category": "Zrnková káva",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscelad’Oro S.p.A.",
+    "origin": "Messina, Itálie; zrna z Jižní Ameriky a Asie",
+    "description": "Středně pražená směs Arabiky a Robusty pro espresso, s plným tělem, sametovou cremou a tóny lískových ořechů a čokolády.",
+    "ingredients": [
+      "100% pražená zrnková káva – směs Arabiky a Robusty"
+    ],
+    "allergens": [],
+    "specifics": [
+      "250 g v dóze",
+      "intenzita 6 z 10",
+      "střední pražení",
+      "tóny lískových ořechů a čokolády",
+      "plné tělo a sametová crema"
+    ],
+    "preparation": [
+      "Namel těsně před přípravou podle použitého espresso kávovaru.",
+      "Pro dvojité espresso začni přibližně s 16 až 18 g kávy a dávku dolaď podle chuti.",
+      "Po otevření uchovávej těsně uzavřené v suchu a chladu."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná pražírna z Messiny, založená roku 1946 rodinou Urbano.",
+    "salesTip": "Doporuč zákazníkovi, který chce univerzální italskou zrnkovou směs s plným tělem a oříškovo-čokoládovým profilem.",
+    "image": "img/products/miscela-doro-espresso-zrnkova-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.misceladoro.com/prodotto/caffe-in-grani-espresso-barattolo/"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g",
+    "name": "Miscela d’Oro Espresso mletá káva 250 g",
+    "category": "Mletá káva",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscelad’Oro S.p.A.",
+    "origin": "Messina, Itálie; zrna z Jižní Ameriky a Asie",
+    "description": "Středně pražená mletá směs Arabiky a Robusty pro domácí espresso nebo moka konvičku, s plným tělem a sametovou cremou.",
+    "ingredients": [
+      "100% pražená mletá káva – směs Arabiky a Robusty"
+    ],
+    "allergens": [],
+    "specifics": [
+      "250 g v dóze se zlatým víčkem",
+      "intenzita 6 z 10",
+      "střední pražení",
+      "namletá pro domácí přípravu espressa"
+    ],
+    "preparation": [
+      "Použij do domácího espresso kávovaru nebo moka konvičky.",
+      "Dávku přizpůsob použité metodě a požadované síle.",
+      "Po otevření uchovávej těsně uzavřené v suchu a chladu."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná pražírna z Messiny, založená roku 1946 rodinou Urbano.",
+    "salesTip": "Doporuč zákazníkovi, který chce klasické italské espresso, ale nemá doma mlýnek.",
+    "image": "img/products/miscela-doro-espresso-mleta-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso/"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g",
+    "name": "Miscela d’Oro Espresso Decaffeinato mletá káva 250 g",
+    "category": "Mletá káva",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscelad’Oro S.p.A.",
+    "origin": "Messina, Itálie; zrna ze Střední a Jižní Ameriky a Asie",
+    "description": "Mletá bezkofeinová kávová směs s jemným, aromatickým a nasládlým profilem pro espresso nebo moka konvičku.",
+    "ingredients": [
+      "100% pražená mletá bezkofeinová káva"
+    ],
+    "allergens": [],
+    "specifics": [
+      "250 g v dóze s modrým víčkem",
+      "intenzita 5 z 10",
+      "kofein nejvýše 0,10 %",
+      "dekofeinizace vodou a párou",
+      "jemný a nasládlý profil"
+    ],
+    "preparation": [
+      "Použij do domácího espresso kávovaru nebo moka konvičky.",
+      "Dávku přizpůsob použité metodě a požadované síle.",
+      "Po otevření uchovávej těsně uzavřené v suchu a chladu."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná pražírna z Messiny, založená roku 1946 rodinou Urbano.",
+    "salesTip": "Doporuč zákazníkovi, který chce chuť italského espressa s minimem kofeinu, například na pozdější část dne.",
+    "image": "img/products/miscela-doro-espresso-decaffeinato-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso-decaffeinato/"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml",
+    "name": "Vilgain Protein Milkshake kakao 330 ml",
+    "category": "Proteinové nápoje",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Česká republika",
+    "description": "Hotový kakaový mléčný nápoj s 33 g bílkovin v balení, nízkým obsahem laktózy a bez přidaných konzervantů.",
+    "ingredients": [
+      "mléko 89 %",
+      "mléčná bílkovina 8 %",
+      "inulin",
+      "kakaový prášek 1 %",
+      "sladidlo: steviol-glykosidy ze stévie",
+      "enzym laktáza"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "330 ml",
+      "33 g bílkovin v balení",
+      "nízký obsah laktózy pod 1 g na 100 ml",
+      "bez přidaných konzervantů",
+      "slazeno steviol-glykosidy"
+    ],
+    "preparation": [
+      "Před otevřením protřepej.",
+      "Podávej vychlazené jako hotový nápoj.",
+      "Po otevření uchovávej v lednici a spotřebuj do 24 hodin."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který chce rychlý hotový proteinový nápoj s kakaovou chutí a 33 g bílkovin.",
+    "image": "img/products/vilgain-protein-milkshake-kakao-330-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://aktin.cz/vilgain-protein-milkshake"
+      }
+    ]
   }
 ]
