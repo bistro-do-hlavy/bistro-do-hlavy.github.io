@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.24';
-import { contentProvider } from '../content.js?v=1.0.24';
-import { storage } from '../storage.js?v=1.0.24';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.24';
+import { CONFIG } from '../config.js?v=1.0.25';
+import { contentProvider } from '../content.js?v=1.0.25';
+import { storage } from '../storage.js?v=1.0.25';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.25';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.24';
+} from '../study.js?v=1.0.25';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -30,7 +30,7 @@ const QUESTION_TYPE_SETTINGS = [
 ];
 const state = {
   catalogProducts: [], catalogQuestions: [], products: [], questions: [], reviews: [], progress: {}, profile: null, settings: null,
-  currentView: 'home', session: null,
+  currentView: 'home', session: null, homeProductIds: [],
 };
 
 const app = document.querySelector('#app');
@@ -70,6 +70,23 @@ function refreshActiveContent() {
   state.products = state.catalogProducts.filter((product) => !archived.has(product.id));
   const activeProductIds = new Set(state.products.map((product) => product.id));
   state.questions = state.catalogQuestions.filter((question) => activeProductIds.has(question.productId));
+  if (state.homeProductIds.some((id) => !activeProductIds.has(id)) || state.homeProductIds.length < Math.min(3, state.products.length)) {
+    selectRandomHomeProducts();
+  }
+}
+
+function selectRandomHomeProducts() {
+  const shuffled = [...state.products];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  state.homeProductIds = shuffled.slice(0, 3).map((product) => product.id);
+}
+
+function homeProducts() {
+  const byId = new Map(state.products.map((product) => [product.id, product]));
+  return state.homeProductIds.map((id) => byId.get(id)).filter(Boolean);
 }
 
 function selectedProductIds() {
@@ -129,8 +146,8 @@ function navigate(view) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function productRows(limit = state.products.length) {
-  return state.products.slice(0, limit).map((product) => {
+function productRows(products = state.products) {
+  return products.map((product) => {
     const mastery = productMastery(product.id, state.questions, state.progress);
     return `
       <button class="mini-product" type="button" data-product-id="${product.id}">
@@ -185,7 +202,7 @@ function renderHome() {
         <button class="button button-secondary" type="button" data-view-link="stats">Otevřít statistiky</button>
       </article>
       <div class="section-heading"><h2>Produkty v kurzu</h2><span>Klepnutím otevřít</span></div>
-      <div class="mini-products">${productRows(3)}</div>
+      <div class="mini-products">${productRows(homeProducts())}</div>
     </section>`;
   bindCommonActions();
   document.querySelector('#start-study')?.addEventListener('click', startStudy);
