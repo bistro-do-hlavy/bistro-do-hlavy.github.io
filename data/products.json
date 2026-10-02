@@ -2269,5 +2269,287 @@
         "url": "https://aktin.cz/vilgain-protein-milkshake"
       }
     ]
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g",
+    "name": "BioNebio Čekankový sirup 450 g",
+    "category": "Sirupy a sladidla",
+    "brand": "BioNebio",
+    "manufacturer": "bio nebio s.r.o.",
+    "origin": "Belgie",
+    "description": "Přírodní sladidlo vyrobené z extraktu kořene čekanky, s vysokým obsahem vlákniny a jemně sladkou chutí.",
+    "ingredients": [
+      "extrakt z kořene čekanky"
+    ],
+    "allergens": [],
+    "specifics": [
+      "450 g",
+      "jednosložkový výrobek",
+      "vysoký obsah vlákniny",
+      "sladivost je nižší než u běžného cukru"
+    ],
+    "preparation": [
+      "Použij ke slazení nápojů, kaší, jogurtů nebo dezertů.",
+      "Začni menším množstvím; vyšší příjem vlákniny může citlivým lidem způsobit zažívací obtíže.",
+      "Po použití obal dobře uzavři a skladuj podle pokynů na etiketě."
+    ],
+    "brandInfo": "BioNebio je česká značka biopotravin společnosti bio nebio, zaměřená na suroviny v ekologické kvalitě a jednoduché složení.",
+    "salesTip": "Doporuč zákazníkovi, který hledá tekuté sladidlo s jednoduchým složením a vysokým obsahem vlákniny.",
+    "image": "img/products/bio-nebio-cekankovy-sirup-450-g.webp",
+    "sources": [
+      {
+        "label": "Prodejce – detail produktu",
+        "url": "https://www.econea.cz/products/sirup-cekankovy-450-g-bio-nebio"
+      },
+      {
+        "label": "Prodejce – složení a původ",
+        "url": "https://www.pilulka.cz/cekankovy-sirup-bio-nebio-450-g"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli",
+    "name": "Miscela d’Oro Black Armonia 10 kapslí",
+    "category": "Kávové kapsle",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscelad’Oro S.p.A.",
+    "origin": "Messina, Itálie; káva ze Střední a Jižní Ameriky a Asie",
+    "description": "Středně pražená espresso směs Arabiky a Robusty v kapslích kompatibilních se systémem Nespresso Original.",
+    "ingredients": [
+      "100% pražená mletá káva – směs Arabiky a Robusty"
+    ],
+    "allergens": [],
+    "specifics": [
+      "10 kapslí po 5 g",
+      "střední pražení",
+      "plné tělo",
+      "hladká chuť a sametová crema",
+      "kompatibilní se systémem Nespresso Original"
+    ],
+    "preparation": [
+      "Vlož kapsli do kávovaru kompatibilního se systémem Nespresso Original.",
+      "Připrav jako krátké espresso podle nastavení kávovaru.",
+      "Kapsle uchovávej v suchu a mimo zdroje tepla."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná pražírna z Messiny, založená roku 1946 rodinou Urbano.",
+    "salesTip": "Doporuč zákazníkovi, který chce rychlé italské espresso s plnějším tělem a vyváženou chutí.",
+    "image": "img/products/miscela-doro-black-armonia-10-kapsli.webp",
+    "sources": [
+      {
+        "label": "Výrobce – řada kapslí",
+        "url": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+      },
+      {
+        "label": "Distributor – detail produktu",
+        "url": "https://www.misceladorousa.com/m540-miscela-doro-black-espresso-capsules"
+      }
+    ]
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "name": "Miscela d’Oro Blue Leggerezza Dec 10 kapslí",
+    "category": "Kávové kapsle",
+    "brand": "Miscela d’Oro",
+    "manufacturer": "Miscelad’Oro S.p.A.",
+    "origin": "Messina, Itálie",
+    "description": "Bezkofeinová středně pražená káva v kapslích kompatibilních se systémem Nespresso Original, určená pro espresso s výrazným aroma.",
+    "ingredients": [
+      "100% pražená mletá bezkofeinová káva"
+    ],
+    "allergens": [],
+    "specifics": [
+      "10 kapslí po 5 g",
+      "bezkofeinová káva",
+      "střední pražení",
+      "výrazné aroma a příjemná dochuť",
+      "kompatibilní se systémem Nespresso Original"
+    ],
+    "preparation": [
+      "Vlož kapsli do kávovaru kompatibilního se systémem Nespresso Original.",
+      "Připrav jako krátké espresso podle nastavení kávovaru.",
+      "Kapsle uchovávej v suchu a mimo zdroje tepla."
+    ],
+    "brandInfo": "Miscela d’Oro je rodinná pražírna z Messiny, založená roku 1946 rodinou Urbano.",
+    "salesTip": "Doporuč zákazníkovi, který chce pohodlnou přípravu italského espressa bez kofeinu.",
+    "image": "img/products/miscela-doro-blue-leggerezza-dec-10-kapsli.webp",
+    "sources": [
+      {
+        "label": "Výrobce – řada kapslí",
+        "url": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+      },
+      {
+        "label": "Distributor – detail produktu",
+        "url": "https://www.misceladorousa.com/m550-miscela-doro-blue-espresso-capsules"
+      }
+    ]
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g",
+    "name": "La Gloria Riojana Salchichón Sarta Extra 230 g",
+    "category": "Uzeniny",
+    "brand": "La Gloria Riojana",
+    "manufacturer": "Martínez Somalo",
+    "origin": "La Rioja, Španělsko",
+    "description": "Tradiční španělský sušený vepřový salám ve tvaru podkovy, ochucený černým a bílým pepřem.",
+    "ingredients": [
+      "vepřové maso a tuk",
+      "sůl",
+      "dextrin",
+      "dextróza",
+      "přírodní aromata",
+      "koření: černý a bílý pepř"
+    ],
+    "allergens": [],
+    "specifics": [
+      "230 g",
+      "tvar podkovy – sarta",
+      "sušená uzenina",
+      "pepřové kořenění",
+      "baleno v ochranné atmosféře"
+    ],
+    "preparation": [
+      "Před podáváním nakrájej na tenké plátky.",
+      "Podávej jako součást tapas nebo studeného prkénka.",
+      "Skladuj v chladu a suchu; po otevření uchovávej v lednici."
+    ],
+    "brandInfo": "La Gloria Riojana je značka rodinného výrobce Martínez Somalo z oblasti La Rioja, který vyrábí španělské uzeniny od roku 1900.",
+    "salesTip": "Doporuč zákazníkovi, který hledá tradiční španělskou sušenou uzeninu k tapas a dává přednost pepřové chuti před paprikovým chorizem.",
+    "image": "img/products/la-gloria-riojana-salchichon-sarta-230-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://tienda.martinezsomalo.com/product/salchichon-sarta-extra-230-g-la-gloria-riojana/"
+      },
+      {
+        "label": "Výrobce – přehled produktů a alergenů",
+        "url": "https://martinezsomalo.com/es/ficha-productos/"
+      }
+    ]
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g",
+    "name": "Pastificio Temporin Tortellini Prosciutto Crudo 250 g",
+    "category": "Čerstvé těstoviny",
+    "brand": "Antica Corte",
+    "manufacturer": "Pastificio Temporin",
+    "origin": "Itálie",
+    "description": "Čerstvé vaječné tortellini z krupice z tvrdé pšenice, plněné směsí s prosciuttem crudo, masem, mortadellou a sýrem.",
+    "ingredients": [
+      "těstoviny 70 %: krupice z tvrdé pšenice a vejce",
+      "náplň 30 %: vepřové maso a šunka",
+      "prosciutto crudo",
+      "strouhanka z pšeničné mouky",
+      "mortadella",
+      "sýr z mléka",
+      "sůl, koření a česnek"
+    ],
+    "allergens": [
+      1,
+      3,
+      7
+    ],
+    "specifics": [
+      "250 g",
+      "čerstvé plněné vaječné těstoviny",
+      "doba vaření 5 minut",
+      "skladování při 4 až 6 °C",
+      "náplň s prosciuttem crudo"
+    ],
+    "preparation": [
+      "Vlož do vroucí osolené vody a vař 5 minut.",
+      "Podávej s lehkou omáčkou, máslem se šalvějí nebo ve vývaru.",
+      "Uchovávej v lednici při 4 až 6 °C."
+    ],
+    "brandInfo": "Pastificio Temporin je italský výrobce čerstvých těstovin; řada Antica Corte nabízí chlazené plněné i neplněné těstoviny.",
+    "salesTip": "Doporuč zákazníkovi, který chce rychle připravené čerstvé italské těstoviny s masovou náplní a prosciuttem crudo.",
+    "image": "img/products/temporin-tortellini-prosciutto-crudo-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.pastificiotemporin.it/en/products/linea-gourmet/tortellini-al-prosciutto-crudo"
+      },
+      {
+        "label": "Produktová databáze – složení",
+        "url": "https://produkter.matinfo.no/Villa-Import-AS/Tortellini-prosciutto-crudo-1000-g-pastificio-temporin/08002367019543"
+      }
+    ]
+  },
+  {
+    "id": "fermato-simrato-150-g",
+    "name": "Fermato Šimráto kořenicí směs 150 g",
+    "category": "Sůl a koření",
+    "brand": "Fermato",
+    "manufacturer": "Fermato",
+    "origin": "Morava, Česká republika",
+    "description": "Přírodní kořenicí směs se solí, sušenými rajčaty, sečuánským a černým pepřem, zázvorem a česnekem.",
+    "ingredients": [
+      "sůl 51 %",
+      "sušená rajčata",
+      "sečuánský pepř",
+      "černý pepř",
+      "sušený zázvor",
+      "sušený česnek"
+    ],
+    "allergens": [],
+    "specifics": [
+      "150 g",
+      "bez lepku",
+      "vhodné pro vegany",
+      "bez umělých barviv a konzervantů",
+      "využívá sušenou zeleninovou drť z výroby fermentovaných produktů"
+    ],
+    "preparation": [
+      "Použij k dochucení masa, grilované zeleniny, salátů nebo omáček.",
+      "Při dávkování počítej s tím, že více než polovinu směsi tvoří sůl.",
+      "Uchovávej uzavřené v suchu."
+    ],
+    "brandInfo": "Fermato je moravská značka fermentovaných omáček a dochucovadel, která zpracovává zeleninu a využívá i vedlejší suroviny z výroby.",
+    "salesTip": "Doporuč zákazníkovi, který chce výrazné koření s pepřem, rajčaty, zázvorem a česnekem na grilování i běžné vaření.",
+    "image": "img/products/fermato-simrato-150-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.fermato.cz/korenici-smes-simrato/"
+      }
+    ]
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml",
+    "name": "Fermato MAD BBQ Salsa Verde 200 ml",
+    "category": "Omáčky",
+    "brand": "Fermato",
+    "manufacturer": "Fermato",
+    "origin": "Česká republika",
+    "description": "Zelená mexická salsa z fermentovaných chilli papriček a tomatillos, s osvěžující pikantní chutí.",
+    "ingredients": [
+      "jablečný ocet",
+      "fermentované chilli papričky 35 % (chilli papričky 91 %, sůl)",
+      "tomatillos",
+      "třtinový cukr",
+      "oregano",
+      "epazote"
+    ],
+    "allergens": [],
+    "specifics": [
+      "200 ml",
+      "fermentované chilli papričky tvoří 35 %",
+      "obsahuje tomatillos",
+      "přirozeně bez lepku, mléka, vajec, arašídů a sóji",
+      "český výrobek inspirovaný mexickou kuchyní"
+    ],
+    "preparation": [
+      "Použij ke grilovanému masu, rybě nebo sýru halloumi.",
+      "Přidej do guacamole, k nachos, tacos, burritu nebo vejcím.",
+      "Po otevření skladuj podle pokynů na etiketě."
+    ],
+    "brandInfo": "Fermato je moravská značka fermentovaných omáček a dochucovadel, která staví na fermentaci zeleniny a výrazných přírodních chutích.",
+    "salesTip": "Doporuč zákazníkovi, který hledá svěží pikantní omáčku k mexickým jídlům nebo grilování.",
+    "image": "img/products/fermato-mad-bbq-salsa-verde-200-ml.webp",
+    "sources": [
+      {
+        "label": "Prodejce – detail, složení a původ",
+        "url": "https://www.pilulka.sk/fermato-mad-bbq-salsa-verde-200-ml"
+      }
+    ]
   }
 ]

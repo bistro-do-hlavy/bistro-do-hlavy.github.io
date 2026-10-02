@@ -3920,5 +3920,481 @@
     "prompt": "Jak produkt stručně představíš zákazníkovi?",
     "answer": "Doporuč zákazníkovi, který chce rychlý hotový proteinový nápoj s kakaovou chutí a 33 g bílkovin.",
     "explanation": "Odpověď shrnuje hlavní prodejní argument produktu."
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q1",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "mcq",
+    "prompt": "Z čeho je Čekankový sirup BioNebio vyroben?",
+    "options": [
+      "Z extraktu kořene čekanky",
+      "Z javorové mízy",
+      "Z agávové šťávy",
+      "Z třtinové melasy"
+    ],
+    "answer": "Z extraktu kořene čekanky",
+    "explanation": "Výrobek obsahuje extrakt z kořene čekanky."
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q2",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "text",
+    "prompt": "Která část čekanky se používá k výrobě sirupu?",
+    "answer": "kořen",
+    "answerDisplay": "Kořen.",
+    "explanation": "Používá se kořen čekanky."
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q3",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "flashcard",
+    "prompt": "Obsahuje výrobek některý z povinně značených alergenů EU?",
+    "answer": "Ne, ve složení není žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Ve složení je pouze extrakt z kořene čekanky."
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q4",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/bio-nebio-cekankovy-sirup-450-g.webp",
+    "options": [
+      "BioNebio Čekankový sirup",
+      "BioNebio Javorový sirup",
+      "Kitl Syrob Grapefruit",
+      "Fermato Salsa Verde"
+    ],
+    "answer": "BioNebio Čekankový sirup",
+    "explanation": "Na fotografii je BioNebio Čekankový sirup 450 g."
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q5",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "mcq",
+    "prompt": "Čím je tento sirup výživově specifický?",
+    "options": [
+      "Vysokým obsahem vlákniny",
+      "Vysokým obsahem tuku",
+      "Obsahem kofeinu",
+      "Obsahem alkoholu"
+    ],
+    "answer": "Vysokým obsahem vlákniny",
+    "explanation": "Čekankový sirup má vysoký obsah vlákniny."
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q6",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "flashcard",
+    "prompt": "Komu produkt stručně doporučíš?",
+    "answer": "Zákazníkovi, který hledá tekuté sladidlo s jednoduchým složením a vysokým obsahem vlákniny.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q1",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "mcq",
+    "prompt": "Jaké druhy kávy tvoří směs Black Armonia?",
+    "options": [
+      "Arabika a Robusta",
+      "Pouze Arabika",
+      "Pouze Robusta",
+      "Arabika a čekanka"
+    ],
+    "answer": "Arabika a Robusta",
+    "explanation": "Jde o směs Arabiky a Robusty."
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q2",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "text",
+    "prompt": "S jakým kapslovým systémem je Black Armonia kompatibilní?",
+    "answer": "Nespresso Original",
+    "answerDisplay": "Nespresso Original.",
+    "explanation": "Kapsle je kompatibilní se systémem Nespresso Original."
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q3",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "flashcard",
+    "prompt": "Obsahuje čistá káva v kapsli některý z povinně značených alergenů EU?",
+    "answer": "Ne, samotná pražená mletá káva žádný z 14 povinně značených alergenů EU neobsahuje.",
+    "explanation": "Složení tvoří pražená mletá káva."
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q4",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-black-armonia-10-kapsli.webp",
+    "options": [
+      "Miscela d’Oro Black Armonia",
+      "Miscela d’Oro Blue Leggerezza Dec",
+      "Miscela d’Oro Gusto Classico",
+      "Caffè Barbaro Miscela Blu"
+    ],
+    "answer": "Miscela d’Oro Black Armonia",
+    "explanation": "Na fotografii je Miscela d’Oro Black Armonia."
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q5",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "mcq",
+    "prompt": "Jaký charakter má Black Armonia?",
+    "options": [
+      "Plné tělo a vyvážená chuť",
+      "Ovocný čaj bez kávy",
+      "Velmi světlé filtrované pražení",
+      "Sladký mléčný nápoj"
+    ],
+    "answer": "Plné tělo a vyvážená chuť",
+    "explanation": "Black Armonia je středně pražená směs s plným tělem a hladkou chutí."
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q6",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "flashcard",
+    "prompt": "Komu Black Armonia doporučíš?",
+    "answer": "Zákazníkovi, který chce rychlé italské espresso s plnějším tělem a vyváženou chutí.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q1",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "mcq",
+    "prompt": "Čím je Blue Leggerezza Dec specifická?",
+    "options": [
+      "Je bezkofeinová",
+      "Obsahuje mléko",
+      "Je instantní",
+      "Je ochucená vanilkou"
+    ],
+    "answer": "Je bezkofeinová",
+    "explanation": "Blue Leggerezza Dec je bezkofeinová káva."
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q2",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "text",
+    "prompt": "S jakým kapslovým systémem je Blue Leggerezza Dec kompatibilní?",
+    "answer": "Nespresso Original",
+    "answerDisplay": "Nespresso Original.",
+    "explanation": "Kapsle je kompatibilní se systémem Nespresso Original."
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q3",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "flashcard",
+    "prompt": "Obsahuje čistá bezkofeinová káva některý z povinně značených alergenů EU?",
+    "answer": "Ne, samotná pražená bezkofeinová káva žádný z 14 povinně značených alergenů EU neobsahuje.",
+    "explanation": "Složení tvoří pražená mletá bezkofeinová káva."
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q4",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/miscela-doro-blue-leggerezza-dec-10-kapsli.webp",
+    "options": [
+      "Miscela d’Oro Blue Leggerezza Dec",
+      "Miscela d’Oro Black Armonia",
+      "Miscela d’Oro Espresso Decaffeinato mletá",
+      "Miscela d’Oro Gusto Classico"
+    ],
+    "answer": "Miscela d’Oro Blue Leggerezza Dec",
+    "explanation": "Na fotografii je Miscela d’Oro Blue Leggerezza Dec."
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q5",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "mcq",
+    "prompt": "Jak se kapsle správně připravuje?",
+    "options": [
+      "V kompatibilním kávovaru jako espresso",
+      "Louhuje se v konvici deset minut",
+      "Vaří se v hrnci s mlékem",
+      "Rozpustí se ve studené vodě"
+    ],
+    "answer": "V kompatibilním kávovaru jako espresso",
+    "explanation": "Kapsle je určena do kompatibilního kávovaru."
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q6",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "flashcard",
+    "prompt": "Komu Blue Leggerezza Dec doporučíš?",
+    "answer": "Zákazníkovi, který chce pohodlnou přípravu italského espressa bez kofeinu.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q1",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "mcq",
+    "prompt": "Z jakého masa se Salchichón Sarta vyrábí?",
+    "options": [
+      "Z vepřového",
+      "Z hovězího",
+      "Z kuřecího",
+      "Z jehněčího"
+    ],
+    "answer": "Z vepřového",
+    "explanation": "Základem je vepřové maso a tuk."
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q2",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "text",
+    "prompt": "Které koření dává salchichónu typickou chuť?",
+    "answer": "pepř",
+    "answerDisplay": "Pepř.",
+    "explanation": "Výrobce uvádí černý a bílý pepř."
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q3",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "flashcard",
+    "prompt": "Obsahuje výrobek podle údajů výrobce některý z povinně značených alergenů EU?",
+    "answer": "Ne, výrobce u tohoto salchichónu žádný z 14 povinně značených alergenů EU neuvádí.",
+    "explanation": "Ve zveřejněném složení není povinně značený alergen."
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q4",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/la-gloria-riojana-salchichon-sarta-230-g.webp",
+    "options": [
+      "La Gloria Riojana Salchichón Sarta Extra",
+      "Le Petit Savoyard Saucisson Noix",
+      "Kachní paštika s calvadosem",
+      "Henri Willig Gouda Chili"
+    ],
+    "answer": "La Gloria Riojana Salchichón Sarta Extra",
+    "explanation": "Na fotografii je La Gloria Riojana Salchichón Sarta Extra 230 g."
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q5",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "mcq",
+    "prompt": "Jak se má výrobek uchovávat po otevření?",
+    "options": [
+      "V lednici",
+      "V mrazáku",
+      "Na přímém slunci",
+      "V teple nad sporákem"
+    ],
+    "answer": "V lednici",
+    "explanation": "Výrobce doporučuje po otevření chlazení."
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q6",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "flashcard",
+    "prompt": "Komu salchichón doporučíš?",
+    "answer": "Zákazníkovi, který chce tradiční španělskou sušenou uzeninu k tapas a dává přednost pepřové chuti před paprikovým chorizem.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q1",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "mcq",
+    "prompt": "Která surovina je typická pro náplň těchto tortellini?",
+    "options": [
+      "Prosciutto crudo",
+      "Uzený losos",
+      "Špenát",
+      "Lanýž"
+    ],
+    "answer": "Prosciutto crudo",
+    "explanation": "Náplň obsahuje prosciutto crudo."
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q2",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "text",
+    "prompt": "Jak dlouho se tortellini vaří?",
+    "answer": "5 minut",
+    "answerDisplay": "5 minut.",
+    "explanation": "Výrobce uvádí dobu vaření 5 minut."
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q3",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "flashcard",
+    "prompt": "Které povinně značené alergeny výrobek obsahuje?",
+    "answer": "Lepek, vejce a mléko.",
+    "explanation": "Těstoviny obsahují pšenici a vejce, náplň také mléčný sýr."
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q4",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/temporin-tortellini-prosciutto-crudo-250-g.webp",
+    "options": [
+      "Pastificio Temporin Tortellini Prosciutto Crudo",
+      "Pastificio Temporin Tagliatelle",
+      "Pasane Gnocchi con Patate",
+      "Fermato Šimráto"
+    ],
+    "answer": "Pastificio Temporin Tortellini Prosciutto Crudo",
+    "explanation": "Na fotografii jsou Tortellini Prosciutto Crudo 250 g."
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q5",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "mcq",
+    "prompt": "Při jaké teplotě se mají čerstvé tortellini skladovat?",
+    "options": [
+      "4 až 6 °C",
+      "20 až 25 °C",
+      "Nad 30 °C",
+      "Při −18 °C"
+    ],
+    "answer": "4 až 6 °C",
+    "explanation": "Výrobce uvádí skladování při 4 až 6 °C."
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q6",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "flashcard",
+    "prompt": "Komu tortellini doporučíš?",
+    "answer": "Zákazníkovi, který chce rychle připravené čerstvé italské těstoviny s masovou náplní a prosciuttem crudo.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "fermato-simrato-150-g-q1",
+    "productId": "fermato-simrato-150-g",
+    "type": "mcq",
+    "prompt": "Kolik procent směsi Šimráto tvoří sůl?",
+    "options": [
+      "51 %",
+      "5 %",
+      "15 %",
+      "100 %"
+    ],
+    "answer": "51 %",
+    "explanation": "Sůl tvoří 51 % směsi."
+  },
+  {
+    "id": "fermato-simrato-150-g-q2",
+    "productId": "fermato-simrato-150-g",
+    "type": "text",
+    "prompt": "Který druh pepře je vedle černého pepře ve směsi?",
+    "answer": "sečuánský pepř",
+    "answerDisplay": "Sečuánský pepř.",
+    "explanation": "Směs obsahuje sečuánský pepř."
+  },
+  {
+    "id": "fermato-simrato-150-g-q3",
+    "productId": "fermato-simrato-150-g",
+    "type": "flashcard",
+    "prompt": "Obsahuje Šimráto některý z povinně značených alergenů EU?",
+    "answer": "Ne, ve složení není žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Směs je podle výrobce také bez lepku."
+  },
+  {
+    "id": "fermato-simrato-150-g-q4",
+    "productId": "fermato-simrato-150-g",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/fermato-simrato-150-g.webp",
+    "options": [
+      "Fermato Šimráto",
+      "Country Life mořská sůl",
+      "Fermato Salsa Verde",
+      "Dr. Oetker BIO Kakao"
+    ],
+    "answer": "Fermato Šimráto",
+    "explanation": "Na fotografii je Fermato Šimráto 150 g."
+  },
+  {
+    "id": "fermato-simrato-150-g-q5",
+    "productId": "fermato-simrato-150-g",
+    "type": "mcq",
+    "prompt": "K čemu lze Šimráto použít?",
+    "options": [
+      "K masu, zelenině, salátům a omáčkám",
+      "Pouze ke slazení kávy",
+      "Pouze do ovocných dezertů",
+      "Jako hotový nápoj"
+    ],
+    "answer": "K masu, zelenině, salátům a omáčkám",
+    "explanation": "Směs je určená k univerzálnímu slanému dochucování."
+  },
+  {
+    "id": "fermato-simrato-150-g-q6",
+    "productId": "fermato-simrato-150-g",
+    "type": "flashcard",
+    "prompt": "Komu Šimráto doporučíš?",
+    "answer": "Zákazníkovi, který chce výrazné koření s pepřem, rajčaty, zázvorem a česnekem na grilování i běžné vaření.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q1",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "mcq",
+    "prompt": "Která zelenina je typická pro Salsa Verde?",
+    "options": [
+      "Tomatillos",
+      "Červená řepa",
+      "Mrkev",
+      "Dýně"
+    ],
+    "answer": "Tomatillos",
+    "explanation": "Zelenou mexickou salsu charakterizují tomatillos."
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q2",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "text",
+    "prompt": "Jakým procesem jsou upravené chilli papričky v omáčce?",
+    "answer": "fermentací",
+    "answerDisplay": "Fermentací.",
+    "explanation": "Chilli papričky jsou fermentované."
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q3",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "flashcard",
+    "prompt": "Obsahuje Salsa Verde některý z povinně značených alergenů EU?",
+    "answer": "Ne, ve složení není žádný z 14 povinně značených alergenů EU.",
+    "explanation": "Výrobek je uváděn mimo jiné jako bezlepkový a bez mléka, vajec, arašídů a sóji."
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q4",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "photo",
+    "prompt": "Který produkt je na fotografii?",
+    "image": "img/products/fermato-mad-bbq-salsa-verde-200-ml.webp",
+    "options": [
+      "Fermato MAD BBQ Salsa Verde",
+      "Tiparos rybí omáčka",
+      "Kitl Syrob Grapefruit",
+      "BioNebio Čekankový sirup"
+    ],
+    "answer": "Fermato MAD BBQ Salsa Verde",
+    "explanation": "Na fotografii je Fermato MAD BBQ Salsa Verde 200 ml."
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q5",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "mcq",
+    "prompt": "K čemu se Salsa Verde dobře hodí?",
+    "options": [
+      "Ke grilovaným jídlům a do guacamole",
+      "Pouze do sladkých kaší",
+      "K přípravě espressa",
+      "Jako náhrada mouky"
+    ],
+    "answer": "Ke grilovaným jídlům a do guacamole",
+    "explanation": "Salsa se hodí ke grilování, do guacamole i k mexickým jídlům."
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q6",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "flashcard",
+    "prompt": "Komu Salsa Verde doporučíš?",
+    "answer": "Zákazníkovi, který hledá svěží pikantní omáčku k mexickým jídlům nebo grilování.",
+    "explanation": "To je hlavní prodejní doporučení produktu."
   }
 ]

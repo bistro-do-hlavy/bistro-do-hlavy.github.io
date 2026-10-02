@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.25';
+const CACHE_VERSION = 'bistro-v1.0.26';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.25', './js/app.js?v=1.0.25',
-  './config.js?v=1.0.25', './content.js?v=1.0.25', './storage.js?v=1.0.25',
-  './fsrs-service.js?v=1.0.25', './study.js?v=1.0.25', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.26', './js/app.js?v=1.0.26',
+  './config.js?v=1.0.26', './content.js?v=1.0.26', './storage.js?v=1.0.26',
+  './fsrs-service.js?v=1.0.26', './study.js?v=1.0.26', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './data/products.json', './data/questions.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
@@ -53,6 +53,13 @@ const APP_SHELL = [
   './img/products/miscela-doro-espresso-mleta-250-g.webp',
   './img/products/miscela-doro-espresso-decaffeinato-250-g.webp',
   './img/products/vilgain-protein-milkshake-kakao-330-ml.webp',
+  './img/products/bio-nebio-cekankovy-sirup-450-g.webp',
+  './img/products/miscela-doro-black-armonia-10-kapsli.webp',
+  './img/products/miscela-doro-blue-leggerezza-dec-10-kapsli.webp',
+  './img/products/la-gloria-riojana-salchichon-sarta-230-g.webp',
+  './img/products/temporin-tortellini-prosciutto-crudo-250-g.webp',
+  './img/products/fermato-simrato-150-g.webp',
+  './img/products/fermato-mad-bbq-salsa-verde-200-ml.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 
