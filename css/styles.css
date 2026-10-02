@@ -41,9 +41,9 @@
 * { box-sizing: border-box; }
 html { background: var(--bg); scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; min-height: 100vh; color: var(--ink); background: var(--bg); font-size: 1rem; line-height: 1.5; }
-button, input, select { font: inherit; }
+button, input, select, textarea { font: inherit; }
 button { color: inherit; }
-button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand) 60%, transparent); outline-offset: 3px; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand) 60%, transparent); outline-offset: 3px; }
 
 .app-shell { min-height: 100vh; max-width: 58rem; margin: 0 auto; padding: env(safe-area-inset-top) 1rem calc(6.5rem + env(safe-area-inset-bottom)); }
 .topbar { min-height: 5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
@@ -201,6 +201,11 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .archived-product strong { font-size: .85rem; line-height: 1.2; }
 .archived-product small { margin-top: .15rem; color: var(--muted); font-size: .72rem; }
 .archived-product .button { min-height: 2.6rem; padding: .55rem .7rem; }
+.pending-products-list { display: grid; gap: .6rem; }
+.pending-product { border: 1px solid var(--line); border-radius: 1rem; padding: .8rem; background: var(--bg); }
+.pending-product strong, .pending-product small { display: block; }
+.pending-product p { margin: .25rem 0 .45rem; font-size: .82rem; }
+.pending-product small { color: var(--muted); line-height: 1.4; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 .study-page { max-width: 42rem; margin: 0 auto; }
@@ -277,6 +282,13 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .sales-tip { border-radius: 1rem; padding: 1rem; background: color-mix(in srgb, var(--lime) 22%, var(--surface)); }
 .source-links { display: grid; gap: .5rem; }
 .source-links a { min-height: 2.75rem; display: flex; align-items: center; border: 1px solid var(--line); border-radius: .8rem; padding: .65rem .8rem; color: var(--brand); background: var(--surface-soft); font-size: .82rem; font-weight: 750; text-decoration: none; }
+.glossary-term { display: inline; border: 0; border-bottom: 1px dashed currentColor; padding: 0; color: var(--brand); background: transparent; cursor: help; font: inherit; font-weight: 750; text-align: inherit; }
+.glossary-dialog { position: relative; }
+.glossary-dialog h2 { margin-right: 3rem; }
+.product-note-form { display: grid; gap: .6rem; margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.product-note-form label { font-weight: 850; }
+.product-note-form p { color: var(--muted); font-size: .8rem; line-height: 1.4; }
+.product-note-form textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-radius: .85rem; padding: .75rem .8rem; color: var(--ink); background: var(--bg); line-height: 1.45; }
 .product-lifecycle-actions { display: grid; gap: .6rem; margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
 .product-lifecycle-actions p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.4; }
 .button-danger { border: 1px solid color-mix(in srgb, var(--danger) 55%, var(--line)); background: color-mix(in srgb, var(--danger) 10%, var(--surface)); color: var(--danger); }

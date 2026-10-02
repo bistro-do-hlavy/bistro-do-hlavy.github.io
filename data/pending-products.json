@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Kimchi MIMO",
+    "reason": "Na fotografii není čitelná přesná varianta ani celé složení.",
+    "needed": "Přední a zadní strana obalu včetně gramáže, složení a alergenů."
+  },
+  {
+    "label": "Martínez Somalo Chorizo Extra Picante",
+    "reason": "Přední strana je rozpoznatelná, ale není jisté přesné provedení a složení daného balení.",
+    "needed": "Detail přední a zadní etikety včetně hmotnosti a EAN."
+  },
+  {
+    "label": "Paštika Perdiz",
+    "reason": "Z regálové fotografie nelze bezpečně určit výrobce, variantu a alergeny.",
+    "needed": "Samostatná fotografie krabičky zepředu a zezadu."
+  },
+  {
+    "label": "Paštika Ibérico",
+    "reason": "Z regálové fotografie nelze bezpečně určit výrobce, variantu a alergeny.",
+    "needed": "Samostatná fotografie krabičky zepředu a zezadu."
+  },
+  {
+    "label": "Nebalené a lokální sýry",
+    "reason": "Chybí jednoznačný název výrobku a dodavatel.",
+    "needed": "Výrobek společně s cenovkou nebo dodacím štítkem."
+  },
+  {
+    "label": "Pomazánky a chlazené paštiky",
+    "reason": "Víčka a etikety nejsou na společných fotografiích dostatečně čitelné.",
+    "needed": "Každý vybraný výrobek zepředu a zezadu."
+  },
+  {
+    "label": "Vína z regálu",
+    "reason": "U části lahví nelze přečíst přesný ročník, odrůdu nebo zadní etiketu.",
+    "needed": "Přední a zadní etiketa každé lahve, kterou chcete zařadit."
+  },
+  {
+    "label": "Neurčené sklenice a omáčky",
+    "reason": "Na celkových fotografiích regálu splývají názvy a varianty.",
+    "needed": "Detail čelní etikety a fotografie složení."
+  }
+]

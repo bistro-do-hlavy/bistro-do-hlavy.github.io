@@ -475,7 +475,7 @@
       },
       {
         "label": "Výrobce – historie značky",
-        "url": "https://www.misceladoro.com/en/company/"
+        "url": "https://www.misceladoro.com/en/about-us/"
       },
       {
         "label": "Fotografie balení 1 kg – Skvělá káva",
@@ -518,7 +518,7 @@
       },
       {
         "label": "Kaffeeheimat – obchod pražírny",
-        "url": "https://kaffeeheimat.de/products/espresso-no-1-italian-style"
+        "url": "https://kaffeeheimat.de/collections/espresso/products/espresso-no-1-italalian-style"
       }
     ]
   },
@@ -673,10 +673,6 @@
     "salesTip": "Doporuč zákazníkovi, který hledá bio kakao holandského typu pro pečení, kaše i horké nápoje.",
     "image": "img/products/dr-oetker-bio-kakao-90-g.webp",
     "sources": [
-      {
-        "label": "Výrobce – detail produktu",
-        "url": "https://droetker.staging.back2flash.com/cs/produkty/bio-kakao-90g"
-      },
       {
         "label": "Výrobce – přehled kakaa",
         "url": "https://www.oetker.cz/produktu/s/peceni/prisady-na-peceni/kakao"
@@ -1758,8 +1754,8 @@
     "image": "img/products/country-life-kakao-bio-150-g.webp",
     "sources": [
       {
-        "label": "Výrobce – certifikovaný BIO sortiment",
-        "url": "https://www.countrylife.cz/data/images/_orig/0/14880.pdf"
+        "label": "Výrobce – přehled sortimentu",
+        "url": "https://www.countrylife.cz/produkty/"
       }
     ]
   },

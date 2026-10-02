@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js?v=1.0.26';
+import { CONFIG } from './config.js?v=1.0.27';
 
 const KEY = 'bistro-do-hlavy:v1';
 
@@ -7,6 +7,7 @@ const emptyState = () => ({
   profile: null,
   progress: {},
   reviews: [],
+  productNotes: {},
   settings: {
     newCardsPerDay: CONFIG.DEFAULT_NEW_CARDS_PER_DAY,
     theme: 'system',
@@ -59,6 +60,16 @@ export class LocalAdapter {
     return clone(review);
   }
 
+  async getProductNotes() { return clone(this.#read().productNotes); }
+  async saveProductNote(productId, note) {
+    const state = this.#read();
+    const value = String(note || '').trim();
+    if (value) state.productNotes[productId] = value;
+    else delete state.productNotes[productId];
+    this.#write(state);
+    return value;
+  }
+
   async getSettings() { return clone(this.#read().settings); }
   async saveSettings(settings) {
     const state = this.#read();
@@ -76,6 +87,7 @@ export class LocalAdapter {
       profile: state.profile,
       progress: state.progress,
       reviews: state.reviews,
+      productNotes: state.productNotes,
       settings: state.settings,
     };
   }
@@ -93,6 +105,7 @@ export class LocalAdapter {
       profile: clone(payload.profile),
       progress: clone(payload.progress || {}),
       reviews: clone(uniqueReviews),
+      productNotes: clone(payload.productNotes || {}),
       settings: { ...emptyState().settings, ...(payload.settings || {}) },
     };
     this.#write(state);

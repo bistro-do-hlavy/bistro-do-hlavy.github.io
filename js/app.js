@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.26';
-import { contentProvider } from '../content.js?v=1.0.26';
-import { storage } from '../storage.js?v=1.0.26';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.26';
+import { CONFIG } from '../config.js?v=1.0.27';
+import { contentProvider } from '../content.js?v=1.0.27';
+import { storage } from '../storage.js?v=1.0.27';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.27';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.26';
+} from '../study.js?v=1.0.27';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -28,19 +28,65 @@ const QUESTION_TYPE_SETTINGS = [
   { id: 'text', label: 'Napsat odpověď', description: 'Odpověď napíšete vlastními slovy.' },
   { id: 'photo', label: 'Poznat z fotky', description: 'Produkt určíte podle fotografie.' },
 ];
+const GLOSSARY = [
+  { id: 'aeropress', label: 'AeroPress', matches: ['AeroPress', 'Aeropress'], definition: 'Ruční pomůcka pro přípravu kávy, která protlačí vodu a kávu přes papírový nebo kovový filtr pomocí pístu.' },
+  { id: 'chemex', label: 'Chemex', matches: ['Chemex'], definition: 'Skleněná nádoba pro filtrovanou kávu se silnějším papírovým filtrem. Výsledkem bývá čistý a jemný nápoj.' },
+  { id: 'arabika', label: 'Arabika', matches: ['Arabika', 'Arabiky', 'Arabiku'], definition: 'Káva druhu Coffea arabica. Obvykle bývá aromatičtější, jemnější a kyselejší než Robusta.' },
+  { id: 'robusta', label: 'Robusta', matches: ['Robusta', 'Robusty', 'Robustu'], definition: 'Káva druhu Coffea canephora. Mívá vyšší obsah kofeinu, výraznější hořkost a podporuje plné tělo i cremu espressa.' },
+  { id: 'crema', label: 'Crema', matches: ['crema', 'cremou'], definition: 'Jemná pěnová vrstva na povrchu správně připraveného espressa, vznikající působením tlaku na kávu.' },
+  { id: 'moka-konvicka', label: 'Moka konvička', matches: ['moka konvička', 'moka konvičky', 'moka konvičce'], definition: 'Kovová konvička na sporák, ve které tlak páry vytlačí horkou vodu přes mletou kávu.' },
+  { id: 'tomatillos', label: 'Tomatillos', matches: ['tomatillos'], definition: 'Zelené plody mochyně pocházející z Mexika. Mají svěží, lehce nakyslou chuť a jsou základem mnoha zelených sals.' },
+  { id: 'epazote', label: 'Epazote', matches: ['epazote'], definition: 'Výrazná mexická bylina používaná k dochucení fazolí, omáček a dalších tradičních jídel.' },
+  { id: 'umami', label: 'Umami', matches: ['umami'], definition: 'Jedna ze základních chutí. Popisuje plnou, masitou a dlouhotrvající chuť typickou například pro fermentované výrobky.' },
+  { id: 'prosciutto-crudo', label: 'Prosciutto crudo', matches: ['prosciutto crudo', 'prosciuttem crudo'], definition: 'Italská sušená, tepelně neopracovaná šunka vyráběná solením a dlouhým zráním vepřové kýty.' },
+  { id: 'salchichon', label: 'Salchichón', matches: ['salchichón', 'salchichónu'], definition: 'Španělská sušená uzenina z vepřového masa, obvykle kořeněná hlavně pepřem; na rozdíl od chorizu nebývá jejím hlavním kořením paprika.' },
+  { id: 'sarta', label: 'Sarta', matches: ['sarta'], definition: 'Označení pro uzeninu vytvarovanou do podkovy nebo smyčky.' },
+  { id: 'secuansky-pepr', label: 'Sečuánský pepř', matches: ['sečuánský pepř', 'sečuánským pepřem'], definition: 'Aromatické oplodí rostlin rodu Zanthoxylum. Není to pravý pepř; typické je citrusové aroma a lehce znecitlivující pocit na jazyku.' },
+  { id: 'fermentace', label: 'Fermentace', matches: ['fermentace', 'fermentovaný', 'fermentovaná', 'fermentované', 'fermentovaných'], definition: 'Řízená přeměna surovin pomocí mikroorganismů. Může měnit chuť, vůni, kyselost i trvanlivost potraviny.' },
+];
+const GLOSSARY_MATCHES = GLOSSARY.flatMap((entry) => entry.matches.map((match) => ({ ...entry, match })))
+  .sort((a, b) => b.match.length - a.match.length);
+const GLOSSARY_PATTERN = new RegExp(GLOSSARY_MATCHES.map(({ match }) => match.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'giu');
 const state = {
   catalogProducts: [], catalogQuestions: [], products: [], questions: [], reviews: [], progress: {}, profile: null, settings: null,
-  currentView: 'home', session: null, homeProductIds: [],
+  productNotes: {}, pendingProducts: [], currentView: 'home', session: null, homeProductIds: [],
 };
 
 const app = document.querySelector('#app');
 const profileDialog = document.querySelector('#profile-dialog');
 const productDialog = document.querySelector('#product-dialog');
 const topicDialog = document.querySelector('#topic-dialog');
+const glossaryDialog = document.querySelector('#glossary-dialog');
 const toast = document.querySelector('#toast');
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
+}
+
+function glossaryEntryForMatch(value) {
+  const normalized = value.toLocaleLowerCase('cs');
+  return GLOSSARY_MATCHES.find(({ match }) => match.toLocaleLowerCase('cs') === normalized);
+}
+
+function renderGlossaryText(value) {
+  const text = String(value ?? '');
+  let cursor = 0;
+  let html = '';
+  for (const match of text.matchAll(GLOSSARY_PATTERN)) {
+    const entry = glossaryEntryForMatch(match[0]);
+    html += escapeHtml(text.slice(cursor, match.index));
+    html += `<button class="glossary-term" type="button" data-glossary-id="${entry.id}" aria-label="${escapeHtml(match[0])} – vysvětlit pojem">${escapeHtml(match[0])}</button>`;
+    cursor = match.index + match[0].length;
+  }
+  return html + escapeHtml(text.slice(cursor));
+}
+
+function openGlossary(id) {
+  const entry = GLOSSARY.find((item) => item.id === id);
+  if (!entry) return;
+  document.querySelector('#glossary-title').textContent = entry.label;
+  document.querySelector('#glossary-definition').textContent = entry.definition;
+  glossaryDialog.showModal();
 }
 
 function showToast(message) {
@@ -381,6 +427,22 @@ function renderSettings() {
             </section>
           </div>
         </details>
+        <details class="settings-card collapsible-settings" id="pending-products-details">
+          <summary>
+            <span><strong>Čeká na lepší fotografii</strong><small>${state.pendingProducts.length} ${state.pendingProducts.length === 1 ? 'položka' : state.pendingProducts.length <= 4 ? 'položky' : 'položek'} k doplnění</small></span>
+            <span class="disclosure-icon" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="collapsible-content">
+            <p>Tyto výrobky zatím nejsou v testech, protože z dostupných fotek nelze bezpečně ověřit přesnou variantu, složení nebo alergeny.</p>
+            <div class="pending-products-list">
+              ${state.pendingProducts.map((item) => `<article class="pending-product">
+                <strong>${escapeHtml(item.label)}</strong>
+                <p>${escapeHtml(item.reason)}</p>
+                <small><b>Vyfotit:</b> ${escapeHtml(item.needed)}</small>
+              </article>`).join('')}
+            </div>
+          </div>
+        </details>
         <details class="settings-card collapsible-settings" id="archived-products-details">
           <summary>
             <span><strong>Vyřazené produkty</strong><small>${archived.length ? `${archived.length} ${archived.length === 1 ? 'produkt lze obnovit' : archived.length <= 4 ? 'produkty lze obnovit' : 'produktů lze obnovit'}` : 'Koš je prázdný'}</small></span>
@@ -520,26 +582,43 @@ function openProduct(id) {
   ].filter(Boolean);
   const sources = (product.sources || []).map((source) => `
     <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('');
+  const note = state.productNotes[product.id] || '';
   document.querySelector('#product-detail').innerHTML = `
     <img class="product-detail-image" src="${product.image}" alt="${escapeHtml(product.name)}">
     <div class="product-detail-body">
       <button class="dialog-close" type="button" aria-label="Zavřít">×</button>
       <p class="eyebrow">${escapeHtml(product.category)}</p><h2>${escapeHtml(product.name)}</h2>
-      ${product.description ? `<p class="product-description">${escapeHtml(product.description)}</p>` : ''}
+      ${product.description ? `<p class="product-description">${renderGlossaryText(product.description)}</p>` : ''}
       ${productFacts.length ? `<dl class="product-facts">${productFacts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>` : ''}
-      <h3>Složení</h3><p>${product.ingredients.map(escapeHtml).join(', ')}</p>
+      <h3>Složení</h3><p>${product.ingredients.map(renderGlossaryText).join(', ')}</p>
       <h3>Alergeny</h3><div class="allergen-list">${allergens}</div>
-      ${product.specifics?.length ? `<h3>Čím je produkt specifický</h3><ul>${product.specifics.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}
-      <h3>Použití a uchování</h3><ol>${product.preparation.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}</ol>
-      ${product.brandInfo ? `<h3>O značce</h3><p>${escapeHtml(product.brandInfo)}</p>` : ''}
-      <h3>Doporučení k prodeji</h3><p class="sales-tip">${escapeHtml(product.salesTip)}</p>
+      ${product.specifics?.length ? `<h3>Čím je produkt specifický</h3><ul>${product.specifics.map((item) => `<li>${renderGlossaryText(item)}</li>`).join('')}</ul>` : ''}
+      <h3>Použití a uchování</h3><ol>${product.preparation.map((step) => `<li>${renderGlossaryText(step)}</li>`).join('')}</ol>
+      ${product.brandInfo ? `<h3>O značce</h3><p>${renderGlossaryText(product.brandInfo)}</p>` : ''}
+      <h3>Doporučení k prodeji</h3><p class="sales-tip">${renderGlossaryText(product.salesTip)}</p>
       ${sources ? `<h3>Zdroje informací</h3><div class="source-links">${sources}</div>` : ''}
+      <form id="product-note-form" class="product-note-form">
+        <label for="product-note">Moje poznámka</label>
+        <p>Soukromá poznámka se uloží jen v tomto zařízení a zahrne se do zálohy.</p>
+        <textarea id="product-note" name="note" maxlength="2000" rows="4" placeholder="Například umístění v regálu, tip od dodavatele nebo vlastní zkušenost…">${escapeHtml(note)}</textarea>
+        <button class="button button-secondary button-full" type="submit">Uložit poznámku</button>
+      </form>
       <div class="product-lifecycle-actions">
         <button id="archive-product" class="button button-danger button-full" type="button">Vyřadit produkt</button>
         <p>Produkt zmizí z katalogu a testů. Dosavadní pokrok se nesmaže a produkt půjde obnovit v Nastavení.</p>
       </div>
     </div>`;
   productDialog.querySelector('.dialog-close').addEventListener('click', () => productDialog.close());
+  productDialog.querySelectorAll('[data-glossary-id]').forEach((button) => {
+    button.addEventListener('click', () => openGlossary(button.dataset.glossaryId));
+  });
+  productDialog.querySelector('#product-note-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const value = await storage.saveProductNote(product.id, new FormData(event.currentTarget).get('note'));
+    if (value) state.productNotes[product.id] = value;
+    else delete state.productNotes[product.id];
+    showToast(value ? 'Poznámka je uložená.' : 'Poznámka je odstraněná.');
+  });
   productDialog.querySelector('#archive-product').addEventListener('click', async () => {
     if (!window.confirm(`Opravdu vyřadit produkt „${product.name}“? Pokrok zůstane zachovaný.`)) return;
     const archivedProductIds = [...new Set([...(state.settings.archivedProductIds || []), product.id])];
@@ -787,10 +866,10 @@ async function importBackup(file) {
 }
 
 async function loadState() {
-  const [{ products, questions }, profile, reviews, settings] = await Promise.all([
-    contentProvider.getAll(), storage.getProfile(), storage.getReviews(), storage.getSettings(),
+  const [{ products, questions, pendingProducts }, profile, reviews, settings, productNotes] = await Promise.all([
+    contentProvider.getAll(), storage.getProfile(), storage.getReviews(), storage.getSettings(), storage.getProductNotes(),
   ]);
-  Object.assign(state, { catalogProducts: products, catalogQuestions: questions, profile, reviews, settings });
+  Object.assign(state, { catalogProducts: products, catalogQuestions: questions, pendingProducts, profile, reviews, settings, productNotes });
   refreshActiveContent();
   state.progress = buildProgressFromReviews(questions, reviews);
   applyTheme(settings.theme);
@@ -841,6 +920,8 @@ profileDialog.addEventListener('cancel', (event) => { if (profileDialog.dataset.
 productDialog.addEventListener('click', (event) => { if (event.target === productDialog) productDialog.close(); });
 topicDialog.querySelector('.dialog-close').addEventListener('click', () => topicDialog.close());
 topicDialog.addEventListener('click', (event) => { if (event.target === topicDialog) topicDialog.close(); });
+glossaryDialog.querySelector('.dialog-close').addEventListener('click', () => glossaryDialog.close());
+glossaryDialog.addEventListener('click', (event) => { if (event.target === glossaryDialog) glossaryDialog.close(); });
 document.querySelector('#import-file').addEventListener('change', (event) => { if (event.target.files[0]) importBackup(event.target.files[0]); event.target.value = ''; });
 
 try {
