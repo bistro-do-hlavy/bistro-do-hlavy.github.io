@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.28';
-import { contentProvider } from '../content.js?v=1.0.28';
-import { storage } from '../storage.js?v=1.0.28';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.28';
+import { CONFIG } from '../config.js?v=1.0.29';
+import { contentProvider } from '../content.js?v=1.0.29';
+import { storage } from '../storage.js?v=1.0.29';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.29';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.28';
+} from '../study.js?v=1.0.29';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -135,6 +135,15 @@ function homeProducts() {
   return state.homeProductIds.map((id) => byId.get(id)).filter(Boolean);
 }
 
+function shuffledCopy(items) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
 function selectedProductIds() {
   const available = new Set(state.products.map((product) => product.id));
   const saved = state.settings?.enabledProductIds;
@@ -220,6 +229,9 @@ function renderHome() {
     enabledQuestionTypes: state.settings.enabledQuestionTypes,
     enabledProductIds: selectedProductIds(),
   });
+  const enabledProductIds = new Set(selectedProductIds());
+  const recognitionCount = state.questions.filter((question) => question.type === 'photo' && enabledProductIds.has(question.productId)).length;
+  const comparisonCount = comparisonQuestions().length;
   app.innerHTML = `
     <section class="page">
       <article class="hero-card">
@@ -242,6 +254,19 @@ function renderHome() {
         <div class="stat-card"><strong>${totalMastery()} %</strong><span>zvládnutí</span></div>
         <div class="stat-card"><strong>${masteredProducts()}/${state.products.length}</strong><span>produktů jistě</span></div>
       </div>
+      <div class="section-heading"><h2>Tréninkové režimy</h2><span>Podle situace</span></div>
+      <div class="training-modes-grid">
+        <article class="training-mode-card training-mode-photo">
+          <span class="training-mode-icon" aria-hidden="true">◎</span>
+          <div><p class="eyebrow">Bez názvu jako nápovědy</p><h2>Poznej produkt</h2><p>Určete produkt podle fotografie a potom si upevněte výrobce, kategorii a hlavní vlastnost.</p></div>
+          <button id="start-recognition" class="button button-secondary button-full" type="button" ${recognitionCount ? '' : 'disabled'}>Spustit · ${Math.min(10, recognitionCount)}</button>
+        </article>
+        <article class="training-mode-card training-mode-compare">
+          <span class="training-mode-icon" aria-hidden="true">⇄</span>
+          <div><p class="eyebrow">Podobné vedle sebe</p><h2>Porovnávání</h2><p>Rozlište kávy, čaje, sýry a další podobné produkty podle ověřených vlastností.</p></div>
+          <button id="start-comparison" class="button button-secondary button-full" type="button" ${comparisonCount ? '' : 'disabled'}>Spustit · ${Math.min(10, comparisonCount)}</button>
+        </article>
+      </div>
       <article class="recommendation-card">
         <div><p class="eyebrow">Doporučení</p><h2>${weakest ? `Zaměřte se na ${escapeHtml(weakest.name)}` : 'Pokračujte v pravidelném opakování'}</h2>
         <p>${weakest ? `${weakest.weakQuestionCount} ${weakest.weakQuestionCount === 1 ? 'otázka potřebuje' : 'otázek potřebuje'} upevnit. Slabší otázky už mají v denní dávce přednost.` : state.reviews.length ? 'Aktuálně nemáte výrazné slabé místo. Další otázky se objeví v optimálním termínu.' : 'Po prvních odpovědích zde uvidíte konkrétní doporučení.'}</p></div>
@@ -254,6 +279,8 @@ function renderHome() {
   document.querySelector('#start-study')?.addEventListener('click', startStudy);
   document.querySelector('#open-topic-study')?.addEventListener('click', openTopicDialog);
   document.querySelector('#start-weak-home')?.addEventListener('click', () => startWeakStudy(weakQueue));
+  document.querySelector('#start-recognition')?.addEventListener('click', startRecognitionStudy);
+  document.querySelector('#start-comparison')?.addEventListener('click', startComparisonStudy);
 }
 
 function productCard(product) {
@@ -656,6 +683,46 @@ function startWeakStudy(queue = null) {
   startStudySession(weakQueue, 'weak');
 }
 
+function startRecognitionStudy() {
+  const enabledProducts = new Set(selectedProductIds());
+  const queue = shuffledCopy(state.questions.filter((question) => question.type === 'photo' && enabledProducts.has(question.productId))).slice(0, 10);
+  if (!queue.length) {
+    showToast('Pro vybrané produkty nejsou dostupné fotografie.');
+    return;
+  }
+  startStudySession(queue, 'recognition');
+}
+
+function comparisonQuestions() {
+  const enabledProducts = new Set(selectedProductIds());
+  const productsById = new Map(state.products.map((product) => [product.id, product]));
+  return state.questions.filter((question) => Array.isArray(question.comparisonWith) && enabledProducts.has(question.productId)).map((question) => {
+    const comparisonProductIds = [question.productId, ...question.comparisonWith]
+      .filter((id) => enabledProducts.has(id) && productsById.has(id));
+    if (comparisonProductIds.length < 2) return null;
+    const target = productsById.get(question.productId);
+    return {
+      ...question,
+      type: 'mcq',
+      format: 'comparison',
+      prompt: `Ke kterému produktu patří údaj „${question.answer}“?`,
+      options: comparisonProductIds.map((id) => productsById.get(id).name),
+      answer: target.name,
+      explanation: `${target.name}: ${question.explanation}`,
+      comparisonProductIds,
+    };
+  }).filter(Boolean);
+}
+
+function startComparisonStudy() {
+  const queue = shuffledCopy(comparisonQuestions()).slice(0, 10);
+  if (!queue.length) {
+    showToast('Pro aktuální výběr produktů nejsou dostupná porovnání.');
+    return;
+  }
+  startStudySession(queue, 'comparison');
+}
+
 function openTopicDialog() {
   const enabledProductIds = new Set(selectedProductIds());
   const enabledQuestionTypes = new Set(state.settings.enabledQuestionTypes || Object.keys(TYPE_LABELS));
@@ -719,12 +786,36 @@ function shuffledOptions(question) {
   return options;
 }
 
+function comparisonPreview(question) {
+  if (question.format !== 'comparison') return '';
+  const productsById = new Map(state.products.map((product) => [product.id, product]));
+  return `<div class="compare-products" aria-label="Porovnávané produkty">${question.comparisonProductIds.map((id) => {
+    const product = productsById.get(id);
+    return `<div class="compare-product"><img src="${product.image}" alt=""><span>${escapeHtml(product.name)}</span></div>`;
+  }).join('')}</div>`;
+}
+
+function productAnswerFacts(question) {
+  if (question.type !== 'photo') return '';
+  const product = state.products.find((item) => item.id === question.productId);
+  if (!product) return '';
+  const memorableSpecific = product.specifics?.find((item) => !/^(?:cca\s*)?\d+[,.]?\d*\s*(?:g|kg|ml|l|ks|kusů|sáčků|kapslí)\b/i.test(item) && !/^ean\b/i.test(item)) || product.specifics?.[0];
+  const facts = [
+    ['Výrobce', product.manufacturer],
+    ['Kategorie', product.category],
+    ['Zapamatovat si', memorableSpecific],
+  ].filter(([, value]) => value);
+  return `<dl class="recognition-facts">${facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>`;
+}
+
 function renderQuestion() {
   const question = currentQuestion();
   if (!question) return renderSummary();
   state.session.revealed = false;
   const product = state.products.find((item) => item.id === question.productId);
   const image = question.type === 'photo' ? `<img class="question-image" src="${question.image}" alt="Produkt k poznání">` : '';
+  const productHint = question.type === 'photo' ? 'Bez názvu jako nápovědy' : question.format === 'comparison' ? 'Podobné produkty' : product.name;
+  const typeLabel = question.format === 'comparison' ? 'Porovnání' : question.type === 'photo' ? 'Poznej produkt' : TYPE_LABELS[question.type];
   let control = '';
   if (question.type === 'mcq' || question.type === 'photo') {
     control = `<div class="options">${shuffledOptions(question).map((option) => `<button class="option" type="button" data-option="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join('')}</div>`;
@@ -737,8 +828,8 @@ function renderQuestion() {
     <div class="study-toolbar"><button id="close-study" class="icon-button" type="button" aria-label="Ukončit trénink">×</button>
       <div><div class="progress-track"><span style="width:${((state.session.index) / state.session.queue.length) * 100}%"></span></div></div>
       <span class="study-counter">${state.session.index + 1}/${state.session.queue.length}</span></div>
-    <article class="study-card"><div class="question-meta"><span class="type-pill">${TYPE_LABELS[question.type]}</span><span>${escapeHtml(product.name)}</span></div>
-      ${image}<h1>${escapeHtml(question.prompt)}</h1><div id="answer-area">${control}</div><div id="feedback"></div>
+    <article class="study-card"><div class="question-meta"><span class="type-pill">${typeLabel}</span><span>${escapeHtml(productHint)}</span></div>
+      ${image}${comparisonPreview(question)}<h1>${escapeHtml(question.prompt)}</h1><div id="answer-area">${control}</div><div id="feedback"></div>
     </article></section>`;
   document.querySelector('#close-study').addEventListener('click', () => navigate('home'));
   document.querySelectorAll('[data-option]').forEach((button) => button.addEventListener('click', () => answerChoice(button.dataset.option)));
@@ -756,7 +847,7 @@ function questionSourceLink(question) {
 
 function showFeedback({ correct, answer, explanation, question }) {
   const panel = document.querySelector('#feedback');
-  panel.innerHTML = `<div class="answer-panel ${correct ? '' : 'is-wrong'}"><strong>${correct ? 'Správně' : 'Správná odpověď'}</strong><p>${escapeHtml(answer)}</p><p class="answer-explanation">${escapeHtml(explanation)}</p>${questionSourceLink(question)}</div><button id="next" class="button button-primary button-full" style="margin-top:.8rem" type="button">Pokračovat</button>`;
+  panel.innerHTML = `<div class="answer-panel ${correct ? '' : 'is-wrong'}"><strong>${correct ? 'Správně' : 'Správná odpověď'}</strong><p>${escapeHtml(answer)}</p><p class="answer-explanation">${escapeHtml(explanation)}</p>${productAnswerFacts(question)}${questionSourceLink(question)}</div><button id="next" class="button button-primary button-full" style="margin-top:.8rem" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
 }
 
@@ -839,7 +930,8 @@ function renderSummary() {
   const accuracy = answers.length ? Math.round(correct / answers.length * 100) : 0;
   const misses = Object.entries(answers.filter((item) => !item.correct).reduce((acc, item) => ({ ...acc, [item.productId]: (acc[item.productId] || 0) + 1 }), {})).sort((a, b) => b[1] - a[1]);
   const problem = misses.length ? state.products.find((product) => product.id === misses[0][0])?.name : 'Žádný — skvělá práce';
-  app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">Dávka dokončena</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
+  const summaryLabel = state.session.mode === 'recognition' ? 'Poznávání dokončeno' : state.session.mode === 'comparison' ? 'Porovnávání dokončeno' : 'Dávka dokončena';
+  app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">${summaryLabel}</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
     <div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>
     ${misses.length ? '<button id="open-stats" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zobrazit slabá místa</button>' : ''}

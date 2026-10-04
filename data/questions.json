@@ -4421,7 +4421,10 @@
     "answer": "zdroj omega-3 a omega-6 mastných kyselin",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.vpresu.cz/eshop/oleje/konopi-250ml"
+    "sourceUrl": "https://www.vpresu.cz/eshop/oleje/konopi-250ml",
+    "comparisonWith": [
+      "makovy-olej-v-presu-250-ml"
+    ]
   },
   {
     "id": "casa-rinaldi-balsamico-tresen-150-ml-q7",
@@ -4525,7 +4528,10 @@
     "answer": "fermentace ančoviček přibližně 12 až 18 měsíců",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml"
+    "sourceUrl": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml",
+    "comparisonWith": [
+      "fermato-mad-bbq-salsa-verde-200-ml"
+    ]
   },
   {
     "id": "caffe-barbaro-miscela-blu-1-kg-q7",
@@ -4577,7 +4583,10 @@
     "answer": "18 % deklarované grapefruitové složky",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/"
+    "sourceUrl": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/",
+    "comparisonWith": [
+      "bio-nebio-cekankovy-sirup-450-g"
+    ]
   },
   {
     "id": "sufan-granola-malinova-350-g-q7",
@@ -4603,7 +4612,10 @@
     "answer": "bez umělých aromat a barviv",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177"
+    "sourceUrl": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177",
+    "comparisonWith": [
+      "bezva-musli-spekane-paleo-450-g"
+    ]
   },
   {
     "id": "bezva-musli-spekane-paleo-450-g-q7",
@@ -4941,7 +4953,11 @@
     "answer": "6 měsíců v americkém dubu",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/"
+    "sourceUrl": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/",
+    "comparisonWith": [
+      "honoro-vera-ecologico-monastrell-750-ml",
+      "habla-del-silencio-750-ml"
+    ]
   },
   {
     "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q9",
@@ -4967,7 +4983,11 @@
     "answer": "6 % chilli papriček a výrazně pálivá chuť",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://henriwillig.com/en/piece-henri-willig-cow-cheese-chili-hot-and-spicy-50/"
+    "sourceUrl": "https://henriwillig.com/en/piece-henri-willig-cow-cheese-chili-hot-and-spicy-50/",
+    "comparisonWith": [
+      "henri-willig-green-pesto",
+      "huizer-kaas-gilde-walnut-cheese"
+    ]
   },
   {
     "id": "bezva-datle-cele-500-g-q7",
@@ -5149,7 +5169,11 @@
     "answer": "převážně odrůda Castillo",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Pražírna – detail produktu",
-    "sourceUrl": "https://kaffeeheimat.de/en/products/colombia-el-pastelito-la-mejorana-coffee"
+    "sourceUrl": "https://kaffeeheimat.de/en/products/colombia-el-pastelito-la-mejorana-coffee",
+    "comparisonWith": [
+      "kaffeebrewda-ethiopia-chelchele-250-g",
+      "kaffeebrewda-brasil-pantano-red-ruby-250-g"
+    ]
   },
   {
     "id": "kaffeebrewda-ethiopia-chelchele-250-g-q7",
@@ -5279,7 +5303,10 @@
     "answer": "bronzová matrice vytváří drsnější povrch",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.pastificiotemporin.it/en/products/linea-gourmet/fresh-portioned-tagliatelle"
+    "sourceUrl": "https://www.pastificiotemporin.it/en/products/linea-gourmet/fresh-portioned-tagliatelle",
+    "comparisonWith": [
+      "temporin-tortellini-prosciutto-crudo-250-g"
+    ]
   },
   {
     "id": "rodopi-ayran-500-ml-q7",
@@ -5305,7 +5332,10 @@
     "answer": "původní bulharská receptura",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.rodopi.cz/produkty/ayran/"
+    "sourceUrl": "https://www.rodopi.cz/produkty/ayran/",
+    "comparisonWith": [
+      "rodopi-bily-jogurt-200-g"
+    ]
   },
   {
     "id": "rodopi-bily-jogurt-200-g-q7",
@@ -5659,7 +5689,11 @@
     "answer": "jemná květinová vůně jasmínu",
     "explanation": "Produktová stránka značky zdůrazňuje jemnou květinovou vůni jasmínu.",
     "sourceLabel": "Značka – detail produktu",
-    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-jasmine/"
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-jasmine/",
+    "comparisonWith": [
+      "teahouse-exclusives-sencha-15",
+      "teahouse-exclusives-english-breakfast-15"
+    ]
   },
   {
     "id": "teahouse-exclusives-pure-camomile-15-q7",
@@ -5789,7 +5823,11 @@
     "answer": "kofein nejvýše 0,10 %",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
-    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso-decaffeinato/"
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso-decaffeinato/",
+    "comparisonWith": [
+      "miscela-doro-espresso-mleta-250-g",
+      "miscela-doro-gusto-classico-250-g"
+    ]
   },
   {
     "id": "vilgain-protein-milkshake-kakao-330-ml-q7",
@@ -5893,7 +5931,10 @@
     "answer": "výrazné aroma a příjemná dochuť bez kofeinu",
     "explanation": "Výrobce variantu Blue Leggerezza popisuje jako bezkofeinovou kávu s výrazným aromatem a příjemnou dochutí.",
     "sourceLabel": "Výrobce – řada kapslí",
-    "sourceUrl": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+    "sourceUrl": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/",
+    "comparisonWith": [
+      "miscela-doro-black-armonia-10-kapsli"
+    ]
   },
   {
     "id": "la-gloria-riojana-salchichon-sarta-230-g-q7",
