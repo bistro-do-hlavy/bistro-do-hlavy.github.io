@@ -226,6 +226,8 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .answer-panel.is-wrong { border-left-color: var(--danger); }
 .answer-panel strong { display: block; margin-bottom: .3rem; }
 .answer-panel p { margin: .25rem 0; }
+.answer-source { display: inline-flex; align-items: center; min-height: 2.5rem; margin-top: .55rem; color: var(--brand); font-size: .84rem; font-weight: 750; text-decoration: none; }
+.answer-source:hover { text-decoration: underline; }
 .answer-explanation { color: var(--muted); font-size: .9rem; }
 .rating-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .45rem; margin-top: 1rem; }
 .rating { min-height: 3.6rem; border: 0; border-radius: .9rem; padding: .45rem .2rem; background: var(--surface-soft); cursor: pointer; font-size: .76rem; font-weight: 850; }

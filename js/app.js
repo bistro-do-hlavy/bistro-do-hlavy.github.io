@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.27';
-import { contentProvider } from '../content.js?v=1.0.27';
-import { storage } from '../storage.js?v=1.0.27';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.27';
+import { CONFIG } from '../config.js?v=1.0.28';
+import { contentProvider } from '../content.js?v=1.0.28';
+import { storage } from '../storage.js?v=1.0.28';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.28';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.27';
+} from '../study.js?v=1.0.28';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -699,13 +699,25 @@ function startTopicStudy(category) {
 }
 
 function startStudySession(queue, mode) {
-  state.session = { queue: [...queue], index: 0, answers: [], revealed: false, retryIds: new Set(), mode };
+  state.session = { queue: [...queue], index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mode };
   state.currentView = 'study';
   setActiveNav('');
   renderQuestion();
 }
 
 function currentQuestion() { return state.session?.queue[state.session.index]; }
+
+function shuffledOptions(question) {
+  if (!Array.isArray(question.options)) return [];
+  if (state.session.optionOrders.has(question.id)) return state.session.optionOrders.get(question.id);
+  const options = [...question.options];
+  for (let index = options.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [options[index], options[swapIndex]] = [options[swapIndex], options[index]];
+  }
+  state.session.optionOrders.set(question.id, options);
+  return options;
+}
 
 function renderQuestion() {
   const question = currentQuestion();
@@ -715,7 +727,7 @@ function renderQuestion() {
   const image = question.type === 'photo' ? `<img class="question-image" src="${question.image}" alt="Produkt k poznání">` : '';
   let control = '';
   if (question.type === 'mcq' || question.type === 'photo') {
-    control = `<div class="options">${question.options.map((option) => `<button class="option" type="button" data-option="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join('')}</div>`;
+    control = `<div class="options">${shuffledOptions(question).map((option) => `<button class="option" type="button" data-option="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join('')}</div>`;
   } else if (question.type === 'text') {
     control = `<form id="text-form"><input class="text-answer" name="answer" autocomplete="off" required placeholder="Napište odpověď…" aria-label="Vaše odpověď"><button class="button button-primary button-full">Zkontrolovat</button></form>`;
   } else {
@@ -736,9 +748,15 @@ function renderQuestion() {
   app.focus();
 }
 
-function showFeedback({ correct, answer, explanation }) {
+function questionSourceLink(question) {
+  if (!question?.sourceUrl) return '';
+  const label = question.sourceLabel || 'Zdroj výrobce';
+  return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
+}
+
+function showFeedback({ correct, answer, explanation, question }) {
   const panel = document.querySelector('#feedback');
-  panel.innerHTML = `<div class="answer-panel ${correct ? '' : 'is-wrong'}"><strong>${correct ? 'Správně' : 'Správná odpověď'}</strong><p>${escapeHtml(answer)}</p><p class="answer-explanation">${escapeHtml(explanation)}</p></div><button id="next" class="button button-primary button-full" style="margin-top:.8rem" type="button">Pokračovat</button>`;
+  panel.innerHTML = `<div class="answer-panel ${correct ? '' : 'is-wrong'}"><strong>${correct ? 'Správně' : 'Správná odpověď'}</strong><p>${escapeHtml(answer)}</p><p class="answer-explanation">${escapeHtml(explanation)}</p>${questionSourceLink(question)}</div><button id="next" class="button button-primary button-full" style="margin-top:.8rem" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
 }
 
@@ -753,7 +771,7 @@ async function answerChoice(selected) {
     if (button.dataset.option === selected && !correct) button.classList.add('is-wrong');
   });
   await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct);
-  showFeedback({ correct, answer: question.answer, explanation: question.explanation });
+  showFeedback({ correct, answer: question.answer, explanation: question.explanation, question });
 }
 
 async function answerText(input) {
@@ -763,7 +781,7 @@ async function answerText(input) {
   const result = evaluateText(input, question.answer);
   document.querySelector('#text-form').querySelectorAll('input,button').forEach((element) => { element.disabled = true; });
   await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct);
-  showFeedback({ correct: result.correct, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation });
+  showFeedback({ correct: result.correct, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question });
 }
 
 function revealFlashcard() {
@@ -771,7 +789,7 @@ function revealFlashcard() {
   state.session.revealed = true;
   const question = currentQuestion();
   const intervals = getIntervals(state.progress[question.id]);
-  document.querySelector('#answer-area').innerHTML = `<div class="answer-panel"><strong>Odpověď</strong><p>${escapeHtml(question.answer)}</p><p class="answer-explanation">${escapeHtml(question.explanation)}</p></div>
+  document.querySelector('#answer-area').innerHTML = `<div class="answer-panel"><strong>Odpověď</strong><p>${escapeHtml(question.answer)}</p><p class="answer-explanation">${escapeHtml(question.explanation)}</p>${questionSourceLink(question)}</div>
     <p style="font-weight:750;margin:1rem 0 .4rem">Jak dobře jste si vzpomněli?</p>
     <div class="rating-grid">${[RATINGS.AGAIN, RATINGS.HARD, RATINGS.GOOD, RATINGS.EASY].map((rating) => `<button class="rating ${rating === RATINGS.AGAIN ? 'rating-again' : rating === RATINGS.EASY ? 'rating-easy' : ''}" type="button" data-rating="${rating}">${ratingLabel(rating)}<small>${formatInterval(intervals[rating])}</small></button>`).join('')}</div>`;
   document.querySelectorAll('[data-rating]').forEach((button) => button.addEventListener('click', async () => {

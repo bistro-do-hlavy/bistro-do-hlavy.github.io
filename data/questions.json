@@ -4396,5 +4396,1607 @@
     "prompt": "Komu Salsa Verde doporučíš?",
     "answer": "Zákazníkovi, který hledá svěží pikantní omáčku k mexickým jídlům nebo grilování.",
     "explanation": "To je hlavní prodejní doporučení produktu."
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q7",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Konopný olej V PRESU 250 ml“?",
+    "options": [
+      "Alis S.r.l.",
+      "Rodinná lisovna s.r.o.",
+      "MELEMEMASO s.r.o.",
+      "Pairoj (Tang Sang Hah) Co., Ltd."
+    ],
+    "answer": "Rodinná lisovna s.r.o.",
+    "explanation": "Výrobcem je Rodinná lisovna s.r.o..",
+    "sourceLabel": "Výrobce – o lisovně",
+    "sourceUrl": "https://www.vpresu.cz/"
+  },
+  {
+    "id": "konopny-olej-v-presu-250-ml-q8",
+    "productId": "konopny-olej-v-presu-250-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Konopný olej V PRESU 250 ml“ uvádí výrobce?",
+    "answer": "zdroj omega-3 a omega-6 mastných kyselin",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.vpresu.cz/eshop/oleje/konopi-250ml"
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q7",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Balzamikový krém s třešní Casa Rinaldi 150 ml“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "MELEMEMASO s.r.o.",
+      "Alis S.r.l.",
+      "Pairoj (Tang Sang Hah) Co., Ltd."
+    ],
+    "answer": "Alis S.r.l.",
+    "explanation": "Výrobcem je Alis S.r.l..",
+    "sourceLabel": "Výrobce – řada ochucených krémů",
+    "sourceUrl": "https://casarinaldi.com/groupage/creme-con-aceto-balsamico-di-modena-igp-aromatizzate/"
+  },
+  {
+    "id": "casa-rinaldi-balsamico-tresen-150-ml-q8",
+    "productId": "casa-rinaldi-balsamico-tresen-150-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Balzamikový krém s třešní Casa Rinaldi 150 ml“ uvádí výrobce?",
+    "answer": "vyvážená sladkokyselá chuť",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/de/product/cremiger-balsamico-essig-aus-modena-igp-mit-kirsche-aromatisiert/"
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q7",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Makový olej V PRESU 250 ml“?",
+    "options": [
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Pairoj (Tang Sang Hah) Co., Ltd.",
+      "Rodinná lisovna s.r.o."
+    ],
+    "answer": "Rodinná lisovna s.r.o.",
+    "explanation": "Výrobcem je Rodinná lisovna s.r.o..",
+    "sourceLabel": "Výrobce – o lisovně",
+    "sourceUrl": "https://www.vpresu.cz/"
+  },
+  {
+    "id": "makovy-olej-v-presu-250-ml-q8",
+    "productId": "makovy-olej-v-presu-250-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Makový olej V PRESU 250 ml“ uvádí výrobce?",
+    "answer": "zdroj omega-6 mastných kyselin",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.vpresu.cz/eshop/oleje/modry-mak-250ml"
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q7",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kachní paštika s Calvadosem Melememaso 150 g“?",
+    "options": [
+      "MELEMEMASO s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Pairoj (Tang Sang Hah) Co., Ltd."
+    ],
+    "answer": "MELEMEMASO s.r.o.",
+    "explanation": "Výrobcem je MELEMEMASO s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.melememaso.cz/pastiky/kachni-pastika-s-calvadosem/6"
+  },
+  {
+    "id": "kachni-pastika-s-calvadosem-melememaso-150-g-q8",
+    "productId": "kachni-pastika-s-calvadosem-melememaso-150-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kachní paštika s Calvadosem Melememaso 150 g“ uvádí výrobce?",
+    "answer": "bez konzervantů a chemických přísad",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.melememaso.cz/pastiky/kachni-pastika-s-calvadosem/6"
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q7",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Rybí omáčka Tiparos 700 ml“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Pairoj (Tang Sang Hah) Co., Ltd.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Pairoj (Tang Sang Hah) Co., Ltd.",
+    "explanation": "Výrobcem je Pairoj (Tang Sang Hah) Co., Ltd..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml"
+  },
+  {
+    "id": "tiparos-rybi-omacka-700-ml-q8",
+    "productId": "tiparos-rybi-omacka-700-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Rybí omáčka Tiparos 700 ml“ uvádí výrobce?",
+    "answer": "fermentace ančoviček přibližně 12 až 18 měsíců",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.tiparos.com/products/view/0-33-Tiparos-Brand-Fish-Sauce-700-ml"
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q7",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Caffè Barbaro Miscela Blu 1 kg“?",
+    "options": [
+      "Miscela d’Oro S.p.A.",
+      "Kaffeebrewda / Erik Brockholz",
+      "Nutis S.r.l.",
+      "Torrefazione La Brasiliana S.r.l."
+    ],
+    "answer": "Nutis S.r.l.",
+    "explanation": "Výrobcem je Nutis S.r.l..",
+    "sourceLabel": "Výrobce – historie značky",
+    "sourceUrl": "https://caffebarbaro.com/"
+  },
+  {
+    "id": "caffe-barbaro-miscela-blu-1-kg-q8",
+    "productId": "caffe-barbaro-miscela-blu-1-kg",
+    "type": "flashcard",
+    "prompt": "Na jakou tradici navazuje značka Caffè Barbaro?",
+    "answer": "na neapolskou tradici pražení kávy",
+    "explanation": "Caffè Barbaro na svém webu spojuje značku s neapolskou kávovou tradicí.",
+    "sourceLabel": "Výrobce – historie značky",
+    "sourceUrl": "https://caffebarbaro.com/"
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q7",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kitl Syrob Grapefruit 500 ml“?",
+    "options": [
+      "Produkty Vladimír s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Kitl s.r.o."
+    ],
+    "answer": "Kitl s.r.o.",
+    "explanation": "Výrobcem je Kitl s.r.o..",
+    "sourceLabel": "Výrobce – řada Kitl Syrob",
+    "sourceUrl": "https://www.kitl.cz/vyrobky/kitl-syrob/"
+  },
+  {
+    "id": "kitl-syrob-grapefruit-500-ml-q8",
+    "productId": "kitl-syrob-grapefruit-500-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kitl Syrob Grapefruit 500 ml“ uvádí výrobce?",
+    "answer": "18 % deklarované grapefruitové složky",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.kitl.cz/vyrobky/kitl-syrob/syrob-grapefruit-500-ml/"
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q7",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „ŠUFAN Granola malinová 350 g“?",
+    "options": [
+      "ŠUFAN s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "ŠUFAN s.r.o.",
+    "explanation": "Výrobcem je ŠUFAN s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177"
+  },
+  {
+    "id": "sufan-granola-malinova-350-g-q8",
+    "productId": "sufan-granola-malinova-350-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „ŠUFAN Granola malinová 350 g“ uvádí výrobce?",
+    "answer": "bez umělých aromat a barviv",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/granola-malinova/10088/350-g/1177"
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q7",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Bezva müsli Spékané paleo 450 g“?",
+    "options": [
+      "ŠUFAN s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – o značce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/o-nas/"
+  },
+  {
+    "id": "bezva-musli-spekane-paleo-450-g-q8",
+    "productId": "bezva-musli-spekane-paleo-450-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Bezva müsli Spékané paleo 450 g“ uvádí výrobce?",
+    "answer": "základ tvoří kokos, ořechy a semínka",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/spekane-musli/bezva-musli-spekane-paleo/"
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q7",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Vladimír Perník do kafe 500 ml“?",
+    "options": [
+      "Kitl s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Produkty Vladimír s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Produkty Vladimír s.r.o.",
+    "explanation": "Výrobcem je Produkty Vladimír s.r.o..",
+    "sourceLabel": "Výrobce – kontakty",
+    "sourceUrl": "https://www.produkty-vladimir.cz/kontakty/"
+  },
+  {
+    "id": "vladimir-pernik-do-kafe-500-ml-q8",
+    "productId": "vladimir-pernik-do-kafe-500-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Vladimír Perník do kafe 500 ml“ uvádí výrobce?",
+    "answer": "ruční výroba v jižních Čechách",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.produkty-vladimir.cz/sirupy-do-kavy/sirup-dokafe-pernik/"
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q7",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Espresso Gran Crema 1 kg“?",
+    "options": [
+      "Nutis S.r.l.",
+      "Kaffeebrewda / Erik Brockholz",
+      "Torrefazione La Brasiliana S.r.l.",
+      "Miscela d’Oro S.p.A."
+    ],
+    "answer": "Miscela d’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscela d’Oro S.p.A..",
+    "sourceLabel": "Výrobce – historie značky",
+    "sourceUrl": "https://www.misceladoro.com/en/about-us/"
+  },
+  {
+    "id": "miscela-doro-espresso-gran-crema-1-kg-q8",
+    "productId": "miscela-doro-espresso-gran-crema-1-kg",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Espresso Gran Crema 1 kg“ uvádí výrobce?",
+    "answer": "původ kávových zrn Jižní Amerika a Asie",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/en/product/espresso-gran-crema-coffee-beans/"
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q7",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kaffeebrewda Espresso No1 Italian Style 1 kg“?",
+    "options": [
+      "Kaffeebrewda / Erik Brockholz",
+      "Nutis S.r.l.",
+      "Miscela d’Oro S.p.A.",
+      "Torrefazione La Brasiliana S.r.l."
+    ],
+    "answer": "Kaffeebrewda / Erik Brockholz",
+    "explanation": "Výrobcem je Kaffeebrewda / Erik Brockholz.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/collections/espresso/products/espresso-no-1-italalian-style"
+  },
+  {
+    "id": "kaffee-braun-espresso-no1-1-kg-q8",
+    "productId": "kaffee-braun-espresso-no1-1-kg",
+    "type": "flashcard",
+    "prompt": "Z jakých káv se skládá Kaffeebrewda Espresso No1 Italian Style?",
+    "answer": "70 % Arabiky z Brazílie a Kolumbie a 30 % Robusty z Indie",
+    "explanation": "Pražírna uvádí poměr 70 % Arabiky a 30 % Robusty i země původu jednotlivých káv.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/collections/espresso/products/espresso-no-1-italalian-style"
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q7",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „La Brasiliana Europa 1 kg“?",
+    "options": [
+      "Nutis S.r.l.",
+      "Torrefazione La Brasiliana S.r.l.",
+      "Miscela d’Oro S.p.A.",
+      "Kaffeebrewda / Erik Brockholz"
+    ],
+    "answer": "Torrefazione La Brasiliana S.r.l.",
+    "explanation": "Výrobcem je Torrefazione La Brasiliana S.r.l..",
+    "sourceLabel": "Výrobce – o pražírně",
+    "sourceUrl": "https://www.labrasiliana.it/en/visit-our-company/"
+  },
+  {
+    "id": "la-brasiliana-europa-1-kg-q8",
+    "productId": "la-brasiliana-europa-1-kg",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „La Brasiliana Europa 1 kg“ uvádí výrobce?",
+    "answer": "italské pražení ve Ferraře",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – příprava kávy",
+    "sourceUrl": "https://www.labrasiliana.it/buono-come-al-bar-i-consigli-de-la-brasiliana-per-preparare-un-caffe-delizioso/"
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q7",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives Assam GFBOP 15 sáčků“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Juice Solutions International B.V.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Výrobce – sortiment Teahouse Exclusives",
+    "sourceUrl": "https://www.juicesolutions.eu/teahouse-exclusives_1"
+  },
+  {
+    "id": "teahouse-exclusives-assam-gfbop-15-sacku-q8",
+    "productId": "teahouse-exclusives-assam-gfbop-15-sacku",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives Assam GFBOP 15 sáčků“ uvádí výrobce?",
+    "answer": "plná sladově výrazná chuť",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – sortiment Teahouse Exclusives",
+    "sourceUrl": "https://www.juicesolutions.eu/teahouse-exclusives_1"
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q7",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Chicory Cup instantní čekankový nápoj 100 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "GRANA sp. z o.o."
+    ],
+    "answer": "GRANA sp. z o.o.",
+    "explanation": "Výrobcem je GRANA sp. z o.o..",
+    "sourceLabel": "Výrobce – produkt a příprava",
+    "sourceUrl": "https://chicorycup.com/"
+  },
+  {
+    "id": "chicory-cup-instant-100-g-q8",
+    "productId": "chicory-cup-instant-100-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Chicory Cup instantní čekankový nápoj 100 g“ uvádí výrobce?",
+    "answer": "přirozeně bez kofeinu",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – produkt a příprava",
+    "sourceUrl": "https://chicorycup.com/"
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q7",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Dr. Oetker Bio Kakao 90 g“?",
+    "options": [
+      "Dr. Oetker s.r.o.",
+      "COUNTRY LIFE s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Dr. Oetker s.r.o.",
+    "explanation": "Výrobcem je Dr. Oetker s.r.o..",
+    "sourceLabel": "Výrobce – přehled kakaa",
+    "sourceUrl": "https://www.oetker.cz/produktu/s/peceni/prisady-na-peceni/kakao"
+  },
+  {
+    "id": "dr-oetker-bio-kakao-90-g-q8",
+    "productId": "dr-oetker-bio-kakao-90-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Dr. Oetker Bio Kakao 90 g“ uvádí výrobce?",
+    "answer": "100% holandské bio kakao",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – přehled kakaa",
+    "sourceUrl": "https://www.oetker.cz/produktu/s/peceni/prisady-na-peceni/kakao"
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q7",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Bio nebio Javorový sirup Grade C 250 ml“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "bio nebio s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "bio nebio s.r.o.",
+    "explanation": "Výrobcem je bio nebio s.r.o..",
+    "sourceLabel": "Výrobce – o značce a sortimentu",
+    "sourceUrl": "https://bionebio.cz/e-shop/superpotraviny"
+  },
+  {
+    "id": "bio-nebio-javorovy-sirup-grade-c-250-ml-q8",
+    "productId": "bio-nebio-javorovy-sirup-grade-c-250-ml",
+    "type": "flashcard",
+    "prompt": "Na jaký sortiment se zaměřuje výrobce bio nebio?",
+    "answer": "na biopotraviny a potraviny zdravé výživy",
+    "explanation": "Bio nebio se na svém webu představuje jako český dodavatel biopotravin a potravin zdravé výživy.",
+    "sourceLabel": "Výrobce – o značce a sortimentu",
+    "sourceUrl": "https://bionebio.cz/e-shop/superpotraviny"
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q7",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kávová Mandlovka 200 ml“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Hustopečská mandlárna s.r.o.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Hustopečská mandlárna s.r.o.",
+    "explanation": "Výrobcem je Hustopečská mandlárna s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mandlarna.cz/kavova-mandlovka-0-2l"
+  },
+  {
+    "id": "kavova-mandlovka-200-ml-q8",
+    "productId": "kavova-mandlovka-200-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kávová Mandlovka 200 ml“ uvádí výrobce?",
+    "answer": "bronz v Czech National Spirits Competition 2025",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mandlarna.cz/kavova-mandlovka-0-2l"
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q7",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Habla del Silencio 750 ml“?",
+    "options": [
+      "Bodegas Juan Gil",
+      "Félix Solís Avantis / Pagos del Rey",
+      "Rodinná lisovna s.r.o.",
+      "Bodegas HABLA"
+    ],
+    "answer": "Bodegas HABLA",
+    "explanation": "Výrobcem je Bodegas HABLA.",
+    "sourceLabel": "Výrobce – vinařství",
+    "sourceUrl": "https://www.bodegashabla.com/en/"
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q8",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Habla del Silencio 750 ml“ uvádí výrobce?",
+    "answer": "kupáž tří modrých odrůd",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bodegashabla.com/en/product/habla-del-silencio/"
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q7",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Honoro Vera Ecológico Monastrell 750 ml“?",
+    "options": [
+      "Bodegas Juan Gil",
+      "Bodegas HABLA",
+      "Félix Solís Avantis / Pagos del Rey",
+      "Rodinná lisovna s.r.o."
+    ],
+    "answer": "Bodegas Juan Gil",
+    "explanation": "Výrobcem je Bodegas Juan Gil.",
+    "sourceLabel": "Výrobce – vinařství Juan Gil",
+    "sourceUrl": "https://gilfamily.es/en/wineries/bodegas-juan-gil/"
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q8",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Honoro Vera Ecológico Monastrell 750 ml“ uvádí výrobce?",
+    "answer": "certifikované ekologické vinice",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://store.gilfamily.es/products/item/honoro_vera_ecologico/en"
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q7",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Condado de Oriza Roble 750 ml“?",
+    "options": [
+      "Bodegas HABLA",
+      "Félix Solís Avantis / Pagos del Rey",
+      "Bodegas Juan Gil",
+      "Rodinná lisovna s.r.o."
+    ],
+    "answer": "Félix Solís Avantis / Pagos del Rey",
+    "explanation": "Výrobcem je Félix Solís Avantis / Pagos del Rey.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/"
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q8",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Condado de Oriza Roble 750 ml“ uvádí výrobce?",
+    "answer": "6 měsíců v americkém dubu",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/"
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q9",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Henri Willig Gouda Chili Hot & Spicy 50+ cca 500 g“?",
+    "options": [
+      "Palancares Alimentación S.L.U.",
+      "Henri Willig Kaas B.V.",
+      "Henri Willig Kaas",
+      "Visser Kaashandel B.V."
+    ],
+    "answer": "Henri Willig Kaas",
+    "explanation": "Výrobcem je Henri Willig Kaas.",
+    "sourceLabel": "Výrobce – historie značky",
+    "sourceUrl": "https://henriwillig.com/en/about-henri-willig/"
+  },
+  {
+    "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q10",
+    "productId": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Henri Willig Gouda Chili Hot & Spicy 50+ cca 500 g“ uvádí výrobce?",
+    "answer": "6 % chilli papriček a výrazně pálivá chuť",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://henriwillig.com/en/piece-henri-willig-cow-cheese-chili-hot-and-spicy-50/"
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q7",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Datle celé bez pecky Bezva zdraví 500 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Bezva zdraví s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – o značce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/o-nas/"
+  },
+  {
+    "id": "bezva-datle-cele-500-g-q8",
+    "productId": "bezva-datle-cele-500-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Datle celé bez pecky Bezva zdraví 500 g“ uvádí výrobce?",
+    "answer": "bez přidaného cukru",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/datle-cele-bez-pecky/"
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q7",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Brusinky sušené – klikva Bezva zdraví 500 g“?",
+    "options": [
+      "Bezva zdraví s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – sortiment sušeného ovoce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce/"
+  },
+  {
+    "id": "bezva-brusinky-klikva-500-g-q8",
+    "productId": "bezva-brusinky-klikva-500-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Brusinky sušené – klikva Bezva zdraví 500 g“ uvádí výrobce?",
+    "answer": "země původu Kanada",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – sortiment sušeného ovoce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce/"
+  },
+  {
+    "id": "bezva-goji-250-g-q7",
+    "productId": "bezva-goji-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kustovnice čínská Goji Bezva zdraví 250 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – sortiment sušeného ovoce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce/"
+  },
+  {
+    "id": "bezva-goji-250-g-q8",
+    "productId": "bezva-goji-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kustovnice čínská Goji Bezva zdraví 250 g“ uvádí výrobce?",
+    "answer": "země původu Čína",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – sortiment sušeného ovoce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce/"
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q7",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Pohanková kaše natural Bezva zdraví 300 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Bezva zdraví s.r.o.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – o značce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/o-nas/"
+  },
+  {
+    "id": "bezva-pohankova-kase-natural-300-g-q8",
+    "productId": "bezva-pohankova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Pohanková kaše natural Bezva zdraví 300 g“ uvádí výrobce?",
+    "answer": "bez lepku",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/pohankova-kase-natural/"
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q7",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Rýžová kaše natural Bezva zdraví 300 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Bezva zdraví s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – o značce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/o-nas/"
+  },
+  {
+    "id": "bezva-ryzova-kase-natural-300-g-q8",
+    "productId": "bezva-ryzova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Rýžová kaše natural Bezva zdraví 300 g“ uvádí výrobce?",
+    "answer": "bez lepku",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/ryzova-kase-natural/"
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q7",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Gusto Classico mletá káva 250 g“?",
+    "options": [
+      "Miscelad’Oro S.p.A.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Miscelad’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscelad’Oro S.p.A..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/en/product/gusto-classico-ground-coffee/"
+  },
+  {
+    "id": "miscela-doro-gusto-classico-250-g-q8",
+    "productId": "miscela-doro-gusto-classico-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Gusto Classico mletá káva 250 g“ uvádí výrobce?",
+    "answer": "střední pražení",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/en/product/gusto-classico-ground-coffee/"
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q7",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kaffeebrewda Colombia El Pastelito – La Mejorana 250 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Kaffeeheimat GmbH",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Kaffeeheimat GmbH",
+    "explanation": "Výrobcem je Kaffeeheimat GmbH.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/en/products/colombia-el-pastelito-la-mejorana-coffee"
+  },
+  {
+    "id": "kaffeebrewda-colombia-el-pastelito-250-g-q8",
+    "productId": "kaffeebrewda-colombia-el-pastelito-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kaffeebrewda Colombia El Pastelito – La Mejorana 250 g“ uvádí výrobce?",
+    "answer": "převážně odrůda Castillo",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/en/products/colombia-el-pastelito-la-mejorana-coffee"
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q7",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kaffeebrewda Ethiopia Chelchele 250 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Kaffeeheimat GmbH",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Kaffeeheimat GmbH",
+    "explanation": "Výrobcem je Kaffeeheimat GmbH.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/products/aethiopien-chelchele"
+  },
+  {
+    "id": "kaffeebrewda-ethiopia-chelchele-250-g-q8",
+    "productId": "kaffeebrewda-ethiopia-chelchele-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kaffeebrewda Ethiopia Chelchele 250 g“ uvádí výrobce?",
+    "answer": "odrůdy heirloom",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/products/aethiopien-chelchele"
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q7",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Kaffeebrewda Brasil Pantano Red Ruby 250 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Kaffeeheimat GmbH"
+    ],
+    "answer": "Kaffeeheimat GmbH",
+    "explanation": "Výrobcem je Kaffeeheimat GmbH.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/en/products/brasil-pantano-red-ruby-kaffee"
+  },
+  {
+    "id": "kaffeebrewda-brasil-pantano-red-ruby-250-g-q8",
+    "productId": "kaffeebrewda-brasil-pantano-red-ruby-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Kaffeebrewda Brasil Pantano Red Ruby 250 g“ uvádí výrobce?",
+    "answer": "odrůdy Mundo Novo, Catuai a Catucai",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Pražírna – detail produktu",
+    "sourceUrl": "https://kaffeeheimat.de/en/products/brasil-pantano-red-ruby-kaffee"
+  },
+  {
+    "id": "patifu-gourmet-100-g-q7",
+    "productId": "patifu-gourmet-100-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „PÂTIFU Gourmet tofu paštika 100 g“?",
+    "options": [
+      "VETO ECO s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "VETO ECO s.r.o.",
+    "explanation": "Výrobcem je VETO ECO s.r.o..",
+    "sourceLabel": "Výrobce – produkt a složení",
+    "sourceUrl": "https://patifu.cz/"
+  },
+  {
+    "id": "patifu-gourmet-100-g-q8",
+    "productId": "patifu-gourmet-100-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „PÂTIFU Gourmet tofu paštika 100 g“ uvádí výrobce?",
+    "answer": "bez konzervantů, chemických barviv a umělých aromat",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – produkt a složení",
+    "sourceUrl": "https://patifu.cz/"
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q7",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Minor Figures Barista Oat 1 l“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Minor Figures Ltd.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Minor Figures Ltd.",
+    "explanation": "Výrobcem je Minor Figures Ltd..",
+    "sourceLabel": "Výrobce – řada Barista Oat",
+    "sourceUrl": "https://minorfigures.com/pages/barista-oat-range"
+  },
+  {
+    "id": "minor-figures-barista-oat-1-l-q8",
+    "productId": "minor-figures-barista-oat-1-l",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Minor Figures Barista Oat 1 l“ uvádí výrobce?",
+    "answer": "bez přidaného cukru",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://minorfigures.com/products/barista-oat"
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q7",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Pastificio Temporin čerstvé Tagliatelle 1 kg“?",
+    "options": [
+      "Antica Pasta Mediterranea S.r.l.",
+      "Pastificio Temporin",
+      "Pastificio Temporin S.r.l.",
+      "Rodinná lisovna s.r.o."
+    ],
+    "answer": "Pastificio Temporin S.r.l.",
+    "explanation": "Výrobcem je Pastificio Temporin S.r.l..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.pastificiotemporin.it/en/products/linea-gourmet/fresh-portioned-tagliatelle"
+  },
+  {
+    "id": "temporin-tagliatelle-1-kg-q8",
+    "productId": "temporin-tagliatelle-1-kg",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Pastificio Temporin čerstvé Tagliatelle 1 kg“ uvádí výrobce?",
+    "answer": "bronzová matrice vytváří drsnější povrch",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.pastificiotemporin.it/en/products/linea-gourmet/fresh-portioned-tagliatelle"
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q7",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „RODOPI Ayran 500 ml“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Mini Mlékárna RODOPI"
+    ],
+    "answer": "Mini Mlékárna RODOPI",
+    "explanation": "Výrobcem je Mini Mlékárna RODOPI.",
+    "sourceLabel": "Výrobce – o mlékárně",
+    "sourceUrl": "https://www.rodopi.cz/onas/"
+  },
+  {
+    "id": "rodopi-ayran-500-ml-q8",
+    "productId": "rodopi-ayran-500-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „RODOPI Ayran 500 ml“ uvádí výrobce?",
+    "answer": "původní bulharská receptura",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.rodopi.cz/produkty/ayran/"
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q7",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „RODOPI bílý jogurt z farmářského mléka 200 g“?",
+    "options": [
+      "Mini Mlékárna RODOPI",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Mini Mlékárna RODOPI",
+    "explanation": "Výrobcem je Mini Mlékárna RODOPI.",
+    "sourceLabel": "Výrobce – o mlékárně",
+    "sourceUrl": "https://www.rodopi.cz/onas/"
+  },
+  {
+    "id": "rodopi-bily-jogurt-200-g-q8",
+    "productId": "rodopi-bily-jogurt-200-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „RODOPI bílý jogurt z farmářského mléka 200 g“ uvádí výrobce?",
+    "answer": "živé symbiotické kultury",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.rodopi.cz/bile/rodopi-bily/"
+  },
+  {
+    "id": "carmen-reserva-mezcla-q7",
+    "productId": "carmen-reserva-mezcla",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Carmen Reserva Mezcla“?",
+    "options": [
+      "Henri Willig Kaas",
+      "Henri Willig Kaas B.V.",
+      "Visser Kaashandel B.V.",
+      "Palancares Alimentación S.L.U."
+    ],
+    "answer": "Palancares Alimentación S.L.U.",
+    "explanation": "Výrobcem je Palancares Alimentación S.L.U..",
+    "sourceLabel": "Výrobce – řada vyzrálých sýrů Carmen",
+    "sourceUrl": "https://granjarinya.com/los-curados/"
+  },
+  {
+    "id": "carmen-reserva-mezcla-q8",
+    "productId": "carmen-reserva-mezcla",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Carmen Reserva Mezcla“ uvádí výrobce?",
+    "answer": "mléko není před sýřením pasterované",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – řada vyzrálých sýrů Carmen",
+    "sourceUrl": "https://granjarinya.com/los-curados/"
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q7",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Bezva zdraví Banánové kousky nesířené 500 g“?",
+    "options": [
+      "Bezva zdraví s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobcem je Bezva zdraví s.r.o..",
+    "sourceLabel": "Dodavatel – sušené ovoce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce/"
+  },
+  {
+    "id": "bezva-bananove-kousky-nesirene-500-g-q8",
+    "productId": "bezva-bananove-kousky-nesirene-500-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Bezva zdraví Banánové kousky nesířené 500 g“ uvádí výrobce?",
+    "answer": "bez oxidu siřičitého",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Dodavatel – sušené ovoce",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce/"
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q7",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Pasané Gnocchi con patate 500 g“?",
+    "options": [
+      "Pastificio Temporin S.r.l.",
+      "Antica Pasta Mediterranea S.r.l.",
+      "Pastificio Temporin",
+      "Rodinná lisovna s.r.o."
+    ],
+    "answer": "Antica Pasta Mediterranea S.r.l.",
+    "explanation": "Výrobcem je Antica Pasta Mediterranea S.r.l..",
+    "sourceLabel": "Výrobce – značka Pasané",
+    "sourceUrl": "https://www.pastapasane.it/"
+  },
+  {
+    "id": "pasane-gnocchi-con-patate-500-g-q8",
+    "productId": "pasane-gnocchi-con-patate-500-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Pasané Gnocchi con patate 500 g“ uvádí výrobce?",
+    "answer": "rychlá příprava",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – značka Pasané",
+    "sourceUrl": "https://www.pastapasane.it/"
+  },
+  {
+    "id": "country-life-sul-morska-jemna-bio-q7",
+    "productId": "country-life-sul-morska-jemna-bio",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Country Life mořská sůl jemná BIO“?",
+    "options": [
+      "Fermato",
+      "Rodinná lisovna s.r.o.",
+      "COUNTRY LIFE s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "COUNTRY LIFE s.r.o.",
+    "explanation": "Výrobcem je COUNTRY LIFE s.r.o..",
+    "sourceLabel": "Výrobce – Country Life",
+    "sourceUrl": "https://www.countrylife.cz/"
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q7",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Country Life Kakao BIO 150 g“?",
+    "options": [
+      "Dr. Oetker s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "COUNTRY LIFE s.r.o."
+    ],
+    "answer": "COUNTRY LIFE s.r.o.",
+    "explanation": "Výrobcem je COUNTRY LIFE s.r.o..",
+    "sourceLabel": "Výrobce – přehled sortimentu",
+    "sourceUrl": "https://www.countrylife.cz/produkty/"
+  },
+  {
+    "id": "country-life-kakao-bio-150-g-q8",
+    "productId": "country-life-kakao-bio-150-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Country Life Kakao BIO 150 g“ uvádí výrobce?",
+    "answer": "bio kvalita",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – přehled sortimentu",
+    "sourceUrl": "https://www.countrylife.cz/produkty/"
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q7",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „BioNebio Mauritius surový třtinový cukr 500 g“?",
+    "options": [
+      "bio nebio s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "bio nebio s.r.o.",
+    "explanation": "Výrobcem je bio nebio s.r.o..",
+    "sourceLabel": "Výrobce – o značce a sortimentu",
+    "sourceUrl": "https://bionebio.cz/e-shop/superpotraviny"
+  },
+  {
+    "id": "bio-nebio-mauritius-cukr-500-g-q8",
+    "productId": "bio-nebio-mauritius-cukr-500-g",
+    "type": "flashcard",
+    "prompt": "Na jaký sortiment se zaměřuje výrobce bio nebio?",
+    "answer": "na biopotraviny a potraviny zdravé výživy",
+    "explanation": "Bio nebio se na svém webu představuje jako český dodavatel biopotravin a potravin zdravé výživy.",
+    "sourceLabel": "Výrobce – o značce a sortimentu",
+    "sourceUrl": "https://bionebio.cz/e-shop/superpotraviny"
+  },
+  {
+    "id": "henri-willig-green-pesto-q7",
+    "productId": "henri-willig-green-pesto",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Henri Willig Green Pesto“?",
+    "options": [
+      "Henri Willig Kaas",
+      "Henri Willig Kaas B.V.",
+      "Palancares Alimentación S.L.U.",
+      "Visser Kaashandel B.V."
+    ],
+    "answer": "Henri Willig Kaas B.V.",
+    "explanation": "Výrobcem je Henri Willig Kaas B.V..",
+    "sourceLabel": "Výrobce – přesná varianta",
+    "sourceUrl": "https://henriwillig.com/en/business/our-cheese/regular-cheese/cow-cheese/henri-willig-cow-green-pesto/"
+  },
+  {
+    "id": "henri-willig-green-pesto-q8",
+    "productId": "henri-willig-green-pesto",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Henri Willig Green Pesto“ uvádí výrobce?",
+    "answer": "chuť bazalky a česneku",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – přesná varianta",
+    "sourceUrl": "https://henriwillig.com/en/business/our-cheese/regular-cheese/cow-cheese/henri-willig-cow-green-pesto/"
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q7",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Huizer Kaas-Gilde Walnut Cheese“?",
+    "options": [
+      "Henri Willig Kaas",
+      "Palancares Alimentación S.L.U.",
+      "Visser Kaashandel B.V.",
+      "Henri Willig Kaas B.V."
+    ],
+    "answer": "Visser Kaashandel B.V.",
+    "explanation": "Výrobcem je Visser Kaashandel B.V..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://visser-kaas.nl/product/walnotenkaas-50/"
+  },
+  {
+    "id": "huizer-kaas-gilde-walnut-cheese-q8",
+    "productId": "huizer-kaas-gilde-walnut-cheese",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Huizer Kaas-Gilde Walnut Cheese“ uvádí výrobce?",
+    "answer": "zrání přibližně 4 až 6 týdnů",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://visser-kaas.nl/product/walnotenkaas-50/"
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q7",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Le Petit Savoyard Saucisson Sec Noix 200 g“?",
+    "options": [
+      "Martínez Somalo",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Henri Raffin / Groupe Arpitan"
+    ],
+    "answer": "Henri Raffin / Groupe Arpitan",
+    "explanation": "Výrobcem je Henri Raffin / Groupe Arpitan.",
+    "sourceLabel": "Výrobce – produkt a značka",
+    "sourceUrl": "https://www.le-petit-savoyard.com/"
+  },
+  {
+    "id": "le-petit-savoyard-saucisson-noix-200-g-q8",
+    "productId": "le-petit-savoyard-saucisson-noix-200-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Le Petit Savoyard Saucisson Sec Noix 200 g“ uvádí výrobce?",
+    "answer": "pomalé zrání v Savojsku",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – produkt a značka",
+    "sourceUrl": "https://www.le-petit-savoyard.com/"
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q7",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives Sencha 15 sáčků“?",
+    "options": [
+      "Juice Solutions International B.V.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-sencha/"
+  },
+  {
+    "id": "teahouse-exclusives-sencha-15-q8",
+    "productId": "teahouse-exclusives-sencha-15",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives Sencha 15 sáčků“ uvádí výrobce?",
+    "answer": "jemně svíravý a lehce nasládlý chuťový profil",
+    "explanation": "Produktová stránka značky popisuje jemně svíravý a lehce nasládlý profil čaje Sencha.",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-sencha/"
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q7",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives Gunpowder Mint 15 sáčků“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Juice Solutions International B.V.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-gunpowder-mint/"
+  },
+  {
+    "id": "teahouse-exclusives-gunpowder-mint-15-q8",
+    "productId": "teahouse-exclusives-gunpowder-mint-15",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives Gunpowder Mint 15 sáčků“ uvádí výrobce?",
+    "answer": "osvěžující mátová chuť",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-gunpowder-mint/"
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q7",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives English Breakfast 15 sáčků“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Juice Solutions International B.V.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-english-breakfast/"
+  },
+  {
+    "id": "teahouse-exclusives-english-breakfast-15-q8",
+    "productId": "teahouse-exclusives-english-breakfast-15",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives English Breakfast 15 sáčků“ uvádí výrobce?",
+    "answer": "plná a silnější chuť",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-english-breakfast/"
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q7",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives Jasmine 15 sáčků“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Juice Solutions International B.V."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-jasmine/"
+  },
+  {
+    "id": "teahouse-exclusives-jasmine-15-q8",
+    "productId": "teahouse-exclusives-jasmine-15",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives Jasmine 15 sáčků“ uvádí výrobce?",
+    "answer": "jemná květinová vůně jasmínu",
+    "explanation": "Produktová stránka značky zdůrazňuje jemnou květinovou vůni jasmínu.",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-jasmine/"
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q7",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives Pure Camomile 15 sáčků“?",
+    "options": [
+      "Juice Solutions International B.V.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-pure-camomile/"
+  },
+  {
+    "id": "teahouse-exclusives-pure-camomile-15-q8",
+    "productId": "teahouse-exclusives-pure-camomile-15",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives Pure Camomile 15 sáčků“ uvádí výrobce?",
+    "answer": "bez čajovníku a přirozeně bez kofeinu",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-luxury-pure-camomile/"
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q7",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Teahouse Exclusives Rooibos Vanilla 15 sáčků“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Juice Solutions International B.V.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Juice Solutions International B.V.",
+    "explanation": "Výrobcem je Juice Solutions International B.V..",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-rooibos-vanilla/"
+  },
+  {
+    "id": "teahouse-exclusives-rooibos-vanilla-15-q8",
+    "productId": "teahouse-exclusives-rooibos-vanilla-15",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Teahouse Exclusives Rooibos Vanilla 15 sáčků“ uvádí výrobce?",
+    "answer": "přirozeně bez kofeinu",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Značka – detail produktu",
+    "sourceUrl": "https://www.teahouseexclusives.nl/product/teahouse-exclusives-rooibos-vanilla/"
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q7",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Espresso zrnková káva 250 g“?",
+    "options": [
+      "Nutis S.r.l.",
+      "Miscela d’Oro S.p.A.",
+      "Miscelad’Oro S.p.A.",
+      "Kaffeebrewda / Erik Brockholz"
+    ],
+    "answer": "Miscelad’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscelad’Oro S.p.A..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-in-grani-espresso-barattolo/"
+  },
+  {
+    "id": "miscela-doro-espresso-zrnkova-250-g-q8",
+    "productId": "miscela-doro-espresso-zrnkova-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Espresso zrnková káva 250 g“ uvádí výrobce?",
+    "answer": "střední pražení",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-in-grani-espresso-barattolo/"
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q7",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Espresso mletá káva 250 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Miscelad’Oro S.p.A."
+    ],
+    "answer": "Miscelad’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscelad’Oro S.p.A..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso/"
+  },
+  {
+    "id": "miscela-doro-espresso-mleta-250-g-q8",
+    "productId": "miscela-doro-espresso-mleta-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Espresso mletá káva 250 g“ uvádí výrobce?",
+    "answer": "střední pražení",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso/"
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q7",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Espresso Decaffeinato mletá káva 250 g“?",
+    "options": [
+      "Miscelad’Oro S.p.A.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Miscelad’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscelad’Oro S.p.A..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso-decaffeinato/"
+  },
+  {
+    "id": "miscela-doro-espresso-decaffeinato-250-g-q8",
+    "productId": "miscela-doro-espresso-decaffeinato-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Espresso Decaffeinato mletá káva 250 g“ uvádí výrobce?",
+    "answer": "kofein nejvýše 0,10 %",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.misceladoro.com/prodotto/caffe-macinato-espresso-decaffeinato/"
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q7",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Vilgain Protein Milkshake kakao 330 ml“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Vilgain s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobcem je Vilgain s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-protein-milkshake"
+  },
+  {
+    "id": "vilgain-protein-milkshake-kakao-330-ml-q8",
+    "productId": "vilgain-protein-milkshake-kakao-330-ml",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Vilgain Protein Milkshake kakao 330 ml“ uvádí výrobce?",
+    "answer": "bez přidaných konzervantů",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-protein-milkshake"
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q7",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „BioNebio Čekankový sirup 450 g“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "bio nebio s.r.o.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "bio nebio s.r.o.",
+    "explanation": "Výrobcem je bio nebio s.r.o..",
+    "sourceLabel": "Výrobce – o značce a sortimentu",
+    "sourceUrl": "https://bionebio.cz/e-shop/superpotraviny"
+  },
+  {
+    "id": "bio-nebio-cekankovy-sirup-450-g-q8",
+    "productId": "bio-nebio-cekankovy-sirup-450-g",
+    "type": "flashcard",
+    "prompt": "Na jaký sortiment se zaměřuje výrobce bio nebio?",
+    "answer": "na biopotraviny a potraviny zdravé výživy",
+    "explanation": "Bio nebio se na svém webu představuje jako český dodavatel biopotravin a potravin zdravé výživy.",
+    "sourceLabel": "Výrobce – o značce a sortimentu",
+    "sourceUrl": "https://bionebio.cz/e-shop/superpotraviny"
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q7",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Black Armonia 10 kapslí“?",
+    "options": [
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o.",
+      "Miscelad’Oro S.p.A."
+    ],
+    "answer": "Miscelad’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscelad’Oro S.p.A..",
+    "sourceLabel": "Výrobce – řada kapslí",
+    "sourceUrl": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+  },
+  {
+    "id": "miscela-doro-black-armonia-10-kapsli-q8",
+    "productId": "miscela-doro-black-armonia-10-kapsli",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Black Armonia 10 kapslí“ uvádí výrobce?",
+    "answer": "plné tělo, hladká chuť a sametová crema",
+    "explanation": "Výrobce u varianty Black Armonia zdůrazňuje plné tělo, hladkou chuť a sametovou cremu.",
+    "sourceLabel": "Výrobce – řada kapslí",
+    "sourceUrl": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q7",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Miscela d’Oro Blue Leggerezza Dec 10 kapslí“?",
+    "options": [
+      "Miscelad’Oro S.p.A.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Miscelad’Oro S.p.A.",
+    "explanation": "Výrobcem je Miscelad’Oro S.p.A..",
+    "sourceLabel": "Výrobce – řada kapslí",
+    "sourceUrl": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+  },
+  {
+    "id": "miscela-doro-blue-leggerezza-dec-10-kapsli-q8",
+    "productId": "miscela-doro-blue-leggerezza-dec-10-kapsli",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Miscela d’Oro Blue Leggerezza Dec 10 kapslí“ uvádí výrobce?",
+    "answer": "výrazné aroma a příjemná dochuť bez kofeinu",
+    "explanation": "Výrobce variantu Blue Leggerezza popisuje jako bezkofeinovou kávu s výrazným aromatem a příjemnou dochutí.",
+    "sourceLabel": "Výrobce – řada kapslí",
+    "sourceUrl": "https://www.misceladoro.com/capsule-caffe/compatibili-nespresso/"
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q7",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „La Gloria Riojana Salchichón Sarta Extra 230 g“?",
+    "options": [
+      "Henri Raffin / Groupe Arpitan",
+      "Martínez Somalo",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Martínez Somalo",
+    "explanation": "Výrobcem je Martínez Somalo.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://tienda.martinezsomalo.com/product/salchichon-sarta-extra-230-g-la-gloria-riojana/"
+  },
+  {
+    "id": "la-gloria-riojana-salchichon-sarta-230-g-q8",
+    "productId": "la-gloria-riojana-salchichon-sarta-230-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „La Gloria Riojana Salchichón Sarta Extra 230 g“ uvádí výrobce?",
+    "answer": "tvar podkovy – sarta",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://tienda.martinezsomalo.com/product/salchichon-sarta-extra-230-g-la-gloria-riojana/"
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q7",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Pastificio Temporin Tortellini Prosciutto Crudo 250 g“?",
+    "options": [
+      "Pastificio Temporin S.r.l.",
+      "Antica Pasta Mediterranea S.r.l.",
+      "Pastificio Temporin",
+      "Rodinná lisovna s.r.o."
+    ],
+    "answer": "Pastificio Temporin",
+    "explanation": "Výrobcem je Pastificio Temporin.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.pastificiotemporin.it/en/products/linea-gourmet/tortellini-al-prosciutto-crudo"
+  },
+  {
+    "id": "temporin-tortellini-prosciutto-crudo-250-g-q8",
+    "productId": "temporin-tortellini-prosciutto-crudo-250-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Pastificio Temporin Tortellini Prosciutto Crudo 250 g“ uvádí výrobce?",
+    "answer": "čerstvé plněné vaječné těstoviny",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.pastificiotemporin.it/en/products/linea-gourmet/tortellini-al-prosciutto-crudo"
+  },
+  {
+    "id": "fermato-simrato-150-g-q7",
+    "productId": "fermato-simrato-150-g",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Fermato Šimráto kořenicí směs 150 g“?",
+    "options": [
+      "COUNTRY LIFE s.r.o.",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "Fermato"
+    ],
+    "answer": "Fermato",
+    "explanation": "Výrobcem je Fermato.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.fermato.cz/korenici-smes-simrato/"
+  },
+  {
+    "id": "fermato-simrato-150-g-q8",
+    "productId": "fermato-simrato-150-g",
+    "type": "flashcard",
+    "prompt": "Jakou důležitou vlastnost produktu „Fermato Šimráto kořenicí směs 150 g“ uvádí výrobce?",
+    "answer": "vhodné pro vegany",
+    "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.fermato.cz/korenici-smes-simrato/"
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q7",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "mcq",
+    "prompt": "Který výrobce stojí za produktem „Fermato MAD BBQ Salsa Verde 200 ml“?",
+    "options": [
+      "Fermato",
+      "Rodinná lisovna s.r.o.",
+      "Alis S.r.l.",
+      "MELEMEMASO s.r.o."
+    ],
+    "answer": "Fermato",
+    "explanation": "Výrobcem je Fermato.",
+    "sourceLabel": "Výrobce – použití Salsa Verde",
+    "sourceUrl": "https://www.fermato.cz/kovbojsky-set/"
+  },
+  {
+    "id": "fermato-mad-bbq-salsa-verde-200-ml-q8",
+    "productId": "fermato-mad-bbq-salsa-verde-200-ml",
+    "type": "flashcard",
+    "prompt": "Které dvě suroviny výrobce zdůrazňuje u Fermato Salsa Verde?",
+    "answer": "fermentované jalapeño a tomatillos",
+    "explanation": "Výrobce popisuje omáčku Salsa Verde jako spojení fermentovaných papriček jalapeño a tomatillos.",
+    "sourceLabel": "Výrobce – použití Salsa Verde",
+    "sourceUrl": "https://www.fermato.cz/kovbojsky-set/"
   }
 ]
