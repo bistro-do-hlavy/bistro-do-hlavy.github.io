@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.29';
-import { contentProvider } from '../content.js?v=1.0.29';
-import { storage } from '../storage.js?v=1.0.29';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.29';
+import { CONFIG } from '../config.js?v=1.0.30';
+import { contentProvider } from '../content.js?v=1.0.30';
+import { storage } from '../storage.js?v=1.0.30';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.30';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.29';
+} from '../study.js?v=1.0.30';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -21,12 +21,12 @@ const ALLERGENS = {
   11: 'Sezam', 12: 'Oxid siřičitý a siřičitany', 13: 'Vlčí bob', 14: 'Měkkýši',
 };
 
-const TYPE_LABELS = { mcq: 'Výběr', flashcard: 'Kartička', text: 'Napsat', photo: 'Fotka' };
+const TYPE_LABELS = { mcq: 'Výběr', flashcard: 'Kartička', text: 'Napsat', photo: 'Foto výzva' };
 const QUESTION_TYPE_SETTINGS = [
   { id: 'mcq', label: 'Výběr z možností', description: 'Jedna správná odpověď ze čtyř.' },
   { id: 'flashcard', label: 'Kartičky', description: 'Odpověď si vybavíte a sami ohodnotíte.' },
   { id: 'text', label: 'Napsat odpověď', description: 'Odpověď napíšete vlastními slovy.' },
-  { id: 'photo', label: 'Poznat z fotky', description: 'Produkt určíte podle fotografie.' },
+  { id: 'photo', label: 'Foto výzva', description: 'Podle fotografie určíte kategorii, výrobce nebo vlastnost.' },
 ];
 const GLOSSARY = [
   { id: 'aeropress', label: 'AeroPress', matches: ['AeroPress', 'Aeropress'], definition: 'Ruční pomůcka pro přípravu kávy, která protlačí vodu a kávu přes papírový nebo kovový filtr pomocí pístu.' },
@@ -230,7 +230,7 @@ function renderHome() {
     enabledProductIds: selectedProductIds(),
   });
   const enabledProductIds = new Set(selectedProductIds());
-  const recognitionCount = state.questions.filter((question) => question.type === 'photo' && enabledProductIds.has(question.productId)).length;
+  const recognitionCount = photoChallengeQuestions().filter((question) => enabledProductIds.has(question.productId)).length;
   const comparisonCount = comparisonQuestions().length;
   app.innerHTML = `
     <section class="page">
@@ -258,7 +258,7 @@ function renderHome() {
       <div class="training-modes-grid">
         <article class="training-mode-card training-mode-photo">
           <span class="training-mode-icon" aria-hidden="true">◎</span>
-          <div><p class="eyebrow">Bez názvu jako nápovědy</p><h2>Poznej produkt</h2><p>Určete produkt podle fotografie a potom si upevněte výrobce, kategorii a hlavní vlastnost.</p></div>
+          <div><p class="eyebrow">Fotografie jako kontext</p><h2>Foto výzva</h2><p>Odpovídejte na otázky o kategorii, výrobci a vlastnostech. Čitelný název na obalu už není odpovědí.</p></div>
           <button id="start-recognition" class="button button-secondary button-full" type="button" ${recognitionCount ? '' : 'disabled'}>Spustit · ${Math.min(10, recognitionCount)}</button>
         </article>
         <article class="training-mode-card training-mode-compare">
@@ -685,12 +685,103 @@ function startWeakStudy(queue = null) {
 
 function startRecognitionStudy() {
   const enabledProducts = new Set(selectedProductIds());
-  const queue = shuffledCopy(state.questions.filter((question) => question.type === 'photo' && enabledProducts.has(question.productId))).slice(0, 10);
+  const available = photoChallengeQuestions().filter((question) => enabledProducts.has(question.productId));
+  const groups = shuffledCopy([...new Set(available.map((question) => question.productId))]).slice(0, 5);
+  const queue = groups.flatMap((productId) => shuffledCopy(available.filter((question) => question.productId === productId)).slice(0, 2));
+  if (queue.length < 10) {
+    const selectedIds = new Set(queue.map((question) => question.id));
+    queue.push(...shuffledCopy(available.filter((question) => !selectedIds.has(question.id))).slice(0, 10 - queue.length));
+  }
   if (!queue.length) {
-    showToast('Pro vybrané produkty nejsou dostupné fotografie.');
+    showToast('Pro vybrané produkty nejsou dostupné fotografické otázky.');
     return;
   }
   startStudySession(queue, 'recognition');
+}
+
+function categoryFamily(category) {
+  const value = normalizeText(category);
+  const groups = [
+    ['kava', 'kavove'],
+    ['sirup', 'sladid', 'cukr'],
+    ['syr', 'jogurt', 'mlecne'],
+    ['olej', 'oct', 'omack', 'ochucovad', 'koreni', 'sul'],
+    ['testovin', 'mouka'],
+    ['gran', 'musli', 'kase', 'susene ovoce'],
+    ['vino', 'lihovin'],
+    ['vejce', 'maso', 'uzenin', 'pastik'],
+    ['caj', 'napoj'],
+  ];
+  return groups.findIndex((keywords) => keywords.some((keyword) => value.includes(keyword)));
+}
+
+function createCategoryPhotoChallenge(photoQuestion) {
+  const product = state.products.find((item) => item.id === photoQuestion.productId);
+  if (!product) return null;
+  const family = categoryFamily(product.category);
+  const categories = [...new Set(state.products.map((item) => item.category))]
+    .filter((category) => category !== product.category)
+    .sort((a, b) => Number(categoryFamily(b) === family) - Number(categoryFamily(a) === family) || a.localeCompare(b, 'cs'));
+  return {
+    ...photoQuestion,
+    format: 'photo-challenge',
+    prompt: 'Do které kategorie tento produkt patří?',
+    options: [product.category, ...categories.slice(0, 3)],
+    answer: product.category,
+    explanation: `Produkt je v katalogu zařazený v kategorii ${product.category}.`,
+  };
+}
+
+function createManufacturerPhotoChallenge(question) {
+  const product = state.products.find((item) => item.id === question.productId);
+  if (!product || !Array.isArray(question.options)) return null;
+  return {
+    ...question,
+    type: 'photo',
+    format: 'photo-challenge',
+    image: product.image,
+    prompt: 'Kdo tento produkt vyrábí?',
+  };
+}
+
+function createPropertyPhotoChallenge(question) {
+  const product = state.products.find((item) => item.id === question.productId);
+  if (!product || typeof question.answer !== 'string') return null;
+  const family = categoryFamily(product.category);
+  const candidates = state.questions.filter((item) => item.id !== question.id
+    && item.type === 'flashcard'
+    && item.sourceUrl
+    && typeof item.answer === 'string'
+    && !/na jaký sortiment|na jakou tradici/i.test(item.prompt))
+    .sort((a, b) => {
+      const aProduct = state.products.find((item) => item.id === a.productId);
+      const bProduct = state.products.find((item) => item.id === b.productId);
+      return Number(categoryFamily(bProduct?.category || '') === family) - Number(categoryFamily(aProduct?.category || '') === family);
+    });
+  const distractors = [...new Set(candidates.map((item) => item.answer).filter((answer) => answer !== question.answer))].slice(0, 3);
+  if (distractors.length < 3) return null;
+  return {
+    ...question,
+    type: 'photo',
+    format: 'photo-challenge',
+    image: product.image,
+    prompt: 'Které tvrzení o tomto produktu je správné?',
+    options: [question.answer, ...distractors],
+  };
+}
+
+function photoChallengeQuestions() {
+  const challenges = [];
+  for (const product of state.products) {
+    const questions = state.questions.filter((question) => question.productId === product.id);
+    const photo = questions.find((question) => question.type === 'photo');
+    if (photo) challenges.push(createCategoryPhotoChallenge(photo));
+    const manufacturer = questions.find((question) => question.type === 'mcq' && question.sourceUrl && /který výrobce stojí za produktem/i.test(question.prompt));
+    if (manufacturer) challenges.push(createManufacturerPhotoChallenge(manufacturer));
+    const property = questions.find((question) => question.type === 'flashcard' && question.sourceUrl && !/na jaký sortiment|na jakou tradici/i.test(question.prompt));
+    if (property) challenges.push(createPropertyPhotoChallenge(property));
+  }
+  return challenges.filter(Boolean);
 }
 
 function comparisonQuestions() {
@@ -766,7 +857,8 @@ function startTopicStudy(category) {
 }
 
 function startStudySession(queue, mode) {
-  state.session = { queue: [...queue], index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mode };
+  const preparedQueue = queue.map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
+  state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mode };
   state.currentView = 'study';
   setActiveNav('');
   renderQuestion();
@@ -814,8 +906,8 @@ function renderQuestion() {
   state.session.revealed = false;
   const product = state.products.find((item) => item.id === question.productId);
   const image = question.type === 'photo' ? `<img class="question-image" src="${question.image}" alt="Produkt k poznání">` : '';
-  const productHint = question.type === 'photo' ? 'Bez názvu jako nápovědy' : question.format === 'comparison' ? 'Podobné produkty' : product.name;
-  const typeLabel = question.format === 'comparison' ? 'Porovnání' : question.type === 'photo' ? 'Poznej produkt' : TYPE_LABELS[question.type];
+  const productHint = question.type === 'photo' ? 'Název na obalu není odpověď' : question.format === 'comparison' ? 'Podobné produkty' : product.name;
+  const typeLabel = question.format === 'comparison' ? 'Porovnání' : TYPE_LABELS[question.type];
   let control = '';
   if (question.type === 'mcq' || question.type === 'photo') {
     control = `<div class="options">${shuffledOptions(question).map((option) => `<button class="option" type="button" data-option="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join('')}</div>`;
@@ -930,7 +1022,7 @@ function renderSummary() {
   const accuracy = answers.length ? Math.round(correct / answers.length * 100) : 0;
   const misses = Object.entries(answers.filter((item) => !item.correct).reduce((acc, item) => ({ ...acc, [item.productId]: (acc[item.productId] || 0) + 1 }), {})).sort((a, b) => b[1] - a[1]);
   const problem = misses.length ? state.products.find((product) => product.id === misses[0][0])?.name : 'Žádný — skvělá práce';
-  const summaryLabel = state.session.mode === 'recognition' ? 'Poznávání dokončeno' : state.session.mode === 'comparison' ? 'Porovnávání dokončeno' : 'Dávka dokončena';
+  const summaryLabel = state.session.mode === 'recognition' ? 'Foto výzva dokončena' : state.session.mode === 'comparison' ? 'Porovnávání dokončeno' : 'Dávka dokončena';
   app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">${summaryLabel}</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
     <div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>
