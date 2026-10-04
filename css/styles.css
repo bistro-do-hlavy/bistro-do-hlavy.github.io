@@ -237,9 +237,13 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .recognition-facts dt { color: var(--muted); font-size: .74rem; font-weight: 750; }
 .recognition-facts dd { margin: 0; font-size: .82rem; font-weight: 700; }
 .options { display: grid; gap: .65rem; }
-.option { min-height: 3.5rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--bg); padding: .8rem 1rem; text-align: left; cursor: pointer; font-weight: 700; }
+.option { position: relative; min-height: 3.5rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: .7rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--bg); padding: .8rem 1rem; text-align: left; cursor: pointer; font-weight: 700; }
+.option::after { width: 1.55rem; height: 1.55rem; display: grid; place-items: center; border-radius: 50%; font-size: 1rem; font-weight: 900; }
+.option.is-correct::after { content: "✓"; background: var(--brand); color: white; }
+.option.is-wrong::after { content: "×"; background: var(--danger); color: white; }
 .option.is-correct { border-color: var(--brand); background: color-mix(in srgb, var(--brand) 14%, var(--surface)); color: var(--brand); }
 .option.is-wrong { border-color: var(--danger); background: color-mix(in srgb, var(--danger) 11%, var(--surface)); color: var(--danger); }
+.option.is-dimmed { opacity: .48; }
 .text-answer { width: 100%; margin-bottom: .7rem; }
 .answer-panel { margin-top: 1rem; border-radius: 1rem; padding: 1rem; background: var(--surface-soft); border-left: .32rem solid var(--brand); }
 .answer-panel.is-wrong { border-left-color: var(--danger); }
@@ -248,8 +252,35 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .answer-source { display: inline-flex; align-items: center; min-height: 2.5rem; margin-top: .55rem; color: var(--brand); font-size: .84rem; font-weight: 750; text-decoration: none; }
 .answer-source:hover { text-decoration: underline; }
 .answer-explanation { color: var(--muted); font-size: .9rem; }
-.rating-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .45rem; margin-top: 1rem; }
-.rating { min-height: 3.6rem; border: 0; border-radius: .9rem; padding: .45rem .2rem; background: var(--surface-soft); cursor: pointer; font-size: .76rem; font-weight: 850; }
+.result-card { display: grid; gap: .85rem; margin-top: 1rem; border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; background: var(--surface-soft); }
+.result-card.is-correct { border-color: color-mix(in srgb, var(--brand) 45%, var(--line)); }
+.result-card.is-wrong { border-color: color-mix(in srgb, var(--danger) 50%, var(--line)); }
+.result-heading { display: flex; align-items: center; gap: .7rem; }
+.result-heading small, .result-heading strong { display: block; }
+.result-heading small { color: var(--muted); font-size: .68rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.result-heading strong { margin-top: .08rem; font-size: 1.1rem; }
+.result-icon { width: 2.35rem; height: 2.35rem; display: grid; place-items: center; border-radius: 50%; background: var(--brand); color: white; font-size: 1.35rem; font-weight: 900; }
+.result-card.is-wrong .result-icon { background: var(--danger); }
+.result-card.is-revealed .result-icon { background: var(--lime); color: var(--lime-ink); }
+.answer-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; }
+.result-answer { min-width: 0; border: 1px solid var(--line); border-radius: .9rem; padding: .75rem; background: var(--surface); }
+.result-answer span, .result-answer strong { display: block; }
+.result-answer span { margin-bottom: .25rem; color: var(--muted); font-size: .68rem; font-weight: 750; text-transform: uppercase; }
+.result-answer strong { overflow-wrap: anywhere; font-size: .88rem; line-height: 1.3; }
+.result-answer-correct { border-color: color-mix(in srgb, var(--brand) 45%, var(--line)); }
+.result-answer-wrong { border-color: color-mix(in srgb, var(--danger) 45%, var(--line)); }
+.result-explanation { padding-top: .75rem; border-top: 1px solid var(--line); }
+.result-explanation > strong { font-size: .78rem; }
+.result-explanation p { margin: .25rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.45; }
+.memory-details { border-top: 1px solid var(--line); padding-top: .35rem; }
+.memory-details summary { display: flex; align-items: center; justify-content: space-between; min-height: 2.6rem; cursor: pointer; color: var(--brand); font-size: .84rem; font-weight: 800; list-style: none; }
+.memory-details summary::-webkit-details-marker { display: none; }
+.memory-details summary span { transition: transform .18s; }
+.memory-details[open] summary span { transform: rotate(180deg); }
+.result-next { margin-top: .8rem; }
+.rating-question { margin: 1rem 0 .45rem; font-weight: 800; }
+.rating-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .55rem; margin-top: .55rem; }
+.rating { min-height: 4.25rem; border: 1px solid var(--line); border-radius: .9rem; padding: .55rem .4rem; background: var(--surface-soft); cursor: pointer; font-size: .76rem; font-weight: 850; line-height: 1.2; }
 .rating small { display: block; color: var(--muted); font-weight: 500; font-size: .65rem; }
 .rating-again { color: var(--danger); }
 .rating-easy { color: var(--brand); }
@@ -263,6 +294,11 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .summary-stats strong, .summary-stats span { display: block; }
 .summary-stats strong { font-size: 1.25rem; }
 .summary-stats span { color: var(--muted); font-size: .7rem; }
+.missed-review { border: 1px solid color-mix(in srgb, var(--danger) 35%, var(--line)); border-radius: 1rem; padding: 1rem; background: color-mix(in srgb, var(--danger) 5%, var(--surface)); text-align: left; }
+.missed-review > strong { display: block; margin-bottom: .55rem; }
+.missed-review ul { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.missed-review li { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .82rem; }
+.missed-review li strong { color: var(--danger); }
 
 .dialog { width: min(calc(100% - 1.5rem), 34rem); border: 1px solid var(--line); border-radius: 1.5rem; color: var(--ink); background: var(--surface); padding: 1.35rem; box-shadow: var(--shadow); }
 .dialog::backdrop { background: rgba(3, 17, 13, .62); backdrop-filter: blur(4px); }

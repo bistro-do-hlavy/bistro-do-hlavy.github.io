@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.30';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.30';
+import { CONFIG } from './config.js?v=1.0.31';
+import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.31';
 
 export function normalizeText(value) {
   return String(value ?? '')
@@ -208,5 +208,10 @@ export function buildStudyQueue({
 }
 
 export function ratingLabel(rating) {
-  return ({ [RATINGS.AGAIN]: 'Znovu', [RATINGS.HARD]: 'Těžké', [RATINGS.GOOD]: 'Dobré', [RATINGS.EASY]: 'Snadné' })[rating];
+  return ({
+    [RATINGS.AGAIN]: 'Nevěděl jsem',
+    [RATINGS.HARD]: 'Vzpomněl jsem si těžko',
+    [RATINGS.GOOD]: 'Věděl jsem',
+    [RATINGS.EASY]: 'Bylo to snadné',
+  })[rating];
 }

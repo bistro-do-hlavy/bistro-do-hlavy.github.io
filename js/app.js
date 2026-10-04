@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.30';
-import { contentProvider } from '../content.js?v=1.0.30';
-import { storage } from '../storage.js?v=1.0.30';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.30';
+import { CONFIG } from '../config.js?v=1.0.31';
+import { contentProvider } from '../content.js?v=1.0.31';
+import { storage } from '../storage.js?v=1.0.31';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.31';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.30';
+} from '../study.js?v=1.0.31';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -887,17 +887,19 @@ function comparisonPreview(question) {
   }).join('')}</div>`;
 }
 
-function productAnswerFacts(question) {
-  if (question.type !== 'photo') return '';
+function memorableSpecific(product) {
+  return product.specifics?.find((item) => !/^(?:cca\s*)?\d+[,.]?\d*\s*(?:g|kg|ml|l|ks|kusů|sáčků|kapslí)\b/i.test(item) && !/^ean\b/i.test(item)) || product.specifics?.[0];
+}
+
+function memoryDetails(question) {
   const product = state.products.find((item) => item.id === question.productId);
   if (!product) return '';
-  const memorableSpecific = product.specifics?.find((item) => !/^(?:cca\s*)?\d+[,.]?\d*\s*(?:g|kg|ml|l|ks|kusů|sáčků|kapslí)\b/i.test(item) && !/^ean\b/i.test(item)) || product.specifics?.[0];
   const facts = [
     ['Výrobce', product.manufacturer],
     ['Kategorie', product.category],
-    ['Zapamatovat si', memorableSpecific],
+    ['Hlavní údaj', memorableSpecific(product)],
   ].filter(([, value]) => value);
-  return `<dl class="recognition-facts">${facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>`;
+  return `<details class="memory-details"><summary>Zapamatovat si <span aria-hidden="true">⌄</span></summary><dl class="recognition-facts">${facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl></details>`;
 }
 
 function renderQuestion() {
@@ -937,9 +939,18 @@ function questionSourceLink(question) {
   return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
 }
 
-function showFeedback({ correct, answer, explanation, question }) {
+function showFeedback({ correct, selected, answer, explanation, question }) {
   const panel = document.querySelector('#feedback');
-  panel.innerHTML = `<div class="answer-panel ${correct ? '' : 'is-wrong'}"><strong>${correct ? 'Správně' : 'Správná odpověď'}</strong><p>${escapeHtml(answer)}</p><p class="answer-explanation">${escapeHtml(explanation)}</p>${productAnswerFacts(question)}${questionSourceLink(question)}</div><button id="next" class="button button-primary button-full" style="margin-top:.8rem" type="button">Pokračovat</button>`;
+  const answerValue = Array.isArray(answer) ? answer.join(', ') : answer;
+  const answerSummary = correct
+    ? `<div class="result-answer result-answer-correct"><span>Správná odpověď</span><strong>${escapeHtml(answerValue)}</strong></div>`
+    : `<div class="answer-comparison"><div class="result-answer result-answer-wrong"><span>Vaše odpověď</span><strong>${escapeHtml(selected || 'Bez odpovědi')}</strong></div><div class="result-answer result-answer-correct"><span>Správná odpověď</span><strong>${escapeHtml(answerValue)}</strong></div></div>`;
+  panel.innerHTML = `<section class="result-card ${correct ? 'is-correct' : 'is-wrong'}" role="status">
+    <div class="result-heading"><span class="result-icon" aria-hidden="true">${correct ? '✓' : '×'}</span><div><small>Výsledek</small><strong>${correct ? 'Správně' : 'Zatím ne'}</strong></div></div>
+    ${answerSummary}
+    <div class="result-explanation"><strong>Proč?</strong><p>${escapeHtml(explanation)}</p></div>
+    ${memoryDetails(question)}${questionSourceLink(question)}
+  </section><button id="next" class="button button-primary button-full result-next" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
 }
 
@@ -950,11 +961,20 @@ async function answerChoice(selected) {
   const correct = selected === question.answer;
   document.querySelectorAll('.option').forEach((button) => {
     button.disabled = true;
-    if (button.dataset.option === question.answer) button.classList.add('is-correct');
-    if (button.dataset.option === selected && !correct) button.classList.add('is-wrong');
+    const isAnswer = button.dataset.option === question.answer;
+    const isSelectedWrong = button.dataset.option === selected && !correct;
+    if (isAnswer) {
+      button.classList.add('is-correct');
+      button.setAttribute('aria-label', `${button.textContent} – správná odpověď`);
+    } else if (isSelectedWrong) {
+      button.classList.add('is-wrong');
+      button.setAttribute('aria-label', `${button.textContent} – vaše chybná odpověď`);
+    } else {
+      button.classList.add('is-dimmed');
+    }
   });
   await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct);
-  showFeedback({ correct, answer: question.answer, explanation: question.explanation, question });
+  showFeedback({ correct, selected, answer: question.answer, explanation: question.explanation, question });
 }
 
 async function answerText(input) {
@@ -964,7 +984,7 @@ async function answerText(input) {
   const result = evaluateText(input, question.answer);
   document.querySelector('#text-form').querySelectorAll('input,button').forEach((element) => { element.disabled = true; });
   await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct);
-  showFeedback({ correct: result.correct, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question });
+  showFeedback({ correct: result.correct, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question });
 }
 
 function revealFlashcard() {
@@ -972,8 +992,12 @@ function revealFlashcard() {
   state.session.revealed = true;
   const question = currentQuestion();
   const intervals = getIntervals(state.progress[question.id]);
-  document.querySelector('#answer-area').innerHTML = `<div class="answer-panel"><strong>Odpověď</strong><p>${escapeHtml(question.answer)}</p><p class="answer-explanation">${escapeHtml(question.explanation)}</p>${questionSourceLink(question)}</div>
-    <p style="font-weight:750;margin:1rem 0 .4rem">Jak dobře jste si vzpomněli?</p>
+  document.querySelector('#answer-area').innerHTML = `<section class="result-card is-revealed">
+    <div class="result-heading"><span class="result-icon" aria-hidden="true">→</span><div><small>Kartička</small><strong>Odpověď</strong></div></div>
+    <div class="result-answer result-answer-correct"><span>Správná odpověď</span><strong>${escapeHtml(question.answer)}</strong></div>
+    <div class="result-explanation"><strong>Proč?</strong><p>${escapeHtml(question.explanation)}</p></div>
+    ${memoryDetails(question)}${questionSourceLink(question)}</section>
+    <p class="rating-question">Jak dobře jste si vzpomněli?</p>
     <div class="rating-grid">${[RATINGS.AGAIN, RATINGS.HARD, RATINGS.GOOD, RATINGS.EASY].map((rating) => `<button class="rating ${rating === RATINGS.AGAIN ? 'rating-again' : rating === RATINGS.EASY ? 'rating-easy' : ''}" type="button" data-rating="${rating}">${ratingLabel(rating)}<small>${formatInterval(intervals[rating])}</small></button>`).join('')}</div>`;
   document.querySelectorAll('[data-rating]').forEach((button) => button.addEventListener('click', async () => {
     document.querySelectorAll('[data-rating]').forEach((item) => { item.disabled = true; });
@@ -1022,14 +1046,23 @@ function renderSummary() {
   const accuracy = answers.length ? Math.round(correct / answers.length * 100) : 0;
   const misses = Object.entries(answers.filter((item) => !item.correct).reduce((acc, item) => ({ ...acc, [item.productId]: (acc[item.productId] || 0) + 1 }), {})).sort((a, b) => b[1] - a[1]);
   const problem = misses.length ? state.products.find((product) => product.id === misses[0][0])?.name : 'Žádný — skvělá práce';
+  const lastAnswerByQuestion = new Map(answers.map((item) => [item.questionId, item]));
+  const missedQuestionIds = new Set([...lastAnswerByQuestion.values()].filter((item) => !item.correct).map((item) => item.questionId));
+  const retryQueue = [...new Map(state.session.queue.filter((question) => missedQuestionIds.has(question.id)).map((question) => [question.id, question])).values()];
+  const missedProducts = misses.slice(0, 3).map(([productId, count]) => {
+    const product = state.products.find((item) => item.id === productId);
+    return `<li><span>${escapeHtml(product?.name || productId)}</span><strong>${count}×</strong></li>`;
+  }).join('');
   const summaryLabel = state.session.mode === 'recognition' ? 'Foto výzva dokončena' : state.session.mode === 'comparison' ? 'Porovnávání dokončeno' : 'Dávka dokončena';
   app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">${summaryLabel}</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
-    <div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>
+    ${misses.length ? `<div class="missed-review"><strong>Co ještě upevnit</strong><ul>${missedProducts}</ul></div>` : `<div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>`}
+    ${retryQueue.length ? `<button id="retry-mistakes" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zopakovat chybné otázky · ${retryQueue.length}</button>` : ''}
     ${misses.length ? '<button id="open-stats" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zobrazit slabá místa</button>' : ''}
     <button id="finish" class="button button-primary button-full" style="margin-top:1rem" type="button">Zpět na dnešek</button></article></section>`;
   document.querySelector('#finish').addEventListener('click', () => navigate('home'));
   document.querySelector('#open-stats')?.addEventListener('click', () => navigate('stats'));
+  document.querySelector('#retry-mistakes')?.addEventListener('click', () => startStudySession(retryQueue, 'mistakes'));
   window.scrollTo({ top: 0, behavior: 'instant' });
   updateBadge();
 }
