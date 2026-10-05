@@ -9,14 +9,16 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
   <link rel="apple-touch-icon" href="img/icon-192.png">
-  <link rel="stylesheet" href="css/styles.css?v=1.0.35">
+  <link rel="stylesheet" href="css/styles.css?v=1.0.36">
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
       <button class="brand" type="button" data-view-link="home" aria-label="Přejít na dnešek">
-        <span class="brand-mark" aria-hidden="true">B</span>
-        <span><strong>Bistro</strong><small>do hlavy</small></span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M8 3v10m4-10v10M8 8h4m-2 5v16M23 3c-3 4-4 8-2 12l3-1v15m-1-26v11"/></svg>
+        </span>
+        <span><strong>Bistro do hlavy</strong><small>Malé porce, velké znalosti</small></span>
       </button>
       <button id="profile-button" class="profile-chip" type="button" aria-label="Otevřít profil">
         <span id="profile-initial">?</span><span id="profile-name">Profil</span>
@@ -84,6 +86,6 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <input id="import-file" type="file" accept="application/json,.json" hidden>
 
-  <script type="module" src="js/app.js?v=1.0.35"></script>
+  <script type="module" src="js/app.js?v=1.0.36"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.35';
+const CACHE_VERSION = 'bistro-v1.0.36';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.35', './js/app.js?v=1.0.35',
-  './config.js?v=1.0.35', './content.js?v=1.0.35', './storage.js?v=1.0.35',
-  './fsrs-service.js?v=1.0.35', './study.js?v=1.0.35', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.36', './js/app.js?v=1.0.36',
+  './config.js?v=1.0.36', './content.js?v=1.0.36', './storage.js?v=1.0.36',
+  './fsrs-service.js?v=1.0.36', './study.js?v=1.0.36', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './img/bistrous-test.webp', './img/bistrous-test-wrong.webp', './img/bistrous-goal.webp',
   './data/products.json', './data/questions.json', './data/pending-products.json',

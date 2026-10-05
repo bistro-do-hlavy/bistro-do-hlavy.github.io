@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.35';
-import { contentProvider } from '../content.js?v=1.0.35';
-import { storage } from '../storage.js?v=1.0.35';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.35';
+import { CONFIG } from '../config.js?v=1.0.36';
+import { contentProvider } from '../content.js?v=1.0.36';
+import { storage } from '../storage.js?v=1.0.36';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.36';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.35';
+} from '../study.js?v=1.0.36';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -412,29 +412,57 @@ function renderHome() {
   const enabledProductIds = new Set(selectedProductIds());
   const recognitionCount = photoChallengeQuestions().filter((question) => enabledProductIds.has(question.productId)).length;
   const comparisonCount = comparisonQuestions().length;
+  const now = new Date();
+  const monday = new Date(now);
+  monday.setHours(0, 0, 0, 0);
+  monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+  const dayLabels = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
+  const weeklyActivity = dayLabels.map((label, index) => {
+    const date = new Date(monday);
+    date.setDate(monday.getDate() + index);
+    const nextDate = new Date(date);
+    nextDate.setDate(date.getDate() + 1);
+    const count = state.reviews.filter((review) => {
+      const reviewedAt = new Date(review.reviewedAt);
+      return reviewedAt >= date && reviewedAt < nextDate;
+    }).length;
+    const isToday = date.toDateString() === now.toDateString();
+    return `<div class="week-day ${count ? 'is-done' : ''} ${isToday ? 'is-today' : ''}"><span>${count ? '✓' : ''}</span><small>${label}</small></div>`;
+  }).join('');
   app.innerHTML = `
-    <section class="page">
-      <article class="hero-card">
+    <section class="page home-page">
+      <div class="chalk-doodle chalk-doodle-left" aria-hidden="true">✦</div>
+      <article class="hero-card daily-special">
+        <div class="special-ribbon"><span>Dnešní specialita</span></div>
         <div class="hero-top">
-          <div>
-            <p class="eyebrow" style="color:#d7f246">Dnešní dávka · 5–10 minut</p>
-            <h1>${queue.length ? 'Pár karet a máte hotovo.' : 'Pro dnešek je hotovo.'}</h1>
-            <p>${queue.length ? `${due} k opakování · ${Math.max(0, queue.length - due)} nových` : 'Další opakování na vás čeká později.'}</p>
+          <div class="special-copy">
+            <p class="eyebrow">Denní dávka · 5–10 minut</p>
+            <h1>${queue.length ? 'Naservíruj si dnešní znalosti' : 'Dnes máš naservírováno'}</h1>
+            <p>${queue.length ? `${due} k opakování · ${Math.max(0, queue.length - due)} nových otázek` : 'Skvělá práce. Další porce bude připravená později.'}</p>
           </div>
           <div class="due-bubble"><strong>${queue.length}</strong><span>karet dnes</span></div>
         </div>
         <div class="hero-actions">
-          <button id="start-study" class="button button-primary" type="button" ${queue.length ? '' : 'disabled'}>${queue.length ? 'Denní mix' : 'Denní mix splněn'}</button>
-          <button id="open-topic-study" class="button button-ghost" type="button">Podle tématu</button>
-          <button id="start-weak-home" class="button button-ghost" type="button">Co mi nejde${weakQueue.length ? ` · ${weakQueue.length}` : ''}</button>
+          <button id="start-study" class="button button-primary special-button" type="button" ${queue.length ? '' : 'disabled'}>
+            <span aria-hidden="true">▶</span>${queue.length ? 'Spustit denní mix' : 'Denní cíl splněn'}
+          </button>
         </div>
       </article>
+      <div class="quick-menu" aria-label="Další způsoby tréninku">
+        <button id="open-topic-study" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">☰</span><span><strong>Podle tématu</strong><small>Vyber si kategorii</small></span><b aria-hidden="true">›</b></button>
+        <button id="start-weak-home" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">⚡</span><span><strong>Co mi nejde</strong><small>${weakQueue.length ? `${weakQueue.length} otázek k upevnění` : 'Žádné slabé místo'}</small></span><b aria-hidden="true">›</b></button>
+      </div>
+      <section class="weekly-board" aria-label="Týdenní pokrok">
+        <div class="section-heading"><h2>Týdenní pokrok</h2><span>${streak} ${streak === 1 ? 'den v řadě' : 'dní v řadě'}</span></div>
+        <div class="week-row">${weeklyActivity}</div>
+        <div class="chalk-note"><span aria-hidden="true">☕</span><p>${streak ? 'Jen tak dál. Paměť má ráda pravidelné malé porce.' : 'I jedna krátká dávka dnes nastartuje novou sérii.'}</p></div>
+      </section>
       <div class="stats-grid" aria-label="Přehled pokroku">
         <div class="stat-card"><strong>${streak}</strong><span>${streak === 1 ? 'den série' : streak >= 2 && streak <= 4 ? 'dny série' : 'dní série'}</span></div>
         <div class="stat-card"><strong>${totalMastery()} %</strong><span>zvládnutí</span></div>
         <div class="stat-card"><strong>${masteredProducts()}/${state.products.length}</strong><span>produktů jistě</span></div>
       </div>
-      <div class="section-heading"><h2>Tréninkové režimy</h2><span>Podle situace</span></div>
+      <div class="section-heading"><h2>Ještě něco na zub?</h2><span>Další režimy</span></div>
       <div class="training-modes-grid">
         <article class="training-mode-card training-mode-photo">
           <span class="training-mode-icon" aria-hidden="true">◎</span>
