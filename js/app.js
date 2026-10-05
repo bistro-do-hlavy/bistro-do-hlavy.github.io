@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.31';
-import { contentProvider } from '../content.js?v=1.0.31';
-import { storage } from '../storage.js?v=1.0.31';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.31';
+import { CONFIG } from '../config.js?v=1.0.35';
+import { contentProvider } from '../content.js?v=1.0.35';
+import { storage } from '../storage.js?v=1.0.35';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.35';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.31';
+} from '../study.js?v=1.0.35';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -28,6 +28,138 @@ const QUESTION_TYPE_SETTINGS = [
   { id: 'text', label: 'Napsat odpověď', description: 'Odpověď napíšete vlastními slovy.' },
   { id: 'photo', label: 'Foto výzva', description: 'Podle fotografie určíte kategorii, výrobce nebo vlastnost.' },
 ];
+const BISTROUS_LINES = {
+  correct: [
+    'Správně. Etiketa se právě dobrovolně přiznala.',
+    'Tohle byste prodali i se zavřenýma očima.',
+    'Mozek právě získal michelinskou hvězdu.',
+    'Výborně. Produkt už před vámi nic neutají.',
+    'Trefa! Bistrouš hrdě zvedá lžíci.',
+    'Tohle máte v hlavě lépe než ve skladu.',
+    'Čistá práce. Ani drobeček pochybností.',
+    'Správně. Znalost čerstvá jako dnešní závoz.',
+    'Ano! Přesně takhle chutná správná odpověď.',
+    'Bez zaváhání. Regál uznale přikývl.',
+    'Výborně. Výrobce by měl radost.',
+    'To byla odpověď s dokonale vyváženou chutí.',
+    'Správně. Bistrouš nemusí zasahovat.',
+    'Tohle už z hlavy jen tak nevyvětrá.',
+    'Ano. Etiketa prohrála na celé čáře.',
+    'Profesionální výkon. Zástěra zůstává čistá.',
+    'Tohle bylo rychlejší než káva s sebou.',
+    'Správně. Přesně tak se krotí sortiment.',
+  ],
+  wrong: [
+    'Těsně vedle. Tohle sousto si dáme znovu.',
+    'Mozek právě objednal opakování.',
+    'Etiketa vyhrála první kolo. Odveta bude vaše.',
+    'Tohle nám trochu spadlo pod stůl.',
+    'Nevadí. I mistr někdy zamění kuskus za bulgur.',
+    'Dneska ne. Příště už vás nenachytá.',
+    'Produkt: 1. Vy: zatím 0.',
+    'Zkusíme znovu, tentokrát bez vaření z vody.',
+    'Tohle nebyla odpověď. To byl gastronomický freestyle.',
+    'Bistrouš se právě podrbal na mozku.',
+    'Vedle jak ta jedle. A tu ani nemáme v sortimentu.',
+    'Chyba není průšvih. Jen dražší způsob učení.',
+    'Tady nám paměť trochu zkysla.',
+    'Odvážná volba. Správná bohužel nebyla.',
+    'Tak určitě. A ocet je dekorace.',
+    'Správná odpověď se schovávala hned vedle.',
+    'Tohle by zákazník reklamoval.',
+    'Nic se neděje. Zboží vracíme do oběhu.',
+  ],
+  streak: [
+    'Regály se začínají bát.',
+    'Jedete jako kávovar v ranní špičce.',
+    'Začíná z vás být chodící katalog.',
+    'Tahle série je čerstvější než dnešní závoz.',
+    'Bistrouš nestíhá rozdávat pochvaly.',
+    'Etikety si mezi sebou šeptají vaše jméno.',
+    'Tohle už není štěstí. Tohle je podezřelé.',
+    'Ještě chvíli a budete školit i Bistrouše.',
+    'Sklad znalostí hlásí plnou kapacitu.',
+    'Pozor, profesionál v uličce!',
+  ],
+  repeat: [
+    'Tenhle produkt se vrací častěji než stálý zákazník.',
+    'Dobře, tenhle výrobek si s vámi očividně něco vyřizuje.',
+    'Třetí schůzka. Už byste si mohli tykat.',
+    'Zase on. Začíná to být osobní.',
+    'Bistrouš ho dává stranou. Ještě se mu podíváme na etiketu.',
+    'Tenhle kousek odmítá opustit trénink.',
+    'Nebojte, časem ho unavíme.',
+    'Výrobek vede, ale zápas ještě nekončí.',
+    'Zítra ho poznáte i zezadu a potmě.',
+    'Připravujeme další odvetu.',
+  ],
+  photo: [
+    'Obal mlčí. Teď mluvíte vy.',
+    'Nápis jsme schovali. Znalosti ne.',
+    'Poznáte ho i bez toho, aby se představil?',
+    'Logo odpočívá. Detektiv nastupuje.',
+    'Teď se ukáže, kdo se opravdu dívá.',
+    'Žádné čtení etikety. Pouze čistý instinkt.',
+    'Produkt v utajení. Odhalte ho.',
+    'Bistrouš zabavil tahák.',
+  ],
+  comparison: [
+    'Do regálu vstupují dva soupeři.',
+    'Podobný obal, úplně jiný příběh.',
+    'Dnes rozhodují detaily.',
+    'Který z nich si zaslouží správnou polici?',
+    'Souboj bez rukavic, zato s alergeny.',
+    'Dva produkty vstupují. Jedna odpověď odchází.',
+    'Nenechte se zmást pěknou etiketou.',
+    'Bistrouš zahajuje produktové derby.',
+  ],
+  reveal: [
+    'Karty na stůl. Tohle je správná odpověď.',
+    'Etiketa odkryta. Teď si ji uložte do hlavy.',
+    'Bistrouš servíruje odpověď bez přílohy.',
+    'Chvilka pravdy. Jak blízko jste byli?',
+  ],
+  goal: [
+    'Denní porce znalostí snědena. Talíř je čistý!',
+    'Hotovo. Regály se začínají bát.',
+    'Denní cíl splněn. Bistrouš smeká čepici.',
+    'Dnes namarkováno. Mozek hlásí plný sklad.',
+    'Výborně! Dnešní znalosti jsou bezpečně v hlavě.',
+    'Zavřít kasu, dnešní trénink je hotový.',
+    'Denní dávka splněna. Zástěra může na věšák.',
+    'Bistrouš potvrzuje: pro dnešek máte odpracováno.',
+  ],
+  loading: [
+    'Bistrouš rovná regály…',
+    'Počítám olivy. Jedna, dvě, někdo jednu snědl…',
+    'Hledám alergen drobným písmem…',
+    'Leštím správné odpovědi…',
+    'Ochutnávám data…',
+    'Vážím otázky bez obalu…',
+    'Kontroluji, zda ocet opravdu není dekorace…',
+    'Míchám témata. Netřepat…',
+    'Připravuji čerstvou várku otázek…',
+    'Lovím informace ze zadní strany obalu…',
+    'Přepočítávám mozkové závity…',
+    'Hledám produkt, který se schoval za těstoviny…',
+  ],
+  return: [
+    'Vítejte zpátky. Produkty se samy nenaučí.',
+    'Bistrouš oprášil čepici. Jdeme na to.',
+    'Regál je plný a výmluvy vyprodané.',
+    'Dnes máme na menu několik záludností.',
+    'Paměť předehřátá. Můžeme začít.',
+    'Dobré zprávy: nic jsme bez vás nesnědli.',
+    'Zboží čeká. Mozek také.',
+    'Bistrouš už si myslel, že jste se ztratili mezi regály.',
+    'Dnešní specialita: vědět víc než včera.',
+    'Čerstvá várka otázek právě dorazila.',
+  ],
+};
+let mascotMomentTimer;
+let lastBistrousLine = '';
+const loadingCopy = document.querySelector('.loading-state p');
+if (loadingCopy) loadingCopy.textContent = BISTROUS_LINES.loading[Math.floor(Math.random() * BISTROUS_LINES.loading.length)];
 const GLOSSARY = [
   { id: 'aeropress', label: 'AeroPress', matches: ['AeroPress', 'Aeropress'], definition: 'Ruční pomůcka pro přípravu kávy, která protlačí vodu a kávu přes papírový nebo kovový filtr pomocí pístu.' },
   { id: 'chemex', label: 'Chemex', matches: ['Chemex'], definition: 'Skleněná nádoba pro filtrovanou kávu se silnějším papírovým filtrem. Výsledkem bývá čistý a jemný nápoj.' },
@@ -94,6 +226,52 @@ function showToast(message) {
   toast.classList.add('is-visible');
   clearTimeout(showToast.timeout);
   showToast.timeout = setTimeout(() => toast.classList.remove('is-visible'), 2600);
+}
+
+function randomBistrousLine(group) {
+  const lines = BISTROUS_LINES[group] || BISTROUS_LINES.correct;
+  const choices = lines.filter((line) => line !== lastBistrousLine);
+  const line = choices[Math.floor(Math.random() * choices.length)] || lines[0];
+  lastBistrousLine = line;
+  return line;
+}
+
+function hideBistrous() {
+  clearTimeout(mascotMomentTimer);
+  const current = document.querySelector('.bistrous-moment');
+  if (!current) return;
+  current.classList.remove('is-visible');
+  setTimeout(() => current.remove(), 260);
+}
+
+function showBistrousMoment(kind, line, duration = 3200, mood = 'right') {
+  hideBistrous();
+  const moment = document.createElement('aside');
+  const entrances = ['from-left', 'from-right', 'from-top'];
+  const entrance = kind === 'goal' ? 'from-bottom' : entrances[Math.floor(Math.random() * entrances.length)];
+  moment.className = `bistrous-moment is-${kind} ${entrance}`;
+  moment.setAttribute('role', 'status');
+  moment.setAttribute('aria-live', 'polite');
+
+  const image = document.createElement('img');
+  image.src = kind === 'goal' ? './img/bistrous-goal.webp' : mood === 'wrong' ? './img/bistrous-test-wrong.webp' : './img/bistrous-test.webp';
+  image.alt = '';
+  image.width = kind === 'goal' ? 220 : 180;
+  image.height = kind === 'goal' ? 248 : 165;
+
+  const bubble = document.createElement('p');
+  bubble.textContent = line;
+  moment.append(image, bubble);
+  if (Math.random() < .14) {
+    const olive = document.createElement('span');
+    olive.className = 'bistrous-olive';
+    olive.setAttribute('aria-hidden', 'true');
+    olive.textContent = '●';
+    moment.append(olive);
+  }
+  document.body.append(moment);
+  requestAnimationFrame(() => requestAnimationFrame(() => moment.classList.add('is-visible')));
+  mascotMomentTimer = setTimeout(hideBistrous, duration);
 }
 
 function applyTheme(theme) {
@@ -191,6 +369,8 @@ function setActiveNav(view) {
 }
 
 function navigate(view) {
+  hideBistrous();
+  document.body.classList.remove('is-studying');
   state.currentView = view;
   state.session = view === 'study' ? state.session : null;
   setActiveNav(view);
@@ -860,6 +1040,7 @@ function startStudySession(queue, mode) {
   const preparedQueue = queue.map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
   state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mode };
   state.currentView = 'study';
+  document.body.classList.add('is-studying');
   setActiveNav('');
   renderQuestion();
 }
@@ -903,6 +1084,7 @@ function memoryDetails(question) {
 }
 
 function renderQuestion() {
+  hideBistrous();
   const question = currentQuestion();
   if (!question) return renderSummary();
   state.session.revealed = false;
@@ -910,6 +1092,8 @@ function renderQuestion() {
   const image = question.type === 'photo' ? `<img class="question-image" src="${question.image}" alt="Produkt k poznání">` : '';
   const productHint = question.type === 'photo' ? 'Název na obalu není odpověď' : question.format === 'comparison' ? 'Podobné produkty' : product.name;
   const typeLabel = question.format === 'comparison' ? 'Porovnání' : TYPE_LABELS[question.type];
+  const progressPercent = (state.session.index / state.session.queue.length) * 100;
+  const brainHeat = progressPercent < 34 ? 'Mozek se rozehřívá' : progressPercent < 75 ? 'Mozek zahřátý' : 'Mozek jede naplno';
   let control = '';
   if (question.type === 'mcq' || question.type === 'photo') {
     control = `<div class="options">${shuffledOptions(question).map((option) => `<button class="option" type="button" data-option="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join('')}</div>`;
@@ -920,7 +1104,7 @@ function renderQuestion() {
   }
   app.innerHTML = `<section class="page study-page">
     <div class="study-toolbar"><button id="close-study" class="icon-button" type="button" aria-label="Ukončit trénink">×</button>
-      <div><div class="progress-track"><span style="width:${((state.session.index) / state.session.queue.length) * 100}%"></span></div></div>
+      <div class="study-progress"><div class="progress-track"><span style="width:${progressPercent}%"></span></div><small>${brainHeat}</small></div>
       <span class="study-counter">${state.session.index + 1}/${state.session.queue.length}</span></div>
     <article class="study-card"><div class="question-meta"><span class="type-pill">${typeLabel}</span><span>${escapeHtml(productHint)}</span></div>
       ${image}${comparisonPreview(question)}<h1>${escapeHtml(question.prompt)}</h1><div id="answer-area">${control}</div><div id="feedback"></div>
@@ -939,6 +1123,20 @@ function questionSourceLink(question) {
   return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
 }
 
+function feedbackBistrousLine(question, correct) {
+  const answers = state.session.answers;
+  const repeatedMisses = answers.filter((item) => item.questionId === question.id && !item.correct).length;
+  if (!correct && repeatedMisses >= 2) return randomBistrousLine('repeat');
+  if (correct) {
+    let run = 0;
+    for (let index = answers.length - 1; index >= 0 && answers[index].correct; index -= 1) run += 1;
+    if (run >= 3) return randomBistrousLine('streak');
+  }
+  if (question.format === 'comparison' && Math.random() < .34) return randomBistrousLine('comparison');
+  if (question.type === 'photo' && Math.random() < .34) return randomBistrousLine('photo');
+  return randomBistrousLine(correct ? 'correct' : 'wrong');
+}
+
 function showFeedback({ correct, selected, answer, explanation, question }) {
   const panel = document.querySelector('#feedback');
   const answerValue = Array.isArray(answer) ? answer.join(', ') : answer;
@@ -952,6 +1150,7 @@ function showFeedback({ correct, selected, answer, explanation, question }) {
     ${memoryDetails(question)}${questionSourceLink(question)}
   </section><button id="next" class="button button-primary button-full result-next" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
+  showBistrousMoment('quiz', feedbackBistrousLine(question, correct), 3300, correct ? 'right' : 'wrong');
 }
 
 async function answerChoice(selected) {
@@ -1005,6 +1204,7 @@ function revealFlashcard() {
     await recordReview(question, rating, rating >= RATINGS.GOOD);
     nextQuestion();
   }));
+  showBistrousMoment('quiz', randomBistrousLine('reveal'), 3000);
 }
 
 function formatInterval(date) {
@@ -1041,6 +1241,7 @@ function nextQuestion() {
 }
 
 function renderSummary() {
+  hideBistrous();
   const answers = state.session.answers;
   const correct = answers.filter((item) => item.correct).length;
   const accuracy = answers.length ? Math.round(correct / answers.length * 100) : 0;
@@ -1054,7 +1255,10 @@ function renderSummary() {
     return `<li><span>${escapeHtml(product?.name || productId)}</span><strong>${count}×</strong></li>`;
   }).join('');
   const summaryLabel = state.session.mode === 'recognition' ? 'Foto výzva dokončena' : state.session.mode === 'comparison' ? 'Porovnávání dokončeno' : 'Dávka dokončena';
+  const achievement = accuracy === 100 ? 'Pán etikety' : accuracy >= 80 ? 'Postrach regálů' : accuracy >= 60 ? 'Krotitel sortimentu' : 'Vytrvalý ochutnávač';
+  const dailyGoalCompleted = state.session.mode === 'daily';
   app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">${summaryLabel}</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
+    <div class="achievement-badge"><span aria-hidden="true">★</span><div><small>Dnešní titul</small><strong>${achievement}</strong></div></div>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
     ${misses.length ? `<div class="missed-review"><strong>Co ještě upevnit</strong><ul>${missedProducts}</ul></div>` : `<div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>`}
     ${retryQueue.length ? `<button id="retry-mistakes" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zopakovat chybné otázky · ${retryQueue.length}</button>` : ''}
@@ -1065,6 +1269,7 @@ function renderSummary() {
   document.querySelector('#retry-mistakes')?.addEventListener('click', () => startStudySession(retryQueue, 'mistakes'));
   window.scrollTo({ top: 0, behavior: 'instant' });
   updateBadge();
+  if (dailyGoalCompleted) showBistrousMoment('goal', randomBistrousLine('goal'), 4800);
 }
 
 function openProfileDialog(force = false) {
@@ -1131,7 +1336,10 @@ async function registerServiceWorker() {
     window.addEventListener('focus', checkForUpdate);
     window.addEventListener('online', checkForUpdate);
     document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') checkForUpdate();
+      if (document.visibilityState === 'visible') {
+        checkForUpdate();
+        if (state.profile && state.currentView !== 'study') showToast(randomBistrousLine('return'));
+      }
     });
   } catch (error) {
     console.warn('Offline režim se nepodařilo zapnout.', error);

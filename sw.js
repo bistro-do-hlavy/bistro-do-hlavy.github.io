@@ -1,9 +1,10 @@
-const CACHE_VERSION = 'bistro-v1.0.31';
+const CACHE_VERSION = 'bistro-v1.0.35';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.31', './js/app.js?v=1.0.31',
-  './config.js?v=1.0.31', './content.js?v=1.0.31', './storage.js?v=1.0.31',
-  './fsrs-service.js?v=1.0.31', './study.js?v=1.0.31', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.35', './js/app.js?v=1.0.35',
+  './config.js?v=1.0.35', './content.js?v=1.0.35', './storage.js?v=1.0.35',
+  './fsrs-service.js?v=1.0.35', './study.js?v=1.0.35', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
+  './img/bistrous-test.webp', './img/bistrous-test-wrong.webp', './img/bistrous-goal.webp',
   './data/products.json', './data/questions.json', './data/pending-products.json',
   './img/products/konopny-olej-v-presu.webp', './img/products/casa-rinaldi-balsamico-tresen.webp',
   './img/products/makovy-olej-v-presu.webp', './img/products/kachni-pastika-calvados-melememaso.webp',
