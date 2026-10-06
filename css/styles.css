@@ -726,23 +726,12 @@ textarea::placeholder { color: #82978c; }
   .stats-grid .stat-card:last-child { grid-column: 1 / -1; }
 }
 
-/* Pevná pracovní lišta a katalogové nástroje */
-.top-safe-area-shield {
-  position: fixed;
-  z-index: 49;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: calc(max(.35rem, env(safe-area-inset-top)) + .5rem);
-  pointer-events: none;
-  background: var(--bg);
-}
+/* Horní rám zůstává na začátku stránky; připnuté je pouze hledání v katalogu. */
 .app-shell { padding-top: .7rem; }
 .topbar {
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 50;
-  top: max(.35rem, env(safe-area-inset-top));
+  position: relative;
+  z-index: 2;
+  top: auto;
   width: min(calc(100% - 2rem), 62rem);
   min-height: 5.25rem;
   margin: max(.35rem, env(safe-area-inset-top)) auto 0;
@@ -752,7 +741,7 @@ textarea::placeholder { color: #82978c; }
   position: -webkit-sticky;
   position: sticky;
   z-index: 40;
-  top: calc(6.05rem + env(safe-area-inset-top));
+  top: max(.35rem, env(safe-area-inset-top));
   box-shadow: 0 10px 24px rgba(0,0,0,.28);
 }
 
