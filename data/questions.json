@@ -6681,5 +6681,1075 @@
     "explanation": "Jedno balení obsahuje 250 g.",
     "sourceLabel": "Výrobce – detail produktu",
     "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q1",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Pšeničná mouka, mléko a rozinky",
+      "Bezlepkové ovesné vločky, kešu, hořká čokoláda a vlašské ořechy",
+      "Rýžová mouka, arašídy a karamel",
+      "Kukuřice, mandle a bílá čokoláda"
+    ],
+    "answer": "Bezlepkové ovesné vločky, kešu, hořká čokoláda a vlašské ořechy",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q2",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "text",
+    "prompt": "Kolik procent kešu sušenky obsahují?",
+    "answer": "23 %",
+    "answerDisplay": "23 %.",
+    "explanation": "23 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q3",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "flashcard",
+    "prompt": "Jak je lze zákazníkovi doporučit k podávání?",
+    "answer": "Přímo jako svačinu, ke kávě nebo jako doplněk jogurtu či smoothie.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q4",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: čím se tato varianta odlišuje?",
+    "image": "img/products/vilgain-bio-mini-cookies-cashew-choco-walnut-100-g.webp",
+    "options": [
+      "Je slaná a sýrová",
+      "Je plněná ovocným džemem",
+      "Spojuje kešu, hořkou čokoládu a vlašské ořechy",
+      "Obsahuje jen oves a vodu"
+    ],
+    "answer": "Spojuje kešu, hořkou čokoládu a vlašské ořechy",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q5",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Ryby a korýši",
+      "Vejce a celer",
+      "Hořčice a vlčí bob",
+      "Kešu a vlašské ořechy"
+    ],
+    "answer": "Kešu a vlašské ořechy",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q6",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako BIO veganskou bezlepkovou sušenku s vysokým podílem kešu a kombinací hořké čokolády a vlašských ořechů.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q7",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "mcq",
+    "prompt": "Které tvrzení o produktu uvádí výrobce?",
+    "options": [
+      "Je BIO, veganský a bezlepkový",
+      "Obsahuje želatinu",
+      "Je určen jen k pečení",
+      "Je slazen pouze medem"
+    ],
+    "answer": "Je BIO, veganský a bezlepkový",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g-q8",
+    "productId": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "100 g",
+    "answerDisplay": "100 g.",
+    "explanation": "Balení: 100 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q1",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Modrá kukuřice, bambucké máslo a sůl",
+      "Rýže, kokosový olej a pepř",
+      "Kukuřice, palmový olej a cukr",
+      "Pšenice, máslo a sůl"
+    ],
+    "answer": "Kukuřice, palmový olej a cukr",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q2",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "text",
+    "prompt": "Kolik procent modré kukuřice produkt obsahuje?",
+    "answer": "85,5 %",
+    "answerDisplay": "85,5 %.",
+    "explanation": "85,5 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q3",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "flashcard",
+    "prompt": "Kdy se má mikrovlnná trouba při přípravě vypnout?",
+    "answer": "Když jsou mezi jednotlivými puknutími rozestupy přibližně 1–2 sekundy.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q4",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: který tuk je v této variantě použit?",
+    "image": "img/products/vilgain-popcorn-modra-kukurice-100-g.webp",
+    "options": [
+      "Olivový olej",
+      "Přepuštěné máslo",
+      "Slunečnicový olej",
+      "Bambucké máslo"
+    ],
+    "answer": "Bambucké máslo",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q5",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "V uvedeném složení není žádný z alergenů EU 1–14",
+      "Obsahuje mléko",
+      "Obsahuje lepek",
+      "Obsahuje arašídy"
+    ],
+    "answer": "V uvedeném složení není žádný z alergenů EU 1–14",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q6",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce rychlý BIO popcorn s krátkým třísložkovým složením.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q7",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "mcq",
+    "prompt": "Jak dlouho se popcorn podle obalu připravuje?",
+    "options": [
+      "20–30 sekund",
+      "2–4 minuty",
+      "8–10 minut",
+      "15 minut"
+    ],
+    "answer": "2–4 minuty",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g-q8",
+    "productId": "vilgain-popcorn-modra-kukurice-100-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "100 g",
+    "answerDisplay": "100 g.",
+    "explanation": "Balení: 100 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q1",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Mák, pšenice a bílá čokoláda",
+      "Mléčný protein, řepová vláknina, lískové ořechy a kolagen",
+      "Pouze kakao a cukr",
+      "Datle, rýžový protein a kokos"
+    ],
+    "answer": "Datle, rýžový protein a kokos",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q2",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "text",
+    "prompt": "Kolik gramů bílkovin obsahuje podle výrobce jedna tyčinka nejméně?",
+    "answer": "15 g",
+    "answerDisplay": "Více než 15 g.",
+    "explanation": "Více než 15 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q3",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "flashcard",
+    "prompt": "Jaké dvě hlavní vrstvy tvoří tyčinku?",
+    "answer": "Brownie korpus a sametově jemný mléčný krém s tóny vanilky.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q4",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: co je pod čokoládovou polevou?",
+    "image": "img/products/vilgain-double-trouble-dvojita-cokolada-55-g.webp",
+    "options": [
+      "Brownie korpus a mléčný krém",
+      "Ovocné želé",
+      "Křupavá oplatka bez náplně",
+      "Slaný sýr"
+    ],
+    "answer": "Brownie korpus a mléčný krém",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q5",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Jen hořčice",
+      "Mléko a lískové ořechy",
+      "Ryby a měkkýši",
+      "Celer a siřičitany"
+    ],
+    "answer": "Mléko a lískové ořechy",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q6",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce měkkou dvouvrstvou proteinovou tyčinku s brownie chutí, vanilkovým krémem a více než 15 g bílkovin.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q7",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "mcq",
+    "prompt": "Které tvrzení platí?",
+    "options": [
+      "Je bez bílkovin",
+      "Obsahuje jen jednu vrstvu",
+      "Je slazená také steviol-glykosidy",
+      "Je určena k vaření"
+    ],
+    "answer": "Je slazená také steviol-glykosidy",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g-q8",
+    "productId": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "55 g",
+    "answerDisplay": "55 g.",
+    "explanation": "Balení: 55 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q1",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Pět dvojic jablečné dřeně s hruškou, jahodou, malinou, meruňkou nebo švestkou",
+      "Banán, kakao a kokos",
+      "Pšenice, med a ořechy",
+      "Jablko, želatina a cukr"
+    ],
+    "answer": "Pět dvojic jablečné dřeně s hruškou, jahodou, malinou, meruňkou nebo švestkou",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q2",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "text",
+    "prompt": "Kolik ovocných plátků je v balení?",
+    "answer": "10",
+    "answerDisplay": "10 plátků.",
+    "explanation": "10 plátků.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q3",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "flashcard",
+    "prompt": "Jak lze Ovocné kostky podávat?",
+    "answer": "Přímo jako svačinu nebo přidané do bílého jogurtu.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q4",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: co znamená mix pěti chutí?",
+    "image": "img/products/ovocnak-ovocne-kostky-130-g.webp",
+    "options": [
+      "Každý plátek je pouze jablečný",
+      "Jablko se kombinuje s hruškou, jahodou, malinou, meruňkou nebo švestkou",
+      "Jde o pět druhů čokolády",
+      "Jde o pět druhů ořechů"
+    ],
+    "answer": "Jablko se kombinuje s hruškou, jahodou, malinou, meruňkou nebo švestkou",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q5",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Obsahuje mléko",
+      "Obsahuje lepek",
+      "V uvedeném složení není žádný z alergenů EU 1–14",
+      "Obsahuje sezam"
+    ],
+    "answer": "V uvedeném složení není žádný z alergenů EU 1–14",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q6",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako praktický mix pěti ovocných příchutí bez přidaného cukru, konzervantů, barviv a aromat.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q7",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "mcq",
+    "prompt": "Kolik čerstvého ovoce se podle výrobce použije nejméně na jeden 13g plátek?",
+    "options": [
+      "13 g",
+      "25 g",
+      "50 g",
+      "85 g"
+    ],
+    "answer": "85 g",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g-q8",
+    "productId": "ovocnak-ovocne-kostky-130-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "130 g",
+    "answerDisplay": "130 g.",
+    "explanation": "Balení: 130 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q1",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Hruška 100 %",
+      "Jablko, pšenice a med",
+      "Jablko 70 %, hruška 20 % a pufovaná rýže 10 %",
+      "Rýže, mléko a cukr"
+    ],
+    "answer": "Jablko 70 %, hruška 20 % a pufovaná rýže 10 %",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q2",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "text",
+    "prompt": "Kolik procent pufované rýže produkt obsahuje?",
+    "answer": "10 %",
+    "answerDisplay": "10 %.",
+    "explanation": "10 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q3",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "flashcard",
+    "prompt": "Pro jakou situaci výrobce PUF doporučuje?",
+    "answer": "Jako přímou křupavou svačinu na cestu nebo do školy.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q4",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: co vytváří světlou křupavou vrstvu na povrchu?",
+    "image": "img/products/ovocnak-ovocny-puf-hruska-22-g.webp",
+    "options": [
+      "Strouhaný kokos",
+      "Bílá čokoláda",
+      "Sezam",
+      "Pufovaná rýže"
+    ],
+    "answer": "Pufovaná rýže",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q5",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "V uvedeném složení není žádný z alergenů EU 1–14",
+      "Obsahuje arašídy",
+      "Obsahuje mléko",
+      "Obsahuje vejce"
+    ],
+    "answer": "V uvedeném složení není žádný z alergenů EU 1–14",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q6",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako křupavou bezlepkovou svačinu s 90 % ovocné dřeně a 10 % pufované rýže.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q7",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "mcq",
+    "prompt": "Jaká je textura PUFu?",
+    "options": [
+      "Tekutá",
+      "Křupavá a nelepivá",
+      "Krémová",
+      "Mražená"
+    ],
+    "answer": "Křupavá a nelepivá",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g-q8",
+    "productId": "ovocnak-ovocny-puf-hruska-22-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "22 g",
+    "answerDisplay": "22 g.",
+    "explanation": "Balení: 22 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q1",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Banán, mléko a oves",
+      "Jablko, broskev, mrkev, pomerančová dužina a vitamin C",
+      "Hruška, rýže a med",
+      "Pomeranč, želatina a cukr"
+    ],
+    "answer": "Jablko, broskev, mrkev, pomerančová dužina a vitamin C",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q2",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "text",
+    "prompt": "Kolik procent jablečného pyré kapsička obsahuje?",
+    "answer": "67,4 %",
+    "answerDisplay": "67,4 %.",
+    "explanation": "67,4 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q3",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "flashcard",
+    "prompt": "Co je potřeba udělat před konzumací?",
+    "answer": "Kapsičku protřepat.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q4",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: která zelenina doplňuje ovoce?",
+    "image": "img/products/dayup-fruit-orange.webp",
+    "options": [
+      "Celer",
+      "Rajče",
+      "Mrkev",
+      "Řepa"
+    ],
+    "answer": "Mrkev",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q5",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Obsahuje mléko",
+      "Obsahuje lepek",
+      "Obsahuje ořechy",
+      "V uvedeném složení není žádný z alergenů EU 1–14"
+    ],
+    "answer": "V uvedeném složení není žádný z alergenů EU 1–14",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q6",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako veganskou ovocno-zeleninovou kapsičku bez přidaného cukru s vitaminem C.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q7",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "mcq",
+    "prompt": "Jak dlouho lze zbytek po otevření uchovat při teplotě do +6 °C?",
+    "options": [
+      "48 hodin",
+      "12 hodin",
+      "24 hodin",
+      "7 dní"
+    ],
+    "answer": "48 hodin",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc-q8",
+    "productId": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "kapsička",
+    "answerDisplay": "kapsička.",
+    "explanation": "Balení: kapsička.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://dayup.sk/en/produkt/orange/"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q1",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Želatina, med a mléko",
+      "Pšeničná mouka a vejce",
+      "Ořechy a čokoláda",
+      "Glukózový sirup, řepný cukr, ovocné koncentráty a pektin"
+    ],
+    "answer": "Glukózový sirup, řepný cukr, ovocné koncentráty a pektin",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q2",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "text",
+    "prompt": "Kolik ovocných příchutí výrobce uvádí?",
+    "answer": "6",
+    "answerDisplay": "Šest.",
+    "explanation": "Šest.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q3",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "flashcard",
+    "prompt": "Jaký typ zákazníka může tento produkt oslovit?",
+    "answer": "Zákazníka hledajícího BIO veganské gumové bonbony bez želatiny, lepku a laktózy.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q4",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: čím je dosažena rosolovitá struktura bez želatiny?",
+    "image": "img/products/okovital-bar-bez-zelatiny-80-g.webp",
+    "options": [
+      "Vaječným bílkem",
+      "Pektinem",
+      "Mléčnou bílkovinou",
+      "Pšeničným lepkem"
+    ],
+    "answer": "Pektinem",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q5",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Obsahuje mléko",
+      "Obsahuje ořechy",
+      "V uvedeném složení není žádný z alergenů EU 1–14",
+      "Obsahuje vejce"
+    ],
+    "answer": "V uvedeném složení není žádný z alergenů EU 1–14",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q6",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako BIO veganské ovocné medvídky bez želatiny, lepku a laktózy.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q7",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "mcq",
+    "prompt": "Které tvrzení je správné?",
+    "options": [
+      "Bonbony obsahují želatinu",
+      "Obsahují pouze jednu příchuť",
+      "Vyrábějí se z mléka",
+      "Jsou veganské a bez želatiny"
+    ],
+    "answer": "Jsou veganské a bez želatiny",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g-q8",
+    "productId": "okovital-bar-bez-zelatiny-80-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "80 g",
+    "answerDisplay": "80 g.",
+    "explanation": "Balení: 80 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q1",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Kakao, karamel a sušenky bez soli",
+      "Čokoládový základ, 9 % preclíků, mandlový olej, lískové ořechy a mořská sůl",
+      "Mléčná čokoláda a rozinky",
+      "Bílá čokoláda a kokos"
+    ],
+    "answer": "Kakao, karamel a sušenky bez soli",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q2",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "text",
+    "prompt": "Kolik procent kousků preclíků čokoláda obsahuje?",
+    "answer": "9 %",
+    "answerDisplay": "9 %.",
+    "explanation": "9 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q3",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt stručně doporučíš?",
+    "answer": "Jako BIO veganskou čokoládu spojující sladkou chuť s křupavými preclíky a mořskou solí.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q4",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: jaký chuťový kontrast je pro produkt typický?",
+    "image": "img/products/ichoc-salty-pretzel-80-g.webp",
+    "options": [
+      "Sladká čokoláda a slané preclíky",
+      "Kyselé ovoce a chilli",
+      "Hořčice a med",
+      "Káva a citron"
+    ],
+    "answer": "Sladká čokoláda a slané preclíky",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q5",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Ryby a celer",
+      "Lepek a skořápkové plody",
+      "Vejce a hořčice",
+      "Měkkýši a siřičitany"
+    ],
+    "answer": "Lepek a skořápkové plody",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q6",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako BIO veganskou kombinaci sladké čokolády, křupavých preclíků a mořské soli v obalu bez plastu.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q7",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "mcq",
+    "prompt": "Co výrobce uvádí o obalu?",
+    "options": [
+      "Je kovový",
+      "Je vratný skleněný",
+      "Je bez plastu",
+      "Je jedlý"
+    ],
+    "answer": "Je bez plastu",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g-q8",
+    "productId": "ichoc-salty-pretzel-80-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "80 g",
+    "answerDisplay": "80 g.",
+    "explanation": "Balení: 80 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q1",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Šest kombinací ořechů, ovoce a kávových zrn ve třech druzích čokolády",
+      "Pouze mandle v mléčné čokoládě",
+      "Sušené ovoce bez čokolády",
+      "Preclíky a karamel"
+    ],
+    "answer": "Pouze mandle v mléčné čokoládě",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q2",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "text",
+    "prompt": "Kolik druhů dražovaných dobrot směs obsahuje?",
+    "answer": "6",
+    "answerDisplay": "Šest.",
+    "explanation": "Šest.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q3",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "flashcard",
+    "prompt": "Jak lze Čokoládové nadělení podávat?",
+    "answer": "Přímo jako sladké zobání nebo přidané do bílého jogurtu.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q4",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: které tři druhy čokolády směs kombinuje?",
+    "image": "img/products/mixit-cokoladove-nadeleni-450-g.webp",
+    "options": [
+      "Jen hořkou",
+      "Jen bílou a ruby",
+      "Mléčnou, hořkou a bílou",
+      "Mátovou, pomerančovou a kávovou"
+    ],
+    "answer": "Mléčnou, hořkou a bílou",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q5",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Ryby a korýši",
+      "Celer a hořčice",
+      "Vlčí bob a měkkýši",
+      "Mléko a skořápkové plody"
+    ],
+    "answer": "Mléko a skořápkové plody",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q6",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako velký degustační mix šesti druhů ořechů, ovoce a kávových zrn ve třech typech čokolády.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q7",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "mcq",
+    "prompt": "Která složka tvoří 10 % směsi?",
+    "options": [
+      "Kávová zrna v hořké čokoládě",
+      "Aronie v bílé čokoládě",
+      "Mandle v mléčné čokoládě",
+      "Vlašské ořechy ve skořici"
+    ],
+    "answer": "Kávová zrna v hořké čokoládě",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g-q8",
+    "productId": "mixit-cokoladove-nadeleni-450-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "450 g",
+    "answerDisplay": "450 g.",
+    "explanation": "Balení: 450 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q1",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje složení produktu?",
+    "options": [
+      "Kukuřice, olivový olej a sýr",
+      "Rýže, sezam a sója",
+      "Brambory, slunečnicový olej, syrovátkový prášek, koření a kyselina citronová",
+      "Brambory, lanýže a parmazán"
+    ],
+    "answer": "Brambory, slunečnicový olej, syrovátkový prášek, koření a kyselina citronová",
+    "explanation": "Správná možnost vychází ze složení uvedeného výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q2",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "text",
+    "prompt": "Ve kterém roce byla značka Torres založena?",
+    "answer": "1969",
+    "answerDisplay": "V roce 1969.",
+    "explanation": "V roce 1969.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q3",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "flashcard",
+    "prompt": "Jak produkt doporučíš zákazníkovi?",
+    "answer": "Jako křupavé španělské chipsy s neobvyklou sladkokyselou chutí nakládaných okurek, vhodné i k tapas.",
+    "explanation": "Doporučení vychází z použití a vlastností, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q4",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: jaký chuťový profil má tato varianta?",
+    "image": "img/products/torres-tapas-pickle-40-g.webp",
+    "options": [
+      "Uzený a sýrový",
+      "Kakaový a sladký",
+      "Kávový a hořký",
+      "Sladkokyselý a okurkový"
+    ],
+    "answer": "Sladkokyselý a okurkový",
+    "explanation": "Fotografie slouží jako kontext; odpověď ověřuje vlastnost produktu, ne čitelnost jeho názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q5",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny?",
+    "options": [
+      "Mléko a hořčice",
+      "Arašídy a sezam",
+      "Vejce a celer",
+      "Ryby a měkkýši"
+    ],
+    "answer": "Mléko a hořčice",
+    "explanation": "Alergeny a případné stopy jsou uvedeny podle informací výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q6",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi hledajícímu neobvyklé španělské chipsy s výraznou sladkokyselou chutí nakládaných okurek.",
+    "explanation": "Doporučení stojí pouze na ověřených vlastnostech produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q7",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "mcq",
+    "prompt": "Co tato příchuť podle výrobce připomíná?",
+    "options": [
+      "Japonské sushi",
+      "Španělské tapas",
+      "Francouzský croissant",
+      "Italské tiramisu"
+    ],
+    "answer": "Španělské tapas",
+    "explanation": "Správné tvrzení uvádí výrobce na detailu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "torres-tapas-pickle-40-g-q8",
+    "productId": "torres-tapas-pickle-40-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost nebo forma tohoto balení?",
+    "answer": "40 g",
+    "answerDisplay": "40 g.",
+    "explanation": "Balení: 40 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
   }
 ]

@@ -1,5 +1,5 @@
 // Jediné místo, kde se při vydání mění verze aplikace.
-const CACHE_VERSION = 'bistro-v1.0.50';
+const CACHE_VERSION = 'bistro-v1.0.51';
 const APP_SHELL = [
   './', './index.html', './css/styles.css', './js/app.js',
   './config.js', './content.js', './storage.js',
@@ -68,6 +68,16 @@ const APP_SHELL = [
   './img/products/vilgain-cocka-cervena-500-g.webp',
   './img/products/vilgain-cocka-cerna-beluga-300-g.webp',
   './img/products/vilgain-chia-seminka-250-g.webp',
+  './img/products/vilgain-bio-mini-cookies-cashew-choco-walnut-100-g.webp',
+  './img/products/vilgain-popcorn-modra-kukurice-100-g.webp',
+  './img/products/vilgain-double-trouble-dvojita-cokolada-55-g.webp',
+  './img/products/ovocnak-ovocne-kostky-130-g.webp',
+  './img/products/ovocnak-ovocny-puf-hruska-22-g.webp',
+  './img/products/dayup-fruit-orange.webp',
+  './img/products/okovital-bar-bez-zelatiny-80-g.webp',
+  './img/products/ichoc-salty-pretzel-80-g.webp',
+  './img/products/mixit-cokoladove-nadeleni-450-g.webp',
+  './img/products/torres-tapas-pickle-40-g.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

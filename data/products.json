@@ -2780,5 +2780,432 @@
         "url": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
       }
     ]
+  },
+  {
+    "id": "vilgain-bio-mini-cookies-cashew-choco-walnut-100-g",
+    "name": "Vilgain BIO Mini Cookies kešu, čokoláda a vlašské ořechy 100 g",
+    "category": "Sušenky",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Neuvedeno výrobcem",
+    "description": "BIO bezlepkové ovesné mini sušenky s kešu, hořkou čokoládou a vlašskými ořechy.",
+    "ingredients": [
+      "bezlepkové ovesné vločky 31 %",
+      "kešu 23 %",
+      "kokosový sirup",
+      "hořká čokoláda 8 %",
+      "kokosový olej",
+      "kakaové máslo",
+      "vlašské ořechy 4,3 %",
+      "kakao",
+      "Bourbon vanilka",
+      "sůl"
+    ],
+    "allergens": [
+      5,
+      8,
+      11
+    ],
+    "specifics": [
+      "100 g",
+      "suroviny z ekologického zemědělství",
+      "bez lepku a laktózy",
+      "vhodné pro vegany",
+      "bez umělých sladidel",
+      "mohou obsahovat arašídy, sezam a další skořápkové plody"
+    ],
+    "preparation": [
+      "Podávej přímo jako sladkou svačinu.",
+      "Hodí se ke kávě nebo jako doplněk jogurtu a smoothie.",
+      "Uchovávej v chladu, suchu a temnu."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o.",
+    "salesTip": "Doporuč jako BIO veganskou bezlepkovou sušenku s vysokým podílem kešu a kombinací hořké čokolády a vlašských ořechů.",
+    "image": "img/products/vilgain-bio-mini-cookies-cashew-choco-walnut-100-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.de/vilgain-bio-mini-cookies/cashewnuesse-schokolade-und-walnuesse-100-g-38894"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-popcorn-modra-kukurice-100-g",
+    "name": "Vilgain BIO Popcorn modrá kukuřice s bambuckým máslem a solí 100 g",
+    "category": "Slané snacky",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Zemědělství EU",
+    "description": "BIO popcorn do mikrovlnné trouby z modré kukuřice, bambuckého másla a soli.",
+    "ingredients": [
+      "BIO modrá kukuřice 85,5 %",
+      "BIO bambucké máslo 12 %",
+      "sůl 2,5 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "100 g",
+      "pouze tři suroviny",
+      "12 g vlákniny a 11 g bílkovin na 100 g",
+      "určeno k přípravě v mikrovlnné troubě"
+    ],
+    "preparation": [
+      "Polož sáček potištěnou stranou doprostřed mikrovlnné trouby.",
+      "Ohřívej 2–4 minuty na nejvyšší výkon.",
+      "Zastav, když jsou mezi puknutími rozestupy 1–2 sekundy, a otevři zatažením za protilehlé rohy."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o.",
+    "salesTip": "Doporuč zákazníkovi, který chce rychlý BIO popcorn s krátkým třísložkovým složením.",
+    "image": "img/products/vilgain-popcorn-modra-kukurice-100-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://aktin.lol/vilgain-popcorn-do-mikrovlnky-bio/14x41575"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-double-trouble-dvojita-cokolada-55-g",
+    "name": "Vilgain Double Trouble Protein Bar dvojitá čokoláda s krémem 55 g",
+    "category": "Proteinové tyčinky",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Neuvedeno výrobcem",
+    "description": "Dvouvrstvá proteinová tyčinka s brownie korpusem, jemným mléčným krémem s vanilkou a mléčnou čokoládou.",
+    "ingredients": [
+      "ultrafiltrovaný mléčný protein 22 %",
+      "řepová vláknina",
+      "lískové ořechy 9 %",
+      "hydrolyzovaný hovězí kolagen 7 %",
+      "kakaová hmota",
+      "glycerol",
+      "kakaové máslo",
+      "třtinový cukr",
+      "bramborový škrob",
+      "med",
+      "kokosový olej",
+      "vanilkový extrakt",
+      "lecitiny",
+      "přírodní aroma",
+      "steviol-glykosidy"
+    ],
+    "allergens": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "specifics": [
+      "55 g",
+      "dvě vrstvy: brownie korpus a mléčný krém",
+      "více než 15 g bílkovin v tyčince",
+      "20 % mléčné čokolády s nejméně 36 % kakaové sušiny",
+      "bez konzervantů a barviv",
+      "může obsahovat stopy sóji, lepku, vajec, arašídů a dalších skořápkových plodů"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci jako proteinový snack.",
+      "Uchovávej podle pokynů na obalu."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o.",
+    "salesTip": "Doporuč zákazníkovi, který chce měkkou dvouvrstvou proteinovou tyčinku s brownie chutí, vanilkovým krémem a více než 15 g bílkovin.",
+    "image": "img/products/vilgain-double-trouble-dvojita-cokolada-55-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-double-trouble-protein-bar/dvojita-cokolada-s-kremem-55-g-45686"
+      }
+    ]
+  },
+  {
+    "id": "ovocnak-ovocne-kostky-130-g",
+    "name": "Ovocňák RAW Ovocné kostky 130 g",
+    "category": "Ovocné snacky",
+    "brand": "Ovocňák",
+    "manufacturer": "TOKO AGRI a.s.",
+    "origin": "Česká republika",
+    "description": "Mix deseti pomalu sušených ovocných plátků v pěti příchutích, uložený v opakovaně uzavíratelném sáčku.",
+    "ingredients": [
+      "2× jablko 80 % a hruška 20 %",
+      "2× jablko 80 % a jahoda 20 %",
+      "2× jablko 80 % a malina 20 %",
+      "2× jablko 80 % a meruňka 20 %",
+      "2× jablko 80 % a švestka 20 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "130 g",
+      "10 plátků po 13 g",
+      "pět příchutí",
+      "bez přidaného cukru, konzervantů, barviv a aromat",
+      "na jeden 13g plátek nejméně 85 g čerstvého ovoce",
+      "praktický sáček se zipem"
+    ],
+    "preparation": [
+      "Jez přímo jako ovocnou svačinu.",
+      "Můžeš přidat do bílého jogurtu."
+    ],
+    "brandInfo": "Ovocňák je moravská značka zaměřená na ovocné výrobky bez zbytečných přísad.",
+    "salesTip": "Doporuč jako praktický mix pěti ovocných příchutí bez přidaného cukru, konzervantů, barviv a aromat.",
+    "image": "img/products/ovocnak-ovocne-kostky-130-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.ovocnak.cz/ovocne-kostky-130g/"
+      }
+    ]
+  },
+  {
+    "id": "ovocnak-ovocny-puf-hruska-22-g",
+    "name": "Ovocňák Ovocný PUF hruška 22 g",
+    "category": "Ovocné snacky",
+    "brand": "Ovocňák",
+    "manufacturer": "TOKO AGRI a.s.",
+    "origin": "Česká republika",
+    "description": "Křupavý ovocný plátek z jablečné a hruškové dřeně doplněný pufovanou rýží.",
+    "ingredients": [
+      "jablečná dřeň 70 %",
+      "hrušková dřeň 20 %",
+      "pufovaná rýže 10 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "22 g",
+      "bez lepku",
+      "ovoce sušené při nízké teplotě",
+      "křupavý a nelepivý snack",
+      "bez přidaného cukru"
+    ],
+    "preparation": [
+      "Jez přímo jako svačinu na cestu nebo do školy.",
+      "Skladuj v suchu podle pokynů na obalu."
+    ],
+    "brandInfo": "Ovocňák je moravská značka zaměřená na ovocné výrobky bez zbytečných přísad.",
+    "salesTip": "Doporuč jako křupavou bezlepkovou svačinu s 90 % ovocné dřeně a 10 % pufované rýže.",
+    "image": "img/products/ovocnak-ovocny-puf-hruska-22-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.ovocnak.cz/ovocny-puf-hruska-22-g/"
+      }
+    ]
+  },
+  {
+    "id": "dayup-fruits-jablko-broskev-mrkev-pomeranc",
+    "name": "DayUp Fruits jablko, broskev, mrkev a pomeranč",
+    "category": "Ovocné kapsičky",
+    "brand": "DayUp",
+    "manufacturer": "NOVOFRUCT SK, s.r.o.",
+    "origin": "Slovensko",
+    "description": "Ovocno-zeleninová kapsička ze 100% kombinace pyré a pomerančové dužiny, doplněná vitaminem C.",
+    "ingredients": [
+      "jablečné pyré 67,4 %",
+      "broskvové pyré 16 %",
+      "mrkvové pyré 10 %",
+      "pomerančová dužina 6,5 %",
+      "vitamin C"
+    ],
+    "allergens": [],
+    "specifics": [
+      "bez přidaného cukru",
+      "vhodné pro vegany",
+      "100% ovocno-zeleninová kombinace",
+      "15 mg vitaminu C na 100 g"
+    ],
+    "preparation": [
+      "Před konzumací protřep.",
+      "Po otevření uzavři, uchovej do +6 °C a spotřebuj do 48 hodin.",
+      "Chraň před sluncem a mrazem."
+    ],
+    "brandInfo": "DayUp vyrábí ovocné a cereální svačiny v praktických kapsičkách; tuto variantu vyrábí slovenský NOVOFRUCT SK.",
+    "salesTip": "Doporuč jako veganskou ovocno-zeleninovou kapsičku bez přidaného cukru s vitaminem C.",
+    "image": "img/products/dayup-fruit-orange.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://dayup.sk/en/produkt/orange/"
+      }
+    ]
+  },
+  {
+    "id": "okovital-bar-bez-zelatiny-80-g",
+    "name": "Ökovital-Bär ohne Gelatine 80 g",
+    "category": "Bonbony",
+    "brand": "Ökovital",
+    "manufacturer": "Georg Rösner Vertriebs GmbH",
+    "origin": "Německo",
+    "description": "BIO ovocní medvídci bez želatiny s pevnou konzistencí a šesti ovocnými příchutěmi.",
+    "ingredients": [
+      "glukózový sirup BIO",
+      "řepný cukr BIO",
+      "koncentráty šťáv z jablka, pomeranče, citronu, černého rybízu, ananasu a maliny",
+      "pektin",
+      "vinany sodné a draselné",
+      "kyselina citronová",
+      "rostlinné a ovocné koncentráty",
+      "přírodní aromata",
+      "karnaubský vosk"
+    ],
+    "allergens": [],
+    "specifics": [
+      "80 g",
+      "bez želatiny",
+      "veganské a vegetariánské",
+      "bez lepku a laktózy",
+      "příchutě jablko, pomeranč, citron, černý rybíz, malina a ananas",
+      "vyrobeno v Německu"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci.",
+      "Uchovávej v suchu a chraň před teplem."
+    ],
+    "brandInfo": "Ökovital je německá značka BIO sladkostí společnosti Georg Rösner Vertriebs GmbH.",
+    "salesTip": "Doporuč jako BIO veganské ovocné medvídky bez želatiny, lepku a laktózy.",
+    "image": "img/products/okovital-bar-bez-zelatiny-80-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.oekovital.de/oekovital-baer-ohne-gelatine/s169.3"
+      }
+    ]
+  },
+  {
+    "id": "ichoc-salty-pretzel-80-g",
+    "name": "iChoc Salty Pretzel 80 g",
+    "category": "Čokoláda",
+    "brand": "iChoc",
+    "manufacturer": "EcoFinia GmbH",
+    "origin": "Německo",
+    "description": "BIO veganská čokoláda s kousky slaných preclíků, mořskou solí a ořechovými složkami.",
+    "ingredients": [
+      "řepný cukr",
+      "kakaové máslo 24 %",
+      "pohanková mouka",
+      "kakaová hmota 9,9 %",
+      "kousky preclíků 9 %",
+      "mouka ze šáchoru jedlého",
+      "mandlový olej 2,2 %",
+      "lískooříšková pasta",
+      "mořská sůl 0,7 %",
+      "Bourbon vanilkový extrakt"
+    ],
+    "allergens": [
+      1,
+      7,
+      8
+    ],
+    "specifics": [
+      "80 g",
+      "BIO a veganská",
+      "9 % kousků preclíků",
+      "Fairtrade kakao z Dominikánské republiky",
+      "obal bez plastu",
+      "může obsahovat další ořechy a mléko; není vhodná pro alergiky na mléko"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci.",
+      "Skladuj v suchu a chraň před teplem."
+    ],
+    "brandInfo": "iChoc je veganská čokoládová značka německé společnosti EcoFinia GmbH.",
+    "salesTip": "Doporuč jako BIO veganskou kombinaci sladké čokolády, křupavých preclíků a mořské soli v obalu bez plastu.",
+    "image": "img/products/ichoc-salty-pretzel-80-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://ichoc.de/en/vegan-chocolate/salty-pretzel/"
+      }
+    ]
+  },
+  {
+    "id": "mixit-cokoladove-nadeleni-450-g",
+    "name": "Mixit Čokoládové nadělení 450 g",
+    "category": "Ořechy a ovoce v čokoládě",
+    "brand": "Mixit",
+    "manufacturer": "Mixit s.r.o.",
+    "origin": "Česká republika",
+    "description": "Směs šesti dražovaných dobrot: ořechů, ovoce a kávových zrn v mléčné, hořké nebo bílé čokoládě.",
+    "ingredients": [
+      "vlašské ořechy v hořké čokoládě a skořici 20 %",
+      "pražené mandle v mléčné čokoládě 20 %",
+      "černý rybíz v mléčné čokoládě 18 %",
+      "aronie v bílé čokoládě 18 %",
+      "lískové oříšky v mléčné čokoládě 14 %",
+      "kávová zrna v hořké čokoládě 10 %"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      11
+    ],
+    "specifics": [
+      "450 g",
+      "šest druhů dražovaných dobrot",
+      "bez lepku podle výrobce, ale může obsahovat jeho stopy",
+      "bez palmového oleje",
+      "může obsahovat stopy lepku, jiných ořechů, arašídů, sóji a sezamu"
+    ],
+    "preparation": [
+      "Podávej přímo jako sladké zobání.",
+      "Lze přidat také do bílého jogurtu.",
+      "Skladuj v suchu a chraň před teplem."
+    ],
+    "brandInfo": "Mixit je česká značka, která vznikla v roce 2010 a vyrábí vlastní směsi, snacky a čokoládové dobroty.",
+    "salesTip": "Doporuč jako velký degustační mix šesti druhů ořechů, ovoce a kávových zrn ve třech typech čokolády.",
+    "image": "img/products/mixit-cokoladove-nadeleni-450-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mixit.cz/produkt/cokoladove-nadeleni"
+      }
+    ]
+  },
+  {
+    "id": "torres-tapas-pickle-40-g",
+    "name": "Torres Tapas Pickle 40 g",
+    "category": "Chipsy",
+    "brand": "Torres",
+    "manufacturer": "Patatas Fritas Torres S.L.",
+    "origin": "Španělsko",
+    "description": "Křupavé bramborové chipsy s osvěžující sladkokyselou chutí nakládaných okurek, vytvořené jako pocta španělským tapas.",
+    "ingredients": [
+      "brambory",
+      "slunečnicový olej",
+      "syrovátkový prášek",
+      "cukr",
+      "přírodní aroma",
+      "koření: cibule, česnek, kurkuma, černý a bílý pepř",
+      "fruktóza",
+      "kyselina citronová"
+    ],
+    "allergens": [
+      7,
+      10
+    ],
+    "specifics": [
+      "40 g",
+      "příchuť nakládané okurky",
+      "obsahuje mléko a hořčici",
+      "bez lepku",
+      "není veganský",
+      "výrobce zpracovává chipsy tradičním řemeslným postupem"
+    ],
+    "preparation": [
+      "Podávej přímo jako slaný snack nebo součást tapas.",
+      "Po otevření chraň před vlhkostí."
+    ],
+    "brandInfo": "Torres je španělský výrobce bramborových chipsů založený v roce 1969; značka staví na tradičním řemeslném zpracování.",
+    "salesTip": "Doporuč zákazníkovi hledajícímu neobvyklé španělské chipsy s výraznou sladkokyselou chutí nakládaných okurek.",
+    "image": "img/products/torres-tapas-pickle-40-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://patatastorres.com/en-us/product/pickle-flavor/"
+      }
+    ]
   }
 ]
