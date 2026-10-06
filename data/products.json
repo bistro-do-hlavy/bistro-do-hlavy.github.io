@@ -2567,5 +2567,110 @@
         "url": "https://www.fermato.cz/kovbojsky-set/"
       }
     ]
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "name": "Vilgain Avokádový olej ve spreji 200 ml",
+    "category": "Oleje ve spreji",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Keňa",
+    "description": "Stoprocentní avokádový olej z odrůdy Hass s jemnou chutí a praktickým dávkovačem pro rovnoměrné nanášení.",
+    "ingredients": [
+      "avokádový olej z odrůdy Hass 100 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "200 ml",
+      "odrůda Hass z Keni",
+      "bod zakouření 270 °C",
+      "vhodný do teplé i studené kuchyně",
+      "jedna sekunda stisknutí odpovídá přibližně 1,8 ml oleje"
+    ],
+    "preparation": [
+      "Před použitím řádně protřepej.",
+      "Nastříkej na studenou pánev nebo pokrm ze vzdálenosti 10–15 cm.",
+      "Použij do teplé i studené kuchyně; nestříkej do otevřeného ohně ani přímo do trouby."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který chce jemný univerzální olej s vysokým bodem zakouření a přesným dávkováním ve spreji.",
+    "image": "img/products/vilgain-avokadovy-olej-ve-spreji-200-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "name": "Vilgain Ghí ve spreji s avokádovým olejem 200 ml",
+    "category": "Oleje ve spreji",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Neuvedeno výrobcem",
+    "description": "Směs avokádového oleje a přepuštěného másla ghí v praktickém spreji pro teplou i studenou kuchyni.",
+    "ingredients": [
+      "avokádový olej 70 %",
+      "koncentrované máslo – ghí 30 %"
+    ],
+    "allergens": [
+      7
+    ],
+    "specifics": [
+      "200 ml",
+      "70 % avokádového oleje a 30 % ghí",
+      "méně než 0,01 g laktózy na 100 ml",
+      "vhodné do teplé i studené kuchyně",
+      "jedna sekunda stisknutí odpovídá přibližně 1,8 ml oleje"
+    ],
+    "preparation": [
+      "Před použitím řádně protřepej.",
+      "Nastříkej na studenou pánev nebo pokrm ze vzdálenosti 10–15 cm.",
+      "Nestříkej do plamenů, na žhavé materiály ani přímo do trouby."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který chce máslovou chuť ghí, praktičnost spreje a velmi nízký obsah laktózy.",
+    "image": "img/products/vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "name": "Vilgain Kokosový olej ve spreji 200 ml",
+    "category": "Oleje ve spreji",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Filipíny",
+    "description": "Stoprocentní kokosový olej z Filipín s vysokým podílem MCT, téměř neutrální chutí a praktickým dávkovačem.",
+    "ingredients": [
+      "kokosový olej 100 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "200 ml",
+      "kokos z Filipín",
+      "minimálně 93 % MCT",
+      "bod zakouření přibližně 158 °C",
+      "téměř neutrální chuť a vůně"
+    ],
+    "preparation": [
+      "Před použitím řádně protřepej.",
+      "Nastříkej na studenou pánev nebo pokrm ze vzdálenosti 10–15 cm.",
+      "Výrobce jej doporučuje hlavně do studené kuchyně nebo na krátké restování."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který chce kokosový olej s téměř neutrální chutí, vysokým obsahem MCT a snadným dávkováním.",
+    "image": "img/products/vilgain-kokosovy-olej-ve-spreji-200-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+      }
+    ]
   }
 ]

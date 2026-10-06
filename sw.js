@@ -1,5 +1,5 @@
 // Jediné místo, kde se při vydání mění verze aplikace.
-const CACHE_VERSION = 'bistro-v1.0.47';
+const CACHE_VERSION = 'bistro-v1.0.48';
 const APP_SHELL = [
   './', './index.html', './css/styles.css', './js/app.js',
   './config.js', './content.js', './storage.js',
@@ -62,6 +62,9 @@ const APP_SHELL = [
   './img/products/temporin-tortellini-prosciutto-crudo-250-g.webp',
   './img/products/fermato-simrato-150-g.webp',
   './img/products/fermato-mad-bbq-salsa-verde-200-ml.webp',
+  './img/products/vilgain-avokadovy-olej-ve-spreji-200-ml.webp',
+  './img/products/vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml.webp',
+  './img/products/vilgain-kokosovy-olej-ve-spreji-200-ml.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

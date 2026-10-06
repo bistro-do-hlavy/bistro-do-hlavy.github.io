@@ -6039,5 +6039,326 @@
     "explanation": "Výrobce popisuje omáčku Salsa Verde jako spojení fermentovaných papriček jalapeño a tomatillos.",
     "sourceLabel": "Výrobce – použití Salsa Verde",
     "sourceUrl": "https://www.fermato.cz/kovbojsky-set/"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q1",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "mcq",
+    "prompt": "Z čeho se Vilgain Avokádový olej ve spreji skládá?",
+    "options": [
+      "Ze směsi avokádového a olivového oleje",
+      "Ze 100% avokádového oleje odrůdy Hass",
+      "Z avokádového oleje a ghí",
+      "Z avokádového oleje s řepkovým olejem"
+    ],
+    "answer": "Ze 100% avokádového oleje odrůdy Hass",
+    "explanation": "Výrobce uvádí jedinou ingredienci: 100% avokádový olej z odrůdy Hass.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q2",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "text",
+    "prompt": "Ze které země pochází avokádový olej v tomto spreji?",
+    "answer": "Keňa",
+    "answerDisplay": "Keňa.",
+    "explanation": "Olej z avokád odrůdy Hass pochází z Keni.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q3",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak správně použiješ avokádový olej ve spreji?",
+    "answer": "Před použitím jej protřepej a nastříkej na studenou pánev nebo pokrm ze vzdálenosti 10–15 cm.",
+    "explanation": "Výrobce uvádí protřepání a vzdálenost 10–15 cm; sprej se nesmí používat u otevřeného ohně.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q4",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: která vlastnost vysvětluje, proč lze tento olej použít i při vysokých teplotách?",
+    "image": "img/products/vilgain-avokadovy-olej-ve-spreji-200-ml.webp",
+    "options": [
+      "Obsahuje 30 % ghí",
+      "Je určen pouze do studené kuchyně",
+      "Má bod zakouření 270 °C",
+      "Obsahuje minimálně 93 % MCT"
+    ],
+    "answer": "Má bod zakouření 270 °C",
+    "explanation": "Výrobce uvádí bod zakouření 270 °C a použití v teplé i studené kuchyni.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q5",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "mcq",
+    "prompt": "Kolik oleje přibližně vydá jedna sekunda stisknutí dávkovače?",
+    "options": [
+      "5 ml",
+      "0,2 ml",
+      "10 ml",
+      "1,8 ml"
+    ],
+    "answer": "1,8 ml",
+    "explanation": "Jedna sekunda stisknutí odpovídá přibližně 1,8 ml oleje.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q6",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně doporučíš zákazníkovi?",
+    "answer": "Jako jemný univerzální olej z avokád Hass s vysokým bodem zakouření a přesným dávkováním ve spreji.",
+    "explanation": "Doporučení vychází z vlastností uvedených výrobcem: odrůda Hass, jemná chuť, 270 °C a praktický dávkovač.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q7",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "mcq",
+    "prompt": "Která odrůda avokáda je použita?",
+    "options": [
+      "Fuerte",
+      "Pinkerton",
+      "Hass",
+      "Bacon"
+    ],
+    "answer": "Hass",
+    "explanation": "Výrobce uvádí 100% avokádový olej z odrůdy Hass.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-avokadovy-olej-ve-spreji-200-ml-q8",
+    "productId": "vilgain-avokadovy-olej-ve-spreji-200-ml",
+    "type": "text",
+    "prompt": "Kolik mililitrů obsahuje jedno balení?",
+    "answer": "200 ml",
+    "answerDisplay": "200 ml.",
+    "explanation": "Balení obsahuje 200 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-avokadovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q1",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "mcq",
+    "prompt": "Jaký je poměr hlavních složek ghí spreje?",
+    "options": [
+      "30 % avokádového oleje a 70 % ghí",
+      "50 % avokádového oleje a 50 % ghí",
+      "70 % avokádového oleje a 30 % ghí",
+      "90 % avokádového oleje a 10 % ghí"
+    ],
+    "answer": "70 % avokádového oleje a 30 % ghí",
+    "explanation": "Složení tvoří 70 % avokádového oleje a 30 % koncentrovaného másla ghí.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q2",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "text",
+    "prompt": "Který povinně značený alergen produkt obsahuje?",
+    "answer": "mléko",
+    "answerDisplay": "Mléko.",
+    "explanation": "Ghí je koncentrované máslo, proto je povinně značeným alergenem mléko.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q3",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak správně použiješ ghí sprej?",
+    "answer": "Před použitím jej protřepej a nastříkej na studenou pánev nebo pokrm ze vzdálenosti 10–15 cm.",
+    "explanation": "Výrobce uvádí protřepání, studenou pánev nebo pokrm a vzdálenost 10–15 cm.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q4",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: která složka tvoří menší, třicetiprocentní část tohoto produktu?",
+    "image": "img/products/vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml.webp",
+    "options": [
+      "Olivový olej",
+      "Kokosový olej",
+      "Řepkový olej",
+      "Ghí"
+    ],
+    "answer": "Ghí",
+    "explanation": "Menší část směsi tvoří 30 % koncentrovaného másla ghí.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q5",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "mcq",
+    "prompt": "Jaký obsah laktózy uvádí výrobce?",
+    "options": [
+      "Méně než 0,01 g na 100 ml",
+      "Přesně 1 g na 100 ml",
+      "5 g na 100 ml",
+      "Výrobce obsah laktózy neuvádí"
+    ],
+    "answer": "Méně než 0,01 g na 100 ml",
+    "explanation": "Výrobce uvádí méně než 0,01 g laktózy na 100 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q6",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně doporučíš zákazníkovi?",
+    "answer": "Jako praktický sprej s máslovou chutí ghí, 70 % avokádového oleje a velmi nízkým obsahem laktózy.",
+    "explanation": "Doporučení shrnuje složení a vlastnosti, které uvádí výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q7",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "mcq",
+    "prompt": "Kam se sprej podle návodu nesmí stříkat?",
+    "options": [
+      "Na studený pokrm",
+      "Na studenou pánev",
+      "Přímo do trouby",
+      "Do salátu"
+    ],
+    "answer": "Přímo do trouby",
+    "explanation": "Výrobce výslovně upozorňuje, že se sprej nikdy nemá stříkat přímo do trouby.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml-q8",
+    "productId": "vilgain-ghi-ve-spreji-s-avokadovym-olejem-200-ml",
+    "type": "text",
+    "prompt": "Kolik procent produktu tvoří avokádový olej?",
+    "answer": "70 %",
+    "answerDisplay": "70 %.",
+    "explanation": "Avokádový olej tvoří 70 % směsi.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-ghee-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q1",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "mcq",
+    "prompt": "Co tvoří složení kokosového oleje ve spreji?",
+    "options": [
+      "Kokosový a řepkový olej",
+      "Kokosový olej a ghí",
+      "Kokosový a olivový olej",
+      "Kokosový olej 100 %"
+    ],
+    "answer": "Kokosový olej 100 %",
+    "explanation": "Výrobce uvádí jedinou ingredienci: 100% kokosový olej.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q2",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "text",
+    "prompt": "Ze které země pochází kokos použitý pro tento olej?",
+    "answer": "Filipíny",
+    "answerDisplay": "Filipíny.",
+    "explanation": "Výrobce uvádí jako zemi původu Filipíny.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q3",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "flashcard",
+    "prompt": "Pro jaké použití výrobce kokosový olej doporučuje především?",
+    "answer": "Především do studené kuchyně nebo na krátké restování.",
+    "explanation": "Produktový popis uvádí bod zakouření okolo 158 °C a doporučuje hlavně studenou kuchyni nebo krátké restování.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q4",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: které použití nejlépe odpovídá výrobcem uváděnému bodu zakouření přibližně 158 °C?",
+    "image": "img/products/vilgain-kokosovy-olej-ve-spreji-200-ml.webp",
+    "options": [
+      "Dlouhé smažení při 270 °C",
+      "Studená kuchyně nebo krátké restování",
+      "Pouze pečení v troubě",
+      "Výhradně fritování"
+    ],
+    "answer": "Studená kuchyně nebo krátké restování",
+    "explanation": "Výrobce doporučuje především studenou kuchyni nebo krátké restování.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q5",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "mcq",
+    "prompt": "Jaký minimální podíl MCT výrobce uvádí?",
+    "options": [
+      "50 %",
+      "75 %",
+      "93 %",
+      "30 %"
+    ],
+    "answer": "93 %",
+    "explanation": "Výrobce uvádí minimálně 93 % MCT.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q6",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně doporučíš zákazníkovi?",
+    "answer": "Jako 100% kokosový olej z Filipín s téměř neutrální chutí, vysokým obsahem MCT a snadným dávkováním.",
+    "explanation": "Doporučení shrnuje původ, složení a vlastnosti uvedené výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q7",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "mcq",
+    "prompt": "Jak výrobce popisuje chuť a vůni oleje?",
+    "options": [
+      "Výrazně kouřová",
+      "Silně kokosová",
+      "Téměř neutrální",
+      "Pikantní"
+    ],
+    "answer": "Téměř neutrální",
+    "explanation": "Díky vysokému obsahu MCT výrobce popisuje chuť i vůni jako téměř neutrální.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-kokosovy-olej-ve-spreji-200-ml-q8",
+    "productId": "vilgain-kokosovy-olej-ve-spreji-200-ml",
+    "type": "text",
+    "prompt": "Jaký přibližný bod zakouření uvádí výrobce?",
+    "answer": "158 °C",
+    "answerDisplay": "Přibližně 158 °C.",
+    "explanation": "Výrobce uvádí bod zakouření okolo 158 °C.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
   }
 ]
