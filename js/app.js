@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.37';
-import { contentProvider } from '../content.js?v=1.0.37';
-import { storage } from '../storage.js?v=1.0.37';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.37';
+import { CONFIG } from '../config.js?v=1.0.38';
+import { contentProvider } from '../content.js?v=1.0.38';
+import { storage } from '../storage.js?v=1.0.38';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.38';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.37';
+} from '../study.js?v=1.0.38';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -275,7 +275,11 @@ function showBistrousMoment(kind, line, duration = 3200, mood = 'right') {
 }
 
 function applyTheme(theme) {
-  document.documentElement.dataset.theme = theme === 'system' ? '' : theme;
+  const resolvedTheme = theme === 'system'
+    ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    : theme;
+  document.documentElement.dataset.theme = resolvedTheme;
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', resolvedTheme === 'light' ? '#f3ead8' : '#071a15');
 }
 
 function updateProfileChip() {
@@ -660,22 +664,6 @@ function renderSettings() {
                 </label>`).join('')}
               </div>
             </section>
-          </div>
-        </details>
-        <details class="settings-card collapsible-settings" id="pending-products-details">
-          <summary>
-            <span><strong>Čeká na lepší fotografii</strong><small>${state.pendingProducts.length} ${state.pendingProducts.length === 1 ? 'položka' : state.pendingProducts.length <= 4 ? 'položky' : 'položek'} k doplnění</small></span>
-            <span class="disclosure-icon" aria-hidden="true">⌄</span>
-          </summary>
-          <div class="collapsible-content">
-            <p>Tyto výrobky zatím nejsou v testech, protože z dostupných fotek nelze bezpečně ověřit přesnou variantu, složení nebo alergeny.</p>
-            <div class="pending-products-list">
-              ${state.pendingProducts.map((item) => `<article class="pending-product">
-                <strong>${escapeHtml(item.label)}</strong>
-                <p>${escapeHtml(item.reason)}</p>
-                <small><b>Vyfotit:</b> ${escapeHtml(item.needed)}</small>
-              </article>`).join('')}
-            </div>
           </div>
         </details>
         <details class="settings-card collapsible-settings" id="archived-products-details">
@@ -1394,6 +1382,9 @@ topicDialog.addEventListener('click', (event) => { if (event.target === topicDia
 glossaryDialog.querySelector('.dialog-close').addEventListener('click', () => glossaryDialog.close());
 glossaryDialog.addEventListener('click', (event) => { if (event.target === glossaryDialog) glossaryDialog.close(); });
 document.querySelector('#import-file').addEventListener('change', (event) => { if (event.target.files[0]) importBackup(event.target.files[0]); event.target.value = ''; });
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+  if (state.settings?.theme === 'system') applyTheme('system');
+});
 
 try {
   await loadState();

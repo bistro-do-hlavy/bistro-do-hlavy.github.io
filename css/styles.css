@@ -725,3 +725,157 @@ textarea::placeholder { color: #82978c; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .stats-grid .stat-card:last-child { grid-column: 1 / -1; }
 }
+
+/* Pevná pracovní lišta a katalogové nástroje */
+.app-shell { padding-top: calc(6.65rem + env(safe-area-inset-top)); }
+.topbar {
+  position: fixed;
+  z-index: 50;
+  top: max(.35rem, env(safe-area-inset-top));
+  left: 50%;
+  width: min(calc(100% - 2rem), 62rem);
+  min-height: 5.25rem;
+  margin: 0;
+  transform: translateX(-50%);
+}
+.catalog-tools {
+  z-index: 40;
+  top: calc(6.05rem + env(safe-area-inset-top));
+  box-shadow: 0 10px 24px rgba(0,0,0,.28);
+}
+
+/* Světlé bistro — papír, inkoust, dřevo a tmavá tabule */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f2ead9;
+  --surface: #fffaf0;
+  --surface-soft: #eadfca;
+  --ink: #17372c;
+  --muted: #69786f;
+  --line: #cdbf9f;
+  --brand: #d95f4d;
+  --brand-deep: #aa4034;
+  --lime: #efc45e;
+  --lime-ink: #33260b;
+  --danger: #b74443;
+  --warning: #9a661e;
+  --shadow: 0 16px 38px rgba(71, 50, 27, .16);
+}
+:root[data-theme="light"] body {
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(62,45,24,.025) 1px, transparent 1px) 0 0 / 43px 43px,
+    radial-gradient(circle at 18% 12%, rgba(74,53,26,.08) 0 1px, transparent 1.6px) 0 0 / 17px 19px,
+    radial-gradient(circle at 82% 70%, rgba(171,117,62,.08), transparent 28%),
+    var(--bg);
+}
+:root[data-theme="light"] .topbar {
+  border-color: #426454;
+  color: var(--chalk);
+  background: rgba(13, 43, 33, .97);
+  box-shadow: 0 10px 28px rgba(53,38,22,.22), inset 0 0 0 1px rgba(255,245,220,.035);
+}
+:root[data-theme="light"] .page-header h1,
+:root[data-theme="light"] .section-heading h2 { color: var(--ink); text-shadow: none; }
+:root[data-theme="light"] .page-header p,
+:root[data-theme="light"] .section-heading span { color: var(--muted); }
+:root[data-theme="light"] .weekly-board { border-color: rgba(42,67,55,.18); }
+:root[data-theme="light"] .week-day { color: var(--muted); }
+:root[data-theme="light"] .week-day > span { border-color: #a99c82; }
+:root[data-theme="light"] .chalk-note { color: #52645a; }
+:root[data-theme="light"] .stat-card {
+  border-color: var(--line);
+  color: var(--ink);
+  background: rgba(255,250,240,.82);
+  box-shadow: 0 7px 18px rgba(70,48,24,.08);
+}
+:root[data-theme="light"] .stat-card strong { color: var(--brand-deep); }
+:root[data-theme="light"] .training-mode-card,
+:root[data-theme="light"] .recommendation-card,
+:root[data-theme="light"] .research-note,
+:root[data-theme="light"] .settings-card {
+  border-color: var(--line);
+  color: var(--ink);
+  background: linear-gradient(150deg, #fffdf6, #f7eedc);
+  box-shadow: 0 10px 25px rgba(70,48,24,.1);
+}
+:root[data-theme="light"] .training-mode-card p:not(.eyebrow),
+:root[data-theme="light"] .recommendation-card p:not(.eyebrow),
+:root[data-theme="light"] .settings-card p,
+:root[data-theme="light"] .research-note p { color: var(--muted); }
+:root[data-theme="light"] .training-mode-icon { border-color: #d3aa4f; color: #76521c; background: #f7d77f; }
+:root[data-theme="light"] .focus-card {
+  border-color: #254d3c;
+  color: var(--chalk);
+  background: linear-gradient(150deg, #184334, #0e3025);
+}
+:root[data-theme="light"] .focus-card p:not(.eyebrow) { color: #ccddd4; }
+:root[data-theme="light"] .menu-tile {
+  border-color: var(--line);
+  color: var(--ink);
+  background: linear-gradient(150deg, #fffaf0, #efe3cc);
+  box-shadow: 0 8px 20px rgba(70,48,24,.11);
+}
+:root[data-theme="light"] .menu-tile small { color: var(--muted); }
+:root[data-theme="light"] .menu-tile-icon { border-color: #d0a449; color: #79541b; background: #f5d477; }
+:root[data-theme="light"] .mini-product,
+:root[data-theme="light"] .weak-product,
+:root[data-theme="light"] .product-card {
+  border-color: var(--line);
+  color: var(--ink);
+  background: #fffaf0;
+  box-shadow: 0 7px 18px rgba(70,48,24,.1);
+}
+:root[data-theme="light"] .mini-product small,
+:root[data-theme="light"] .weak-product small,
+:root[data-theme="light"] .product-card p,
+:root[data-theme="light"] .progress-label { color: var(--muted); }
+:root[data-theme="light"] .percent,
+:root[data-theme="light"] .weak-score strong { color: var(--brand-deep); }
+:root[data-theme="light"] .catalog-tools {
+  border-color: #c9b995;
+  background: rgba(255,250,240,.96);
+  box-shadow: 0 10px 24px rgba(70,48,24,.17);
+}
+:root[data-theme="light"] select,
+:root[data-theme="light"] input,
+:root[data-theme="light"] .product-note-form textarea {
+  border-color: #cabb9d;
+  color: var(--ink);
+  background: #fffdf8;
+}
+:root[data-theme="light"] input::placeholder,
+:root[data-theme="light"] textarea::placeholder { color: #8a928b; }
+:root[data-theme="light"] .view-switch button { color: #65766d; }
+:root[data-theme="light"] .category-heading h2 { color: var(--ink); }
+:root[data-theme="light"] .progress-track { background: #dfd5c0; }
+:root[data-theme="light"] .dialog {
+  border-color: #8d5733;
+  color: var(--ink);
+  background: #fffaf0;
+}
+:root[data-theme="light"] .dialog p,
+:root[data-theme="light"] .product-facts dt { color: var(--muted); }
+:root[data-theme="light"] .dialog-close { color: var(--ink); background: #eadfca; }
+:root[data-theme="light"] .topic-option,
+:root[data-theme="light"] .archived-product {
+  border-color: var(--line);
+  color: var(--ink);
+  background: #f5ecd9;
+}
+:root[data-theme="light"] .topic-option small { color: var(--muted); }
+:root[data-theme="light"] .allergen-chip { border-color: #c9b996; color: var(--ink); background: #eee2cb; }
+:root[data-theme="light"] .sales-tip { color: var(--ink); background: #f7edc5; }
+:root[data-theme="light"] .source-links a { border-color: var(--line); color: var(--brand-deep); background: #f4ead6; }
+:root[data-theme="light"] .glossary-term { color: var(--brand-deep); }
+:root[data-theme="light"] .summary-card {
+  color: var(--ink);
+  background: #fffaf0;
+}
+:root[data-theme="light"] .summary-stats div,
+:root[data-theme="light"] .result-card,
+:root[data-theme="light"] .result-answer { border-color: var(--line); color: var(--ink); background: #f2e8d3; }
+:root[data-theme="light"] .summary-stats strong { color: var(--brand-deep); }
+:root[data-theme="light"] .empty-catalog { border-color: #b9aa8b; color: var(--muted); }
+:root[data-theme="light"] .empty-catalog strong { color: var(--ink); }
+:root[data-theme="light"] .toast { border-color: #9b633b; color: #fff5dc; background: #173a2e; }
