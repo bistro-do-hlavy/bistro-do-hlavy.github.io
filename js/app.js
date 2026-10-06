@@ -895,9 +895,11 @@ function openProduct(id) {
     <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} ↗</a>`).join('');
   const note = state.productNotes[product.id] || '';
   document.querySelector('#product-detail').innerHTML = `
-    <img class="product-detail-image" src="${product.image}" alt="${escapeHtml(product.name)}">
+    <div class="product-detail-media">
+      <img class="product-detail-image" src="${product.image}" alt="${escapeHtml(product.name)}">
+      <button class="dialog-close product-detail-close" type="button" aria-label="Zavřít detail produktu">×</button>
+    </div>
     <div class="product-detail-body">
-      <button class="dialog-close" type="button" aria-label="Zavřít">×</button>
       <p class="eyebrow">${escapeHtml(product.category)}</p><h2>${escapeHtml(product.name)}</h2>
       ${product.description ? `<p class="product-description">${renderGlossaryText(product.description)}</p>` : ''}
       ${productFacts.length ? `<dl class="product-facts">${productFacts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>` : ''}

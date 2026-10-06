@@ -6360,5 +6360,326 @@
     "explanation": "Výrobce uvádí bod zakouření okolo 158 °C.",
     "sourceLabel": "Výrobce – detail produktu",
     "sourceUrl": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q1",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "mcq",
+    "prompt": "V jaké podobě je tato červená čočka?",
+    "options": [
+      "Neloupaná celá",
+      "Loupaná půlená",
+      "Pražená solená",
+      "Předvařená v nálevu"
+    ],
+    "answer": "Loupaná půlená",
+    "explanation": "Výrobce ji popisuje jako červenou čočku loupanou a půlenou.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q2",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "text",
+    "prompt": "Je potřeba červenou čočku před vařením namáčet?",
+    "answer": "ne",
+    "answerDisplay": "Ne, předem se nenamáčí.",
+    "explanation": "Výrobce uvádí rychlou přípravu bez předchozího namáčení.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q3",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se červená čočka podle výrobce připravuje?",
+    "answer": "Propláchne se, vloží do studené vody a vaří pod pokličkou 10–15 minut; solí se až po uvaření.",
+    "explanation": "Tento postup a čas uvádí návod výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q4",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: jakou konzistenci tato čočka při vaření vytváří?",
+    "image": "img/products/vilgain-cocka-cervena-500-g.webp",
+    "options": [
+      "Zůstává křupavá jako ořech",
+      "Vytváří jemnou konzistenci připomínající pyré",
+      "Rozpouští se na čirý vývar",
+      "Po uvaření ztvrdne"
+    ],
+    "answer": "Vytváří jemnou konzistenci připomínající pyré",
+    "explanation": "Výrobce uvádí jemnou konzistenci podobnou pyré, vhodnou například do polévek a kari.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q5",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "mcq",
+    "prompt": "Kolik bílkovin obsahuje 100 g produktu?",
+    "options": [
+      "11 g",
+      "17 g",
+      "24 g",
+      "27 g"
+    ],
+    "answer": "27 g",
+    "explanation": "Výrobce uvádí 27 g bílkovin na 100 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q6",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně doporučíš zákazníkovi?",
+    "answer": "Jako rychle připravenou loupanou luštěninu bez namáčení, vhodnou do polévek, kari, burgerů nebo jemných omáček.",
+    "explanation": "Doporučení vychází z přípravy, konzistence a použití uvedených výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q7",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "mcq",
+    "prompt": "Kdy se má čočka podle návodu osolit?",
+    "options": [
+      "Před propláchnutím",
+      "Hned po vložení do studené vody",
+      "V polovině vaření",
+      "Až po uvaření"
+    ],
+    "answer": "Až po uvaření",
+    "explanation": "Výrobce výslovně doporučuje solit až po uvaření.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g-q8",
+    "productId": "vilgain-cocka-cervena-500-g",
+    "type": "text",
+    "prompt": "Kolik gramů obsahuje jedno balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Jedno balení obsahuje 500 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q1",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "mcq",
+    "prompt": "Co se s čočkou Beluga děje při správném vaření?",
+    "options": [
+      "Rozvaří se na pyré",
+      "Zachová si tvar",
+      "Změní se na kaši bez struktury",
+      "Musí zůstat tvrdá"
+    ],
+    "answer": "Zachová si tvar",
+    "explanation": "Výrobce zdůrazňuje, že se Beluga nerozvaří a zachovává si tvar.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q2",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "text",
+    "prompt": "Jak dlouho se čočka Beluga vaří?",
+    "answer": "20-30 minut",
+    "answerDisplay": "Přibližně 20–30 minut.",
+    "explanation": "Návod výrobce uvádí vaření pod pokličkou přibližně 20–30 minut.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q3",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "flashcard",
+    "prompt": "Jak se čočka Beluga podle výrobce připravuje?",
+    "answer": "Propláchne se, vloží do studené vody, přivede k varu a vaří pod pokličkou 20–30 minut doměkka.",
+    "explanation": "Jde o postup uvedený přímo výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q4",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: podle čeho získala čočka Beluga svůj název?",
+    "image": "img/products/vilgain-cocka-cerna-beluga-300-g.webp",
+    "options": [
+      "Podle stejnojmenné oblasti v Itálii",
+      "Podle podobnosti s kaviárem",
+      "Podle černého pepře",
+      "Podle názvu výrobního stroje"
+    ],
+    "answer": "Podle podobnosti s kaviárem",
+    "explanation": "Výrobce vysvětluje název podobností drobných černých zrnek s kaviárem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q5",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "mcq",
+    "prompt": "Kolik bílkovin obsahuje 100 g produktu?",
+    "options": [
+      "8,9 g",
+      "17 g",
+      "24 g",
+      "31 g"
+    ],
+    "answer": "24 g",
+    "explanation": "Výrobce uvádí 24 g bílkovin na 100 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q6",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně doporučíš zákazníkovi?",
+    "answer": "Jako lehce oříškovou čočku bez namáčení, která drží tvar a hodí se do salátů, polévek i jako příloha.",
+    "explanation": "Doporučení shrnuje chuť, přípravu a použití uvedené výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q7",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "mcq",
+    "prompt": "Které ochucení uvádí výrobce přímo v návodu?",
+    "options": [
+      "Skořice, vanilka a kardamom",
+      "Kurkuma, saturejka nebo majoránka",
+      "Kakao, chilli a zázvor",
+      "Máta, meduňka a citron"
+    ],
+    "answer": "Kurkuma, saturejka nebo majoránka",
+    "explanation": "Tyto tři možnosti výrobce uvádí u návodu k použití.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g-q8",
+    "productId": "vilgain-cocka-cerna-beluga-300-g",
+    "type": "text",
+    "prompt": "Kolik gramů obsahuje jedno balení?",
+    "answer": "300 g",
+    "answerDisplay": "300 g.",
+    "explanation": "Jedno balení obsahuje 300 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q1",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "mcq",
+    "prompt": "Co tvoří složení produktu?",
+    "options": [
+      "Chia a lněná semínka",
+      "Chia semínka a sůl",
+      "Chia semínka (Salvia hispanica) 100 %",
+      "Pražená chia semínka s olejem"
+    ],
+    "answer": "Chia semínka (Salvia hispanica) 100 %",
+    "explanation": "Výrobce uvádí jedinou ingredienci: 100% chia semínka.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q2",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "text",
+    "prompt": "Ze které země chia semínka pocházejí?",
+    "answer": "Paraguay",
+    "answerDisplay": "Z Paraguaye.",
+    "explanation": "Výrobce uvádí jako zemi původu Paraguay.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q3",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "flashcard",
+    "prompt": "Jak výrobce doporučuje připravit chia pudink?",
+    "answer": "Smíchat semínka s mlékem nebo rostlinným nápojem v poměru 1:4, po 3–5 minutách promíchat a nechat v lednici alespoň 4 hodiny, ideálně přes noc.",
+    "explanation": "Jde o postup uvedený výrobcem u produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q4",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "photo",
+    "prompt": "Fotografie je kontext: co chia semínka udělají po namočení?",
+    "image": "img/products/vilgain-chia-seminka-250-g.webp",
+    "options": [
+      "Rozpustí se beze zbytku",
+      "Vytvoří gelovou vrstvu a zahustí tekutinu",
+      "Začnou pěnit jako droždí",
+      "Ztratí schopnost přijímat vodu"
+    ],
+    "answer": "Vytvoří gelovou vrstvu a zahustí tekutinu",
+    "explanation": "Výrobce uvádí tvorbu gelové vrstvy, díky níž semínka zahušťují tekutinu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q5",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "mcq",
+    "prompt": "Kolik vlákniny uvádí tabulka na 100 g produktu?",
+    "options": [
+      "8,9 g",
+      "11 g",
+      "17 g",
+      "34 g"
+    ],
+    "answer": "34 g",
+    "explanation": "Aktuální tabulka výrobce uvádí 34 g vlákniny na 100 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q6",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně doporučíš zákazníkovi?",
+    "answer": "Jako nepražená semínka s neutrální chutí a vysokým obsahem vlákniny do pudinku, kaší, jogurtů, smoothies nebo pečení.",
+    "explanation": "Doporučení vychází z vlastností a použití uvedených výrobcem.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q7",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "mcq",
+    "prompt": "Které použití výrobce u chia semínek uvádí?",
+    "options": [
+      "Pouze na smažení",
+      "Do kaší, jogurtů, smoothies a pečení",
+      "Výhradně jako koření na maso",
+      "Pouze k přípravě čaje"
+    ],
+    "answer": "Do kaší, jogurtů, smoothies a pečení",
+    "explanation": "Výrobce uvádí široké použití ve sladkých i dalších pokrmech.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g-q8",
+    "productId": "vilgain-chia-seminka-250-g",
+    "type": "text",
+    "prompt": "Kolik gramů obsahuje jedno balení?",
+    "answer": "250 g",
+    "answerDisplay": "250 g.",
+    "explanation": "Jedno balení obsahuje 250 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
   }
 ]

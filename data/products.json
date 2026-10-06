@@ -2672,5 +2672,113 @@
         "url": "https://vilgain.cz/vilgain-kokosovy-olej-ve-spreji"
       }
     ]
+  },
+  {
+    "id": "vilgain-cocka-cervena-500-g",
+    "name": "Vilgain Čočka červená 500 g",
+    "category": "Luštěniny",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Česká republika, Ukrajina, Turecko nebo Kanada (dle šarže)",
+    "description": "Loupaná půlená červená čočka s rychlou přípravou bez předchozího namáčení a jemnou konzistencí po uvaření.",
+    "ingredients": [
+      "červená čočka drobnozrnná"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "500 g",
+      "loupaná a půlená",
+      "není potřeba předem namáčet",
+      "27 g bílkovin a 11 g vlákniny na 100 g",
+      "může obsahovat stopy obilovin obsahujících lepek"
+    ],
+    "preparation": [
+      "Čočku propláchni a vlož do hrnce se studenou vodou.",
+      "Přiveď k varu a vař pod pokličkou přibližně 10–15 minut doměkka.",
+      "Osol až po uvaření."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který chce rychle připravenou luštěninu do polévek, kari, vegetariánských burgerů nebo jemných omáček.",
+    "image": "img/products/vilgain-cocka-cervena-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-cocka-cervena/500-g-40493"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-cocka-cerna-beluga-300-g",
+    "name": "Vilgain Čočka černá Beluga 300 g",
+    "category": "Luštěniny",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Neuvedeno výrobcem",
+    "description": "Drobnozrnná černá čočka s lehce oříškovou chutí, která se nemusí namáčet a při vaření si zachovává tvar.",
+    "ingredients": [
+      "černá drobnozrnná čočka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "300 g",
+      "nemusí se předem namáčet",
+      "při vaření se nerozvaří a zachovává si tvar",
+      "24 g bílkovin a 8,9 g vlákniny na 100 g",
+      "může obsahovat stopy obilovin obsahujících lepek"
+    ],
+    "preparation": [
+      "Čočku propláchni a vlož do hrnce se studenou vodou.",
+      "Přiveď k varu a vař pod pokličkou přibližně 20–30 minut doměkka.",
+      "Během vaření ji můžeš osolit a ochutit kurkumou, saturejkou nebo majoránkou."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který hledá čočku s pevnější strukturou do salátů, jako přílohu nebo základ polévek.",
+    "image": "img/products/vilgain-cocka-cerna-beluga-300-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-cocka-cerna-beluga/300-g-40591"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-chia-seminka-250-g",
+    "name": "Vilgain Chia semínka 250 g",
+    "category": "Semínka",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Paraguay",
+    "description": "Nepražená semena šalvěje hispánské s jemnou neutrální chutí, vysokým obsahem vlákniny a schopností po namočení vytvářet gel.",
+    "ingredients": [
+      "chia semínka (Salvia hispanica) 100 %"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "250 g",
+      "100% nepražená chia semínka z Paraguaye",
+      "34 g vlákniny a 17 g bílkovin na 100 g",
+      "po namočení vytvářejí gelovou vrstvu a zahušťují tekutinu",
+      "mohou obsahovat stopy obilovin obsahujících lepek"
+    ],
+    "preparation": [
+      "Do chia pudinku smíchej semínka s mlékem nebo rostlinným nápojem v poměru 1:4.",
+      "Po 3–5 minutách směs promíchej, zakryj a nech v lednici alespoň 4 hodiny, ideálně přes noc.",
+      "Přidávej do kaší, jogurtů, smoothies, pečení nebo k zahuštění polévek a omáček."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelné složení.",
+    "salesTip": "Doporuč zákazníkovi, který chce neutrální semínka s vysokým obsahem vlákniny pro chia pudink, kaše, jogurty nebo smoothies.",
+    "image": "img/products/vilgain-chia-seminka-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-chia-seeds/250-g-38359"
+      }
+    ]
   }
 ]
