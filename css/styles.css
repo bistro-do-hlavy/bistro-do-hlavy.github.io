@@ -43,8 +43,8 @@
 :root[data-theme="dark"] { color-scheme: dark; --bg:#071611; --surface:#10271e; --surface-soft:#19382c; --ink:#f6efdc; --muted:#b2c1b8; --line:#345044; --brand:#f07a65; --brand-deep:#dd5f50; --danger:#ff9191; --warning:#ffc16c; --shadow:0 16px 45px rgba(0,0,0,.3); }
 
 * { box-sizing: border-box; }
-html { height: 100%; overflow: hidden; background: var(--bg); scroll-behavior: smooth; }
-body { height: 100%; margin: 0; overflow: hidden; min-width: 320px; min-height: 100vh; color: var(--ink); background: var(--bg); background-image: radial-gradient(circle at 18% 8%, color-mix(in srgb, var(--chalk) 8%, transparent) 0 1px, transparent 2px), radial-gradient(circle at 82% 72%, rgba(60,93,75,.08), transparent 35%); background-size: 18px 18px, auto; font-size: 1rem; line-height: 1.5; }
+html { background: var(--bg); scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; color: var(--ink); background: var(--bg); background-image: radial-gradient(circle at 18% 8%, color-mix(in srgb, var(--chalk) 8%, transparent) 0 1px, transparent 2px), radial-gradient(circle at 82% 72%, rgba(60,93,75,.08), transparent 35%); background-size: 18px 18px, auto; font-size: 1rem; line-height: 1.5; }
 button, input, select, textarea { font: inherit; }
 button { color: inherit; }
 button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand) 60%, transparent); outline-offset: 3px; }
@@ -727,36 +727,24 @@ textarea::placeholder { color: #82978c; }
 }
 
 /* Pevná pracovní lišta a katalogové nástroje */
-.app-shell {
-  height: 100vh;
-  height: 100dvh;
-  min-height: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  -webkit-overflow-scrolling: touch;
-  padding-top: calc(6.65rem + env(safe-area-inset-top));
-}
+.app-shell { padding-top: .7rem; }
 .topbar {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 50;
   top: max(.35rem, env(safe-area-inset-top));
-  left: max(1rem, env(safe-area-inset-left));
-  right: max(1rem, env(safe-area-inset-right));
-  width: auto;
-  max-width: 62rem;
+  width: min(calc(100% - 2rem), 62rem);
   min-height: 5.25rem;
-  margin: 0 auto;
+  margin: max(.35rem, env(safe-area-inset-top)) auto 0;
   transform: none;
 }
 .catalog-tools {
   position: -webkit-sticky;
   position: sticky;
   z-index: 40;
-  top: .35rem;
+  top: calc(6.05rem + env(safe-area-inset-top));
   box-shadow: 0 10px 24px rgba(0,0,0,.28);
 }
-.app-version { border-radius: 999px; padding: .45rem .75rem; color: var(--lime-ink); background: var(--lime); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .85rem; }
 
 /* Světlé bistro — papír, inkoust, dřevo a tmavá tabule */
 :root[data-theme="light"] {

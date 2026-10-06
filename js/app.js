@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.41';
-import { contentProvider } from '../content.js?v=1.0.41';
-import { storage } from '../storage.js?v=1.0.41';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.41';
+import { CONFIG } from '../config.js?v=1.0.40';
+import { contentProvider } from '../content.js?v=1.0.40';
+import { storage } from '../storage.js?v=1.0.40';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.40';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.41';
+} from '../study.js?v=1.0.40';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -22,7 +22,6 @@ const ALLERGENS = {
 };
 
 const TYPE_LABELS = { mcq: 'Výběr', flashcard: 'Kartička', text: 'Napsat', photo: 'Foto výzva' };
-const APP_VERSION = '1.0.41';
 const QUESTION_TYPE_SETTINGS = [
   { id: 'mcq', label: 'Výběr z možností', description: 'Jedna správná odpověď ze čtyř.' },
   { id: 'flashcard', label: 'Kartičky', description: 'Odpověď si vybavíte a sami ohodnotíte.' },
@@ -194,16 +193,11 @@ const state = {
 };
 
 const app = document.querySelector('#app');
-const scrollContainer = document.querySelector('.app-shell');
 const profileDialog = document.querySelector('#profile-dialog');
 const productDialog = document.querySelector('#product-dialog');
 const topicDialog = document.querySelector('#topic-dialog');
 const glossaryDialog = document.querySelector('#glossary-dialog');
 const toast = document.querySelector('#toast');
-
-function scrollToTop(behavior = 'instant') {
-  scrollContainer.scrollTo({ top: 0, behavior });
-}
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]);
@@ -396,7 +390,7 @@ function navigate(view) {
   if (view === 'products') renderProducts();
   if (view === 'stats') renderStats();
   if (view === 'settings') renderSettings();
-  scrollToTop('smooth');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function productRows(products = state.products) {
@@ -701,7 +695,6 @@ function renderSettings() {
           <div class="field-row"><div><h2>Vzhled</h2><p>Světlý, tmavý nebo podle telefonu.</p></div>
           <select id="theme" aria-label="Barevný režim"><option value="system">Podle telefonu</option><option value="light">Světlý</option><option value="dark">Tmavý</option></select></div>
         </article>
-        <article class="settings-card"><div class="field-row"><div><h2>Verze aplikace</h2><p>Podle tohoto čísla poznáme, zda iPhone načetl poslední úpravy.</p></div><strong class="app-version">${APP_VERSION}</strong></div></article>
         <article class="settings-card"><h2>Záloha pokroku</h2><p>Soubor obsahuje váš profil, nastavení a nezměnitelnou historii opakování. Hodí se při výměně telefonu.</p>
           <div class="action-row"><button id="export" class="button button-secondary" type="button">Exportovat</button><button id="import" class="button button-secondary" type="button">Importovat</button></div>
         </article>
@@ -1144,7 +1137,7 @@ function renderQuestion() {
   document.querySelectorAll('[data-option]').forEach((button) => button.addEventListener('click', () => answerChoice(button.dataset.option)));
   document.querySelector('#text-form')?.addEventListener('submit', (event) => { event.preventDefault(); answerText(new FormData(event.currentTarget).get('answer')); });
   document.querySelector('#reveal')?.addEventListener('click', revealFlashcard);
-  scrollToTop();
+  window.scrollTo({ top: 0, behavior: 'instant' });
   app.focus();
 }
 
@@ -1303,7 +1296,7 @@ function renderSummary() {
   document.querySelector('#finish').addEventListener('click', () => navigate('home'));
   document.querySelector('#open-stats')?.addEventListener('click', () => navigate('stats'));
   document.querySelector('#retry-mistakes')?.addEventListener('click', () => startStudySession(retryQueue, 'mistakes'));
-  scrollToTop();
+  window.scrollTo({ top: 0, behavior: 'instant' });
   updateBadge();
   if (dailyGoalCompleted) showBistrousMoment('goal', randomBistrousLine('goal'), 4800);
 }
