@@ -1,8 +1,8 @@
-const CACHE_VERSION = 'bistro-v1.0.38';
+const CACHE_VERSION = 'bistro-v1.0.39';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.38', './js/app.js?v=1.0.38',
-  './config.js?v=1.0.38', './content.js?v=1.0.38', './storage.js?v=1.0.38',
-  './fsrs-service.js?v=1.0.38', './study.js?v=1.0.38', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css?v=1.0.39', './js/app.js?v=1.0.39',
+  './config.js?v=1.0.39', './content.js?v=1.0.39', './storage.js?v=1.0.39',
+  './fsrs-service.js?v=1.0.39', './study.js?v=1.0.39', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './img/bistrous-test.webp', './img/bistrous-test-wrong.webp', './img/bistrous-goal.webp',
   './data/products.json', './data/questions.json', './data/pending-products.json',
@@ -107,7 +107,10 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (url.origin === self.location.origin && url.pathname.includes('/data/')) {
+  const isFreshAppFile = url.origin === self.location.origin
+    && (url.pathname.includes('/data/') || /\.(?:css|js|webmanifest)$/.test(url.pathname));
+
+  if (isFreshAppFile) {
     event.respondWith(networkFirst(event.request));
     return;
   }

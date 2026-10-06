@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.38';
-import { contentProvider } from '../content.js?v=1.0.38';
-import { storage } from '../storage.js?v=1.0.38';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.38';
+import { CONFIG } from '../config.js?v=1.0.39';
+import { contentProvider } from '../content.js?v=1.0.39';
+import { storage } from '../storage.js?v=1.0.39';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.39';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.38';
+} from '../study.js?v=1.0.39';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -1345,7 +1345,7 @@ async function registerServiceWorker() {
   });
 
   try {
-    const registration = await navigator.serviceWorker.register('./sw.js');
+    const registration = await navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' });
     const checkForUpdate = () => registration.update().catch((error) => console.warn('Kontrola aktualizace se nezdařila.', error));
 
     checkForUpdate();
