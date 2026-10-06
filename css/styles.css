@@ -727,6 +727,16 @@ textarea::placeholder { color: #82978c; }
 }
 
 /* Pevná pracovní lišta a katalogové nástroje */
+.top-safe-area-shield {
+  position: fixed;
+  z-index: 49;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: calc(max(.35rem, env(safe-area-inset-top)) + .5rem);
+  pointer-events: none;
+  background: var(--bg);
+}
 .app-shell { padding-top: .7rem; }
 .topbar {
   position: -webkit-sticky;
