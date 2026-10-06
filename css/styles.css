@@ -727,18 +727,20 @@ textarea::placeholder { color: #82978c; }
 }
 
 /* Pevná pracovní lišta a katalogové nástroje */
-.app-shell { padding-top: calc(6.65rem + env(safe-area-inset-top)); }
+.app-shell { padding-top: .7rem; }
 .topbar {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 50;
   top: max(.35rem, env(safe-area-inset-top));
-  left: 50%;
   width: min(calc(100% - 2rem), 62rem);
   min-height: 5.25rem;
-  margin: 0;
-  transform: translateX(-50%);
+  margin: max(.35rem, env(safe-area-inset-top)) auto 0;
+  transform: none;
 }
 .catalog-tools {
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 40;
   top: calc(6.05rem + env(safe-area-inset-top));
   box-shadow: 0 10px 24px rgba(0,0,0,.28);

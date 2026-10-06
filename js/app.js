@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.39';
-import { contentProvider } from '../content.js?v=1.0.39';
-import { storage } from '../storage.js?v=1.0.39';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.39';
+import { CONFIG } from '../config.js?v=1.0.40';
+import { contentProvider } from '../content.js?v=1.0.40';
+import { storage } from '../storage.js?v=1.0.40';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.40';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -13,7 +13,7 @@ import {
   normalizeText,
   productMastery,
   ratingLabel,
-} from '../study.js?v=1.0.39';
+} from '../study.js?v=1.0.40';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -80,6 +80,14 @@ const BISTROUS_LINES = {
     'Ještě chvíli a budete školit i Bistrouše.',
     'Sklad znalostí hlásí plnou kapacitu.',
     'Pozor, profesionál v uličce!',
+  ],
+  recovery: [
+    'Tohle dřív zlobilo. Teď už ani drobeček nejistoty.',
+    'Odveta vyhrána. Tenhle produkt už vás nenachytá.',
+    'Slabé místo právě povýšilo na silnou stránku.',
+    'Minule zádrhel, dnes čistá práce.',
+    'Bistrouš potvrzuje: pokrok nalezen a uložen.',
+    'Tenhle regál jste si právě srovnali v hlavě.',
   ],
   repeat: [
     'Tenhle produkt se vrací častěji než stálý zákazník.',
@@ -1054,7 +1062,7 @@ function startTopicStudy(category) {
 
 function startStudySession(queue, mode) {
   const preparedQueue = queue.map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
-  state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mode };
+  state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mascotQuizShows: 0, mode };
   state.currentView = 'study';
   document.body.classList.add('is-studying');
   setActiveNav('');
@@ -1139,21 +1147,23 @@ function questionSourceLink(question) {
   return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
 }
 
-function feedbackBistrousLine(question, correct) {
-  const answers = state.session.answers;
-  const repeatedMisses = answers.filter((item) => item.questionId === question.id && !item.correct).length;
-  if (!correct && repeatedMisses >= 2) return randomBistrousLine('repeat');
-  if (correct) {
-    let run = 0;
-    for (let index = answers.length - 1; index >= 0 && answers[index].correct; index -= 1) run += 1;
-    if (run >= 3) return randomBistrousLine('streak');
+function bistrousAchievement(correct, previousReviews) {
+  if (!correct || state.session.mascotQuizShows >= 1) return null;
+  const recovered = previousReviews.some((review) => review.rating <= RATINGS.HARD);
+  let correctRun = 0;
+  for (let index = state.session.answers.length - 1; index >= 0 && state.session.answers[index].correct; index -= 1) correctRun += 1;
+  if (recovered) {
+    state.session.mascotQuizShows += 1;
+    return randomBistrousLine('recovery');
   }
-  if (question.format === 'comparison' && Math.random() < .34) return randomBistrousLine('comparison');
-  if (question.type === 'photo' && Math.random() < .34) return randomBistrousLine('photo');
-  return randomBistrousLine(correct ? 'correct' : 'wrong');
+  if (correctRun === 4) {
+    state.session.mascotQuizShows += 1;
+    return randomBistrousLine('streak');
+  }
+  return null;
 }
 
-function showFeedback({ correct, selected, answer, explanation, question }) {
+function showFeedback({ correct, selected, answer, explanation, question, mascotLine }) {
   const panel = document.querySelector('#feedback');
   const answerValue = Array.isArray(answer) ? answer.join(', ') : answer;
   const answerSummary = correct
@@ -1166,7 +1176,7 @@ function showFeedback({ correct, selected, answer, explanation, question }) {
     ${memoryDetails(question)}${questionSourceLink(question)}
   </section><button id="next" class="button button-primary button-full result-next" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
-  showBistrousMoment('quiz', feedbackBistrousLine(question, correct), 3300, correct ? 'right' : 'wrong');
+  if (mascotLine) showBistrousMoment('quiz', mascotLine, 3300, 'right');
 }
 
 async function answerChoice(selected) {
@@ -1188,8 +1198,8 @@ async function answerChoice(selected) {
       button.classList.add('is-dimmed');
     }
   });
-  await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct);
-  showFeedback({ correct, selected, answer: question.answer, explanation: question.explanation, question });
+  const mascotLine = await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct);
+  showFeedback({ correct, selected, answer: question.answer, explanation: question.explanation, question, mascotLine });
 }
 
 async function answerText(input) {
@@ -1198,8 +1208,8 @@ async function answerText(input) {
   const question = currentQuestion();
   const result = evaluateText(input, question.answer);
   document.querySelector('#text-form').querySelectorAll('input,button').forEach((element) => { element.disabled = true; });
-  await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct);
-  showFeedback({ correct: result.correct, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question });
+  const mascotLine = await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct);
+  showFeedback({ correct: result.correct, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question, mascotLine });
 }
 
 function revealFlashcard() {
@@ -1217,10 +1227,11 @@ function revealFlashcard() {
   document.querySelectorAll('[data-rating]').forEach((button) => button.addEventListener('click', async () => {
     document.querySelectorAll('[data-rating]').forEach((item) => { item.disabled = true; });
     const rating = Number(button.dataset.rating);
-    await recordReview(question, rating, rating >= RATINGS.GOOD);
+    const mascotLine = await recordReview(question, rating, rating >= RATINGS.GOOD);
+    const hasAnotherQuestion = state.session.index + 1 < state.session.queue.length;
     nextQuestion();
+    if (mascotLine && hasAnotherQuestion) showBistrousMoment('quiz', mascotLine, 3300, 'right');
   }));
-  showBistrousMoment('quiz', randomBistrousLine('reveal'), 3000);
 }
 
 function formatInterval(date) {
@@ -1232,7 +1243,8 @@ function formatInterval(date) {
 }
 
 async function recordReview(question, rating, correct) {
-  const wasNew = !state.reviews.some((review) => review.questionId === question.id);
+  const previousReviews = state.reviews.filter((review) => review.questionId === question.id);
+  const wasNew = previousReviews.length === 0;
   const review = {
     id: crypto.randomUUID(), userId: state.profile.userId, questionId: question.id,
     rating, reviewedAt: new Date().toISOString(), wasNew,
@@ -1249,6 +1261,7 @@ async function recordReview(question, rating, correct) {
     state.session.queue.splice(insertAt, 0, question);
     state.session.retryIds.add(question.id);
   }
+  return bistrousAchievement(correct, previousReviews);
 }
 
 function nextQuestion() {
