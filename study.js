@@ -1,5 +1,5 @@
-import { CONFIG } from './config.js?v=1.0.31';
-import { RATINGS, rebuildProgress } from './fsrs-service.js?v=1.0.31';
+import { CONFIG } from './config.js';
+import { RATINGS, rebuildProgress } from './fsrs-service.js';
 
 export function normalizeText(value) {
   return String(value ?? '')
@@ -134,7 +134,10 @@ export function learningInsights({ products, questions, progress, reviews, now =
   const histories = reviewsByQuestion(activeReviews);
   const sevenDaysAgo = new Date(now);
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  const thirtyDaysAgo = new Date(now);
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
   const recent = activeReviews.filter((review) => new Date(review.reviewedAt) >= sevenDaysAgo);
+  const recentThirty = activeReviews.filter((review) => new Date(review.reviewedAt) >= thirtyDaysAgo);
   const secure = (items) => items.filter((review) => review.rating >= RATINGS.GOOD).length;
   const percentage = (items) => items.length ? Math.round(secure(items) / items.length * 100) : 0;
   const learnedQuestionIds = new Set(activeReviews.map((review) => review.questionId));
@@ -157,14 +160,73 @@ export function learningInsights({ products, questions, progress, reviews, now =
   }).filter((product) => product.attempts > 0 && product.weakQuestionCount > 0)
     .sort((a, b) => b.score - a.score || a.securePercent - b.securePercent);
 
+  const categoryInsights = [...new Set(products.map((product) => product.category))].map((category) => {
+    const categoryProducts = products.filter((product) => product.category === category);
+    const productIds = new Set(categoryProducts.map((product) => product.id));
+    const categoryQuestions = questions.filter((question) => productIds.has(question.productId));
+    const questionIds = new Set(categoryQuestions.map((question) => question.id));
+    const categoryReviews = activeReviews.filter((review) => questionIds.has(review.questionId));
+    const learned = new Set(categoryReviews.map((review) => review.questionId)).size;
+    const mastery = categoryProducts.length
+      ? Math.round(categoryProducts.reduce((sum, product) => sum + productMastery(product.id, questions, progress), 0) / categoryProducts.length)
+      : 0;
+    return {
+      category,
+      productCount: categoryProducts.length,
+      questionCount: categoryQuestions.length,
+      learnedQuestions: learned,
+      attempts: categoryReviews.length,
+      securePercent: percentage(categoryReviews),
+      mastery,
+    };
+  }).sort((a, b) => Number(b.attempts > 0) - Number(a.attempts > 0)
+    || a.mastery - b.mastery
+    || b.attempts - a.attempts
+    || a.category.localeCompare(b.category, 'cs'));
+
+  const dailyTrend = Array.from({ length: 7 }, (_, index) => {
+    const date = new Date(now);
+    date.setDate(date.getDate() - (6 - index));
+    const day = localDay(date.toISOString());
+    const dayReviews = activeReviews.filter((review) => localDay(review.reviewedAt) === day);
+    return {
+      day,
+      label: new Intl.DateTimeFormat('cs-CZ', { weekday: 'short', timeZone: 'Europe/Prague' }).format(date).replace('.', ''),
+      reviews: dayReviews.length,
+      securePercent: percentage(dayReviews),
+    };
+  });
+
+  const confusionMap = new Map();
+  activeReviews.filter((review) => review.mode === 'comparison'
+    && review.wasCorrect === false
+    && review.selectedAnswer
+    && review.correctAnswer).forEach((review) => {
+    const names = [String(review.selectedAnswer), String(review.correctAnswer)].sort((a, b) => a.localeCompare(b, 'cs'));
+    const key = names.join('\u0000');
+    const current = confusionMap.get(key) || { products: names, count: 0 };
+    current.count += 1;
+    confusionMap.set(key, current);
+  });
+  const confusedPairs = [...confusionMap.values()].sort((a, b) => b.count - a.count).slice(0, 5);
+  const recentMistakes = [...activeReviews].reverse()
+    .filter((review) => review.wasCorrect === false || (review.wasCorrect == null && review.rating === RATINGS.AGAIN))
+    .slice(0, 5);
+
   return {
     totalReviews: activeReviews.length,
     recentReviews: recent.length,
     overallSecurePercent: percentage(activeReviews),
     recentSecurePercent: percentage(recent),
+    thirtyDayReviews: recentThirty.length,
+    thirtyDaySecurePercent: percentage(recentThirty),
     learnedQuestions: learnedQuestionIds.size,
     totalQuestions: questions.length,
     weakProducts,
+    categoryInsights,
+    dailyTrend,
+    confusedPairs,
+    recentMistakes,
   };
 }
 

@@ -1,7 +1,7 @@
-import { CONFIG } from '../config.js?v=1.0.45';
-import { contentProvider } from '../content.js?v=1.0.45';
-import { storage } from '../storage.js?v=1.0.45';
-import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js?v=1.0.45';
+import { CONFIG } from '../config.js';
+import { contentProvider } from '../content.js';
+import { storage } from '../storage.js';
+import { RATINGS, getIntervals, rebuildProgress } from '../fsrs-service.js';
 import {
   buildProgressFromReviews,
   buildStudyQueue,
@@ -12,8 +12,9 @@ import {
   learningInsights,
   normalizeText,
   productMastery,
+  questionWeakness,
   ratingLabel,
-} from '../study.js?v=1.0.45';
+} from '../study.js';
 
 const ALLERGENS = {
   1: 'Obiloviny s lepkem', 2: 'Korýši', 3: 'Vejce', 4: 'Ryby', 5: 'Arašídy',
@@ -528,6 +529,28 @@ function productCollection(products, view) {
 
 function renderProducts() {
   const view = ['grid', 'list', 'category'].includes(state.settings.productCatalogView) ? state.settings.productCatalogView : 'grid';
+  const reviewedQuestionIds = new Set(state.reviews.map((review) => review.questionId));
+  const now = new Date();
+  const statusByProduct = new Map(state.products.map((product) => {
+    const questions = state.questions.filter((question) => question.productId === product.id);
+    const reviewed = questions.filter((question) => reviewedQuestionIds.has(question.id));
+    const due = questions.some((question) => state.progress[question.id]?.due && new Date(state.progress[question.id].due) <= now);
+    const weak = questions.some((question) => questionWeakness(question.id, state.reviews, state.progress[question.id]) >= 25);
+    return [product.id, {
+      new: reviewed.length === 0,
+      due,
+      weak,
+      mastered: productMastery(product.id, state.questions, state.progress) >= 80,
+    }];
+  }));
+  const filters = [
+    { id: 'all', label: 'Všechny', count: state.products.length },
+    { id: 'new', label: 'Nevyzkoušené', count: state.products.filter((product) => statusByProduct.get(product.id).new).length },
+    { id: 'due', label: 'K opakování', count: state.products.filter((product) => statusByProduct.get(product.id).due).length },
+    { id: 'weak', label: 'Slabé', count: state.products.filter((product) => statusByProduct.get(product.id).weak).length },
+    { id: 'mastered', label: 'Zvládnuté', count: state.products.filter((product) => statusByProduct.get(product.id).mastered).length },
+  ];
+  let activeFilter = 'all';
   app.innerHTML = `
     <section class="page">
       <header class="page-header catalog-header"><div><p class="eyebrow">Katalog · ${state.products.length} produktů</p><h1>Produkty</h1><p>Vyhledejte produkt nebo si katalog seřaďte tak, jak se vám učí nejlépe.</p></div></header>
@@ -538,16 +561,29 @@ function renderProducts() {
           <button type="button" data-catalog-view="list" aria-label="Seznam" aria-pressed="${view === 'list'}" title="Seznam"><span aria-hidden="true">☷</span><span>Seznam</span></button>
           <button type="button" data-catalog-view="category" aria-label="Kategorie" aria-pressed="${view === 'category'}" title="Podle kategorií"><span aria-hidden="true">≡</span><span>Kategorie</span></button>
         </div>
+        <div class="catalog-filters" aria-label="Filtrovat produkty podle učení">
+          ${filters.map((filter) => `<button type="button" data-product-filter="${filter.id}" aria-pressed="${filter.id === 'all'}"><span>${filter.label}</span><strong>${filter.count}</strong></button>`).join('')}
+        </div>
       </div>
       <div id="product-collection">${productCollection(state.products, view)}</div>
     </section>`;
   bindCommonActions();
-  document.querySelector('#product-search').addEventListener('input', (event) => {
-    const query = normalizeText(event.target.value);
-    const filtered = query ? state.products.filter((product) => normalizeText(`${product.name} ${product.category} ${product.brand || ''}`).includes(query)) : state.products;
+  const updateProductCollection = () => {
+    const query = normalizeText(document.querySelector('#product-search').value);
+    const filtered = state.products.filter((product) => {
+      const matchesText = !query || normalizeText(`${product.name} ${product.category} ${product.brand || ''}`).includes(query);
+      const matchesLearning = activeFilter === 'all' || statusByProduct.get(product.id)?.[activeFilter];
+      return matchesText && matchesLearning;
+    });
     document.querySelector('#product-collection').innerHTML = productCollection(filtered, view);
     bindCommonActions();
-  });
+  };
+  document.querySelector('#product-search').addEventListener('input', updateProductCollection);
+  document.querySelectorAll('[data-product-filter]').forEach((button) => button.addEventListener('click', () => {
+    activeFilter = button.dataset.productFilter;
+    document.querySelectorAll('[data-product-filter]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+    updateProductCollection();
+  }));
   document.querySelectorAll('[data-catalog-view]').forEach((button) => button.addEventListener('click', async () => {
     state.settings = await storage.saveSettings({ productCatalogView: button.dataset.catalogView });
     renderProducts();
@@ -562,15 +598,37 @@ function renderStats() {
     enabledProductIds: selectedProductIds(),
   });
   const recentAccuracy = insights.recentReviews ? `${insights.recentSecurePercent} %` : '—';
+  const thirtyDayAccuracy = insights.thirtyDayReviews ? `${insights.thirtyDaySecurePercent} %` : '—';
+  const trendMaximum = Math.max(1, ...insights.dailyTrend.map((day) => day.reviews));
+  const categoryRow = (item) => `
+    <button class="category-progress-item" type="button" data-stats-category="${escapeHtml(item.category)}">
+      <span class="category-progress-copy"><strong>${escapeHtml(item.category)}</strong><small>${item.learnedQuestions}/${item.questionCount} otázek vyzkoušeno · ${item.productCount} ${item.productCount === 1 ? 'produkt' : item.productCount <= 4 ? 'produkty' : 'produktů'}</small></span>
+      <span class="category-progress-score"><strong>${item.mastery} %</strong><small>${item.attempts ? `${item.securePercent} % jistých` : 'zatím bez odpovědi'}</small></span>
+      <span class="category-progress-track" aria-hidden="true"><span style="width:${item.mastery}%"></span></span>
+    </button>`;
+  const primaryCategories = insights.categoryInsights.slice(0, 8);
+  const remainingCategories = insights.categoryInsights.slice(8);
+  const recentMistakes = insights.recentMistakes.map((review) => {
+    const question = state.questions.find((item) => item.id === review.questionId);
+    const product = state.products.find((item) => item.id === (review.productId || question?.productId));
+    return question ? { review, question, product } : null;
+  }).filter(Boolean);
   app.innerHTML = `
     <section class="page">
       <header class="page-header"><p class="eyebrow">Výsledky a další krok</p><h1>Statistiky</h1><p>Přehled vychází z vašich odpovědí uložených na tomto zařízení.</p></header>
       <div class="stats-grid stats-grid-detailed" aria-label="Statistiky učení">
         <div class="stat-card"><strong>${insights.totalReviews}</strong><span>${insights.totalReviews === 1 ? 'odpověď celkem' : 'odpovědí celkem'}</span></div>
         <div class="stat-card"><strong>${recentAccuracy}</strong><span>jistých za 7 dní</span></div>
+        <div class="stat-card"><strong>${thirtyDayAccuracy}</strong><span>jistých za 30 dní</span></div>
         <div class="stat-card"><strong>${insights.learnedQuestions}/${insights.totalQuestions}</strong><span>vyzkoušených otázek</span></div>
         <div class="stat-card"><strong>${calculateStreak(state.reviews)}</strong><span>${calculateStreak(state.reviews) === 1 ? 'den v sérii' : 'dní v sérii'}</span></div>
       </div>
+      <section class="learning-panel trend-panel" aria-labelledby="trend-heading">
+        <div class="section-heading"><h2 id="trend-heading">Posledních 7 dní</h2><span>${insights.recentReviews} odpovědí</span></div>
+        <div class="trend-chart" aria-label="Počet odpovědí v posledních sedmi dnech">
+          ${insights.dailyTrend.map((day) => `<div class="trend-day"><span class="trend-value">${day.reviews || ''}</span><span class="trend-bar"><span style="height:${Math.max(6, Math.round(day.reviews / trendMaximum * 100))}%"></span></span><small>${escapeHtml(day.label)}</small></div>`).join('')}
+        </div>
+      </section>
       <article class="focus-card">
         <div><p class="eyebrow">Chytré doporučení</p><h2>${weakQueue.length ? `${weakQueue.length} ${weakQueue.length === 1 ? 'otázka' : weakQueue.length <= 4 ? 'otázky' : 'otázek'} k upevnění` : 'Žádné výrazné slabé místo'}</h2>
         <p>${weakQueue.length ? 'Výběr kombinuje chyby, nejisté odpovědi a nízkou stabilitu v paměti. Nejtěžší otázky dostanou přednost a po chybě se vrátí s odstupem.' : state.reviews.length ? 'Pokračujte denní dávkou. Aplikace vás vyzkouší znovu, až začne vzpomínka slábnout.' : 'Nejdřív dokončete několik otázek, aby aplikace poznala, co potřebujete procvičit.'}</p></div>
@@ -584,10 +642,32 @@ function renderStats() {
             <span class="weak-score"><strong>${product.securePercent} %</strong><small>jisté</small></span>
           </button>`).join('') : '<div class="empty-catalog"><strong>Zatím tu nic není</strong><span>Slabá místa se zobrazí po prvních trénincích.</span></div>'}
       </div>
+      <section class="learning-panel category-progress-panel" aria-labelledby="category-progress-heading">
+        <div class="section-heading"><h2 id="category-progress-heading">Pokrok podle kategorií</h2><span>Klepnutím procvičíte</span></div>
+        <div class="category-progress-list">${primaryCategories.map(categoryRow).join('')}</div>
+        ${remainingCategories.length ? `<details class="more-categories"><summary>Zobrazit další kategorie (${remainingCategories.length})</summary><div class="category-progress-list">${remainingCategories.map(categoryRow).join('')}</div></details>` : ''}
+      </section>
+      <section class="learning-panel" aria-labelledby="confusion-heading">
+        <div class="section-heading"><h2 id="confusion-heading">Nejčastěji zaměňované</h2><span>Porovnávání</span></div>
+        <div class="confusion-list">
+          ${insights.confusedPairs.length ? insights.confusedPairs.map((pair) => `<div class="confusion-item"><span><strong>${escapeHtml(pair.products[0])}</strong><small>× ${escapeHtml(pair.products[1])}</small></span><b>${pair.count}×</b></div>`).join('') : '<div class="empty-inline"><strong>Zatím bez záměn</strong><span>Po chybné odpovědi v Porovnávání se zde ukážou produkty, které si pletete.</span></div>'}
+        </div>
+      </section>
+      <section class="learning-panel" aria-labelledby="mistakes-heading">
+        <div class="section-heading"><h2 id="mistakes-heading">Poslední chyby</h2><span>${recentMistakes.length ? 'Zkuste je znovu' : 'Bez chyb'}</span></div>
+        <div class="recent-mistakes">
+          ${recentMistakes.length ? recentMistakes.map(({ review, question, product }) => `<article class="mistake-item"><div><strong>${escapeHtml(product?.name || 'Produkt')}</strong><p>${escapeHtml(question.prompt)}</p>${review.selectedAnswer ? `<small>Vaše odpověď: ${escapeHtml(review.selectedAnswer)}</small>` : ''}</div><button class="button button-secondary" type="button" data-retry-question="${question.id}">Zkusit znovu</button></article>`).join('') : '<div class="empty-inline"><strong>Zatím tu nic není</strong><span>Chybné odpovědi se sem uloží, abyste se k nim mohli rychle vrátit.</span></div>'}
+        </div>
+      </section>
       <details class="research-note"><summary>Jak funguje častější opakování?</summary><p>Plánovač FSRS zkrátí interval po chybě nebo nejisté odpovědi. Otázky se neopakují bezhlavě za sebou: aktivní vybavování je rozložené v čase a přizpůsobené vašim výsledkům.</p></details>
     </section>`;
   bindCommonActions();
   document.querySelector('#start-weak-study')?.addEventListener('click', () => startWeakStudy(weakQueue));
+  document.querySelectorAll('[data-stats-category]').forEach((button) => button.addEventListener('click', () => startTopicStudy(button.dataset.statsCategory)));
+  document.querySelectorAll('[data-retry-question]').forEach((button) => button.addEventListener('click', () => {
+    const question = state.questions.find((item) => item.id === button.dataset.retryQuestion);
+    if (question) startStudySession([question], 'weak');
+  }));
 }
 
 function renderSettings() {
@@ -991,11 +1071,24 @@ function photoChallengeQuestions() {
 function comparisonQuestions() {
   const enabledProducts = new Set(selectedProductIds());
   const productsById = new Map(state.products.map((product) => [product.id, product]));
-  return state.questions.filter((question) => Array.isArray(question.comparisonWith) && enabledProducts.has(question.productId)).map((question) => {
-    const comparisonProductIds = [question.productId, ...question.comparisonWith]
-      .filter((id) => enabledProducts.has(id) && productsById.has(id));
-    if (comparisonProductIds.length < 2) return null;
+  const propertyQuestions = state.questions.filter((question) => enabledProducts.has(question.productId)
+    && question.type === 'flashcard'
+    && question.sourceUrl
+    && typeof question.answer === 'string'
+    && !/na jaký sortiment|na jakou tradici/i.test(question.prompt));
+  return propertyQuestions.map((question) => {
     const target = productsById.get(question.productId);
+    if (!target) return null;
+    const family = categoryFamily(target.category);
+    const automaticComparisons = state.products
+      .filter((product) => product.id !== target.id
+        && enabledProducts.has(product.id)
+        && (product.category === target.category || (family >= 0 && categoryFamily(product.category) === family)))
+      .sort((a, b) => Number(b.category === target.category) - Number(a.category === target.category));
+    const comparisonProductIds = [question.productId, ...(question.comparisonWith || []), ...automaticComparisons.map((product) => product.id)]
+      .filter((id, index, values) => enabledProducts.has(id) && productsById.has(id) && values.indexOf(id) === index)
+      .slice(0, 4);
+    if (comparisonProductIds.length < 2) return null;
     return {
       ...question,
       type: 'mcq',
@@ -1198,7 +1291,7 @@ async function answerChoice(selected) {
       button.classList.add('is-dimmed');
     }
   });
-  const mascotLine = await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct);
+  const mascotLine = await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct, selected);
   showFeedback({ correct, selected, answer: question.answer, explanation: question.explanation, question, mascotLine });
 }
 
@@ -1208,7 +1301,7 @@ async function answerText(input) {
   const question = currentQuestion();
   const result = evaluateText(input, question.answer);
   document.querySelector('#text-form').querySelectorAll('input,button').forEach((element) => { element.disabled = true; });
-  const mascotLine = await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct);
+  const mascotLine = await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct, input);
   showFeedback({ correct: result.correct, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question, mascotLine });
 }
 
@@ -1227,7 +1320,7 @@ function revealFlashcard() {
   document.querySelectorAll('[data-rating]').forEach((button) => button.addEventListener('click', async () => {
     document.querySelectorAll('[data-rating]').forEach((item) => { item.disabled = true; });
     const rating = Number(button.dataset.rating);
-    const mascotLine = await recordReview(question, rating, rating >= RATINGS.GOOD);
+    const mascotLine = await recordReview(question, rating, rating >= RATINGS.GOOD, null);
     const hasAnotherQuestion = state.session.index + 1 < state.session.queue.length;
     nextQuestion();
     if (mascotLine && hasAnotherQuestion) showBistrousMoment('quiz', mascotLine, 3300, 'right');
@@ -1242,12 +1335,19 @@ function formatInterval(date) {
   return `${Math.round(hours / 24)} d`;
 }
 
-async function recordReview(question, rating, correct) {
+async function recordReview(question, rating, correct, selectedAnswer = null) {
   const previousReviews = state.reviews.filter((review) => review.questionId === question.id);
   const wasNew = previousReviews.length === 0;
   const review = {
     id: crypto.randomUUID(), userId: state.profile.userId, questionId: question.id,
-    rating, reviewedAt: new Date().toISOString(), wasNew,
+    productId: question.productId,
+    rating,
+    wasCorrect: Boolean(correct),
+    selectedAnswer: selectedAnswer == null ? null : String(selectedAnswer),
+    correctAnswer: String(question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer)),
+    mode: state.session.mode,
+    reviewedAt: new Date().toISOString(),
+    wasNew,
   };
   await storage.appendReview(review);
   state.reviews.push(review);

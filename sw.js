@@ -1,8 +1,9 @@
-const CACHE_VERSION = 'bistro-v1.0.45';
+// Jediné místo, kde se při vydání mění verze aplikace.
+const CACHE_VERSION = 'bistro-v1.0.46';
 const APP_SHELL = [
-  './', './index.html', './css/styles.css?v=1.0.45', './js/app.js?v=1.0.45',
-  './config.js?v=1.0.45', './content.js?v=1.0.45', './storage.js?v=1.0.45',
-  './fsrs-service.js?v=1.0.45', './study.js?v=1.0.45', './manifest.webmanifest', './img/icon.svg',
+  './', './index.html', './css/styles.css', './js/app.js',
+  './config.js', './content.js', './storage.js',
+  './fsrs-service.js', './study.js', './manifest.webmanifest', './img/icon.svg',
   './img/icon-192.png', './img/icon-512.png', './img/icon-maskable-512.png',
   './img/bistrous-test.webp', './img/bistrous-test-wrong.webp', './img/bistrous-goal.webp',
   './data/products.json', './data/questions.json', './data/pending-products.json',
@@ -65,7 +66,8 @@ const APP_SHELL = [
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE_VERSION).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
+  const freshShell = APP_SHELL.map((url) => new Request(url, { cache: 'reload' }));
+  event.waitUntil(caches.open(CACHE_VERSION).then((cache) => cache.addAll(freshShell)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
@@ -76,7 +78,7 @@ async function networkFirst(request, fallbackKey = request) {
   const cache = await caches.open(CACHE_VERSION);
 
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: 'no-store' });
     if (response.ok || response.type === 'opaque') await cache.put(fallbackKey, response.clone());
     return response;
   } catch (error) {
