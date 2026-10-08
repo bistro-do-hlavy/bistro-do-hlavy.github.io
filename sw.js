@@ -1,5 +1,5 @@
 // Jediné místo, kde se při vydání mění verze aplikace.
-const CACHE_VERSION = 'bistro-v1.0.51';
+const CACHE_VERSION = 'bistro-v1.0.52';
 const APP_SHELL = [
   './', './index.html', './css/styles.css', './js/app.js',
   './config.js', './content.js', './storage.js',
@@ -78,6 +78,26 @@ const APP_SHELL = [
   './img/products/ichoc-salty-pretzel-80-g.webp',
   './img/products/mixit-cokoladove-nadeleni-450-g.webp',
   './img/products/torres-tapas-pickle-40-g.webp',
+  './img/products/vilgain-ryzove-nudle-1-mm-240-g.webp',
+  './img/products/vilgain-ryzove-nudle-3-mm-240-g.webp',
+  './img/products/vilgain-seminkovy-topper-natural-500-g.webp',
+  './img/products/country-life-quinoa-bio-250-g.webp',
+  './img/products/country-life-cizrna-bio-500-g.webp',
+  './img/products/country-life-fazole-bila-velka-bio-500-g.webp',
+  './img/products/country-life-fazole-cervena-ledvina-bio-500-g.webp',
+  './img/products/country-life-fazole-pinto-bio-500-g.webp',
+  './img/products/country-life-kuskus-bio-500-g.webp',
+  './img/products/country-life-bulgur-psenicny-bio-500-g.webp',
+  './img/products/country-life-pohanka-loupana-kroupy-bio-500-g.webp',
+  './img/products/country-life-sezam-cerny-neloupany-bio-100-g.webp',
+  './img/products/bezva-dynova-seminka-500-g.webp',
+  './img/products/bezva-kokosove-chipsy-250-g.webp',
+  './img/products/bezva-lyofilizovany-banan-platky-55-g.webp',
+  './img/products/la-fabbrica-spaghetti-di-gragnano-igp-500-g.webp',
+  './img/products/garden-delights-pimiento-rojo-tiras-330-g.webp',
+  './img/products/casa-rinaldi-sugo-bruschetta-350-g.webp',
+  './img/products/lozano-cervenka-mandle-v-cukru-100-g.webp',
+  './img/products/fu-shou-quick-cooking-noodles-500-g.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

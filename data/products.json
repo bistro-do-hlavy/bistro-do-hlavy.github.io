@@ -3207,5 +3207,766 @@
         "url": "https://patatastorres.com/en-us/product/pickle-flavor/"
       }
     ]
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g",
+    "name": "Vilgain Rýžové nudle 1 mm 240 g",
+    "category": "Těstoviny a nudle",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Vietnam",
+    "description": "Tenké bezlepkové rýžové nudle typu tagliatelle s neutrální chutí a jemnou strukturou.",
+    "ingredients": [
+      "rýže 100 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "240 g",
+      "šířka 1 mm",
+      "100% rýže",
+      "přirozeně bez lepku",
+      "bez GMO",
+      "hotové za 2–4 minuty"
+    ],
+    "preparation": [
+      "Vlož do vroucí vody a vař 2–4 minuty podle požadované konzistence.",
+      "Hodí se do pho, pad thai, woků, letních závitků i nudlových salátů."
+    ],
+    "brandInfo": "Vilgain je značka české společnosti Vilgain s.r.o.; tyto nudle vyrábí ve Vietnamu z rýže bez GMO.",
+    "salesTip": "Doporuč jako velmi tenké, rychlé a přirozeně bezlepkové nudle pro lehká asijská jídla.",
+    "image": "img/products/vilgain-ryzove-nudle-1-mm-240-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g",
+    "name": "Vilgain Rýžové nudle 3 mm 240 g",
+    "category": "Těstoviny a nudle",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Vietnam",
+    "description": "Širší bezlepkové rýžové nudle typu tagliatelle s tapiokovým škrobem pro pevnější konzistenci.",
+    "ingredients": [
+      "rýžová mouka 92 %",
+      "tapiokový škrob",
+      "sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "240 g",
+      "šířka 3 mm",
+      "92 % rýžové mouky",
+      "přirozeně bez lepku",
+      "bez GMO",
+      "hotové za 4–6 minut"
+    ],
+    "preparation": [
+      "Vlož do vroucí vody a vař 4–6 minut podle požadované konzistence.",
+      "Použij do pho, pad thai, woků nebo nudlového salátu."
+    ],
+    "brandInfo": "Vilgain je značka české společnosti Vilgain s.r.o.; tato varianta se vyrábí ve Vietnamu.",
+    "salesTip": "Doporuč jako širší bezlepkové rýžové nudle s tapiokou, které lépe drží strukturu.",
+    "image": "img/products/vilgain-ryzove-nudle-3-mm-240-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g",
+    "name": "Vilgain Semínkový topper mix natural 500 g",
+    "category": "Semínka",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Česká republika",
+    "description": "Natural směs pěti druhů semínek určená jako posyp jídel nebo surovina do pečení.",
+    "ingredients": [
+      "hnědé a zlaté lněné semínko 36 %",
+      "slunečnicová semínka 20 %",
+      "sezam 20 %",
+      "dýňová semínka 14 %",
+      "chia semínka 10 %"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8,
+      11,
+      12
+    ],
+    "specifics": [
+      "500 g",
+      "pět druhů semínek",
+      "36 % lněného semínka",
+      "20 % sezamu",
+      "varianta natural",
+      "obsahuje sezam"
+    ],
+    "preparation": [
+      "Použij přímo jako posyp na kaši, jogurt, salát, bowl nebo polévku.",
+      "Lze přidat také do pečiva."
+    ],
+    "brandInfo": "Vilgain je značka české společnosti Vilgain s.r.o. zaměřená na potraviny s transparentně popsaným složením.",
+    "salesTip": "Doporuč jako hotovou natural směs pěti semínek na posyp i pečení; upozorni na sezam.",
+    "image": "img/products/vilgain-seminkovy-topper-natural-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://aktin.cz/vilgain-seminkova-smes"
+      }
+    ]
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g",
+    "name": "Country Life Quinoa BIO 250 g",
+    "category": "Obiloviny a přílohy",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Bolívie",
+    "description": "BIO quinoa s jemně oříškovou a lehce zemitou chutí, použitelná jako příloha i základ teplých a studených jídel.",
+    "ingredients": [
+      "quinoa BIO"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "250 g",
+      "BIO kvalita",
+      "přirozeně bezlepková pseudoobilnina",
+      "po uvaření nadýchaná a lehce křupavá",
+      "může obsahovat stopy lepku"
+    ],
+    "preparation": [
+      "Propláchni a vař v dvojnásobném množství osolené vody nebo vývaru 15–20 minut.",
+      "Použij jako rýži, do salátů, polévek, nákypů nebo placiček."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako BIO alternativu rýže pro sladkou i slanou kuchyni; upozorni na možné stopy lepku.",
+    "image": "img/products/country-life-quinoa-bio-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g",
+    "name": "Country Life Cizrna BIO 500 g",
+    "category": "Luštěniny",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Turecko",
+    "description": "BIO cizrna neboli římský hrách s jemně oříškovou chutí a krémovou konzistencí.",
+    "ingredients": [
+      "cizrna BIO"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8,
+      11
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "také se nazývá římský hrách",
+      "jemně oříšková chuť",
+      "vhodná na hummus a falafel",
+      "vyžaduje namočení"
+    ],
+    "preparation": [
+      "Namoč na 8–16 hodin, propláchni a vař do měkka 75–90 minut.",
+      "Použij na hummus, falafel, do polévek, salátů nebo jako přílohu."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako BIO základ hummusu či falafelu a vysvětli nutnost dlouhého namočení.",
+    "image": "img/products/country-life-cizrna-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g",
+    "name": "Country Life Fazole bílá velká BIO 500 g",
+    "category": "Luštěniny",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Čína",
+    "description": "Velká BIO bílá fazole s jemně moučnou, lehce nasládlou chutí a krémovým vnitřkem.",
+    "ingredients": [
+      "fazole bílá velká BIO"
+    ],
+    "allergens": [
+      1,
+      6
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "extra velká zrna",
+      "po uvaření drží tvar",
+      "uvnitř krémová",
+      "může obsahovat lepek a sóju"
+    ],
+    "preparation": [
+      "Namoč na 8–12 hodin, propláchni a vař do měkka 60–70 minut.",
+      "Použij do salátů, polévek, ragú, pomazánek nebo zapečených jídel."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč zákazníkovi, který chce velká zrna držící tvar a krémovou konzistenci uvnitř.",
+    "image": "img/products/country-life-fazole-bila-velka-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "name": "Country Life Fazole červená ledvina BIO 500 g",
+    "category": "Luštěniny",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Čína",
+    "description": "Velká červená BIO fazole s výraznou chutí, známá z chilli con carne a dalších pikantních jídel.",
+    "ingredients": [
+      "fazole červená ledvina BIO"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "výrazná chuť",
+      "přezdívá se jí chilli fazole",
+      "vhodná k rýži a kukuřici",
+      "může obsahovat stopy lepku"
+    ],
+    "preparation": [
+      "Namoč na 8–12 hodin, propláchni a vař přibližně 1 hodinu do měkka.",
+      "Použij do chilli con carne, salátů, polévek nebo omáček."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako výraznou BIO fazoli do chilli con carne, k rýži, kukuřici a pikantním jídlům.",
+    "image": "img/products/country-life-fazole-cervena-ledvina-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g",
+    "name": "Country Life Fazole pinto BIO 500 g",
+    "category": "Luštěniny",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Neuvedeno",
+    "description": "Strakatá BIO fazole s lehce pikantní moučnou chutí, vhodná zejména do mexické kuchyně.",
+    "ingredients": [
+      "fazole pinto BIO"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "strakatá fazole",
+      "lehce pikantní moučná chuť",
+      "vhodná do mexické kuchyně",
+      "hodí se do náplní a pomazánek"
+    ],
+    "preparation": [
+      "Před vařením namoč, propláchni a uvař do měkka podle návodu na obalu.",
+      "Použij do mexických jídel, náplní, pomazánek nebo luštěninových směsí."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako strakatou BIO fazoli pro mexická jídla, náplně a pomazánky.",
+    "image": "img/products/country-life-fazole-pinto-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g",
+    "name": "Country Life Kuskus BIO 500 g",
+    "category": "Obiloviny a přílohy",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Itálie",
+    "description": "BIO sušený bezvaječný kuskus z hrubě mleté pšeničné krupice s rychlou přípravou.",
+    "ingredients": [
+      "hrubě mletá pšeničná krupice BIO"
+    ],
+    "allergens": [
+      1,
+      3
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "sušené bezvaječné těstoviny",
+      "z pšeničné krupice",
+      "příprava bez vaření",
+      "může obsahovat stopy vajec"
+    ],
+    "preparation": [
+      "Zalij vroucí vodou v poměru 1 díl kuskusu na 2 díly vody a nech 15 minut odstát.",
+      "Načechrej vidličkou a podávej jako přílohu nebo základ salátu."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako rychlou BIO pšeničnou přílohu, kterou stačí zalít a nechat dojít.",
+    "image": "img/products/country-life-kuskus-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g",
+    "name": "Country Life Bulgur pšeničný BIO 500 g",
+    "category": "Obiloviny a přílohy",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Turecko",
+    "description": "BIO bulgur z hrubě mleté pšenice, tradiční blízkovýchodní surovina na přílohy, pilaf a saláty.",
+    "ingredients": [
+      "hrubě mletá pšenice BIO"
+    ],
+    "allergens": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      11
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "hrubě mletá pšenice",
+      "tradiční surovina Blízkého východu",
+      "vhodný na pilaf a saláty",
+      "krátce se vaří a poté dochází"
+    ],
+    "preparation": [
+      "Vař 2 minuty v mírně osolené vodě v poměru 1 díl bulguru na 2 díly vody.",
+      "Poté nech 15–20 minut dojít pod pokličkou."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako rychlou BIO přílohu na pilaf, saláty, nádivky nebo karbanátky.",
+    "image": "img/products/country-life-bulgur-psenicny-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "name": "Country Life Pohanka loupaná kroupy BIO 500 g",
+    "category": "Obiloviny a přílohy",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Čína",
+    "description": "Mechanicky loupaná BIO pohanka v podobě celých krup s oříškovou chutí.",
+    "ingredients": [
+      "pohanka setá BIO, mechanicky loupaná"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8,
+      11
+    ],
+    "specifics": [
+      "500 g",
+      "BIO kvalita",
+      "mechanicky loupaná",
+      "celé kroupy",
+      "oříšková chuť",
+      "vhodná jako příloha nebo do polévek a salátů"
+    ],
+    "preparation": [
+      "Propláchni a vař v poměru 1 díl pohanky na 1,5 dílu vody 10–15 minut.",
+      "Poté nech dojít pod pokličkou."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako oříškovou BIO přílohu nebo základ salátů, polévek a plněné zeleniny.",
+    "image": "img/products/country-life-pohanka-loupana-kroupy-bio-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "name": "Country Life Sezam černý neloupaný BIO 100 g",
+    "category": "Semínka",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Bolívie",
+    "description": "Neloupané černé BIO sezamové semínko s plnou oříškovou chutí, vhodné zejména pro asijskou kuchyni.",
+    "ingredients": [
+      "černý neloupaný sezam BIO"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8,
+      11
+    ],
+    "specifics": [
+      "100 g",
+      "BIO kvalita",
+      "neloupané černé semínko",
+      "výrazná oříšková chuť",
+      "vhodné na posyp nebo tahini",
+      "sezam je přímo obsažený alergen"
+    ],
+    "preparation": [
+      "Určeno k přímé spotřebě.",
+      "Pro lepší využití dobře rozkousej nebo krátce rozemel; lze také nasucho opražit."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako výrazný kontrastní posyp na wok, nudle, sushi bowl, pečivo nebo na domácí tahini.",
+    "image": "img/products/country-life-sezam-cerny-neloupany-bio-100-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g",
+    "name": "Bezva zdraví Dýňová semínka 500 g",
+    "category": "Semínka",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Čína",
+    "description": "Loupaná dýňová semínka určená k přímému zobání, do granoly, salátů i pečení.",
+    "ingredients": [
+      "loupaná dýňová semínka"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8
+    ],
+    "specifics": [
+      "500 g",
+      "loupaná semínka",
+      "vhodná k přímé konzumaci",
+      "hodí se do granoly, salátů a pečiva",
+      "může obsahovat lepek, sóju, arašídy a skořápkové plody"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci.",
+      "Použij do müsli, granoly, salátu nebo při pečení; lze krátce opražit nasucho."
+    ],
+    "brandInfo": "Bezva zdraví je česká značka a dodavatel balených surovin, ořechů, ovoce, čajů a müsli se sídlem ve Starých Ždánicích.",
+    "salesTip": "Doporuč jako univerzální loupaná semínka na zobání, posyp i pečení.",
+    "image": "img/products/bezva-dynova-seminka-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g",
+    "name": "Bezva zdraví Kokosové chipsy 250 g",
+    "category": "Sušené ovoce",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Filipíny",
+    "description": "Tenké sušené kokosové plátky vhodné k přímé konzumaci nebo jako křupavá součást snídaní a dezertů.",
+    "ingredients": [
+      "sušený kokos"
+    ],
+    "allergens": [
+      1,
+      5,
+      6,
+      8
+    ],
+    "specifics": [
+      "250 g",
+      "tenké kokosové plátky",
+      "původ Filipíny",
+      "vhodné do müsli, jogurtu a ovocných salátů",
+      "lze použít při pečení"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci.",
+      "Přidej do müsli, jogurtu, ovocného salátu, pečení nebo na dokončení dezertu."
+    ],
+    "brandInfo": "Bezva zdraví je česká značka a dodavatel balených surovin, ořechů, ovoce, čajů a müsli se sídlem ve Starých Ždánicích.",
+    "salesTip": "Doporuč jako křupavé kokosové plátky do snídaní, pečení i k přímému zobání.",
+    "image": "img/products/bezva-kokosove-chipsy-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g",
+    "name": "Bezva müsli Lyofilizovaný banán plátky 55 g",
+    "category": "Lyofilizované ovoce",
+    "brand": "Bezva müsli",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Neuvedeno",
+    "description": "Křupavé banánové plátky sušené mrazem bez přidaných surovin.",
+    "ingredients": [
+      "banán 100 %"
+    ],
+    "allergens": [],
+    "specifics": [
+      "55 g",
+      "100% banán",
+      "sušený mrazem neboli lyofilizovaný",
+      "křupavé plátky",
+      "vhodné přímo, do kaší, jogurtu a müsli"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci.",
+      "Přidej do müsli, kaše, jogurtu nebo dezertu a po otevření chraň před vlhkostí."
+    ],
+    "brandInfo": "Bezva zdraví je česká značka a dodavatel balených surovin, ořechů, ovoce, čajů a müsli se sídlem ve Starých Ždánicích.",
+    "salesTip": "Doporuč jako lehké křupavé 100% ovoce bez dalších přísad do svačin a snídaní.",
+    "image": "img/products/bezva-lyofilizovany-banan-platky-55-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+      }
+    ]
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "name": "La Fabbrica della Pasta Spaghetti di Gragnano IGP 500 g",
+    "category": "Těstoviny a nudle",
+    "brand": "La Fabbrica della Pasta di Gragnano",
+    "manufacturer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "origin": "Itálie",
+    "description": "Spaghetti di Gragnano IGP s větším průměrem, vyrobené z italské semoliny a vody z pramenů v Gragnanu.",
+    "ingredients": [
+      "semolina z tvrdé pšenice",
+      "voda"
+    ],
+    "allergens": [
+      1,
+      6,
+      10
+    ],
+    "specifics": [
+      "500 g",
+      "chráněné označení IGP",
+      "italská tvrdá pšenice",
+      "pomalu sušené 24–48 hodin při nízké teplotě",
+      "doporučený čas vaření 8 minut",
+      "může obsahovat hořčici a sóju"
+    ],
+    "preparation": [
+      "Vař 8 minut.",
+      "Výrobce doporučuje 1 litr vody a 10 g soli na každých 100 g těstovin."
+    ],
+    "brandInfo": "Rodina Moccia v Gragnanu předává těstovinářskou tradici čtyři generace; pasta se vyrábí a balí přímo v Gragnanu.",
+    "salesTip": "Doporuč jako autentická Spaghetti di Gragnano IGP s širším průměrem a pomalým nízkoteplotním sušením.",
+    "image": "img/products/la-fabbrica-spaghetti-di-gragnano-igp-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+      }
+    ]
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g",
+    "name": "Garden Delights Pimiento Rojo en Tiras 330 g",
+    "category": "Nakládaná zelenina",
+    "brand": "Garden Delights",
+    "manufacturer": "Don Gastronom Spain S.L.",
+    "origin": "Murcia, Španělsko",
+    "description": "Proužky červené papriky pečené tradičně v peci na dřevo se sladkou, lehce kouřovou a opečenou chutí.",
+    "ingredients": [
+      "červená paprika",
+      "cukr",
+      "sůl",
+      "kyselina citronová"
+    ],
+    "allergens": [],
+    "specifics": [
+      "330 g",
+      "papriky z Murcie",
+      "pečené v peci na dřevo",
+      "kouřový a opečený chuťový profil",
+      "trvanlivost uváděná výrobcem 3 roky",
+      "bez konzervantů podle výrobce"
+    ],
+    "preparation": [
+      "Výrobek je připraven k přímému podávání.",
+      "Použij do tapas, salátů, těstovin, na pizzu nebo k masu."
+    ],
+    "brandInfo": "Garden Delights patří do portfolia španělské společnosti Don Gastronom Spain S.L., která staví na rodinných receptech a surovinách ze španělských oblastí.",
+    "salesTip": "Doporuč jako hotové proužky murcijské papriky pečené v peci na dřevo s kouřovým tónem.",
+    "image": "img/products/garden-delights-pimiento-rojo-tiras-330-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+      }
+    ]
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g",
+    "name": "Casa Rinaldi Sugo per Bruschetta 350 g",
+    "category": "Omáčky",
+    "brand": "Casa Rinaldi",
+    "manufacturer": "Alis S.r.l.",
+    "origin": "Itálie",
+    "description": "Hotová italská rajčatová omáčka určená na bruschettu, s extra panenským olivovým olejem a bylinkami.",
+    "ingredients": [
+      "rajčatová dužina 90 %",
+      "extra panenský olivový olej 2 %",
+      "česnek",
+      "cibule",
+      "bazalka",
+      "oregano",
+      "sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "350 g",
+      "90 % rajčatové dužiny",
+      "2 % extra panenského olivového oleje",
+      "hotová omáčka na bruschettu",
+      "vhodná také k těstovinám",
+      "skleněná nádoba"
+    ],
+    "preparation": [
+      "Podávej přímo na opečeném chlebu jako bruschettu.",
+      "Lze použít také jako rajčatovou omáčku k těstovinám, rýži, polentě nebo zelenině."
+    ],
+    "brandInfo": "Casa Rinaldi je italská značka společnosti Alis S.r.l. z provincie Modena.",
+    "salesTip": "Doporuč jako hotovou bylinkovou rajčatovou omáčku na bruschettu, kterou lze využít i k těstovinám.",
+    "image": "img/products/casa-rinaldi-sugo-bruschetta-350-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+      }
+    ]
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g",
+    "name": "Lozano Červenka Mandle v cukru 100 g",
+    "category": "Ořechy a sladkosti",
+    "brand": "Lozano Červenka",
+    "manufacturer": "Barcelo Manufacture s.r.o.",
+    "origin": "Španělsko",
+    "description": "Španělské blanšírované mandle obalené ve zlatavém karamelu s jemným vanilkovým aroma.",
+    "ingredients": [
+      "blanšírované mandle",
+      "cukr",
+      "vanilkové aroma"
+    ],
+    "allergens": [
+      5,
+      7,
+      8
+    ],
+    "specifics": [
+      "100 g",
+      "španělské blanšírované mandle",
+      "karamelová cukrová vrstva",
+      "vanilkové aroma",
+      "může obsahovat arašídy, další ořechy a mléko"
+    ],
+    "preparation": [
+      "Určeno k přímé konzumaci.",
+      "Uchovávej v suchém a chladném prostředí okolo 20 °C."
+    ],
+    "brandInfo": "Lozano Červenka dováží a prodává španělské speciality; tento výrobek pro český trh uvádí Barcelo Manufacture s.r.o.",
+    "salesTip": "Doporuč jako křupavou španělskou mandlovou sladkost s karamelem a vanilkou; upozorni na ořechové alergeny.",
+    "image": "img/products/lozano-cervenka-mandle-v-cukru-100-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce / značka – detail produktu",
+        "url": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+      }
+    ]
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g",
+    "name": "Fu Shou Quick Cooking Noodles 500 g",
+    "category": "Těstoviny a nudle",
+    "brand": "Fu Shou Noodle",
+    "manufacturer": "Fushou Food s.r.o.",
+    "origin": "Česká republika",
+    "description": "Předpařené asijské pšeničné nudle určené k rychlé přípravě do polévek i smažených jídel.",
+    "ingredients": [
+      "pšeničná mouka 97,8 %",
+      "voda",
+      "sůl",
+      "uhličitany sodné",
+      "bramborový škrob"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "500 g",
+      "předpařené pšeničné nudle",
+      "hotové za 5–7 minut",
+      "vhodné do polévek a woků",
+      "vyrobené v České republice",
+      "obsahují pšenici"
+    ],
+    "preparation": [
+      "Vař 5–7 minut.",
+      "Podávej v polévce nebo použij do rychlého smaženého jídla."
+    ],
+    "brandInfo": "Fu Shou Noodle je značka společnosti Fushou Food s.r.o. se sídlem v Praze.",
+    "salesTip": "Doporuč jako rychlé předpařené pšeničné nudle do vývarů a woků; nejsou bezlepkové.",
+    "image": "img/products/fu-shou-quick-cooking-noodles-500-g.webp",
+    "sources": [
+      {
+        "label": "Distributor – detail produktu",
+        "url": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+      }
+    ]
   }
 ]

@@ -7751,5 +7751,2145 @@
     "explanation": "Balení: 40 g.",
     "sourceLabel": "Výrobce – detail produktu",
     "sourceUrl": "https://patatastorres.com/en-us/product/pickle-flavor/"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q1",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "rýže 100 %",
+      "quinoa BIO",
+      "fazole pinto BIO",
+      "černý neloupaný sezam BIO"
+    ],
+    "answer": "rýže 100 %",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q2",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "text",
+    "prompt": "Jak dlouho se vaří varianta široká 1 mm?",
+    "answer": "2–4 minuty",
+    "answerDisplay": "2–4 minuty.",
+    "explanation": "2–4 minuty.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q3",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako velmi tenké, rychlé a přirozeně bezlepkové nudle pro lehká asijská jídla.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q4",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "photo",
+    "prompt": "Co odlišuje tuto variantu od druhé rýžové varianty Vilgain?",
+    "image": "img/products/vilgain-ryzove-nudle-1-mm-240-g.webp",
+    "options": [
+      "Má šířku 3 mm.",
+      "Má šířku 1 mm.",
+      "Obsahuje pšeničnou krupici.",
+      "Vaří se 15–20 minut."
+    ],
+    "answer": "Má šířku 1 mm.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q5",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "mléko a vejce",
+      "ryby a měkkýši",
+      "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+      "celer a hořčice"
+    ],
+    "answer": "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q6",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Vlož do vroucí vody a vař 2–4 minuty podle požadované konzistence. Hodí se do pho, pad thai, woků, letních závitků i nudlových salátů.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q7",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Country Life s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Vilgain s.r.o."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-1-mm-240-g-q8",
+    "productId": "vilgain-ryzove-nudle-1-mm-240-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "240 g",
+    "answerDisplay": "240 g.",
+    "explanation": "Balení: 240 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-1-mm-240-g-45299"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q1",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "cizrna BIO",
+      "rýžová mouka 92 %, tapiokový škrob, sůl",
+      "hrubě mletá pšeničná krupice BIO",
+      "loupaná dýňová semínka"
+    ],
+    "answer": "rýžová mouka 92 %, tapiokový škrob, sůl",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q2",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "text",
+    "prompt": "Jak dlouho se vaří varianta široká 3 mm?",
+    "answer": "4–6 minut",
+    "answerDisplay": "4–6 minut.",
+    "explanation": "4–6 minut.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q3",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako širší bezlepkové rýžové nudle s tapiokou, které lépe drží strukturu.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q4",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "photo",
+    "prompt": "Proč tato varianta obsahuje tapiokový škrob?",
+    "image": "img/products/vilgain-ryzove-nudle-3-mm-240-g.webp",
+    "options": [
+      "Aby chutnala po kokosu.",
+      "Aby obsahovala lepek.",
+      "Pro lepší konzistenci nudlí.",
+      "Aby se mohla jíst bez tepelné úpravy."
+    ],
+    "answer": "Pro lepší konzistenci nudlí.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q5",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "mléko a vejce",
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa."
+    ],
+    "answer": "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q6",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Vlož do vroucí vody a vař 4–6 minut podle požadované konzistence. Použij do pho, pad thai, woků nebo nudlového salátu.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q7",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Don Gastronom Spain S.L."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-ryzove-nudle-3-mm-240-g-q8",
+    "productId": "vilgain-ryzove-nudle-3-mm-240-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "240 g",
+    "answerDisplay": "240 g.",
+    "explanation": "Balení: 240 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://vilgain.de/vilgain-reisnudeln/o-3-mm-240-g-45300"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q1",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "fazole bílá velká BIO",
+      "hrubě mletá pšenice BIO",
+      "hnědé a zlaté lněné semínko 36 %, slunečnicová semínka 20 %, sezam 20 %",
+      "sušený kokos"
+    ],
+    "answer": "hnědé a zlaté lněné semínko 36 %, slunečnicová semínka 20 %, sezam 20 %",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q2",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "text",
+    "prompt": "Které semínko tvoří největší podíl směsi a kolik procent?",
+    "answer": "Lněné semínko, 36 %",
+    "answerDisplay": "Lněné semínko, 36 %.",
+    "explanation": "Lněné semínko, 36 %.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q3",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako hotovou natural směs pěti semínek na posyp i pečení; upozorni na sezam.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q4",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "photo",
+    "prompt": "Který alergen je přímo součástí směsi, nikoli jen možnou stopou?",
+    "image": "img/products/vilgain-seminkovy-topper-natural-500-g.webp",
+    "options": [
+      "Mléko.",
+      "Ryby.",
+      "Celer.",
+      "Sezam."
+    ],
+    "answer": "Sezam.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q5",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "lepek, arašídy, sója, skořápkové plody, sezam, siřičitany",
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, arašídy, sója, skořápkové plody, sezam, siřičitany",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q6",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Použij přímo jako posyp na kaši, jogurt, salát, bowl nebo polévku. Lze přidat také do pečiva.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q7",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Vilgain s.r.o.",
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "vilgain-seminkovy-topper-natural-500-g-q8",
+    "productId": "vilgain-seminkovy-topper-natural-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-seminkova-smes"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q1",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "fazole červená ledvina BIO",
+      "pohanka setá BIO, mechanicky loupaná",
+      "banán 100 %",
+      "quinoa BIO"
+    ],
+    "answer": "quinoa BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q2",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "text",
+    "prompt": "V jakém poměru vody se quinoa vaří?",
+    "answer": "V dvojnásobném množství vody",
+    "answerDisplay": "V dvojnásobném množství vody.",
+    "explanation": "V dvojnásobném množství vody.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q3",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako BIO alternativu rýže pro sladkou i slanou kuchyni; upozorni na možné stopy lepku.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q4",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "photo",
+    "prompt": "Jaká je správná textura uvařené quinoy?",
+    "image": "img/products/country-life-quinoa-bio-250-g.webp",
+    "options": [
+      "Nadýchaná a lehce křupavá.",
+      "Rozvařená jako hladký krém.",
+      "Pevná jako syrová fazole.",
+      "Křehká jako suchá sušenka."
+    ],
+    "answer": "Nadýchaná a lehce křupavá.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q5",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "lepek",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q6",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Propláchni a vař v dvojnásobném množství osolené vody nebo vývaru 15–20 minut. Použij jako rýži, do salátů, polévek, nákypů nebo placiček.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q7",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l.",
+      "Country Life s.r.o.",
+      "Barcelo Manufacture s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-quinoa-bio-250-g-q8",
+    "productId": "country-life-quinoa-bio-250-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "250 g",
+    "answerDisplay": "250 g.",
+    "explanation": "Balení: 250 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/quinoa-250-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q1",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "cizrna BIO",
+      "fazole pinto BIO",
+      "černý neloupaný sezam BIO",
+      "semolina z tvrdé pšenice, voda"
+    ],
+    "answer": "cizrna BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q2",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "text",
+    "prompt": "Jak dlouho se má cizrna před vařením namáčet?",
+    "answer": "8–16 hodin",
+    "answerDisplay": "8–16 hodin.",
+    "explanation": "8–16 hodin.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q3",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako BIO základ hummusu či falafelu a vysvětli nutnost dlouhého namočení.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q4",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "photo",
+    "prompt": "Které dvě známé úpravy se s touto luštěninou pojí?",
+    "image": "img/products/country-life-cizrna-bio-500-g.webp",
+    "options": [
+      "Rizoto a tiramisu.",
+      "Hummus a falafel.",
+      "Pesto a focaccia.",
+      "Polenta a panna cotta."
+    ],
+    "answer": "Hummus a falafel.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q5",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "lepek, arašídy, sója, skořápkové plody, sezam",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, arašídy, sója, skořápkové plody, sezam",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q6",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Namoč na 8–16 hodin, propláchni a vař do měkka 75–90 minut. Použij na hummus, falafel, do polévek, salátů nebo jako přílohu.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q7",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Alis S.r.l.",
+      "Barcelo Manufacture s.r.o.",
+      "Fushou Food s.r.o.",
+      "Country Life s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-cizrna-bio-500-g-q8",
+    "productId": "country-life-cizrna-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/cizrna-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q1",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "hrubě mletá pšeničná krupice BIO",
+      "fazole bílá velká BIO",
+      "loupaná dýňová semínka",
+      "červená paprika, cukr, sůl"
+    ],
+    "answer": "fazole bílá velká BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q2",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "text",
+    "prompt": "Jak dlouho se mají bílé velké fazole namáčet?",
+    "answer": "8–12 hodin",
+    "answerDisplay": "8–12 hodin.",
+    "explanation": "8–12 hodin.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q3",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce velká zrna držící tvar a krémovou konzistenci uvnitř.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q4",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "photo",
+    "prompt": "Jak se tato fazole chová po uvaření?",
+    "image": "img/products/country-life-fazole-bila-velka-bio-500-g.webp",
+    "options": [
+      "Úplně se rozpustí ve vodě.",
+      "Zůstane tvrdá bez ohledu na vaření.",
+      "Drží tvar a uvnitř je krémová.",
+      "Změní se na tenké vločky."
+    ],
+    "answer": "Drží tvar a uvnitř je krémová.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q5",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce",
+      "lepek, sója"
+    ],
+    "answer": "lepek, sója",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q6",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Namoč na 8–12 hodin, propláchni a vař do měkka 60–70 minut. Použij do salátů, polévek, ragú, pomazánek nebo zapečených jídel.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q7",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Country Life s.r.o.",
+      "Vilgain s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-bila-velka-bio-500-g-q8",
+    "productId": "country-life-fazole-bila-velka-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/fazole-bila-velka-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q1",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "hrubě mletá pšenice BIO",
+      "sušený kokos",
+      "fazole červená ledvina BIO",
+      "rajčatová dužina 90 %, extra panenský olivový olej 2 %, česnek"
+    ],
+    "answer": "fazole červená ledvina BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q2",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "text",
+    "prompt": "S jakým pokrmem je červená ledvina nejčastěji spojována?",
+    "answer": "Chilli con carne",
+    "answerDisplay": "Chilli con carne.",
+    "explanation": "Chilli con carne.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q3",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako výraznou BIO fazoli do chilli con carne, k rýži, kukuřici a pikantním jídlům.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q4",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "photo",
+    "prompt": "Proč se jí říká chilli fazole?",
+    "image": "img/products/country-life-fazole-cervena-ledvina-bio-500-g.webp",
+    "options": [
+      "Obsahuje mleté chilli už v balení.",
+      "Pěstuje se pouze v Chile.",
+      "Po uvaření ztrácí červenou barvu.",
+      "Je klasickou součástí chilli con carne."
+    ],
+    "answer": "Je klasickou součástí chilli con carne.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q5",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "lepek",
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q6",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Namoč na 8–12 hodin, propláchni a vař přibližně 1 hodinu do měkka. Použij do chilli con carne, salátů, polévek nebo omáček.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q7",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Bezva zdraví s.r.o.",
+      "Country Life s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Don Gastronom Spain S.L."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-cervena-ledvina-bio-500-g-q8",
+    "productId": "country-life-fazole-cervena-ledvina-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-cervena-ledvina-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q1",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "pohanka setá BIO, mechanicky loupaná",
+      "banán 100 %",
+      "blanšírované mandle, cukr, vanilkové aroma",
+      "fazole pinto BIO"
+    ],
+    "answer": "fazole pinto BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q2",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "text",
+    "prompt": "Pro jaký typ kuchyně výrobce fazoli pinto doporučuje?",
+    "answer": "Pro mexickou kuchyni",
+    "answerDisplay": "Pro mexickou kuchyni.",
+    "explanation": "Pro mexickou kuchyni.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q3",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako strakatou BIO fazoli pro mexická jídla, náplně a pomazánky.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q4",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "photo",
+    "prompt": "Který popis odpovídá fazoli pinto?",
+    "image": "img/products/country-life-fazole-pinto-bio-500-g.webp",
+    "options": [
+      "Strakatá fazole s lehce pikantní moučnou chutí.",
+      "Drobná černá čočka s pevnou slupkou.",
+      "Bílá rýže s neutrální chutí.",
+      "Žlutá těstovina z kukuřice."
+    ],
+    "answer": "Strakatá fazole s lehce pikantní moučnou chutí.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q5",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "lepek",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q6",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Před vařením namoč, propláchni a uvař do měkka podle návodu na obalu. Použij do mexických jídel, náplní, pomazánek nebo luštěninových směsí.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q7",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Don Gastronom Spain S.L.",
+      "Country Life s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-fazole-pinto-bio-500-g-q8",
+    "productId": "country-life-fazole-pinto-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/fazole-pinto-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q1",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "hrubě mletá pšeničná krupice BIO",
+      "černý neloupaný sezam BIO",
+      "semolina z tvrdé pšenice, voda",
+      "pšeničná mouka 97,8 %, voda, sůl"
+    ],
+    "answer": "hrubě mletá pšeničná krupice BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q2",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "text",
+    "prompt": "Jaký je poměr kuskusu a vody?",
+    "answer": "1 díl kuskusu na 2 díly vody",
+    "answerDisplay": "1 díl kuskusu na 2 díly vody.",
+    "explanation": "1 díl kuskusu na 2 díly vody.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q3",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako rychlou BIO pšeničnou přílohu, kterou stačí zalít a nechat dojít.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q4",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "photo",
+    "prompt": "Jak se tento kuskus připravuje?",
+    "image": "img/products/country-life-kuskus-bio-500-g.webp",
+    "options": [
+      "Vaří se hodinu po celonočním namáčení.",
+      "Zalije se vroucí vodou a nechá 15 minut odstát.",
+      "Peče se nasucho 30 minut.",
+      "Jí se pouze syrový."
+    ],
+    "answer": "Zalije se vroucí vodou a nechá 15 minut odstát.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q5",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "lepek, vejce",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, vejce",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q6",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Zalij vroucí vodou v poměru 1 díl kuskusu na 2 díly vody a nech 15 minut odstát. Načechrej vidličkou a podávej jako přílohu nebo základ salátu.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q7",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l.",
+      "Barcelo Manufacture s.r.o.",
+      "Country Life s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-kuskus-bio-500-g-q8",
+    "productId": "country-life-kuskus-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/kuskus-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q1",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "loupaná dýňová semínka",
+      "hrubě mletá pšenice BIO",
+      "červená paprika, cukr, sůl",
+      "rýže 100 %"
+    ],
+    "answer": "hrubě mletá pšenice BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q2",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "text",
+    "prompt": "Jak dlouho se bulgur nejprve vaří?",
+    "answer": "2 minuty",
+    "answerDisplay": "2 minuty.",
+    "explanation": "2 minuty.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q3",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako rychlou BIO přílohu na pilaf, saláty, nádivky nebo karbanátky.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q4",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "photo",
+    "prompt": "Co následuje po krátkém dvouminutovém varu?",
+    "image": "img/products/country-life-bulgur-psenicny-bio-500-g.webp",
+    "options": [
+      "Ihned se prudce zchladí ledem.",
+      "Peče se další hodinu v troubě.",
+      "15–20 minut dojde pod pokličkou.",
+      "Nechá se přes noc kvasit."
+    ],
+    "answer": "15–20 minut dojde pod pokličkou.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q5",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce",
+      "lepek, vejce, arašídy, sója, skořápkové plody, sezam"
+    ],
+    "answer": "lepek, vejce, arašídy, sója, skořápkové plody, sezam",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q6",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Vař 2 minuty v mírně osolené vodě v poměru 1 díl bulguru na 2 díly vody. Poté nech 15–20 minut dojít pod pokličkou.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q7",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Country Life s.r.o.",
+      "Alis S.r.l.",
+      "Barcelo Manufacture s.r.o.",
+      "Fushou Food s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-bulgur-psenicny-bio-500-g-q8",
+    "productId": "country-life-bulgur-psenicny-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/bulgur-psenicny-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q1",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "sušený kokos",
+      "rajčatová dužina 90 %, extra panenský olivový olej 2 %, česnek",
+      "pohanka setá BIO, mechanicky loupaná",
+      "rýžová mouka 92 %, tapiokový škrob, sůl"
+    ],
+    "answer": "pohanka setá BIO, mechanicky loupaná",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q2",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "text",
+    "prompt": "V jakém poměru se vaří pohanka a voda?",
+    "answer": "1 díl pohanky na 1,5 dílu vody",
+    "answerDisplay": "1 díl pohanky na 1,5 dílu vody.",
+    "explanation": "1 díl pohanky na 1,5 dílu vody.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q3",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako oříškovou BIO přílohu nebo základ salátů, polévek a plněné zeleniny.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q4",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "photo",
+    "prompt": "Jakým způsobem je tato pohanka loupaná?",
+    "image": "img/products/country-life-pohanka-loupana-kroupy-bio-500-g.webp",
+    "options": [
+      "Chemicky.",
+      "Pražením v cukru.",
+      "Fermentací.",
+      "Mechanicky."
+    ],
+    "answer": "Mechanicky.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q5",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "lepek, arašídy, sója, skořápkové plody, sezam",
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, arašídy, sója, skořápkové plody, sezam",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q6",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Propláchni a vař v poměru 1 díl pohanky na 1,5 dílu vody 10–15 minut. Poté nech dojít pod pokličkou.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q7",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-pohanka-loupana-kroupy-bio-500-g-q8",
+    "productId": "country-life-pohanka-loupana-kroupy-bio-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/pohanka-loupana-kroupy-500-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q1",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "banán 100 %",
+      "blanšírované mandle, cukr, vanilkové aroma",
+      "hnědé a zlaté lněné semínko 36 %, slunečnicová semínka 20 %, sezam 20 %",
+      "černý neloupaný sezam BIO"
+    ],
+    "answer": "černý neloupaný sezam BIO",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q2",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "text",
+    "prompt": "Proč je vhodné černý sezam dobře rozkousat nebo krátce rozemlít?",
+    "answer": "Pro lepší využitelnost semínek",
+    "answerDisplay": "Pro lepší využitelnost semínek.",
+    "explanation": "Pro lepší využitelnost semínek.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q3",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako výrazný kontrastní posyp na wok, nudle, sushi bowl, pečivo nebo na domácí tahini.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q4",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "photo",
+    "prompt": "V jaké kuchyni se černý sezam podle výrobce uplatní zvlášť dobře?",
+    "image": "img/products/country-life-sezam-cerny-neloupany-bio-100-g.webp",
+    "options": [
+      "V asijské kuchyni.",
+      "Pouze v českých omáčkách.",
+      "Výhradně ve francouzských dezertech.",
+      "Jen při výrobě těstovin."
+    ],
+    "answer": "V asijské kuchyni.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q5",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "lepek, arašídy, sója, skořápkové plody, sezam",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, arašídy, sója, skořápkové plody, sezam",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q6",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Určeno k přímé spotřebě. Pro lepší využití dobře rozkousej nebo krátce rozemel; lze také nasucho opražit.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q7",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Country Life s.r.o.",
+      "Don Gastronom Spain S.L."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "country-life-sezam-cerny-neloupany-bio-100-g-q8",
+    "productId": "country-life-sezam-cerny-neloupany-bio-100-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "100 g",
+    "answerDisplay": "100 g.",
+    "explanation": "Balení: 100 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.econea.cz/products/sezam-cerny-neloupany-100-g-bio-country-life"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q1",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "loupaná dýňová semínka",
+      "semolina z tvrdé pšenice, voda",
+      "pšeničná mouka 97,8 %, voda, sůl",
+      "quinoa BIO"
+    ],
+    "answer": "loupaná dýňová semínka",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q2",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "text",
+    "prompt": "Jsou semínka v balení loupaná, nebo neloupaná?",
+    "answer": "Loupaná",
+    "answerDisplay": "Loupaná.",
+    "explanation": "Loupaná.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q3",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako univerzální loupaná semínka na zobání, posyp i pečení.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q4",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "photo",
+    "prompt": "Které použití odpovídá tomuto produktu?",
+    "image": "img/products/bezva-dynova-seminka-500-g.webp",
+    "options": [
+      "Pouze na vaření vývaru.",
+      "Do granoly, salátů, pečiva nebo k přímému zobání.",
+      "Jen jako náhrada kávy.",
+      "Výhradně k nakládání zeleniny."
+    ],
+    "answer": "Do granoly, salátů, pečiva nebo k přímému zobání.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q5",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "lepek, arašídy, sója, skořápkové plody",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, arašídy, sója, skořápkové plody",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q6",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Určeno k přímé konzumaci. Použij do müsli, granoly, salátu nebo při pečení; lze krátce opražit nasucho.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q7",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l.",
+      "Bezva zdraví s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobce: Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-dynova-seminka-500-g-q8",
+    "productId": "bezva-dynova-seminka-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/dynova-seminka/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q1",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "červená paprika, cukr, sůl",
+      "sušený kokos",
+      "rýže 100 %",
+      "cizrna BIO"
+    ],
+    "answer": "sušený kokos",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q2",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "text",
+    "prompt": "Z jaké země kokosové chipsy pocházejí?",
+    "answer": "Z Filipín",
+    "answerDisplay": "Z Filipín.",
+    "explanation": "Z Filipín.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q3",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako křupavé kokosové plátky do snídaní, pečení i k přímému zobání.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q4",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "photo",
+    "prompt": "Jakou podobu má kokos v tomto výrobku?",
+    "image": "img/products/bezva-kokosove-chipsy-250-g.webp",
+    "options": [
+      "Jemný tekutý olej.",
+      "Slazený kokosový krém.",
+      "Tenké sušené plátky.",
+      "Celý čerstvý kokos."
+    ],
+    "answer": "Tenké sušené plátky.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q5",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce",
+      "lepek, arašídy, sója, skořápkové plody"
+    ],
+    "answer": "lepek, arašídy, sója, skořápkové plody",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q6",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Určeno k přímé konzumaci. Přidej do müsli, jogurtu, ovocného salátu, pečení nebo na dokončení dezertu.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q7",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Bezva zdraví s.r.o.",
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l.",
+      "Barcelo Manufacture s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobce: Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-kokosove-chipsy-250-g-q8",
+    "productId": "bezva-kokosove-chipsy-250-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "250 g",
+    "answerDisplay": "250 g.",
+    "explanation": "Balení: 250 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/susene-ovoce--orechy/kokosove-chipsy/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q1",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "rajčatová dužina 90 %, extra panenský olivový olej 2 %, česnek",
+      "rýžová mouka 92 %, tapiokový škrob, sůl",
+      "banán 100 %",
+      "fazole bílá velká BIO"
+    ],
+    "answer": "banán 100 %",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q2",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "text",
+    "prompt": "Co znamená, že je banán lyofilizovaný?",
+    "answer": "Je sušený mrazem",
+    "answerDisplay": "Je sušený mrazem.",
+    "explanation": "Je sušený mrazem.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q3",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako lehké křupavé 100% ovoce bez dalších přísad do svačin a snídaní.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q4",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "photo",
+    "prompt": "Co tvoří celé složení výrobku?",
+    "image": "img/products/bezva-lyofilizovany-banan-platky-55-g.webp",
+    "options": [
+      "Banán a cukrový sirup.",
+      "Banán a kokosový olej.",
+      "Banán, mléko a med.",
+      "Banán 100 %."
+    ],
+    "answer": "Banán 100 %.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q5",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+      "mléko a vejce",
+      "ryby a měkkýši",
+      "celer a hořčice"
+    ],
+    "answer": "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q6",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Určeno k přímé konzumaci. Přidej do müsli, kaše, jogurtu nebo dezertu a po otevření chraň před vlhkostí.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q7",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Alis S.r.l.",
+      "Bezva zdraví s.r.o.",
+      "Barcelo Manufacture s.r.o.",
+      "Fushou Food s.r.o."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobce: Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "bezva-lyofilizovany-banan-platky-55-g-q8",
+    "productId": "bezva-lyofilizovany-banan-platky-55-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "55 g",
+    "answerDisplay": "55 g.",
+    "explanation": "Balení: 55 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/lyofilizovane-ovoce/banan-lyofilizovane-platky--55g/"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q1",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "blanšírované mandle, cukr, vanilkové aroma",
+      "hnědé a zlaté lněné semínko 36 %, slunečnicová semínka 20 %, sezam 20 %",
+      "fazole červená ledvina BIO",
+      "semolina z tvrdé pšenice, voda"
+    ],
+    "answer": "semolina z tvrdé pšenice, voda",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q2",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "text",
+    "prompt": "Jaký je doporučený čas vaření?",
+    "answer": "8 minut",
+    "answerDisplay": "8 minut.",
+    "explanation": "8 minut.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q3",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako autentická Spaghetti di Gragnano IGP s širším průměrem a pomalým nízkoteplotním sušením.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q4",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "photo",
+    "prompt": "Co znamená IGP u těchto špaget?",
+    "image": "img/products/la-fabbrica-spaghetti-di-gragnano-igp-500-g.webp",
+    "options": [
+      "Výrobek má chráněné zeměpisné označení spojené s Gragnanem.",
+      "Jde o bezlepkovou certifikaci.",
+      "Jde o označení instantních těstovin.",
+      "Znamená to přidaný vaječný protein."
+    ],
+    "answer": "Výrobek má chráněné zeměpisné označení spojené s Gragnanem.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q5",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "lepek, sója, hořčice",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek, sója, hořčice",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q6",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Vař 8 minut. Výrobce doporučuje 1 litr vody a 10 g soli na každých 100 g těstovin.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q7",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Bezva zdraví s.r.o."
+    ],
+    "answer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "explanation": "Výrobce: La Fabbrica della Pasta di Gragnano S.r.l..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "la-fabbrica-spaghetti-di-gragnano-igp-500-g-q8",
+    "productId": "la-fabbrica-spaghetti-di-gragnano-igp-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://lafabbricadellapastadigragnano-shop.com/en/products/long-pasta-spaghetti-di-gragnano"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q1",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "červená paprika, cukr, sůl",
+      "pšeničná mouka 97,8 %, voda, sůl",
+      "quinoa BIO",
+      "fazole pinto BIO"
+    ],
+    "answer": "červená paprika, cukr, sůl",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q2",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "text",
+    "prompt": "Jakým způsobem jsou papriky pečené?",
+    "answer": "V peci na dřevo",
+    "answerDisplay": "V peci na dřevo.",
+    "explanation": "V peci na dřevo.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q3",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako hotové proužky murcijské papriky pečené v peci na dřevo s kouřovým tónem.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q4",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "photo",
+    "prompt": "Jaký chuťový profil výrobce zdůrazňuje?",
+    "image": "img/products/garden-delights-pimiento-rojo-tiras-330-g.webp",
+    "options": [
+      "Kávový a čokoládový.",
+      "Kouřový a opečený.",
+      "Citronový a mátový.",
+      "Smetanový a sýrový."
+    ],
+    "answer": "Kouřový a opečený.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q5",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "mléko a vejce",
+      "ryby a měkkýši",
+      "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+      "celer a hořčice"
+    ],
+    "answer": "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q6",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Výrobek je připraven k přímému podávání. Použij do tapas, salátů, těstovin, na pizzu nebo k masu.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q7",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Country Life s.r.o.",
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Don Gastronom Spain S.L."
+    ],
+    "answer": "Don Gastronom Spain S.L.",
+    "explanation": "Výrobce: Don Gastronom Spain S.L..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "garden-delights-pimiento-rojo-tiras-330-g-q8",
+    "productId": "garden-delights-pimiento-rojo-tiras-330-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "330 g",
+    "answerDisplay": "330 g.",
+    "explanation": "Balení: 330 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.dongastronom.es/es/productos/chorizo-y-salchichon/pimiento-rojo-en-tiras-tostado-en-horno-de-lena"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q1",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "rýže 100 %",
+      "rajčatová dužina 90 %, extra panenský olivový olej 2 %, česnek",
+      "cizrna BIO",
+      "hrubě mletá pšeničná krupice BIO"
+    ],
+    "answer": "rajčatová dužina 90 %, extra panenský olivový olej 2 %, česnek",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q2",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "text",
+    "prompt": "Kolik procent rajčatové dužiny omáčka obsahuje?",
+    "answer": "90 %",
+    "answerDisplay": "90 %.",
+    "explanation": "90 %.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q3",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako hotovou bylinkovou rajčatovou omáčku na bruschettu, kterou lze využít i k těstovinám.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q4",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "photo",
+    "prompt": "K čemu je omáčka primárně určená?",
+    "image": "img/products/casa-rinaldi-sugo-bruschetta-350-g.webp",
+    "options": [
+      "K přípravě sladkého pudinku.",
+      "Jako nálev na čaj.",
+      "Na opečený chléb jako bruschetta.",
+      "K výrobě šlehačky."
+    ],
+    "answer": "Na opečený chléb jako bruschetta.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q5",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "mléko a vejce",
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa."
+    ],
+    "answer": "Žádný z alergenů EU 1–14 není uveden jako složka ani stopa.",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q6",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Podávej přímo na opečeném chlebu jako bruschettu. Lze použít také jako rajčatovou omáčku k těstovinám, rýži, polentě nebo zelenině.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q7",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Alis S.r.l.",
+      "Bezva zdraví s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Don Gastronom Spain S.L."
+    ],
+    "answer": "Alis S.r.l.",
+    "explanation": "Výrobce: Alis S.r.l..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "casa-rinaldi-sugo-bruschetta-350-g-q8",
+    "productId": "casa-rinaldi-sugo-bruschetta-350-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "350 g",
+    "answerDisplay": "350 g.",
+    "explanation": "Balení: 350 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://casarinaldi.shop/sos-paste-bruschetta-casa-rinaldi-350-g/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q1",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka 92 %, tapiokový škrob, sůl",
+      "fazole bílá velká BIO",
+      "blanšírované mandle, cukr, vanilkové aroma",
+      "hrubě mletá pšenice BIO"
+    ],
+    "answer": "blanšírované mandle, cukr, vanilkové aroma",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q2",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "text",
+    "prompt": "Jaké aroma doplňuje karamelizované mandle?",
+    "answer": "Vanilkové aroma",
+    "answerDisplay": "Vanilkové aroma.",
+    "explanation": "Vanilkové aroma.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q3",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako křupavou španělskou mandlovou sladkost s karamelem a vanilkou; upozorni na ořechové alergeny.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q4",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "photo",
+    "prompt": "V jaké úpravě jsou použité mandle?",
+    "image": "img/products/lozano-cervenka-mandle-v-cukru-100-g.webp",
+    "options": [
+      "Uzené a naložené v octu.",
+      "Mleté se solí a chilli.",
+      "Syrové ve slaném nálevu.",
+      "Blanšírované a obalené v cukru."
+    ],
+    "answer": "Blanšírované a obalené v cukru.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q5",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "arašídy, mléko, skořápkové plody",
+      "ryby a měkkýši",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "arašídy, mléko, skořápkové plody",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q6",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Určeno k přímé konzumaci. Uchovávej v suchém a chladném prostředí okolo 20 °C.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q7",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Barcelo Manufacture s.r.o.",
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l."
+    ],
+    "answer": "Barcelo Manufacture s.r.o.",
+    "explanation": "Výrobce: Barcelo Manufacture s.r.o..",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "lozano-cervenka-mandle-v-cukru-100-g-q8",
+    "productId": "lozano-cervenka-mandle-v-cukru-100-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "100 g",
+    "answerDisplay": "100 g.",
+    "explanation": "Balení: 100 g.",
+    "sourceLabel": "Výrobce / značka – detail produktu",
+    "sourceUrl": "https://www.lozanocervenka.cz/mandle-a-pistacie/mandle-v-cukru/"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q1",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost správně vystihuje hlavní složení produktu?",
+    "options": [
+      "hnědé a zlaté lněné semínko 36 %, slunečnicová semínka 20 %, sezam 20 %",
+      "fazole červená ledvina BIO",
+      "pohanka setá BIO, mechanicky loupaná",
+      "pšeničná mouka 97,8 %, voda, sůl"
+    ],
+    "answer": "pšeničná mouka 97,8 %, voda, sůl",
+    "explanation": "Složení je převzaté z ověřeného produktového zdroje.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q2",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "text",
+    "prompt": "Jak dlouho se nudle vaří?",
+    "answer": "5–7 minut",
+    "answerDisplay": "5–7 minut.",
+    "explanation": "5–7 minut.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q3",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako rychlé předpařené pšeničné nudle do vývarů a woků; nejsou bezlepkové.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q4",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "photo",
+    "prompt": "Čím jsou nudle specifické před samotným vařením?",
+    "image": "img/products/fu-shou-quick-cooking-noodles-500-g.webp",
+    "options": [
+      "Jsou předpařené.",
+      "Jsou už smažené na oleji.",
+      "Jsou vyrobené pouze z rýže.",
+      "Jsou plněné rajčatovou omáčkou."
+    ],
+    "answer": "Jsou předpařené.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q5",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje uvedené alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "lepek",
+      "celer a hořčice",
+      "korýši a vejce"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle ověřeného zdroje a etikety.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q6",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt připravuje nebo používá?",
+    "answer": "Vař 5–7 minut. Podávej v polévce nebo použij do rychlého smaženého jídla.",
+    "explanation": "Postup odpovídá doporučení výrobce nebo značky.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q7",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Don Gastronom Spain S.L.",
+      "Alis S.r.l.",
+      "Fushou Food s.r.o.",
+      "Barcelo Manufacture s.r.o."
+    ],
+    "answer": "Fushou Food s.r.o.",
+    "explanation": "Výrobce: Fushou Food s.r.o..",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "fu-shou-quick-cooking-noodles-500-g-q8",
+    "productId": "fu-shou-quick-cooking-noodles-500-g",
+    "type": "text",
+    "prompt": "Jaká je hmotnost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Distributor – detail produktu",
+    "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
   }
 ]
