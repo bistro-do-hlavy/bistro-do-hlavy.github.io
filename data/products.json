@@ -3968,5 +3968,753 @@
         "url": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
       }
     ]
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "name": "Vilgain Kečup bez přidaného cukru 310 g",
+    "category": "Omáčky",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Neuvedeno výrobcem",
+    "description": "Rajčatový kečup bez přidaného cukru, sladidel a konzervantů; na 100 g výrobku připadá 220 g rajčat.",
+    "ingredients": [
+      "voda",
+      "rajčatový protlak",
+      "kvasný lihový ocet",
+      "kukuřičný škrob",
+      "sůl",
+      "mletá paprika",
+      "hřebíček"
+    ],
+    "allergens": [],
+    "specifics": [
+      "310 g",
+      "220 g rajčat na 100 g kečupu",
+      "bez přidaného cukru a sladidel",
+      "bez konzervantů",
+      "přirozeně obsahuje cukr z rajčat"
+    ],
+    "preparation": [
+      "Podávej k hranolkům, burgerům nebo vejcím.",
+      "Použij do marinády, BBQ omáčky nebo dresinku."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelně popsané složení.",
+    "salesTip": "Doporuč jako rajčatový kečup bez přidaného cukru a sladidel s vysokým podílem rajčat.",
+    "image": "img/products/vilgain-kecup-bez-pridaneho-cukru-310-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-horcice-350-g",
+    "name": "Vilgain Hořčice 350 g",
+    "category": "Omáčky",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Neuvedeno výrobcem",
+    "description": "Plnotučná hořčice z jemně mletých neodtučněných bílých a hnědých hořčičných semínek, bez chemické konzervace.",
+    "ingredients": [
+      "pitná voda",
+      "hořčičné semínko 16 %",
+      "kvasný lihový ocet",
+      "cukr",
+      "sůl",
+      "psyllium",
+      "bambusová vláknina",
+      "kurkuma",
+      "koření"
+    ],
+    "allergens": [
+      10
+    ],
+    "specifics": [
+      "350 g",
+      "16 % hořčičného semínka",
+      "neodtučněná semínka",
+      "bez lepku",
+      "žlutou barvu dodává kurkuma",
+      "bez syntetických barviv a chemické konzervace"
+    ],
+    "preparation": [
+      "Podávej k masu.",
+      "Použij do salátových zálivek, omáček a dipů.",
+      "Po otevření skladuj do 10 °C."
+    ],
+    "brandInfo": "Vilgain je česká značka potravin a sportovní výživy společnosti Vilgain s.r.o., která klade důraz na srozumitelně popsané složení.",
+    "salesTip": "Doporuč jako plnotučnou bezlepkovou hořčici z neodtučněných semínek bez chemické konzervace.",
+    "image": "img/products/vilgain-horcice-350-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://aktin.cz/vilgain-horcice"
+      }
+    ]
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "name": "Country Life Olej slunečnicový na smažení a pečení BIO 1 l",
+    "category": "Za studena lisované oleje",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Mimo EU; baleno v České republice",
+    "description": "BIO slunečnicový olej lisovaný za studena z odrůdy s vysokým obsahem kyseliny olejové, určený i pro tepelnou úpravu.",
+    "ingredients": [
+      "100% BIO slunečnicový olej lisovaný za studena"
+    ],
+    "allergens": [],
+    "specifics": [
+      "1 l",
+      "lisovaný za studena",
+      "vysoký obsah kyseliny olejové",
+      "vhodný na smažení, pečení a grilování",
+      "BIO"
+    ],
+    "preparation": [
+      "Používej na smažení, pečení a grilování.",
+      "Skladuj mimo světlo při teplotě do 20 °C."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč zákazníkovi, který chce BIO slunečnicový olej lisovaný za studena, ale potřebuje jej i na teplou kuchyni.",
+    "image": "img/products/country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-umeocet-500-ml",
+    "name": "Country Life Umeocet 500 ml",
+    "category": "Asijská ochucovadla",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "Mimo EU",
+    "description": "Výrazně slano-kyselé ochucovadlo vznikající při fermentaci ume švestek se shiso listy; nejde o klasický vinný ocet.",
+    "ingredients": [
+      "ume švestkový ocet bílý 61 % (ume švestky 80 %, mořská sůl 20 %)",
+      "shiso listy",
+      "mořská sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "500 ml",
+      "slano-kyselá chuť",
+      "vedlejší produkt fermentace umeboshi",
+      "bez přidaného cukru",
+      "může obsahovat stopy lepku"
+    ],
+    "preparation": [
+      "Použij do salátových zálivek, luštěnin, kulajdy nebo kvašené zeleniny.",
+      "Přidávej opatrně, protože současně okyseluje i solí."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Vysvětli, že pár kapek umeocta dodá kyselost i slanost a hodí se do zálivek, luštěnin či kvašené zeleniny.",
+    "image": "img/products/country-life-umeocet-500-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+      }
+    ]
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml",
+    "name": "Country Life Tamari sójová omáčka 500 ml",
+    "category": "Asijská ochucovadla",
+    "brand": "Country Life",
+    "manufacturer": "Country Life s.r.o.",
+    "origin": "EU / mimo EU",
+    "description": "Tmavá, hustá a výrazná tamari omáčka vznikající fermentací sójových bobů s kulturou koji; přirozeně neobsahuje pšeničnou složku.",
+    "ingredients": [
+      "sójové boby 48,9 %",
+      "voda",
+      "mořská sůl 13,8 %",
+      "alkohol z cukrové třtiny 1,6 %",
+      "fermentační kultura Aspergillus oryzae"
+    ],
+    "allergens": [
+      6
+    ],
+    "specifics": [
+      "500 ml",
+      "48,9 % sójových bobů",
+      "bez přidaného cukru",
+      "přirozeně bez pšeničné složky",
+      "může obsahovat stopy lepku",
+      "vhodná i pro tepelnou úpravu"
+    ],
+    "preparation": [
+      "Použij do marinád, woků, omáček, polévek, k rýži, nudlím nebo tofu.",
+      "Dávkuj postupně; výraznou slaností může nahradit část soli."
+    ],
+    "brandInfo": "Country Life je česká rodinná firma založená v roce 1991 a patří k průkopníkům biopotravin v Česku.",
+    "salesTip": "Doporuč jako výraznou fermentovanou sójovou omáčku do marinád a teplé kuchyně; upozorni na sóju a možné stopy lepku.",
+    "image": "img/products/country-life-tamari-sojova-omacka-500-ml.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+      }
+    ]
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg",
+    "name": "Mlýn Bohutín Hladká mouka 2 kg",
+    "category": "Mouky",
+    "brand": "Mlýn Bohutín",
+    "manufacturer": "Mlýn Bohutín s.r.o.",
+    "origin": "Bohutín u Březnice, Česká republika",
+    "description": "Jemně mletá pšeničná mouka z rodinného mlýna v Bohutíně.",
+    "ingredients": [
+      "pšeničná hladká mouka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "2 kg",
+      "jemně mletá pšeničná mouka",
+      "obsahuje lepek",
+      "mouka z českého rodinného mlýna"
+    ],
+    "preparation": [
+      "Hodí se pro běžné pečení a zahušťování podle receptu.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Mlýn Bohutín je rodinný mlýn u Březnice, který mele mouku z obilí od českých zemědělců.",
+    "salesTip": "Doporuč jako jemně mletá pšeničná mouka od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "image": "img/products/mlyn-bohutin-mouka-hladka-2-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+      }
+    ]
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "name": "Mlýn Bohutín Polohrubá mouka 2 kg",
+    "category": "Mouky",
+    "brand": "Mlýn Bohutín",
+    "manufacturer": "Mlýn Bohutín s.r.o.",
+    "origin": "Bohutín u Březnice, Česká republika",
+    "description": "Polohrubě mletá pšeničná mouka z rodinného mlýna v Bohutíně.",
+    "ingredients": [
+      "pšeničná polohrubá mouka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "2 kg",
+      "polohrubě mletá pšeničná mouka",
+      "obsahuje lepek",
+      "mouka z českého rodinného mlýna"
+    ],
+    "preparation": [
+      "Použij ji do těst, pro která recept požaduje polohrubou mouku.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Mlýn Bohutín je rodinný mlýn u Březnice, který mele mouku z obilí od českých zemědělců.",
+    "salesTip": "Doporuč jako polohrubě mletá pšeničná mouka od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "image": "img/products/mlyn-bohutin-mouka-polohruba-2-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+      }
+    ]
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "name": "Mlýn Bohutín Pšeničná chlebová mouka 2 kg",
+    "category": "Mouky",
+    "brand": "Mlýn Bohutín",
+    "manufacturer": "Mlýn Bohutín s.r.o.",
+    "origin": "Bohutín u Březnice, Česká republika",
+    "description": "Pšeničná mouka určená zejména na chléb z rodinného mlýna v Bohutíně.",
+    "ingredients": [
+      "pšeničná chlebová mouka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "2 kg",
+      "pšeničná mouka určená zejména na chléb",
+      "obsahuje lepek",
+      "mouka z českého rodinného mlýna"
+    ],
+    "preparation": [
+      "Použij ji do chlebového a dalšího kynutého těsta podle receptu.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Mlýn Bohutín je rodinný mlýn u Březnice, který mele mouku z obilí od českých zemědělců.",
+    "salesTip": "Doporuč jako pšeničná mouka určená zejména na chléb od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "image": "img/products/mlyn-bohutin-mouka-psenicna-chlebova-2-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+      }
+    ]
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "name": "Mlýn Bohutín Žitná chlebová mouka 2 kg",
+    "category": "Mouky",
+    "brand": "Mlýn Bohutín",
+    "manufacturer": "Mlýn Bohutín s.r.o.",
+    "origin": "Bohutín u Březnice, Česká republika",
+    "description": "Žitná mouka určená zejména na chléb z rodinného mlýna v Bohutíně.",
+    "ingredients": [
+      "žitná chlebová mouka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "2 kg",
+      "žitná mouka určená zejména na chléb",
+      "obsahuje lepek",
+      "mouka z českého rodinného mlýna"
+    ],
+    "preparation": [
+      "Použij ji do žitného nebo směsného chlebového těsta podle receptu.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Mlýn Bohutín je rodinný mlýn u Březnice, který mele mouku z obilí od českých zemědělců.",
+    "salesTip": "Doporuč jako žitná mouka určená zejména na chléb od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "image": "img/products/mlyn-bohutin-mouka-zitna-chlebova-2-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+      }
+    ]
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "name": "Mlýn Bohutín Žitná celozrnná mouka 2 kg",
+    "category": "Mouky",
+    "brand": "Mlýn Bohutín",
+    "manufacturer": "Mlýn Bohutín s.r.o.",
+    "origin": "Bohutín u Březnice, Česká republika",
+    "description": "Celozrnná mouka z žita z rodinného mlýna v Bohutíně.",
+    "ingredients": [
+      "celozrnná žitná mouka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "2 kg",
+      "celozrnná mouka z žita",
+      "obsahuje lepek",
+      "mouka z českého rodinného mlýna"
+    ],
+    "preparation": [
+      "Použij ji do celozrnného žitného nebo směsného pečiva podle receptu.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Mlýn Bohutín je rodinný mlýn u Březnice, který mele mouku z obilí od českých zemědělců.",
+    "salesTip": "Doporuč jako celozrnná mouka z žita od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "image": "img/products/mlyn-bohutin-mouka-zitna-celozrnna-2-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+      }
+    ]
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "name": "Mlýn Bohutín Špaldová celozrnná mouka 2 kg",
+    "category": "Mouky",
+    "brand": "Mlýn Bohutín",
+    "manufacturer": "Mlýn Bohutín s.r.o.",
+    "origin": "Bohutín u Březnice, Česká republika",
+    "description": "Celozrnná mouka ze špaldové pšenice z rodinného mlýna v Bohutíně.",
+    "ingredients": [
+      "celozrnná špaldová mouka"
+    ],
+    "allergens": [
+      1
+    ],
+    "specifics": [
+      "2 kg",
+      "celozrnná mouka ze špaldové pšenice",
+      "obsahuje lepek",
+      "mouka z českého rodinného mlýna"
+    ],
+    "preparation": [
+      "Použij ji do celozrnného pečiva a těst podle receptu.",
+      "Skladuj v suchu."
+    ],
+    "brandInfo": "Mlýn Bohutín je rodinný mlýn u Březnice, který mele mouku z obilí od českých zemědělců.",
+    "salesTip": "Doporuč jako celozrnná mouka ze špaldové pšenice od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "image": "img/products/mlyn-bohutin-mouka-spaldova-celozrnna-2-kg.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+      }
+    ]
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g",
+    "name": "ŠUFAN Kešu natural W240 200 g",
+    "category": "Ořechy a sladkosti",
+    "brand": "ŠUFAN",
+    "manufacturer": "ŠUFAN s.r.o.",
+    "origin": "Vietnam nebo Pobřeží slonoviny; baleno v Olomouci",
+    "description": "Velká přírodní kešu jádra velikosti W240 s krémovou, jemně nasládlou chutí.",
+    "ingredients": [
+      "100% kešu ořechy"
+    ],
+    "allergens": [
+      8
+    ],
+    "specifics": [
+      "200 g",
+      "velikost W240",
+      "100% kešu",
+      "natural – nepražené a nesolené",
+      "může obsahovat stopy arašídů, sezamu a dalších ořechů"
+    ],
+    "preparation": [
+      "Jez přímo nebo přidej do asijských jídel, kaší a dezertů.",
+      "Skladuj v suchu a po otevření dobře uzavři."
+    ],
+    "brandInfo": "ŠUFAN je český výrobce z Olomouce. Značka vznikla v roce 2014 a své ořechové výrobky, granoly a další potraviny vyrábí ve vlastní výrobně na Hané.",
+    "salesTip": "Doporuč jako velká natural kešu jádra W240 bez soli a dalších přísad.",
+    "image": "img/products/sufan-kesu-natural-w240-200-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+      }
+    ]
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "name": "ŠUFAN Kokosová hnízda s kešu 170 g",
+    "category": "Ovocné snacky",
+    "brand": "ŠUFAN",
+    "manufacturer": "ŠUFAN s.r.o.",
+    "origin": "Olomouc, Česká republika",
+    "description": "Křupavé kokosové shluky s kešu, slunečnicovými a chia semínky, slazené rýžovým sirupem a třtinovým cukrem.",
+    "ingredients": [
+      "kokosové chipsy 53,5 %",
+      "rýžový sirup",
+      "třtinový cukr",
+      "kešu ořechy 16 %",
+      "slunečnicová semínka",
+      "chia semínka",
+      "sůl"
+    ],
+    "allergens": [
+      8
+    ],
+    "specifics": [
+      "170 g",
+      "53,5 % kokosových chipsů",
+      "16 % kešu",
+      "křupavé shluky",
+      "může obsahovat stopy arašídů, sezamu a dalších ořechů"
+    ],
+    "preparation": [
+      "Jez přímo jako snack.",
+      "Přidej do jogurtu, mléka, tvarohu nebo k ovoci."
+    ],
+    "brandInfo": "ŠUFAN je český výrobce z Olomouce. Značka vznikla v roce 2014 a své ořechové výrobky, granoly a další potraviny vyrábí ve vlastní výrobně na Hané.",
+    "salesTip": "Doporuč jako křupavý kokosovo-kešu snack, který lze jíst samotný nebo přidat ke snídani.",
+    "image": "img/products/sufan-kokosova-hnizda-s-kesu-170-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+      }
+    ]
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "name": "Mixitella Crunchy – Křupavý dubajský krém s kataifi 220 g",
+    "category": "Ochucovadla a krémy",
+    "brand": "Mixit",
+    "manufacturer": "Mixit s.r.o.",
+    "origin": "Česká republika",
+    "description": "Jemný pistáciový krém doplněný křupavými vlákny pečeného kataifi, bez palmového oleje.",
+    "ingredients": [
+      "pistáciový krém 85 % (bambucké máslo, cukr, pistácie 20 %, sušené odstředěné mléko, syrovátka v prášku, řepkový lecitin)",
+      "pečené nudle kataifi 15 % (pšeničná mouka, pšeničný škrob, mléko, cukr, sůl, řepkový olej)"
+    ],
+    "allergens": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "specifics": [
+      "220 g",
+      "85 % pistáciového krému",
+      "20 % pistácií v pistáciovém krému",
+      "15 % křupavého kataifi",
+      "bez palmového oleje",
+      "jemná a křupavá konzistence"
+    ],
+    "preparation": [
+      "Namaž na pečivo nebo použij do dezertů.",
+      "Před použitím promíchej, pokud se na povrchu oddělí olej."
+    ],
+    "brandInfo": "Mixit je česká značka založená v roce 2010; vlastní směsi, snacky a další dobroty vyrábí a prodává z Prahy.",
+    "salesTip": "Doporuč jako pistáciový krém s křupavým kataifi pro zákazníka, který hledá výraznou texturu a výrobek bez palmového oleje.",
+    "image": "img/products/mixitella-crunchy-dubajsky-krem-kataifi-220-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+      }
+    ]
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g",
+    "name": "Mixit preclíky – Slaný karamel 250 g",
+    "category": "Slané snacky",
+    "brand": "Mixit",
+    "manufacturer": "Mixit s.r.o.",
+    "origin": "Česká republika",
+    "description": "Dokřupava vypečené, jemně solené preclíky bohatě obalené bílou čokoládou se slaným karamelem.",
+    "ingredients": [
+      "bílá čokoláda s karamelem 65 % (cukr, kakaové máslo, sušené mléko, karamelový prášek s mléčným tukem, karamelizovaný cukr, lecitin, kakaová hmota, sůl)",
+      "solené preclíky 33 % (pšeničná mouka, řepkový olej, sůl, mořská sůl, hydroxid sodný, droždí, ječný sladový extrakt, hydrogenuhličitan sodný)",
+      "arabská guma",
+      "cukr",
+      "med",
+      "sůl"
+    ],
+    "allergens": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      11
+    ],
+    "specifics": [
+      "250 g",
+      "vypečené preclíky",
+      "bílá čokoláda se slaným karamelem",
+      "bez palmového oleje",
+      "obsahuje laktózu"
+    ],
+    "preparation": [
+      "Jez přímo jako sladko-slaný snack.",
+      "Lze přidat do müsli nebo použít při pečení."
+    ],
+    "brandInfo": "Mixit je česká značka založená v roce 2010; vlastní směsi, snacky a další dobroty vyrábí a prodává z Prahy.",
+    "salesTip": "Doporuč jako výrazně křupavý sladko-slaný snack s bílou čokoládou a karamelem; upozorni na lepek a mléko.",
+    "image": "img/products/mixit-precliky-slany-karamel-250-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+      }
+    ]
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "name": "Mixit Oříšky z pece – Lanýž a barevný pepř 160 g",
+    "category": "Slané snacky",
+    "brand": "Mixit",
+    "manufacturer": "Mixit s.r.o.",
+    "origin": "Česká republika",
+    "description": "Dozlatova pečené kešu ořechy ochucené lanýžovým práškem, himálajskou solí a barevným pepřem.",
+    "ingredients": [
+      "kešu ořechy 90,2 %",
+      "vláknina z kořene čekanky 7,1 %",
+      "himálajská sůl 1,6 %",
+      "lanýžový prášek 1 %",
+      "drcený barevný pepř 0,1 %"
+    ],
+    "allergens": [
+      8
+    ],
+    "specifics": [
+      "160 g",
+      "90,2 % kešu",
+      "1 % lanýžového prášku",
+      "pečené dozlatova",
+      "bez palmového oleje",
+      "může obsahovat stopy arašídů, mléka, sezamu, sóji a dalších ořechů"
+    ],
+    "preparation": [
+      "Jez přímo jako slaný snack.",
+      "Skladuj v suchu a chraň před teplem."
+    ],
+    "brandInfo": "Mixit je česká značka založená v roce 2010; vlastní směsi, snacky a další dobroty vyrábí a prodává z Prahy.",
+    "salesTip": "Doporuč jako gurmánský kešu snack s lanýžem a pepřem; upozorni na skořápkové plody a možné stopy dalších alergenů.",
+    "image": "img/products/mixit-orisky-z-pece-lanyz-pepr-160-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+      }
+    ]
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "name": "La Fabbrica della Pasta Farfalle Giganti IGP 500 g",
+    "category": "Těstoviny a nudle",
+    "brand": "La Fabbrica della Pasta di Gragnano",
+    "manufacturer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "origin": "Gragnano, Itálie",
+    "description": "Pasta di Gragnano IGP ve tvaru obří mašličky, vyráběná ze semoliny z tvrdé pšenice a vody.",
+    "ingredients": [
+      "semolina z tvrdé pšenice",
+      "voda"
+    ],
+    "allergens": [
+      1,
+      6,
+      10
+    ],
+    "specifics": [
+      "500 g",
+      "Pasta di Gragnano IGP",
+      "obří mašličky",
+      "doporučený čas vaření 7 minut",
+      "může obsahovat hořčici a sóju"
+    ],
+    "preparation": [
+      "Vař 7 minut.",
+      "Použij 1 litr vody a 10 g soli na každých 100 g těstovin."
+    ],
+    "brandInfo": "Rodina Moccia v Gragnanu předává těstovinářskou tradici čtyři generace; pasta se vyrábí a balí přímo v Gragnanu.",
+    "salesTip": "Doporuč jako autentickou Pasta di Gragnano IGP ve tvaru obří mašličky s doporučenou dobou vaření 7 minut.",
+    "image": "img/products/la-fabbrica-farfalle-giganti-igp-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+      }
+    ]
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "name": "La Fabbrica della Pasta Penne „de zite“ Rigate IGP 500 g",
+    "category": "Těstoviny a nudle",
+    "brand": "La Fabbrica della Pasta di Gragnano",
+    "manufacturer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "origin": "Gragnano, Itálie",
+    "description": "Pasta di Gragnano IGP ve tvaru rýhované penne, vyráběná ze semoliny z tvrdé pšenice a vody.",
+    "ingredients": [
+      "semolina z tvrdé pšenice",
+      "voda"
+    ],
+    "allergens": [
+      1,
+      6,
+      10
+    ],
+    "specifics": [
+      "500 g",
+      "Pasta di Gragnano IGP",
+      "rýhované penne",
+      "doporučený čas vaření 9 minut",
+      "může obsahovat hořčici a sóju"
+    ],
+    "preparation": [
+      "Vař 9 minut.",
+      "Použij 1 litr vody a 10 g soli na každých 100 g těstovin."
+    ],
+    "brandInfo": "Rodina Moccia v Gragnanu předává těstovinářskou tradici čtyři generace; pasta se vyrábí a balí přímo v Gragnanu.",
+    "salesTip": "Doporuč jako autentickou Pasta di Gragnano IGP ve tvaru rýhované penne s doporučenou dobou vaření 9 minut.",
+    "image": "img/products/la-fabbrica-penne-de-zite-rigate-igp-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+      }
+    ]
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "name": "La Fabbrica della Pasta Paccheri Lisci IGP 500 g",
+    "category": "Těstoviny a nudle",
+    "brand": "La Fabbrica della Pasta di Gragnano",
+    "manufacturer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "origin": "Gragnano, Itálie",
+    "description": "Pasta di Gragnano IGP ve tvaru velké hladké duté trubice, vyráběná ze semoliny z tvrdé pšenice a vody.",
+    "ingredients": [
+      "semolina z tvrdé pšenice",
+      "voda"
+    ],
+    "allergens": [
+      1,
+      6,
+      10
+    ],
+    "specifics": [
+      "500 g",
+      "Pasta di Gragnano IGP",
+      "velké hladké duté trubice",
+      "doporučený čas vaření 12 minut",
+      "může obsahovat hořčici a sóju"
+    ],
+    "preparation": [
+      "Vař 12 minut.",
+      "Použij 1 litr vody a 10 g soli na každých 100 g těstovin."
+    ],
+    "brandInfo": "Rodina Moccia v Gragnanu předává těstovinářskou tradici čtyři generace; pasta se vyrábí a balí přímo v Gragnanu.",
+    "salesTip": "Doporuč jako autentickou Pasta di Gragnano IGP ve tvaru velké hladké duté trubice s doporučenou dobou vaření 12 minut.",
+    "image": "img/products/la-fabbrica-paccheri-lisci-igp-500-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+      }
+    ]
+  },
+  {
+    "id": "torres-selecta-evoo-40-g",
+    "name": "Torres Selecta 100% Extra Virgin Olive Oil 40 g",
+    "category": "Chipsy",
+    "brand": "Torres",
+    "manufacturer": "Patatas Fritas Torres S.L.",
+    "origin": "Španělsko",
+    "description": "Španělské bramborové chipsy smažené výhradně v extra panenském olivovém oleji.",
+    "ingredients": [
+      "brambory",
+      "extra panenský olivový olej 37 %",
+      "sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "40 g",
+      "37 % extra panenského olivového oleje",
+      "smažené výhradně v extra panenském olivovém oleji",
+      "bez lepku",
+      "veganské",
+      "bez povinně uváděných alergenů"
+    ],
+    "preparation": [
+      "Podávej přímo jako slaný snack nebo součást tapas.",
+      "Po otevření chraň před vlhkostí."
+    ],
+    "brandInfo": "Torres je španělský výrobce bramborových chipsů založený v roce 1969; značka staví na tradičním řemeslném zpracování.",
+    "salesTip": "Doporuč jako prémiové španělské chipsy s krátkým složením, smažené výhradně v extra panenském olivovém oleji.",
+    "image": "img/products/torres-selecta-evoo-40-g.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+      }
+    ]
   }
 ]

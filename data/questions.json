@@ -9891,5 +9891,2145 @@
     "explanation": "Balení: 500 g.",
     "sourceLabel": "Distributor – detail produktu",
     "sourceUrl": "https://www.yoaxia.de/lebensmittel/nudeln/weizennudeln/500g-fu-shou-noodles-planed-noodles-teigwaren-asiatischer-art-vorgedaempft_9770_6030"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q1",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "voda, rajčatový protlak, kvasný lihový ocet",
+      "rajčatový protlak, cukr, glukózo-fruktózový sirup",
+      "hořčičné semínko, vinný ocet, kurkuma",
+      "sójové boby, voda, mořská sůl"
+    ],
+    "answer": "voda, rajčatový protlak, kvasný lihový ocet",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q2",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "text",
+    "prompt": "Kolik rajčat výrobce používá na 100 g kečupu?",
+    "answer": "220 g rajčat",
+    "answerDisplay": "220 g rajčat.",
+    "explanation": "Správná odpověď: 220 g rajčat.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q3",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako rajčatový kečup bez přidaného cukru a sladidel s vysokým podílem rajčat.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q4",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "photo",
+    "prompt": "Co je na tomto kečupu podstatné kromě čitelného názvu?",
+    "image": "img/products/vilgain-kecup-bez-pridaneho-cukru-310-g.webp",
+    "options": [
+      "Obsahuje med jako hlavní sladidlo.",
+      "Na 100 g kečupu připadá 220 g rajčat a není doslazovaný.",
+      "Je založený na pečené paprice bez rajčat.",
+      "Jde o fermentovanou sójovou omáčku."
+    ],
+    "answer": "Na 100 g kečupu připadá 220 g rajčat a není doslazovaný.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q5",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "žádné z 14 povinně uváděných alergenů",
+      "korýši a vlčí bob"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q6",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Podávej k hranolkům, burgerům nebo vejcím. Použij do marinády, BBQ omáčky nebo dresinku.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q7",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "ŠUFAN s.r.o.",
+      "Vilgain s.r.o."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-kecup-bez-pridaneho-cukru-310-g-q8",
+    "productId": "vilgain-kecup-bez-pridaneho-cukru-310-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "310 g",
+    "answerDisplay": "310 g.",
+    "explanation": "Balení: 310 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-kecup-bez-pridaneho-cukru"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q1",
+    "productId": "vilgain-horcice-350-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rajčatový protlak, ocet, kukuřičný škrob",
+      "pitná voda, hořčičné semínko 16 %, kvasný lihový ocet",
+      "řepkový olej, vejce, citronová šťáva",
+      "sójové boby, voda, mořská sůl"
+    ],
+    "answer": "pitná voda, hořčičné semínko 16 %, kvasný lihový ocet",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q2",
+    "productId": "vilgain-horcice-350-g",
+    "type": "text",
+    "prompt": "Co dodává hořčici jasně žlutou barvu?",
+    "answer": "kurkuma",
+    "answerDisplay": "kurkuma.",
+    "explanation": "Správná odpověď: kurkuma.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q3",
+    "productId": "vilgain-horcice-350-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako plnotučnou bezlepkovou hořčici z neodtučněných semínek bez chemické konzervace.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q4",
+    "productId": "vilgain-horcice-350-g",
+    "type": "photo",
+    "prompt": "Které tvrzení vystihuje způsob výroby této hořčice?",
+    "image": "img/products/vilgain-horcice-350-g.webp",
+    "options": [
+      "Je vyrobená pouze z hořčičného oleje.",
+      "Je slazená umělými sladidly.",
+      "Vyrábí se z jemně mletých neodtučněných hořčičných semínek.",
+      "Barví se syntetickým barvivem."
+    ],
+    "answer": "Vyrábí se z jemně mletých neodtučněných hořčičných semínek.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q5",
+    "productId": "vilgain-horcice-350-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob",
+      "hořčice"
+    ],
+    "answer": "hořčice",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q6",
+    "productId": "vilgain-horcice-350-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Podávej k masu. Použij do salátových zálivek, omáček a dipů. Po otevření skladuj do 10 °C.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q7",
+    "productId": "vilgain-horcice-350-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "vilgain-horcice-350-g-q8",
+    "productId": "vilgain-horcice-350-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "350 g",
+    "answerDisplay": "350 g.",
+    "explanation": "Balení: 350 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aktin.cz/vilgain-horcice"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q1",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "100% BIO řepkový olej",
+      "100% BIO extra panenský olivový olej",
+      "100% BIO slunečnicový olej lisovaný za studena",
+      "směs slunečnicového a kokosového oleje"
+    ],
+    "answer": "100% BIO slunečnicový olej lisovaný za studena",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q2",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "text",
+    "prompt": "Proč je tento za studena lisovaný olej vhodný i pro teplou kuchyni?",
+    "answer": "Má vysoký obsah kyseliny olejové, a proto je tepelně stabilní.",
+    "answerDisplay": "Má vysoký obsah kyseliny olejové, a proto je tepelně stabilní..",
+    "explanation": "Správná odpověď: Má vysoký obsah kyseliny olejové, a proto je tepelně stabilní..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q3",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce BIO slunečnicový olej lisovaný za studena, ale potřebuje jej i na teplou kuchyni.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q4",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "photo",
+    "prompt": "Na jaké použití je tato varianta slunečnicového oleje určená?",
+    "image": "img/products/country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l.webp",
+    "options": [
+      "Pouze do studených salátů.",
+      "Výhradně k výrobě kosmetiky.",
+      "Jen k dochucení hotové kávy.",
+      "Na smažení, pečení a grilování."
+    ],
+    "answer": "Na smažení, pečení a grilování.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q5",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "žádné z 14 povinně uváděných alergenů",
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q6",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Používej na smažení, pečení a grilování. Skladuj mimo světlo při teplotě do 20 °C.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q7",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l-q8",
+    "productId": "country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "1 l",
+    "answerDisplay": "1 l.",
+    "explanation": "Balení: 1 l.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/olej-slunecnicovy-lisovany-za-studena-na-smazeni-a-peceni-1-l-bio-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q1",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžový ocet, voda, cukr",
+      "sójové boby, voda, mořská sůl",
+      "jablečný ocet, jablečný mošt, cukr",
+      "ume švestkový ocet bílý 61 % (ume švestky 80 %, mořská sůl 20 %), shiso listy, mořská sůl"
+    ],
+    "answer": "ume švestkový ocet bílý 61 % (ume švestky 80 %, mořská sůl 20 %), shiso listy, mořská sůl",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q2",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "text",
+    "prompt": "Proč se po přidání umeocta pokrm obvykle už nemusí solit?",
+    "answer": "Protože umeocet je zároveň kyselý i výrazně slaný.",
+    "answerDisplay": "Protože umeocet je zároveň kyselý i výrazně slaný..",
+    "explanation": "Správná odpověď: Protože umeocet je zároveň kyselý i výrazně slaný..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q3",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Vysvětli, že pár kapek umeocta dodá kyselost i slanost a hodí se do zálivek, luštěnin či kvašené zeleniny.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q4",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "photo",
+    "prompt": "Co přesně je umeocet?",
+    "image": "img/products/country-life-umeocet-500-ml.webp",
+    "options": [
+      "Slano-kyselý nálev z fermentace ume švestek se shiso listy.",
+      "Sladký sirup z japonských hrušek.",
+      "Rýžový olej lisovaný za studena.",
+      "Sójová omáčka z pšenice."
+    ],
+    "answer": "Slano-kyselý nálev z fermentace ume švestek se shiso listy.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q5",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "žádný přímý alergen; může obsahovat stopy lepku",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "žádný přímý alergen; může obsahovat stopy lepku",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q6",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij do salátových zálivek, luštěnin, kulajdy nebo kvašené zeleniny. Přidávej opatrně, protože současně okyseluje i solí.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q7",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-umeocet-500-ml-q8",
+    "productId": "country-life-umeocet-500-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 ml",
+    "answerDisplay": "500 ml.",
+    "explanation": "Balení: 500 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/umeocet-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q1",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "sójové boby 48,9 %, voda, mořská sůl 13,8 %",
+      "pšenice, sójové boby, voda",
+      "ume švestky, shiso listy, mořská sůl",
+      "rybí extrakt, sůl, cukr"
+    ],
+    "answer": "sójové boby 48,9 %, voda, mořská sůl 13,8 %",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q2",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "text",
+    "prompt": "Jaký je hlavní rozdíl mezi tamari a běžnou shoyu podle výrobce?",
+    "answer": "Tamari je tmavší, hustší, výraznější a přirozeně bez pšeničné složky.",
+    "answerDisplay": "Tamari je tmavší, hustší, výraznější a přirozeně bez pšeničné složky..",
+    "explanation": "Správná odpověď: Tamari je tmavší, hustší, výraznější a přirozeně bez pšeničné složky..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q3",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako výraznou fermentovanou sójovou omáčku do marinád a teplé kuchyně; upozorni na sóju a možné stopy lepku.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q4",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "photo",
+    "prompt": "Jak tato omáčka získává svou chuť?",
+    "image": "img/products/country-life-tamari-sojova-omacka-500-ml.webp",
+    "options": [
+      "Louhováním sušených hub v octu.",
+      "Fermentací sójových bobů s kulturou koji.",
+      "Lisováním praženého sezamu.",
+      "Karamelizací rajčatového protlaku."
+    ],
+    "answer": "Fermentací sójových bobů s kulturou koji.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q5",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "sója; může obsahovat stopy lepku",
+      "korýši a vlčí bob"
+    ],
+    "answer": "sója; může obsahovat stopy lepku",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q6",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij do marinád, woků, omáček, polévek, k rýži, nudlím nebo tofu. Dávkuj postupně; výraznou slaností může nahradit část soli.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q7",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "ŠUFAN s.r.o.",
+      "Country Life s.r.o."
+    ],
+    "answer": "Country Life s.r.o.",
+    "explanation": "Výrobce: Country Life s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "country-life-tamari-sojova-omacka-500-ml-q8",
+    "productId": "country-life-tamari-sojova-omacka-500-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 ml",
+    "answerDisplay": "500 ml.",
+    "explanation": "Balení: 500 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.countrylife.cz/tamari-sojova-omacka-500-ml-country-life"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q1",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka",
+      "pšeničná hladká mouka",
+      "kukuřičná mouka",
+      "pohanková mouka"
+    ],
+    "answer": "pšeničná hladká mouka",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q2",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "text",
+    "prompt": "Který alergen je u této mouky zásadní?",
+    "answer": "lepek",
+    "answerDisplay": "lepek.",
+    "explanation": "Správná odpověď: lepek.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q3",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako jemně mletá pšeničná mouka od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q4",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "photo",
+    "prompt": "Jakou strukturu má tato mouka?",
+    "image": "img/products/mlyn-bohutin-mouka-hladka-2-kg.webp",
+    "options": [
+      "Je celozrnná žitná.",
+      "Je hrubá krupice.",
+      "Je jemně mletá a hladká.",
+      "Je směsí bezlepkových škrobů."
+    ],
+    "answer": "Je jemně mletá a hladká.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q5",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob",
+      "lepek"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q6",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Hodí se pro běžné pečení a zahušťování podle receptu. Skladuj v suchu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q7",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Mlýn Bohutín s.r.o.",
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Mlýn Bohutín s.r.o.",
+    "explanation": "Výrobce: Mlýn Bohutín s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-hladka-2-kg-q8",
+    "productId": "mlyn-bohutin-mouka-hladka-2-kg",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "2 kg",
+    "answerDisplay": "2 kg.",
+    "explanation": "Balení: 2 kg.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q1",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka",
+      "kukuřičná mouka",
+      "pšeničná polohrubá mouka",
+      "pohanková mouka"
+    ],
+    "answer": "pšeničná polohrubá mouka",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q2",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "text",
+    "prompt": "Který alergen je u této mouky zásadní?",
+    "answer": "lepek",
+    "answerDisplay": "lepek.",
+    "explanation": "Správná odpověď: lepek.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q3",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako polohrubě mletá pšeničná mouka od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q4",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "photo",
+    "prompt": "Čím se tato mouka liší od hladké?",
+    "image": "img/products/mlyn-bohutin-mouka-polohruba-2-kg.webp",
+    "options": [
+      "Je namletá z žita.",
+      "Neobsahuje lepek.",
+      "Jde o škrob bez obilné složky.",
+      "Má hrubší, polohrubou strukturu."
+    ],
+    "answer": "Má hrubší, polohrubou strukturu.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q5",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek",
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q6",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij ji do těst, pro která recept požaduje polohrubou mouku. Skladuj v suchu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q7",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Mlýn Bohutín s.r.o.",
+    "explanation": "Výrobce: Mlýn Bohutín s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-polohruba-2-kg-q8",
+    "productId": "mlyn-bohutin-mouka-polohruba-2-kg",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "2 kg",
+    "answerDisplay": "2 kg.",
+    "explanation": "Balení: 2 kg.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q1",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka",
+      "kukuřičná mouka",
+      "pohanková mouka",
+      "pšeničná chlebová mouka"
+    ],
+    "answer": "pšeničná chlebová mouka",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q2",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "text",
+    "prompt": "Který alergen je u této mouky zásadní?",
+    "answer": "lepek",
+    "answerDisplay": "lepek.",
+    "explanation": "Správná odpověď: lepek.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q3",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako pšeničná mouka určená zejména na chléb od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q4",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "photo",
+    "prompt": "K jakému pečení je tento typ mouky primárně určený?",
+    "image": "img/products/mlyn-bohutin-mouka-psenicna-chlebova-2-kg.webp",
+    "options": [
+      "K pečení chleba a chlebového těsta.",
+      "Pouze k obalování řízků.",
+      "Výhradně do bezlepkových dezertů.",
+      "Jen k přípravě nápojů."
+    ],
+    "answer": "K pečení chleba a chlebového těsta.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q5",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "lepek",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q6",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij ji do chlebového a dalšího kynutého těsta podle receptu. Skladuj v suchu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q7",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Mlýn Bohutín s.r.o.",
+    "explanation": "Výrobce: Mlýn Bohutín s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg-q8",
+    "productId": "mlyn-bohutin-mouka-psenicna-chlebova-2-kg",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "2 kg",
+    "answerDisplay": "2 kg.",
+    "explanation": "Balení: 2 kg.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q1",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "žitná chlebová mouka",
+      "rýžová mouka",
+      "kukuřičná mouka",
+      "pohanková mouka"
+    ],
+    "answer": "žitná chlebová mouka",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q2",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "text",
+    "prompt": "Který alergen je u této mouky zásadní?",
+    "answer": "lepek",
+    "answerDisplay": "lepek.",
+    "explanation": "Správná odpověď: lepek.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q3",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako žitná mouka určená zejména na chléb od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q4",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "photo",
+    "prompt": "Z jaké obiloviny je tato chlebová mouka?",
+    "image": "img/products/mlyn-bohutin-mouka-zitna-chlebova-2-kg.webp",
+    "options": [
+      "Z rýže.",
+      "Ze žita.",
+      "Z kukuřice.",
+      "Z pohanky."
+    ],
+    "answer": "Ze žita.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q5",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "lepek",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q6",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij ji do žitného nebo směsného chlebového těsta podle receptu. Skladuj v suchu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q7",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "Mlýn Bohutín s.r.o.",
+    "explanation": "Výrobce: Mlýn Bohutín s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-chlebova-2-kg-q8",
+    "productId": "mlyn-bohutin-mouka-zitna-chlebova-2-kg",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "2 kg",
+    "answerDisplay": "2 kg.",
+    "explanation": "Balení: 2 kg.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q1",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka",
+      "celozrnná žitná mouka",
+      "kukuřičná mouka",
+      "pohanková mouka"
+    ],
+    "answer": "celozrnná žitná mouka",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q2",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "text",
+    "prompt": "Který alergen je u této mouky zásadní?",
+    "answer": "lepek",
+    "answerDisplay": "lepek.",
+    "explanation": "Správná odpověď: lepek.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q3",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako celozrnná mouka z žita od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q4",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "photo",
+    "prompt": "Co znamená celozrnná u této mouky?",
+    "image": "img/products/mlyn-bohutin-mouka-zitna-celozrnna-2-kg.webp",
+    "options": [
+      "Mouka je zbavená obalových vrstev.",
+      "Je vyrobená pouze ze škrobu.",
+      "Při mletí se využívají všechny části žitného zrna.",
+      "Neobsahuje žádnou obilovinu."
+    ],
+    "answer": "Při mletí se využívají všechny části žitného zrna.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q5",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob",
+      "lepek"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q6",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij ji do celozrnného žitného nebo směsného pečiva podle receptu. Skladuj v suchu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q7",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Mlýn Bohutín s.r.o.",
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Mlýn Bohutín s.r.o.",
+    "explanation": "Výrobce: Mlýn Bohutín s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg-q8",
+    "productId": "mlyn-bohutin-mouka-zitna-celozrnna-2-kg",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "2 kg",
+    "answerDisplay": "2 kg.",
+    "explanation": "Balení: 2 kg.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q1",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka",
+      "kukuřičná mouka",
+      "celozrnná špaldová mouka",
+      "pohanková mouka"
+    ],
+    "answer": "celozrnná špaldová mouka",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q2",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "text",
+    "prompt": "Který alergen je u této mouky zásadní?",
+    "answer": "lepek",
+    "answerDisplay": "lepek.",
+    "explanation": "Správná odpověď: lepek.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q3",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako celozrnná mouka ze špaldové pšenice od rodinného českého mlýna; zákazníka upozorni na lepek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q4",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "photo",
+    "prompt": "Z jakého druhu obiloviny je tato mouka?",
+    "image": "img/products/mlyn-bohutin-mouka-spaldova-celozrnna-2-kg.webp",
+    "options": [
+      "Z červené čočky.",
+      "Z rýže.",
+      "Z kukuřice.",
+      "Ze špaldové pšenice."
+    ],
+    "answer": "Ze špaldové pšenice.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q5",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek",
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q6",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij ji do celozrnného pečiva a těst podle receptu. Skladuj v suchu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q7",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "Mlýn Bohutín s.r.o.",
+    "explanation": "Výrobce: Mlýn Bohutín s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg-q8",
+    "productId": "mlyn-bohutin-mouka-spaldova-celozrnna-2-kg",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "2 kg",
+    "answerDisplay": "2 kg.",
+    "explanation": "Balení: 2 kg.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mlyn-bohutin.cz/internetovy-obchod/"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q1",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pražené arašídy, sůl",
+      "mandle, kešu a lískové ořechy",
+      "kešu, slunečnicový olej, sůl",
+      "100% kešu ořechy"
+    ],
+    "answer": "100% kešu ořechy",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q2",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "text",
+    "prompt": "Co u kešu označuje velikost W240?",
+    "answer": "Jde o velikostní třídu velkých kešu jader.",
+    "answerDisplay": "Jde o velikostní třídu velkých kešu jader..",
+    "explanation": "Správná odpověď: Jde o velikostní třídu velkých kešu jader..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q3",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako velká natural kešu jádra W240 bez soli a dalších přísad.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q4",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "photo",
+    "prompt": "Jak jsou tato kešu upravená?",
+    "image": "img/products/sufan-kesu-natural-w240-200-g.webp",
+    "options": [
+      "Jsou natural, tedy nepražená a nesolená.",
+      "Jsou smažená v palmovém oleji.",
+      "Jsou obalená v mléčné čokoládě.",
+      "Jsou zauzená a silně solená."
+    ],
+    "answer": "Jsou natural, tedy nepražená a nesolená.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q5",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "skořápkové plody; možné stopy arašídů a sezamu",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "skořápkové plody; možné stopy arašídů a sezamu",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q6",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Jez přímo nebo přidej do asijských jídel, kaší a dezertů. Skladuj v suchu a po otevření dobře uzavři.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q7",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "ŠUFAN s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "ŠUFAN s.r.o.",
+    "explanation": "Výrobce: ŠUFAN s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kesu-natural-w240-200-g-q8",
+    "productId": "sufan-kesu-natural-w240-200-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "200 g",
+    "answerDisplay": "200 g.",
+    "explanation": "Balení: 200 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kesu-natural/81/200-g/118"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q1",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "kokosové chipsy 53,5 %, rýžový sirup, třtinový cukr",
+      "ovesné vločky, med, mandle",
+      "datle, kakao, kešu",
+      "kokos, mléčná čokoláda, cukr"
+    ],
+    "answer": "kokosové chipsy 53,5 %, rýžový sirup, třtinový cukr",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q2",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "text",
+    "prompt": "Kolik kešu ořechů výrobek obsahuje?",
+    "answer": "16 %",
+    "answerDisplay": "16 %.",
+    "explanation": "Správná odpověď: 16 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q3",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako křupavý kokosovo-kešu snack, který lze jíst samotný nebo přidat ke snídani.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q4",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "photo",
+    "prompt": "Co tvoří největší podíl těchto hnízd?",
+    "image": "img/products/sufan-kokosova-hnizda-s-kesu-170-g.webp",
+    "options": [
+      "Pšeničné vločky.",
+      "Kokosové chipsy, které tvoří 53,5 % výrobku.",
+      "Pražené arašídy.",
+      "Sušené meruňky."
+    ],
+    "answer": "Kokosové chipsy, které tvoří 53,5 % výrobku.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q5",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "skořápkové plody; možné stopy arašídů a sezamu",
+      "korýši a vlčí bob"
+    ],
+    "answer": "skořápkové plody; možné stopy arašídů a sezamu",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q6",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Jez přímo jako snack. Přidej do jogurtu, mléka, tvarohu nebo k ovoci.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q7",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "ŠUFAN s.r.o."
+    ],
+    "answer": "ŠUFAN s.r.o.",
+    "explanation": "Výrobce: ŠUFAN s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "sufan-kokosova-hnizda-s-kesu-170-g-q8",
+    "productId": "sufan-kokosova-hnizda-s-kesu-170-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "170 g",
+    "answerDisplay": "170 g.",
+    "explanation": "Balení: 170 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.sufan.cz/produkt/kokosova-hnizda-s-kesu/10077/170-g/323"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q1",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "arašídy, karamel, sůl",
+      "pistáciový krém, pečené kataifi z pšeničné mouky",
+      "lískové ořechy, kakao, mléko",
+      "kešu, maliny, vanilka"
+    ],
+    "answer": "pistáciový krém, pečené kataifi z pšeničné mouky",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q2",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "text",
+    "prompt": "Co vytváří křupavou složku tohoto krému?",
+    "answer": "Pečené kataifi z pšeničné mouky.",
+    "answerDisplay": "Pečené kataifi z pšeničné mouky..",
+    "explanation": "Správná odpověď: Pečené kataifi z pšeničné mouky..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q3",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako pistáciový krém s křupavým kataifi pro zákazníka, který hledá výraznou texturu a výrobek bez palmového oleje.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q4",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "photo",
+    "prompt": "Jaký kontrast textur tento krém nabízí?",
+    "image": "img/products/mixitella-crunchy-dubajsky-krem-kataifi-220-g.webp",
+    "options": [
+      "Tekutý sirup a celé kávové boby.",
+      "Hladké arašídové máslo bez kousků.",
+      "Jemný pistáciový krém a křupavé kataifi.",
+      "Ovocné pyré se želatinou."
+    ],
+    "answer": "Jemný pistáciový krém a křupavé kataifi.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q5",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob",
+      "lepek, mléko a skořápkové plody; možné stopy sóji"
+    ],
+    "answer": "lepek, mléko a skořápkové plody; možné stopy sóji",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q6",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Namaž na pečivo nebo použij do dezertů. Před použitím promíchej, pokud se na povrchu oddělí olej.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q7",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Mixit s.r.o.",
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "Mixit s.r.o.",
+    "explanation": "Výrobce: Mixit s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixitella-crunchy-dubajsky-krem-kataifi-220-g-q8",
+    "productId": "mixitella-crunchy-dubajsky-krem-kataifi-220-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "220 g",
+    "answerDisplay": "220 g.",
+    "explanation": "Balení: 220 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixitella-krupavy-dubajsky-krem-s-kataifi-2677"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q1",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničné preclíky, hořká čokoláda",
+      "pšeničné preclíky, mléčná čokoláda",
+      "pšeničné preclíky, bílá čokoláda se slaným karamelem",
+      "pšeničné preclíky, med a chilli"
+    ],
+    "answer": "pšeničné preclíky, bílá čokoláda se slaným karamelem",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q2",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "text",
+    "prompt": "V čem jsou preclíky obalené?",
+    "answer": "V bílé čokoládě se slaným karamelem.",
+    "answerDisplay": "V bílé čokoládě se slaným karamelem..",
+    "explanation": "Správná odpověď: V bílé čokoládě se slaným karamelem..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q3",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako výrazně křupavý sladko-slaný snack s bílou čokoládou a karamelem; upozorni na lepek a mléko.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q4",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "photo",
+    "prompt": "Která chuťová kombinace je pro tento výrobek typická?",
+    "image": "img/products/mixit-precliky-slany-karamel-250-g.webp",
+    "options": [
+      "Hořká čokoláda a chilli.",
+      "Sýr a medvědí česnek.",
+      "Rajče a bazalka.",
+      "Slaný preclík, bílá čokoláda a slaný karamel."
+    ],
+    "answer": "Slaný preclík, bílá čokoláda a slaný karamel.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q5",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a mléko; možné stopy vajec, arašídů, sóji, skořápkových plodů a sezamu",
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek a mléko; možné stopy vajec, arašídů, sóji, skořápkových plodů a sezamu",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q6",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Jez přímo jako sladko-slaný snack. Lze přidat do müsli nebo použít při pečení.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q7",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Mixit s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "Mixit s.r.o.",
+    "explanation": "Výrobce: Mixit s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-precliky-slany-karamel-250-g-q8",
+    "productId": "mixit-precliky-slany-karamel-250-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "250 g",
+    "answerDisplay": "250 g.",
+    "explanation": "Balení: 250 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/mixit-precliky-slany-karamel"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q1",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "kešu, med, chilli",
+      "kešu, uzená paprika, sůl",
+      "kešu, medvědí česnek, sůl",
+      "kešu ořechy 90,2 %, vláknina z kořene čekanky 7,1 %, himálajská sůl 1,6 %"
+    ],
+    "answer": "kešu ořechy 90,2 %, vláknina z kořene čekanky 7,1 %, himálajská sůl 1,6 %",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q2",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "text",
+    "prompt": "Jak vysoký je podíl kešu ořechů?",
+    "answer": "90,2 %",
+    "answerDisplay": "90,2 %.",
+    "explanation": "Správná odpověď: 90,2 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q3",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako gurmánský kešu snack s lanýžem a pepřem; upozorni na skořápkové plody a možné stopy dalších alergenů.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q4",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "photo",
+    "prompt": "Které tři složky vytvářejí hlavní ochucení kešu?",
+    "image": "img/products/mixit-orisky-z-pece-lanyz-pepr-160-g.webp",
+    "options": [
+      "Lanýžový prášek, himálajská sůl a barevný pepř.",
+      "Med, chilli a limetka.",
+      "Uzená paprika, česnek a cukr.",
+      "Kakao, skořice a vanilka."
+    ],
+    "answer": "Lanýžový prášek, himálajská sůl a barevný pepř.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q5",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "skořápkové plody; možné stopy arašídů, mléka, sezamu a sóji",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "skořápkové plody; možné stopy arašídů, mléka, sezamu a sóji",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q6",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Jez přímo jako slaný snack. Skladuj v suchu a chraň před teplem.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q7",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mixit s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "Mixit s.r.o.",
+    "explanation": "Výrobce: Mixit s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "mixit-orisky-z-pece-lanyz-pepr-160-g-q8",
+    "productId": "mixit-orisky-z-pece-lanyz-pepr-160-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "160 g",
+    "answerDisplay": "160 g.",
+    "explanation": "Balení: 160 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.mixit.cz/produkt/orisky-z-pece-lanyz-a-barevny-pepr"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q1",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "semolina z tvrdé pšenice, voda",
+      "rýžová mouka, voda",
+      "kukuřičná mouka, voda",
+      "pšeničná mouka, vejce"
+    ],
+    "answer": "semolina z tvrdé pšenice, voda",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q2",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "text",
+    "prompt": "Jaký je doporučený čas vaření?",
+    "answer": "7 minut",
+    "answerDisplay": "7 minut.",
+    "explanation": "Správná odpověď: 7 minut.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q3",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako autentickou Pasta di Gragnano IGP ve tvaru obří mašličky s doporučenou dobou vaření 7 minut.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q4",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "photo",
+    "prompt": "Který popis tvaru odpovídá produktu na fotografii?",
+    "image": "img/products/la-fabbrica-farfalle-giganti-igp-500-g.webp",
+    "options": [
+      "Jsou plněné sýrem.",
+      "Jejich mimořádně velký tvar je originální formát výrobce.",
+      "Jde o rýžové nudle.",
+      "Jsou přirozeně bezlepkové."
+    ],
+    "answer": "Jejich mimořádně velký tvar je originální formát výrobce.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q5",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "lepek; možné stopy sóji a hořčice",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek; možné stopy sóji a hořčice",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q6",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Vař 7 minut. Použij 1 litr vody a 10 g soli na každých 100 g těstovin.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q7",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l."
+    ],
+    "answer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "explanation": "Výrobce: La Fabbrica della Pasta di Gragnano S.r.l..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-farfalle-giganti-igp-500-g-q8",
+    "productId": "la-fabbrica-farfalle-giganti-igp-500-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/i-formati-di-design/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q1",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka, voda",
+      "semolina z tvrdé pšenice, voda",
+      "kukuřičná mouka, voda",
+      "pšeničná mouka, vejce"
+    ],
+    "answer": "semolina z tvrdé pšenice, voda",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q2",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "text",
+    "prompt": "Jaký je doporučený čas vaření?",
+    "answer": "9 minut",
+    "answerDisplay": "9 minut.",
+    "explanation": "Správná odpověď: 9 minut.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q3",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako autentickou Pasta di Gragnano IGP ve tvaru rýhované penne s doporučenou dobou vaření 9 minut.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q4",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "photo",
+    "prompt": "Který popis tvaru odpovídá produktu na fotografii?",
+    "image": "img/products/la-fabbrica-penne-de-zite-rigate-igp-500-g.webp",
+    "options": [
+      "Jsou hladké a bez rýh.",
+      "Jde o plněné těstoviny.",
+      "Rýhovaný povrch pomáhá zachytit omáčku.",
+      "Jsou vyrobené z rýže."
+    ],
+    "answer": "Rýhovaný povrch pomáhá zachytit omáčku.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q5",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob",
+      "lepek; možné stopy sóji a hořčice"
+    ],
+    "answer": "lepek; možné stopy sóji a hořčice",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q6",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Vař 9 minut. Použij 1 litr vody a 10 g soli na každých 100 g těstovin.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q7",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "explanation": "Výrobce: La Fabbrica della Pasta di Gragnano S.r.l..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-penne-de-zite-rigate-igp-500-g-q8",
+    "productId": "la-fabbrica-penne-de-zite-rigate-igp-500-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/la-pasta-corta/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q1",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "rýžová mouka, voda",
+      "kukuřičná mouka, voda",
+      "semolina z tvrdé pšenice, voda",
+      "pšeničná mouka, vejce"
+    ],
+    "answer": "semolina z tvrdé pšenice, voda",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q2",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "text",
+    "prompt": "Jaký je doporučený čas vaření?",
+    "answer": "12 minut",
+    "answerDisplay": "12 minut.",
+    "explanation": "Správná odpověď: 12 minut.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q3",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako autentickou Pasta di Gragnano IGP ve tvaru velké hladké duté trubice s doporučenou dobou vaření 12 minut.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q4",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "photo",
+    "prompt": "Který popis tvaru odpovídá produktu na fotografii?",
+    "image": "img/products/la-fabbrica-paccheri-lisci-igp-500-g.webp",
+    "options": [
+      "Jde o malé hvězdičky do polévky.",
+      "Jsou to tenké dlouhé špagety.",
+      "Jde o plněné ravioli.",
+      "Jde o velké hladké duté těstoviny typu paccheri."
+    ],
+    "answer": "Jde o velké hladké duté těstoviny typu paccheri.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q5",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek; možné stopy sóji a hořčice",
+      "ryby a měkkýši",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "lepek; možné stopy sóji a hořčice",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q6",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Vař 12 minut. Použij 1 litr vody a 10 g soli na každých 100 g těstovin.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q7",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "La Fabbrica della Pasta di Gragnano S.r.l.",
+      "Country Life s.r.o.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "La Fabbrica della Pasta di Gragnano S.r.l.",
+    "explanation": "Výrobce: La Fabbrica della Pasta di Gragnano S.r.l..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "la-fabbrica-paccheri-lisci-igp-500-g-q8",
+    "productId": "la-fabbrica-paccheri-lisci-igp-500-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lafabbricadellapastadigragnano.com/en/gli-storici-di-gragnano/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q1",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "brambory, slunečnicový olej, sůl",
+      "brambory, řepkový olej, sůl",
+      "brambory, kokosový olej, sůl",
+      "brambory, extra panenský olivový olej 37 %, sůl"
+    ],
+    "answer": "brambory, extra panenský olivový olej 37 %, sůl",
+    "explanation": "Hlavní složky vycházejí z údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q2",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "text",
+    "prompt": "Jaký podíl extra panenského olivového oleje výrobek obsahuje?",
+    "answer": "37 %",
+    "answerDisplay": "37 %.",
+    "explanation": "Správná odpověď: 37 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q3",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako prémiové španělské chipsy s krátkým složením, smažené výhradně v extra panenském olivovém oleji.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q4",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "photo",
+    "prompt": "Čím se liší způsob smažení těchto chipsů?",
+    "image": "img/products/torres-selecta-evoo-40-g.webp",
+    "options": [
+      "Smaží se výhradně v extra panenském olivovém oleji.",
+      "Smaží se pouze v kokosovém tuku.",
+      "Jsou pečené bez jakéhokoli oleje.",
+      "Smaží se ve směsi másla a řepkového oleje."
+    ],
+    "answer": "Smaží se výhradně v extra panenském olivovém oleji.",
+    "explanation": "Fotografie slouží jako kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q5",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "ryby a měkkýši",
+      "žádné z 14 povinně uváděných alergenů",
+      "celer a vejce",
+      "korýši a vlčí bob"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Alergeny a možné stopy jsou zapsané podle údajů výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q6",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Podávej přímo jako slaný snack nebo součást tapas. Po otevření chraň před vlhkostí.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q7",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Country Life s.r.o.",
+      "Patatas Fritas Torres S.L.",
+      "Mlýn Bohutín s.r.o."
+    ],
+    "answer": "Patatas Fritas Torres S.L.",
+    "explanation": "Výrobce: Patatas Fritas Torres S.L..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "torres-selecta-evoo-40-g-q8",
+    "productId": "torres-selecta-evoo-40-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "40 g",
+    "answerDisplay": "40 g.",
+    "explanation": "Balení: 40 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
   }
 ]

@@ -1,5 +1,5 @@
 // Jediné místo, kde se při vydání mění verze aplikace.
-const CACHE_VERSION = 'bistro-v1.0.52';
+const CACHE_VERSION = 'bistro-v1.0.53';
 const APP_SHELL = [
   './', './index.html', './css/styles.css', './js/app.js',
   './config.js', './content.js', './storage.js',
@@ -98,6 +98,26 @@ const APP_SHELL = [
   './img/products/casa-rinaldi-sugo-bruschetta-350-g.webp',
   './img/products/lozano-cervenka-mandle-v-cukru-100-g.webp',
   './img/products/fu-shou-quick-cooking-noodles-500-g.webp',
+  './img/products/vilgain-kecup-bez-pridaneho-cukru-310-g.webp',
+  './img/products/vilgain-horcice-350-g.webp',
+  './img/products/country-life-olej-slunecnicovy-smazeni-peceni-bio-1-l.webp',
+  './img/products/country-life-umeocet-500-ml.webp',
+  './img/products/country-life-tamari-sojova-omacka-500-ml.webp',
+  './img/products/mlyn-bohutin-mouka-hladka-2-kg.webp',
+  './img/products/mlyn-bohutin-mouka-polohruba-2-kg.webp',
+  './img/products/mlyn-bohutin-mouka-psenicna-chlebova-2-kg.webp',
+  './img/products/mlyn-bohutin-mouka-zitna-chlebova-2-kg.webp',
+  './img/products/mlyn-bohutin-mouka-zitna-celozrnna-2-kg.webp',
+  './img/products/mlyn-bohutin-mouka-spaldova-celozrnna-2-kg.webp',
+  './img/products/sufan-kesu-natural-w240-200-g.webp',
+  './img/products/sufan-kokosova-hnizda-s-kesu-170-g.webp',
+  './img/products/mixitella-crunchy-dubajsky-krem-kataifi-220-g.webp',
+  './img/products/mixit-precliky-slany-karamel-250-g.webp',
+  './img/products/mixit-orisky-z-pece-lanyz-pepr-160-g.webp',
+  './img/products/la-fabbrica-farfalle-giganti-igp-500-g.webp',
+  './img/products/la-fabbrica-penne-de-zite-rigate-igp-500-g.webp',
+  './img/products/la-fabbrica-paccheri-lisci-igp-500-g.webp',
+  './img/products/torres-selecta-evoo-40-g.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 
