@@ -11,12 +11,73 @@ export function normalizeText(value) {
     .replace(/\s+/g, ' ');
 }
 
+function normalizeAnswerText(value) {
+  return normalizeText(value)
+    .replace(/\b(\d)\s+(?=\d{3}\b)/g, '$1')
+    .replace(/\b(zadny|zadna|zadne|zadnou|zadnych)\b/g, 'zadny')
+    .replace(/\b(alergeny|alergenu|alergenem|alergenech)\b/g, 'alergen')
+    .replace(/\b(minuta|minuty|minut|min)\b/g, 'min')
+    .replace(/\b(hodina|hodiny|hodin|hod)\b/g, 'hod')
+    .replace(/\b(dny|dni|dnu)\b/g, 'den')
+    .replace(/\b(gramu|gramy|gram|g)\b/g, 'g')
+    .replace(/\b(mililitru|mililitry|mililitr|ml)\b/g, 'ml')
+    .replace(/\b(kilogramu|kilogramy|kilogram|kg)\b/g, 'kg')
+    .replace(/\b(litru|litry|litr|l)\b/g, 'l')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function meansNoAllergen(value) {
+  const normalized = normalizeAnswerText(value);
+  return normalized === 'zadny'
+    || normalized === 'nic'
+    || /^zadny (z )?(14 )?(povinne( (znacenych|uvadenych))? )?alergen( eu)?$/.test(normalized)
+    || /^bez (zadny )?(povinne( (znacenych|uvadenych))? )?alergen( eu)?$/.test(normalized)
+    || /^neobsahuje (zadny( z 14)?( povinne( (znacenych|uvadenych))?)? )?alergen( eu)?$/.test(normalized);
+}
+
+function allergenConcepts(value) {
+  const normalized = normalizeText(value);
+  const concepts = new Set();
+  const add = (concept, pattern) => { if (pattern.test(normalized)) concepts.add(concept); };
+  add('lepek', /\b(lepek|gluten|obilovin\w* s lepk\w*)\b/);
+  add('korysi', /\b(korys\w*|krevet\w*|krab\w*|humr\w*)\b/);
+  add('vejce', /\b(vejce|vajick\w*)\b/);
+  add('ryby', /\b(ryb\w*)\b/);
+  add('arasidy', /\b(arasid\w*|burak\w*)\b/);
+  add('soja', /\b(soj\w*)\b/);
+  add('mleko', /\b(mlek\w*|mlec\w*)\b/);
+  add('skorapkove-plody', /\b(skorapkov\w* plod\w*|orech\w*|mandl\w*|kesu|pistaci\w*|pekan\w*)\b/);
+  add('celer', /\bceler\w*\b/);
+  add('horcice', /\bhorcic\w*\b/);
+  add('sezam', /\bsezam\w*\b/);
+  add('siricitany', /\b(siricitan\w*|sulfit\w*|oxid siricity)\b/);
+  add('vlci-bob', /\b(vlci bob|lupin\w*)\b/);
+  add('mekkysi', /\b(mekkys\w*|musl\w*|chobotnic\w*|sepi\w*)\b/);
+  return concepts;
+}
+
+function answerMatches(submitted, expected) {
+  const normalizedSubmitted = normalizeAnswerText(submitted);
+  const normalizedExpected = normalizeAnswerText(expected);
+  if (normalizedSubmitted === normalizedExpected) return true;
+  if (normalizedExpected === 'ne' && /^(ne|nikoli)$/.test(normalizedSubmitted)) return true;
+  if (meansNoAllergen(expected) && (meansNoAllergen(submitted) || normalizedSubmitted === 'ne')) return true;
+
+  const expectedAllergens = allergenConcepts(expected);
+  if (!expectedAllergens.size) return false;
+  const submittedAllergens = allergenConcepts(submitted);
+  return [...expectedAllergens].every((concept) => submittedAllergens.has(concept));
+}
+
 export function evaluateText(input, expected) {
   const answers = Array.isArray(expected) ? expected : [expected];
-  const submitted = String(input).split(/[,;\n]+/).map(normalizeText).filter(Boolean);
+  const submitted = [String(input), ...String(input).split(/[,;\n]+|\s+a\s+/i)]
+    .map((value) => value.trim())
+    .filter(Boolean);
   const results = answers.map((answer) => ({
     answer,
-    matched: submitted.includes(normalizeText(answer)),
+    matched: submitted.some((value) => answerMatches(value, answer)),
   }));
   return { correct: results.every((item) => item.matched), results };
 }
