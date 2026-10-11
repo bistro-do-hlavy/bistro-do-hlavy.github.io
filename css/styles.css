@@ -215,6 +215,8 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .field-row select { max-width: 10rem; }
 .action-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: .65rem; }
 .recovery-context { margin: 0 0 .8rem; padding: .7rem .8rem; border-left: 3px solid var(--lime); border-radius: .55rem; color: var(--text); background: color-mix(in srgb, var(--lime) 10%, var(--surface)); font-size: .82rem; line-height: 1.45; }
+.focus-card.baseline-card { grid-template-columns: minmax(0, 1fr); }
+.baseline-card > *, .baseline-card .button { min-width: 0; width: 100%; }
 .collapsible-settings { padding: 0; overflow: hidden; }
 .collapsible-settings summary { min-height: 4.6rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem; padding: 1rem 1.15rem; cursor: pointer; list-style: none; }
 .collapsible-settings summary::-webkit-details-marker { display: none; }
