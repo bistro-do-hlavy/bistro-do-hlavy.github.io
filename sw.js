@@ -1,5 +1,5 @@
 // Jediné místo, kde se při vydání mění verze aplikace.
-const CACHE_VERSION = 'bistro-v1.0.53';
+const CACHE_VERSION = 'bistro-v1.0.54';
 const APP_SHELL = [
   './', './index.html', './css/styles.css', './js/app.js',
   './config.js', './content.js', './storage.js',
@@ -118,6 +118,20 @@ const APP_SHELL = [
   './img/products/la-fabbrica-penne-de-zite-rigate-igp-500-g.webp',
   './img/products/la-fabbrica-paccheri-lisci-igp-500-g.webp',
   './img/products/torres-selecta-evoo-40-g.webp',
+  './img/products/vilgain-mini-testo-na-pizzu.webp',
+  './img/products/vilgain-sojova-omacka-sprej.webp',
+  './img/products/vilgain-bio-panko-strouhanka.webp',
+  './img/products/aroy-d-bio-kokosove-mleko.webp',
+  './img/products/jordis-zap-67-pomeranc-zazvor.webp',
+  './img/products/casa-rinaldi-spaghetti-nero.webp',
+  './img/products/palacio-picual-evoo.webp',
+  './img/products/beach-house-gold-spiced.webp',
+  './img/products/zufanek-slivovica.webp',
+  './img/products/bezva-jahlova-kase.webp',
+  './img/products/bezva-cirokova-kase.webp',
+  './img/products/lacostena-frijoles-negros.webp',
+  './img/products/lacostena-nachos-jalapeno.webp',
+  './img/products/urbani-gocce-tartufo-bianco.webp',
   'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.2/+esm'
 ];
 

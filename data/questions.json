@@ -12031,5 +12031,1503 @@
     "explanation": "Balení: 40 g.",
     "sourceLabel": "Výrobce – detail produktu",
     "sourceUrl": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q1",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "krupice z tvrdé pšenice 61 %, voda, extra panenský olivový olej 7 %, sůl, přírodní aroma",
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "krupice z tvrdé pšenice 61 %, voda, extra panenský olivový olej 7 %, sůl, přírodní aroma",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q2",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "text",
+    "prompt": "Jak dlouho a při jaké teplotě se mini pizzy pečou?",
+    "answer": "3–5 minut při 200 °C",
+    "answerDisplay": "3–5 minut při 200 °C.",
+    "explanation": "Správná odpověď: 3–5 minut při 200 °C.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q3",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako rychlý základ pro osm malých pizz nebo tacos; zákazník si je jen obloží a krátce zapeče.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q4",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "photo",
+    "prompt": "Jak lze placky na fotografii použít kromě mini pizzy?",
+    "image": "img/products/vilgain-mini-testo-na-pizzu.webp",
+    "options": [
+      "Jako nevařené nudle do vývaru.",
+      "Jako malé tacos opečené z obou stran na pánvi.",
+      "Jako sladkou snídaňovou kaši.",
+      "Jako náhradu kypřicího prášku."
+    ],
+    "answer": "Jako malé tacos opečené z obou stran na pánvi.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q5",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "lepek; možné stopy sóji a hořčice",
+      "celer a hořčice"
+    ],
+    "answer": "lepek; možné stopy sóji a hořčice",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q6",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Nazdob a peč 3–5 minut v troubě předehřáté na 200 °C. Pro tacos opeč z obou stran na pánvi na mírném ohni.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q7",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Alis S.r.l.",
+      "Urbani Tartufi S.r.l.",
+      "Vilgain s.r.o."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g-q8",
+    "productId": "vilgain-mini-testo-na-pizzu-200-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "200 g (8 × 25 g)",
+    "answerDisplay": "200 g (8 × 25 g).",
+    "explanation": "Balení: 200 g (8 × 25 g).",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q1",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "voda, sójové boby, sůl, lihový ocet",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "voda, sójové boby, sůl, lihový ocet",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q2",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "text",
+    "prompt": "Kolik omáčky představuje přibližně jedna běžná dávka spreje?",
+    "answer": "1,8 ml",
+    "answerDisplay": "1,8 ml.",
+    "explanation": "Správná odpověď: 1,8 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q3",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce sójovou omáčku bez pšenice a snadno kontrolovat její množství.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q4",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "photo",
+    "prompt": "Jakou praktickou výhodu má obal produktu na fotografii?",
+    "image": "img/products/vilgain-sojova-omacka-sprej.webp",
+    "options": [
+      "Sám ohřívá omáčku.",
+      "Mění omáčku na pevnou pastu.",
+      "Umožňuje rovnoměrné a přesné dávkování omáčky.",
+      "Odstraňuje ze sóji sůl."
+    ],
+    "answer": "Umožňuje rovnoměrné a přesné dávkování omáčky.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q5",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice",
+      "sója; možné stopy mléka a skořápkových plodů"
+    ],
+    "answer": "sója; možné stopy mléka a skořápkových plodů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q6",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij na saláty, maso, do dresinků nebo polévek. Nestříkej do plamene ani přímo do trouby; nádobu chraň před teplotou nad 50 °C.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q7",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Thai Agri Foods Public Company Limited",
+      "Alis S.r.l.",
+      "Urbani Tartufi S.r.l."
+    ],
+    "answer": "Vilgain s.r.o.",
+    "explanation": "Výrobce: Vilgain s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml-q8",
+    "productId": "vilgain-sojova-omacka-sprej-200-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "200 ml",
+    "answerDisplay": "200 ml.",
+    "explanation": "Balení: 200 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q1",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "bio kukuřičná mouka, rýžová mouka, bio cizrnová mouka, mořská sůl",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "bio kukuřičná mouka, rýžová mouka, bio cizrnová mouka, mořská sůl",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q2",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "text",
+    "prompt": "Při jaké teplotě výrobce doporučuje panko smažit?",
+    "answer": "180–190 °C",
+    "answerDisplay": "180–190 °C.",
+    "explanation": "Správná odpověď: 180–190 °C.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q3",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako bezlepkovou křupavou alternativu klasické strouhanky pro maso, ryby, zeleninu i sýr.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q4",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "photo",
+    "prompt": "Čím se tato panko strouhanka liší od běžné strouhanky?",
+    "image": "img/products/vilgain-bio-panko-strouhanka.webp",
+    "options": [
+      "Je tekutá a používá se jako marináda.",
+      "Obsahuje pouze pšeničnou mouku.",
+      "Je určena výhradně do sladkých nápojů.",
+      "Má větší lehké vločky, je bezlepková a absorbuje méně oleje."
+    ],
+    "answer": "Má větší lehké vločky, je bezlepková a absorbuje méně oleje.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q5",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "žádné z 14 povinně uváděných alergenů",
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q6",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Obaluj v pořadí mouka, vejce a panko. Smaž při 180–190 °C dozlatova; lze použít i do karbanátků nebo k zahuštění.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q7",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain Ltd",
+      "Vilgain s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Vilgain Ltd",
+    "explanation": "Výrobce: Vilgain Ltd.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g-q8",
+    "productId": "vilgain-bio-panko-strouhanka-200-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "200 g",
+    "answerDisplay": "200 g.",
+    "explanation": "Balení: 200 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q1",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob",
+      "bio kokosové mléko"
+    ],
+    "answer": "bio kokosové mléko",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q2",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "text",
+    "prompt": "Jak dlouho se má kokosové mléko po otevření spotřebovat?",
+    "answer": "do 3 dnů",
+    "answerDisplay": "do 3 dnů.",
+    "explanation": "Správná odpověď: do 3 dnů.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q3",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč do kari, polévek i dezertů zákazníkovi, který hledá plnotučné rostlinné kokosové mléko.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q4",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "photo",
+    "prompt": "Pro jaké dva základní typy použití výrobce tento produkt doporučuje?",
+    "image": "img/products/aroy-d-bio-kokosove-mleko.webp",
+    "options": [
+      "Pro slanou kuchyni i dezerty.",
+      "Pouze pro smažení ve vysoké vrstvě.",
+      "Jen jako čisticí prostředek.",
+      "Výhradně pro kvašení chleba."
+    ],
+    "answer": "Pro slanou kuchyni i dezerty.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q5",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "žádné z 14 povinně uváděných alergenů",
+      "ryby a korýši",
+      "celer a hořčice"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q6",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Před použitím protřepej. Po otevření uchovej v chladničce a spotřebuj do 3 dnů.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q7",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Vilgain s.r.o.",
+      "Alis S.r.l.",
+      "Thai Agri Foods Public Company Limited",
+      "Urbani Tartufi S.r.l."
+    ],
+    "answer": "Thai Agri Foods Public Company Limited",
+    "explanation": "Výrobce: Thai Agri Foods Public Company Limited.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l-q8",
+    "productId": "aroy-d-bio-kokosove-mleko-1-l",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "1 000 ml",
+    "answerDisplay": "1 000 ml.",
+    "explanation": "Balení: 1 000 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q1",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "čokoláda: kakaové boby, třtinový cukr, kakaové máslo, kandovaný pomeranč 10 %, kandovaný zázvor 10 %",
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "čokoláda: kakaové boby, třtinový cukr, kakaové máslo, kandovaný pomeranč 10 %, kandovaný zázvor 10 %",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q2",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "text",
+    "prompt": "Jaký je minimální obsah kakaové sušiny?",
+    "answer": "67 %",
+    "answerDisplay": "67 %.",
+    "explanation": "Správná odpověď: 67 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q3",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč milovníkům výrazné tmavé čokolády, kteří ocení citrusovou a pikantní zázvorovou linku.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q4",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "photo",
+    "prompt": "Jaký chuťový kontrast je pro tuto tabulku typický?",
+    "image": "img/products/jordis-zap-67-pomeranc-zazvor.webp",
+    "options": [
+      "Mléčná čokoláda se solí a pepřem.",
+      "Tmavá čokoláda spojuje citrusový pomeranč s pikantním zázvorem.",
+      "Bílá čokoláda s kávou.",
+      "Karamelová čokoláda s mátou."
+    ],
+    "answer": "Tmavá čokoláda spojuje citrusový pomeranč s pikantním zázvorem.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q5",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "možné stopy mléka, lískových ořechů a mandlí",
+      "celer a hořčice"
+    ],
+    "answer": "možné stopy mléka, lískových ořechů a mandlí",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q6",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Podávej přímo jako degustační čokoládu. Skladuj v suchu a chladu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q7",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Alis S.r.l.",
+      "JORDIS s.r.o."
+    ],
+    "answer": "JORDIS s.r.o.",
+    "explanation": "Výrobce: JORDIS s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g-q8",
+    "productId": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "50 g",
+    "answerDisplay": "50 g.",
+    "explanation": "Balení: 50 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q1",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "semolina z tvrdé pšenice, voda, sépiový inkoust 1 %",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "semolina z tvrdé pšenice, voda, sépiový inkoust 1 %",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q2",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "text",
+    "prompt": "Kolik sépiového inkoustu těstoviny obsahují?",
+    "answer": "1 %",
+    "answerDisplay": "1 %.",
+    "explanation": "Správná odpověď: 1 %.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q3",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč k rybím a mořským omáčkám zákazníkovi, který chce výrazné černé těstoviny s chutí moře.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q4",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "photo",
+    "prompt": "Čím získávají špagety na fotografii černou barvu a mořskou chuť?",
+    "image": "img/products/casa-rinaldi-spaghetti-nero.webp",
+    "options": [
+      "Aktivním uhlím.",
+      "Černým sezamem.",
+      "Sépiovým inkoustem.",
+      "Kakaovým práškem."
+    ],
+    "answer": "Sépiovým inkoustem.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q5",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice",
+      "lepek a měkkýši"
+    ],
+    "answer": "lepek a měkkýši",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q6",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Vař v osolené vroucí vodě po dobu uvedenou na obalu. Výrobce doporučuje omáčku z ryb a bottargy.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q7",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Alis S.r.l.",
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Urbani Tartufi S.r.l."
+    ],
+    "answer": "Alis S.r.l.",
+    "explanation": "Výrobce: Alis S.r.l..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g-q8",
+    "productId": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 g",
+    "answerDisplay": "500 g.",
+    "explanation": "Balení: 500 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q1",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "100% extra panenský olivový olej z odrůdy Picual",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "100% extra panenský olivový olej z odrůdy Picual",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q2",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "text",
+    "prompt": "Z jaké odrůdy oliv je tento olej vyroben?",
+    "answer": "Picual",
+    "answerDisplay": "Picual.",
+    "explanation": "Správná odpověď: Picual.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q3",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který hledá výraznější EVOO s bylinnými tóny a jemně pikantním dozvukem.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q4",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "photo",
+    "prompt": "Jaký senzorický profil výrobce u tohoto oleje uvádí?",
+    "image": "img/products/palacio-picual-evoo.webp",
+    "options": [
+      "Výraznou sladkost bez hořkosti.",
+      "Uzenou chuť po dubovém sudu.",
+      "Vanilkovou vůni s karamelem.",
+      "Intenzivní zelenou ovocnost, vyváženou hořkost a pikantnost."
+    ],
+    "answer": "Intenzivní zelenou ovocnost, vyváženou hořkost a pikantnost.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q5",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "žádné z 14 povinně uváděných alergenů",
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q6",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij do salátů, dušených jídel nebo k dobrému chlebu. Chraň před teplem a světlem.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q7",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Olivapalacios S.L.",
+      "Vilgain s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Olivapalacios S.L.",
+    "explanation": "Výrobce: Olivapalacios S.L..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml-q8",
+    "productId": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 ml",
+    "answerDisplay": "500 ml.",
+    "explanation": "Balení: 500 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q1",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob",
+      "rum, přírodní aroma limety, přírodní aroma mandarinky, přírodní aroma zázvoru"
+    ],
+    "answer": "rum, přírodní aroma limety, přírodní aroma mandarinky, přírodní aroma zázvoru",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q2",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "text",
+    "prompt": "Která tři přírodní aromata výrobce zdůrazňuje?",
+    "answer": "limeta, mandarinka a zázvor",
+    "answerDisplay": "limeta, mandarinka a zázvor.",
+    "explanation": "Správná odpověď: limeta, mandarinka a zázvor.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q3",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako aromatický kořeněný rum s citrusy a zázvorem pro pití na ledu i do koktejlů.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q4",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "photo",
+    "prompt": "Jak výrobce doporučuje tento kořeněný rum podávat?",
+    "image": "img/products/beach-house-gold-spiced.webp",
+    "options": [
+      "Samotný, na ledu nebo v koktejlu.",
+      "Pouze horký s mlékem.",
+      "Jen jako přísadu do pečiva.",
+      "Výhradně zmrazený."
+    ],
+    "answer": "Samotný, na ledu nebo v koktejlu.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q5",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "výrobce neuvádí žádný z 14 povinných alergenů",
+      "ryby a korýši",
+      "celer a hořčice"
+    ],
+    "answer": "výrobce neuvádí žádný z 14 povinných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q6",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Podávej samotný, na ledu nebo v koktejlu. Prodávej pouze osobám starším 18 let.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q7",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Beach House Rum",
+      "Alis S.r.l."
+    ],
+    "answer": "Beach House Rum",
+    "explanation": "Výrobce: Beach House Rum.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml-q8",
+    "productId": "beach-house-gold-spiced-rum-700-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "700 ml",
+    "answerDisplay": "700 ml.",
+    "explanation": "Balení: 700 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.beachhouserum.com/gold-spiced/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q1",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "švestkový destilát",
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "švestkový destilát",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q2",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "text",
+    "prompt": "Jakou teplotu podávání výrobce doporučuje?",
+    "answer": "10–18 °C",
+    "answerDisplay": "10–18 °C.",
+    "explanation": "Správná odpověď: 10–18 °C.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q3",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako výrazný moravský destilát z osmi odrůd švestek; podávat nemražený.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q4",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "photo",
+    "prompt": "Proč výrobce nedoporučuje slivovici mrazit?",
+    "image": "img/products/zufanek-slivovica.webp",
+    "options": [
+      "Protože by se změnila na víno.",
+      "Příliš nízká teplota potlačí její vůni a chuť.",
+      "Protože by získala lepek.",
+      "Protože by se zvýšil obsah alkoholu."
+    ],
+    "answer": "Příliš nízká teplota potlačí její vůni a chuť.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q5",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "žádné z 14 povinně uváděných alergenů",
+      "celer a hořčice"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q6",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Podávej při 10–18 °C. Nemraz; nižší teplota potlačuje vůni a chuť.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q7",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Alis S.r.l.",
+      "Rodinný lihovar Žufánek s.r.o."
+    ],
+    "answer": "Rodinný lihovar Žufánek s.r.o.",
+    "explanation": "Výrobce: Rodinný lihovar Žufánek s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "zufanek-slivovica-500-ml-q8",
+    "productId": "zufanek-slivovica-500-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "500 ml",
+    "answerDisplay": "500 ml.",
+    "explanation": "Balení: 500 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.zufanek.cz/produkt/slivovica/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q1",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "100% jáhly (loupané proso) upravené extruzí a mletím",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "100% jáhly (loupané proso) upravené extruzí a mletím",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q2",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "text",
+    "prompt": "Z jaké obiloviny se vyrábějí jáhly?",
+    "answer": "z prosa",
+    "answerDisplay": "z prosa.",
+    "explanation": "Správná odpověď: z prosa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q3",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako rychlý neutrální základ snídaně nebo svačiny, který si zákazník dochutí podle sebe.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q4",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "photo",
+    "prompt": "Jaký typ použití nejlépe odpovídá této natural kaši?",
+    "image": "img/products/bezva-jahlova-kase.webp",
+    "options": [
+      "Hotová kořeněná omáčka k masu.",
+      "Nápoj určený ke kvašení.",
+      "Rychlý neutrální základ, který lze dochutit nasladko i naslano.",
+      "Kypřidlo do těsta."
+    ],
+    "answer": "Rychlý neutrální základ, který lze dochutit nasladko i naslano.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q5",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice",
+      "žádné z 14 povinně uváděných alergenů"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q6",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Zalij horkou vodou nebo mlékem, promíchej a nech krátce odstát. Dochutit lze nasladko i naslano.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q7",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Bezva zdraví s.r.o.",
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobce: Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g-q8",
+    "productId": "bezva-jahlova-kase-natural-300-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "300 g",
+    "answerDisplay": "300 g.",
+    "explanation": "Balení: 300 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q1",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "100% čirok upravený extruzí a mletím",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "100% čirok upravený extruzí a mletím",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q2",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "text",
+    "prompt": "Jaká surovina tvoří 100 % této kaše?",
+    "answer": "čirok",
+    "answerDisplay": "čirok.",
+    "explanation": "Správná odpověď: čirok.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q3",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce vyzkoušet jednodruhovou kaši z méně obvyklé obiloviny.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q4",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "photo",
+    "prompt": "K čemu lze tuto kaši použít kromě snídaně?",
+    "image": "img/products/bezva-cirokova-kase.webp",
+    "options": [
+      "K nakládání zeleniny místo octa.",
+      "Jako olej na smažení.",
+      "Jako droždí při kynutí.",
+      "K zahuštění polévek a omáček."
+    ],
+    "answer": "K zahuštění polévek a omáček.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q5",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "žádné z 14 povinně uváděných alergenů",
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q6",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Zalij horkou vodou nebo mlékem, promíchej a nech krátce odstát. Lze použít také k zahuštění polévek a omáček.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q7",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Bezva zdraví s.r.o.",
+      "Vilgain s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Bezva zdraví s.r.o.",
+    "explanation": "Výrobce: Bezva zdraví s.r.o..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g-q8",
+    "productId": "bezva-cirokova-kase-natural-300-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "300 g",
+    "answerDisplay": "300 g.",
+    "explanation": "Balení: 300 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q1",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob",
+      "celé černé fazole v nálevu"
+    ],
+    "answer": "celé černé fazole v nálevu",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q2",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "text",
+    "prompt": "Kolik vlákniny uvádí výrobce u 100 g varianty 560 g?",
+    "answer": "6 g",
+    "answerDisplay": "6 g.",
+    "explanation": "Správná odpověď: 6 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q3",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč pro rychlou mexickou přílohu nebo fazolový vývar bez namáčení a dlouhého vaření suchých fazolí.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q4",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "photo",
+    "prompt": "Jaký je nejpřesnější způsob použití těchto fazolí?",
+    "image": "img/products/lacostena-frijoles-negros.webp",
+    "options": [
+      "Ohřát jako přílohu nebo použít do fazolového vývaru.",
+      "Rozpustit jako instantní nápoj.",
+      "Použít jako kypřidlo.",
+      "Smažit jako bramborové chipsy."
+    ],
+    "answer": "Ohřát jako přílohu nebo použít do fazolového vývaru.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q5",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "výrobce na stránce neuvádí žádný z 14 povinných alergenů",
+      "ryby a korýši",
+      "celer a hořčice"
+    ],
+    "answer": "výrobce na stránce neuvádí žádný z 14 povinných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q6",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Ohřej a podávej jako přílohu. Použij také jako základ fazolového vývaru.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q7",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Conservas La Costeña S.A. de C.V.",
+      "Alis S.r.l."
+    ],
+    "answer": "Conservas La Costeña S.A. de C.V.",
+    "explanation": "Výrobce: Conservas La Costeña S.A. de C.V..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g-q8",
+    "productId": "la-costena-frijoles-negros-enteros-560-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "560 g",
+    "answerDisplay": "560 g.",
+    "explanation": "Balení: 560 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q1",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "krájené papričky jalapeño v nálevu",
+      "pšeničná mouka, cukr a máslo",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "krájené papričky jalapeño v nálevu",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q2",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "text",
+    "prompt": "V jakém tvaru jsou papričky v tomto produktu připravené?",
+    "answer": "nakrájené na kolečka",
+    "answerDisplay": "nakrájené na kolečka.",
+    "explanation": "Správná odpověď: nakrájené na kolečka.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q3",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč zákazníkovi, který chce hotové nakrájené jalapeño pro rychlé dochucení nachos, tacos nebo sendvičů.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q4",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "photo",
+    "prompt": "Pro jaký způsob použití je tento produkt připraven?",
+    "image": "img/products/lacostena-nachos-jalapeno.webp",
+    "options": [
+      "K mletí na kávu.",
+      "K přímému přidání do snacků a receptů.",
+      "K přípravě sladké kaše.",
+      "K pečení jako mouka."
+    ],
+    "answer": "K přímému přidání do snacků a receptů.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q5",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "výrobce na stránce neuvádí žádný z 14 povinných alergenů",
+      "celer a hořčice"
+    ],
+    "answer": "výrobce na stránce neuvádí žádný z 14 povinných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q6",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Nech okapat podle potřeby a přidej do nachos, sendvičů, tacos nebo dalších pokrmů. Po otevření uchovej v chladu.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q7",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Alis S.r.l.",
+      "Conservas La Costeña S.A. de C.V."
+    ],
+    "answer": "Conservas La Costeña S.A. de C.V.",
+    "explanation": "Výrobce: Conservas La Costeña S.A. de C.V..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g-q8",
+    "productId": "la-costena-nachos-jalapeno-220-g",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "220 g",
+    "answerDisplay": "220 g.",
+    "explanation": "Balení: 220 g.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q1",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "mcq",
+    "prompt": "Která možnost nejlépe vystihuje hlavní složení produktu?",
+    "options": [
+      "pšeničná mouka, cukr a máslo",
+      "extra panenský olivový olej, aroma bílého lanýže",
+      "rýže, rajčata a slunečnicový olej",
+      "mléko, vejce a kukuřičný škrob"
+    ],
+    "answer": "extra panenský olivový olej, aroma bílého lanýže",
+    "explanation": "Hlavní složky odpovídají údajům výrobce.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q2",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "text",
+    "prompt": "Kdy se má olej přidávat, aby se zachovalo jeho aroma?",
+    "answer": "za studena na konci přípravy",
+    "answerDisplay": "za studena na konci přípravy.",
+    "explanation": "Správná odpověď: za studena na konci přípravy.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q3",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "flashcard",
+    "prompt": "Jak tento produkt stručně a věcně doporučíš zákazníkovi?",
+    "answer": "Doporuč jako intenzivní dokončovací olej; na jednu porci stačí několik kapek.",
+    "explanation": "Doporučení vychází pouze z ověřených vlastností produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q4",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "photo",
+    "prompt": "Proč se tento produkt používá po kapkách až na závěr?",
+    "image": "img/products/urbani-gocce-tartufo-bianco.webp",
+    "options": [
+      "Musí nejprve ztuhnout v mrazáku.",
+      "Slouží pouze k barvení pokrmu.",
+      "Má intenzivní aroma bílého lanýže, které se tak lépe zachová.",
+      "Nahrazuje sůl svou sladkostí."
+    ],
+    "answer": "Má intenzivní aroma bílého lanýže, které se tak lépe zachová.",
+    "explanation": "Fotografie je kontext; otázka ověřuje vlastnost produktu, ne čitelnost názvu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q5",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "mcq",
+    "prompt": "Která odpověď správně popisuje alergeny a možné stopy?",
+    "options": [
+      "lepek a vejce",
+      "ryby a korýši",
+      "celer a hořčice",
+      "žádné z 14 povinně uváděných alergenů"
+    ],
+    "answer": "žádné z 14 povinně uváděných alergenů",
+    "explanation": "Údaj vychází z informací výrobce; při prodeji má vždy přednost aktuální etiketa.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q6",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "flashcard",
+    "prompt": "Jak se produkt používá nebo připravuje?",
+    "answer": "Použij za studena až na konci přípravy, aby se zachovalo aroma. Hodí se na těstoviny, rizoto, vejce, bruschettu, sýry nebo carpaccio.",
+    "explanation": "Použití odpovídá doporučení výrobce a typu produktu.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q7",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "mcq",
+    "prompt": "Kdo je u produktu uveden jako výrobce?",
+    "options": [
+      "Urbani Tartufi S.r.l.",
+      "Thai Agri Foods Public Company Limited",
+      "Vilgain s.r.o.",
+      "Alis S.r.l."
+    ],
+    "answer": "Urbani Tartufi S.r.l.",
+    "explanation": "Výrobce: Urbani Tartufi S.r.l..",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml-q8",
+    "productId": "urbani-gocce-tartufo-bianco-55-ml",
+    "type": "text",
+    "prompt": "Jaká je velikost tohoto balení?",
+    "answer": "55 ml",
+    "answerDisplay": "55 ml.",
+    "explanation": "Balení: 55 ml.",
+    "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
   }
 ]

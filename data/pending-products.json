@@ -38,5 +38,25 @@
     "label": "Neurčené sklenice a omáčky",
     "reason": "Na celkových fotografiích regálu splývají názvy a varianty.",
     "needed": "Detail čelní etikety a fotografie složení."
+  },
+  {
+    "label": "Bezva zdraví Jáhly loupané proso 500 g",
+    "reason": "Přední strana je rozpoznatelná, ale chybí čitelná zadní etiketa a výrobce nemá dohledatelný detail produktu.",
+    "needed": "Fotografie zadní strany se složením, alergeny, zemí původu a návodem."
+  },
+  {
+    "label": "ENGINE Organic Gin 01",
+    "reason": "Láhev je rozpoznatelná, ale z fotografie nelze bezpečně ověřit přesnou variantu a údaje českého balení.",
+    "needed": "Přední a zadní etiketa včetně objemu a obsahu alkoholu."
+  },
+  {
+    "label": "Santos Dumont XO Elixir",
+    "reason": "Láhev je rozpoznatelná, ale z fotografie není dostatečně čitelný objem ani zadní etiketa.",
+    "needed": "Přední a zadní etiketa včetně objemu a obsahu alkoholu."
+  },
+  {
+    "label": "Royal Thai Sriracha",
+    "reason": "Z fotografie není spolehlivě čitelná přesná varianta, složení a alergeny.",
+    "needed": "Samostatná fotografie přední a zadní etikety."
   }
 ]

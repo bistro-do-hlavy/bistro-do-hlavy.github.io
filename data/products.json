@@ -4716,5 +4716,492 @@
         "url": "https://patatastorres.com/en/product/100-extra-virgin-olive-oil/"
       }
     ]
+  },
+  {
+    "id": "vilgain-mini-testo-na-pizzu-200-g",
+    "name": "Vilgain Mini těsto na pizzu 200 g",
+    "category": "Obiloviny a přílohy",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Itálie",
+    "description": "Osm malých předpečených placek o průměru přibližně 12 cm pro rychlou přípravu mini pizzy nebo tacos.",
+    "ingredients": [
+      "krupice z tvrdé pšenice 61 %",
+      "voda",
+      "extra panenský olivový olej 7 %",
+      "sůl",
+      "přírodní aroma"
+    ],
+    "allergens": [
+      1,
+      6,
+      10
+    ],
+    "specifics": [
+      "200 g (8 × 25 g)",
+      "průměr přibližně 12 cm",
+      "bez konzervantů a barviv",
+      "může obsahovat stopy sóji a hořčice"
+    ],
+    "preparation": [
+      "Nazdob a peč 3–5 minut v troubě předehřáté na 200 °C.",
+      "Pro tacos opeč z obou stran na pánvi na mírném ohni."
+    ],
+    "brandInfo": "Vilgain je vlastní značka společnosti Vilgain s.r.o. zaměřená na potraviny s transparentním složením.",
+    "salesTip": "Doporuč jako rychlý základ pro osm malých pizz nebo tacos; zákazník si je jen obloží a krátce zapeče.",
+    "image": "img/products/vilgain-mini-testo-na-pizzu.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.cz/vilgain-mini-testo-na-pizzu"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-sojova-omacka-sprej-200-ml",
+    "name": "Vilgain Soy Sauce Spray 200 ml",
+    "category": "Asijská ochucovadla",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain s.r.o.",
+    "origin": "Česko / surovina z Nizozemska",
+    "description": "Bezlepková sójová omáčka v tlakovém spreji pro rovnoměrné a přesné dávkování.",
+    "ingredients": [
+      "voda",
+      "sójové boby",
+      "sůl",
+      "lihový ocet"
+    ],
+    "allergens": [
+      6,
+      7,
+      8
+    ],
+    "specifics": [
+      "200 ml",
+      "sója bez GMO z Nizozemska",
+      "bez pšenice a lepku",
+      "jedna dávka přibližně 1,8 ml",
+      "může obsahovat stopy mléka a skořápkových plodů"
+    ],
+    "preparation": [
+      "Použij na saláty, maso, do dresinků nebo polévek.",
+      "Nestříkej do plamene ani přímo do trouby; nádobu chraň před teplotou nad 50 °C."
+    ],
+    "brandInfo": "Vilgain je vlastní značka společnosti Vilgain s.r.o.; u této omáčky výrobce zdůrazňuje jednoduché složení a přesné dávkování.",
+    "salesTip": "Doporuč zákazníkovi, který chce sójovou omáčku bez pšenice a snadno kontrolovat její množství.",
+    "image": "img/products/vilgain-sojova-omacka-sprej.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.co.uk/vilgain-soy-sauce-spray"
+      }
+    ]
+  },
+  {
+    "id": "vilgain-bio-panko-strouhanka-200-g",
+    "name": "Vilgain BIO Panko strouhanka 200 g",
+    "category": "Mouky",
+    "brand": "Vilgain",
+    "manufacturer": "Vilgain Ltd",
+    "origin": "EU",
+    "description": "Bezlepková panko strouhanka japonského typu z kukuřičné, rýžové a cizrnové mouky.",
+    "ingredients": [
+      "bio kukuřičná mouka",
+      "rýžová mouka",
+      "bio cizrnová mouka",
+      "mořská sůl"
+    ],
+    "allergens": [],
+    "specifics": [
+      "200 g",
+      "bez lepku",
+      "bez přidaného cukru",
+      "větší a lehčí vločky",
+      "absorbuje méně oleje než běžná strouhanka"
+    ],
+    "preparation": [
+      "Obaluj v pořadí mouka, vejce a panko.",
+      "Smaž při 180–190 °C dozlatova; lze použít i do karbanátků nebo k zahuštění."
+    ],
+    "brandInfo": "Vilgain u této strouhanky kombinuje tři druhy mouky pro lehkou a křupavou strukturu.",
+    "salesTip": "Doporuč jako bezlepkovou křupavou alternativu klasické strouhanky pro maso, ryby, zeleninu i sýr.",
+    "image": "img/products/vilgain-bio-panko-strouhanka.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://vilgain.co.uk/vilgain-organic-panko-breadcrumbs"
+      }
+    ]
+  },
+  {
+    "id": "aroy-d-bio-kokosove-mleko-1-l",
+    "name": "Aroy-D BIO kokosové mléko 1 l",
+    "category": "Rostlinné nápoje",
+    "brand": "Aroy-D",
+    "manufacturer": "Thai Agri Foods Public Company Limited",
+    "origin": "Thajsko",
+    "description": "Trvanlivé bio kokosové mléko s obsahem tuku 17–19 % pro vaření i dezerty.",
+    "ingredients": [
+      "bio kokosové mléko"
+    ],
+    "allergens": [],
+    "specifics": [
+      "1 000 ml",
+      "17–19 % tuku",
+      "bez přidaných barviv a aromat",
+      "rostlinné a bezlepkové",
+      "trvanlivost 17 měsíců"
+    ],
+    "preparation": [
+      "Před použitím protřepej.",
+      "Po otevření uchovej v chladničce a spotřebuj do 3 dnů."
+    ],
+    "brandInfo": "Aroy-D je značka thajské společnosti Thai Agri Foods; výrobce nabízí suroviny pro tradiční asijskou kuchyni.",
+    "salesTip": "Doporuč do kari, polévek i dezertů zákazníkovi, který hledá plnotučné rostlinné kokosové mléko.",
+    "image": "img/products/aroy-d-bio-kokosove-mleko.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://aroydbrand.com/our_product/uht-organic-coconut-milk-6/"
+      }
+    ]
+  },
+  {
+    "id": "jordis-zap-67-pomeranc-zazvor-50-g",
+    "name": "JORDIS ZAP tmavá čokoláda 67 % pomeranč a zázvor 50 g",
+    "category": "Čokoláda",
+    "brand": "JORDIS",
+    "manufacturer": "JORDIS s.r.o.",
+    "origin": "Česko",
+    "description": "Řemeslná tmavá čokoláda s nejméně 67 % kakaové sušiny, kandovaným pomerančem a zázvorem.",
+    "ingredients": [
+      "čokoláda: kakaové boby, třtinový cukr, kakaové máslo",
+      "kandovaný pomeranč 10 %",
+      "kandovaný zázvor 10 %"
+    ],
+    "allergens": [
+      7,
+      8
+    ],
+    "specifics": [
+      "50 g",
+      "nejméně 67 % kakaové sušiny",
+      "veganská receptura",
+      "může obsahovat stopy lískových ořechů, mandlí a mléka",
+      "bronzové ocenění Academy of Chocolate"
+    ],
+    "preparation": [
+      "Podávej přímo jako degustační čokoládu.",
+      "Skladuj v suchu a chladu."
+    ],
+    "brandInfo": "JORDIS je česká řemeslná čokoládovna z Třebechovic pod Orebem; čokoláda ZAP získala bronzová ocenění Academy of Chocolate.",
+    "salesTip": "Doporuč milovníkům výrazné tmavé čokolády, kteří ocení citrusovou a pikantní zázvorovou linku.",
+    "image": "img/products/jordis-zap-67-pomeranc-zazvor.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.jordis.cz/en/119-orange-ginger-dark-67-chocolate-50g"
+      }
+    ]
+  },
+  {
+    "id": "casa-rinaldi-spaghetti-nero-di-seppia-500-g",
+    "name": "Casa Rinaldi Spaghetti al nero di seppia 500 g",
+    "category": "Těstoviny a nudle",
+    "brand": "Casa Rinaldi",
+    "manufacturer": "Alis S.r.l.",
+    "origin": "Itálie",
+    "description": "Špagety ze semoliny z tvrdé pšenice obarvené a ochucené 1 % sépiového inkoustu.",
+    "ingredients": [
+      "semolina z tvrdé pšenice",
+      "voda",
+      "sépiový inkoust 1 %"
+    ],
+    "allergens": [
+      1,
+      14
+    ],
+    "specifics": [
+      "500 g",
+      "1 % sépiového inkoustu",
+      "černá barva",
+      "výrazná mořská chuť"
+    ],
+    "preparation": [
+      "Vař v osolené vroucí vodě po dobu uvedenou na obalu.",
+      "Výrobce doporučuje omáčku z ryb a bottargy."
+    ],
+    "brandInfo": "Casa Rinaldi od roku 1979 vyrábí, vybírá a distribuuje italské potravinářské speciality.",
+    "salesTip": "Doporuč k rybím a mořským omáčkám zákazníkovi, který chce výrazné černé těstoviny s chutí moře.",
+    "image": "img/products/casa-rinaldi-spaghetti-nero.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://casarinaldi.com/product/spaghetti-al-nero-di-seppia/"
+      }
+    ]
+  },
+  {
+    "id": "palacio-de-los-olivos-picual-evoo-500-ml",
+    "name": "Palacio de los Olivos Picual extra panenský olivový olej 500 ml",
+    "category": "Za studena lisované oleje",
+    "brand": "Palacio de los Olivos",
+    "manufacturer": "Olivapalacios S.L.",
+    "origin": "Campo de Calatrava, Španělsko",
+    "description": "Prémiový extra panenský olivový olej z oliv odrůdy Picual s intenzivní zelenou ovocností.",
+    "ingredients": [
+      "100% extra panenský olivový olej z odrůdy Picual"
+    ],
+    "allergens": [],
+    "specifics": [
+      "500 ml",
+      "odrůda Picual",
+      "intenzivní zelená ovocnost",
+      "vyvážená hořkost a pikantnost",
+      "bylinné a rajčatové tóny"
+    ],
+    "preparation": [
+      "Použij do salátů, dušených jídel nebo k dobrému chlebu.",
+      "Chraň před teplem a světlem."
+    ],
+    "brandInfo": "Olivapalacios je rodinný producent z oblasti Campo de Calatrava, který pěstuje olivy na vlastních sadech a olej zpracovává krátce po sklizni.",
+    "salesTip": "Doporuč zákazníkovi, který hledá výraznější EVOO s bylinnými tóny a jemně pikantním dozvukem.",
+    "image": "img/products/palacio-picual-evoo.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://olivapalacios.es/producto/aceite-virgen-extra-picual/"
+      }
+    ]
+  },
+  {
+    "id": "beach-house-gold-spiced-rum-700-ml",
+    "name": "Beach House Gold Spiced Rum 700 ml",
+    "category": "Destiláty",
+    "brand": "Beach House",
+    "manufacturer": "Beach House Rum",
+    "origin": "Mauricius",
+    "description": "Kořeněný rum s přírodními aromaty limety, mandarinky a zázvoru.",
+    "ingredients": [
+      "rum",
+      "přírodní aroma limety",
+      "přírodní aroma mandarinky",
+      "přírodní aroma zázvoru"
+    ],
+    "allergens": [],
+    "specifics": [
+      "700 ml",
+      "40 % alkoholu",
+      "tóny krvavého pomeranče, kandovaného zázvoru a medu",
+      "dozvuk koření, perníku a skořice"
+    ],
+    "preparation": [
+      "Podávej samotný, na ledu nebo v koktejlu.",
+      "Prodávej pouze osobám starším 18 let."
+    ],
+    "brandInfo": "Beach House Rum staví svou řadu kořeněných rumů na tropickém původu a přírodních aromatech.",
+    "salesTip": "Doporuč jako aromatický kořeněný rum s citrusy a zázvorem pro pití na ledu i do koktejlů.",
+    "image": "img/products/beach-house-gold-spiced.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.beachhouserum.com/gold-spiced/"
+      }
+    ]
+  },
+  {
+    "id": "zufanek-slivovica-500-ml",
+    "name": "Žufánek Slivovica 500 ml",
+    "category": "Destiláty",
+    "brand": "Žufánek",
+    "manufacturer": "Rodinný lihovar Žufánek s.r.o.",
+    "origin": "Boršice u Blatnice, Česko",
+    "description": "Moravský ovocný destilát z osmi odrůd švestek z vlastních ekologických sadů v Bílých Karpatech.",
+    "ingredients": [
+      "švestkový destilát"
+    ],
+    "allergens": [],
+    "specifics": [
+      "500 ml",
+      "50 % alkoholu",
+      "osm odrůd švestek",
+      "zrání 8–12 měsíců v nerezových tancích",
+      "vlastní ekologické sady"
+    ],
+    "preparation": [
+      "Podávej při 10–18 °C.",
+      "Nemraz; nižší teplota potlačuje vůni a chuť."
+    ],
+    "brandInfo": "Rodinný lihovar Žufánek sídlí v Boršicích u Blatnice a část ovoce pěstuje ve vlastních ekologických sadech v Bílých Karpatech.",
+    "salesTip": "Doporuč jako výrazný moravský destilát z osmi odrůd švestek; podávat nemražený.",
+    "image": "img/products/zufanek-slivovica.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.zufanek.cz/produkt/slivovica/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-jahlova-kase-natural-300-g",
+    "name": "Bezva zdraví Jáhlová kaše natural 300 g",
+    "category": "Instantní kaše",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Česko",
+    "description": "Jednodruhová instantní kaše z jáhel, tedy loupaného prosa, upravených extruzí a mletím.",
+    "ingredients": [
+      "100% jáhly (loupané proso) upravené extruzí a mletím"
+    ],
+    "allergens": [],
+    "specifics": [
+      "300 g",
+      "jednodruhová natural kaše",
+      "rychlá příprava",
+      "bez přidaného cukru"
+    ],
+    "preparation": [
+      "Zalij horkou vodou nebo mlékem, promíchej a nech krátce odstát.",
+      "Dochutit lze nasladko i naslano."
+    ],
+    "brandInfo": "Bezva zdraví je česká značka cereálních směsí, kaší a dalších trvanlivých potravin.",
+    "salesTip": "Doporuč jako rychlý neutrální základ snídaně nebo svačiny, který si zákazník dochutí podle sebe.",
+    "image": "img/products/bezva-jahlova-kase.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/kase-natural/jahlova-kase-natural/"
+      }
+    ]
+  },
+  {
+    "id": "bezva-cirokova-kase-natural-300-g",
+    "name": "Bezva zdraví Čiroková kaše natural 300 g",
+    "category": "Instantní kaše",
+    "brand": "Bezva zdraví",
+    "manufacturer": "Bezva zdraví s.r.o.",
+    "origin": "Česko",
+    "description": "Jednodruhová instantní kaše ze 100% čiroku upraveného extruzí a mletím.",
+    "ingredients": [
+      "100% čirok upravený extruzí a mletím"
+    ],
+    "allergens": [],
+    "specifics": [
+      "300 g",
+      "100% čirok",
+      "jednodruhová natural kaše",
+      "rychlá příprava"
+    ],
+    "preparation": [
+      "Zalij horkou vodou nebo mlékem, promíchej a nech krátce odstát.",
+      "Lze použít také k zahuštění polévek a omáček."
+    ],
+    "brandInfo": "Bezva zdraví je česká značka cereálních směsí, kaší a dalších trvanlivých potravin.",
+    "salesTip": "Doporuč zákazníkovi, který chce vyzkoušet jednodruhovou kaši z méně obvyklé obiloviny.",
+    "image": "img/products/bezva-cirokova-kase.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.bezva-zdravi.cz/kase-natural/cirokova-kase-natural-300g/"
+      }
+    ]
+  },
+  {
+    "id": "la-costena-frijoles-negros-enteros-560-g",
+    "name": "La Costeña Frijoles Negros Enteros 560 g",
+    "category": "Luštěniny",
+    "brand": "La Costeña",
+    "manufacturer": "Conservas La Costeña S.A. de C.V.",
+    "origin": "Mexiko",
+    "description": "Tradiční celé černé fazole připravené k ohřátí a podávání jako příloha nebo základ fazolového vývaru.",
+    "ingredients": [
+      "celé černé fazole v nálevu"
+    ],
+    "allergens": [],
+    "specifics": [
+      "560 g",
+      "celé černé fazole",
+      "6 g vlákniny na 100 g",
+      "bez přidaného cukru podle tabulky výrobce"
+    ],
+    "preparation": [
+      "Ohřej a podávej jako přílohu.",
+      "Použij také jako základ fazolového vývaru."
+    ],
+    "brandInfo": "La Costeña je mexický výrobce konzervovaných potravin, jehož historie sahá do roku 1923.",
+    "salesTip": "Doporuč pro rychlou mexickou přílohu nebo fazolový vývar bez namáčení a dlouhého vaření suchých fazolí.",
+    "image": "img/products/lacostena-frijoles-negros.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.lacostena.com.mx/es/productos/frijoles-negros-enteros/"
+      }
+    ]
+  },
+  {
+    "id": "la-costena-nachos-jalapeno-220-g",
+    "name": "La Costeña Nachos de Jalapeño 220 g",
+    "category": "Nakládaná zelenina",
+    "brand": "La Costeña",
+    "manufacturer": "Conservas La Costeña S.A. de C.V.",
+    "origin": "Mexiko",
+    "description": "Nakrájené papričky jalapeño určené k přímému použití do snacků a receptů.",
+    "ingredients": [
+      "krájené papričky jalapeño v nálevu"
+    ],
+    "allergens": [],
+    "specifics": [
+      "220 g",
+      "krájené jalapeño",
+      "připravené k použití",
+      "vhodné do snacků a receptů"
+    ],
+    "preparation": [
+      "Nech okapat podle potřeby a přidej do nachos, sendvičů, tacos nebo dalších pokrmů.",
+      "Po otevření uchovej v chladu."
+    ],
+    "brandInfo": "La Costeña je mexický výrobce konzervovaných potravin, jehož historie sahá do roku 1923.",
+    "salesTip": "Doporuč zákazníkovi, který chce hotové nakrájené jalapeño pro rychlé dochucení nachos, tacos nebo sendvičů.",
+    "image": "img/products/lacostena-nachos-jalapeno.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://www.lacostena.com.mx/es/productos/nachos-de-jalapeno/"
+      }
+    ]
+  },
+  {
+    "id": "urbani-gocce-tartufo-bianco-55-ml",
+    "name": "Urbani Gocce di Tartufo Bianco 55 ml",
+    "category": "Ochucovadla a krémy",
+    "brand": "Urbani Tartufi",
+    "manufacturer": "Urbani Tartufi S.r.l.",
+    "origin": "Itálie",
+    "description": "Extra panenský olivový olej aromatizovaný bílým lanýžem, určený k dokončení pokrmu několika kapkami.",
+    "ingredients": [
+      "extra panenský olivový olej",
+      "aroma bílého lanýže"
+    ],
+    "allergens": [],
+    "specifics": [
+      "55 ml",
+      "intenzivní a dlouhotrvající aroma",
+      "bez lepku",
+      "bez přidaných konzervantů",
+      "vyrobeno v Itálii"
+    ],
+    "preparation": [
+      "Použij za studena až na konci přípravy, aby se zachovalo aroma.",
+      "Hodí se na těstoviny, rizoto, vejce, bruschettu, sýry nebo carpaccio."
+    ],
+    "brandInfo": "Urbani Tartufi se lanýžům věnuje od roku 1852 a uvádí více než 170 let zkušeností.",
+    "salesTip": "Doporuč jako intenzivní dokončovací olej; na jednu porci stačí několik kapek.",
+    "image": "img/products/urbani-gocce-tartufo-bianco.webp",
+    "sources": [
+      {
+        "label": "Výrobce – detail produktu",
+        "url": "https://shop.urbanitartufi.it/products/gocce-di-tartufo-bianco-55-ml"
+      }
+    ]
   }
 ]
