@@ -369,6 +369,22 @@ function totalMastery() {
   return Math.round(sum / state.products.length);
 }
 
+function masteryStatus(value) {
+  if (value <= 0) return 'Nevyzkoušeno';
+  if (value < 35) return 'Začínáte';
+  if (value < 70) return 'Upevňujete';
+  if (value < 100) return 'Téměř jisté';
+  return 'Zvládnuto';
+}
+
+function masteryRing(value, label = '', className = '') {
+  const safeValue = Math.max(0, Math.min(100, Number(value) || 0));
+  const accessibleLabel = label ? `${label}: ${safeValue} procent, ${masteryStatus(safeValue)}` : `${safeValue} procent, ${masteryStatus(safeValue)}`;
+  return `<span class="mastery-ring ${className}" style="--mastery:${safeValue}" role="img" aria-label="${escapeHtml(accessibleLabel)}">
+    <span class="mastery-ring-center"><strong>${safeValue} %</strong>${label ? `<small>${escapeHtml(label)}</small>` : ''}</span>
+  </span>`;
+}
+
 async function updateBadge() {
   if (!('setAppBadge' in navigator)) return;
   const count = dueCount();
@@ -425,6 +441,18 @@ function renderHome() {
   const enabledProductIds = new Set(selectedProductIds());
   const recognitionCount = photoChallengeQuestions().filter((question) => enabledProductIds.has(question.productId)).length;
   const comparisonCount = comparisonQuestions().length;
+  const overallMastery = totalMastery();
+  const categoryHighlights = insights.categoryInsights.slice(0, 3);
+  const nextAction = weakQueue.length
+    ? {
+      title: weakest ? `Upevněte ${weakest.name}` : 'Procvičte slabší otázky',
+      description: `${weakQueue.length} ${weakQueue.length === 1 ? 'otázka potřebuje' : weakQueue.length <= 4 ? 'otázky potřebují' : 'otázek potřebuje'} zopakovat.`,
+      label: 'Procvičit',
+      action: 'weak',
+    }
+    : queue.length
+      ? { title: 'Dokončete dnešní porci', description: 'Krátké pravidelné vybavování upevňuje paměť lépe než dlouhé nárazové učení.', label: 'Pokračovat', action: 'daily' }
+      : { title: 'Prohlédněte si další produkty', description: 'Denní cíl máte hotový. Můžete si bez testování projít katalog.', label: 'Otevřít katalog', action: 'products' };
   const now = new Date();
   const monday = new Date(now);
   monday.setHours(0, 0, 0, 0);
@@ -444,73 +472,85 @@ function renderHome() {
   }).join('');
   app.innerHTML = `
     <section class="page home-page">
-      <div class="chalk-doodle chalk-doodle-left" aria-hidden="true">✦</div>
       <article class="hero-card daily-special">
-        <div class="special-ribbon"><span>Dnešní specialita</span></div>
         <div class="hero-top">
           <div class="special-copy">
             <p class="eyebrow">Denní dávka · 5–10 minut</p>
-            <h1>${queue.length ? 'Naservíruj si dnešní znalosti' : 'Dnes máš naservírováno'}</h1>
+            <h1>${queue.length ? 'Upevněte, co má dnes smysl' : 'Dnes máte naservírováno'}</h1>
             <p>${queue.length ? `${due} k opakování · ${Math.max(0, queue.length - due)} nových otázek` : 'Skvělá práce. Další porce bude připravená později.'}</p>
           </div>
-          <div class="due-bubble"><strong>${queue.length}</strong><span>karet dnes</span></div>
+          ${masteryRing(overallMastery, 'celkem', 'mastery-ring-hero')}
         </div>
         <div class="hero-actions">
-          <button id="start-study" class="button button-primary special-button" type="button" ${queue.length ? '' : 'disabled'}>
-            <span aria-hidden="true">▶</span>${queue.length ? 'Spustit denní mix' : 'Denní cíl splněn'}
+          <button id="start-study" class="button button-primary special-button" type="button" aria-label="Denní mix" ${queue.length ? '' : 'disabled'}>
+            <span aria-hidden="true">▶</span>${queue.length ? `Spustit doporučený trénink · ${queue.length}` : 'Denní cíl splněn'}
+            <span class="visually-hidden">${queue.length} karet dnes</span>
           </button>
         </div>
       </article>
-      <div class="quick-menu" aria-label="Další způsoby tréninku">
-        <button id="open-topic-study" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">☰</span><span><strong>Podle tématu</strong><small>Vyber si kategorii</small></span><b aria-hidden="true">›</b></button>
-        <button id="start-weak-home" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">⚡</span><span><strong>Co mi nejde</strong><small>${weakQueue.length ? `${weakQueue.length} otázek k upevnění` : 'Žádné slabé místo'}</small></span><b aria-hidden="true">›</b></button>
-      </div>
+      <button id="best-next-action" class="best-next-card" type="button" data-next-action="${nextAction.action}">
+        <span class="best-next-icon" aria-hidden="true">↗</span>
+        <span><small>Nejlepší další krok</small><strong>${escapeHtml(nextAction.title)}</strong><span>${escapeHtml(nextAction.description)}</span></span>
+        <b>${escapeHtml(nextAction.label)} <span aria-hidden="true">›</span></b>
+      </button>
       <section class="weekly-board" aria-label="Týdenní pokrok">
         <div class="section-heading"><h2>Týdenní pokrok</h2><span>${streak} ${streak === 1 ? 'den v řadě' : 'dní v řadě'}</span></div>
         <div class="week-row">${weeklyActivity}</div>
         <div class="chalk-note"><span aria-hidden="true">☕</span><p>${streak ? 'Jen tak dál. Paměť má ráda pravidelné malé porce.' : 'I jedna krátká dávka dnes nastartuje novou sérii.'}</p></div>
       </section>
-      <div class="stats-grid" aria-label="Přehled pokroku">
-        <div class="stat-card"><strong>${streak}</strong><span>${streak === 1 ? 'den série' : streak >= 2 && streak <= 4 ? 'dny série' : 'dní série'}</span></div>
-        <div class="stat-card"><strong>${totalMastery()} %</strong><span>zvládnutí</span></div>
-        <div class="stat-card"><strong>${masteredProducts()}/${state.products.length}</strong><span>produktů jistě</span></div>
+      <section class="mastery-map" aria-labelledby="mastery-map-heading">
+        <div class="section-heading"><div><p class="eyebrow">Mapa zvládnutí</p><h2 id="mastery-map-heading">Jak si vedete</h2></div><button class="text-button" type="button" data-view-link="stats">Celý přehled</button></div>
+        <div class="mastery-overview">
+          <div class="overall-mastery">${masteryRing(overallMastery, 'všechny produkty', 'mastery-ring-large')}<span><strong>${masteredProducts()}/${state.products.length}</strong><small>produktů zvládnuto</small></span></div>
+          <div class="category-mastery-grid">
+            ${categoryHighlights.map((item) => `<button type="button" class="category-mastery-card" data-home-category="${escapeHtml(item.category)}">${masteryRing(item.mastery, '', 'mastery-ring-category')}<strong>${escapeHtml(item.category)}</strong><span>${masteryStatus(item.mastery)}</span></button>`).join('')}
+          </div>
+        </div>
+      </section>
+      <div class="quick-menu compact-training-menu" aria-label="Rychlá volba tréninku">
+        <button id="open-topic-study" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">☰</span><span><strong>Podle tématu</strong><small>Vyberte kategorii</small></span><b aria-hidden="true">›</b></button>
+        <button id="start-weak-home" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">⚡</span><span><strong>Co mi nejde</strong><small>${weakQueue.length ? `${weakQueue.length} otázek k upevnění` : 'Žádné slabé místo'}</small></span><b aria-hidden="true">›</b></button>
       </div>
-      <div class="section-heading"><h2>Ještě něco na zub?</h2><span>Další režimy</span></div>
-      <div class="training-modes-grid">
-        <article class="training-mode-card training-mode-photo">
-          <span class="training-mode-icon" aria-hidden="true">◎</span>
-          <div><p class="eyebrow">Fotografie jako kontext</p><h2>Foto výzva</h2><p>Odpovídejte na otázky o kategorii, výrobci a vlastnostech. Čitelný název na obalu už není odpovědí.</p></div>
-          <button id="start-recognition" class="button button-secondary button-full" type="button" ${recognitionCount ? '' : 'disabled'}>Spustit · ${Math.min(10, recognitionCount)}</button>
-        </article>
-        <article class="training-mode-card training-mode-compare">
-          <span class="training-mode-icon" aria-hidden="true">⇄</span>
-          <div><p class="eyebrow">Podobné vedle sebe</p><h2>Porovnávání</h2><p>Rozlište kávy, čaje, sýry a další podobné produkty podle ověřených vlastností.</p></div>
-          <button id="start-comparison" class="button button-secondary button-full" type="button" ${comparisonCount ? '' : 'disabled'}>Spustit · ${Math.min(10, comparisonCount)}</button>
-        </article>
-      </div>
-      <article class="recommendation-card">
-        <div><p class="eyebrow">Doporučení</p><h2>${weakest ? `Zaměřte se na ${escapeHtml(weakest.name)}` : 'Pokračujte v pravidelném opakování'}</h2>
-        <p>${weakest ? `${weakest.weakQuestionCount} ${weakest.weakQuestionCount === 1 ? 'otázka potřebuje' : 'otázek potřebuje'} upevnit. Slabší otázky už mají v denní dávce přednost.` : state.reviews.length ? 'Aktuálně nemáte výrazné slabé místo. Další otázky se objeví v optimálním termínu.' : 'Po prvních odpovědích zde uvidíte konkrétní doporučení.'}</p></div>
-        <button class="button button-secondary" type="button" data-view-link="stats">Otevřít statistiky</button>
-      </article>
-      <div class="section-heading"><h2>Produkty v kurzu</h2><span>Klepnutím otevřít</span></div>
+      <details class="training-more">
+        <summary><span><strong>Další způsoby tréninku</strong><small>Foto výzva a porovnávání produktů</small></span><span aria-hidden="true">⌄</span></summary>
+        <div class="training-modes-grid">
+          <article class="training-mode-card training-mode-photo">
+            <span class="training-mode-icon" aria-hidden="true">◎</span>
+            <div><p class="eyebrow">Fotografie jako kontext</p><h2>Foto výzva</h2><p>Otázky o kategorii, výrobci a vlastnostech bez opisování názvu z obalu.</p></div>
+            <button id="start-recognition" class="button button-secondary button-full" type="button" ${recognitionCount ? '' : 'disabled'}>Spustit · ${Math.min(10, recognitionCount)}</button>
+          </article>
+          <article class="training-mode-card training-mode-compare">
+            <span class="training-mode-icon" aria-hidden="true">⇄</span>
+            <div><p class="eyebrow">Podobné vedle sebe</p><h2>Porovnávání</h2><p>Rozlište podobné produkty podle ověřených vlastností.</p></div>
+            <button id="start-comparison" class="button button-secondary button-full" type="button" ${comparisonCount ? '' : 'disabled'}>Spustit · ${Math.min(10, comparisonCount)}</button>
+          </article>
+        </div>
+      </details>
+      <div class="section-heading"><h2>Produkty v kurzu</h2><span>Při každém otevření jiné</span></div>
       <div class="mini-products">${productRows(homeProducts())}</div>
     </section>`;
   bindCommonActions();
   document.querySelector('#start-study')?.addEventListener('click', startStudy);
+  document.querySelector('#best-next-action')?.addEventListener('click', (event) => {
+    const action = event.currentTarget.dataset.nextAction;
+    if (action === 'weak') startWeakStudy(weakQueue);
+    else if (action === 'products') navigate('products');
+    else startStudy();
+  });
   document.querySelector('#open-topic-study')?.addEventListener('click', openTopicDialog);
   document.querySelector('#start-weak-home')?.addEventListener('click', () => startWeakStudy(weakQueue));
   document.querySelector('#start-recognition')?.addEventListener('click', startRecognitionStudy);
   document.querySelector('#start-comparison')?.addEventListener('click', startComparisonStudy);
+  document.querySelectorAll('[data-home-category]').forEach((button) => button.addEventListener('click', () => startTopicStudy(button.dataset.homeCategory)));
 }
 
 function productCard(product) {
   const mastery = productMastery(product.id, state.questions, state.progress);
+  const status = masteryStatus(mastery);
   return `<button class="product-card" type="button" data-product-id="${product.id}">
-    <img src="${product.image}" alt="${escapeHtml(product.name)}" width="240" height="240" loading="lazy">
+    <span class="product-image-stage"><img src="${product.image}" alt="${escapeHtml(product.name)}" width="240" height="180" loading="lazy"></span>
     <span class="product-card-body"><h2>${escapeHtml(product.name)}</h2><p>${escapeHtml(product.category)}</p>
-    <span class="progress-track"><span style="width:${mastery}%"></span></span>
-    <span class="progress-label"><span>Zvládnutí</span><strong>${mastery} %</strong></span></span>
+    <span class="product-progress">${masteryRing(mastery, '', 'mastery-ring-product')}<span><strong>${status}</strong><small>${mastery} % zvládnutí</small></span></span></span>
   </button>`;
 }
 
@@ -551,11 +591,13 @@ function renderProducts() {
     { id: 'mastered', label: 'Zvládnuté', count: state.products.filter((product) => statusByProduct.get(product.id).mastered).length },
   ];
   let activeFilter = 'all';
+  let activeSort = 'recommended';
   app.innerHTML = `
     <section class="page">
       <header class="page-header catalog-header"><div><p class="eyebrow">Katalog · ${state.products.length} produktů</p><h1>Produkty</h1><p>Vyhledejte produkt nebo si katalog seřaďte tak, jak se vám učí nejlépe.</p></div></header>
       <div class="catalog-tools">
         <label class="catalog-search"><span class="visually-hidden">Hledat produkt</span><input id="product-search" type="search" placeholder="Hledat produkt nebo kategorii…" autocomplete="off"></label>
+        <label class="catalog-sort"><span>Seřadit</span><select id="product-sort" aria-label="Seřadit produkty"><option value="recommended">Doporučené</option><option value="weakest">Nejslabší napřed</option><option value="newest">Nevyzkoušené napřed</option><option value="alphabetical">Podle názvu A–Z</option></select></label>
         <div class="view-switch" aria-label="Zobrazení produktů">
           <button type="button" data-catalog-view="grid" aria-label="Mřížka" aria-pressed="${view === 'grid'}" title="Mřížka"><span aria-hidden="true">▦</span><span>Mřížka</span></button>
           <button type="button" data-catalog-view="list" aria-label="Seznam" aria-pressed="${view === 'list'}" title="Seznam"><span aria-hidden="true">☷</span><span>Seznam</span></button>
@@ -575,10 +617,28 @@ function renderProducts() {
       const matchesLearning = activeFilter === 'all' || statusByProduct.get(product.id)?.[activeFilter];
       return matchesText && matchesLearning;
     });
+    filtered.sort((a, b) => {
+      const aStatus = statusByProduct.get(a.id);
+      const bStatus = statusByProduct.get(b.id);
+      const aMastery = productMastery(a.id, state.questions, state.progress);
+      const bMastery = productMastery(b.id, state.questions, state.progress);
+      if (activeSort === 'alphabetical') return a.name.localeCompare(b.name, 'cs');
+      if (activeSort === 'weakest') return aMastery - bMastery || a.name.localeCompare(b.name, 'cs');
+      if (activeSort === 'newest') return Number(bStatus.new) - Number(aStatus.new) || a.name.localeCompare(b.name, 'cs');
+      return Number(bStatus.due) - Number(aStatus.due)
+        || Number(bStatus.weak) - Number(aStatus.weak)
+        || Number(bStatus.new) - Number(aStatus.new)
+        || aMastery - bMastery
+        || a.name.localeCompare(b.name, 'cs');
+    });
     document.querySelector('#product-collection').innerHTML = productCollection(filtered, view);
     bindCommonActions();
   };
   document.querySelector('#product-search').addEventListener('input', updateProductCollection);
+  document.querySelector('#product-sort').addEventListener('change', (event) => {
+    activeSort = event.target.value;
+    updateProductCollection();
+  });
   document.querySelectorAll('[data-product-filter]').forEach((button) => button.addEventListener('click', () => {
     activeFilter = button.dataset.productFilter;
     document.querySelectorAll('[data-product-filter]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
@@ -588,6 +648,7 @@ function renderProducts() {
     state.settings = await storage.saveSettings({ productCatalogView: button.dataset.catalogView });
     renderProducts();
   }));
+  updateProductCollection();
 }
 
 function renderStats() {

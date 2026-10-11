@@ -768,7 +768,7 @@ textarea::placeholder { color: #82978c; }
   top: auto;
   width: min(calc(100% - 2rem), 62rem);
   min-height: 5.25rem;
-  margin: calc(max(env(safe-area-inset-top), .75rem) + 1rem) auto 0;
+  margin: calc(max(env(safe-area-inset-top), .75rem) + 1.5rem) auto 0;
   transform: none;
 }
 .catalog-tools {
@@ -997,4 +997,186 @@ textarea::placeholder { color: #82978c; }
 
 @media (prefers-reduced-motion: reduce) {
   .product-card { transition: none; }
+}
+
+/* Vizuální systém 2026: méně rámů, jasnější hierarchie a pokrok čitelný i bez barvy. */
+.home-page { max-width: 54rem; margin-inline: auto; }
+.home-page .daily-special {
+  overflow: hidden;
+  margin: .85rem 0 1rem;
+  border: 0;
+  border-radius: 1.55rem;
+  padding: 1.45rem;
+  background: radial-gradient(circle at 92% 8%, rgba(243,201,103,.12), transparent 30%), #103b2e;
+  box-shadow: 0 14px 34px rgba(0,0,0,.22);
+}
+.home-page .daily-special::before { display: none; }
+.home-page .daily-special h1 { max-width: 13ch; margin-top: .35rem; font-style: italic; }
+.home-page .daily-special .eyebrow { color: var(--lime); }
+.home-page .special-button { max-width: none; border-radius: .85rem; text-transform: none; letter-spacing: 0; }
+
+.mastery-ring {
+  --ring-size: 4.2rem;
+  --ring-thickness: .48rem;
+  position: relative;
+  flex: 0 0 auto;
+  width: var(--ring-size);
+  height: var(--ring-size);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: conic-gradient(var(--lime) calc(var(--mastery) * 1%), color-mix(in srgb, var(--muted) 32%, transparent) 0);
+}
+.mastery-ring::after {
+  content: "";
+  position: absolute;
+  inset: var(--ring-thickness);
+  border-radius: inherit;
+  background: var(--surface);
+}
+.mastery-ring-center { position: relative; z-index: 1; min-width: 0; display: grid; place-items: center; text-align: center; line-height: 1.05; }
+.mastery-ring-center strong { font-family: var(--display-font); font-size: .88rem; white-space: nowrap; }
+.mastery-ring-center small { display: block; max-width: calc(var(--ring-size) - 1.2rem); margin-top: .12rem; overflow: hidden; font-size: .52rem; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
+.mastery-ring-hero { --ring-size: 5rem; --ring-thickness: .55rem; color: var(--chalk); }
+.mastery-ring-hero::after { background: #103b2e; }
+.mastery-ring-hero .mastery-ring-center strong { font-size: 1.1rem; }
+.mastery-ring-large { --ring-size: 7rem; --ring-thickness: .68rem; }
+.mastery-ring-large .mastery-ring-center strong { font-size: 1.3rem; }
+.mastery-ring-category { --ring-size: 4.8rem; --ring-thickness: .5rem; }
+.mastery-ring-product { --ring-size: 2.7rem; --ring-thickness: .34rem; }
+.mastery-ring-product .mastery-ring-center strong { font-family: inherit; font-size: .62rem; }
+
+.best-next-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: .85rem;
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  padding: .85rem;
+  color: var(--ink);
+  background: var(--surface);
+  box-shadow: 0 6px 18px rgba(0,0,0,.1);
+  text-align: left;
+  cursor: pointer;
+}
+.best-next-card > span:nth-child(2) > * { display: block; }
+.best-next-card small { color: var(--brand); font-size: .65rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.best-next-card strong { margin-top: .15rem; font-family: var(--display-font); font-size: 1.05rem; }
+.best-next-card > span:nth-child(2) > span { margin-top: .12rem; color: var(--muted); font-size: .76rem; line-height: 1.35; }
+.best-next-card > b { color: var(--brand); font-size: .76rem; white-space: nowrap; }
+.best-next-icon { width: 2.8rem; height: 2.8rem; display: grid !important; place-items: center; border-radius: .8rem; color: #60430f; background: color-mix(in srgb, var(--lime) 58%, var(--surface)); font-size: 1.35rem; }
+
+.mastery-map { margin: 1.35rem 0; }
+.mastery-map .section-heading { margin-bottom: .75rem; }
+.mastery-map .section-heading .eyebrow { margin-bottom: .18rem; }
+.text-button { min-height: 2.6rem; border: 0; border-radius: .75rem; padding: .45rem .65rem; color: var(--brand); background: transparent; font-size: .78rem; font-weight: 850; cursor: pointer; }
+.mastery-overview { display: grid; grid-template-columns: minmax(9rem, .72fr) 1.55fr; gap: .75rem; }
+.overall-mastery,
+.category-mastery-card {
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  color: var(--ink);
+  background: var(--surface);
+}
+.overall-mastery { display: grid; place-items: center; align-content: center; gap: .65rem; padding: 1rem .7rem; text-align: center; }
+.overall-mastery > span:last-child strong,
+.overall-mastery > span:last-child small { display: block; }
+.overall-mastery > span:last-child strong { font-family: var(--display-font); font-size: 1.1rem; }
+.overall-mastery > span:last-child small { margin-top: .12rem; color: var(--muted); font-size: .68rem; }
+.category-mastery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; }
+.category-mastery-card { min-width: 0; display: grid; place-items: center; align-content: center; gap: .45rem; padding: .75rem .35rem; cursor: pointer; }
+.category-mastery-card > strong { width: 100%; overflow: hidden; font-size: .68rem; line-height: 1.2; text-align: center; text-overflow: ellipsis; white-space: nowrap; }
+.category-mastery-card > span:last-child { color: var(--muted); font-size: .65rem; font-weight: 750; }
+
+.training-more { margin: 1.25rem 0 1.5rem; border: 1px solid var(--line); border-radius: 1.15rem; background: var(--surface); }
+.training-more > summary { min-height: 4.4rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem; padding: .8rem 1rem; cursor: pointer; list-style: none; }
+.training-more > summary::-webkit-details-marker { display: none; }
+.training-more > summary strong,
+.training-more > summary small { display: block; }
+.training-more > summary strong { font-family: var(--display-font); }
+.training-more > summary small { margin-top: .15rem; color: var(--muted); font-size: .72rem; }
+.training-more > summary > span:last-child { font-size: 1.2rem; transition: transform .18s ease; }
+.training-more[open] > summary > span:last-child { transform: rotate(180deg); }
+.training-more .quick-menu { margin: 0; padding: 0 .8rem .75rem; }
+.training-more .training-modes-grid { margin: 0; padding: 0 .8rem .8rem; }
+
+/* Čistší katalog a jednotná fotografická plocha. */
+.catalog-tools { gap: .55rem; border: 1px solid var(--line); border-radius: 1.1rem; box-shadow: 0 7px 20px rgba(0,0,0,.1); }
+.catalog-sort { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: .55rem; color: var(--muted); font-size: .7rem; font-weight: 800; }
+.catalog-sort select { min-height: 2.8rem; width: 100%; padding-block: .45rem; }
+.product-grid { gap: .75rem; }
+.product-card { overflow: hidden; border: 1px solid var(--line); border-radius: 1.15rem; box-shadow: 0 6px 18px rgba(0,0,0,.09); }
+.product-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.14); }
+.product-image-stage { width: 100%; aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, #fff, #eee9df); }
+.product-card img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; padding: .55rem; filter: drop-shadow(0 .35rem .32rem rgba(35,29,20,.14)); }
+.product-card-body { padding: .7rem; }
+.product-card h2 { font-family: var(--display-font); font-size: .86rem; }
+.product-card p { margin-bottom: .55rem; }
+.product-progress { display: flex; align-items: center; gap: .55rem; }
+.product-progress > span:last-child strong,
+.product-progress > span:last-child small { display: block; }
+.product-progress > span:last-child strong { font-size: .66rem; }
+.product-progress > span:last-child small { margin-top: .08rem; color: var(--muted); font-size: .59rem; }
+.product-grid.is-list .product-card { grid-template-columns: 5rem 1fr; }
+.product-grid.is-list .product-image-stage { width: 5rem; height: 5.5rem; aspect-ratio: auto; }
+.product-grid.is-list .product-card img { width: 100%; height: 100%; }
+
+.mini-product img { object-fit: contain; padding: .2rem; }
+.bottom-nav { border-color: color-mix(in srgb, var(--line) 80%, transparent); background: color-mix(in srgb, var(--chalkboard) 96%, transparent); }
+.bottom-nav .nav-item.is-active { color: #2f2508; background: var(--lime); text-shadow: none; }
+
+/* Typografie: serif pouze pro značku a nadpisy, delší texty zůstávají v čitelném sans-serifu. */
+h1, h2, h3, .brand strong, .section-heading h2, .product-card h2 { font-family: var(--display-font); }
+p, li, dd, label, button, input, select, textarea, .option { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+:root[data-theme="light"] .mastery-ring::after { background: var(--surface); }
+:root[data-theme="light"] .mastery-ring-hero::after { background: #103b2e; }
+:root[data-theme="light"] .best-next-card,
+:root[data-theme="light"] .overall-mastery,
+:root[data-theme="light"] .category-mastery-card,
+:root[data-theme="light"] .training-more,
+:root[data-theme="light"] .product-card { color: var(--ink); background: #fffaf0; }
+:root[data-theme="light"] .catalog-tools { border: 1px solid var(--line); box-shadow: 0 7px 20px rgba(70,48,24,.09); }
+:root[data-theme="light"] .bottom-nav { border-color: var(--line); background: rgba(255,250,240,.97); box-shadow: 0 12px 30px rgba(70,48,24,.18); }
+:root[data-theme="light"] .bottom-nav .nav-item { color: #617168; text-shadow: none; }
+:root[data-theme="light"] .bottom-nav .nav-item.is-active { color: var(--chalk); background: #124333; }
+
+@media (min-width: 700px) {
+  .catalog-tools { grid-template-columns: minmax(14rem, 1fr) auto auto; }
+  .catalog-filters { grid-column: 1 / -1; }
+  .catalog-sort { min-width: 14rem; }
+}
+
+@media (max-width: 560px) {
+  .home-page .daily-special { padding: 1.25rem; }
+  .mastery-overview { grid-template-columns: 1fr; }
+  .overall-mastery { grid-template-columns: auto 1fr; justify-content: center; }
+  .category-mastery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .mastery-ring-category { --ring-size: 4.25rem; }
+  .best-next-card { grid-template-columns: auto 1fr; }
+  .best-next-card > b { grid-column: 2; justify-self: start; }
+}
+
+@media (max-width: 380px) {
+  .category-mastery-grid { grid-template-columns: 1fr; }
+  .category-mastery-card { grid-template-columns: auto 1fr auto; justify-items: start; padding-inline: .75rem; }
+  .category-mastery-card > strong { text-align: left; }
+}
+
+@media (prefers-contrast: more) {
+  .best-next-card,
+  .overall-mastery,
+  .category-mastery-card,
+  .training-more,
+  .catalog-tools,
+  .product-card { border-width: 2px; }
+  .eyebrow, .text-button, .best-next-card small { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; }
+}
+
+@media (forced-colors: active) {
+  .mastery-ring { border: 4px solid CanvasText; background: Canvas; }
+  .mastery-ring::after { background: Canvas; }
+  .bottom-nav .nav-item.is-active { outline: 2px solid Highlight; }
 }
