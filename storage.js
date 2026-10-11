@@ -15,6 +15,8 @@ const emptyState = () => ({
     enabledProductIds: null,
     archivedProductIds: [],
     productCatalogView: 'grid',
+    sessionMinutes: 5,
+    baselineCompleted: false,
   },
 });
 

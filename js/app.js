@@ -192,6 +192,7 @@ const state = {
   catalogProducts: [], catalogQuestions: [], products: [], questions: [], reviews: [], progress: {}, profile: null, settings: null,
   productNotes: {}, pendingProducts: [], currentView: 'home', session: null, homeProductIds: [],
 };
+const catalogState = { query: '', filter: 'all', sort: 'recommended', scrollY: 0, visited: false };
 
 const app = document.querySelector('#app');
 const profileDialog = document.querySelector('#profile-dialog');
@@ -348,6 +349,14 @@ function questionIsEnabled(question) {
   return enabledTypes.has(question.type) && enabledProducts.has(question.productId);
 }
 
+function sessionQuestionLimit() {
+  return ({ 3: 5, 5: 10, 10: 20 })[Number(state.settings?.sessionMinutes)] || 10;
+}
+
+function limitedQueue(queue) {
+  return queue.slice(0, sessionQuestionLimit());
+}
+
 function dueCount(now = new Date()) {
   return state.questions.filter((question) => questionIsEnabled(question) && state.progress[question.id] && new Date(state.progress[question.id].due) <= now).length;
 }
@@ -399,6 +408,8 @@ function setActiveNav(view) {
 
 function navigate(view) {
   hideBistrous();
+  const previousView = state.currentView;
+  if (previousView === 'products' && view !== 'products') catalogState.scrollY = window.scrollY;
   document.body.classList.remove('is-studying');
   state.currentView = view;
   state.session = view === 'study' ? state.session : null;
@@ -407,7 +418,12 @@ function navigate(view) {
   if (view === 'products') renderProducts();
   if (view === 'stats') renderStats();
   if (view === 'settings') renderSettings();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (view === 'products' && catalogState.visited) {
+    requestAnimationFrame(() => window.scrollTo({ top: catalogState.scrollY, behavior: 'instant' }));
+  } else {
+    window.scrollTo({ top: 0, behavior: previousView === view ? 'smooth' : 'instant' });
+  }
+  if (view === 'products') catalogState.visited = true;
 }
 
 function productRows(products = state.products) {
@@ -423,12 +439,12 @@ function productRows(products = state.products) {
 }
 
 function renderHome() {
-  const queue = buildStudyQueue({
+  const queue = limitedQueue(buildStudyQueue({
     ...state,
     newCardsPerDay: state.settings.newCardsPerDay,
     enabledQuestionTypes: state.settings.enabledQuestionTypes,
     enabledProductIds: selectedProductIds(),
-  });
+  }));
   const due = dueCount();
   const streak = calculateStreak(state.reviews);
   const insights = learningInsights(state);
@@ -441,6 +457,8 @@ function renderHome() {
   const enabledProductIds = new Set(selectedProductIds());
   const recognitionCount = photoChallengeQuestions().filter((question) => enabledProductIds.has(question.productId)).length;
   const comparisonCount = comparisonQuestions().length;
+  const scenarioCount = scenarioQuestions().length;
+  const showBaseline = !state.settings.baselineCompleted && state.reviews.length === 0;
   const overallMastery = totalMastery();
   const categoryHighlights = insights.categoryInsights.slice(0, 3);
   const nextAction = weakQueue.length
@@ -475,7 +493,7 @@ function renderHome() {
       <article class="hero-card daily-special">
         <div class="hero-top">
           <div class="special-copy">
-            <p class="eyebrow">Denní dávka · 5–10 minut</p>
+            <p class="eyebrow">Denní dávka · ${state.settings.sessionMinutes || 5} minut</p>
             <h1>${queue.length ? 'Upevněte, co má dnes smysl' : 'Dnes máte naservírováno'}</h1>
             <p>${queue.length ? `${due} k opakování · ${Math.max(0, queue.length - due)} nových otázek` : 'Skvělá práce. Další porce bude připravená později.'}</p>
           </div>
@@ -488,6 +506,10 @@ function renderHome() {
           </button>
         </div>
       </article>
+      ${showBaseline ? `<article class="focus-card baseline-card">
+        <div><p class="eyebrow">Začněte chytře</p><h2>Co už znáte?</h2><p>Krátký vstupní test rozloží otázky napříč kategoriemi. Výsledek rovnou nastaví první opakování, ale nic vám nezamkne.</p></div>
+        <button id="start-baseline" class="button button-primary" type="button">Spustit vstupní test</button>
+      </article>` : ''}
       <button id="best-next-action" class="best-next-card" type="button" data-next-action="${nextAction.action}">
         <span class="best-next-icon" aria-hidden="true">↗</span>
         <span><small>Nejlepší další krok</small><strong>${escapeHtml(nextAction.title)}</strong><span>${escapeHtml(nextAction.description)}</span></span>
@@ -512,17 +534,22 @@ function renderHome() {
         <button id="start-weak-home" class="menu-tile" type="button"><span class="menu-tile-icon" aria-hidden="true">⚡</span><span><strong>Co mi nejde</strong><small>${weakQueue.length ? `${weakQueue.length} otázek k upevnění` : 'Žádné slabé místo'}</small></span><b aria-hidden="true">›</b></button>
       </div>
       <details class="training-more">
-        <summary><span><strong>Další způsoby tréninku</strong><small>Foto výzva a porovnávání produktů</small></span><span aria-hidden="true">⌄</span></summary>
+        <summary><span><strong>Další způsoby tréninku</strong><small>Foto výzva, porovnávání a situace z bistra</small></span><span aria-hidden="true">⌄</span></summary>
         <div class="training-modes-grid">
           <article class="training-mode-card training-mode-photo">
             <span class="training-mode-icon" aria-hidden="true">◎</span>
             <div><p class="eyebrow">Fotografie jako kontext</p><h2>Foto výzva</h2><p>Otázky o kategorii, výrobci a vlastnostech bez opisování názvu z obalu.</p></div>
-            <button id="start-recognition" class="button button-secondary button-full" type="button" ${recognitionCount ? '' : 'disabled'}>Spustit · ${Math.min(10, recognitionCount)}</button>
+            <button id="start-recognition" class="button button-secondary button-full" type="button" ${recognitionCount ? '' : 'disabled'}>Spustit · ${Math.min(sessionQuestionLimit(), recognitionCount)}</button>
           </article>
           <article class="training-mode-card training-mode-compare">
             <span class="training-mode-icon" aria-hidden="true">⇄</span>
             <div><p class="eyebrow">Podobné vedle sebe</p><h2>Porovnávání</h2><p>Rozlište podobné produkty podle ověřených vlastností.</p></div>
-            <button id="start-comparison" class="button button-secondary button-full" type="button" ${comparisonCount ? '' : 'disabled'}>Spustit · ${Math.min(10, comparisonCount)}</button>
+            <button id="start-comparison" class="button button-secondary button-full" type="button" ${comparisonCount ? '' : 'disabled'}>Spustit · ${Math.min(sessionQuestionLimit(), comparisonCount)}</button>
+          </article>
+          <article class="training-mode-card training-mode-scenario">
+            <span class="training-mode-icon" aria-hidden="true">☕</span>
+            <div><p class="eyebrow">Nanečisto před zákazníkem</p><h2>Situace z bistra</h2><p>Praktické dotazy na složení, alergeny, přípravu a doporučení. Odpovědi vycházejí z ověřených produktových otázek.</p></div>
+            <button id="start-scenarios" class="button button-secondary button-full" type="button" ${scenarioCount ? '' : 'disabled'}>Spustit · ${Math.min(sessionQuestionLimit(), scenarioCount)}</button>
           </article>
         </div>
       </details>
@@ -531,6 +558,7 @@ function renderHome() {
     </section>`;
   bindCommonActions();
   document.querySelector('#start-study')?.addEventListener('click', startStudy);
+  document.querySelector('#start-baseline')?.addEventListener('click', startBaselineStudy);
   document.querySelector('#best-next-action')?.addEventListener('click', (event) => {
     const action = event.currentTarget.dataset.nextAction;
     if (action === 'weak') startWeakStudy(weakQueue);
@@ -541,6 +569,7 @@ function renderHome() {
   document.querySelector('#start-weak-home')?.addEventListener('click', () => startWeakStudy(weakQueue));
   document.querySelector('#start-recognition')?.addEventListener('click', startRecognitionStudy);
   document.querySelector('#start-comparison')?.addEventListener('click', startComparisonStudy);
+  document.querySelector('#start-scenarios')?.addEventListener('click', startScenarioStudy);
   document.querySelectorAll('[data-home-category]').forEach((button) => button.addEventListener('click', () => startTopicStudy(button.dataset.homeCategory)));
 }
 
@@ -590,21 +619,21 @@ function renderProducts() {
     { id: 'weak', label: 'Slabé', count: state.products.filter((product) => statusByProduct.get(product.id).weak).length },
     { id: 'mastered', label: 'Zvládnuté', count: state.products.filter((product) => statusByProduct.get(product.id).mastered).length },
   ];
-  let activeFilter = 'all';
-  let activeSort = 'recommended';
+  let activeFilter = filters.some((filter) => filter.id === catalogState.filter) ? catalogState.filter : 'all';
+  let activeSort = ['recommended', 'weakest', 'newest', 'alphabetical'].includes(catalogState.sort) ? catalogState.sort : 'recommended';
   app.innerHTML = `
     <section class="page">
       <header class="page-header catalog-header"><div><p class="eyebrow">Katalog · ${state.products.length} produktů</p><h1>Produkty</h1><p>Vyhledejte produkt nebo si katalog seřaďte tak, jak se vám učí nejlépe.</p></div></header>
       <div class="catalog-tools">
-        <label class="catalog-search"><span class="visually-hidden">Hledat produkt</span><input id="product-search" type="search" placeholder="Hledat produkt nebo kategorii…" autocomplete="off"></label>
-        <label class="catalog-sort"><span>Seřadit</span><select id="product-sort" aria-label="Seřadit produkty"><option value="recommended">Doporučené</option><option value="weakest">Nejslabší napřed</option><option value="newest">Nevyzkoušené napřed</option><option value="alphabetical">Podle názvu A–Z</option></select></label>
+        <label class="catalog-search"><span class="visually-hidden">Hledat produkt</span><input id="product-search" type="search" value="${escapeHtml(catalogState.query)}" placeholder="Hledat produkt nebo kategorii…" autocomplete="off"></label>
+        <label class="catalog-sort"><span>Seřadit</span><select id="product-sort" aria-label="Seřadit produkty"><option value="recommended" ${activeSort === 'recommended' ? 'selected' : ''}>Doporučené</option><option value="weakest" ${activeSort === 'weakest' ? 'selected' : ''}>Nejslabší napřed</option><option value="newest" ${activeSort === 'newest' ? 'selected' : ''}>Nevyzkoušené napřed</option><option value="alphabetical" ${activeSort === 'alphabetical' ? 'selected' : ''}>Podle názvu A–Z</option></select></label>
         <div class="view-switch" aria-label="Zobrazení produktů">
           <button type="button" data-catalog-view="grid" aria-label="Mřížka" aria-pressed="${view === 'grid'}" title="Mřížka"><span aria-hidden="true">▦</span><span>Mřížka</span></button>
           <button type="button" data-catalog-view="list" aria-label="Seznam" aria-pressed="${view === 'list'}" title="Seznam"><span aria-hidden="true">☷</span><span>Seznam</span></button>
           <button type="button" data-catalog-view="category" aria-label="Kategorie" aria-pressed="${view === 'category'}" title="Podle kategorií"><span aria-hidden="true">≡</span><span>Kategorie</span></button>
         </div>
         <div class="catalog-filters" aria-label="Filtrovat produkty podle učení">
-          ${filters.map((filter) => `<button type="button" data-product-filter="${filter.id}" aria-pressed="${filter.id === 'all'}"><span>${filter.label}</span><strong>${filter.count}</strong></button>`).join('')}
+          ${filters.map((filter) => `<button type="button" data-product-filter="${filter.id}" aria-pressed="${filter.id === activeFilter}"><span>${filter.label}</span><strong>${filter.count}</strong></button>`).join('')}
         </div>
       </div>
       <div id="product-collection">${productCollection(state.products, view)}</div>
@@ -635,18 +664,23 @@ function renderProducts() {
     bindCommonActions();
   };
   document.querySelector('#product-search').addEventListener('input', updateProductCollection);
+  document.querySelector('#product-search').addEventListener('input', (event) => { catalogState.query = event.target.value; });
   document.querySelector('#product-sort').addEventListener('change', (event) => {
     activeSort = event.target.value;
+    catalogState.sort = activeSort;
     updateProductCollection();
   });
   document.querySelectorAll('[data-product-filter]').forEach((button) => button.addEventListener('click', () => {
     activeFilter = button.dataset.productFilter;
+    catalogState.filter = activeFilter;
     document.querySelectorAll('[data-product-filter]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
     updateProductCollection();
   }));
   document.querySelectorAll('[data-catalog-view]').forEach((button) => button.addEventListener('click', async () => {
+    catalogState.scrollY = window.scrollY;
     state.settings = await storage.saveSettings({ productCatalogView: button.dataset.catalogView });
     renderProducts();
+    requestAnimationFrame(() => window.scrollTo({ top: catalogState.scrollY, behavior: 'instant' }));
   }));
   updateProductCollection();
 }
@@ -753,6 +787,10 @@ function renderSettings() {
           <div class="field-row"><div><h2>Nové otázky denně</h2><p>Opakování mají vždy přednost.</p></div>
           <select id="new-limit" aria-label="Počet nových otázek denně">${[3, 5, 10, 15].map((n) => `<option value="${n}" ${state.settings.newCardsPerDay === n ? 'selected' : ''}>${n}</option>`).join('')}</select></div>
         </article>
+        <article class="settings-card">
+          <div class="field-row"><div><h2>Délka jednoho tréninku</h2><p>Krátká dávka má přibližně 5, běžná 10 a delší 20 otázek.</p></div>
+          <select id="session-minutes" aria-label="Délka jednoho tréninku">${[3, 5, 10].map((minutes) => `<option value="${minutes}" ${Number(state.settings.sessionMinutes || 5) === minutes ? 'selected' : ''}>${minutes} min</option>`).join('')}</select></div>
+        </article>
         <details class="settings-card collapsible-settings" id="question-type-details">
           <summary>
             <span><strong>Typy otázek v testu</strong><small id="question-types-summary">${describeQuestionTypes(enabledQuestionTypes)}</small></span>
@@ -836,9 +874,10 @@ function renderSettings() {
           <div class="field-row"><div><h2>Vzhled</h2><p>Světlý, tmavý nebo podle telefonu.</p></div>
           <select id="theme" aria-label="Barevný režim"><option value="system">Podle telefonu</option><option value="light">Světlý</option><option value="dark">Tmavý</option></select></div>
         </article>
-        <article class="settings-card"><h2>Záloha pokroku</h2><p>Soubor obsahuje váš profil, nastavení a nezměnitelnou historii opakování. Hodí se při výměně telefonu.</p>
-          <div class="action-row"><button id="export" class="button button-secondary" type="button">Exportovat</button><button id="import" class="button button-secondary" type="button">Importovat</button></div>
+        <article class="settings-card"><h2>Záloha pokroku</h2><p>Soubor obsahuje váš profil, nastavení a nezměnitelnou historii opakování. Můžete ho rovnou sdílet do druhého telefonu a tam zvolit Importovat.</p>
+          <div class="action-row"><button id="share-backup" class="button button-primary" type="button">Sdílet zálohu</button><button id="export" class="button button-secondary" type="button">Stáhnout</button><button id="import" class="button button-secondary" type="button">Importovat</button></div>
         </article>
+        <article class="settings-card"><h2>Vstupní test</h2><p>${state.settings.baselineCompleted ? 'Vstupní test už proběhl. Kdykoli si ho můžete zopakovat bez smazání dosavadního pokroku.' : 'Krátký průřez kategoriemi pomůže nastavit první opakování.'}</p><button id="restart-baseline" class="button button-secondary" type="button">${state.settings.baselineCompleted ? 'Spustit znovu' : 'Spustit vstupní test'}</button></article>
         <article class="settings-card"><h2>Identita zařízení</h2><p>ID: <code>${escapeHtml(state.profile.userId)}</code></p><button id="edit-profile" class="button button-secondary" type="button">Upravit přezdívku</button></article>
       </div>
     </section>`;
@@ -857,6 +896,10 @@ function renderSettings() {
   document.querySelector('#new-limit').addEventListener('change', async (event) => {
     state.settings = await storage.saveSettings({ newCardsPerDay: Number(event.target.value) });
     showToast('Denní limit je uložený.');
+  });
+  document.querySelector('#session-minutes').addEventListener('change', async (event) => {
+    state.settings = await storage.saveSettings({ sessionMinutes: Number(event.target.value) });
+    showToast(`Trénink nastavený přibližně na ${event.target.value} minut.`);
   });
   document.querySelectorAll('input[name="question-type"]').forEach((checkbox) => {
     checkbox.addEventListener('change', async (event) => {
@@ -932,7 +975,9 @@ function renderSettings() {
     applyTheme(state.settings.theme);
   });
   document.querySelector('#export').addEventListener('click', exportBackup);
+  document.querySelector('#share-backup').addEventListener('click', shareBackup);
   document.querySelector('#import').addEventListener('click', () => document.querySelector('#import-file').click());
+  document.querySelector('#restart-baseline').addEventListener('click', startBaselineStudy);
   document.querySelector('#edit-profile').addEventListener('click', openProfileDialog);
 }
 
@@ -970,6 +1015,7 @@ function openProduct(id) {
       <h3>Použití a uchování</h3><ol>${product.preparation.map((step) => `<li>${renderGlossaryText(step)}</li>`).join('')}</ol>
       ${product.brandInfo ? `<h3>O značce</h3><p>${renderGlossaryText(product.brandInfo)}</p>` : ''}
       <h3>Doporučení k prodeji</h3><p class="sales-tip">${renderGlossaryText(product.salesTip)}</p>
+      <button id="study-product" class="button button-primary button-full" type="button">Procvičit tento produkt</button>
       ${sources ? `<h3>Zdroje informací</h3><div class="source-links">${sources}</div>` : ''}
       <form id="product-note-form" class="product-note-form">
         <label for="product-note">Moje poznámka</label>
@@ -992,6 +1038,20 @@ function openProduct(id) {
     if (value) state.productNotes[product.id] = value;
     else delete state.productNotes[product.id];
     showToast(value ? 'Poznámka je uložená.' : 'Poznámka je odstraněná.');
+  });
+  productDialog.querySelector('#study-product').addEventListener('click', () => {
+    const queue = buildTopicStudyQueue({
+      ...state,
+      enabledQuestionTypes: state.settings.enabledQuestionTypes,
+      enabledProductIds: [product.id],
+      limit: sessionQuestionLimit(),
+    });
+    if (!queue.length) {
+      showToast('Pro tento produkt nejsou ve vybraných typech dostupné otázky.');
+      return;
+    }
+    productDialog.close();
+    startStudySession(queue, 'product');
   });
   productDialog.querySelector('#archive-product').addEventListener('click', async () => {
     if (!window.confirm(`Opravdu vyřadit produkt „${product.name}“? Pokrok zůstane zachovaný.`)) return;
@@ -1017,6 +1077,33 @@ function startStudy() {
   startStudySession(queue, 'daily');
 }
 
+function baselineQuestions() {
+  const enabledProducts = new Set(selectedProductIds());
+  const enabledTypes = new Set(state.settings.enabledQuestionTypes || Object.keys(TYPE_LABELS));
+  const products = shuffledCopy(state.products.filter((product) => enabledProducts.has(product.id)));
+  const categoryOrder = shuffledCopy([...new Set(products.map((product) => product.category))]);
+  const categorySamples = categoryOrder.map((category) => products.find((product) => product.category === category)).filter(Boolean);
+  const sampledIds = new Set(categorySamples.map((product) => product.id));
+  const orderedProducts = [...categorySamples, ...products.filter((product) => !sampledIds.has(product.id))];
+  const candidates = orderedProducts.map((product) => {
+    const questions = state.questions.filter((question) => question.productId === product.id && enabledTypes.has(question.type));
+    return questions.find((question) => question.type === 'mcq')
+      || questions.find((question) => question.type === 'photo')
+      || questions.find((question) => question.type === 'text')
+      || questions[0];
+  }).filter(Boolean);
+  return [...new Map(candidates.map((question) => [question.productId, question])).values()].slice(0, sessionQuestionLimit());
+}
+
+function startBaselineStudy() {
+  const queue = baselineQuestions();
+  if (!queue.length) {
+    showToast('Pro vstupní test nejsou dostupné otázky.');
+    return;
+  }
+  startStudySession(queue, 'baseline');
+}
+
 function startWeakStudy(queue = null) {
   const weakQueue = queue || buildWeakStudyQueue({
     ...state,
@@ -1031,13 +1118,14 @@ function startWeakStudy(queue = null) {
 }
 
 function startRecognitionStudy() {
+  const limit = sessionQuestionLimit();
   const enabledProducts = new Set(selectedProductIds());
   const available = photoChallengeQuestions().filter((question) => enabledProducts.has(question.productId));
-  const groups = shuffledCopy([...new Set(available.map((question) => question.productId))]).slice(0, 5);
+  const groups = shuffledCopy([...new Set(available.map((question) => question.productId))]).slice(0, Math.ceil(limit / 2));
   const queue = groups.flatMap((productId) => shuffledCopy(available.filter((question) => question.productId === productId)).slice(0, 2));
-  if (queue.length < 10) {
+  if (queue.length < limit) {
     const selectedIds = new Set(queue.map((question) => question.id));
-    queue.push(...shuffledCopy(available.filter((question) => !selectedIds.has(question.id))).slice(0, 10 - queue.length));
+    queue.push(...shuffledCopy(available.filter((question) => !selectedIds.has(question.id))).slice(0, limit - queue.length));
   }
   if (!queue.length) {
     showToast('Pro vybrané produkty nejsou dostupné fotografické otázky.');
@@ -1166,12 +1254,44 @@ function comparisonQuestions() {
 }
 
 function startComparisonStudy() {
-  const queue = shuffledCopy(comparisonQuestions()).slice(0, 10);
+  const queue = shuffledCopy(comparisonQuestions()).slice(0, sessionQuestionLimit());
   if (!queue.length) {
     showToast('Pro aktuální výběr produktů nejsou dostupná porovnání.');
     return;
   }
   startStudySession(queue, 'comparison');
+}
+
+function scenarioQuestions() {
+  const enabledProducts = new Set(selectedProductIds());
+  const enabledTypes = new Set(state.settings.enabledQuestionTypes || Object.keys(TYPE_LABELS));
+  const eligible = state.questions.filter((question) => enabledProducts.has(question.productId)
+    && enabledTypes.has(question.type)
+    && question.type !== 'photo'
+    && /alergen|složen|obsahuje|příprav|připrav|servír|použit|výrobc|značk|specif|doporuč|prodej/i.test(question.prompt));
+  return eligible.map((question) => {
+    const prompt = /alergen|složen|obsahuje/i.test(question.prompt)
+      ? `Zákazník se ptá na složení a alergeny. ${question.prompt}`
+      : /příprav|připrav|servír|použit/i.test(question.prompt)
+        ? `Kolega potřebuje poradit s přípravou nebo použitím. ${question.prompt}`
+        : `Zákazník se rozhoduje u regálu. ${question.prompt}`;
+    return { ...question, format: 'scenario', prompt };
+  });
+}
+
+function startScenarioStudy() {
+  const candidates = shuffledCopy(scenarioQuestions());
+  const byProduct = new Map();
+  for (const question of candidates) {
+    if (!byProduct.has(question.productId)) byProduct.set(question.productId, question);
+  }
+  const diverse = [...byProduct.values(), ...candidates.filter((question) => ![...byProduct.values()].includes(question))];
+  const queue = diverse.slice(0, sessionQuestionLimit());
+  if (!queue.length) {
+    showToast('Pro aktuální výběr nejsou dostupné situační otázky.');
+    return;
+  }
+  startStudySession(queue, 'scenario');
 }
 
 function openTopicDialog() {
@@ -1206,7 +1326,7 @@ function startTopicStudy(category) {
     ...state,
     enabledQuestionTypes: state.settings.enabledQuestionTypes,
     enabledProductIds: categoryProductIds,
-    limit: 10,
+    limit: sessionQuestionLimit(),
   });
   if (!queue.length) {
     showToast('Pro toto téma nejsou dostupné otázky.');
@@ -1217,7 +1337,7 @@ function startTopicStudy(category) {
 }
 
 function startStudySession(queue, mode) {
-  const preparedQueue = queue.map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
+  const preparedQueue = limitedQueue(queue).map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
   state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mascotQuizShows: 0, mode };
   state.currentView = 'study';
   document.body.classList.add('is-studying');
@@ -1271,7 +1391,7 @@ function renderQuestion() {
   const product = state.products.find((item) => item.id === question.productId);
   const image = question.type === 'photo' ? `<img class="question-image" src="${question.image}" alt="Produkt k poznání">` : '';
   const productHint = question.type === 'photo' ? 'Název na obalu není odpověď' : question.format === 'comparison' ? 'Podobné produkty' : product.name;
-  const typeLabel = question.format === 'comparison' ? 'Porovnání' : TYPE_LABELS[question.type];
+  const typeLabel = question.format === 'comparison' ? 'Porovnání' : question.format === 'scenario' ? 'Situace z bistra' : TYPE_LABELS[question.type];
   const progressPercent = (state.session.index / state.session.queue.length) * 100;
   const brainHeat = progressPercent < 34 ? 'Mozek se rozehřívá' : progressPercent < 75 ? 'Mozek zahřátý' : 'Mozek jede naplno';
   let control = '';
@@ -1286,7 +1406,7 @@ function renderQuestion() {
     <div class="study-toolbar"><button id="close-study" class="icon-button" type="button" aria-label="Ukončit trénink">×</button>
       <div class="study-progress"><div class="progress-track"><span style="width:${progressPercent}%"></span></div><small>${brainHeat}</small></div>
       <span class="study-counter">${state.session.index + 1}/${state.session.queue.length}</span></div>
-    <article class="study-card"><div class="question-meta"><span class="type-pill">${typeLabel}</span><span>${escapeHtml(productHint)}</span></div>
+    <article class="study-card">${question.isRecovery ? '<p class="recovery-context">Krátké srovnání po chybě — nejdřív si upevněte souvislost, potom přijde kontrolní otázka.</p>' : ''}<div class="question-meta"><span class="type-pill">${typeLabel}</span><span>${escapeHtml(productHint)}</span></div>
       ${image}${comparisonPreview(question)}<h1>${escapeHtml(question.prompt)}</h1><div id="answer-area">${control}</div><div id="feedback"></div>
     </article></section>`;
   document.querySelector('#close-study').addEventListener('click', () => navigate('home'));
@@ -1399,10 +1519,11 @@ function formatInterval(date) {
 }
 
 async function recordReview(question, rating, correct, selectedAnswer = null) {
-  const previousReviews = state.reviews.filter((review) => review.questionId === question.id);
+  const canonicalQuestionId = question.sourceQuestionId || question.id;
+  const previousReviews = state.reviews.filter((review) => review.questionId === canonicalQuestionId);
   const wasNew = previousReviews.length === 0;
   const review = {
-    id: crypto.randomUUID(), userId: state.profile.userId, questionId: question.id,
+    id: crypto.randomUUID(), userId: state.profile.userId, questionId: canonicalQuestionId,
     productId: question.productId,
     rating,
     wasCorrect: Boolean(correct),
@@ -1414,15 +1535,21 @@ async function recordReview(question, rating, correct, selectedAnswer = null) {
   };
   await storage.appendReview(review);
   state.reviews.push(review);
-  const history = state.reviews.filter((item) => item.questionId === question.id);
-  state.progress[question.id] = rebuildProgress(history);
-  await storage.saveQuestionProgress(question.id, state.progress[question.id]);
-  state.session.answers.push({ questionId: question.id, productId: question.productId, correct, rating });
-  const remainingQuestions = state.session.queue.length - state.session.index - 1;
-  if (rating <= RATINGS.HARD && remainingQuestions >= 3 && !state.session.retryIds.has(question.id)) {
-    const insertAt = Math.min(state.session.queue.length, state.session.index + 4);
-    state.session.queue.splice(insertAt, 0, question);
-    state.session.retryIds.add(question.id);
+  const history = state.reviews.filter((item) => item.questionId === canonicalQuestionId);
+  state.progress[canonicalQuestionId] = rebuildProgress(history);
+  await storage.saveQuestionProgress(canonicalQuestionId, state.progress[canonicalQuestionId]);
+  state.session.answers.push({ questionId: canonicalQuestionId, productId: question.productId, correct, rating });
+  if (rating <= RATINGS.HARD && !question.isRecovery && !question.isRecoveryCheck && !state.session.retryIds.has(canonicalQuestionId)) {
+    const comparison = comparisonQuestions().find((item) => item.productId === question.productId && item.id !== canonicalQuestionId);
+    const related = comparison
+      ? { ...comparison, id: `recovery-${canonicalQuestionId}-${comparison.id}`, sourceQuestionId: comparison.id, isRecovery: true }
+      : state.questions.find((item) => item.productId === question.productId && item.id !== canonicalQuestionId && questionIsEnabled(item));
+    const recoveryQuestion = related && !related.isRecovery ? { ...related, isRecovery: true } : related;
+    const comparisonAt = Math.min(state.session.queue.length, state.session.index + 2);
+    if (recoveryQuestion) state.session.queue.splice(comparisonAt, 0, recoveryQuestion);
+    const checkAt = Math.min(state.session.queue.length, state.session.index + (recoveryQuestion ? 4 : 3));
+    state.session.queue.splice(checkAt, 0, { ...question, id: `check-${canonicalQuestionId}`, sourceQuestionId: canonicalQuestionId, isRecoveryCheck: true });
+    state.session.retryIds.add(canonicalQuestionId);
   }
   return bistrousAchievement(correct, previousReviews);
 }
@@ -1446,9 +1573,17 @@ function renderSummary() {
     const product = state.products.find((item) => item.id === productId);
     return `<li><span>${escapeHtml(product?.name || productId)}</span><strong>${count}×</strong></li>`;
   }).join('');
-  const summaryLabel = state.session.mode === 'recognition' ? 'Foto výzva dokončena' : state.session.mode === 'comparison' ? 'Porovnávání dokončeno' : 'Dávka dokončena';
+  const summaryLabel = state.session.mode === 'recognition' ? 'Foto výzva dokončena'
+    : state.session.mode === 'comparison' ? 'Porovnávání dokončeno'
+    : state.session.mode === 'scenario' ? 'Situace z bistra dokončeny'
+    : state.session.mode === 'baseline' ? 'Vstupní test dokončen'
+    : 'Dávka dokončena';
   const achievement = accuracy === 100 ? 'Pán etikety' : accuracy >= 80 ? 'Postrach regálů' : accuracy >= 60 ? 'Krotitel sortimentu' : 'Vytrvalý ochutnávač';
   const dailyGoalCompleted = state.session.mode === 'daily';
+  if (state.session.mode === 'baseline' && !state.settings.baselineCompleted) {
+    state.settings = { ...state.settings, baselineCompleted: true };
+    storage.saveSettings({ baselineCompleted: true });
+  }
   app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">${summaryLabel}</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
     <div class="achievement-badge"><span aria-hidden="true">★</span><div><small>Dnešní titul</small><strong>${achievement}</strong></div></div>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
@@ -1475,14 +1610,29 @@ function openProfileDialog(force = false) {
 
 async function exportBackup() {
   const payload = await storage.exportData();
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
+  const file = new File([JSON.stringify(payload, null, 2)], `bistro-pokrok-${new Date().toISOString().slice(0, 10)}.json`, { type: 'application/json' });
+  const url = URL.createObjectURL(file);
   const anchor = document.createElement('a');
   anchor.href = url;
-  anchor.download = `bistro-pokrok-${new Date().toISOString().slice(0, 10)}.json`;
+  anchor.download = file.name;
   anchor.click();
   URL.revokeObjectURL(url);
   showToast('Záloha je stažená.');
+}
+
+async function shareBackup() {
+  const payload = await storage.exportData();
+  const file = new File([JSON.stringify(payload, null, 2)], `bistro-pokrok-${new Date().toISOString().slice(0, 10)}.json`, { type: 'application/json' });
+  if (!navigator.share || (navigator.canShare && !navigator.canShare({ files: [file] }))) {
+    await exportBackup();
+    showToast('Sdílení souborů tu není dostupné. Záloha se stáhla.');
+    return;
+  }
+  try {
+    await navigator.share({ title: 'Bistro do hlavy – záloha pokroku', text: 'Na druhém zařízení soubor načtěte v Nastavení → Importovat.', files: [file] });
+  } catch (error) {
+    if (error.name !== 'AbortError') showToast('Zálohu se nepodařilo sdílet.');
+  }
 }
 
 async function importBackup(file) {
