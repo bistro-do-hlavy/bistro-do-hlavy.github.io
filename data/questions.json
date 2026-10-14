@@ -4904,6 +4904,38 @@
     "sourceUrl": "https://www.bodegashabla.com/en/product/habla-del-silencio/"
   },
   {
+    "id": "habla-del-silencio-750-ml-q9",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "mcq",
+    "prompt": "Který chuťový popis nejlépe odpovídá vínu Habla del Silencio?",
+    "options": [
+      "Svěží a masité, s ovocnými tóny a čokoládovou višní",
+      "Lehké a citrusové, s tóny limetky a zeleného jablka",
+      "Výrazně sladké, s medem a sušenými meruňkami",
+      "Velmi tříslovité, bez ovocných tónů"
+    ],
+    "answer": "Svěží a masité, s ovocnými tóny a čokoládovou višní",
+    "explanation": "Vinařství popisuje víno jako svěží a masité, s množstvím ovocných tónů a připomínkou čokoládové višně.",
+    "sourceLabel": "Výrobce – degustační poznámky",
+    "sourceUrl": "https://www.bodegashabla.com/en/product/habla-del-silencio/"
+  },
+  {
+    "id": "habla-del-silencio-750-ml-q10",
+    "productId": "habla-del-silencio-750-ml",
+    "type": "mcq",
+    "prompt": "S čím vinařství představilo Habla del Silencio jako netradiční párování?",
+    "options": [
+      "S čokoládovými pralinkami",
+      "S ústřicemi a citronem",
+      "S ovocným sorbetem",
+      "S lehkým zeleninovým salátem"
+    ],
+    "answer": "S čokoládovými pralinkami",
+    "explanation": "Bodegas HABLA představilo Habla del Silencio v kombinaci s čokoládovými pralinkami Trapa.",
+    "sourceLabel": "Výrobce – doporučené párování",
+    "sourceUrl": "https://www.bodegashabla.com/bodegas-habla-chocolates-trapa-regalo-gourmet-tendencia-navidad/"
+  },
+  {
     "id": "honoro-vera-ecologico-monastrell-750-ml-q7",
     "productId": "honoro-vera-ecologico-monastrell-750-ml",
     "type": "mcq",
@@ -4927,6 +4959,38 @@
     "answer": "certifikované ekologické vinice",
     "explanation": "Tuto vlastnost uvádí výrobce nebo značka ve svých produktových informacích.",
     "sourceLabel": "Výrobce – detail produktu",
+    "sourceUrl": "https://store.gilfamily.es/products/item/honoro_vera_ecologico/en"
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q9",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "mcq",
+    "prompt": "Jaký chuťový a aromatický profil uvádí výrobce u Honoro Vera Ecológico?",
+    "options": [
+      "Květinové a zralé ovocné tóny, balsamikové pozadí a svěží chuť",
+      "Citrusy, zelené jablko a výrazná slanost",
+      "Med, rozinky a velmi sladká chuť",
+      "Kouř, rašelina a vysoký obsah alkoholu"
+    ],
+    "answer": "Květinové a zralé ovocné tóny, balsamikové pozadí a svěží chuť",
+    "explanation": "Výrobce uvádí květinové tóny, zralé ovoce, balsamikové pozadí a vyváženou svěží chuť s příjemnou kyselinou.",
+    "sourceLabel": "Výrobce – degustační poznámky",
+    "sourceUrl": "https://store.gilfamily.es/products/item/honoro_vera_ecologico/en"
+  },
+  {
+    "id": "honoro-vera-ecologico-monastrell-750-ml-q10",
+    "productId": "honoro-vera-ecologico-monastrell-750-ml",
+    "type": "mcq",
+    "prompt": "Která skupina jídel se podle výrobce hodí k Honoro Vera Ecológico?",
+    "options": [
+      "Houby, luštěniny, kozí sýry a grilované maso",
+      "Pouze sladké dezerty a zmrzlina",
+      "Jen syrové ústřice a mušle",
+      "Výhradně jemné ovocné saláty"
+    ],
+    "answer": "Houby, luštěniny, kozí sýry a grilované maso",
+    "explanation": "Výrobce doporučuje mimo jiné houby, luštěniny, kozí sýry a bílé i červené maso z grilu.",
+    "sourceLabel": "Výrobce – párování s jídlem",
     "sourceUrl": "https://store.gilfamily.es/products/item/honoro_vera_ecologico/en"
   },
   {
@@ -4958,6 +5022,38 @@
       "honoro-vera-ecologico-monastrell-750-ml",
       "habla-del-silencio-750-ml"
     ]
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q9",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "mcq",
+    "prompt": "Které tóny jsou typické pro Condado de Oriza Roble podle výrobce?",
+    "options": [
+      "Třešně, švestky, sladké koření, lékořice a pražená káva",
+      "Citron, angrešt, tráva a bezový květ",
+      "Broskev, med, vanilka a kokos",
+      "Jahody, meloun a růžové květy"
+    ],
+    "answer": "Třešně, švestky, sladké koření, lékořice a pražená káva",
+    "explanation": "Výrobce uvádí zralé třešně a švestky, sladké koření, lékořici a tóny pražené kávy.",
+    "sourceLabel": "Výrobce – degustační poznámky",
+    "sourceUrl": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/"
+  },
+  {
+    "id": "condado-de-oriza-roble-750-ml-q10",
+    "productId": "condado-de-oriza-roble-750-ml",
+    "type": "mcq",
+    "prompt": "Které jídlo výrobce doporučuje k Condado de Oriza Roble?",
+    "options": [
+      "Jehněčí kotlety, vyzrálý sýr nebo datle ve slanině",
+      "Citronový sorbet a čerstvé ovoce",
+      "Ústřice a lehké ceviche",
+      "Jemný zeleninový vývar bez koření"
+    ],
+    "answer": "Jehněčí kotlety, vyzrálý sýr nebo datle ve slanině",
+    "explanation": "Výrobce doporučuje jehněčí kotlety, koláče, vyzrálý či polotvrdý sýr a datle obalené slaninou.",
+    "sourceLabel": "Výrobce – párování s jídlem",
+    "sourceUrl": "https://felixsolisavantis.com/en/wine/condado-de-oriza-roble/"
   },
   {
     "id": "henri-willig-gouda-chili-hot-spicy-50-plus-500-g-q9",
