@@ -227,6 +227,46 @@ const ROMAN_LINES = {
     'Hledám, kam Roman schoval správnou odpověď.',
   ],
 };
+const SPICY_LINES = {
+  wrong: [
+    'Do prdele, tohle nám ujelo.',
+    'No dobře, tahle odpověď stála za hovno. Jedeme dál.',
+    'To byl takový úlet, že i etiketa protočila oči.',
+    'Sakra. Mozek dneska prodává prázdné regály.',
+    'Tohle se posralo někde mezi otázkou a odpovědí.',
+    'Špatně. Ale aspoň sebevědomě, kurva.',
+    'Taková blbost, až je skoro umělecká.',
+    'Průser malý, paměťová stopa velká.',
+    'Trefa úplně do prdele vedle.',
+    'Nevadí. Z chyb se učí. Z těchhle obzvlášť.',
+  ],
+  success: [
+    'Jo! Tohle sedlo jak prdel na hrnec.',
+    'Kurva dobrá práce.',
+    'Tak se to dělá, žádné sraní.',
+    'Správně. Etiketa může jít do háje.',
+    'Tohle bylo zatraceně přesné.',
+    'Mozek šlape jak dobře namazaný kávovar.',
+    'Výborně. Žádná náhoda, ale poctivá palba.',
+    'Tak jo, tohle už fakt umíte.',
+  ],
+  streak: [
+    'Jedete jak hovado. V tom dobrém.',
+    'Sakra, vy dneska nemáte brzdu.',
+    'Tahle série je kurevsky dobrá.',
+    'Regály se mohou jít bodnout.',
+  ],
+  goal: [
+    'Hotovo. Teď už můžete mít všechno u prdele.',
+    'Denní cíl splněn. Kurva, to bylo pěkné.',
+    'Odmakáno. Mozek může hodit nohy na stůl.',
+    'Dneska už vás žádný produkt srát nebude.',
+  ],
+  return: [
+    'Tak jsme zase tady. Výmluvy nechte za dveřmi.',
+    'Jdeme na to, než mozek začne dělat kraviny.',
+  ],
+};
 let mascotMomentTimer;
 let lastBistrousLine = '';
 const loadingCopy = document.querySelector('.loading-state p');
@@ -321,6 +361,15 @@ async function takeRomanLine(group, chance = 1) {
   const line = choices[Math.floor(Math.random() * choices.length)] || lines[0];
   const shownAt = new Date().toISOString();
   state.settings = await storage.saveSettings({ lastRomanLineAt: shownAt });
+  lastBistrousLine = line;
+  return line;
+}
+
+function takeSpicyLine(group, chance = 1) {
+  const lines = SPICY_LINES[group] || [];
+  if (!lines.length || Math.random() > chance) return null;
+  const choices = lines.filter((line) => line !== lastBistrousLine);
+  const line = choices[Math.floor(Math.random() * choices.length)] || lines[0];
   lastBistrousLine = line;
   return line;
 }
@@ -1504,10 +1553,10 @@ function questionSourceLink(question) {
 
 async function bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery) {
   if (rating === RATINGS.AGAIN && state.session.mascotWrongShows < 1) {
-    const romanLine = await takeRomanLine('wrong');
-    if (romanLine) {
+    const wrongLine = await takeRomanLine('wrong') || takeSpicyLine('wrong', .75);
+    if (wrongLine) {
       state.session.mascotWrongShows += 1;
-      return romanLine;
+      return wrongLine;
     }
   }
   if (!correct || state.session.mascotQuizShows >= 1) return null;
@@ -1516,15 +1565,15 @@ async function bistrousAchievement(rating, correct, previousReviews, previousMas
   for (let index = state.session.answers.length - 1; index >= 0 && state.session.answers[index].correct; index -= 1) correctRun += 1;
   if (recovered) {
     state.session.mascotQuizShows += 1;
-    return await takeRomanLine('success', .25) || randomBistrousLine('recovery');
+    return await takeRomanLine('success', .25) || takeSpicyLine('success', .65) || randomBistrousLine('recovery');
   }
   if (previousMastery < 80 && currentMastery >= 80) {
     state.session.mascotQuizShows += 1;
-    return await takeRomanLine('success', .25) || randomBistrousLine('mastery');
+    return await takeRomanLine('success', .25) || takeSpicyLine('success', .65) || randomBistrousLine('mastery');
   }
   if (correctRun === 4) {
     state.session.mascotQuizShows += 1;
-    return await takeRomanLine('success', .25) || randomBistrousLine('streak');
+    return await takeRomanLine('success', .25) || takeSpicyLine('streak', .65) || randomBistrousLine('streak');
   }
   return null;
 }
@@ -1676,7 +1725,7 @@ async function renderSummary() {
     : 'Dávka dokončena';
   const achievement = accuracy === 100 ? 'Pán etikety' : accuracy >= 80 ? 'Postrach regálů' : accuracy >= 60 ? 'Krotitel sortimentu' : 'Vytrvalý ochutnávač';
   const dailyGoalCompleted = state.session.mode === 'daily';
-  const goalLine = dailyGoalCompleted ? await takeRomanLine('goal', .35) || randomBistrousLine('goal') : null;
+  const goalLine = dailyGoalCompleted ? await takeRomanLine('goal', .35) || takeSpicyLine('goal', .75) || randomBistrousLine('goal') : null;
   if (state.session.mode === 'baseline' && !state.settings.baselineCompleted) {
     state.settings = { ...state.settings, baselineCompleted: true };
     storage.saveSettings({ baselineCompleted: true });
@@ -1779,7 +1828,7 @@ async function registerServiceWorker() {
         checkForUpdate();
         if (state.profile && state.currentView !== 'study') {
           const romanLine = await takeRomanLine('return', .12);
-          showToast(romanLine || randomBistrousLine('return'));
+          showToast(romanLine || takeSpicyLine('return', .3) || randomBistrousLine('return'));
         }
       }
     });
