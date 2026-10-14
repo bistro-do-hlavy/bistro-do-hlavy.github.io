@@ -18,6 +18,7 @@ const emptyState = () => ({
     sessionMinutes: 5,
     baselineCompleted: false,
     lastRomanLineAt: null,
+    funMoments: { day: null, count: 0, events: [], updatedAt: null },
   },
 });
 

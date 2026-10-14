@@ -1187,3 +1187,116 @@ p, li, dd, label, button, input, select, textarea, .option { font-family: Inter,
   .mastery-ring::after { background: Canvas; }
   .bottom-nav .nav-item.is-active { outline: 2px solid Highlight; }
 }
+
+/* Řízené herní momenty v testu: velké scénky mají společný denní limit v app.js. */
+.boss-banner {
+  margin: 0 0 .7rem;
+  border: 1px solid color-mix(in srgb, var(--terracotta) 65%, var(--line));
+  border-radius: 1rem;
+  padding: .72rem .85rem;
+  color: var(--chalk);
+  background: linear-gradient(135deg, #451d18, #173a2e 72%);
+  box-shadow: 0 9px 24px rgba(0,0,0,.2);
+}
+.boss-banner small, .boss-banner strong { display: block; }
+.boss-banner small { color: #ffd775; font-size: .62rem; font-weight: 900; letter-spacing: .13em; }
+.boss-banner strong { margin-top: .12rem; font-size: .82rem; }
+.boss-health { height: .38rem; margin-top: .55rem; overflow: hidden; border-radius: 99px; background: rgba(255,255,255,.17); }
+.boss-health span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #ffd36a, #e55c4e); }
+.rescue-context, .escape-note, .speed-note, .self-awareness {
+  border-radius: .72rem;
+  padding: .62rem .72rem;
+  font-size: .73rem;
+  line-height: 1.4;
+}
+.rescue-context { color: #213b31; background: #dff0ce; }
+.escape-note { color: #5b3c08; background: #ffe5a4; }
+.speed-note { margin-top: .65rem; color: var(--ink); background: color-mix(in srgb, var(--lime) 22%, var(--surface)); font-weight: 800; }
+.self-awareness { margin: .5rem 0 0; color: var(--muted); background: var(--surface-soft); text-align: center; }
+.own-mistake { margin-top: .7rem; border: 1px dashed var(--line); color: var(--muted); background: transparent; }
+.study-card.is-escaping { animation: card-scurry .7s cubic-bezier(.36,.07,.19,.97); }
+@keyframes card-scurry { 0%,100% { transform: translateX(0) rotate(0); } 35% { transform: translateX(1.2rem) rotate(1deg); } 65% { transform: translateX(-.45rem) rotate(-.5deg); } }
+.bistrous-moment.is-extinguisher::after {
+  content: "🧯";
+  position: absolute;
+  z-index: 3;
+  left: clamp(4.3rem, 17vw, 6.8rem);
+  bottom: .3rem;
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  filter: drop-shadow(0 4px 5px rgba(0,0,0,.3));
+  transform: rotate(-12deg);
+}
+.bistrous-moment.is-extinguisher.from-right::after { right: clamp(4.3rem, 17vw, 6.8rem); left: auto; transform: rotate(12deg); }
+
+.combo-pop {
+  position: absolute;
+  z-index: 4;
+  top: calc(100% + .45rem);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 99px;
+  padding: .48rem .72rem;
+  color: #26320e;
+  background: var(--lime);
+  box-shadow: 0 8px 24px rgba(0,0,0,.24);
+  font-size: .7rem;
+  font-weight: 950;
+  white-space: nowrap;
+  animation: combo-pop 1.9s ease both;
+}
+.study-toolbar { position: relative; }
+@keyframes combo-pop { 0% { opacity: 0; transform: translate(-50%, .5rem) scale(.8); } 18%,78% { opacity: 1; transform: translate(-50%, 0) scale(1); } 100% { opacity: 0; transform: translate(-50%, -.25rem) scale(.95); } }
+
+.fun-moment {
+  position: fixed;
+  z-index: 120;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(5.2rem, 8rem) minmax(0, 1fr) auto;
+  grid-template-rows: auto auto auto auto;
+  align-content: center;
+  column-gap: .75rem;
+  width: min(92vw, 30rem);
+  height: max-content;
+  margin: auto;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 1.4rem;
+  padding: 1.15rem;
+  color: #fff8e8;
+  background: radial-gradient(circle at 80% 10%, rgba(255,210,99,.24), transparent 32%), #123b2f;
+  box-shadow: 0 0 0 100vmax rgba(2,12,9,.7), 0 24px 70px rgba(0,0,0,.58);
+  opacity: 0;
+  transform: translateY(1rem) scale(.94);
+  transition: opacity .2s ease, transform .28s cubic-bezier(.2,.8,.2,1);
+}
+.fun-moment.is-visible { opacity: 1; transform: none; }
+.fun-moment img { grid-column: 1; grid-row: 1 / -1; align-self: end; width: 100%; max-height: 10rem; object-fit: contain; }
+.fun-moment .eyebrow { grid-column: 2; margin: 0; color: #ffd36a; }
+.fun-moment h2 { grid-column: 2; margin: .15rem 0 .35rem; font-size: clamp(1.25rem, 5vw, 1.8rem); }
+.fun-moment > p:last-child, .fun-moment-product { grid-column: 2; }
+.fun-moment-product { font-size: .78rem; color: #ffdca1; }
+.fun-moment > p:last-child { margin: .35rem 0 0; font-size: .8rem; line-height: 1.45; }
+.fun-moment-close { grid-column: 3; grid-row: 1; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 50%; color: inherit; background: rgba(255,255,255,.12); font-size: 1.3rem; cursor: pointer; }
+.fun-moment-burst { position: absolute; top: -1rem; right: 2.2rem; display: grid; place-items: center; width: 3.4rem; height: 3.4rem; border-radius: 50%; background: #f4c85f; box-shadow: 0 8px 24px rgba(0,0,0,.28); font-size: 1.65rem; }
+.fun-moment-explosion { background: radial-gradient(circle at 72% 5%, #ffca54, transparent 20%), linear-gradient(145deg, #64221b, #161c17 70%); animation: blast-card .55s ease both; }
+.fun-moment-wanted { border-style: dashed; background: linear-gradient(145deg, #69461f, #1d2e27); }
+.fun-moment-funeral { filter: grayscale(.42); }
+.fun-moment-hygiene { background: linear-gradient(145deg, #0f4a3b, #102c24); }
+body.is-blasting .app-shell { animation: screen-blast .5s ease; }
+@keyframes blast-card { 0% { filter: brightness(3); transform: scale(.7) rotate(-2deg); } 45% { filter: brightness(1.2); transform: scale(1.04) rotate(1deg); } 100% { filter: none; transform: scale(1); } }
+@keyframes screen-blast { 0%,100% { transform: translate(0); } 20% { transform: translate(-5px,3px); } 40% { transform: translate(5px,-3px); } 60% { transform: translate(-3px,-2px); } 80% { transform: translate(3px,2px); } }
+
+.blooper-reel { margin-top: 1rem; border-radius: 1rem; padding: .9rem; color: var(--ink); background: color-mix(in srgb, var(--terracotta) 12%, var(--surface)); text-align: left; }
+.blooper-reel small, .blooper-reel strong { display: block; }
+.blooper-reel small { color: var(--terracotta); font-size: .6rem; font-weight: 900; letter-spacing: .12em; }
+.blooper-reel ul { margin: .65rem 0; padding-left: 1.2rem; font-size: .75rem; }
+.blooper-reel p { margin: 0; color: var(--muted); font-size: .72rem; }
+
+@media (max-width: 430px) {
+  .fun-moment { grid-template-columns: 4.7rem minmax(0, 1fr) auto; padding: .9rem; }
+  .fun-moment img { max-height: 8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .study-card.is-escaping, .combo-pop, .fun-moment-explosion, body.is-blasting .app-shell { animation: none; }
+}

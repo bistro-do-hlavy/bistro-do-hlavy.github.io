@@ -268,7 +268,10 @@ const SPICY_LINES = {
   ],
 };
 let mascotMomentTimer;
+let funMomentTimer;
 let lastBistrousLine = '';
+const FUN_MOMENT_DAILY_LIMIT = 2;
+const FAST_ANSWER_MS = 2800;
 const loadingCopy = document.querySelector('.loading-state p');
 if (loadingCopy) loadingCopy.textContent = BISTROUS_LINES.loading[Math.floor(Math.random() * BISTROUS_LINES.loading.length)];
 const GLOSSARY = [
@@ -374,6 +377,60 @@ function takeSpicyLine(group, chance = 1) {
   return line;
 }
 
+function pragueDayKey(date = new Date()) {
+  return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Prague' }).format(date);
+}
+
+async function claimFunMoment(kind) {
+  const today = pragueDayKey();
+  const saved = state.settings?.funMoments || {};
+  const current = saved.day === today
+    ? { day: today, count: Number(saved.count) || 0, events: Array.isArray(saved.events) ? saved.events : [], updatedAt: saved.updatedAt || null }
+    : { day: today, count: 0, events: [], updatedAt: null };
+  if (current.count >= FUN_MOMENT_DAILY_LIMIT || current.events.includes(kind)) return false;
+  const funMoments = {
+    day: today,
+    count: current.count + 1,
+    events: [...current.events, kind],
+    updatedAt: new Date().toISOString(),
+  };
+  state.settings = await storage.saveSettings({ funMoments });
+  return true;
+}
+
+function hideFunMoment() {
+  clearTimeout(funMomentTimer);
+  document.body.classList.remove('is-blasting');
+  document.querySelector('.fun-moment')?.remove();
+}
+
+function showFunMoment({ kind, eyebrow, title, line, productName = '' }) {
+  hideFunMoment();
+  hideBistrous();
+  const icons = { explosion: '💥', wanted: '⌕', funeral: '⚰', hygiene: '✓' };
+  const scene = document.createElement('aside');
+  scene.className = `fun-moment fun-moment-${kind}`;
+  scene.setAttribute('role', 'status');
+  scene.innerHTML = `<button class="fun-moment-close" type="button" aria-label="Zavřít">×</button>
+    <div class="fun-moment-burst" aria-hidden="true">${icons[kind] || '!'}</div>
+    <img src="./img/bistrous-test-wrong.webp" alt="Bystrouš">
+    <p class="eyebrow">${escapeHtml(eyebrow)}</p><h2>${escapeHtml(title)}</h2>
+    ${productName ? `<strong class="fun-moment-product">${escapeHtml(productName)}</strong>` : ''}
+    <p>${escapeHtml(line)}</p>`;
+  document.body.append(scene);
+  document.body.classList.toggle('is-blasting', kind === 'explosion');
+  requestAnimationFrame(() => scene.classList.add('is-visible'));
+  scene.querySelector('.fun-moment-close').addEventListener('click', hideFunMoment);
+  funMomentTimer = setTimeout(hideFunMoment, kind === 'explosion' ? 4300 : 3900);
+}
+
+function showPendingFunMoment() {
+  const moment = state.session?.pendingFunMoment;
+  if (!moment) return;
+  state.session.pendingFunMoment = null;
+  setTimeout(() => showFunMoment(moment), 260);
+}
+
 function hideBistrous() {
   clearTimeout(mascotMomentTimer);
   const current = document.querySelector('.bistrous-moment');
@@ -387,7 +444,7 @@ function showBistrousMoment(kind, line, duration = 3200, mood = 'right') {
   const moment = document.createElement('aside');
   const entrances = ['from-left', 'from-right', 'from-top'];
   const entrance = kind === 'goal' ? 'from-bottom' : entrances[Math.floor(Math.random() * entrances.length)];
-  moment.className = `bistrous-moment is-${kind} ${entrance}`;
+  moment.className = `bistrous-moment is-${kind} ${entrance}${/hasičák/i.test(line) ? ' is-extinguisher' : ''}`;
   moment.setAttribute('role', 'status');
   moment.setAttribute('aria-live', 'polite');
 
@@ -536,6 +593,7 @@ function setActiveNav(view) {
 
 function navigate(view) {
   hideBistrous();
+  hideFunMoment();
   const previousView = state.currentView;
   if (previousView === 'products' && view !== 'products') catalogState.scrollY = window.scrollY;
   document.body.classList.remove('is-studying');
@@ -1466,11 +1524,18 @@ function startTopicStudy(category) {
 
 function startStudySession(queue, mode) {
   const preparedQueue = limitedQueue(queue).map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
-  state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mascotQuizShows: 0, mascotWrongShows: 0, mode };
+  state.session = {
+    id: crypto.randomUUID(), queue: preparedQueue, index: 0, answers: [], revealed: false,
+    retryIds: new Set(), rescueIds: new Set(), thirdCheckIds: new Set(), optionOrders: new Map(), wrongCounts: new Map(), questionAppearances: new Map(),
+    bossProductIds: new Set(), escapedQuestionIds: new Set(), comboMilestones: new Set(),
+    mascotQuizShows: 0, mascotWrongShows: 0, extinguisherShown: false, speedNotesShown: 0,
+    pendingFunMoment: null, mode,
+  };
   state.currentView = 'study';
   document.body.classList.add('is-studying');
   setActiveNav('');
   renderQuestion();
+  void maybeShowWantedPoster(preparedQueue, state.session.id);
 }
 
 function currentQuestion() { return state.session?.queue[state.session.index]; }
@@ -1511,12 +1576,88 @@ function memoryDetails(question) {
   return `<details class="memory-details"><summary>Zapamatovat si <span aria-hidden="true">⌄</span></summary><dl class="recognition-facts">${facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl></details>`;
 }
 
+function canonicalQuestionId(question) {
+  return question.sourceQuestionId || question.id;
+}
+
+function sessionCorrectRun() {
+  let run = 0;
+  for (let index = state.session.answers.length - 1; index >= 0 && state.session.answers[index].correct; index -= 1) run += 1;
+  return run;
+}
+
+function bossBanner(product) {
+  if (!product || !state.session.bossProductIds.has(product.id)) return '';
+  const hits = state.session.answers.filter((answer) => answer.productId === product.id && answer.correct).length;
+  const health = Math.max(8, 100 - hits * 32);
+  return `<aside class="boss-banner"><div><small>BOSS PRODUKT</small><strong>Ničitel paměti: ${escapeHtml(product.name)}</strong></div><div class="boss-health" aria-label="Síla boss produktu ${health} procent"><span style="width:${health}%"></span></div></aside>`;
+}
+
+function createRescueQuestion(question) {
+  const correctAnswer = String(question.answerDisplay || (Array.isArray(question.answer) ? question.answer[0] : question.answer));
+  let distractor = question.options?.find((option) => normalizeText(option) !== normalizeText(correctAnswer));
+  if (!distractor) {
+    const product = state.products.find((item) => item.id === question.productId);
+    const sameCategoryProductIds = new Set(state.products.filter((item) => item.category === product?.category).map((item) => item.id));
+    const candidate = state.questions.find((item) => item.id !== canonicalQuestionId(question)
+      && sameCategoryProductIds.has(item.productId) && typeof item.answer === 'string'
+      && normalizeText(item.answer) !== normalizeText(correctAnswer) && item.answer.length <= 90);
+    distractor = candidate?.answer || 'Tato možnost k otázce nepatří';
+  }
+  return {
+    ...question,
+    id: `rescue-${canonicalQuestionId(question)}`,
+    sourceQuestionId: canonicalQuestionId(question),
+    type: 'mcq', format: 'rescue',
+    prompt: `Záchranné kolečko: která odpověď patří k otázce „${question.prompt}“?`,
+    answer: correctAnswer, answerDisplay: correctAnswer,
+    options: Math.random() < .5 ? [correctAnswer, distractor] : [distractor, correctAnswer],
+    isRescue: true,
+  };
+}
+
+async function maybeShowWantedPoster(queue, sessionId) {
+  if (Math.random() > .38) return;
+  const weak = queue.map((question) => ({ question, weakness: questionWeakness(canonicalQuestionId(question), state.reviews, state.progress[canonicalQuestionId(question)]) }))
+    .sort((a, b) => b.weakness - a.weakness)[0];
+  if (!weak || weak.weakness < 45 || !await claimFunMoment('wanted')) return;
+  setTimeout(() => {
+    if (state.currentView !== 'study' || state.session?.id !== sessionId) return;
+    const product = state.products.find((item) => item.id === weak.question.productId);
+    showFunMoment({ kind: 'wanted', eyebrow: 'HLEDÁ SE', title: 'Podezřelý ze ztráty paměti', productName: product?.name, line: 'Naposledy viděn, jak mizí z hlavy. Odměna: jeden klidný zákazník.' });
+  }, 650);
+}
+
+function maybeShowCombo() {
+  const run = sessionCorrectRun();
+  if (![3, 5].includes(run) || state.session.comboMilestones.has(run)) return;
+  state.session.comboMilestones.add(run);
+  const toolbar = document.querySelector('.study-toolbar');
+  if (!toolbar) return;
+  const combo = document.createElement('div');
+  combo.className = 'combo-pop';
+  combo.textContent = run === 3 ? 'PÍP × 3 · pěkná směna' : 'PÍP × 5 · sakra dobrá směna';
+  toolbar.append(combo);
+  setTimeout(() => combo.remove(), 1900);
+}
+
+function speedNote(correct, elapsedMs) {
+  if (elapsedMs >= FAST_ANSWER_MS || state.session.speedNotesShown >= 2) return '';
+  state.session.speedNotesShown += 1;
+  return correct ? 'Rychlejší než káva s sebou.' : 'Rychlé to bylo. Správné už méně.';
+}
+
 function renderQuestion() {
   hideBistrous();
   const question = currentQuestion();
   if (!question) return renderSummary();
   state.session.revealed = false;
   const product = state.products.find((item) => item.id === question.productId);
+  const canonicalId = canonicalQuestionId(question);
+  const appearance = (state.session.questionAppearances.get(canonicalId) || 0) + 1;
+  state.session.questionAppearances.set(canonicalId, appearance);
+  const isEscaping = appearance >= 3 && !state.session.escapedQuestionIds.has(canonicalId);
+  if (isEscaping) state.session.escapedQuestionIds.add(canonicalId);
   const image = question.type === 'photo' ? `<img class="question-image" src="${question.image}" alt="Produkt k poznání">` : '';
   const productHint = question.type === 'photo' ? 'Název na obalu není odpověď' : question.format === 'comparison' ? 'Podobné produkty' : product.name;
   const typeLabel = question.format === 'comparison' ? 'Porovnání' : question.format === 'scenario' ? 'Situace z bistra' : TYPE_LABELS[question.type];
@@ -1534,13 +1675,14 @@ function renderQuestion() {
     <div class="study-toolbar"><button id="close-study" class="icon-button" type="button" aria-label="Ukončit trénink">×</button>
       <div class="study-progress"><div class="progress-track"><span style="width:${progressPercent}%"></span></div><small>${brainHeat}</small></div>
       <span class="study-counter">${state.session.index + 1}/${state.session.queue.length}</span></div>
-    <article class="study-card">${question.isRecovery ? '<p class="recovery-context">Krátké srovnání po chybě — nejdřív si upevněte souvislost, potom přijde kontrolní otázka.</p>' : ''}<div class="question-meta"><span class="type-pill">${typeLabel}</span><span>${escapeHtml(productHint)}</span></div>
+    ${bossBanner(product)}<article class="study-card${isEscaping ? ' is-escaping' : ''}">${question.isRescue ? '<p class="rescue-context">🛟 Záchranné kolečko — dvě možnosti, jedna důležitá souvislost.</p>' : question.isRecovery ? '<p class="recovery-context">Krátké srovnání po chybě — nejdřív si upevněte souvislost, potom přijde kontrolní otázka.</p>' : ''}${isEscaping ? '<p class="escape-note">Produkt se pokusil utéct z tréninku. Neúspěšně.</p>' : ''}<div class="question-meta"><span class="type-pill">${typeLabel}</span><span>${escapeHtml(productHint)}</span></div>
       ${image}${comparisonPreview(question)}<h1>${escapeHtml(question.prompt)}</h1><div id="answer-area">${control}</div><div id="feedback"></div>
     </article></section>`;
   document.querySelector('#close-study').addEventListener('click', () => navigate('home'));
   document.querySelectorAll('[data-option]').forEach((button) => button.addEventListener('click', () => answerChoice(button.dataset.option)));
   document.querySelector('#text-form')?.addEventListener('submit', (event) => { event.preventDefault(); answerText(new FormData(event.currentTarget).get('answer')); });
   document.querySelector('#reveal')?.addEventListener('click', revealFlashcard);
+  state.session.questionShownAt = performance.now();
   window.scrollTo({ top: 0, behavior: 'instant' });
   app.focus();
 }
@@ -1551,7 +1693,12 @@ function questionSourceLink(question) {
   return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
 }
 
-async function bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery) {
+async function bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery, wrongCount = 0) {
+  if (rating === RATINGS.AGAIN && wrongCount === 2 && !state.session.extinguisherShown) {
+    state.session.extinguisherShown = true;
+    return 'Jen preventivně beru hasičák. Ještě jednou a tahle otázka bouchne.';
+  }
+  if (rating === RATINGS.AGAIN && wrongCount >= 3) return null;
   if (rating === RATINGS.AGAIN && state.session.mascotWrongShows < 1) {
     const wrongLine = await takeRomanLine('wrong') || takeSpicyLine('wrong', .75);
     if (wrongLine) {
@@ -1578,7 +1725,7 @@ async function bistrousAchievement(rating, correct, previousReviews, previousMas
   return null;
 }
 
-function showFeedback({ correct, partial = false, selected, answer, explanation, question, mascotLine }) {
+function showFeedback({ correct, partial = false, selected, answer, explanation, question, mascotLine, speedMessage = '' }) {
   const panel = document.querySelector('#feedback');
   const answerValue = Array.isArray(answer) ? answer.join(', ') : answer;
   const answerSummary = correct
@@ -1591,9 +1738,17 @@ function showFeedback({ correct, partial = false, selected, answer, explanation,
     <div class="result-heading"><span class="result-icon" aria-hidden="true">${resultIcon}</span><div><small>Výsledek</small><strong>${resultLabel}</strong></div></div>
     ${answerSummary}
     <div class="result-explanation"><strong>Proč?</strong><p>${escapeHtml(explanation)}</p></div>
+    ${speedMessage ? `<p class="speed-note">⚡ ${escapeHtml(speedMessage)}</p>` : ''}
     ${memoryDetails(question)}${questionSourceLink(question)}
-  </section><button id="next" class="button button-primary button-full result-next" type="button">Pokračovat</button>`;
+  </section>${!correct && !partial ? '<button id="own-mistake" class="button own-mistake button-full" type="button">Ano, to byla blbost</button><p id="self-awareness" class="self-awareness" hidden></p>' : ''}<button id="next" class="button button-primary button-full result-next" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
+  document.querySelector('#own-mistake')?.addEventListener('click', (event) => {
+    event.currentTarget.disabled = true;
+    const lines = ['Přiznání přijato. Mozek už zahlazuje stopy.', 'Sebereflexe: 100 %. Znalost: právě v opravě.', 'Výborně. Chyba označena a poslána do skladu zkušeností.'];
+    const message = document.querySelector('#self-awareness');
+    message.textContent = lines[Math.floor(Math.random() * lines.length)];
+    message.hidden = false;
+  });
   if (mascotLine) showBistrousMoment('quiz', mascotLine, 3300, correct ? 'right' : 'wrong');
 }
 
@@ -1601,6 +1756,7 @@ async function answerChoice(selected) {
   if (state.session.revealed) return;
   state.session.revealed = true;
   const question = currentQuestion();
+  const elapsedMs = performance.now() - state.session.questionShownAt;
   const correct = selected === question.answer;
   document.querySelectorAll('.option').forEach((button) => {
     button.disabled = true;
@@ -1616,19 +1772,28 @@ async function answerChoice(selected) {
       button.classList.add('is-dimmed');
     }
   });
-  const mascotLine = await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct, selected);
-  showFeedback({ correct, selected, answer: question.answer, explanation: question.explanation, question, mascotLine });
+  const mascotLine = await recordReview(question, correct ? RATINGS.GOOD : RATINGS.AGAIN, correct, selected, { responseMs: elapsedMs });
+  showFeedback({ correct, selected, answer: question.answer, explanation: question.explanation, question, mascotLine, speedMessage: speedNote(correct, elapsedMs) });
+  maybeShowCombo();
+  showPendingFunMoment();
 }
 
 async function answerText(input) {
   if (state.session.revealed) return;
   state.session.revealed = true;
   const question = currentQuestion();
+  const elapsedMs = performance.now() - state.session.questionShownAt;
   const result = evaluateText(input, question.answer, question.prompt);
   document.querySelector('#text-form').querySelectorAll('input,button').forEach((element) => { element.disabled = true; });
   const rating = result.correct ? RATINGS.GOOD : result.partial ? RATINGS.HARD : RATINGS.AGAIN;
-  const mascotLine = await recordReview(question, rating, result.correct, input);
-  showFeedback({ correct: result.correct, partial: result.partial, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question, mascotLine });
+  const mascotLine = await recordReview(question, rating, result.correct, input, { responseMs: elapsedMs, score: result.score });
+  if (!result.correct && !result.partial && result.score <= .05 && String(input).trim().length >= 3 && Math.random() < .4
+    && !state.session.pendingFunMoment && await claimFunMoment('funeral')) {
+    state.session.pendingFunMoment = { kind: 'funeral', eyebrow: 'MINUTA TICHA', title: 'Pohřeb odpovědi', line: 'Tato odpověď s námi pobyla krátce. Upřímně, tak je to lepší.' };
+  }
+  showFeedback({ correct: result.correct, partial: result.partial, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question, mascotLine, speedMessage: speedNote(result.correct, elapsedMs) });
+  maybeShowCombo();
+  showPendingFunMoment();
 }
 
 function revealFlashcard() {
@@ -1649,6 +1814,8 @@ function revealFlashcard() {
     const mascotLine = await recordReview(question, rating, rating >= RATINGS.GOOD, null);
     const hasAnotherQuestion = state.session.index + 1 < state.session.queue.length;
     nextQuestion();
+    maybeShowCombo();
+    showPendingFunMoment();
     if (mascotLine && hasAnotherQuestion) showBistrousMoment('quiz', mascotLine, 3300, 'right');
   }));
 }
@@ -1661,13 +1828,13 @@ function formatInterval(date) {
   return `${Math.round(hours / 24)} d`;
 }
 
-async function recordReview(question, rating, correct, selectedAnswer = null) {
-  const canonicalQuestionId = question.sourceQuestionId || question.id;
-  const previousReviews = state.reviews.filter((review) => review.questionId === canonicalQuestionId);
+async function recordReview(question, rating, correct, selectedAnswer = null, metadata = {}) {
+  const canonicalId = canonicalQuestionId(question);
+  const previousReviews = state.reviews.filter((review) => review.questionId === canonicalId);
   const previousMastery = productMastery(question.productId, state.questions, state.progress);
   const wasNew = previousReviews.length === 0;
   const review = {
-    id: crypto.randomUUID(), userId: state.profile.userId, questionId: canonicalQuestionId,
+    id: crypto.randomUUID(), userId: state.profile.userId, questionId: canonicalId,
     productId: question.productId,
     rating,
     wasCorrect: Boolean(correct),
@@ -1679,24 +1846,47 @@ async function recordReview(question, rating, correct, selectedAnswer = null) {
   };
   await storage.appendReview(review);
   state.reviews.push(review);
-  const history = state.reviews.filter((item) => item.questionId === canonicalQuestionId);
-  state.progress[canonicalQuestionId] = rebuildProgress(history);
-  await storage.saveQuestionProgress(canonicalQuestionId, state.progress[canonicalQuestionId]);
-  state.session.answers.push({ questionId: canonicalQuestionId, productId: question.productId, correct, rating });
-  if (rating <= RATINGS.HARD && !question.isRecovery && !question.isRecoveryCheck && !state.session.retryIds.has(canonicalQuestionId)) {
-    const comparison = comparisonQuestions().find((item) => item.productId === question.productId && item.id !== canonicalQuestionId);
+  const history = state.reviews.filter((item) => item.questionId === canonicalId);
+  state.progress[canonicalId] = rebuildProgress(history);
+  await storage.saveQuestionProgress(canonicalId, state.progress[canonicalId]);
+  state.session.answers.push({ questionId: canonicalId, productId: question.productId, correct, rating, ...metadata });
+  const previousWrongCount = state.session.wrongCounts.get(canonicalId) || 0;
+  const wrongCount = rating === RATINGS.AGAIN ? previousWrongCount + 1 : previousWrongCount;
+  state.session.wrongCounts.set(canonicalId, wrongCount);
+  if (wrongCount >= 2) state.session.bossProductIds.add(question.productId);
+  if (wrongCount === 2 && !question.isRescue && !state.session.thirdCheckIds.has(canonicalId)) {
+    const thirdCheckAt = Math.min(state.session.queue.length, state.session.index + 2);
+    state.session.queue.splice(thirdCheckAt, 0, { ...question, id: `final-check-${canonicalId}`, sourceQuestionId: canonicalId, isRecoveryCheck: true });
+    state.session.thirdCheckIds.add(canonicalId);
+  }
+  if (wrongCount === 3 && !question.isRescue && !state.session.rescueIds.has(canonicalId)) {
+    state.session.queue.splice(state.session.index + 1, 0, createRescueQuestion(question));
+    state.session.rescueIds.add(canonicalId);
+    if (await claimFunMoment('explosion')) {
+      const product = state.products.find((item) => item.id === question.productId);
+      state.session.pendingFunMoment = {
+        kind: 'explosion', eyebrow: 'PAMĚŤOVÁ HAVÁRIE', title: 'Bum. Potřetí vedle.', productName: product?.name,
+        line: 'Tohle už nic nezachrání… kromě záchranného kolečka. Autobus zatím řídit nemusíte.',
+      };
+    }
+  }
+  if (rating <= RATINGS.HARD && !question.isRescue && !question.isRecovery && !question.isRecoveryCheck && !state.session.retryIds.has(canonicalId)) {
+    const comparison = comparisonQuestions().find((item) => item.productId === question.productId && item.id !== canonicalId);
     const related = comparison
-      ? { ...comparison, id: `recovery-${canonicalQuestionId}-${comparison.id}`, sourceQuestionId: comparison.id, isRecovery: true }
-      : state.questions.find((item) => item.productId === question.productId && item.id !== canonicalQuestionId && questionIsEnabled(item));
+      ? { ...comparison, id: `recovery-${canonicalId}-${comparison.id}`, sourceQuestionId: comparison.id, isRecovery: true }
+      : state.questions.find((item) => item.productId === question.productId && item.id !== canonicalId && questionIsEnabled(item));
     const recoveryQuestion = related && !related.isRecovery ? { ...related, isRecovery: true } : related;
     const comparisonAt = Math.min(state.session.queue.length, state.session.index + 2);
     if (recoveryQuestion) state.session.queue.splice(comparisonAt, 0, recoveryQuestion);
     const checkAt = Math.min(state.session.queue.length, state.session.index + (recoveryQuestion ? 4 : 3));
-    state.session.queue.splice(checkAt, 0, { ...question, id: `check-${canonicalQuestionId}`, sourceQuestionId: canonicalQuestionId, isRecoveryCheck: true });
-    state.session.retryIds.add(canonicalQuestionId);
+    state.session.queue.splice(checkAt, 0, { ...question, id: `check-${canonicalId}`, sourceQuestionId: canonicalId, isRecoveryCheck: true });
+    state.session.retryIds.add(canonicalId);
   }
   const currentMastery = productMastery(question.productId, state.questions, state.progress);
-  return await bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery);
+  if (correct && sessionCorrectRun() === 6 && !state.session.pendingFunMoment && await claimFunMoment('hygiene')) {
+    state.session.pendingFunMoment = { kind: 'hygiene', eyebrow: 'KONTROLA HYGIENY', title: 'Mozek bez závad', line: 'Šest správně v řadě. Ani drobek chaosu. Provoz může pokračovat.' };
+  }
+  return await bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery, wrongCount);
 }
 
 function nextQuestion() {
@@ -1724,6 +1914,16 @@ async function renderSummary() {
     : state.session.mode === 'baseline' ? 'Vstupní test dokončen'
     : 'Dávka dokončena';
   const achievement = accuracy === 100 ? 'Pán etikety' : accuracy >= 80 ? 'Postrach regálů' : accuracy >= 60 ? 'Krotitel sortimentu' : 'Vytrvalý ochutnávač';
+  const wrongAnswers = answers.filter((item) => !item.correct);
+  const absurdAnswers = wrongAnswers.filter((item) => Number.isFinite(item.score) && item.score <= .05).length;
+  const rushedAnswers = wrongAnswers.filter((item) => Number.isFinite(item.responseMs) && item.responseMs < FAST_ANSWER_MS).length;
+  const allergenMisses = wrongAnswers.filter((item) => /alergen/i.test(state.questions.find((question) => question.id === item.questionId)?.prompt || '')).length;
+  const bloopers = [
+    wrongAnswers.length ? `${wrongAnswers.length}× odpověď mimo regál` : '',
+    absurdAnswers ? `${absurdAnswers}× odpověď vytažená z prdele` : '',
+    rushedAnswers ? `${rushedAnswers}× prst rychlejší než myšlenka` : '',
+    allergenMisses ? `${allergenMisses}× zaměněný alergen` : '',
+  ].filter(Boolean).slice(0, 3);
   const dailyGoalCompleted = state.session.mode === 'daily';
   const goalLine = dailyGoalCompleted ? await takeRomanLine('goal', .35) || takeSpicyLine('goal', .75) || randomBistrousLine('goal') : null;
   if (state.session.mode === 'baseline' && !state.settings.baselineCompleted) {
@@ -1733,6 +1933,7 @@ async function renderSummary() {
   app.innerHTML = `<section class="page study-page"><article class="summary-card"><div class="summary-icon">✓</div><p class="eyebrow">${summaryLabel}</p><h1>Dobrá práce, ${escapeHtml(state.profile.nickname)}.</h1><p>Každé vybavení odpovědi posílilo paměťovou stopu.</p>
     <div class="achievement-badge"><span aria-hidden="true">★</span><div><small>Dnešní titul</small><strong>${achievement}</strong></div></div>
     <div class="summary-stats"><div><strong>${accuracy} %</strong><span>úspěšnost</span></div><div><strong>${correct}/${answers.length}</strong><span>správně</span></div><div><strong>${tomorrowCount()}</strong><span>do zítřka</span></div></div>
+    ${bloopers.length ? `<div class="blooper-reel"><div><small>NEPOVEDENÉ ZÁBĚRY</small><strong>Dnešní ztráty</strong></div><ul>${bloopers.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul><p>Přesto přežilo ${accuracy} % znalostí. Dobrá směna.</p></div>` : ''}
     ${misses.length ? `<div class="missed-review"><strong>Co ještě upevnit</strong><ul>${missedProducts}</ul></div>` : `<div class="answer-panel" style="text-align:left"><strong>Produkt k procvičení</strong><p>${escapeHtml(problem)}</p></div>`}
     ${retryQueue.length ? `<button id="retry-mistakes" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zopakovat chybné otázky · ${retryQueue.length}</button>` : ''}
     ${misses.length ? '<button id="open-stats" class="button button-secondary button-full" style="margin-top:.7rem" type="button">Zobrazit slabá místa</button>' : ''}
