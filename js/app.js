@@ -69,6 +69,15 @@ const BISTROUS_LINES = {
     'Správná odpověď se schovávala hned vedle.',
     'Tohle by zákazník reklamoval.',
     'Nic se neděje. Zboží vracíme do oběhu.',
+    'Vedle jak ta jedle. Nevadí, právě proto trénujeme.',
+    'Tohle byl výstřel do skladu.',
+    'Ani liška netrefí každou slepici.',
+    'Mozek si dal pauzu bez dovolení.',
+    'Trochu bordel. Jedno opakování a uklidíme ho.',
+    'Dobrá blbost. Aspoň bude příště dobře zapamatovatelná.',
+  ],
+  romanMistake: [
+    'Ou… to byla blbost. Tohle Romanovi radši neřekneme.',
   ],
   streak: [
     'Regály se začínají bát.',
@@ -81,6 +90,12 @@ const BISTROUS_LINES = {
     'Ještě chvíli a budete školit i Bistrouše.',
     'Sklad znalostí hlásí plnou kapacitu.',
     'Pozor, profesionál v uličce!',
+    'Tři správně za sebou. Už nejste host, skoro obsluha.',
+    'Tohle nebyla náhoda. Mozek si právě objednal přídavek.',
+    'Pět v řadě. Sakra, tohle už má šťávu.',
+    'Bistrouš hlásí: synapse opečené dozlatova.',
+    'Tak čisté, že by z toho měla radost i hygiena.',
+    'Žádné hádání. Tohle už v hlavě opravdu bydlí.',
   ],
   recovery: [
     'Tohle dřív zlobilo. Teď už ani drobeček nejistoty.',
@@ -89,6 +104,19 @@ const BISTROUS_LINES = {
     'Minule zádrhel, dnes čistá práce.',
     'Bistrouš potvrzuje: pokrok nalezen a uložen.',
     'Tenhle regál jste si právě srovnali v hlavě.',
+    'Minule vás to kouslo. Dnes jste kousli zpátky.',
+    'A je doma. Tenhle produkt už vám neuteče.',
+    'Ještě nedávno guláš. Teď je v tom krásně jasno.',
+    'Starý strašák právě dostal výpověď.',
+    'Mozek: načteno. Ego: oprávněně spokojené.',
+    'Tak do prdele, ono to fakt funguje!',
+  ],
+  mastery: [
+    'Tenhle produkt už znáte lépe než jeho vlastní obal.',
+    'Zákazník se zeptá. Vy odpovíte dřív, než dopadne účtenka.',
+    'Odemčeno: produkt bez koktání.',
+    'Z nejistoty jistota. Přesně takhle se peče znalost.',
+    'Tenhle může z regálu rovnou k vám ke zkoušce.',
   ],
   repeat: [
     'Tenhle produkt se vrací častěji než stálý zákazník.',
@@ -137,6 +165,12 @@ const BISTROUS_LINES = {
     'Zavřít kasu, dnešní trénink je hotový.',
     'Denní dávka splněna. Zástěra může na věšák.',
     'Bistrouš potvrzuje: pro dnešek máte odpracováno.',
+    'Denní porce splněna. Zavřít krám, mozek má navařeno.',
+    'Hotovo. Bistrouš razítkuje: hlava nakrmená.',
+    'Dnešní menu: disciplína, paměť a malá frajeřina.',
+    'Cíl splněn. Dnes už vás žádné kešu nepřekvapí.',
+    'Šichta hotová. Synapse mohou na jedno.',
+    'Dneska dobrý. Fakt kurva dobrý.',
   ],
   loading: [
     'Bistrouš rovná regály…',
@@ -1339,7 +1373,7 @@ function startTopicStudy(category) {
 
 function startStudySession(queue, mode) {
   const preparedQueue = limitedQueue(queue).map((question) => question.type === 'photo' && question.format !== 'photo-challenge' ? createCategoryPhotoChallenge(question) : question).filter(Boolean);
-  state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mascotQuizShows: 0, mode };
+  state.session = { queue: preparedQueue, index: 0, answers: [], revealed: false, retryIds: new Set(), optionOrders: new Map(), mascotQuizShows: 0, mascotWrongShows: 0, mode };
   state.currentView = 'study';
   document.body.classList.add('is-studying');
   setActiveNav('');
@@ -1424,7 +1458,11 @@ function questionSourceLink(question) {
   return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
 }
 
-function bistrousAchievement(correct, previousReviews) {
+function bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery) {
+  if (rating === RATINGS.AGAIN && state.session.mascotWrongShows < 1) {
+    state.session.mascotWrongShows += 1;
+    return randomBistrousLine('romanMistake');
+  }
   if (!correct || state.session.mascotQuizShows >= 1) return null;
   const recovered = previousReviews.some((review) => review.rating <= RATINGS.HARD);
   let correctRun = 0;
@@ -1432,6 +1470,10 @@ function bistrousAchievement(correct, previousReviews) {
   if (recovered) {
     state.session.mascotQuizShows += 1;
     return randomBistrousLine('recovery');
+  }
+  if (previousMastery < 80 && currentMastery >= 80) {
+    state.session.mascotQuizShows += 1;
+    return randomBistrousLine('mastery');
   }
   if (correctRun === 4) {
     state.session.mascotQuizShows += 1;
@@ -1456,7 +1498,7 @@ function showFeedback({ correct, partial = false, selected, answer, explanation,
     ${memoryDetails(question)}${questionSourceLink(question)}
   </section><button id="next" class="button button-primary button-full result-next" type="button">Pokračovat</button>`;
   document.querySelector('#next').addEventListener('click', nextQuestion);
-  if (mascotLine) showBistrousMoment('quiz', mascotLine, 3300, 'right');
+  if (mascotLine) showBistrousMoment('quiz', mascotLine, 3300, correct ? 'right' : 'wrong');
 }
 
 async function answerChoice(selected) {
@@ -1526,6 +1568,7 @@ function formatInterval(date) {
 async function recordReview(question, rating, correct, selectedAnswer = null) {
   const canonicalQuestionId = question.sourceQuestionId || question.id;
   const previousReviews = state.reviews.filter((review) => review.questionId === canonicalQuestionId);
+  const previousMastery = productMastery(question.productId, state.questions, state.progress);
   const wasNew = previousReviews.length === 0;
   const review = {
     id: crypto.randomUUID(), userId: state.profile.userId, questionId: canonicalQuestionId,
@@ -1556,7 +1599,8 @@ async function recordReview(question, rating, correct, selectedAnswer = null) {
     state.session.queue.splice(checkAt, 0, { ...question, id: `check-${canonicalQuestionId}`, sourceQuestionId: canonicalQuestionId, isRecoveryCheck: true });
     state.session.retryIds.add(canonicalQuestionId);
   }
-  return bistrousAchievement(correct, previousReviews);
+  const currentMastery = productMastery(question.productId, state.questions, state.progress);
+  return bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery);
 }
 
 function nextQuestion() {
