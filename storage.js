@@ -17,6 +17,7 @@ const emptyState = () => ({
     productCatalogView: 'grid',
     sessionMinutes: 5,
     baselineCompleted: false,
+    lastRomanLineAt: null,
   },
 });
 

@@ -76,9 +76,6 @@ const BISTROUS_LINES = {
     'Trochu bordel. Jedno opakování a uklidíme ho.',
     'Dobrá blbost. Aspoň bude příště dobře zapamatovatelná.',
   ],
-  romanMistake: [
-    'Ou… to byla blbost. Tohle Romanovi radši neřekneme.',
-  ],
   streak: [
     'Regály se začínají bát.',
     'Jedete jako kávovar v ranní špičce.',
@@ -199,6 +196,37 @@ const BISTROUS_LINES = {
     'Čerstvá várka otázek právě dorazila.',
   ],
 };
+const ROMAN_LINE_COOLDOWN_MS = 48 * 60 * 60 * 1000;
+const ROMAN_LINES = {
+  wrong: [
+    'Ou… to byla blbost. Tohle Romanovi radši neřekneme.',
+    'Pššt. Roman se nic nedozví. Odpověď uklidíme pod regál.',
+    'Kdyby se Roman ptal, byl to test aplikace.',
+    'Tohle smažeme dřív, než Roman otevře statistiky.',
+    'Romanovi řekneme, že uklouzl prst.',
+    'Tuhle odpověď pošleme do anonymního režimu.',
+    'To není chyba. To je uživatelský výzkum.',
+    'Klid. Roman má dneska určitě důležitější starosti.',
+    'Tohle radši zazdíme další aktualizací.',
+    'Pokud tohle čte Roman: všechno je v pořádku. Rozchod.',
+    'Roman říkal bez sprostých slov. Kurva.',
+    'Jestli se aplikace rozbije, všichni víme, komu zavolat.',
+  ],
+  success: [
+    'Bystrouš už píše Romanovi: funguje to!',
+    'Tohle Roman naprogramoval dobře. Podezřelé.',
+  ],
+  goal: [
+    'Roman postavil aplikaci. Vy jí teď dáváte smysl.',
+    'Splněno. Pošleme Romanovi hezký graf, ať má radost.',
+  ],
+  return: [
+    'Roman se dívá. Tvařte se, že se učíme.',
+    'Pozor, Roman je online. Rychle jednu správnou!',
+    'Kontroluji, jestli Roman zase něco nepřejmenoval.',
+    'Hledám, kam Roman schoval správnou odpověď.',
+  ],
+};
 let mascotMomentTimer;
 let lastBistrousLine = '';
 const loadingCopy = document.querySelector('.loading-state p');
@@ -277,6 +305,22 @@ function randomBistrousLine(group) {
   const lines = BISTROUS_LINES[group] || BISTROUS_LINES.correct;
   const choices = lines.filter((line) => line !== lastBistrousLine);
   const line = choices[Math.floor(Math.random() * choices.length)] || lines[0];
+  lastBistrousLine = line;
+  return line;
+}
+
+function romanLineIsAvailable(now = Date.now()) {
+  const lastShown = Date.parse(state.settings?.lastRomanLineAt || '');
+  return !Number.isFinite(lastShown) || now - lastShown >= ROMAN_LINE_COOLDOWN_MS;
+}
+
+async function takeRomanLine(group, chance = 1) {
+  const lines = ROMAN_LINES[group] || [];
+  if (!lines.length || Math.random() > chance || !romanLineIsAvailable()) return null;
+  const choices = lines.filter((line) => line !== lastBistrousLine);
+  const line = choices[Math.floor(Math.random() * choices.length)] || lines[0];
+  const shownAt = new Date().toISOString();
+  state.settings = await storage.saveSettings({ lastRomanLineAt: shownAt });
   lastBistrousLine = line;
   return line;
 }
@@ -1458,10 +1502,13 @@ function questionSourceLink(question) {
   return `<a class="answer-source" href="${escapeHtml(question.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
 }
 
-function bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery) {
+async function bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery) {
   if (rating === RATINGS.AGAIN && state.session.mascotWrongShows < 1) {
-    state.session.mascotWrongShows += 1;
-    return randomBistrousLine('romanMistake');
+    const romanLine = await takeRomanLine('wrong');
+    if (romanLine) {
+      state.session.mascotWrongShows += 1;
+      return romanLine;
+    }
   }
   if (!correct || state.session.mascotQuizShows >= 1) return null;
   const recovered = previousReviews.some((review) => review.rating <= RATINGS.HARD);
@@ -1469,15 +1516,15 @@ function bistrousAchievement(rating, correct, previousReviews, previousMastery, 
   for (let index = state.session.answers.length - 1; index >= 0 && state.session.answers[index].correct; index -= 1) correctRun += 1;
   if (recovered) {
     state.session.mascotQuizShows += 1;
-    return randomBistrousLine('recovery');
+    return await takeRomanLine('success', .25) || randomBistrousLine('recovery');
   }
   if (previousMastery < 80 && currentMastery >= 80) {
     state.session.mascotQuizShows += 1;
-    return randomBistrousLine('mastery');
+    return await takeRomanLine('success', .25) || randomBistrousLine('mastery');
   }
   if (correctRun === 4) {
     state.session.mascotQuizShows += 1;
-    return randomBistrousLine('streak');
+    return await takeRomanLine('success', .25) || randomBistrousLine('streak');
   }
   return null;
 }
@@ -1600,7 +1647,7 @@ async function recordReview(question, rating, correct, selectedAnswer = null) {
     state.session.retryIds.add(canonicalQuestionId);
   }
   const currentMastery = productMastery(question.productId, state.questions, state.progress);
-  return bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery);
+  return await bistrousAchievement(rating, correct, previousReviews, previousMastery, currentMastery);
 }
 
 function nextQuestion() {
@@ -1608,7 +1655,7 @@ function nextQuestion() {
   renderQuestion();
 }
 
-function renderSummary() {
+async function renderSummary() {
   hideBistrous();
   const answers = state.session.answers;
   const correct = answers.filter((item) => item.correct).length;
@@ -1629,6 +1676,7 @@ function renderSummary() {
     : 'Dávka dokončena';
   const achievement = accuracy === 100 ? 'Pán etikety' : accuracy >= 80 ? 'Postrach regálů' : accuracy >= 60 ? 'Krotitel sortimentu' : 'Vytrvalý ochutnávač';
   const dailyGoalCompleted = state.session.mode === 'daily';
+  const goalLine = dailyGoalCompleted ? await takeRomanLine('goal', .35) || randomBistrousLine('goal') : null;
   if (state.session.mode === 'baseline' && !state.settings.baselineCompleted) {
     state.settings = { ...state.settings, baselineCompleted: true };
     storage.saveSettings({ baselineCompleted: true });
@@ -1645,7 +1693,7 @@ function renderSummary() {
   document.querySelector('#retry-mistakes')?.addEventListener('click', () => startStudySession(retryQueue, 'mistakes'));
   window.scrollTo({ top: 0, behavior: 'instant' });
   updateBadge();
-  if (dailyGoalCompleted) showBistrousMoment('goal', randomBistrousLine('goal'), 4800);
+  if (goalLine) showBistrousMoment('goal', goalLine, 4800);
 }
 
 function openProfileDialog(force = false) {
@@ -1726,10 +1774,13 @@ async function registerServiceWorker() {
     checkForUpdate();
     window.addEventListener('focus', checkForUpdate);
     window.addEventListener('online', checkForUpdate);
-    document.addEventListener('visibilitychange', () => {
+    document.addEventListener('visibilitychange', async () => {
       if (document.visibilityState === 'visible') {
         checkForUpdate();
-        if (state.profile && state.currentView !== 'study') showToast(randomBistrousLine('return'));
+        if (state.profile && state.currentView !== 'study') {
+          const romanLine = await takeRomanLine('return', .12);
+          showToast(romanLine || randomBistrousLine('return'));
+        }
       }
     });
   } catch (error) {
