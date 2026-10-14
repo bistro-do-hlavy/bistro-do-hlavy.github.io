@@ -1,5 +1,5 @@
 // Jediné místo, kde se při vydání mění verze aplikace.
-const CACHE_VERSION = 'bistro-v1.0.60';
+const CACHE_VERSION = 'bistro-v1.0.61';
 const APP_SHELL = [
   './', './index.html', './css/styles.css', './js/app.js',
   './config.js', './content.js', './storage.js',

@@ -417,6 +417,8 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .source-links { display: grid; gap: .5rem; }
 .source-links a { min-height: 2.75rem; display: flex; align-items: center; border: 1px solid var(--line); border-radius: .8rem; padding: .65rem .8rem; color: var(--brand); background: var(--surface-soft); font-size: .82rem; font-weight: 750; text-decoration: none; }
 .glossary-term { display: inline; border: 0; border-bottom: 1px dashed currentColor; padding: 0; color: var(--brand); background: transparent; cursor: help; font: inherit; font-weight: 750; text-align: inherit; }
+.glossary-term.is-return-focus:focus,
+.dialog.product-dialog:focus { outline: none; }
 .glossary-dialog { position: relative; }
 .glossary-dialog h2 { margin-right: 3rem; }
 .product-note-form { display: grid; gap: .6rem; margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }

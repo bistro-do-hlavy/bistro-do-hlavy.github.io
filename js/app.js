@@ -226,6 +226,7 @@ function renderGlossaryText(value) {
 function openGlossary(id) {
   const entry = GLOSSARY.find((item) => item.id === id);
   if (!entry) return;
+  glossaryDialog.returnFocusTarget = document.activeElement instanceof HTMLElement ? document.activeElement : null;
   document.querySelector('#glossary-title').textContent = entry.label;
   document.querySelector('#glossary-definition').textContent = entry.definition;
   glossaryDialog.showModal();
@@ -623,7 +624,7 @@ function renderProducts() {
   let activeSort = ['recommended', 'weakest', 'newest', 'alphabetical'].includes(catalogState.sort) ? catalogState.sort : 'recommended';
   app.innerHTML = `
     <section class="page">
-      <header class="page-header catalog-header"><div><p class="eyebrow">Katalog · ${state.products.length} produktů</p><h1>Produkty</h1><p>Vyhledejte produkt nebo si katalog seřaďte tak, jak se vám učí nejlépe.</p></div></header>
+      <header class="page-header catalog-header"><div><h1>Produkty</h1><p>${state.products.length} produktů · Vyhledejte produkt nebo si katalog seřaďte tak, jak se vám učí nejlépe.</p></div></header>
       <div class="catalog-tools">
         <label class="catalog-search"><span class="visually-hidden">Hledat produkt</span><input id="product-search" type="search" value="${escapeHtml(catalogState.query)}" placeholder="Hledat produkt nebo kategorii…" autocomplete="off"></label>
         <label class="catalog-sort"><span>Seřadit</span><select id="product-sort" aria-label="Seřadit produkty"><option value="recommended" ${activeSort === 'recommended' ? 'selected' : ''}>Doporučené</option><option value="weakest" ${activeSort === 'weakest' ? 'selected' : ''}>Nejslabší napřed</option><option value="newest" ${activeSort === 'newest' ? 'selected' : ''}>Nevyzkoušené napřed</option><option value="alphabetical" ${activeSort === 'alphabetical' ? 'selected' : ''}>Podle názvu A–Z</option></select></label>
@@ -710,7 +711,7 @@ function renderStats() {
   }).filter(Boolean);
   app.innerHTML = `
     <section class="page">
-      <header class="page-header"><p class="eyebrow">Výsledky a další krok</p><h1>Statistiky</h1><p>Přehled vychází z vašich odpovědí uložených na tomto zařízení.</p></header>
+      <header class="page-header"><h1>Statistiky</h1><p>Přehled vychází z vašich odpovědí uložených na tomto zařízení.</p></header>
       <div class="stats-grid stats-grid-detailed" aria-label="Statistiky učení">
         <div class="stat-card"><strong>${insights.totalReviews}</strong><span>${insights.totalReviews === 1 ? 'odpověď celkem' : 'odpovědí celkem'}</span></div>
         <div class="stat-card"><strong>${recentAccuracy}</strong><span>jistých za 7 dní</span></div>
@@ -781,7 +782,7 @@ function renderSettings() {
     : `${count} ${count === 1 ? 'produkt' : count >= 2 && count <= 4 ? 'produkty' : 'produktů'} z ${state.products.length}`;
   app.innerHTML = `
     <section class="page">
-      <header class="page-header"><p class="eyebrow">Přizpůsobení a záloha</p><h1>Nastavení</h1></header>
+      <header class="page-header"><h1>Nastavení</h1></header>
       <div class="settings-list">
         <article class="settings-card">
           <div class="field-row"><div><h2>Nové otázky denně</h2><p>Opakování mají vždy přednost.</p></div>
@@ -1707,6 +1708,16 @@ topicDialog.querySelector('.dialog-close').addEventListener('click', () => topic
 topicDialog.addEventListener('click', (event) => { if (event.target === topicDialog) topicDialog.close(); });
 glossaryDialog.querySelector('.dialog-close').addEventListener('click', () => glossaryDialog.close());
 glossaryDialog.addEventListener('click', (event) => { if (event.target === glossaryDialog) glossaryDialog.close(); });
+glossaryDialog.addEventListener('close', () => {
+  const target = glossaryDialog.returnFocusTarget;
+  if (!(target instanceof HTMLElement)) return;
+  target.classList.add('is-return-focus');
+  target.addEventListener('blur', () => target.classList.remove('is-return-focus'), { once: true });
+  requestAnimationFrame(() => {
+    if (document.activeElement !== target) target.classList.remove('is-return-focus');
+  });
+  glossaryDialog.returnFocusTarget = null;
+});
 document.querySelector('#import-file').addEventListener('change', (event) => { if (event.target.files[0]) importBackup(event.target.files[0]); event.target.value = ''; });
 window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
   if (state.settings?.theme === 'system') applyTheme('system');
