@@ -304,6 +304,7 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .answer-explanation { color: var(--muted); font-size: .9rem; }
 .result-card { display: grid; gap: .85rem; margin-top: 1rem; border: 1px solid var(--line); border-radius: 1.2rem; padding: 1rem; color: var(--ink); background: var(--surface-soft); }
 .result-card.is-correct { border-color: color-mix(in srgb, var(--brand) 45%, var(--line)); }
+.result-card.is-partial { border-color: color-mix(in srgb, var(--warning) 58%, var(--line)); }
 .result-card.is-wrong { border-color: color-mix(in srgb, var(--danger) 50%, var(--line)); }
 .result-heading { display: flex; align-items: center; gap: .7rem; }
 .result-heading small, .result-heading strong { display: block; }
@@ -311,6 +312,7 @@ select, input { min-height: 3.1rem; border: 1px solid var(--line); border-radius
 .result-heading strong { margin-top: .08rem; font-size: 1.1rem; }
 .result-icon { width: 2.35rem; height: 2.35rem; display: grid; place-items: center; border-radius: 50%; background: var(--brand); color: white; font-size: 1.35rem; font-weight: 900; }
 .result-card.is-wrong .result-icon { background: var(--danger); }
+.result-card.is-partial .result-icon { color: #2f2508; background: var(--lime); }
 .result-card.is-revealed .result-icon { background: var(--lime); color: var(--lime-ink); }
 .answer-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; }
 .result-answer { min-width: 0; border: 1px solid var(--line); border-radius: .9rem; padding: .75rem; background: var(--surface); }

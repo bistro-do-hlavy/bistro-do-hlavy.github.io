@@ -23,8 +23,53 @@ function normalizeAnswerText(value) {
     .replace(/\b(mililitru|mililitry|mililitr|ml)\b/g, 'ml')
     .replace(/\b(kilogramu|kilogramy|kilogram|kg)\b/g, 'kg')
     .replace(/\b(litru|litry|litr|l)\b/g, 'l')
+    .replace(/\b(dekofeinovan\w*|bezkofeinov\w*)\b/g, 'bez kofeinu')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+const ANSWER_STOP_WORDS = new Set([
+  'a', 'ale', 'ani', 'az', 'bez', 'by', 'byl', 'byla', 'bylo', 'byt', 'ci', 'do', 'i', 'jak', 'jako',
+  'je', 'jejich', 'jeho', 'ji', 'jich', 'k', 'ke', 'na', 'nebo', 'od', 'po', 'pod', 'podle', 'pro',
+  'pred', 'pri', 's', 'se', 'ta', 'tak', 'tato', 'tento', 'to', 'toto', 'u', 'v', 've', 'z', 'za', 'ze',
+  'produkt', 'produktu', 'vyrobek', 'vyrobku', 'spravne', 'odpoved', 'vyrobce', 'znacka', 'uvadi',
+]);
+
+function answerTokens(value) {
+  return normalizeAnswerText(value).split(' ').filter((token) => token.length > 1 && !ANSWER_STOP_WORDS.has(token));
+}
+
+function editDistance(left, right) {
+  const row = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let i = 1; i <= left.length; i += 1) {
+    let previous = row[0];
+    row[0] = i;
+    for (let j = 1; j <= right.length; j += 1) {
+      const above = row[j];
+      row[j] = Math.min(row[j] + 1, row[j - 1] + 1, previous + Number(left[i - 1] !== right[j - 1]));
+      previous = above;
+    }
+  }
+  return row[right.length];
+}
+
+function answerConcept(token) {
+  if (/^(telo|pln\w*)$/.test(token)) return 'telo';
+  if (/^(crema|krema|kremou|pen\w*)$/.test(token)) return 'crema';
+  if (/^(chut\w*|ton\w*|arom\w*|vun\w*)$/.test(token)) return 'chutovy-projev';
+  if (/^(sklad\w*|uchov\w*)$/.test(token)) return 'skladovani';
+  if (/^(doporuc\w*|hod\w*)$/.test(token)) return 'vhodnost';
+  return null;
+}
+
+function tokensMatch(left, right) {
+  if (left === right) return true;
+  if (/^\d/.test(left) || /^\d/.test(right)) return false;
+  const leftConcept = answerConcept(left);
+  if (leftConcept && leftConcept === answerConcept(right)) return true;
+  const shortest = Math.min(left.length, right.length);
+  if (shortest >= 4 && left.slice(0, Math.min(5, shortest)) === right.slice(0, Math.min(5, shortest))) return true;
+  return shortest >= 5 && Math.abs(left.length - right.length) <= 1 && editDistance(left, right) <= 1;
 }
 
 function meansNoAllergen(value) {
@@ -57,29 +102,58 @@ function allergenConcepts(value) {
   return concepts;
 }
 
-function answerMatches(submitted, expected) {
-  const normalizedSubmitted = normalizeAnswerText(submitted);
-  const normalizedExpected = normalizeAnswerText(expected);
-  if (normalizedSubmitted === normalizedExpected) return true;
-  if (normalizedExpected === 'ne' && /^(ne|nikoli)$/.test(normalizedSubmitted)) return true;
-  if (meansNoAllergen(expected) && (meansNoAllergen(submitted) || normalizedSubmitted === 'ne')) return true;
-
-  const expectedAllergens = allergenConcepts(expected);
-  if (!expectedAllergens.size) return false;
-  const submittedAllergens = allergenConcepts(submitted);
-  return [...expectedAllergens].every((concept) => submittedAllergens.has(concept));
+function isAllergenOnlyAnswer(value) {
+  const allowed = /^(?:lepek|gluten|obilovin\w*|s\s+lepk\w*|korys\w*|krevet\w*|krab\w*|humr\w*|vejce|vajick\w*|ryb\w*|arasid\w*|burak\w*|soj\w*|mlek\w*|mlec\w*|skorapkov\w*|plod\w*|orech\w*|mandl\w*|kesu|pistaci\w*|pekan\w*|celer\w*|horcic\w*|sezam\w*|siricitan\w*|sulfit\w*|oxid|siricity|vlci|bob|lupin\w*|mekkys\w*|musl\w*|chobotnic\w*|sepi\w*|a|nebo|stopy|stopa)$/;
+  const tokens = normalizeText(value).split(' ').filter(Boolean);
+  return tokens.length > 0 && tokens.every((token) => allowed.test(token));
 }
 
-export function evaluateText(input, expected) {
+function answerMatchScore(submitted, expected, prompt = '') {
+  const normalizedSubmitted = normalizeAnswerText(submitted);
+  const normalizedExpected = normalizeAnswerText(expected);
+  if (normalizedSubmitted === normalizedExpected) return 1;
+  if (normalizedExpected === 'ne' && /^(ne|nikoli)$/.test(normalizedSubmitted)) return 1;
+  if (meansNoAllergen(expected) && (meansNoAllergen(submitted) || normalizedSubmitted === 'ne')) return 1;
+
+  const expectedAllergens = allergenConcepts(expected);
+  if (expectedAllergens.size && isAllergenOnlyAnswer(expected)) {
+    const submittedAllergens = allergenConcepts(submitted);
+    return [...expectedAllergens].filter((concept) => submittedAllergens.has(concept)).length / expectedAllergens.size;
+  }
+
+  const promptTokens = answerTokens(prompt);
+  const allExpectedTokens = answerTokens(expected);
+  const expectedTokens = allExpectedTokens.filter((token) => !promptTokens.some((promptToken) => tokensMatch(token, promptToken)));
+  if (!expectedTokens.length) expectedTokens.push(...allExpectedTokens);
+  const submittedTokens = answerTokens(submitted);
+  if (!expectedTokens.length || !submittedTokens.length) return 0;
+  const numericTokens = expectedTokens.filter((token) => /^\d/.test(token));
+  if (numericTokens.some((token) => !submittedTokens.includes(token))) return 0;
+  const matched = expectedTokens.filter((expectedToken) => submittedTokens.some((submittedToken) => tokensMatch(submittedToken, expectedToken))).length;
+  return matched / expectedTokens.length;
+}
+
+function isSufficientMatch(score, expected, prompt = '') {
+  const promptTokens = answerTokens(prompt);
+  const distinctiveTokens = answerTokens(expected).filter((token) => !promptTokens.some((promptToken) => tokensMatch(token, promptToken)));
+  const tokenCount = distinctiveTokens.length || answerTokens(expected).length;
+  if (tokenCount <= 1) return score === 1;
+  if (tokenCount === 2) return score >= .5;
+  if (tokenCount <= 4) return score >= .6;
+  return score >= .45;
+}
+
+export function evaluateText(input, expected, prompt = '') {
   const answers = Array.isArray(expected) ? expected : [expected];
-  const submitted = [String(input), ...String(input).split(/[,;\n]+|\s+a\s+/i)]
-    .map((value) => value.trim())
-    .filter(Boolean);
   const results = answers.map((answer) => ({
     answer,
-    matched: submitted.some((value) => answerMatches(value, answer)),
+    score: answerMatchScore(input, answer, prompt),
+    matched: false,
   }));
-  return { correct: results.every((item) => item.matched), results };
+  results.forEach((result) => { result.matched = isSufficientMatch(result.score, result.answer, prompt); });
+  const correct = results.every((item) => item.matched);
+  const averageScore = results.reduce((total, item) => total + item.score, 0) / Math.max(1, results.length);
+  return { correct, partial: !correct && averageScore >= .3, score: averageScore, results };
 }
 
 const localDay = (iso) => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Prague' }).format(new Date(iso));
@@ -170,7 +244,7 @@ export function buildTopicStudyQueue({
   const allowedProductIds = new Set(Array.isArray(enabledProductIds) ? enabledProductIds : products.map((product) => product.id));
   const productOrder = new Map(products.map((product, index) => [product.id, index]));
   const reviewedQuestionIds = new Set(reviews.map((review) => review.questionId));
-  const typeOrder = ['photo', 'text', 'mcq', 'flashcard'];
+  const typeOrder = ['text', 'mcq', 'photo', 'flashcard'];
 
   return questions
     .filter((question) => enabledTypes.has(question.type) && allowedProductIds.has(question.productId))
@@ -183,8 +257,8 @@ export function buildTopicStudyQueue({
     .sort((a, b) => a.priority - b.priority
       || b.weakness - a.weakness
       || (a.dueAt?.getTime() || Infinity) - (b.dueAt?.getTime() || Infinity)
-      || typeOrder.indexOf(a.question.type) - typeOrder.indexOf(b.question.type)
-      || productOrder.get(a.question.productId) - productOrder.get(b.question.productId))
+      || productOrder.get(a.question.productId) - productOrder.get(b.question.productId)
+      || typeOrder.indexOf(a.question.type) - typeOrder.indexOf(b.question.type))
     .slice(0, limit)
     .map((item) => item.question);
 }
@@ -316,7 +390,7 @@ export function buildStudyQueue({
   const newLimit = Math.max(0, newCardsPerDay - newSeenToday);
   const fresh = selectedQuestions.filter((question) => !reviewedIds.has(question.id) && unlocked.has(question.productId)).slice(0, newLimit);
   const combined = [...due, ...fresh];
-  const typeOrder = ['photo', 'text', 'mcq', 'flashcard'];
+  const typeOrder = ['text', 'mcq', 'photo', 'flashcard'];
   return combined.sort((a, b) => {
     const aDue = progress[a.id] ? 0 : 1;
     const bDue = progress[b.id] ? 0 : 1;

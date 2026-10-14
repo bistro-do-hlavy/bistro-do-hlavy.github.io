@@ -22,11 +22,11 @@ const ALLERGENS = {
   11: 'Sezam', 12: 'Oxid siřičitý a siřičitany', 13: 'Vlčí bob', 14: 'Měkkýši',
 };
 
-const TYPE_LABELS = { mcq: 'Výběr', flashcard: 'Kartička', text: 'Napsat', photo: 'Foto výzva' };
+const TYPE_LABELS = { mcq: 'Výběr', flashcard: 'Kartička', text: 'Vlastními slovy', photo: 'Foto výzva' };
 const QUESTION_TYPE_SETTINGS = [
-  { id: 'mcq', label: 'Výběr z možností', description: 'Jedna správná odpověď ze čtyř.' },
-  { id: 'flashcard', label: 'Kartičky', description: 'Odpověď si vybavíte a sami ohodnotíte.' },
-  { id: 'text', label: 'Napsat odpověď', description: 'Odpověď napíšete vlastními slovy.' },
+  { id: 'text', label: 'Vlastními slovy', description: 'Hlavní způsob tréninku; toleruje tvary slov, překlepy a dostatečně podobné odpovědi.' },
+  { id: 'flashcard', label: 'Vlastní hodnocení', description: 'U otevřenější odpovědi sami určíte, jak dobře jste ji věděli.' },
+  { id: 'mcq', label: 'Výběr z možností', description: 'Menší část tréninku pro rozlišování podobných odpovědí.' },
   { id: 'photo', label: 'Foto výzva', description: 'Podle fotografie určíte kategorii, výrobce nebo vlastnost.' },
 ];
 const BISTROUS_LINES = {
@@ -1440,14 +1440,17 @@ function bistrousAchievement(correct, previousReviews) {
   return null;
 }
 
-function showFeedback({ correct, selected, answer, explanation, question, mascotLine }) {
+function showFeedback({ correct, partial = false, selected, answer, explanation, question, mascotLine }) {
   const panel = document.querySelector('#feedback');
   const answerValue = Array.isArray(answer) ? answer.join(', ') : answer;
   const answerSummary = correct
     ? `<div class="result-answer result-answer-correct"><span>Správná odpověď</span><strong>${escapeHtml(answerValue)}</strong></div>`
     : `<div class="answer-comparison"><div class="result-answer result-answer-wrong"><span>Vaše odpověď</span><strong>${escapeHtml(selected || 'Bez odpovědi')}</strong></div><div class="result-answer result-answer-correct"><span>Správná odpověď</span><strong>${escapeHtml(answerValue)}</strong></div></div>`;
-  panel.innerHTML = `<section class="result-card ${correct ? 'is-correct' : 'is-wrong'}" role="status">
-    <div class="result-heading"><span class="result-icon" aria-hidden="true">${correct ? '✓' : '×'}</span><div><small>Výsledek</small><strong>${correct ? 'Správně' : 'Zatím ne'}</strong></div></div>
+  const resultClass = correct ? 'is-correct' : partial ? 'is-partial' : 'is-wrong';
+  const resultIcon = correct ? '✓' : partial ? '≈' : '×';
+  const resultLabel = correct ? 'Správně' : partial ? 'Téměř správně' : 'Zatím ne';
+  panel.innerHTML = `<section class="result-card ${resultClass}" role="status">
+    <div class="result-heading"><span class="result-icon" aria-hidden="true">${resultIcon}</span><div><small>Výsledek</small><strong>${resultLabel}</strong></div></div>
     ${answerSummary}
     <div class="result-explanation"><strong>Proč?</strong><p>${escapeHtml(explanation)}</p></div>
     ${memoryDetails(question)}${questionSourceLink(question)}
@@ -1483,10 +1486,11 @@ async function answerText(input) {
   if (state.session.revealed) return;
   state.session.revealed = true;
   const question = currentQuestion();
-  const result = evaluateText(input, question.answer);
+  const result = evaluateText(input, question.answer, question.prompt);
   document.querySelector('#text-form').querySelectorAll('input,button').forEach((element) => { element.disabled = true; });
-  const mascotLine = await recordReview(question, result.correct ? RATINGS.GOOD : RATINGS.AGAIN, result.correct, input);
-  showFeedback({ correct: result.correct, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question, mascotLine });
+  const rating = result.correct ? RATINGS.GOOD : result.partial ? RATINGS.HARD : RATINGS.AGAIN;
+  const mascotLine = await recordReview(question, rating, result.correct, input);
+  showFeedback({ correct: result.correct, partial: result.partial, selected: input, answer: question.answerDisplay || (Array.isArray(question.answer) ? question.answer.join(', ') : question.answer), explanation: question.explanation, question, mascotLine });
 }
 
 function revealFlashcard() {
